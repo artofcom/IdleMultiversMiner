@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "id": "beer",
+            "price": "80"
+        },
+        {
+            "id": "bloodwine",
+            "price": "320"
+        },
+        {
+            "id": "bowlofhoney",
+            "price": "560"
+        },
+        {
+            "id": "furboots",
+            "price": "800"
+        },
+        {
+            "id": "furgloves",
+            "price": "1040"
+        },
+        {
+            "id": "mechaincsgoggle",
+            "price": "1280"
+        },
+        {
+            "id": "furhat",
+            "price": "1520"
+        },
+        {
+            "id": "metalgear",
+            "price": "1760"
+        },
+        {
+            "id": "leatherroll",
+            "price": "2000"
+        },
+        {
+            "id": "firetome",
+            "price": "2240"
+        },
+        {
+            "id": "lavablade",
+            "price": "2480"
+        },
+        {
+            "id": "icespellscroll",
+            "price": "2720"
+        }
+    ]
+}

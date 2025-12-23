@@ -1,0 +1,180 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_ZoneBuff1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_ZoneBuff1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone 1.",
+            "unlockCost": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 20
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone 2.",
+            "unlockCost": [
+                {
+                    "resourceId": "coal",
+                    "count": 50
+                },
+                {
+                    "resourceId": "copper",
+                    "count": 30
+                }
+            ],
+            "children": [
+                "Mining_2_ZoneBuff2",
+                "Mining_2_ZoneDiscovery3"
+            ]
+        },
+        {
+            "name": "Unlock Zone 2 Buff",
+            "id": "Mining_2_ZoneBuff2",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone 2.",
+            "unlockCost": [
+                {
+                    "resourceId": "eternalpyramid",
+                    "count": 20
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 3",
+            "id": "Mining_2_ZoneDiscovery3",
+            "abilityId": "unlock_zone",
+            "abilityParam": "300",
+            "description": "Unlock the Section of Zone 3.",
+            "unlockCost": [
+                {
+                    "resourceId": "copper",
+                    "count": 10
+                },
+                {
+                    "resourceId": "copperbar",
+                    "count": 20
+                }
+            ],
+            "children": [
+                "Mining_3_ZoneBuff3",
+                "Mining_3_ZoneDiscovery4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 3 Buff",
+            "id": "Mining_3_ZoneBuff3",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone 3.",
+            "unlockCost": [
+                {
+                    "resourceId": "evileye",
+                    "count": 20
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 4",
+            "id": "Mining_3_ZoneDiscovery4",
+            "abilityId": "unlock_zone",
+            "abilityParam": "400",
+            "description": "Unlock the Section of Zone 4.",
+            "unlockCost": [
+                {
+                    "resourceId": "evileye",
+                    "count": 10
+                },
+                {
+                    "resourceId": "iron",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "Mining_4_ZoneBuff4",
+                "Mining_4_ZoneDiscovery5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 4 Buff",
+            "id": "Mining_4_ZoneBuff4",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "400:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone 4.",
+            "unlockCost": [
+                {
+                    "resourceId": "thunderbar",
+                    "count": 50
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 5",
+            "id": "Mining_4_ZoneDiscovery5",
+            "abilityId": "unlock_zone",
+            "abilityParam": "500",
+            "description": "Unlock the Section of Zone 5.",
+            "unlockCost": [
+                {
+                    "resourceId": "death_skull",
+                    "count": 10
+                },
+                {
+                    "resourceId": "magma",
+                    "count": 5
+                }
+            ],
+            "children": [
+                "Mining_5_ZoneDiscovery6",
+                "Mining_5_ZoneBuff5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 5 Buff",
+            "id": "Mining_5_ZoneBuff5",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "500:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone 5.",
+            "unlockCost": [
+                {
+                    "resourceId": "flamingmarble",
+                    "count": 10
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 6",
+            "id": "Mining_5_ZoneDiscovery6",
+            "abilityId": "unlock_zone",
+            "abilityParam": "600",
+            "description": "Unlock the Section of Zone 6.",
+            "unlockCost": [
+                {
+                    "resourceId": "magmachunk",
+                    "count": 5
+                },
+                {
+                    "resourceId": "blazingknife",
+                    "count": 10
+                }
+            ],
+            "children": []
+        }
+    ]
+}

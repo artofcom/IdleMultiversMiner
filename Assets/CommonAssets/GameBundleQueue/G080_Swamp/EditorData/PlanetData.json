@@ -1,0 +1,659 @@
+{
+    "data": [
+        {
+            "zoneId": 100,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Lost Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.800000011920929
+                        },
+                        {
+                            "resourceId": "undeadFinger",
+                            "yield": 0.20000000298023225
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.3:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Creepy Land",
+                    "openCost": "300",
+                    "obtainables": [
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.800000011920929
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.3:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=30:incPercent=100:incBase=40",
+                    "shipCost": "base=30:incPercent=100:incBase=40",
+                    "cargoCost": "base=30:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=30:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=30:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 3,
+                    "name": "Smoke Hills",
+                    "openCost": "550",
+                    "obtainables": [
+                        {
+                            "resourceId": "coal",
+                            "yield": 0.6000000238418579
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.3:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=50:incPercent=100:incBase=40",
+                    "shipCost": "base=50:incPercent=100:incBase=40",
+                    "cargoCost": "base=50:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=50:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=50:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 200,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "1000",
+                    "obtainables": [
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 1.0
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=100:incPercent=100:incBase=40",
+                    "shipCost": "base=100:incPercent=100:incBase=40",
+                    "cargoCost": "base=100:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "1200",
+                    "obtainables": [
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=140:incPercent=100:incBase=40",
+                    "shipCost": "base=140:incPercent=100:incBase=40",
+                    "cargoCost": "base=140:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=140:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=140:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 3,
+                    "name": "Sad Land",
+                    "openCost": "1400",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=180:incPercent=100:incBase=40",
+                    "shipCost": "base=180:incPercent=100:incBase=40",
+                    "cargoCost": "base=180:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=180:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=180:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 300,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "1600",
+                    "obtainables": [
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.8999999761581421
+                        },
+                        {
+                            "resourceId": "soulWater",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=220:incPercent=100:incBase=40",
+                    "shipCost": "base=220:incPercent=100:incBase=40",
+                    "cargoCost": "base=220:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=220:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=220:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "1800",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "soulWater",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=260:incPercent=100:incBase=40",
+                    "shipCost": "base=260:incPercent=100:incBase=40",
+                    "cargoCost": "base=260:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=260:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=260:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 3,
+                    "name": "Sad Land",
+                    "openCost": "2000",
+                    "obtainables": [
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.8999999761581421
+                        },
+                        {
+                            "resourceId": "skull",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=330:incPercent=100:incBase=40",
+                    "shipCost": "base=330:incPercent=100:incBase=40",
+                    "cargoCost": "base=330:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=330:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=330:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 400,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "2200",
+                    "obtainables": [
+                        {
+                            "resourceId": "soulWater",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=380:incPercent=100:incBase=40",
+                    "shipCost": "base=380:incPercent=100:incBase=40",
+                    "cargoCost": "base=380:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=380:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=380:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "2400",
+                    "obtainables": [
+                        {
+                            "resourceId": "skull",
+                            "yield": 0.800000011920929
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=420:incPercent=100:incBase=40",
+                    "shipCost": "base=420:incPercent=100:incBase=40",
+                    "cargoCost": "base=420:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=420:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=420:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 3,
+                    "name": "Sad Land",
+                    "openCost": "2600",
+                    "obtainables": [
+                        {
+                            "resourceId": "skull",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "spider",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=450:incPercent=100:incBase=40",
+                    "shipCost": "base=450:incPercent=100:incBase=40",
+                    "cargoCost": "base=450:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=450:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=450:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 500,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "3000",
+                    "obtainables": [
+                        {
+                            "resourceId": "skull",
+                            "yield": 0.6000000238418579
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=490:incPercent=100:incBase=40",
+                    "shipCost": "base=490:incPercent=100:incBase=40",
+                    "cargoCost": "base=490:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=490:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=490:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "3400",
+                    "obtainables": [
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.699999988079071
+                        },
+                        {
+                            "resourceId": "spider",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=530:incPercent=100:incBase=40",
+                    "shipCost": "base=530:incPercent=100:incBase=40",
+                    "cargoCost": "base=530:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=530:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=530:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 3,
+                    "name": "Sad Land",
+                    "openCost": "3700",
+                    "obtainables": [
+                        {
+                            "resourceId": "soulWater",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "dragonScale",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=580:incPercent=100:incBase=40",
+                    "shipCost": "base=580:incPercent=100:incBase=40",
+                    "cargoCost": "base=580:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=580:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=580:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 600,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "4000",
+                    "obtainables": [
+                        {
+                            "resourceId": "spider",
+                            "yield": 0.699999988079071
+                        },
+                        {
+                            "resourceId": "soulWater",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=650:incPercent=100:incBase=40",
+                    "shipCost": "base=650:incPercent=100:incBase=40",
+                    "cargoCost": "base=650:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=650:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=650:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "4400",
+                    "obtainables": [
+                        {
+                            "resourceId": "spider",
+                            "yield": 0.800000011920929
+                        },
+                        {
+                            "resourceId": "dragonScale",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=700:incPercent=100:incBase=40",
+                    "shipCost": "base=700:incPercent=100:incBase=40",
+                    "cargoCost": "base=700:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=700:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=700:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 700,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 800,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 900,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                }
+            ]
+        },
+        {
+            "zoneId": 1000,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "Coal",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "UndeadFinger",
+                            "yield": 0.10000000149011612
+                        }
+                    ],
+                    "miningRate": "base=1:incPercent=100:incBase=0",
+                    "shipSpeed": "base=0.1:incPercent=2:incBase=1",
+                    "cargoSize": "base=1:incPercent=100:incBase=1",
+                    "shotAccuracy": "base=0.2:incPercent=100:incBase=0.05",
+                    "shotInterval": "base=5:incPercent=30:incBase=-0.01",
+                    "miningCost": "base=16:incPercent=100:incBase=40",
+                    "shipCost": "base=16:incPercent=100:incBase=40",
+                    "cargoCost": "base=16:incPercent=100:incBase=40",
+                    "shotAccuracyCost": "base=16:incPercent=100:incBase=40",
+                    "shotIntervalCost": "base=16:incPercent=100:incBase=40"
+                }
+            ]
+        }
+    ]
+}

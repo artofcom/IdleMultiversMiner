@@ -1,0 +1,139 @@
+{
+    "id": "ItemCraft",
+    "rootId": "ItemCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "ItemCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "itemcraft",
+            "description": "Unlock Craft for Items.",
+            "unlockCost": [
+                {
+                    "resourceId": "bonepowder",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_1_SwiftQuenching"
+            ]
+        },
+        {
+            "name": "Swift Quenching",
+            "id": "ItemCraft_1_SwiftQuenching",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduce forge duration 5% faster.",
+            "unlockCost": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 10
+                },
+                {
+                    "resourceId": "deathwrapper",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "ItemCraft_2_MaterialEconomy",
+                "ItemCraft_2_MultiProductionOptimization"
+            ]
+        },
+        {
+            "name": "Material Economy",
+            "id": "ItemCraft_2_MaterialEconomy",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:resource=0.95",
+            "description": "Save costs 5% less.",
+            "unlockCost": [
+                {
+                    "resourceId": "deathweb",
+                    "count": 10
+                },
+                {
+                    "resourceId": "deathdoll",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "ItemCraft_3_EssenceOfCreation"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization",
+            "id": "ItemCraft_2_MultiProductionOptimization",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Save costs 5% less when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "blazingknife",
+                    "count": 10
+                },
+                {
+                    "resourceId": "demoneye",
+                    "count": 35
+                }
+            ],
+            "children": [
+                "ItemCraft_4_EssenseOfCreation2"
+            ]
+        },
+        {
+            "name": "Essence Of Creation",
+            "id": "ItemCraft_3_EssenceOfCreation",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:resource=0.95",
+            "description": "Save costs 5% less.",
+            "unlockCost": [
+                {
+                    "resourceId": "demonicpoison",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bloodypoison",
+                    "count": 35
+                }
+            ],
+            "children": [
+                "ItemCraft_4_MultiProductionOptimization2"
+            ]
+        },
+        {
+            "name": "Essense Of Creation 2",
+            "id": "ItemCraft_4_EssenseOfCreation2",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduce forge duration 5% faster.",
+            "unlockCost": [
+                {
+                    "resourceId": "infinitypond",
+                    "count": 10
+                },
+                {
+                    "resourceId": "flamingmarble",
+                    "count": 25
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Multi Production Optimization 2",
+            "id": "ItemCraft_4_MultiProductionOptimization2",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduce forge duration 5% faster when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "ironbar",
+                    "count": 10
+                },
+                {
+                    "resourceId": "demonicwater",
+                    "count": 40
+                }
+            ],
+            "children": []
+        }
+    ]
+}

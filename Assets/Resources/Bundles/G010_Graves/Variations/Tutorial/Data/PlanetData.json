@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "zoneId": 100,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Lost Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "blightedbone",
+                            "yield": 0.6499999761581421
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.80:incPercent=80.00:incBase=0.20",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.10",
+                    "shotAccuracy": "base=1.00:incPercent=100.00:incBase=0.02",
+                    "shotInterval": "base=2.50:incPercent=100.00:incBase=-0.07",
+                    "miningCost": "base=10:incPercent=10000:incBase=10",
+                    "shipCost": "base=10:incPercent=10000:incBase=10",
+                    "cargoCost": "base=10:incPercent=10000:incBase=10",
+                    "shotAccuracyCost": "base=10:incPercent=10000:incBase=10",
+                    "shotIntervalCost": "base=10:incPercent=10000:incBase=10"
+                },
+                {
+                    "id": 2,
+                    "name": "Creepy Land",
+                    "openCost": "340",
+                    "obtainables": [
+                        {
+                            "resourceId": "blightedbone",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "whisperingskull",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.80:incPercent=80.00:incBase=0.20",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.10",
+                    "shotAccuracy": "base=1.00:incPercent=100.00:incBase=0.02",
+                    "shotInterval": "base=2.50:incPercent=100.00:incBase=-0.07",
+                    "miningCost": "base=25:incPercent=12500:incBase=12",
+                    "shipCost": "base=25:incPercent=12500:incBase=12",
+                    "cargoCost": "base=25:incPercent=12500:incBase=12",
+                    "shotAccuracyCost": "base=25:incPercent=12500:incBase=12",
+                    "shotIntervalCost": "base=25:incPercent=12500:incBase=12"
+                }
+            ]
+        },
+        {
+            "zoneId": 200,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Smoke Hills",
+                    "openCost": "580",
+                    "obtainables": [
+                        {
+                            "resourceId": "hollowvisage",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "boneidol",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.80:incPercent=80.00:incBase=0.20",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.10",
+                    "shotAccuracy": "base=1.00:incPercent=100.00:incBase=0.02",
+                    "shotInterval": "base=2.50:incPercent=100.00:incBase=-0.07",
+                    "miningCost": "base=40:incPercent=15000:incBase=15",
+                    "shipCost": "base=40:incPercent=15000:incBase=15",
+                    "cargoCost": "base=40:incPercent=15000:incBase=15",
+                    "shotAccuracyCost": "base=40:incPercent=15000:incBase=15",
+                    "shotIntervalCost": "base=40:incPercent=15000:incBase=15"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "money": [
+        {
+            "stringAmount": "1000",
+            "type": 0
+        },
+        {
+            "amount": 50,
+            "type": 1
+        }
+    ],
+      
+    "ResourceCollectInfos":[
+        {
+            "RscId": "AAA",
+            "CountX1000Str": "123",
+            "AutoSell": false
+        },
+        {
+            "RscId": "BBB",
+            "CountX1000Str": "1023",
+            "AutoSell": false
+        }
+    ],
+
+    "CraftingCompSlots":[
+        {
+            "RecipeId": "aaa",
+            "ProgressedTime": 10
+        }
+    ],
+    "CraftingItemSlots":[
+        {
+            "RecipeId": "qqq",
+            "ProgressedTime": 10
+        },
+        {
+            "RecipeId": "rrr",
+            "ProgressedTime": 30
+        }
+    ],
+    "ManagerSlots":[
+        {
+            "managerId": "ManagerA",
+            "assignedPlanetId": 0
+        }
+    ],
+    "OwnedManagers": [
+        {
+            "managerId": "ManagerA",
+            "name": "Cool Guy",
+            "level": 2
+        }
+    ],
+    "skillTreeProcInfo": {
+        "workingSkills": [
+            "BetterEyeLv1"
+        ]
+    },
+    "PlanetStatus":{
+        "VisiblePlanets": [
+            {
+                "PlanetId": 1,
+                "IsOpened": true,
+                "ManagerId": "",
+                "Level": [ 1, 2, 2 ]
+            },
+            {
+                "PlanetId": 2,
+                "IsOpened": true,
+                "ManagerId": "",
+                "Level": [ 1, 2, 2 ]
+            },
+            {
+                "PlanetId": 3,
+                "IsOpened": false,
+                "ManagerId": "",
+                "Level": [ 1, 2, 2 ]
+            }
+        ]
+    },
+    "PurchasedCompRecipIndex":1,
+    "PurchasedItemRecipIndex":0
+}

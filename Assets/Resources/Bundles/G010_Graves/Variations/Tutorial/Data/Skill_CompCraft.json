@@ -1,0 +1,20 @@
+{
+    "id": "CompCraft",
+    "rootId": "CompCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "CompCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "compcraft",
+            "description": "Unlock the Forge for Components.",
+            "unlockCost": [
+                {
+                    "resourceId": "blightedbone",
+                    "count": 2
+                }
+            ],
+            "children": []
+        }
+    ]
+}

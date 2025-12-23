@@ -1,0 +1,20 @@
+{
+    "id": "Goal",
+    "rootId": "GoalSection_0_Final",
+    "skillInfoPool": [
+        {
+            "name": "Game Reset",
+            "id": "GoalSection_0_Final",
+            "abilityId": "game_reset",
+            "abilityParam": "star:5",
+            "description": "Open ability to Reset the level and Award Stars.",
+            "unlockCost": [
+                {
+                    "resourceId": "boneidol",
+                    "count": 2
+                }
+            ],
+            "children": []
+        }
+    ]
+}

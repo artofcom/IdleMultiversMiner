@@ -1,0 +1,90 @@
+{
+  "categoryId": "market",
+  "skillInfo": [
+    {
+      "id": 100,
+      "name": "Open Rsc Market Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "Resurrection",
+          "count": 100
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Rsc sell price 5% more",
+      "description": "proj 200's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "300",
+      "unlockCost": [
+        {
+          "resourceId": "Mgma",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 150
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Manual Booster Time 5% longer",
+      "description": "proj 200's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "300",
+      "unlockCost": [
+        {
+          "resourceId": "Mgma",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 150
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Rsc sell price 5% more",
+      "description": "proj 200's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "300",
+      "unlockCost": [
+        {
+          "resourceId": "Mgma",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 150
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Manual Booster Time 5% longer",
+      "description": "proj 200's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "300",
+      "unlockCost": [
+        {
+          "resourceId": "Mgma",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 150
+        }
+      ]
+    }
+  ]
+}

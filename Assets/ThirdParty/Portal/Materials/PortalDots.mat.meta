@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73db575dc15724ad9acdf49f828bb8f3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 129032
+  packageName: 2D Toon Portals
+  packageVersion: 1.0
+  assetPath: Assets/Portal/Materials/PortalDots.mat
+  uploadId: 268374

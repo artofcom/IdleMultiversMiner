@@ -1,0 +1,4670 @@
+fileFormatVersion: 2
+guid: bc5948f26a03f9a40bb1b4846750ef4a
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Lava Tileset/Demo/Preview/Lava_River_River Path.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Lava_River_Path_07 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2180
+      width: 113
+      height: 83
+    spriteID: 143820c6706a57144abf463d094a52d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2180}
+    spritePosition: {x: 1428, y: 195}
+  - name: Lava_River_Path_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3729
+      width: 113
+      height: 79
+    spriteID: bb90d39fff65b784b965a45807db47f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3729}
+    spritePosition: {x: 1475, y: 233}
+  - name: Lava_River_Path_05 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2271
+      width: 113
+      height: 83
+    spriteID: 357debbbae81e5942b283958bf16a595
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2271}
+    spritePosition: {x: 1531, y: 270}
+  - name: Lava_River_Path_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3816
+      width: 43
+      height: 31
+    spriteID: 07a62350e66985f418a0aef48bc2195e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3816}
+    spritePosition: {x: 1372, y: 109}
+  - name: Lava_River_Path_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3925
+      width: 43
+      height: 30
+    spriteID: 0871580b64f896c4f9d0d7b2847c361a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3925}
+    spritePosition: {x: 1385, y: 120}
+  - name: Lava_River_Path_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3855
+      width: 43
+      height: 31
+    spriteID: 3910c67fb72585042b14d9e540c0d12e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3855}
+    spritePosition: {x: 1400, y: 128}
+  - name: Lava_River_Path_04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3989
+      width: 18
+      height: 26
+    spriteID: 36040206ff2a1694d8cedccce6fb5b54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3989}
+    spritePosition: {x: 1266, y: 348}
+  - name: Lava_River_Path_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 3989
+      width: 18
+      height: 26
+    spriteID: 752b45246212f2f4eb9cd7a8dc676e0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 3989}
+    spritePosition: {x: 1304, y: 346}
+  - name: Lava_River_Path_03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3623
+      width: 18
+      height: 26
+    spriteID: d4dcbff3bd2d02a46aba61e649af57a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3623}
+    spritePosition: {x: 1253, y: 348}
+  - name: Lava_River_Path_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3657
+      width: 18
+      height: 26
+    spriteID: b9319b82a0ee9c54da624f772e136d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3657}
+    spritePosition: {x: 1291, y: 346}
+  - name: Lava_River_Path_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3691
+      width: 18
+      height: 26
+    spriteID: d45c84f112e61ca4d908035936f6526c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3691}
+    spritePosition: {x: 1278, y: 347}
+  - name: Lava_River_Path_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3816
+      width: 67
+      height: 101
+    spriteID: 0ce6e6573a159ed48911108dfd402a3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3816}
+    spritePosition: {x: 1815, y: 359}
+  - name: Lava_River_Path_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3414
+      width: 68
+      height: 99
+    spriteID: 76d89e41228618f47a0cba7fa8b05bb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3414}
+    spritePosition: {x: 1733, y: 358}
+  - name: Lava_River_Path_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3925
+      width: 67
+      height: 101
+    spriteID: ef550648ff2257148a253e7ee5b0e5de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3925}
+    spritePosition: {x: 1653, y: 360}
+  - name: Lava_River_Path_01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 4061
+      width: 16
+      height: 19
+    spriteID: cfe82fa0e0b544f4e97c44db8ad95557
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 4061}
+    spritePosition: {x: 1242, y: 370}
+  - name: Lava_River_Path_01 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2180
+      width: 16
+      height: 19
+    spriteID: f74a20fa43bb81c42ae2a374034ef4a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2180}
+    spritePosition: {x: 1349, y: 120}
+  - name: Lava_River_Path_01 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2207
+      width: 16
+      height: 19
+    spriteID: 6fb73ced1d1cccd449c080fb889163cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2207}
+    spritePosition: {x: 1384, y: 96}
+  - name: Lava_River_Path_01 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2234
+      width: 16
+      height: 19
+    spriteID: 7de096d08f7e54f449d7a2f536c1d50a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2234}
+    spritePosition: {x: 1443, y: 143}
+  - name: Lava_River_Path_01 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2271
+      width: 16
+      height: 19
+    spriteID: a1b29d0e118bf5a4e8bf7d8836c02e61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2271}
+    spritePosition: {x: 1412, y: 163}
+  - name: Lava_River_Path_01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2298
+      width: 16
+      height: 19
+    spriteID: b16a96ac8226da642a296c0b1693370a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2298}
+    spritePosition: {x: 1318, y: 339}
+  - name: Lava_River_Path_01 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2325
+      width: 16
+      height: 19
+    spriteID: 5b57ff10b27bd2241a7eab5952e87448
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2325}
+    spritePosition: {x: 1234, y: 345}
+  - name: Lava_River_Path_01 copy 12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3170
+      width: 16
+      height: 19
+    spriteID: 496d5d06e1c1efd41bea1454fe6a4b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3170}
+    spritePosition: {x: 1508, y: 957}
+  - name: Lava_River_Path_01 copy 11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3197
+      width: 16
+      height: 19
+    spriteID: ffb2b3ea2b6d7e841b0d2968f80ef4f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3197}
+    spritePosition: {x: 1531, y: 976}
+  - name: Lava_River_Path_01 copy 10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3224
+      width: 16
+      height: 19
+    spriteID: 2ab669161226282438230ef9196c0e5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3224}
+    spritePosition: {x: 1531, y: 863}
+  - name: Lava_River_Path_01 copy 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3251
+      width: 16
+      height: 19
+    spriteID: 8cfc9bea3ef297c48ab7f2ed1988faee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3251}
+    spritePosition: {x: 1561, y: 885}
+  - name: Lava_River_Path_01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3278
+      width: 16
+      height: 19
+    spriteID: 7845795ac0634e04fb32024e030728b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3278}
+    spritePosition: {x: 1322, y: 368}
+  - name: Lava_River_Path_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3623
+      width: 51
+      height: 64
+    spriteID: 10d10170252685e448138bda7edb5cfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3623}
+    spritePosition: {x: 1762, y: 511}
+  - name: Lava_River_Path_16 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4061
+      width: 22
+      height: 15
+    spriteID: d6230f91712446b478c930bddffdd6af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4061}
+    spritePosition: {x: 1207, y: 788}
+  - name: Lava_River_Path_16 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3147
+      width: 22
+      height: 15
+    spriteID: 160e0d00c79c05d4c8a3964f0a328b46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3147}
+    spritePosition: {x: 1498, y: 708}
+  - name: Lava_River_Path_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 4034
+      width: 77
+      height: 55
+    spriteID: 5a7f8647402b76f44a2aedf68ed8eb8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 4034}
+    spritePosition: {x: 1533, y: 563}
+  - name: Lava_River_Path_15 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3305
+      width: 14
+      height: 12
+    spriteID: 62dcfb4e825918d40b10792f0f3a061c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3305}
+    spritePosition: {x: 1266, y: 275}
+  - name: Lava_River_Path_15 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 2362
+      width: 30
+      height: 28
+    spriteID: a8fd6b47c090139469b9b60b71bedb72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 2362}
+    spritePosition: {x: 1342, y: 515}
+  - name: Lava_River_Path_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3091
+      width: 50
+      height: 48
+    spriteID: 626a444c4f2e542468faeb801e86bcd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3091}
+    spritePosition: {x: 1549, y: 482}
+  - name: Lava_River_Path_14 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4061
+      width: 33
+      height: 14
+    spriteID: c695d14c8a181ea4cb5b5a70348cdac9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4061}
+    spritePosition: {x: 1543, y: 938}
+  - name: Lava_River_Path_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 4081
+      width: 32
+      height: 10
+    spriteID: 573031679f1a8894690e77c598fdd845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 4081}
+    spritePosition: {x: 1545, y: 929}
+  - name: Lava_River_Path_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 45
+      y: 4061
+      width: 33
+      height: 14
+    spriteID: ff0ad4125e153824a8762397a32c4a9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 45, y: 4061}
+    spritePosition: {x: 1538, y: 918}
+  - name: Lava_River_Path_11 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 4061
+      width: 31
+      height: 14
+    spriteID: 9e426174bbcd0844e991a45144cd47fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 4061}
+    spritePosition: {x: 1531, y: 910}
+  - name: Lava_River_Path_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 4061
+      width: 35
+      height: 12
+    spriteID: 58447a20ea3c3ea47b62840f26582875
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 4061}
+    spritePosition: {x: 1521, y: 902}
+  - name: Lava_River_Path_09 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3894
+      width: 35
+      height: 16
+    spriteID: a66bc87c194512b4cb053b584132d77c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3894}
+    spritePosition: {x: 1520, y: 887}
+  - name: Lava_River_Path_08 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3695
+      width: 30
+      height: 18
+    spriteID: caab00ebff41b504abb662c6a6ac2fc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3695}
+    spritePosition: {x: 1521, y: 955}
+  - name: Lava_River_Path_08 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4034
+      width: 30
+      height: 18
+    spriteID: 000e4daf3f137a74b87f66db77473dd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4034}
+    spritePosition: {x: 1529, y: 949}
+  - name: Lava_River_Path_08 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4060
+      width: 30
+      height: 18
+    spriteID: 94fefa5b4cdbb9043b8fecba52f3f64c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4060}
+    spritePosition: {x: 1536, y: 943}
+  - name: Lava_River_Path_08 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3963
+      width: 30
+      height: 18
+    spriteID: 75be232aae5871b4eb5dad61c4adde29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3963}
+    spritePosition: {x: 1528, y: 877}
+  - name: Lava_River_Path_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 760
+      y: 2362
+      width: 91
+      height: 38
+    spriteID: 2e55ff8fa25a81a45bb7f3cd93b7507e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 760, y: 2362}
+    spritePosition: {x: 1738, y: 872}
+  - name: Lava_River_Path_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1801
+      y: 2367
+      width: 95
+      height: 29
+    spriteID: bd60b08de68653c4cbe6eeb15516ad52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1801, y: 2367}
+    spritePosition: {x: 1745, y: 832}
+  - name: Lava_River_Path_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1597
+      y: 2367
+      width: 92
+      height: 37
+    spriteID: d04e8187057036b4690bce9469dd1dfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1597, y: 2367}
+    spritePosition: {x: 1723, y: 795}
+  - name: Lava_River_Path_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3578
+      width: 90
+      height: 37
+    spriteID: 76d9759c683429b438de76e273790587
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3578}
+    spritePosition: {x: 1690, y: 765}
+  - name: Lava_River_Path_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1697
+      y: 2367
+      width: 96
+      height: 31
+    spriteID: 09e529981f393b840982a95ef600a1a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1697, y: 2367}
+    spritePosition: {x: 1666, y: 734}
+  - name: Lava_River_Path_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2362
+      width: 96
+      height: 42
+    spriteID: 5f665cc4044529f4baca23b560eb7122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2362}
+    spritePosition: {x: 1666, y: 685}
+  - name: Lava_River_Path_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3521
+      width: 84
+      height: 49
+    spriteID: 1faa4b9fdececad4eb7491acd5f903cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3521}
+    spritePosition: {x: 1690, y: 645}
+  - name: Lava_River_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 2412
+      width: 197
+      height: 258
+    spriteID: f7e6715c5c8d8174687f1b572ee708a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 2412}
+    spritePosition: {x: 331, y: 794}
+  - name: Lava_River_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 981
+      y: 2412
+      width: 254
+      height: 69
+    spriteID: 20b968cea3ba214499f1e60a56cc7765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 981, y: 2396}
+    spritePosition: {x: 1666, y: 1011}
+  - name: Lava_River_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 760
+      y: 2180
+      width: 405
+      height: 174
+    spriteID: 5e96d00d6c06dd049804555b0f37479c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 760, y: 2180}
+    spritePosition: {x: 637, y: 685}
+  - name: Lava_River_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1173
+      y: 2180
+      width: 416
+      height: 166
+    spriteID: 4b3cbc3831dbaeb4f9d338213ad09ef0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1173, y: 2180}
+    spritePosition: {x: 626, y: 824}
+  - name: Lava_River_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2900
+      width: 327
+      height: 246
+    spriteID: 45805a3e6d6c44b4097f45eedf370255
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2900}
+    spritePosition: {x: 42, y: 286}
+  - name: Lava_River_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3380
+      width: 154
+      height: 221
+    spriteID: f964e576d25d8974f8cda9256bb8d734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3380}
+    spritePosition: {x: 888, y: 21}
+  - name: Lava_River_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 2412
+      width: 191
+      height: 323
+    spriteID: 548d0bdb9e382254aace1f3607ad817e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 2412}
+    spritePosition: {x: 1119, y: 757}
+  - name: Lava_River_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3091
+      width: 137
+      height: 281
+    spriteID: 018fd22c5b4ab63498f5d3771de36971
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3091}
+    spritePosition: {x: 828, y: 256}
+  - name: Lava_River_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1597
+      y: 2180
+      width: 302
+      height: 179
+    spriteID: 0c80aea4f4795084c8937472912207d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1597, y: 2180}
+    spritePosition: {x: 452, y: 345}
+  - name: Lava_River_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 2180
+      width: 394
+      height: 224
+    spriteID: a9c5298068b42b04d88f6e54baf6a4ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 2180}
+    spritePosition: {x: 1526, y: 0}
+  - name: Lava_River_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3154
+      width: 303
+      height: 252
+    spriteID: 095bc7d23e5f90b469f862afc259e15f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3154}
+    spritePosition: {x: 42, y: 21}
+  - name: Lava_River_11 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 346
+      height: 429
+    spriteID: 6b81e6f2b2083e8448ead2c3c4bb9641
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1211, y: 329}
+  - name: Lava_River_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3414
+      width: 248
+      height: 307
+    spriteID: 05634aa98a32d7b4f84e01985ffc644e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3414}
+    spritePosition: {x: 445, y: 22}
+  - name: Lava_River_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2617
+      width: 295
+      height: 275
+    spriteID: 66364dad20e00f44faca9f9c90721275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2617}
+    spritePosition: {x: 1237, y: 56}
+  - name: Lava_River_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2412
+      width: 211
+      height: 197
+    spriteID: c522c30cc5e8e0a49b3e30fc5b9203a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2412}
+    spritePosition: {x: 88, y: 586}
+  - name: Lava_River_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2617
+      width: 211
+      height: 197
+    spriteID: 56afda1693ee5c2489afbd3464f4e693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2617}
+    spritePosition: {x: 317, y: 586}
+  - name: Lava_River_08 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3729
+      width: 215
+      height: 324
+    spriteID: 6691599dbd6203045a55bcb7fd2ba793
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3729}
+    spritePosition: {x: 1459, y: 756}
+  - name: Lava_River_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2822
+      width: 154
+      height: 261
+    spriteID: ae0b2220f5087e849b68dddca96d6bc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2822}
+    spritePosition: {x: 73, y: 795}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 1274691a97679e84c91817195d0abad8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 2283f34d61072854eac2e7120e7f1217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Lava_River_Path_07 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2180
+      width: 113
+      height: 83
+    spriteID: 143820c6706a57144abf463d094a52d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2180}
+    spritePosition: {x: 1428, y: 195}
+  - name: Lava_River_Path_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3729
+      width: 113
+      height: 79
+    spriteID: bb90d39fff65b784b965a45807db47f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3729}
+    spritePosition: {x: 1475, y: 233}
+  - name: Lava_River_Path_05 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2271
+      width: 113
+      height: 83
+    spriteID: 357debbbae81e5942b283958bf16a595
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2271}
+    spritePosition: {x: 1531, y: 270}
+  - name: Lava_River_Path_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3816
+      width: 43
+      height: 31
+    spriteID: 07a62350e66985f418a0aef48bc2195e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3816}
+    spritePosition: {x: 1372, y: 109}
+  - name: Lava_River_Path_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3925
+      width: 43
+      height: 30
+    spriteID: 0871580b64f896c4f9d0d7b2847c361a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3925}
+    spritePosition: {x: 1385, y: 120}
+  - name: Lava_River_Path_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3855
+      width: 43
+      height: 31
+    spriteID: 3910c67fb72585042b14d9e540c0d12e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3855}
+    spritePosition: {x: 1400, y: 128}
+  - name: Lava_River_Path_04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3989
+      width: 18
+      height: 26
+    spriteID: 36040206ff2a1694d8cedccce6fb5b54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3989}
+    spritePosition: {x: 1266, y: 348}
+  - name: Lava_River_Path_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 3989
+      width: 18
+      height: 26
+    spriteID: 752b45246212f2f4eb9cd7a8dc676e0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 3989}
+    spritePosition: {x: 1304, y: 346}
+  - name: Lava_River_Path_03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3623
+      width: 18
+      height: 26
+    spriteID: d4dcbff3bd2d02a46aba61e649af57a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3623}
+    spritePosition: {x: 1253, y: 348}
+  - name: Lava_River_Path_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3657
+      width: 18
+      height: 26
+    spriteID: b9319b82a0ee9c54da624f772e136d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3657}
+    spritePosition: {x: 1291, y: 346}
+  - name: Lava_River_Path_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 3691
+      width: 18
+      height: 26
+    spriteID: d45c84f112e61ca4d908035936f6526c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 3691}
+    spritePosition: {x: 1278, y: 347}
+  - name: Lava_River_Path_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3816
+      width: 67
+      height: 101
+    spriteID: 0ce6e6573a159ed48911108dfd402a3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3816}
+    spritePosition: {x: 1815, y: 359}
+  - name: Lava_River_Path_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3414
+      width: 68
+      height: 99
+    spriteID: 76d89e41228618f47a0cba7fa8b05bb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3414}
+    spritePosition: {x: 1733, y: 358}
+  - name: Lava_River_Path_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 3925
+      width: 67
+      height: 101
+    spriteID: ef550648ff2257148a253e7ee5b0e5de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 3925}
+    spritePosition: {x: 1653, y: 360}
+  - name: Lava_River_Path_01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 4061
+      width: 16
+      height: 19
+    spriteID: cfe82fa0e0b544f4e97c44db8ad95557
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 4061}
+    spritePosition: {x: 1242, y: 370}
+  - name: Lava_River_Path_01 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2180
+      width: 16
+      height: 19
+    spriteID: f74a20fa43bb81c42ae2a374034ef4a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2180}
+    spritePosition: {x: 1349, y: 120}
+  - name: Lava_River_Path_01 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2207
+      width: 16
+      height: 19
+    spriteID: 6fb73ced1d1cccd449c080fb889163cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2207}
+    spritePosition: {x: 1384, y: 96}
+  - name: Lava_River_Path_01 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2234
+      width: 16
+      height: 19
+    spriteID: 7de096d08f7e54f449d7a2f536c1d50a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2234}
+    spritePosition: {x: 1443, y: 143}
+  - name: Lava_River_Path_01 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2271
+      width: 16
+      height: 19
+    spriteID: a1b29d0e118bf5a4e8bf7d8836c02e61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2271}
+    spritePosition: {x: 1412, y: 163}
+  - name: Lava_River_Path_01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2298
+      width: 16
+      height: 19
+    spriteID: b16a96ac8226da642a296c0b1693370a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2298}
+    spritePosition: {x: 1318, y: 339}
+  - name: Lava_River_Path_01 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2028
+      y: 2325
+      width: 16
+      height: 19
+    spriteID: 5b57ff10b27bd2241a7eab5952e87448
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2028, y: 2325}
+    spritePosition: {x: 1234, y: 345}
+  - name: Lava_River_Path_01 copy 12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3170
+      width: 16
+      height: 19
+    spriteID: 496d5d06e1c1efd41bea1454fe6a4b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3170}
+    spritePosition: {x: 1508, y: 957}
+  - name: Lava_River_Path_01 copy 11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3197
+      width: 16
+      height: 19
+    spriteID: ffb2b3ea2b6d7e841b0d2968f80ef4f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3197}
+    spritePosition: {x: 1531, y: 976}
+  - name: Lava_River_Path_01 copy 10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3224
+      width: 16
+      height: 19
+    spriteID: 2ab669161226282438230ef9196c0e5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3224}
+    spritePosition: {x: 1531, y: 863}
+  - name: Lava_River_Path_01 copy 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3251
+      width: 16
+      height: 19
+    spriteID: 8cfc9bea3ef297c48ab7f2ed1988faee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3251}
+    spritePosition: {x: 1561, y: 885}
+  - name: Lava_River_Path_01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3278
+      width: 16
+      height: 19
+    spriteID: 7845795ac0634e04fb32024e030728b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3278}
+    spritePosition: {x: 1322, y: 368}
+  - name: Lava_River_Path_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3623
+      width: 51
+      height: 64
+    spriteID: 10d10170252685e448138bda7edb5cfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3623}
+    spritePosition: {x: 1762, y: 511}
+  - name: Lava_River_Path_16 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4061
+      width: 22
+      height: 15
+    spriteID: d6230f91712446b478c930bddffdd6af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4061}
+    spritePosition: {x: 1207, y: 788}
+  - name: Lava_River_Path_16 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3147
+      width: 22
+      height: 15
+    spriteID: 160e0d00c79c05d4c8a3964f0a328b46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3147}
+    spritePosition: {x: 1498, y: 708}
+  - name: Lava_River_Path_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 4034
+      width: 77
+      height: 55
+    spriteID: 5a7f8647402b76f44a2aedf68ed8eb8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 4034}
+    spritePosition: {x: 1533, y: 563}
+  - name: Lava_River_Path_15 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3305
+      width: 14
+      height: 12
+    spriteID: 62dcfb4e825918d40b10792f0f3a061c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3305}
+    spritePosition: {x: 1266, y: 275}
+  - name: Lava_River_Path_15 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2011
+      y: 2362
+      width: 30
+      height: 28
+    spriteID: a8fd6b47c090139469b9b60b71bedb72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 2362}
+    spritePosition: {x: 1342, y: 515}
+  - name: Lava_River_Path_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 3091
+      width: 50
+      height: 48
+    spriteID: 626a444c4f2e542468faeb801e86bcd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 3091}
+    spritePosition: {x: 1549, y: 482}
+  - name: Lava_River_Path_14 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4061
+      width: 33
+      height: 14
+    spriteID: c695d14c8a181ea4cb5b5a70348cdac9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4061}
+    spritePosition: {x: 1543, y: 938}
+  - name: Lava_River_Path_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 4081
+      width: 32
+      height: 10
+    spriteID: 573031679f1a8894690e77c598fdd845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 4081}
+    spritePosition: {x: 1545, y: 929}
+  - name: Lava_River_Path_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 45
+      y: 4061
+      width: 33
+      height: 14
+    spriteID: ff0ad4125e153824a8762397a32c4a9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 45, y: 4061}
+    spritePosition: {x: 1538, y: 918}
+  - name: Lava_River_Path_11 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 4061
+      width: 31
+      height: 14
+    spriteID: 9e426174bbcd0844e991a45144cd47fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 4061}
+    spritePosition: {x: 1531, y: 910}
+  - name: Lava_River_Path_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 4061
+      width: 35
+      height: 12
+    spriteID: 58447a20ea3c3ea47b62840f26582875
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 4061}
+    spritePosition: {x: 1521, y: 902}
+  - name: Lava_River_Path_09 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3894
+      width: 35
+      height: 16
+    spriteID: a66bc87c194512b4cb053b584132d77c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3894}
+    spritePosition: {x: 1520, y: 887}
+  - name: Lava_River_Path_08 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3695
+      width: 30
+      height: 18
+    spriteID: caab00ebff41b504abb662c6a6ac2fc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3695}
+    spritePosition: {x: 1521, y: 955}
+  - name: Lava_River_Path_08 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4034
+      width: 30
+      height: 18
+    spriteID: 000e4daf3f137a74b87f66db77473dd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4034}
+    spritePosition: {x: 1529, y: 949}
+  - name: Lava_River_Path_08 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4060
+      width: 30
+      height: 18
+    spriteID: 94fefa5b4cdbb9043b8fecba52f3f64c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4060}
+    spritePosition: {x: 1536, y: 943}
+  - name: Lava_River_Path_08 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 3963
+      width: 30
+      height: 18
+    spriteID: 75be232aae5871b4eb5dad61c4adde29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 3963}
+    spritePosition: {x: 1528, y: 877}
+  - name: Lava_River_Path_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 760
+      y: 2362
+      width: 91
+      height: 38
+    spriteID: 2e55ff8fa25a81a45bb7f3cd93b7507e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 760, y: 2362}
+    spritePosition: {x: 1738, y: 872}
+  - name: Lava_River_Path_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1801
+      y: 2367
+      width: 95
+      height: 29
+    spriteID: bd60b08de68653c4cbe6eeb15516ad52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1801, y: 2367}
+    spritePosition: {x: 1745, y: 832}
+  - name: Lava_River_Path_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1597
+      y: 2367
+      width: 92
+      height: 37
+    spriteID: d04e8187057036b4690bce9469dd1dfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1597, y: 2367}
+    spritePosition: {x: 1723, y: 795}
+  - name: Lava_River_Path_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3578
+      width: 90
+      height: 37
+    spriteID: 76d9759c683429b438de76e273790587
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3578}
+    spritePosition: {x: 1690, y: 765}
+  - name: Lava_River_Path_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1697
+      y: 2367
+      width: 96
+      height: 31
+    spriteID: 09e529981f393b840982a95ef600a1a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1697, y: 2367}
+    spritePosition: {x: 1666, y: 734}
+  - name: Lava_River_Path_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1907
+      y: 2362
+      width: 96
+      height: 42
+    spriteID: 5f665cc4044529f4baca23b560eb7122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1907, y: 2362}
+    spritePosition: {x: 1666, y: 685}
+  - name: Lava_River_Path_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 3521
+      width: 84
+      height: 49
+    spriteID: 1faa4b9fdececad4eb7491acd5f903cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 3521}
+    spritePosition: {x: 1690, y: 645}
+  - name: Lava_River_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 2412
+      width: 197
+      height: 258
+    spriteID: f7e6715c5c8d8174687f1b572ee708a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 2412}
+    spritePosition: {x: 331, y: 794}
+  - name: Lava_River_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 981
+      y: 2412
+      width: 254
+      height: 69
+    spriteID: 20b968cea3ba214499f1e60a56cc7765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 981, y: 2396}
+    spritePosition: {x: 1666, y: 1011}
+  - name: Lava_River_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 760
+      y: 2180
+      width: 405
+      height: 174
+    spriteID: 5e96d00d6c06dd049804555b0f37479c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 760, y: 2180}
+    spritePosition: {x: 637, y: 685}
+  - name: Lava_River_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1173
+      y: 2180
+      width: 416
+      height: 166
+    spriteID: 4b3cbc3831dbaeb4f9d338213ad09ef0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1173, y: 2180}
+    spritePosition: {x: 626, y: 824}
+  - name: Lava_River_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2900
+      width: 327
+      height: 246
+    spriteID: 45805a3e6d6c44b4097f45eedf370255
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2900}
+    spritePosition: {x: 42, y: 286}
+  - name: Lava_River_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3380
+      width: 154
+      height: 221
+    spriteID: f964e576d25d8974f8cda9256bb8d734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3380}
+    spritePosition: {x: 888, y: 21}
+  - name: Lava_River_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 2412
+      width: 191
+      height: 323
+    spriteID: 548d0bdb9e382254aace1f3607ad817e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 2412}
+    spritePosition: {x: 1119, y: 757}
+  - name: Lava_River_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 3091
+      width: 137
+      height: 281
+    spriteID: 018fd22c5b4ab63498f5d3771de36971
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 3091}
+    spritePosition: {x: 828, y: 256}
+  - name: Lava_River_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1597
+      y: 2180
+      width: 302
+      height: 179
+    spriteID: 0c80aea4f4795084c8937472912207d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1597, y: 2180}
+    spritePosition: {x: 452, y: 345}
+  - name: Lava_River_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 2180
+      width: 394
+      height: 224
+    spriteID: a9c5298068b42b04d88f6e54baf6a4ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 2180}
+    spritePosition: {x: 1526, y: 0}
+  - name: Lava_River_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3154
+      width: 303
+      height: 252
+    spriteID: 095bc7d23e5f90b469f862afc259e15f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3154}
+    spritePosition: {x: 42, y: 21}
+  - name: Lava_River_11 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 346
+      height: 429
+    spriteID: 6b81e6f2b2083e8448ead2c3c4bb9641
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1211, y: 329}
+  - name: Lava_River_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3414
+      width: 248
+      height: 307
+    spriteID: 05634aa98a32d7b4f84e01985ffc644e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3414}
+    spritePosition: {x: 445, y: 22}
+  - name: Lava_River_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2617
+      width: 295
+      height: 275
+    spriteID: 66364dad20e00f44faca9f9c90721275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2617}
+    spritePosition: {x: 1237, y: 56}
+  - name: Lava_River_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2412
+      width: 211
+      height: 197
+    spriteID: c522c30cc5e8e0a49b3e30fc5b9203a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2412}
+    spritePosition: {x: 88, y: 586}
+  - name: Lava_River_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2617
+      width: 211
+      height: 197
+    spriteID: 56afda1693ee5c2489afbd3464f4e693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2617}
+    spritePosition: {x: 317, y: 586}
+  - name: Lava_River_08 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3729
+      width: 215
+      height: 324
+    spriteID: 6691599dbd6203045a55bcb7fd2ba793
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3729}
+    spritePosition: {x: 1459, y: 756}
+  - name: Lava_River_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 762
+      y: 2822
+      width: 154
+      height: 261
+    spriteID: ae0b2220f5087e849b68dddca96d6bc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 762, y: 2822}
+    spritePosition: {x: 73, y: 795}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 1274691a97679e84c91817195d0abad8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 2283f34d61072854eac2e7120e7f1217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Lava_River_Path_07 copy
+    spriteName: Lava_River_Path_07 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 143820c6706a57144abf463d094a52d6
+    layerID: 595
+    mosaicPosition: {x: 1907, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_06 copy
+    spriteName: Lava_River_Path_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb90d39fff65b784b965a45807db47f0
+    layerID: 594
+    mosaicPosition: {x: 227, y: 3729}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_05 copy
+    spriteName: Lava_River_Path_05 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 357debbbae81e5942b283958bf16a595
+    layerID: 593
+    mosaicPosition: {x: 1907, y: 2271}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_07
+    spriteName: Lava_River_Path_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 07a62350e66985f418a0aef48bc2195e
+    layerID: 554
+    mosaicPosition: {x: 302, y: 3816}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_06
+    spriteName: Lava_River_Path_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0871580b64f896c4f9d0d7b2847c361a
+    layerID: 553
+    mosaicPosition: {x: 302, y: 3925}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_05
+    spriteName: Lava_River_Path_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3910c67fb72585042b14d9e540c0d12e
+    layerID: 552
+    mosaicPosition: {x: 302, y: 3855}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04 copy 2
+    spriteName: Lava_River_Path_04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 36040206ff2a1694d8cedccce6fb5b54
+    layerID: 565
+    mosaicPosition: {x: 302, y: 3989}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04 copy
+    spriteName: Lava_River_Path_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 752b45246212f2f4eb9cd7a8dc676e0b
+    layerID: 564
+    mosaicPosition: {x: 328, y: 3989}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03 copy 2
+    spriteName: Lava_River_Path_03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4dcbff3bd2d02a46aba61e649af57a0
+    layerID: 566
+    mosaicPosition: {x: 319, y: 3623}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03 copy
+    spriteName: Lava_River_Path_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b9319b82a0ee9c54da624f772e136d55
+    layerID: 563
+    mosaicPosition: {x: 319, y: 3657}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_02 copy
+    spriteName: Lava_River_Path_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d45c84f112e61ca4d908035936f6526c
+    layerID: 562
+    mosaicPosition: {x: 319, y: 3691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04
+    spriteName: Lava_River_Path_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0ce6e6573a159ed48911108dfd402a3e
+    layerID: 551
+    mosaicPosition: {x: 227, y: 3816}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03
+    spriteName: Lava_River_Path_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76d89e41228618f47a0cba7fa8b05bb7
+    layerID: 550
+    mosaicPosition: {x: 260, y: 3414}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_02
+    spriteName: Lava_River_Path_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ef550648ff2257148a253e7ee5b0e5de
+    layerID: 549
+    mosaicPosition: {x: 227, y: 3925}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 3
+    spriteName: Lava_River_Path_01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfe82fa0e0b544f4e97c44db8ad95557
+    layerID: 568
+    mosaicPosition: {x: 198, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 8
+    spriteName: Lava_River_Path_01 copy 8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f74a20fa43bb81c42ae2a374034ef4a9
+    layerID: 573
+    mosaicPosition: {x: 2028, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 7
+    spriteName: Lava_River_Path_01 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6fb73ced1d1cccd449c080fb889163cf
+    layerID: 572
+    mosaicPosition: {x: 2028, y: 2207}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 6
+    spriteName: Lava_River_Path_01 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7de096d08f7e54f449d7a2f536c1d50a
+    layerID: 571
+    mosaicPosition: {x: 2028, y: 2234}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 5
+    spriteName: Lava_River_Path_01 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a1b29d0e118bf5a4e8bf7d8836c02e61
+    layerID: 570
+    mosaicPosition: {x: 2028, y: 2271}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 2
+    spriteName: Lava_River_Path_01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b16a96ac8226da642a296c0b1693370a
+    layerID: 560
+    mosaicPosition: {x: 2028, y: 2298}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 4
+    spriteName: Lava_River_Path_01 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5b57ff10b27bd2241a7eab5952e87448
+    layerID: 569
+    mosaicPosition: {x: 2028, y: 2325}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 12
+    spriteName: Lava_River_Path_01 copy 12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 496d5d06e1c1efd41bea1454fe6a4b79
+    layerID: 591
+    mosaicPosition: {x: 907, y: 3170}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 11
+    spriteName: Lava_River_Path_01 copy 11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffb2b3ea2b6d7e841b0d2968f80ef4f1
+    layerID: 590
+    mosaicPosition: {x: 907, y: 3197}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 10
+    spriteName: Lava_River_Path_01 copy 10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ab669161226282438230ef9196c0e5b
+    layerID: 589
+    mosaicPosition: {x: 907, y: 3224}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 9
+    spriteName: Lava_River_Path_01 copy 9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8cfc9bea3ef297c48ab7f2ed1988faee
+    layerID: 588
+    mosaicPosition: {x: 907, y: 3251}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy
+    spriteName: Lava_River_Path_01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7845795ac0634e04fb32024e030728b8
+    layerID: 559
+    mosaicPosition: {x: 907, y: 3278}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01
+    spriteName: Lava_River_Path_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10d10170252685e448138bda7edb5cfe
+    layerID: 548
+    mosaicPosition: {x: 260, y: 3623}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16 copy 2
+    spriteName: Lava_River_Path_16 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6230f91712446b478c930bddffdd6af
+    layerID: 557
+    mosaicPosition: {x: 168, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16 copy
+    spriteName: Lava_River_Path_16 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 160e0d00c79c05d4c8a3964f0a328b46
+    layerID: 556
+    mosaicPosition: {x: 907, y: 3147}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16
+    spriteName: Lava_River_Path_16
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a7f8647402b76f44a2aedf68ed8eb8d
+    layerID: 547
+    mosaicPosition: {x: 227, y: 4034}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15 copy 2
+    spriteName: Lava_River_Path_15 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 62dcfb4e825918d40b10792f0f3a061c
+    layerID: 558
+    mosaicPosition: {x: 907, y: 3305}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15 copy
+    spriteName: Lava_River_Path_15 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a8fd6b47c090139469b9b60b71bedb72
+    layerID: 555
+    mosaicPosition: {x: 2011, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15
+    spriteName: Lava_River_Path_15
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 626a444c4f2e542468faeb801e86bcd5
+    layerID: 546
+    mosaicPosition: {x: 907, y: 3091}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_14 copy
+    spriteName: Lava_River_Path_14 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c695d14c8a181ea4cb5b5a70348cdac9
+    layerID: 580
+    mosaicPosition: {x: 4, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_13 copy
+    spriteName: Lava_River_Path_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 573031679f1a8894690e77c598fdd845
+    layerID: 579
+    mosaicPosition: {x: 125, y: 4081}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_12 copy
+    spriteName: Lava_River_Path_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff0ad4125e153824a8762397a32c4a9d
+    layerID: 578
+    mosaicPosition: {x: 45, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_11 copy
+    spriteName: Lava_River_Path_11 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9e426174bbcd0844e991a45144cd47fb
+    layerID: 577
+    mosaicPosition: {x: 86, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_10 copy
+    spriteName: Lava_River_Path_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58447a20ea3c3ea47b62840f26582875
+    layerID: 576
+    mosaicPosition: {x: 125, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_09 copy
+    spriteName: Lava_River_Path_09 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a66bc87c194512b4cb053b584132d77c
+    layerID: 575
+    mosaicPosition: {x: 302, y: 3894}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 4
+    spriteName: Lava_River_Path_08 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: caab00ebff41b504abb662c6a6ac2fc8
+    layerID: 586
+    mosaicPosition: {x: 260, y: 3695}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 3
+    spriteName: Lava_River_Path_08 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 000e4daf3f137a74b87f66db77473dd7
+    layerID: 585
+    mosaicPosition: {x: 312, y: 4034}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 2
+    spriteName: Lava_River_Path_08 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94fefa5b4cdbb9043b8fecba52f3f64c
+    layerID: 581
+    mosaicPosition: {x: 312, y: 4060}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy
+    spriteName: Lava_River_Path_08 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 75be232aae5871b4eb5dad61c4adde29
+    layerID: 574
+    mosaicPosition: {x: 302, y: 3963}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_14
+    spriteName: Lava_River_Path_14
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e55ff8fa25a81a45bb7f3cd93b7507e
+    layerID: 545
+    mosaicPosition: {x: 760, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_13
+    spriteName: Lava_River_Path_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bd60b08de68653c4cbe6eeb15516ad52
+    layerID: 544
+    mosaicPosition: {x: 1801, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_12
+    spriteName: Lava_River_Path_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d04e8187057036b4690bce9469dd1dfa
+    layerID: 543
+    mosaicPosition: {x: 1597, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_11
+    spriteName: Lava_River_Path_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76d9759c683429b438de76e273790587
+    layerID: 542
+    mosaicPosition: {x: 260, y: 3578}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_10
+    spriteName: Lava_River_Path_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09e529981f393b840982a95ef600a1a6
+    layerID: 541
+    mosaicPosition: {x: 1697, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_09
+    spriteName: Lava_River_Path_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5f665cc4044529f4baca23b560eb7122
+    layerID: 540
+    mosaicPosition: {x: 1907, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08
+    spriteName: Lava_River_Path_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1faa4b9fdececad4eb7491acd5f903cd
+    layerID: 539
+    mosaicPosition: {x: 260, y: 3521}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_07
+    spriteName: Lava_River_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f7e6715c5c8d8174687f1b572ee708a5
+    layerID: 531
+    mosaicPosition: {x: 557, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_06 copy
+    spriteName: Lava_River_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20b968cea3ba214499f1e60a56cc7765
+    layerID: 538
+    mosaicPosition: {x: 981, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_06
+    spriteName: Lava_River_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5e96d00d6c06dd049804555b0f37479c
+    layerID: 530
+    mosaicPosition: {x: 760, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_05
+    spriteName: Lava_River_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b3cbc3831dbaeb4f9d338213ad09ef0
+    layerID: 529
+    mosaicPosition: {x: 1173, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_04
+    spriteName: Lava_River_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 45805a3e6d6c44b4097f45eedf370255
+    layerID: 528
+    mosaicPosition: {x: 4, y: 2900}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_03
+    spriteName: Lava_River_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f964e576d25d8974f8cda9256bb8d734
+    layerID: 527
+    mosaicPosition: {x: 762, y: 3380}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_02 copy
+    spriteName: Lava_River_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 548d0bdb9e382254aace1f3607ad817e
+    layerID: 535
+    mosaicPosition: {x: 358, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_02
+    spriteName: Lava_River_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 018fd22c5b4ab63498f5d3771de36971
+    layerID: 526
+    mosaicPosition: {x: 762, y: 3091}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_01
+    spriteName: Lava_River_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c80aea4f4795084c8937472912207d4
+    layerID: 525
+    mosaicPosition: {x: 1597, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_12 copy
+    spriteName: Lava_River_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9c5298068b42b04d88f6e54baf6a4ea
+    layerID: 537
+    mosaicPosition: {x: 358, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_12
+    spriteName: Lava_River_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 095bc7d23e5f90b469f862afc259e15f
+    layerID: 524
+    mosaicPosition: {x: 4, y: 3154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_11 copy
+    spriteName: Lava_River_11 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6b81e6f2b2083e8448ead2c3c4bb9641
+    layerID: 533
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_11
+    spriteName: Lava_River_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05634aa98a32d7b4f84e01985ffc644e
+    layerID: 523
+    mosaicPosition: {x: 4, y: 3414}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_10 copy
+    spriteName: Lava_River_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66364dad20e00f44faca9f9c90721275
+    layerID: 536
+    mosaicPosition: {x: 4, y: 2617}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_10
+    spriteName: Lava_River_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c522c30cc5e8e0a49b3e30fc5b9203a6
+    layerID: 522
+    mosaicPosition: {x: 762, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_09
+    spriteName: Lava_River_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 56afda1693ee5c2489afbd3464f4e693
+    layerID: 521
+    mosaicPosition: {x: 762, y: 2617}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_08 copy
+    spriteName: Lava_River_08 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6691599dbd6203045a55bcb7fd2ba793
+    layerID: 534
+    mosaicPosition: {x: 4, y: 3729}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_08
+    spriteName: Lava_River_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae0b2220f5087e849b68dddca96d6bc5
+    layerID: 520
+    mosaicPosition: {x: 762, y: 2822}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65795e9c203e2124cb1c7b7137eaf30f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1274691a97679e84c91817195d0abad8
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2283f34d61072854eac2e7120e7f1217
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Lava_River_Path_07 copy
+    spriteName: Lava_River_Path_07 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 143820c6706a57144abf463d094a52d6
+    layerID: 595
+    mosaicPosition: {x: 1907, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_06 copy
+    spriteName: Lava_River_Path_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb90d39fff65b784b965a45807db47f0
+    layerID: 594
+    mosaicPosition: {x: 227, y: 3729}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_05 copy
+    spriteName: Lava_River_Path_05 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 357debbbae81e5942b283958bf16a595
+    layerID: 593
+    mosaicPosition: {x: 1907, y: 2271}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_07
+    spriteName: Lava_River_Path_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 07a62350e66985f418a0aef48bc2195e
+    layerID: 554
+    mosaicPosition: {x: 302, y: 3816}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_06
+    spriteName: Lava_River_Path_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0871580b64f896c4f9d0d7b2847c361a
+    layerID: 553
+    mosaicPosition: {x: 302, y: 3925}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_05
+    spriteName: Lava_River_Path_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3910c67fb72585042b14d9e540c0d12e
+    layerID: 552
+    mosaicPosition: {x: 302, y: 3855}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04 copy 2
+    spriteName: Lava_River_Path_04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 36040206ff2a1694d8cedccce6fb5b54
+    layerID: 565
+    mosaicPosition: {x: 302, y: 3989}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04 copy
+    spriteName: Lava_River_Path_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 752b45246212f2f4eb9cd7a8dc676e0b
+    layerID: 564
+    mosaicPosition: {x: 328, y: 3989}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03 copy 2
+    spriteName: Lava_River_Path_03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d4dcbff3bd2d02a46aba61e649af57a0
+    layerID: 566
+    mosaicPosition: {x: 319, y: 3623}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03 copy
+    spriteName: Lava_River_Path_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b9319b82a0ee9c54da624f772e136d55
+    layerID: 563
+    mosaicPosition: {x: 319, y: 3657}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_02 copy
+    spriteName: Lava_River_Path_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d45c84f112e61ca4d908035936f6526c
+    layerID: 562
+    mosaicPosition: {x: 319, y: 3691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_04
+    spriteName: Lava_River_Path_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0ce6e6573a159ed48911108dfd402a3e
+    layerID: 551
+    mosaicPosition: {x: 227, y: 3816}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_03
+    spriteName: Lava_River_Path_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76d89e41228618f47a0cba7fa8b05bb7
+    layerID: 550
+    mosaicPosition: {x: 260, y: 3414}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_02
+    spriteName: Lava_River_Path_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ef550648ff2257148a253e7ee5b0e5de
+    layerID: 549
+    mosaicPosition: {x: 227, y: 3925}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 3
+    spriteName: Lava_River_Path_01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfe82fa0e0b544f4e97c44db8ad95557
+    layerID: 568
+    mosaicPosition: {x: 198, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 8
+    spriteName: Lava_River_Path_01 copy 8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f74a20fa43bb81c42ae2a374034ef4a9
+    layerID: 573
+    mosaicPosition: {x: 2028, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 7
+    spriteName: Lava_River_Path_01 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6fb73ced1d1cccd449c080fb889163cf
+    layerID: 572
+    mosaicPosition: {x: 2028, y: 2207}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 6
+    spriteName: Lava_River_Path_01 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7de096d08f7e54f449d7a2f536c1d50a
+    layerID: 571
+    mosaicPosition: {x: 2028, y: 2234}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 5
+    spriteName: Lava_River_Path_01 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a1b29d0e118bf5a4e8bf7d8836c02e61
+    layerID: 570
+    mosaicPosition: {x: 2028, y: 2271}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 2
+    spriteName: Lava_River_Path_01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b16a96ac8226da642a296c0b1693370a
+    layerID: 560
+    mosaicPosition: {x: 2028, y: 2298}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 4
+    spriteName: Lava_River_Path_01 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5b57ff10b27bd2241a7eab5952e87448
+    layerID: 569
+    mosaicPosition: {x: 2028, y: 2325}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 12
+    spriteName: Lava_River_Path_01 copy 12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 496d5d06e1c1efd41bea1454fe6a4b79
+    layerID: 591
+    mosaicPosition: {x: 907, y: 3170}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 11
+    spriteName: Lava_River_Path_01 copy 11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffb2b3ea2b6d7e841b0d2968f80ef4f1
+    layerID: 590
+    mosaicPosition: {x: 907, y: 3197}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 10
+    spriteName: Lava_River_Path_01 copy 10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ab669161226282438230ef9196c0e5b
+    layerID: 589
+    mosaicPosition: {x: 907, y: 3224}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy 9
+    spriteName: Lava_River_Path_01 copy 9
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8cfc9bea3ef297c48ab7f2ed1988faee
+    layerID: 588
+    mosaicPosition: {x: 907, y: 3251}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01 copy
+    spriteName: Lava_River_Path_01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7845795ac0634e04fb32024e030728b8
+    layerID: 559
+    mosaicPosition: {x: 907, y: 3278}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_01
+    spriteName: Lava_River_Path_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10d10170252685e448138bda7edb5cfe
+    layerID: 548
+    mosaicPosition: {x: 260, y: 3623}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16 copy 2
+    spriteName: Lava_River_Path_16 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6230f91712446b478c930bddffdd6af
+    layerID: 557
+    mosaicPosition: {x: 168, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16 copy
+    spriteName: Lava_River_Path_16 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 160e0d00c79c05d4c8a3964f0a328b46
+    layerID: 556
+    mosaicPosition: {x: 907, y: 3147}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_16
+    spriteName: Lava_River_Path_16
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a7f8647402b76f44a2aedf68ed8eb8d
+    layerID: 547
+    mosaicPosition: {x: 227, y: 4034}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15 copy 2
+    spriteName: Lava_River_Path_15 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 62dcfb4e825918d40b10792f0f3a061c
+    layerID: 558
+    mosaicPosition: {x: 907, y: 3305}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15 copy
+    spriteName: Lava_River_Path_15 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a8fd6b47c090139469b9b60b71bedb72
+    layerID: 555
+    mosaicPosition: {x: 2011, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_15
+    spriteName: Lava_River_Path_15
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 626a444c4f2e542468faeb801e86bcd5
+    layerID: 546
+    mosaicPosition: {x: 907, y: 3091}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_14 copy
+    spriteName: Lava_River_Path_14 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c695d14c8a181ea4cb5b5a70348cdac9
+    layerID: 580
+    mosaicPosition: {x: 4, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_13 copy
+    spriteName: Lava_River_Path_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 573031679f1a8894690e77c598fdd845
+    layerID: 579
+    mosaicPosition: {x: 125, y: 4081}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_12 copy
+    spriteName: Lava_River_Path_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff0ad4125e153824a8762397a32c4a9d
+    layerID: 578
+    mosaicPosition: {x: 45, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_11 copy
+    spriteName: Lava_River_Path_11 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9e426174bbcd0844e991a45144cd47fb
+    layerID: 577
+    mosaicPosition: {x: 86, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_10 copy
+    spriteName: Lava_River_Path_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58447a20ea3c3ea47b62840f26582875
+    layerID: 576
+    mosaicPosition: {x: 125, y: 4061}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_09 copy
+    spriteName: Lava_River_Path_09 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a66bc87c194512b4cb053b584132d77c
+    layerID: 575
+    mosaicPosition: {x: 302, y: 3894}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 4
+    spriteName: Lava_River_Path_08 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: caab00ebff41b504abb662c6a6ac2fc8
+    layerID: 586
+    mosaicPosition: {x: 260, y: 3695}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 3
+    spriteName: Lava_River_Path_08 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 000e4daf3f137a74b87f66db77473dd7
+    layerID: 585
+    mosaicPosition: {x: 312, y: 4034}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy 2
+    spriteName: Lava_River_Path_08 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94fefa5b4cdbb9043b8fecba52f3f64c
+    layerID: 581
+    mosaicPosition: {x: 312, y: 4060}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08 copy
+    spriteName: Lava_River_Path_08 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 75be232aae5871b4eb5dad61c4adde29
+    layerID: 574
+    mosaicPosition: {x: 302, y: 3963}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_14
+    spriteName: Lava_River_Path_14
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e55ff8fa25a81a45bb7f3cd93b7507e
+    layerID: 545
+    mosaicPosition: {x: 760, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_13
+    spriteName: Lava_River_Path_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bd60b08de68653c4cbe6eeb15516ad52
+    layerID: 544
+    mosaicPosition: {x: 1801, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_12
+    spriteName: Lava_River_Path_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d04e8187057036b4690bce9469dd1dfa
+    layerID: 543
+    mosaicPosition: {x: 1597, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_11
+    spriteName: Lava_River_Path_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76d9759c683429b438de76e273790587
+    layerID: 542
+    mosaicPosition: {x: 260, y: 3578}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_10
+    spriteName: Lava_River_Path_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09e529981f393b840982a95ef600a1a6
+    layerID: 541
+    mosaicPosition: {x: 1697, y: 2367}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_09
+    spriteName: Lava_River_Path_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5f665cc4044529f4baca23b560eb7122
+    layerID: 540
+    mosaicPosition: {x: 1907, y: 2362}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_Path_08
+    spriteName: Lava_River_Path_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1faa4b9fdececad4eb7491acd5f903cd
+    layerID: 539
+    mosaicPosition: {x: 260, y: 3521}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_07
+    spriteName: Lava_River_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f7e6715c5c8d8174687f1b572ee708a5
+    layerID: 531
+    mosaicPosition: {x: 557, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_06 copy
+    spriteName: Lava_River_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20b968cea3ba214499f1e60a56cc7765
+    layerID: 538
+    mosaicPosition: {x: 981, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_06
+    spriteName: Lava_River_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5e96d00d6c06dd049804555b0f37479c
+    layerID: 530
+    mosaicPosition: {x: 760, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_05
+    spriteName: Lava_River_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b3cbc3831dbaeb4f9d338213ad09ef0
+    layerID: 529
+    mosaicPosition: {x: 1173, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_04
+    spriteName: Lava_River_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 45805a3e6d6c44b4097f45eedf370255
+    layerID: 528
+    mosaicPosition: {x: 4, y: 2900}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_03
+    spriteName: Lava_River_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f964e576d25d8974f8cda9256bb8d734
+    layerID: 527
+    mosaicPosition: {x: 762, y: 3380}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_02 copy
+    spriteName: Lava_River_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 548d0bdb9e382254aace1f3607ad817e
+    layerID: 535
+    mosaicPosition: {x: 358, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_02
+    spriteName: Lava_River_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 018fd22c5b4ab63498f5d3771de36971
+    layerID: 526
+    mosaicPosition: {x: 762, y: 3091}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_01
+    spriteName: Lava_River_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c80aea4f4795084c8937472912207d4
+    layerID: 525
+    mosaicPosition: {x: 1597, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_12 copy
+    spriteName: Lava_River_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9c5298068b42b04d88f6e54baf6a4ea
+    layerID: 537
+    mosaicPosition: {x: 358, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_12
+    spriteName: Lava_River_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 095bc7d23e5f90b469f862afc259e15f
+    layerID: 524
+    mosaicPosition: {x: 4, y: 3154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_11 copy
+    spriteName: Lava_River_11 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6b81e6f2b2083e8448ead2c3c4bb9641
+    layerID: 533
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_11
+    spriteName: Lava_River_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05634aa98a32d7b4f84e01985ffc644e
+    layerID: 523
+    mosaicPosition: {x: 4, y: 3414}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_10 copy
+    spriteName: Lava_River_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66364dad20e00f44faca9f9c90721275
+    layerID: 536
+    mosaicPosition: {x: 4, y: 2617}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_10
+    spriteName: Lava_River_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c522c30cc5e8e0a49b3e30fc5b9203a6
+    layerID: 522
+    mosaicPosition: {x: 762, y: 2412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_09
+    spriteName: Lava_River_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 56afda1693ee5c2489afbd3464f4e693
+    layerID: 521
+    mosaicPosition: {x: 762, y: 2617}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_08 copy
+    spriteName: Lava_River_08 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6691599dbd6203045a55bcb7fd2ba793
+    layerID: 534
+    mosaicPosition: {x: 4, y: 3729}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_River_08
+    spriteName: Lava_River_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae0b2220f5087e849b68dddca96d6bc5
+    layerID: 520
+    mosaicPosition: {x: 762, y: 2822}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65795e9c203e2124cb1c7b7137eaf30f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1274691a97679e84c91817195d0abad8
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2283f34d61072854eac2e7120e7f1217
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

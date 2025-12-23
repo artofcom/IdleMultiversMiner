@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0b3c9b0a01f894d219e9a3e98345ce81
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 129032
+  packageName: 2D Toon Portals
+  packageVersion: 1.0
+  assetPath: Assets/Portal/Animation/PortalAnimatorController.controller
+  uploadId: 268374

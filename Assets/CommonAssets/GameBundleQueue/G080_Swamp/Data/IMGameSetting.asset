@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2835a5c6fd99cea44af8e2788c52526f, type: 3}
+  m_Name: IMGameSetting
+  m_EditorClassIdentifier: 
+  resourceMatPath: Bundles/G033_IdleMiner/EditorData/Resource_Mat
+  resourceCompPath: Bundles/G033_IdleMiner/EditorData/Resource_Comp
+  resourceItemPath: Bundles/G033_IdleMiner/EditorData/Resource_Item
+  planetDataPath: Bundles/G033_IdleMiner/EditorData/PlanetData
+  planetBossDataPath: Bundles/G033_IdleMiner/EditorData/PlanetBossData
+  compCraftDataPath: Bundles/G033_IdleMiner/EditorData/Craft_comp
+  itemCraftDataPath: Bundles/G033_IdleMiner/EditorData/Craft_Item
+  projectDataPath:
+  - Bundles/G033_IdleMiner/EditorData/Project_0
+  - Bundles/G033_IdleMiner/EditorData/Project_1

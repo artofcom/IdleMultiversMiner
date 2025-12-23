@@ -1,0 +1,107 @@
+{
+  "skillInfo": [
+    {
+      "id": "proj_00",
+      "description": "",
+      "reqPlanets": [
+        {
+          "planetId": 1001
+        }
+      ]
+    },
+    {
+      "id": "proj_0",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "DEATH_NOTE",
+          "count": 1
+        },
+        {
+          "resourceId": "SKULL",
+          "count": 5000
+        }
+      ]
+    },
+    {
+      "id": "proj_1",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "EVIL_EYE",
+          "count": 1
+        },
+        {
+          "resourceId": "DEATH_SKULL",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "proj_2",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "DEATH_WATER",
+          "count": 2
+        },
+        {
+          "resourceId": "SPIDER_POISON",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "id": "proj_3",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "RESURRECTION",
+          "count": 2
+        },
+        {
+          "resourceId": "UNDEAD_ARM",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "id": "proj_4",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "GOLDEN_BUG",
+          "count": 5
+        },
+        {
+          "resourceId": "GOLD_BLK",
+          "count": 40
+        }
+      ]
+    },
+    {
+      "id": "proj_5",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "DEATH_RING",
+          "count": 3
+        },
+        {
+          "resourceId": "UNDEAD_FINGER",
+          "count": 8000
+        }
+      ]
+    },
+    {
+      "id": "proj_6",
+      "description": "",
+      "reqResources": [
+        {
+          "resourceId": "RAGE_MARBLE",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

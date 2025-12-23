@@ -1,0 +1,1022 @@
+fileFormatVersion: 2
+guid: 048eb94c5472df449b61748440dadcb1
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Snow Tileset/Demo/Preview/Rock_Tree.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Snow_Tree_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 2608
+      width: 270
+      height: 405
+    spriteID: d0ce280467abd47478e8071cefd67495
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1008, y: 2608}
+    spritePosition: {x: 1600, y: 484}
+  - name: Snow_Tree_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2608
+      width: 408
+      height: 488
+    spriteID: d493f08268be9cc459cdad839b79dc4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2608}
+    spritePosition: {x: 1036, y: 509}
+  - name: Snow_Tree_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 706
+      y: 2608
+      width: 294
+      height: 408
+    spriteID: 108aa90e48bdb7b4bb94d103abd20af4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 706, y: 2608}
+    spritePosition: {x: 403, y: 0}
+  - name: Snow_Tree_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 2608
+      width: 278
+      height: 457
+    spriteID: 678873ac993e5c14f8f03d83914982a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 2608}
+    spritePosition: {x: 1340, y: 200}
+  - name: Snow_Tree_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 490
+      height: 420
+    spriteID: c462b0f0ec6ec7d42967ad59c4325ea5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 647, y: 198}
+  - name: Snow_Tree_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1718
+      y: 2608
+      width: 260
+      height: 378
+    spriteID: ac4961b71c3e83f42b9c80324cd18468
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1718, y: 2608}
+    spritePosition: {x: 1080, y: 0}
+  - name: Snow_Rock_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1286
+      y: 2608
+      width: 424
+      height: 237
+    spriteID: 4a8dd1e1f0a4b1b44b7be14e60a626e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1244, y: 2608}
+    spritePosition: {x: 42, y: 429}
+  - name: Snow_Rock_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 823
+      y: 2180
+      width: 490
+      height: 171
+    spriteID: 39a7eccb85e4aeb468fdf5968bd9be0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 823, y: 2180}
+    spritePosition: {x: 207, y: 889}
+  - name: Snow_Rock_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1286
+      y: 2853
+      width: 388
+      height: 165
+    spriteID: 5449380a8e96d41459c15a29cfed1b9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1286, y: 2853}
+    spritePosition: {x: 662, y: 762}
+  - name: Snow_Rock_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 2180
+      width: 313
+      height: 268
+    spriteID: 4b3213a494f450643ac50f8cfeb35086
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 2180}
+    spritePosition: {x: 430, y: 568}
+  - name: Snow_Rock_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1321
+      y: 2180
+      width: 433
+      height: 120
+    spriteID: 8b78237f629c82848bbdf2a1c94b61df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1314, y: 2180}
+    spritePosition: {x: 7, y: 702}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: cfcb2c263d50a0a4082784fe5ca04157
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 89d1819e1d21c3a47b80c16e74f5fb3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Snow_Tree_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 2608
+      width: 270
+      height: 405
+    spriteID: d0ce280467abd47478e8071cefd67495
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1008, y: 2608}
+    spritePosition: {x: 1600, y: 484}
+  - name: Snow_Tree_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2608
+      width: 408
+      height: 488
+    spriteID: d493f08268be9cc459cdad839b79dc4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2608}
+    spritePosition: {x: 1036, y: 509}
+  - name: Snow_Tree_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 706
+      y: 2608
+      width: 294
+      height: 408
+    spriteID: 108aa90e48bdb7b4bb94d103abd20af4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 706, y: 2608}
+    spritePosition: {x: 403, y: 0}
+  - name: Snow_Tree_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 2608
+      width: 278
+      height: 457
+    spriteID: 678873ac993e5c14f8f03d83914982a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 2608}
+    spritePosition: {x: 1340, y: 200}
+  - name: Snow_Tree_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 490
+      height: 420
+    spriteID: c462b0f0ec6ec7d42967ad59c4325ea5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 647, y: 198}
+  - name: Snow_Tree_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1718
+      y: 2608
+      width: 260
+      height: 378
+    spriteID: ac4961b71c3e83f42b9c80324cd18468
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1718, y: 2608}
+    spritePosition: {x: 1080, y: 0}
+  - name: Snow_Rock_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1286
+      y: 2608
+      width: 424
+      height: 237
+    spriteID: 4a8dd1e1f0a4b1b44b7be14e60a626e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1244, y: 2608}
+    spritePosition: {x: 42, y: 429}
+  - name: Snow_Rock_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 823
+      y: 2180
+      width: 490
+      height: 171
+    spriteID: 39a7eccb85e4aeb468fdf5968bd9be0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 823, y: 2180}
+    spritePosition: {x: 207, y: 889}
+  - name: Snow_Rock_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1286
+      y: 2853
+      width: 388
+      height: 165
+    spriteID: 5449380a8e96d41459c15a29cfed1b9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1286, y: 2853}
+    spritePosition: {x: 662, y: 762}
+  - name: Snow_Rock_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 2180
+      width: 313
+      height: 268
+    spriteID: 4b3213a494f450643ac50f8cfeb35086
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 2180}
+    spritePosition: {x: 430, y: 568}
+  - name: Snow_Rock_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1321
+      y: 2180
+      width: 433
+      height: 120
+    spriteID: 8b78237f629c82848bbdf2a1c94b61df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1314, y: 2180}
+    spritePosition: {x: 7, y: 702}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: cfcb2c263d50a0a4082784fe5ca04157
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 89d1819e1d21c3a47b80c16e74f5fb3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Snow_Tree_05
+    spriteName: Snow_Tree_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d0ce280467abd47478e8071cefd67495
+    layerID: 336
+    mosaicPosition: {x: 1008, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_04
+    spriteName: Snow_Tree_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d493f08268be9cc459cdad839b79dc4e
+    layerID: 335
+    mosaicPosition: {x: 4, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_03
+    spriteName: Snow_Tree_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 108aa90e48bdb7b4bb94d103abd20af4
+    layerID: 334
+    mosaicPosition: {x: 706, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_02
+    spriteName: Snow_Tree_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 678873ac993e5c14f8f03d83914982a2
+    layerID: 333
+    mosaicPosition: {x: 420, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_01
+    spriteName: Snow_Tree_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c462b0f0ec6ec7d42967ad59c4325ea5
+    layerID: 332
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_06
+    spriteName: Snow_Tree_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac4961b71c3e83f42b9c80324cd18468
+    layerID: 331
+    mosaicPosition: {x: 1718, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_04
+    spriteName: Snow_Rock_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a8dd1e1f0a4b1b44b7be14e60a626e6
+    layerID: 330
+    mosaicPosition: {x: 1286, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_03
+    spriteName: Snow_Rock_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39a7eccb85e4aeb468fdf5968bd9be0b
+    layerID: 329
+    mosaicPosition: {x: 823, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_02
+    spriteName: Snow_Rock_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5449380a8e96d41459c15a29cfed1b9f
+    layerID: 328
+    mosaicPosition: {x: 1286, y: 2853}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_01
+    spriteName: Snow_Rock_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b3213a494f450643ac50f8cfeb35086
+    layerID: 327
+    mosaicPosition: {x: 502, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_05
+    spriteName: Snow_Rock_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b78237f629c82848bbdf2a1c94b61df
+    layerID: 326
+    mosaicPosition: {x: 1321, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6944d832082041a408e75f337e80063c
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfcb2c263d50a0a4082784fe5ca04157
+    layerID: 7
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 89d1819e1d21c3a47b80c16e74f5fb3a
+    layerID: 3
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Snow_Tree_05
+    spriteName: Snow_Tree_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d0ce280467abd47478e8071cefd67495
+    layerID: 336
+    mosaicPosition: {x: 1008, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_04
+    spriteName: Snow_Tree_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d493f08268be9cc459cdad839b79dc4e
+    layerID: 335
+    mosaicPosition: {x: 4, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_03
+    spriteName: Snow_Tree_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 108aa90e48bdb7b4bb94d103abd20af4
+    layerID: 334
+    mosaicPosition: {x: 706, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_02
+    spriteName: Snow_Tree_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 678873ac993e5c14f8f03d83914982a2
+    layerID: 333
+    mosaicPosition: {x: 420, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_01
+    spriteName: Snow_Tree_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c462b0f0ec6ec7d42967ad59c4325ea5
+    layerID: 332
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Tree_06
+    spriteName: Snow_Tree_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac4961b71c3e83f42b9c80324cd18468
+    layerID: 331
+    mosaicPosition: {x: 1718, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_04
+    spriteName: Snow_Rock_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a8dd1e1f0a4b1b44b7be14e60a626e6
+    layerID: 330
+    mosaicPosition: {x: 1286, y: 2608}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_03
+    spriteName: Snow_Rock_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39a7eccb85e4aeb468fdf5968bd9be0b
+    layerID: 329
+    mosaicPosition: {x: 823, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_02
+    spriteName: Snow_Rock_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5449380a8e96d41459c15a29cfed1b9f
+    layerID: 328
+    mosaicPosition: {x: 1286, y: 2853}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_01
+    spriteName: Snow_Rock_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b3213a494f450643ac50f8cfeb35086
+    layerID: 327
+    mosaicPosition: {x: 502, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Snow_Rock_05
+    spriteName: Snow_Rock_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b78237f629c82848bbdf2a1c94b61df
+    layerID: 326
+    mosaicPosition: {x: 1321, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6944d832082041a408e75f337e80063c
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfcb2c263d50a0a4082784fe5ca04157
+    layerID: 7
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 89d1819e1d21c3a47b80c16e74f5fb3a
+    layerID: 3
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

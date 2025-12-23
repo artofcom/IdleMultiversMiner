@@ -1,0 +1,36 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_AuraAmplification1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_AuraAmplification1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:10:10",
+            "description": "Unlock the Zone-Wide Buffs.",
+            "unlockCost": [
+                {
+                    "resourceId": "gravewalkersfoot",
+                    "count": 2
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Mining Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone 2.",
+            "unlockCost": [
+                {
+                    "resourceId": "soulcompass",
+                    "count": 2
+                }
+            ],
+            "children": []
+        }
+    ]
+}

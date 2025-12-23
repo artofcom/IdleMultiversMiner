@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "bonepowder",
+            "price": "50"
+        },
+        {
+            "id": "coaldummy",
+            "price": "200"
+        },
+        {
+            "id": "deathweb",
+            "price": "350"
+        },
+        {
+            "id": "copperbar",
+            "price": "500"
+        },
+        {
+            "id": "bloodypoison",
+            "price": "650"
+        },
+        {
+            "id": "demonicpoison",
+            "price": "800"
+        },
+        {
+            "id": "zombieoil",
+            "price": "950"
+        },
+        {
+            "id": "demonicwater",
+            "price": "1100"
+        },
+        {
+            "id": "ironbar",
+            "price": "1250"
+        },
+        {
+            "id": "magma",
+            "price": "1400"
+        },
+        {
+            "id": "scalebundle",
+            "price": "1550"
+        }
+    ]
+}

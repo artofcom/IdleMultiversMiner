@@ -1,0 +1,139 @@
+{
+    "recipes": [
+        {
+            "id": "Item_0",
+            "sources": [
+                {
+                    "resourceId": "gravewalkersfoot",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "soulcompass",
+            "duration": 10,
+            "cost": "5"
+        },
+        {
+            "id": "Item_1",
+            "sources": [
+                {
+                    "resourceId": "blightedbone",
+                    "count": 30
+                },
+                {
+                    "resourceId": "wyrmsclaw",
+                    "count": 5
+                }
+            ],
+            "outcomeId": "infernaltalon",
+            "duration": 20,
+            "cost": "5"
+        },
+        {
+            "id": "Item_2",
+            "sources": [
+                {
+                    "resourceId": "prophetsomen",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "soulfireplume",
+            "duration": 30,
+            "cost": "5"
+        },
+        {
+            "id": "Item_3",
+            "sources": [
+                {
+                    "resourceId": "nightwing",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "bindingsigil",
+            "duration": 40,
+            "cost": "10"
+        },
+        {
+            "id": "Item_4",
+            "sources": [
+                {
+                    "resourceId": "hollowvisage",
+                    "count": 30
+                },
+                {
+                    "resourceId": "vileconcoction",
+                    "count": 2
+                }
+            ],
+            "outcomeId": "soulfirecrystal",
+            "duration": 50,
+            "cost": "10"
+        },
+        {
+            "id": "Item_5",
+            "sources": [
+                {
+                    "resourceId": "hallowedcranium",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "vesselofsouls",
+            "duration": 60,
+            "cost": "10"
+        },
+        {
+            "id": "Item_6",
+            "sources": [
+                {
+                    "resourceId": "puppetoftorment",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "celestialpinion",
+            "duration": 70,
+            "cost": "10"
+        },
+        {
+            "id": "Item_7",
+            "sources": [
+                {
+                    "resourceId": "scorchedchart",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "celestineorb",
+            "duration": 80,
+            "cost": "10"
+        },
+        {
+            "id": "Item_8",
+            "sources": [
+                {
+                    "resourceId": "whisperplumeparrot",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "oculusofthearcane",
+            "duration": 90,
+            "cost": "15"
+        },
+        {
+            "id": "Item_9",
+            "sources": [
+                {
+                    "resourceId": "witchlightwax",
+                    "count": 5
+                }
+            ],
+            "outcomeId": "gildedskull",
+            "duration": 100,
+            "cost": "15"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "30",
+        "50"
+    ]
+}

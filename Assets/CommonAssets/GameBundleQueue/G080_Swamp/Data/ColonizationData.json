@@ -1,0 +1,86 @@
+{
+    "colonizationInfos": [
+        {
+            "planetId": 1,
+            "coloLevelInfo": [
+                {
+                    "minLevel": 1,
+                    "requirements": [
+                        {
+                            "resourceId": "111",
+                            "count": 10
+                        },
+                        {
+                            "resourceId": "222",
+                            "count": 1
+                        }
+                    ],
+                    "rewardBoostRates": [
+                        1.2,
+                        1.1,
+                        1.1
+                    ]
+                },
+                {
+                    "minLevel": 50,
+                    "requirements": [
+                        {
+                            "resourceId": "111",
+                            "count": 10
+                        },
+                        {
+                            "resourceId": "222",
+                            "count": 1
+                        }
+                    ],
+                    "rewardBoostRates": [
+                        1.2,
+                        1.1,
+                        1.1
+                    ]
+                }
+            ]
+        },
+        {
+            "planetId": 2,
+            "coloLevelInfo": [
+                {
+                    "minLevel": 1,
+                    "requirements": [
+                        {
+                            "resourceId": "111",
+                            "count": 10
+                        },
+                        {
+                            "resourceId": "222",
+                            "count": 1
+                        }
+                    ],
+                    "rewardBoostRates": [
+                        1.2,
+                        1.1,
+                        1.1
+                    ]
+                },
+                {
+                    "minLevel": 50,
+                    "requirements": [
+                        {
+                            "resourceId": "111",
+                            "count": 10
+                        },
+                        {
+                            "resourceId": "222",
+                            "count": 1
+                        }
+                    ],
+                    "rewardBoostRates": [
+                        1.2,
+                        1.1,
+                        1.1
+                    ]
+                }
+            ]
+        }
+    ]
+}

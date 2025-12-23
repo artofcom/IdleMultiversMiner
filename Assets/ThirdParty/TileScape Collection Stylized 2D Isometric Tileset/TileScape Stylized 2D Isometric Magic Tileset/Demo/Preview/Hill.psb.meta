@@ -1,0 +1,998 @@
+fileFormatVersion: 2
+guid: f1f6201c49608a1489c43adf54f6b63b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Magic Tileset/Demo/Preview/Hill.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Magic_Hill_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 1606
+      width: 386
+      height: 408
+    spriteID: cae593e0ffa534a4da3ce0483a3159ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 1606}
+    spritePosition: {x: 513, y: 49}
+  - name: Magic_Hill_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1604
+      width: 406
+      height: 330
+    spriteID: 2eb9b17baa1c4e44a8bb63656d1760ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1604}
+    spritePosition: {x: 956, y: 244}
+  - name: Magic_Hill_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 518
+      y: 1606
+      width: 436
+      height: 362
+    spriteID: 994c6568ae3cb174a9a4698271e8287d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 518, y: 1606}
+    spritePosition: {x: 44, y: 72}
+  - name: Magic_Hill_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 518
+      y: 1092
+      width: 426
+      height: 506
+    spriteID: ffed824fb5585674596e43456c8917cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 518, y: 1092}
+    spritePosition: {x: 44, y: 557}
+  - name: Magic_Hill_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1092
+      width: 372
+      height: 506
+    spriteID: 79c7c5ef3d63c974d881b4b33a384ddf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1092}
+    spritePosition: {x: 1499, y: 574}
+  - name: Magic_Hill_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 1092
+      width: 403
+      height: 506
+    spriteID: 2b0f76382c3cc444780fefc6cd204126
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 1092}
+    spritePosition: {x: 1034, y: 574}
+  - name: Magic_Hill_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 506
+      height: 504
+    spriteID: 9d904d565712235429c0f4d94611c150
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 450, y: 557}
+  - name: Magic_Hill_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1764
+      y: 1092
+      width: 248
+      height: 225
+    spriteID: fdf7403149f8e57498ea1fda6e693b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1764, y: 1092}
+    spritePosition: {x: 1031, y: 9}
+  - name: Magic_Hill_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1727
+      y: 1606
+      width: 248
+      height: 255
+    spriteID: 5096242bcfa36694aa0ba9902ce27758
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1727, y: 1606}
+    spritePosition: {x: 1501, y: 12}
+  - name: Magic_Hill_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1606
+      width: 335
+      height: 280
+    spriteID: f269b687b528e0844a072640c58ef23e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1606}
+    spritePosition: {x: 1457, y: 294}
+  - name: Magic_Back_05_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 961
+      height: 1080
+    spriteID: c8cb31e7f16c8c647b130a8250e48bfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Magic_Back_05_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 4
+      width: 961
+      height: 1080
+    spriteID: 98a64bc545076c14d84a7b6cae883b7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 4}
+    spritePosition: {x: 959, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Magic_Hill_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 1606
+      width: 386
+      height: 408
+    spriteID: cae593e0ffa534a4da3ce0483a3159ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 1606}
+    spritePosition: {x: 513, y: 49}
+  - name: Magic_Hill_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1604
+      width: 406
+      height: 330
+    spriteID: 2eb9b17baa1c4e44a8bb63656d1760ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1604}
+    spritePosition: {x: 956, y: 244}
+  - name: Magic_Hill_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 518
+      y: 1606
+      width: 436
+      height: 362
+    spriteID: 994c6568ae3cb174a9a4698271e8287d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 518, y: 1606}
+    spritePosition: {x: 44, y: 72}
+  - name: Magic_Hill_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 518
+      y: 1092
+      width: 426
+      height: 506
+    spriteID: ffed824fb5585674596e43456c8917cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 518, y: 1092}
+    spritePosition: {x: 44, y: 557}
+  - name: Magic_Hill_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1092
+      width: 372
+      height: 506
+    spriteID: 79c7c5ef3d63c974d881b4b33a384ddf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1092}
+    spritePosition: {x: 1499, y: 574}
+  - name: Magic_Hill_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 1092
+      width: 403
+      height: 506
+    spriteID: 2b0f76382c3cc444780fefc6cd204126
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 1092}
+    spritePosition: {x: 1034, y: 574}
+  - name: Magic_Hill_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 506
+      height: 504
+    spriteID: 9d904d565712235429c0f4d94611c150
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 450, y: 557}
+  - name: Magic_Hill_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1764
+      y: 1092
+      width: 248
+      height: 225
+    spriteID: fdf7403149f8e57498ea1fda6e693b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1764, y: 1092}
+    spritePosition: {x: 1031, y: 9}
+  - name: Magic_Hill_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1727
+      y: 1606
+      width: 248
+      height: 255
+    spriteID: 5096242bcfa36694aa0ba9902ce27758
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1727, y: 1606}
+    spritePosition: {x: 1501, y: 12}
+  - name: Magic_Hill_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1606
+      width: 335
+      height: 280
+    spriteID: f269b687b528e0844a072640c58ef23e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1606}
+    spritePosition: {x: 1457, y: 294}
+  - name: Magic_Back_05_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 961
+      height: 1080
+    spriteID: c8cb31e7f16c8c647b130a8250e48bfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Magic_Back_05_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 4
+      width: 961
+      height: 1080
+    spriteID: 98a64bc545076c14d84a7b6cae883b7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 4}
+    spritePosition: {x: 959, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Magic_Hill_07
+    spriteName: Magic_Hill_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cae593e0ffa534a4da3ce0483a3159ce
+    layerID: 129
+    mosaicPosition: {x: 973, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_06
+    spriteName: Magic_Hill_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2eb9b17baa1c4e44a8bb63656d1760ae
+    layerID: 128
+    mosaicPosition: {x: 4, y: 1604}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_05
+    spriteName: Magic_Hill_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 994c6568ae3cb174a9a4698271e8287d
+    layerID: 127
+    mosaicPosition: {x: 518, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_04
+    spriteName: Magic_Hill_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffed824fb5585674596e43456c8917cb
+    layerID: 126
+    mosaicPosition: {x: 518, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_03
+    spriteName: Magic_Hill_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 79c7c5ef3d63c974d881b4b33a384ddf
+    layerID: 125
+    mosaicPosition: {x: 1384, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_02
+    spriteName: Magic_Hill_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b0f76382c3cc444780fefc6cd204126
+    layerID: 124
+    mosaicPosition: {x: 973, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_01
+    spriteName: Magic_Hill_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9d904d565712235429c0f4d94611c150
+    layerID: 123
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_10
+    spriteName: Magic_Hill_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fdf7403149f8e57498ea1fda6e693b42
+    layerID: 122
+    mosaicPosition: {x: 1764, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_09
+    spriteName: Magic_Hill_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5096242bcfa36694aa0ba9902ce27758
+    layerID: 121
+    mosaicPosition: {x: 1727, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_08
+    spriteName: Magic_Hill_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f269b687b528e0844a072640c58ef23e
+    layerID: 120
+    mosaicPosition: {x: 1384, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Back_05_02
+    spriteName: Magic_Back_05_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c8cb31e7f16c8c647b130a8250e48bfe
+    layerID: 53
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Back_05_01
+    spriteName: Magic_Back_05_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 98a64bc545076c14d84a7b6cae883b7c
+    layerID: 52
+    mosaicPosition: {x: 973, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20bfccd440e63b0438825d231fe433c2
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b461263e14e7cf242852a825720bc482
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 24f7e97d2387d6546b3872d8a540507f
+    layerID: 2
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Magic_Hill_07
+    spriteName: Magic_Hill_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cae593e0ffa534a4da3ce0483a3159ce
+    layerID: 129
+    mosaicPosition: {x: 973, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_06
+    spriteName: Magic_Hill_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2eb9b17baa1c4e44a8bb63656d1760ae
+    layerID: 128
+    mosaicPosition: {x: 4, y: 1604}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_05
+    spriteName: Magic_Hill_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 994c6568ae3cb174a9a4698271e8287d
+    layerID: 127
+    mosaicPosition: {x: 518, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_04
+    spriteName: Magic_Hill_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffed824fb5585674596e43456c8917cb
+    layerID: 126
+    mosaicPosition: {x: 518, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_03
+    spriteName: Magic_Hill_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 79c7c5ef3d63c974d881b4b33a384ddf
+    layerID: 125
+    mosaicPosition: {x: 1384, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_02
+    spriteName: Magic_Hill_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b0f76382c3cc444780fefc6cd204126
+    layerID: 124
+    mosaicPosition: {x: 973, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_01
+    spriteName: Magic_Hill_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9d904d565712235429c0f4d94611c150
+    layerID: 123
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_10
+    spriteName: Magic_Hill_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fdf7403149f8e57498ea1fda6e693b42
+    layerID: 122
+    mosaicPosition: {x: 1764, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_09
+    spriteName: Magic_Hill_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5096242bcfa36694aa0ba9902ce27758
+    layerID: 121
+    mosaicPosition: {x: 1727, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Hill_08
+    spriteName: Magic_Hill_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f269b687b528e0844a072640c58ef23e
+    layerID: 120
+    mosaicPosition: {x: 1384, y: 1606}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Back_05_02
+    spriteName: Magic_Back_05_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c8cb31e7f16c8c647b130a8250e48bfe
+    layerID: 53
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Back_05_01
+    spriteName: Magic_Back_05_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 98a64bc545076c14d84a7b6cae883b7c
+    layerID: 52
+    mosaicPosition: {x: 973, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20bfccd440e63b0438825d231fe433c2
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b461263e14e7cf242852a825720bc482
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 24f7e97d2387d6546b3872d8a540507f
+    layerID: 2
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,0 +1,3902 @@
+fileFormatVersion: 2
+guid: be0633c1203de0e428f0336b57ad7230
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Jungle Tileset/Demo/Preview/Jungle_River_River Path.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Jungle_River_Path_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1021
+      y: 2841
+      width: 88
+      height: 51
+    spriteID: afa4134b9825e3d4dbc9661fe7351fb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: 2841}
+    spritePosition: {x: 932, y: 376}
+  - name: Jungle_River_Path_06 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1270
+      y: 2819
+      width: 28
+      height: 17
+    spriteID: f69d3d863e8203d4186128903cc6b5da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1270, y: 2819}
+    spritePosition: {x: 1551, y: 1007}
+  - name: Jungle_River_Path_05 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1294
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 4fb4980badde05347a5eb5dd71bc24c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1294, y: 2875}
+    spritePosition: {x: 1532, y: 1045}
+  - name: Jungle_River_Path_05 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2667
+      width: 22
+      height: 13
+    spriteID: e1c0bc4a86fa9c64cbff67187779f433
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2667}
+    spritePosition: {x: 1565, y: 1020}
+  - name: Jungle_River_Path_04 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1263
+      y: 2844
+      width: 46
+      height: 23
+    spriteID: d64c5484cf55d9a4e99be15890364d56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1263, y: 2844}
+    spritePosition: {x: 1528, y: 1022}
+  - name: Jungle_River_Path_03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1926
+      y: 2865
+      width: 21
+      height: 24
+    spriteID: f35bd3e20143f8a41a9dcfc893f3aad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1926, y: 2865}
+    spritePosition: {x: 1557, y: 1041}
+  - name: Jungle_River_Path_13 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2770
+      width: 13
+      height: 8
+    spriteID: 8b32443ded6a5b749a7682d7cc104321
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2770}
+    spritePosition: {x: 1550, y: 1046}
+  - name: Jungle_River_Path_13 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2786
+      width: 13
+      height: 8
+    spriteID: 39115d35f35714e458f62f94192511f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2786}
+    spritePosition: {x: 1528, y: 1035}
+  - name: Jungle_River_Path_10 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2667
+      width: 21
+      height: 15
+    spriteID: 2f5e5b01e4fcc444e9223c082de5e31f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2667}
+    spritePosition: {x: 1574, y: 1034}
+  - name: Jungle_River_Path_06 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1306
+      y: 2819
+      width: 28
+      height: 17
+    spriteID: 702c9adc08c299345820a7b99e35ec4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1306, y: 2819}
+    spritePosition: {x: 1227, y: 760}
+  - name: Jungle_River_Path_05 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1327
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 52cc713b38f60774e8aac14a932ee712
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1327, y: 2875}
+    spritePosition: {x: 1208, y: 798}
+  - name: Jungle_River_Path_05 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2688
+      width: 22
+      height: 13
+    spriteID: 842190c4514f27a4190da575a651d1a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2688}
+    spritePosition: {x: 1241, y: 773}
+  - name: Jungle_River_Path_04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1317
+      y: 2844
+      width: 46
+      height: 23
+    spriteID: 5313f28f72e6f944b8e290103fbb8e3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1317, y: 2844}
+    spritePosition: {x: 1204, y: 775}
+  - name: Jungle_River_Path_03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1361
+      y: 2770
+      width: 21
+      height: 24
+    spriteID: 7f4944b5045b5c7458854b02cdf3061e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1361, y: 2770}
+    spritePosition: {x: 1233, y: 794}
+  - name: Jungle_River_Path_13 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2802
+      width: 13
+      height: 8
+    spriteID: 8dc024e83bc1dfa4ea8ee5af632bc1ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2802}
+    spritePosition: {x: 1226, y: 799}
+  - name: Jungle_River_Path_13 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2818
+      width: 13
+      height: 8
+    spriteID: 9bd58421b4f68cd42b9510361dc310e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2818}
+    spritePosition: {x: 1204, y: 788}
+  - name: Jungle_River_Path_10 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2690
+      width: 21
+      height: 15
+    spriteID: 9324f8671c6804046b776187575441d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2690}
+    spritePosition: {x: 1250, y: 787}
+  - name: Jungle_River_Path_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1258
+      y: 2875
+      width: 28
+      height: 17
+    spriteID: 2a20b18ef2c825242afe71654658d3d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1258, y: 2875}
+    spritePosition: {x: 1284, y: 396}
+  - name: Jungle_River_Path_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2775
+      width: 81
+      height: 50
+    spriteID: ff6b422bd9d770a418e2893d8192b2cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2775}
+    spritePosition: {x: 919, y: 531}
+  - name: Jungle_River_Path_05 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1360
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 6e6cafe7ad5676a42af2f1daf515f475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1360, y: 2875}
+    spritePosition: {x: 1265, y: 434}
+  - name: Jungle_River_Path_05 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2709
+      width: 22
+      height: 13
+    spriteID: 4adae86cead596f419795af1ce392ff2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2709}
+    spritePosition: {x: 1298, y: 409}
+  - name: Jungle_River_Path_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1725
+      y: 2775
+      width: 55
+      height: 31
+    spriteID: 73acbef815be33a42976580388c0f9a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1725, y: 2775}
+    spritePosition: {x: 1020, y: 542}
+  - name: Jungle_River_Path_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2875
+      width: 46
+      height: 23
+    spriteID: 85363566372c025489f415eca6db886e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2875}
+    spritePosition: {x: 1261, y: 411}
+  - name: Jungle_River_Path_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1270
+      y: 2770
+      width: 83
+      height: 41
+    spriteID: 91450fa69b866df4a8e8f2426a1a994b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1270, y: 2770}
+    spritePosition: {x: 1059, y: 491}
+  - name: Jungle_River_Path_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1361
+      y: 2802
+      width: 21
+      height: 24
+    spriteID: 7f8ab234e809e61429c7442e65ad5ae9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1361, y: 2802}
+    spritePosition: {x: 1290, y: 430}
+  - name: Jungle_River_Path_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2770
+      width: 58
+      height: 66
+    spriteID: 10aa85819bf8679448e73d73892d7a2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2770}
+    spritePosition: {x: 1059, y: 379}
+  - name: Jungle_River_Path_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1728
+      y: 2833
+      width: 61
+      height: 64
+    spriteID: 94a130e5efdd8fd499fd74aac5801dbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1728, y: 2833}
+    spritePosition: {x: 1078, y: 285}
+  - name: Jungle_River_Path_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2833
+      width: 84
+      height: 47
+    spriteID: 8fdde0db45fb6f34c8f244bb9998e22e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2833}
+    spritePosition: {x: 936, y: 293}
+  - name: Jungle_River_Path_13 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1897
+      y: 2845
+      width: 13
+      height: 8
+    spriteID: fd61c8a8eed985046a37006cf1a5d1b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1897, y: 2845}
+    spritePosition: {x: 1283, y: 435}
+  - name: Jungle_River_Path_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1918
+      y: 2845
+      width: 13
+      height: 8
+    spriteID: cbd72c356494aa14ba67f72780203732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1918, y: 2845}
+    spritePosition: {x: 1261, y: 424}
+  - name: Jungle_River_Path_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1371
+      y: 2844
+      width: 31
+      height: 20
+    spriteID: fe0b847466644904e84d4686638b7107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1371, y: 2844}
+    spritePosition: {x: 1086, y: 617}
+  - name: Jungle_River_Path_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2865
+      width: 58
+      height: 26
+    spriteID: 6857332b6e131ea48b76449e42d6b54a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2865}
+    spritePosition: {x: 978, y: 591}
+  - name: Jungle_River_Path_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2844
+      width: 51
+      height: 23
+    spriteID: 92ceafca2b86e504facb2f77275c488c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2844}
+    spritePosition: {x: 1007, y: 340}
+  - name: Jungle_River_Path_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2713
+      width: 21
+      height: 15
+    spriteID: 5c3f4d6e049ea0547a83245f163dc7e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2713}
+    spritePosition: {x: 1307, y: 423}
+  - name: Jungle_River_Path_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1873
+      y: 2865
+      width: 45
+      height: 31
+    spriteID: 83977ef549a2ba74eb8538cd9e9ff4ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1873, y: 2865}
+    spritePosition: {x: 1127, y: 550}
+  - name: Jungle_River_Path_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1897
+      y: 2803
+      width: 51
+      height: 34
+    spriteID: afc3bb6c4b78cfc45b524dd23c9f8f58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1897, y: 2803}
+    spritePosition: {x: 1025, y: 259}
+  - name: Jungle_River_Path_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1117
+      y: 2841
+      width: 79
+      height: 49
+    spriteID: d73d8bcba7969344391bce54ac9e51b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1117, y: 2841}
+    spritePosition: {x: 941, y: 451}
+  - name: Jungle_River_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 2908
+      width: 300
+      height: 125
+    spriteID: 5bc1d68df5d59934a9664ab2975c7042
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 2908}
+    spritePosition: {x: 1620, y: 955}
+  - name: Jungle_River_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1154
+      y: 2180
+      width: 389
+      height: 192
+    spriteID: 41ca68c283359fb4282b16d17e5bcc3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1154, y: 2180}
+    spritePosition: {x: 629, y: 652}
+  - name: Jungle_River_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 601
+      y: 2510
+      width: 412
+      height: 149
+    spriteID: 1a5af14dedc297940bb4083fe59c280c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 601, y: 2510}
+    spritePosition: {x: 603, y: 818}
+  - name: Jungle_River_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1551
+      y: 2180
+      width: 245
+      height: 299
+    spriteID: 746066a99ee371746bc94233a0a5fc6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1551, y: 2180}
+    spritePosition: {x: 394, y: 47}
+  - name: Jungle_River_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2510
+      width: 319
+      height: 390
+    spriteID: 65da02a0d01c588428b35f1b65b42821
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2510}
+    spritePosition: {x: 1207, y: 380}
+  - name: Jungle_River_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 601
+      y: 2667
+      width: 292
+      height: 176
+    spriteID: 94119dda2e8d1db4b8912bbbacff59d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 601, y: 2667}
+    spritePosition: {x: 412, y: 362}
+  - name: Jungle_River_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 437
+      height: 322
+    spriteID: cfa14e21bcaf32c4cb0a485c05cbce99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1483, y: 0}
+  - name: Jungle_River_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 2180
+      width: 375
+      height: 269
+    spriteID: ee2ff374e499f614d8e3e4d2f296e993
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 2180}
+    spritePosition: {x: 23, y: 302}
+  - name: Jungle_River_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 2180
+      width: 314
+      height: 250
+    spriteID: 4f152588027523947b93d343c20a146b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 2180}
+    spritePosition: {x: 52, y: 14}
+  - name: Jungle_River_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 2510
+      width: 262
+      height: 239
+    spriteID: b13d9a055c17fd64a90023295d432122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 2510}
+    spritePosition: {x: 1224, y: 146}
+  - name: Jungle_River_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2908
+      width: 213
+      height: 191
+    spriteID: 8bbd849db661cb44296a90c55f4f889f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2908}
+    spritePosition: {x: 23, y: 609}
+  - name: Jungle_River_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1411
+      y: 2510
+      width: 217
+      height: 194
+    spriteID: 61e8cc1a6315ad946b45168c23809edf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1411, y: 2510}
+    spritePosition: {x: 250, y: 610}
+  - name: Jungle_River_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 2180
+      width: 212
+      height: 315
+    spriteID: f81d4c6b49780844e8696d2ec8168195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 2180}
+    spritePosition: {x: 1410, y: 765}
+  - name: Jungle_River_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2510
+      width: 163
+      height: 257
+    spriteID: 60fd7a4b761222149827402d3f45d3de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2510}
+    spritePosition: {x: 0, y: 807}
+  - name: Jungle_River_09 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2803
+      width: 82
+      height: 54
+    spriteID: b6cd288b7b07989478091db0b00bc2d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2803}
+    spritePosition: {x: 1838, y: 0}
+  - name: Jungle_River_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2510
+      width: 199
+      height: 252
+    spriteID: 12721adf0967a9d4cb6085c8712395ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2510}
+    spritePosition: {x: 268, y: 810}
+  - name: Jungle_River_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3107
+      width: 178
+      height: 220
+    spriteID: 80e4808fb2cbd734d9feadddf120529e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3107}
+    spritePosition: {x: 781, y: 39}
+  - name: Jungle_River_07 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1021
+      y: 2510
+      width: 175
+      height: 323
+    spriteID: 8fcdb5d3d828a814b85e12838030515d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: 2510}
+    spritePosition: {x: 1128, y: 757}
+  - name: Jungle_River_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2510
+      width: 146
+      height: 285
+    spriteID: 4de567ce289b36845b7ad34335eca013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2510}
+    spritePosition: {x: 722, y: 265}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 8da2efc0e231ba54c80f1b95413ab15d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: ba4d91681ae874849bf4d5ddd2b210a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Jungle_River_Path_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1021
+      y: 2841
+      width: 88
+      height: 51
+    spriteID: afa4134b9825e3d4dbc9661fe7351fb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: 2841}
+    spritePosition: {x: 932, y: 376}
+  - name: Jungle_River_Path_06 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1270
+      y: 2819
+      width: 28
+      height: 17
+    spriteID: f69d3d863e8203d4186128903cc6b5da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1270, y: 2819}
+    spritePosition: {x: 1551, y: 1007}
+  - name: Jungle_River_Path_05 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1294
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 4fb4980badde05347a5eb5dd71bc24c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1294, y: 2875}
+    spritePosition: {x: 1532, y: 1045}
+  - name: Jungle_River_Path_05 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2667
+      width: 22
+      height: 13
+    spriteID: e1c0bc4a86fa9c64cbff67187779f433
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2667}
+    spritePosition: {x: 1565, y: 1020}
+  - name: Jungle_River_Path_04 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1263
+      y: 2844
+      width: 46
+      height: 23
+    spriteID: d64c5484cf55d9a4e99be15890364d56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1263, y: 2844}
+    spritePosition: {x: 1528, y: 1022}
+  - name: Jungle_River_Path_03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1926
+      y: 2865
+      width: 21
+      height: 24
+    spriteID: f35bd3e20143f8a41a9dcfc893f3aad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1926, y: 2865}
+    spritePosition: {x: 1557, y: 1041}
+  - name: Jungle_River_Path_13 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2770
+      width: 13
+      height: 8
+    spriteID: 8b32443ded6a5b749a7682d7cc104321
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2770}
+    spritePosition: {x: 1550, y: 1046}
+  - name: Jungle_River_Path_13 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2786
+      width: 13
+      height: 8
+    spriteID: 39115d35f35714e458f62f94192511f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2786}
+    spritePosition: {x: 1528, y: 1035}
+  - name: Jungle_River_Path_10 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2667
+      width: 21
+      height: 15
+    spriteID: 2f5e5b01e4fcc444e9223c082de5e31f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2667}
+    spritePosition: {x: 1574, y: 1034}
+  - name: Jungle_River_Path_06 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1306
+      y: 2819
+      width: 28
+      height: 17
+    spriteID: 702c9adc08c299345820a7b99e35ec4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1306, y: 2819}
+    spritePosition: {x: 1227, y: 760}
+  - name: Jungle_River_Path_05 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1327
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 52cc713b38f60774e8aac14a932ee712
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1327, y: 2875}
+    spritePosition: {x: 1208, y: 798}
+  - name: Jungle_River_Path_05 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2688
+      width: 22
+      height: 13
+    spriteID: 842190c4514f27a4190da575a651d1a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2688}
+    spritePosition: {x: 1241, y: 773}
+  - name: Jungle_River_Path_04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1317
+      y: 2844
+      width: 46
+      height: 23
+    spriteID: 5313f28f72e6f944b8e290103fbb8e3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1317, y: 2844}
+    spritePosition: {x: 1204, y: 775}
+  - name: Jungle_River_Path_03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1361
+      y: 2770
+      width: 21
+      height: 24
+    spriteID: 7f4944b5045b5c7458854b02cdf3061e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1361, y: 2770}
+    spritePosition: {x: 1233, y: 794}
+  - name: Jungle_River_Path_13 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2802
+      width: 13
+      height: 8
+    spriteID: 8dc024e83bc1dfa4ea8ee5af632bc1ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2802}
+    spritePosition: {x: 1226, y: 799}
+  - name: Jungle_River_Path_13 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 2818
+      width: 13
+      height: 8
+    spriteID: 9bd58421b4f68cd42b9510361dc310e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1390, y: 2818}
+    spritePosition: {x: 1204, y: 788}
+  - name: Jungle_River_Path_10 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2690
+      width: 21
+      height: 15
+    spriteID: 9324f8671c6804046b776187575441d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2690}
+    spritePosition: {x: 1250, y: 787}
+  - name: Jungle_River_Path_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1258
+      y: 2875
+      width: 28
+      height: 17
+    spriteID: 2a20b18ef2c825242afe71654658d3d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1258, y: 2875}
+    spritePosition: {x: 1284, y: 396}
+  - name: Jungle_River_Path_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2775
+      width: 81
+      height: 50
+    spriteID: ff6b422bd9d770a418e2893d8192b2cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2775}
+    spritePosition: {x: 919, y: 531}
+  - name: Jungle_River_Path_05 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1360
+      y: 2875
+      width: 25
+      height: 14
+    spriteID: 6e6cafe7ad5676a42af2f1daf515f475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1360, y: 2875}
+    spritePosition: {x: 1265, y: 434}
+  - name: Jungle_River_Path_05 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 930
+      y: 2709
+      width: 22
+      height: 13
+    spriteID: 4adae86cead596f419795af1ce392ff2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 930, y: 2709}
+    spritePosition: {x: 1298, y: 409}
+  - name: Jungle_River_Path_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1725
+      y: 2775
+      width: 55
+      height: 31
+    spriteID: 73acbef815be33a42976580388c0f9a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1725, y: 2775}
+    spritePosition: {x: 1020, y: 542}
+  - name: Jungle_River_Path_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2875
+      width: 46
+      height: 23
+    spriteID: 85363566372c025489f415eca6db886e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2875}
+    spritePosition: {x: 1261, y: 411}
+  - name: Jungle_River_Path_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1270
+      y: 2770
+      width: 83
+      height: 41
+    spriteID: 91450fa69b866df4a8e8f2426a1a994b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1270, y: 2770}
+    spritePosition: {x: 1059, y: 491}
+  - name: Jungle_River_Path_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1361
+      y: 2802
+      width: 21
+      height: 24
+    spriteID: 7f8ab234e809e61429c7442e65ad5ae9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1361, y: 2802}
+    spritePosition: {x: 1290, y: 430}
+  - name: Jungle_River_Path_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2770
+      width: 58
+      height: 66
+    spriteID: 10aa85819bf8679448e73d73892d7a2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2770}
+    spritePosition: {x: 1059, y: 379}
+  - name: Jungle_River_Path_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1728
+      y: 2833
+      width: 61
+      height: 64
+    spriteID: 94a130e5efdd8fd499fd74aac5801dbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1728, y: 2833}
+    spritePosition: {x: 1078, y: 285}
+  - name: Jungle_River_Path_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2833
+      width: 84
+      height: 47
+    spriteID: 8fdde0db45fb6f34c8f244bb9998e22e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2833}
+    spritePosition: {x: 936, y: 293}
+  - name: Jungle_River_Path_13 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1897
+      y: 2845
+      width: 13
+      height: 8
+    spriteID: fd61c8a8eed985046a37006cf1a5d1b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1897, y: 2845}
+    spritePosition: {x: 1283, y: 435}
+  - name: Jungle_River_Path_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1918
+      y: 2845
+      width: 13
+      height: 8
+    spriteID: cbd72c356494aa14ba67f72780203732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1918, y: 2845}
+    spritePosition: {x: 1261, y: 424}
+  - name: Jungle_River_Path_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1371
+      y: 2844
+      width: 31
+      height: 20
+    spriteID: fe0b847466644904e84d4686638b7107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1371, y: 2844}
+    spritePosition: {x: 1086, y: 617}
+  - name: Jungle_River_Path_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2865
+      width: 58
+      height: 26
+    spriteID: 6857332b6e131ea48b76449e42d6b54a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2865}
+    spritePosition: {x: 978, y: 591}
+  - name: Jungle_River_Path_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2844
+      width: 51
+      height: 23
+    spriteID: 92ceafca2b86e504facb2f77275c488c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2844}
+    spritePosition: {x: 1007, y: 340}
+  - name: Jungle_River_Path_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 901
+      y: 2713
+      width: 21
+      height: 15
+    spriteID: 5c3f4d6e049ea0547a83245f163dc7e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 901, y: 2713}
+    spritePosition: {x: 1307, y: 423}
+  - name: Jungle_River_Path_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1873
+      y: 2865
+      width: 45
+      height: 31
+    spriteID: 83977ef549a2ba74eb8538cd9e9ff4ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1873, y: 2865}
+    spritePosition: {x: 1127, y: 550}
+  - name: Jungle_River_Path_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1897
+      y: 2803
+      width: 51
+      height: 34
+    spriteID: afc3bb6c4b78cfc45b524dd23c9f8f58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1897, y: 2803}
+    spritePosition: {x: 1025, y: 259}
+  - name: Jungle_River_Path_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1117
+      y: 2841
+      width: 79
+      height: 49
+    spriteID: d73d8bcba7969344391bce54ac9e51b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1117, y: 2841}
+    spritePosition: {x: 941, y: 451}
+  - name: Jungle_River_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 2908
+      width: 300
+      height: 125
+    spriteID: 5bc1d68df5d59934a9664ab2975c7042
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 2908}
+    spritePosition: {x: 1620, y: 955}
+  - name: Jungle_River_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1154
+      y: 2180
+      width: 389
+      height: 192
+    spriteID: 41ca68c283359fb4282b16d17e5bcc3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1154, y: 2180}
+    spritePosition: {x: 629, y: 652}
+  - name: Jungle_River_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 601
+      y: 2510
+      width: 412
+      height: 149
+    spriteID: 1a5af14dedc297940bb4083fe59c280c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 601, y: 2510}
+    spritePosition: {x: 603, y: 818}
+  - name: Jungle_River_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1551
+      y: 2180
+      width: 245
+      height: 299
+    spriteID: 746066a99ee371746bc94233a0a5fc6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1551, y: 2180}
+    spritePosition: {x: 394, y: 47}
+  - name: Jungle_River_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2510
+      width: 319
+      height: 390
+    spriteID: 65da02a0d01c588428b35f1b65b42821
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2510}
+    spritePosition: {x: 1207, y: 380}
+  - name: Jungle_River_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 601
+      y: 2667
+      width: 292
+      height: 176
+    spriteID: 94119dda2e8d1db4b8912bbbacff59d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 601, y: 2667}
+    spritePosition: {x: 412, y: 362}
+  - name: Jungle_River_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 437
+      height: 322
+    spriteID: cfa14e21bcaf32c4cb0a485c05cbce99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1483, y: 0}
+  - name: Jungle_River_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 2180
+      width: 375
+      height: 269
+    spriteID: ee2ff374e499f614d8e3e4d2f296e993
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 2180}
+    spritePosition: {x: 23, y: 302}
+  - name: Jungle_River_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 2180
+      width: 314
+      height: 250
+    spriteID: 4f152588027523947b93d343c20a146b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 2180}
+    spritePosition: {x: 52, y: 14}
+  - name: Jungle_River_12 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 2510
+      width: 262
+      height: 239
+    spriteID: b13d9a055c17fd64a90023295d432122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 2510}
+    spritePosition: {x: 1224, y: 146}
+  - name: Jungle_River_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2908
+      width: 213
+      height: 191
+    spriteID: 8bbd849db661cb44296a90c55f4f889f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2908}
+    spritePosition: {x: 23, y: 609}
+  - name: Jungle_River_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1411
+      y: 2510
+      width: 217
+      height: 194
+    spriteID: 61e8cc1a6315ad946b45168c23809edf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1411, y: 2510}
+    spritePosition: {x: 250, y: 610}
+  - name: Jungle_River_10 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 2180
+      width: 212
+      height: 315
+    spriteID: f81d4c6b49780844e8696d2ec8168195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 2180}
+    spritePosition: {x: 1410, y: 765}
+  - name: Jungle_River_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1636
+      y: 2510
+      width: 163
+      height: 257
+    spriteID: 60fd7a4b761222149827402d3f45d3de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1636, y: 2510}
+    spritePosition: {x: 0, y: 807}
+  - name: Jungle_River_09 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2803
+      width: 82
+      height: 54
+    spriteID: b6cd288b7b07989478091db0b00bc2d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2803}
+    spritePosition: {x: 1838, y: 0}
+  - name: Jungle_River_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1204
+      y: 2510
+      width: 199
+      height: 252
+    spriteID: 12721adf0967a9d4cb6085c8712395ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1204, y: 2510}
+    spritePosition: {x: 268, y: 810}
+  - name: Jungle_River_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3107
+      width: 178
+      height: 220
+    spriteID: 80e4808fb2cbd734d9feadddf120529e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3107}
+    spritePosition: {x: 781, y: 39}
+  - name: Jungle_River_07 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1021
+      y: 2510
+      width: 175
+      height: 323
+    spriteID: 8fcdb5d3d828a814b85e12838030515d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: 2510}
+    spritePosition: {x: 1128, y: 757}
+  - name: Jungle_River_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1807
+      y: 2510
+      width: 146
+      height: 285
+    spriteID: 4de567ce289b36845b7ad34335eca013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1807, y: 2510}
+    spritePosition: {x: 722, y: 265}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 8da2efc0e231ba54c80f1b95413ab15d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: ba4d91681ae874849bf4d5ddd2b210a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Jungle_River_Path_07
+    spriteName: Jungle_River_Path_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afa4134b9825e3d4dbc9661fe7351fb4
+    layerID: 181
+    mosaicPosition: {x: 1021, y: 2841}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy 3
+    spriteName: Jungle_River_Path_06 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f69d3d863e8203d4186128903cc6b5da
+    layerID: 180
+    mosaicPosition: {x: 1270, y: 2819}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 4
+    spriteName: Jungle_River_Path_05 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4fb4980badde05347a5eb5dd71bc24c4
+    layerID: 179
+    mosaicPosition: {x: 1294, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 4
+    spriteName: Jungle_River_Path_05 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e1c0bc4a86fa9c64cbff67187779f433
+    layerID: 178
+    mosaicPosition: {x: 930, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy 3
+    spriteName: Jungle_River_Path_04 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d64c5484cf55d9a4e99be15890364d56
+    layerID: 177
+    mosaicPosition: {x: 1263, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy 3
+    spriteName: Jungle_River_Path_03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f35bd3e20143f8a41a9dcfc893f3aad5
+    layerID: 176
+    mosaicPosition: {x: 1926, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 4
+    spriteName: Jungle_River_Path_13 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b32443ded6a5b749a7682d7cc104321
+    layerID: 175
+    mosaicPosition: {x: 1390, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 4
+    spriteName: Jungle_River_Path_13 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39115d35f35714e458f62f94192511f2
+    layerID: 174
+    mosaicPosition: {x: 1390, y: 2786}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy 3
+    spriteName: Jungle_River_Path_10 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2f5e5b01e4fcc444e9223c082de5e31f
+    layerID: 173
+    mosaicPosition: {x: 901, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy 2
+    spriteName: Jungle_River_Path_06 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 702c9adc08c299345820a7b99e35ec4e
+    layerID: 172
+    mosaicPosition: {x: 1306, y: 2819}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 3
+    spriteName: Jungle_River_Path_05 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52cc713b38f60774e8aac14a932ee712
+    layerID: 171
+    mosaicPosition: {x: 1327, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 3
+    spriteName: Jungle_River_Path_05 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 842190c4514f27a4190da575a651d1a4
+    layerID: 170
+    mosaicPosition: {x: 930, y: 2688}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy 2
+    spriteName: Jungle_River_Path_04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5313f28f72e6f944b8e290103fbb8e3f
+    layerID: 169
+    mosaicPosition: {x: 1317, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy 2
+    spriteName: Jungle_River_Path_03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f4944b5045b5c7458854b02cdf3061e
+    layerID: 168
+    mosaicPosition: {x: 1361, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 3
+    spriteName: Jungle_River_Path_13 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8dc024e83bc1dfa4ea8ee5af632bc1ff
+    layerID: 167
+    mosaicPosition: {x: 1390, y: 2802}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 3
+    spriteName: Jungle_River_Path_13 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9bd58421b4f68cd42b9510361dc310e8
+    layerID: 166
+    mosaicPosition: {x: 1390, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy 2
+    spriteName: Jungle_River_Path_10 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9324f8671c6804046b776187575441d1
+    layerID: 165
+    mosaicPosition: {x: 901, y: 2690}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy
+    spriteName: Jungle_River_Path_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2a20b18ef2c825242afe71654658d3d0
+    layerID: 164
+    mosaicPosition: {x: 1258, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06
+    spriteName: Jungle_River_Path_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff6b422bd9d770a418e2893d8192b2cb
+    layerID: 163
+    mosaicPosition: {x: 1636, y: 2775}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy
+    spriteName: Jungle_River_Path_05 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6e6cafe7ad5676a42af2f1daf515f475
+    layerID: 162
+    mosaicPosition: {x: 1360, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 2
+    spriteName: Jungle_River_Path_05 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4adae86cead596f419795af1ce392ff2
+    layerID: 161
+    mosaicPosition: {x: 930, y: 2709}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05
+    spriteName: Jungle_River_Path_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 73acbef815be33a42976580388c0f9a7
+    layerID: 160
+    mosaicPosition: {x: 1725, y: 2775}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy
+    spriteName: Jungle_River_Path_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85363566372c025489f415eca6db886e
+    layerID: 159
+    mosaicPosition: {x: 1204, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04
+    spriteName: Jungle_River_Path_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 91450fa69b866df4a8e8f2426a1a994b
+    layerID: 158
+    mosaicPosition: {x: 1270, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy
+    spriteName: Jungle_River_Path_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f8ab234e809e61429c7442e65ad5ae9
+    layerID: 157
+    mosaicPosition: {x: 1361, y: 2802}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03
+    spriteName: Jungle_River_Path_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10aa85819bf8679448e73d73892d7a2d
+    layerID: 156
+    mosaicPosition: {x: 1204, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_02
+    spriteName: Jungle_River_Path_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94a130e5efdd8fd499fd74aac5801dbb
+    layerID: 155
+    mosaicPosition: {x: 1728, y: 2833}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_01
+    spriteName: Jungle_River_Path_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8fdde0db45fb6f34c8f244bb9998e22e
+    layerID: 154
+    mosaicPosition: {x: 1636, y: 2833}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 2
+    spriteName: Jungle_River_Path_13 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fd61c8a8eed985046a37006cf1a5d1b9
+    layerID: 153
+    mosaicPosition: {x: 1897, y: 2845}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy
+    spriteName: Jungle_River_Path_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cbd72c356494aa14ba67f72780203732
+    layerID: 152
+    mosaicPosition: {x: 1918, y: 2845}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13
+    spriteName: Jungle_River_Path_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fe0b847466644904e84d4686638b7107
+    layerID: 151
+    mosaicPosition: {x: 1371, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_12
+    spriteName: Jungle_River_Path_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6857332b6e131ea48b76449e42d6b54a
+    layerID: 150
+    mosaicPosition: {x: 1807, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_11
+    spriteName: Jungle_River_Path_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 92ceafca2b86e504facb2f77275c488c
+    layerID: 149
+    mosaicPosition: {x: 1204, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy
+    spriteName: Jungle_River_Path_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5c3f4d6e049ea0547a83245f163dc7e0
+    layerID: 148
+    mosaicPosition: {x: 901, y: 2713}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10
+    spriteName: Jungle_River_Path_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 83977ef549a2ba74eb8538cd9e9ff4ed
+    layerID: 147
+    mosaicPosition: {x: 1873, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_09
+    spriteName: Jungle_River_Path_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afc3bb6c4b78cfc45b524dd23c9f8f58
+    layerID: 146
+    mosaicPosition: {x: 1897, y: 2803}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_08
+    spriteName: Jungle_River_Path_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d73d8bcba7969344391bce54ac9e51b0
+    layerID: 145
+    mosaicPosition: {x: 1117, y: 2841}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_06 copy
+    spriteName: Jungle_River_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5bc1d68df5d59934a9664ab2975c7042
+    layerID: 114
+    mosaicPosition: {x: 225, y: 2908}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_06
+    spriteName: Jungle_River_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41ca68c283359fb4282b16d17e5bcc3d
+    layerID: 112
+    mosaicPosition: {x: 1154, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_05
+    spriteName: Jungle_River_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a5af14dedc297940bb4083fe59c280c
+    layerID: 111
+    mosaicPosition: {x: 601, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_04 copy
+    spriteName: Jungle_River_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 746066a99ee371746bc94233a0a5fc6c
+    layerID: 121
+    mosaicPosition: {x: 1551, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_04
+    spriteName: Jungle_River_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65da02a0d01c588428b35f1b65b42821
+    layerID: 110
+    mosaicPosition: {x: 4, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_03
+    spriteName: Jungle_River_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94119dda2e8d1db4b8912bbbacff59d2
+    layerID: 109
+    mosaicPosition: {x: 601, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_02 copy
+    spriteName: Jungle_River_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfa14e21bcaf32c4cb0a485c05cbce99
+    layerID: 119
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_02
+    spriteName: Jungle_River_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ee2ff374e499f614d8e3e4d2f296e993
+    layerID: 108
+    mosaicPosition: {x: 449, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_01
+    spriteName: Jungle_River_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4f152588027523947b93d343c20a146b
+    layerID: 107
+    mosaicPosition: {x: 832, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_12 copy
+    spriteName: Jungle_River_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b13d9a055c17fd64a90023295d432122
+    layerID: 118
+    mosaicPosition: {x: 331, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_12
+    spriteName: Jungle_River_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8bbd849db661cb44296a90c55f4f889f
+    layerID: 106
+    mosaicPosition: {x: 4, y: 2908}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_11
+    spriteName: Jungle_River_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 61e8cc1a6315ad946b45168c23809edf
+    layerID: 105
+    mosaicPosition: {x: 1411, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_10 copy
+    spriteName: Jungle_River_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f81d4c6b49780844e8696d2ec8168195
+    layerID: 116
+    mosaicPosition: {x: 1804, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_10
+    spriteName: Jungle_River_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60fd7a4b761222149827402d3f45d3de
+    layerID: 104
+    mosaicPosition: {x: 1636, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_09 copy
+    spriteName: Jungle_River_09 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6cd288b7b07989478091db0b00bc2d6
+    layerID: 123
+    mosaicPosition: {x: 1807, y: 2803}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_09
+    spriteName: Jungle_River_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 12721adf0967a9d4cb6085c8712395ad
+    layerID: 103
+    mosaicPosition: {x: 1204, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_08
+    spriteName: Jungle_River_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80e4808fb2cbd734d9feadddf120529e
+    layerID: 102
+    mosaicPosition: {x: 4, y: 3107}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_07 copy 2
+    spriteName: Jungle_River_07 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8fcdb5d3d828a814b85e12838030515d
+    layerID: 125
+    mosaicPosition: {x: 1021, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_07
+    spriteName: Jungle_River_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4de567ce289b36845b7ad34335eca013
+    layerID: 101
+    mosaicPosition: {x: 1807, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f6e6860e0df52e54e8e8147a7fd5211f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8da2efc0e231ba54c80f1b95413ab15d
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ba4d91681ae874849bf4d5ddd2b210a9
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Jungle_River_Path_07
+    spriteName: Jungle_River_Path_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afa4134b9825e3d4dbc9661fe7351fb4
+    layerID: 181
+    mosaicPosition: {x: 1021, y: 2841}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy 3
+    spriteName: Jungle_River_Path_06 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f69d3d863e8203d4186128903cc6b5da
+    layerID: 180
+    mosaicPosition: {x: 1270, y: 2819}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 4
+    spriteName: Jungle_River_Path_05 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4fb4980badde05347a5eb5dd71bc24c4
+    layerID: 179
+    mosaicPosition: {x: 1294, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 4
+    spriteName: Jungle_River_Path_05 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e1c0bc4a86fa9c64cbff67187779f433
+    layerID: 178
+    mosaicPosition: {x: 930, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy 3
+    spriteName: Jungle_River_Path_04 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d64c5484cf55d9a4e99be15890364d56
+    layerID: 177
+    mosaicPosition: {x: 1263, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy 3
+    spriteName: Jungle_River_Path_03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f35bd3e20143f8a41a9dcfc893f3aad5
+    layerID: 176
+    mosaicPosition: {x: 1926, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 4
+    spriteName: Jungle_River_Path_13 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b32443ded6a5b749a7682d7cc104321
+    layerID: 175
+    mosaicPosition: {x: 1390, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 4
+    spriteName: Jungle_River_Path_13 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39115d35f35714e458f62f94192511f2
+    layerID: 174
+    mosaicPosition: {x: 1390, y: 2786}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy 3
+    spriteName: Jungle_River_Path_10 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2f5e5b01e4fcc444e9223c082de5e31f
+    layerID: 173
+    mosaicPosition: {x: 901, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy 2
+    spriteName: Jungle_River_Path_06 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 702c9adc08c299345820a7b99e35ec4e
+    layerID: 172
+    mosaicPosition: {x: 1306, y: 2819}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 3
+    spriteName: Jungle_River_Path_05 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52cc713b38f60774e8aac14a932ee712
+    layerID: 171
+    mosaicPosition: {x: 1327, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 3
+    spriteName: Jungle_River_Path_05 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 842190c4514f27a4190da575a651d1a4
+    layerID: 170
+    mosaicPosition: {x: 930, y: 2688}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy 2
+    spriteName: Jungle_River_Path_04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5313f28f72e6f944b8e290103fbb8e3f
+    layerID: 169
+    mosaicPosition: {x: 1317, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy 2
+    spriteName: Jungle_River_Path_03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f4944b5045b5c7458854b02cdf3061e
+    layerID: 168
+    mosaicPosition: {x: 1361, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 3
+    spriteName: Jungle_River_Path_13 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8dc024e83bc1dfa4ea8ee5af632bc1ff
+    layerID: 167
+    mosaicPosition: {x: 1390, y: 2802}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 3
+    spriteName: Jungle_River_Path_13 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9bd58421b4f68cd42b9510361dc310e8
+    layerID: 166
+    mosaicPosition: {x: 1390, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy 2
+    spriteName: Jungle_River_Path_10 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9324f8671c6804046b776187575441d1
+    layerID: 165
+    mosaicPosition: {x: 901, y: 2690}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06 copy
+    spriteName: Jungle_River_Path_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2a20b18ef2c825242afe71654658d3d0
+    layerID: 164
+    mosaicPosition: {x: 1258, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_06
+    spriteName: Jungle_River_Path_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ff6b422bd9d770a418e2893d8192b2cb
+    layerID: 163
+    mosaicPosition: {x: 1636, y: 2775}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy
+    spriteName: Jungle_River_Path_05 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6e6cafe7ad5676a42af2f1daf515f475
+    layerID: 162
+    mosaicPosition: {x: 1360, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05 copy 2
+    spriteName: Jungle_River_Path_05 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4adae86cead596f419795af1ce392ff2
+    layerID: 161
+    mosaicPosition: {x: 930, y: 2709}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_05
+    spriteName: Jungle_River_Path_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 73acbef815be33a42976580388c0f9a7
+    layerID: 160
+    mosaicPosition: {x: 1725, y: 2775}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04 copy
+    spriteName: Jungle_River_Path_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85363566372c025489f415eca6db886e
+    layerID: 159
+    mosaicPosition: {x: 1204, y: 2875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_04
+    spriteName: Jungle_River_Path_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 91450fa69b866df4a8e8f2426a1a994b
+    layerID: 158
+    mosaicPosition: {x: 1270, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03 copy
+    spriteName: Jungle_River_Path_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f8ab234e809e61429c7442e65ad5ae9
+    layerID: 157
+    mosaicPosition: {x: 1361, y: 2802}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_03
+    spriteName: Jungle_River_Path_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10aa85819bf8679448e73d73892d7a2d
+    layerID: 156
+    mosaicPosition: {x: 1204, y: 2770}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_02
+    spriteName: Jungle_River_Path_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94a130e5efdd8fd499fd74aac5801dbb
+    layerID: 155
+    mosaicPosition: {x: 1728, y: 2833}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_01
+    spriteName: Jungle_River_Path_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8fdde0db45fb6f34c8f244bb9998e22e
+    layerID: 154
+    mosaicPosition: {x: 1636, y: 2833}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy 2
+    spriteName: Jungle_River_Path_13 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fd61c8a8eed985046a37006cf1a5d1b9
+    layerID: 153
+    mosaicPosition: {x: 1897, y: 2845}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13 copy
+    spriteName: Jungle_River_Path_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cbd72c356494aa14ba67f72780203732
+    layerID: 152
+    mosaicPosition: {x: 1918, y: 2845}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_13
+    spriteName: Jungle_River_Path_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fe0b847466644904e84d4686638b7107
+    layerID: 151
+    mosaicPosition: {x: 1371, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_12
+    spriteName: Jungle_River_Path_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6857332b6e131ea48b76449e42d6b54a
+    layerID: 150
+    mosaicPosition: {x: 1807, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_11
+    spriteName: Jungle_River_Path_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 92ceafca2b86e504facb2f77275c488c
+    layerID: 149
+    mosaicPosition: {x: 1204, y: 2844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10 copy
+    spriteName: Jungle_River_Path_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5c3f4d6e049ea0547a83245f163dc7e0
+    layerID: 148
+    mosaicPosition: {x: 901, y: 2713}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_10
+    spriteName: Jungle_River_Path_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 83977ef549a2ba74eb8538cd9e9ff4ed
+    layerID: 147
+    mosaicPosition: {x: 1873, y: 2865}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_09
+    spriteName: Jungle_River_Path_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afc3bb6c4b78cfc45b524dd23c9f8f58
+    layerID: 146
+    mosaicPosition: {x: 1897, y: 2803}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_Path_08
+    spriteName: Jungle_River_Path_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d73d8bcba7969344391bce54ac9e51b0
+    layerID: 145
+    mosaicPosition: {x: 1117, y: 2841}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_06 copy
+    spriteName: Jungle_River_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5bc1d68df5d59934a9664ab2975c7042
+    layerID: 114
+    mosaicPosition: {x: 225, y: 2908}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_06
+    spriteName: Jungle_River_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41ca68c283359fb4282b16d17e5bcc3d
+    layerID: 112
+    mosaicPosition: {x: 1154, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_05
+    spriteName: Jungle_River_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a5af14dedc297940bb4083fe59c280c
+    layerID: 111
+    mosaicPosition: {x: 601, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_04 copy
+    spriteName: Jungle_River_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 746066a99ee371746bc94233a0a5fc6c
+    layerID: 121
+    mosaicPosition: {x: 1551, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_04
+    spriteName: Jungle_River_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65da02a0d01c588428b35f1b65b42821
+    layerID: 110
+    mosaicPosition: {x: 4, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_03
+    spriteName: Jungle_River_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 94119dda2e8d1db4b8912bbbacff59d2
+    layerID: 109
+    mosaicPosition: {x: 601, y: 2667}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_02 copy
+    spriteName: Jungle_River_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfa14e21bcaf32c4cb0a485c05cbce99
+    layerID: 119
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_02
+    spriteName: Jungle_River_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ee2ff374e499f614d8e3e4d2f296e993
+    layerID: 108
+    mosaicPosition: {x: 449, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_01
+    spriteName: Jungle_River_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4f152588027523947b93d343c20a146b
+    layerID: 107
+    mosaicPosition: {x: 832, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_12 copy
+    spriteName: Jungle_River_12 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b13d9a055c17fd64a90023295d432122
+    layerID: 118
+    mosaicPosition: {x: 331, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_12
+    spriteName: Jungle_River_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8bbd849db661cb44296a90c55f4f889f
+    layerID: 106
+    mosaicPosition: {x: 4, y: 2908}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_11
+    spriteName: Jungle_River_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 61e8cc1a6315ad946b45168c23809edf
+    layerID: 105
+    mosaicPosition: {x: 1411, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_10 copy
+    spriteName: Jungle_River_10 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f81d4c6b49780844e8696d2ec8168195
+    layerID: 116
+    mosaicPosition: {x: 1804, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_10
+    spriteName: Jungle_River_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60fd7a4b761222149827402d3f45d3de
+    layerID: 104
+    mosaicPosition: {x: 1636, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_09 copy
+    spriteName: Jungle_River_09 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6cd288b7b07989478091db0b00bc2d6
+    layerID: 123
+    mosaicPosition: {x: 1807, y: 2803}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_09
+    spriteName: Jungle_River_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 12721adf0967a9d4cb6085c8712395ad
+    layerID: 103
+    mosaicPosition: {x: 1204, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_08
+    spriteName: Jungle_River_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80e4808fb2cbd734d9feadddf120529e
+    layerID: 102
+    mosaicPosition: {x: 4, y: 3107}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_07 copy 2
+    spriteName: Jungle_River_07 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8fcdb5d3d828a814b85e12838030515d
+    layerID: 125
+    mosaicPosition: {x: 1021, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_River_07
+    spriteName: Jungle_River_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4de567ce289b36845b7ad34335eca013
+    layerID: 101
+    mosaicPosition: {x: 1807, y: 2510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f6e6860e0df52e54e8e8147a7fd5211f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8da2efc0e231ba54c80f1b95413ab15d
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ba4d91681ae874849bf4d5ddd2b210a9
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

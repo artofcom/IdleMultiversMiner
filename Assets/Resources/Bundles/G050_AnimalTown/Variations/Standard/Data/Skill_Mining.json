@@ -1,0 +1,142 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_AuraAmplification1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_AuraAmplification1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone1.",
+            "unlockCost": [
+                {
+                    "resourceId": "eggtoast",
+                    "count": 10
+                },
+                {
+                    "resourceId": "blackjuice",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "greenjuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bluejuice",
+                    "count": 40
+                }
+            ],
+            "children": [
+                "Mining_2_ZoneDiscovery3",
+                "Mining_2_AuraAmplification2"
+            ]
+        },
+        {
+            "name": "Unlock Zone 2 Buff",
+            "id": "Mining_2_AuraAmplification2",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "fruitbasket",
+                    "count": 10
+                },
+                {
+                    "resourceId": "cherry",
+                    "count": 35
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 3",
+            "id": "Mining_2_ZoneDiscovery3",
+            "abilityId": "unlock_zone",
+            "abilityParam": "300",
+            "description": "Unlock the Section of Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "pinkjuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "orangejuice",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "Mining_3_AuraAmplification3",
+                "Mining_3_ZoneDiscovery4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 3 Buff",
+            "id": "Mining_3_AuraAmplification3",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "meatpie",
+                    "count": 10
+                },
+                {
+                    "resourceId": "fruitpie",
+                    "count": 40
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 4",
+            "id": "Mining_3_ZoneDiscovery4",
+            "abilityId": "unlock_zone",
+            "abilityParam": "400",
+            "description": "Unlock the Section of Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "redjuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "grapes",
+                    "count": 35
+                }
+            ],
+            "children": [
+                "Mining_4_AuraAmplification4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 4 Buff",
+            "id": "Mining_4_AuraAmplification4",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "meatstew",
+                    "count": 10
+                },
+                {
+                    "resourceId": "peanuts",
+                    "count": 45
+                }
+            ],
+            "children": []
+        }
+    ]
+}

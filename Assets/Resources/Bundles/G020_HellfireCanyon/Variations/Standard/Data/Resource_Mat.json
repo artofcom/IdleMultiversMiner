@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "coal",
+            "price": "10"
+        },
+        {
+            "id": "copper",
+            "price": "60"
+        },
+        {
+            "id": "iron",
+            "price": "110"
+        },
+        {
+            "id": "magma",
+            "price": "160"
+        },
+        {
+            "id": "magmachunk",
+            "price": "210"
+        },
+        {
+            "id": "krypto",
+            "price": "260"
+        },
+        {
+            "id": "demonarm",
+            "price": "310"
+        },
+        {
+            "id": "dragonegg",
+            "price": "360"
+        },
+        {
+            "id": "demonfoot",
+            "price": "410"
+        },
+        {
+            "id": "gold",
+            "price": "460"
+        },
+        {
+            "id": "stardust",
+            "price": "510"
+        }
+    ]
+}

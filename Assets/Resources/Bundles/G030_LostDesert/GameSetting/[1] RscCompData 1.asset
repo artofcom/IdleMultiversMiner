@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[1] RscCompData 1'
+  m_EditorClassIdentifier: 
+  baseValue: 50
+  rarity: 3
+  resourceSets:
+  - icon: {fileID: 21300000, guid: 7b42601c97463234b9954b25e472791f, type: 3}
+    resourceInfo:
+      id: bonepowder
+      price: 50
+  - icon: {fileID: 21300000, guid: 3b79cabd69ceb42438215957f234c271, type: 3}
+    resourceInfo:
+      id: coaldummy
+      price: 200
+  - icon: {fileID: 21300000, guid: 6f7efd273db5c124c9941dd7b2bb2e28, type: 3}
+    resourceInfo:
+      id: deathweb
+      price: 350
+  - icon: {fileID: 21300000, guid: fca1d3c33a3e6cd4289b33c3a83b3f73, type: 3}
+    resourceInfo:
+      id: copperbar
+      price: 500
+  - icon: {fileID: 21300000, guid: bbd4abab8d872844591879a0aa6eb8fb, type: 3}
+    resourceInfo:
+      id: bloodypoison
+      price: 650
+  - icon: {fileID: 21300000, guid: 2dea070152ea7ba41910f00a3f650c52, type: 3}
+    resourceInfo:
+      id: demonicpoison
+      price: 800
+  - icon: {fileID: 21300000, guid: 25a21b1e142c62b41848099e40747d8d, type: 3}
+    resourceInfo:
+      id: zombieoil
+      price: 950
+  - icon: {fileID: 21300000, guid: 295f52d11582e9f4b99d3a3047114a37, type: 3}
+    resourceInfo:
+      id: demonicwater
+      price: 1100
+  - icon: {fileID: 21300000, guid: ca3bd90e8c13ec54690aa409c4bbf6d9, type: 3}
+    resourceInfo:
+      id: ironbar
+      price: 1250
+  - icon: {fileID: 21300000, guid: 22e53aa9ecce1f44d84deb83f79bb867, type: 3}
+    resourceInfo:
+      id: magma
+      price: 1400
+  - icon: {fileID: 21300000, guid: da62275d4ade3fd4499f759af399135b, type: 3}
+    resourceInfo:
+      id: scalebundle
+      price: 1550

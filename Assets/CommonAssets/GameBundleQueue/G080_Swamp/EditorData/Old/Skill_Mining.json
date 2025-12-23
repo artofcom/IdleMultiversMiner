@@ -1,0 +1,175 @@
+{
+  "categoryId": "mining",
+  "skillInfo": [
+    {
+      "id": 100,
+      "name": "Zone01 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Unlock Zone02",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Zone02 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Unlock Zone03",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Zone03 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Unlock Zone04",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Zone04 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "name": "Unlock Zone05",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "name": "Zone06 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "name": "Unlock Zone07",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "name": "Zone08 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "name": "Unlock Zone09",
+      "description": "proj 00's desc",
+      "abilityId": "unlock_zone",
+      "abilityParam": "200",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "Zone09 Manual Booster",
+      "description": "proj 00's desc",
+      "abilityId": "zone_manual_booster",
+      "abilityParam": "1",
+      "unlockCost": [
+        {
+          "resourceId": "CoalDummy",
+          "count": 1000
+        }
+      ]
+    }
+
+  ]
+}

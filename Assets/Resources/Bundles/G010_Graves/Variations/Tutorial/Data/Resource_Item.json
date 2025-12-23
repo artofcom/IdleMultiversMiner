@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "soulcompass",
+            "price": "1500"
+        },
+        {
+            "id": "infernaltalon",
+            "price": "1650"
+        },
+        {
+            "id": "soulfireplume",
+            "price": "1800"
+        },
+        {
+            "id": "bindingsigil",
+            "price": "1950"
+        },
+        {
+            "id": "soulfirecrystal",
+            "price": "2100"
+        },
+        {
+            "id": "vesselofsouls",
+            "price": "2250"
+        },
+        {
+            "id": "celestialpinion",
+            "price": "2400"
+        },
+        {
+            "id": "celestineorb",
+            "price": "2550"
+        },
+        {
+            "id": "oculusofthearcane",
+            "price": "2700"
+        },
+        {
+            "id": "gildedskull",
+            "price": "2850"
+        }
+    ]
+}

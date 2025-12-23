@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71b19fe4eff7946fb9be3cd93ca2da38
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 129032
+  packageName: 2D Toon Portals
+  packageVersion: 1.0
+  assetPath: Assets/Portal/Prefabs/PortalGreenPurple.prefab
+  uploadId: 268374

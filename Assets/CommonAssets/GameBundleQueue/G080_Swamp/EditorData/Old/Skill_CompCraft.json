@@ -1,0 +1,107 @@
+{
+  "categoryId": "compCraft",
+  "skillInfo": [
+    {
+      "id": 100,
+      "name": "Open Comp Craft",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Open Comp Craft Manual Booster",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Manual Booster 5% faster",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Slot Cost 5% Reduce",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Manual Booster 5% faster",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Slot Cost 5% Reduce",
+      "description": "feature-proj 00's desc",
+      "abilityId": "open_feature",
+      "abilityParam": "meteor",
+      "unlockCost": [
+        {
+          "resourceId": "ZombieOil",
+          "count": 500
+        },
+        {
+          "resourceId": "FlamingMarble",
+          "count": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[2] RscItemData'
+  m_EditorClassIdentifier: 
+  baseValue: 1500
+  rarity: 0.1
+  resourceSets:
+  - icon: {fileID: 21300000, guid: 1cbd8de78aa6f2f4b9e22235b692588c, type: 3}
+    resourceInfo:
+      id: soulcompass
+      price: 1500
+  - icon: {fileID: 21300000, guid: 14a2518304793454989752f37e666216, type: 3}
+    resourceInfo:
+      id: infernaltalon
+      price: 1650
+  - icon: {fileID: 21300000, guid: 5b8d00afa936d92458b39eee6d79927d, type: 3}
+    resourceInfo:
+      id: soulfireplume
+      price: 1800
+  - icon: {fileID: 21300000, guid: f4127ca184412664f868116158c7b8a3, type: 3}
+    resourceInfo:
+      id: bindingsigil
+      price: 1950
+  - icon: {fileID: 21300000, guid: 2509368bda7f0584b8838deb8620c9a9, type: 3}
+    resourceInfo:
+      id: soulfirecrystal
+      price: 2100
+  - icon: {fileID: 21300000, guid: 3093ba4793f6fc540bd19b0411ae2a9e, type: 3}
+    resourceInfo:
+      id: vesselofsouls
+      price: 2250
+  - icon: {fileID: 21300000, guid: 5182e641a99e7924a8563d8756562f67, type: 3}
+    resourceInfo:
+      id: celestialpinion
+      price: 2400
+  - icon: {fileID: 21300000, guid: dab6a675d6247a6418e1164ccb1381b5, type: 3}
+    resourceInfo:
+      id: celestineorb
+      price: 2550
+  - icon: {fileID: 21300000, guid: 490a39e9fd8eee64c8e16562613cce11, type: 3}
+    resourceInfo:
+      id: oculusofthearcane
+      price: 2700
+  - icon: {fileID: 21300000, guid: cf65c52ead6446f43a61c905d10860a3, type: 3}
+    resourceInfo:
+      id: gildedskull
+      price: 2850

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "iceshard",
+            "price": "10"
+        },
+        {
+            "id": "pileofstones",
+            "price": "60"
+        },
+        {
+            "id": "redpincer",
+            "price": "110"
+        },
+        {
+            "id": "whaleskull",
+            "price": "160"
+        },
+        {
+            "id": "amethyst",
+            "price": "210"
+        },
+        {
+            "id": "bearpaw",
+            "price": "260"
+        },
+        {
+            "id": "manacrystal",
+            "price": "310"
+        },
+        {
+            "id": "goldnugget",
+            "price": "360"
+        },
+        {
+            "id": "rawturquoise",
+            "price": "410"
+        },
+        {
+            "id": "mysteriousegg",
+            "price": "460"
+        },
+        {
+            "id": "runestone",
+            "price": "510"
+        }
+    ]
+}

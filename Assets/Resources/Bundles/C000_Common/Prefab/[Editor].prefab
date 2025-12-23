@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2879627774378096653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346206217413717039}
+  - component: {fileID: 238188501267710106}
+  m_Layer: 0
+  m_Name: ResourceDataBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346206217413717039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879627774378096653}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.376369, y: 1.699422, z: -1181.2703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3274622150263156529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238188501267710106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879627774378096653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61772e847aec41e449fa74b787c15dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialData: {fileID: 11400000, guid: 14df5851ebc0ac9409c55a7fd7ae59e8, type: 2}
+  componentData: {fileID: 11400000, guid: 8ae8dcb26c537914d9a651acbf73d4c3, type: 2}
+  itemData: {fileID: 11400000, guid: 0afbea518ac4e41499d50fba56511021, type: 2}
+--- !u!1 &7536523068983979620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7121910678286262551}
+  - component: {fileID: 1533848423011516224}
+  m_Layer: 0
+  m_Name: CraftDataBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7121910678286262551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536523068983979620}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.376369, y: 1.699422, z: -1181.2703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3274622150263156529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1533848423011516224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536523068983979620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62734c8d0c34ce048b78dc893ef1f797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSet: {fileID: 0}
+  componentSet: {fileID: 0}
+  itemSet: {fileID: 0}
+  type: 0
+  DurationBaseValue: 10
+  DurationRarity: 1
+  OpenCostBaseValue: 10
+  OpenCostRarity: 1
+  craftData:
+    recipes: []
+    slotCosts: []
+--- !u!1 &8108890161774893270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4826471220406923263}
+  - component: {fileID: 7789499818555746668}
+  m_Layer: 0
+  m_Name: CraftToItemDataBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4826471220406923263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108890161774893270}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.376369, y: 1.699422, z: -1181.2703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3274622150263156529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7789499818555746668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108890161774893270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62734c8d0c34ce048b78dc893ef1f797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSet: {fileID: 11400000, guid: b5f0b9421c84566478855e30a266a548, type: 2}
+  componentSet: {fileID: 11400000, guid: 8b674854620b794449d9166834142361, type: 2}
+  itemSet: {fileID: 11400000, guid: 09ba8cf63ba12a045bbeb73f88b5646f, type: 2}
+  type: 1
+  DurationBaseValue: 10
+  DurationRarity: 1
+  OpenCostBaseValue: 10
+  OpenCostRarity: 1
+  craftData:
+    recipes:
+    - id: 
+      sources:
+      - resourceId: gravewalkersfoot
+        count: 0
+      outcomeId: 
+      duration: 0
+      cost: 
+    - id: 
+      sources:
+      - resourceId: 
+        count: 0
+      outcomeId: gravewalkersfoot
+      duration: 0
+      cost: 
+    slotCosts: []
+--- !u!1 &8639320724398212434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3274622150263156529}
+  - component: {fileID: 2678587362170781124}
+  m_Layer: 0
+  m_Name: '[Editor]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3274622150263156529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639320724398212434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.54522085, y: -0.1925672, z: 2680.4988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1346206217413717039}
+  - {fileID: 7121910678286262551}
+  - {fileID: 4826471220406923263}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2678587362170781124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639320724398212434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad86ca74d0c5bba4184157f0d58539a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceDataBuildComp: {fileID: 238188501267710106}
+  zoneDataComp: {fileID: 0}
+  craftCompDataBuildComp: {fileID: 1533848423011516224}
+  craftItemDataBuildComp: {fileID: 7789499818555746668}
+  skillItemBundleComp: {fileID: 0}

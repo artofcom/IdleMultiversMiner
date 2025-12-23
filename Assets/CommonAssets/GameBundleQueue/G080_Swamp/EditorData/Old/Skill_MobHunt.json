@@ -1,0 +1,90 @@
+{
+  "categoryId": "mobHunt",
+  "skillInfo": [
+    {
+      "id": 100,
+      "name": "Open Mob Hunting",
+      "description": "proj 00's desc",
+      "abilityId": "mining_buff",
+      "abilityParam": "1.05",
+      "unlockCost": [
+        {
+          "resourceId": "CopperBar",
+          "count": 10
+        },
+        {
+          "resourceId": "BlazingKnife",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Mob Presence 5% more often",
+      "description": "proj 00's desc",
+      "abilityId": "mining_buff",
+      "abilityParam": "1.05",
+      "unlockCost": [
+        {
+          "resourceId": "CopperBar",
+          "count": 10
+        },
+        {
+          "resourceId": "BlazingKnife",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "5% more reward",
+      "description": "proj 00's desc",
+      "abilityId": "mining_buff",
+      "abilityParam": "1.05",
+      "unlockCost": [
+        {
+          "resourceId": "CopperBar",
+          "count": 10
+        },
+        {
+          "resourceId": "BlazingKnife",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "Mob Presence 5% more often",
+      "description": "proj 00's desc",
+      "abilityId": "mining_buff",
+      "abilityParam": "1.05",
+      "unlockCost": [
+        {
+          "resourceId": "CopperBar",
+          "count": 10
+        },
+        {
+          "resourceId": "BlazingKnife",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "name": "5% more reward",
+      "description": "proj 00's desc",
+      "abilityId": "mining_buff",
+      "abilityParam": "1.05",
+      "unlockCost": [
+        {
+          "resourceId": "CopperBar",
+          "count": 10
+        },
+        {
+          "resourceId": "BlazingKnife",
+          "count": 10
+        }
+      ]
+    }
+  ]
+}

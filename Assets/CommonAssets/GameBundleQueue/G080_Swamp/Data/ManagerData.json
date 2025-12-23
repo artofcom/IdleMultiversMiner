@@ -1,0 +1,133 @@
+{
+  "managerInfo": [
+    {
+      "Id": "Jack",
+      "Name": "Jack",
+      "Level": 1,
+      "spriteKey": "Jack",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Akhenaten",
+      "Name": "Akhenaten",
+      "Level": 1,
+      "spriteKey": "Akhenaten",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Amun",
+      "Name": "Amun",
+      "Level": 1,
+      "spriteKey": "Amun",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Loki",
+      "Name": "Loki",
+      "Level": 2,
+      "spriteKey": "Loki",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Mars",
+      "Name": "Mars",
+      "Level": 3,
+      "spriteKey": "Mars",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Shiva",
+      "Name": "Shiva",
+      "Level": 3,
+      "spriteKey": "Shiva",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    },
+    {
+      "Id": "Osiris",
+      "Name": "Osiris",
+      "Level": 4,
+      "spriteKey": "Osiris",
+      "BuffMiningRate": [ 1, 1, 1, 1, 1 ],
+      "BuffShipSpeedRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireIntervalRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffFireAccuracyRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
+      "BuffCargoRate": [ 1.05, 1.1, 1.15, 1.2, 1.25 ]
+    }
+  ],
+    "requiredManagerCountToPromoteLv2": 2,
+    "requiredManagerCountToPromoteLv3": 3,
+    "requiredManagerCountToPromoteLv4": 4,
+    "requiredManagerCountToPromoteLv5": 5,
+    "recruitInfo": {
+      "products": [
+        {
+          "id": "item1",
+          "name": "Level 1 Manager",
+          "level": "1",
+          "desc": "",
+          "cost": {
+            "amount": "100",
+            "type": 1
+          }
+        },
+        {
+          "id": "item2",
+          "name": "Level 2 Manager",
+          "level": "2",
+          "desc": "",
+          "cost": {
+            "amount": "500",
+            "type": 1
+          }
+        },
+        {
+          "id": "item3",
+          "name": "Level 3 Manager",
+          "level": "3",
+          "desc": "",
+          "cost": {
+            "amount": "2000",
+            "type": 1
+          }
+        },
+        {
+          "id": "item4",
+          "name": "Level 4 Manager",
+          "level": "4",
+          "desc": "",
+          "cost": {
+            "amount": "80000",
+            "type": 1
+          }
+        }
+      ]
+    },
+    "slotInfo":{
+        "costData" : "base=500:incPercent=300:incBase=200",
+        "costType":1
+    }
+}

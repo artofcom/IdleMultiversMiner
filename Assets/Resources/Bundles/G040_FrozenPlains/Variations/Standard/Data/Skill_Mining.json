@@ -1,0 +1,177 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_AuraAmplification1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_AuraAmplification1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone1.",
+            "unlockCost": [
+                {
+                    "resourceId": "beer",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "spring",
+                    "count": 10
+                },
+                {
+                    "resourceId": "droplet",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "Mining_2_ZoneDiscovery3",
+                "Mining_2_AuraAmplification2"
+            ]
+        },
+        {
+            "name": "Unlock Zone 2 Buff",
+            "id": "Mining_2_AuraAmplification2",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "bearleather",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bloodwine",
+                    "count": 35
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 3",
+            "id": "Mining_2_ZoneDiscovery3",
+            "abilityId": "unlock_zone",
+            "abilityParam": "300",
+            "description": "Unlock the Section of Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "furboots",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bowlofhoney",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "Mining_3_AuraAmplification3",
+                "Mining_3_ZoneDiscovery4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 3 Buff",
+            "id": "Mining_3_AuraAmplification3",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "essenceofwater",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bearpaw",
+                    "count": 35
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 4",
+            "id": "Mining_3_ZoneDiscovery4",
+            "abilityId": "unlock_zone",
+            "abilityParam": "400",
+            "description": "Unlock the Section of Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "mechaincsgoggle",
+                    "count": 10
+                },
+                {
+                    "resourceId": "ironingot",
+                    "count": 30
+                }
+            ],
+            "children": [
+                "Mining_4_AuraAmplification4",
+                "Mining_4_ZoneDiscovery5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 4 Buff",
+            "id": "Mining_4_AuraAmplification4",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "metalgear",
+                    "count": 10
+                },
+                {
+                    "resourceId": "essenceofwater",
+                    "count": 45
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 5",
+            "id": "Mining_4_ZoneDiscovery5",
+            "abilityId": "unlock_zone",
+            "abilityParam": "500",
+            "description": "Unlock the Section of Zone5.",
+            "unlockCost": [
+                {
+                    "resourceId": "jadeingot",
+                    "count": 10
+                },
+                {
+                    "resourceId": "manacrystal",
+                    "count": 40
+                }
+            ],
+            "children": [
+                "Mining_5_AuraAmplification5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 5 Buff",
+            "id": "Mining_5_AuraAmplification5",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone5.",
+            "unlockCost": [
+                {
+                    "resourceId": "leatherroll",
+                    "count": 10
+                },
+                {
+                    "resourceId": "jadeingot",
+                    "count": 50
+                }
+            ],
+            "children": []
+        }
+    ]
+}

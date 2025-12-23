@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 78abbcca8c400f54295c6f2b5f476917
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Lava Tileset/Demo/Preview/Pattern.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Lava_Pattern_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 442
+      y: 2631
+      width: 368
+      height: 240
+    spriteID: 2d47d30bf2a76f34e80b298cdff115dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 442, y: 2631}
+    spritePosition: {x: 579, y: 441}
+  - name: Lava_Pattern_02_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1533
+      y: 2631
+      width: 306
+      height: 246
+    spriteID: 10a81bf4ae060a34eb70867b5c5c8a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1533, y: 2631}
+    spritePosition: {x: 1487, y: 28}
+  - name: Lava_Pattern_02_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 2945
+      width: 235
+      height: 174
+    spriteID: 97b5957ccc7478940bebd3f9a698cfe9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 2945}
+    spritePosition: {x: 1089, y: 9}
+  - name: Lava_Pattern_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1842
+      y: 2311
+      width: 162
+      height: 123
+    spriteID: c91faf4e0f3a56344bfcbd3cde112cce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1842, y: 2311}
+    spritePosition: {x: 827, y: 35}
+  - name: Lava_Pattern_01_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2631
+      width: 430
+      height: 306
+    spriteID: 27f37ca6a470d144d9c5766fa2836488
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2631}
+    spritePosition: {x: 971, y: 735}
+  - name: Lava_Pattern_01_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 554
+      y: 2945
+      width: 246
+      height: 163
+    spriteID: 4a44a5ef1cee83947876abc8a8d2899e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 554, y: 2945}
+    spritePosition: {x: 1083, y: 205}
+  - name: Lava_Pattern_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1164
+      y: 2631
+      width: 361
+      height: 214
+    spriteID: 7f46af60d25db27439d38a259b9611b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1164, y: 2631}
+    spritePosition: {x: 1040, y: 454}
+  - name: Lava_Pattern_06_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 2529
+      width: 82
+      height: 63
+    spriteID: c29eb4eec79d4584999dfaa51a01c57c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 2529}
+    spritePosition: {x: 363, y: 65}
+  - name: Lava_Pattern_06_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1847
+      y: 2885
+      width: 64
+      height: 43
+    spriteID: 7c5f8ab2b82e51740a16470aed7c1a3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1847, y: 2885}
+    spritePosition: {x: 596, y: 75}
+  - name: Lava_Pattern_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1436
+      y: 2529
+      width: 244
+      height: 86
+    spriteID: dc3eba2dac44cb1428a22a605e405f38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1398, y: 2529}
+    spritePosition: {x: 38, y: 53}
+  - name: Lava_Pattern_05_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 495
+      y: 2180
+      width: 473
+      height: 365
+    spriteID: 8a6f6425ee853f742851ff1e5fdb622f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 495, y: 2180}
+    spritePosition: {x: 39, y: 705}
+  - name: Lava_Pattern_05_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 2631
+      width: 338
+      height: 246
+    spriteID: 8b76a0051ec05d14da1854ed8b3f24d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 2631}
+    spritePosition: {x: 107, y: 416}
+  - name: Lava_Pattern_05_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2945
+      width: 299
+      height: 225
+    spriteID: f523ecfd4dbfb5d4080691a6d7935012
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2945}
+    spritePosition: {x: 213, y: 190}
+  - name: Lava_Pattern_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1847
+      y: 2631
+      width: 175
+      height: 246
+    spriteID: 7bb1c33908a3be749a4d239f116cdbff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1847, y: 2631}
+    spritePosition: {x: 55, y: 180}
+  - name: Lava_Pattern_04_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1436
+      y: 2180
+      width: 398
+      height: 341
+    spriteID: 6d3b272a3c392dc448d11368eeede5f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1436, y: 2180}
+    spritePosition: {x: 1460, y: 274}
+  - name: Lava_Pattern_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 483
+      height: 443
+    spriteID: e178bca27021b694c990e6a827e12032
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1417, y: 627}
+  - name: Lava_Pattern_03_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1842
+      y: 2180
+      width: 172
+      height: 123
+    spriteID: 76b9999522bc36840b23bc9addf81e6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1842, y: 2180}
+    spritePosition: {x: 817, y: 217}
+  - name: Lava_Pattern_03_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 2180
+      width: 452
+      height: 330
+    spriteID: b5e52ed608b380d4e8bc825959dca5cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 2180}
+    spritePosition: {x: 537, y: 740}
+  - name: Lava_Pattern_03_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3178
+      width: 246
+      height: 226
+    spriteID: 4922210f41c280c4ebbfc018c7d2af73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3178}
+    spritePosition: {x: 537, y: 200}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 8d4b7ed7e78555a4db1ab5c67fe1bf16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 24eda05299341dc4caeba926333cabf2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Lava_Pattern_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 442
+      y: 2631
+      width: 368
+      height: 240
+    spriteID: 2d47d30bf2a76f34e80b298cdff115dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 442, y: 2631}
+    spritePosition: {x: 579, y: 441}
+  - name: Lava_Pattern_02_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1533
+      y: 2631
+      width: 306
+      height: 246
+    spriteID: 10a81bf4ae060a34eb70867b5c5c8a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1533, y: 2631}
+    spritePosition: {x: 1487, y: 28}
+  - name: Lava_Pattern_02_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 2945
+      width: 235
+      height: 174
+    spriteID: 97b5957ccc7478940bebd3f9a698cfe9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 2945}
+    spritePosition: {x: 1089, y: 9}
+  - name: Lava_Pattern_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1842
+      y: 2311
+      width: 162
+      height: 123
+    spriteID: c91faf4e0f3a56344bfcbd3cde112cce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1842, y: 2311}
+    spritePosition: {x: 827, y: 35}
+  - name: Lava_Pattern_01_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2631
+      width: 430
+      height: 306
+    spriteID: 27f37ca6a470d144d9c5766fa2836488
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2631}
+    spritePosition: {x: 971, y: 735}
+  - name: Lava_Pattern_01_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 554
+      y: 2945
+      width: 246
+      height: 163
+    spriteID: 4a44a5ef1cee83947876abc8a8d2899e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 554, y: 2945}
+    spritePosition: {x: 1083, y: 205}
+  - name: Lava_Pattern_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1164
+      y: 2631
+      width: 361
+      height: 214
+    spriteID: 7f46af60d25db27439d38a259b9611b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1164, y: 2631}
+    spritePosition: {x: 1040, y: 454}
+  - name: Lava_Pattern_06_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 2529
+      width: 82
+      height: 63
+    spriteID: c29eb4eec79d4584999dfaa51a01c57c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 2529}
+    spritePosition: {x: 363, y: 65}
+  - name: Lava_Pattern_06_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1847
+      y: 2885
+      width: 64
+      height: 43
+    spriteID: 7c5f8ab2b82e51740a16470aed7c1a3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1847, y: 2885}
+    spritePosition: {x: 596, y: 75}
+  - name: Lava_Pattern_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1436
+      y: 2529
+      width: 244
+      height: 86
+    spriteID: dc3eba2dac44cb1428a22a605e405f38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1398, y: 2529}
+    spritePosition: {x: 38, y: 53}
+  - name: Lava_Pattern_05_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 495
+      y: 2180
+      width: 473
+      height: 365
+    spriteID: 8a6f6425ee853f742851ff1e5fdb622f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 495, y: 2180}
+    spritePosition: {x: 39, y: 705}
+  - name: Lava_Pattern_05_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 2631
+      width: 338
+      height: 246
+    spriteID: 8b76a0051ec05d14da1854ed8b3f24d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 2631}
+    spritePosition: {x: 107, y: 416}
+  - name: Lava_Pattern_05_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2945
+      width: 299
+      height: 225
+    spriteID: f523ecfd4dbfb5d4080691a6d7935012
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2945}
+    spritePosition: {x: 213, y: 190}
+  - name: Lava_Pattern_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1847
+      y: 2631
+      width: 175
+      height: 246
+    spriteID: 7bb1c33908a3be749a4d239f116cdbff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1847, y: 2631}
+    spritePosition: {x: 55, y: 180}
+  - name: Lava_Pattern_04_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1436
+      y: 2180
+      width: 398
+      height: 341
+    spriteID: 6d3b272a3c392dc448d11368eeede5f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1436, y: 2180}
+    spritePosition: {x: 1460, y: 274}
+  - name: Lava_Pattern_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 483
+      height: 443
+    spriteID: e178bca27021b694c990e6a827e12032
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1417, y: 627}
+  - name: Lava_Pattern_03_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1842
+      y: 2180
+      width: 172
+      height: 123
+    spriteID: 76b9999522bc36840b23bc9addf81e6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1842, y: 2180}
+    spritePosition: {x: 817, y: 217}
+  - name: Lava_Pattern_03_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 2180
+      width: 452
+      height: 330
+    spriteID: b5e52ed608b380d4e8bc825959dca5cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 2180}
+    spritePosition: {x: 537, y: 740}
+  - name: Lava_Pattern_03_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3178
+      width: 246
+      height: 226
+    spriteID: 4922210f41c280c4ebbfc018c7d2af73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3178}
+    spritePosition: {x: 537, y: 200}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 8d4b7ed7e78555a4db1ab5c67fe1bf16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 24eda05299341dc4caeba926333cabf2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Lava_Pattern_03
+    spriteName: Lava_Pattern_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2d47d30bf2a76f34e80b298cdff115dc
+    layerID: 484
+    mosaicPosition: {x: 442, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02_02
+    spriteName: Lava_Pattern_02_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10a81bf4ae060a34eb70867b5c5c8a84
+    layerID: 483
+    mosaicPosition: {x: 1533, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02_01
+    spriteName: Lava_Pattern_02_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 97b5957ccc7478940bebd3f9a698cfe9
+    layerID: 482
+    mosaicPosition: {x: 311, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02
+    spriteName: Lava_Pattern_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c91faf4e0f3a56344bfcbd3cde112cce
+    layerID: 481
+    mosaicPosition: {x: 1842, y: 2311}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01_02
+    spriteName: Lava_Pattern_01_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 27f37ca6a470d144d9c5766fa2836488
+    layerID: 480
+    mosaicPosition: {x: 4, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01_01
+    spriteName: Lava_Pattern_01_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a44a5ef1cee83947876abc8a8d2899e
+    layerID: 479
+    mosaicPosition: {x: 554, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01
+    spriteName: Lava_Pattern_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f46af60d25db27439d38a259b9611b0
+    layerID: 478
+    mosaicPosition: {x: 1164, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06_02
+    spriteName: Lava_Pattern_06_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c29eb4eec79d4584999dfaa51a01c57c
+    layerID: 477
+    mosaicPosition: {x: 1688, y: 2529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06_01
+    spriteName: Lava_Pattern_06_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c5f8ab2b82e51740a16470aed7c1a3b
+    layerID: 476
+    mosaicPosition: {x: 1847, y: 2885}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06
+    spriteName: Lava_Pattern_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dc3eba2dac44cb1428a22a605e405f38
+    layerID: 475
+    mosaicPosition: {x: 1436, y: 2529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_03
+    spriteName: Lava_Pattern_05_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8a6f6425ee853f742851ff1e5fdb622f
+    layerID: 474
+    mosaicPosition: {x: 495, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_02
+    spriteName: Lava_Pattern_05_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b76a0051ec05d14da1854ed8b3f24d6
+    layerID: 473
+    mosaicPosition: {x: 818, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_01
+    spriteName: Lava_Pattern_05_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f523ecfd4dbfb5d4080691a6d7935012
+    layerID: 472
+    mosaicPosition: {x: 4, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05
+    spriteName: Lava_Pattern_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7bb1c33908a3be749a4d239f116cdbff
+    layerID: 471
+    mosaicPosition: {x: 1847, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_04_01
+    spriteName: Lava_Pattern_04_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6d3b272a3c392dc448d11368eeede5f9
+    layerID: 470
+    mosaicPosition: {x: 1436, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_04
+    spriteName: Lava_Pattern_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e178bca27021b694c990e6a827e12032
+    layerID: 469
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_03
+    spriteName: Lava_Pattern_03_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76b9999522bc36840b23bc9addf81e6f
+    layerID: 468
+    mosaicPosition: {x: 1842, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_02
+    spriteName: Lava_Pattern_03_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5e52ed608b380d4e8bc825959dca5cd
+    layerID: 467
+    mosaicPosition: {x: 976, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_01
+    spriteName: Lava_Pattern_03_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4922210f41c280c4ebbfc018c7d2af73
+    layerID: 466
+    mosaicPosition: {x: 4, y: 3178}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 22677c9813b38dd40a53c64e63960751
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8d4b7ed7e78555a4db1ab5c67fe1bf16
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 24eda05299341dc4caeba926333cabf2
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Lava_Pattern_03
+    spriteName: Lava_Pattern_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2d47d30bf2a76f34e80b298cdff115dc
+    layerID: 484
+    mosaicPosition: {x: 442, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02_02
+    spriteName: Lava_Pattern_02_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10a81bf4ae060a34eb70867b5c5c8a84
+    layerID: 483
+    mosaicPosition: {x: 1533, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02_01
+    spriteName: Lava_Pattern_02_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 97b5957ccc7478940bebd3f9a698cfe9
+    layerID: 482
+    mosaicPosition: {x: 311, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_02
+    spriteName: Lava_Pattern_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c91faf4e0f3a56344bfcbd3cde112cce
+    layerID: 481
+    mosaicPosition: {x: 1842, y: 2311}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01_02
+    spriteName: Lava_Pattern_01_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 27f37ca6a470d144d9c5766fa2836488
+    layerID: 480
+    mosaicPosition: {x: 4, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01_01
+    spriteName: Lava_Pattern_01_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4a44a5ef1cee83947876abc8a8d2899e
+    layerID: 479
+    mosaicPosition: {x: 554, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_01
+    spriteName: Lava_Pattern_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f46af60d25db27439d38a259b9611b0
+    layerID: 478
+    mosaicPosition: {x: 1164, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06_02
+    spriteName: Lava_Pattern_06_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c29eb4eec79d4584999dfaa51a01c57c
+    layerID: 477
+    mosaicPosition: {x: 1688, y: 2529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06_01
+    spriteName: Lava_Pattern_06_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c5f8ab2b82e51740a16470aed7c1a3b
+    layerID: 476
+    mosaicPosition: {x: 1847, y: 2885}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_06
+    spriteName: Lava_Pattern_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dc3eba2dac44cb1428a22a605e405f38
+    layerID: 475
+    mosaicPosition: {x: 1436, y: 2529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_03
+    spriteName: Lava_Pattern_05_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8a6f6425ee853f742851ff1e5fdb622f
+    layerID: 474
+    mosaicPosition: {x: 495, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_02
+    spriteName: Lava_Pattern_05_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8b76a0051ec05d14da1854ed8b3f24d6
+    layerID: 473
+    mosaicPosition: {x: 818, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05_01
+    spriteName: Lava_Pattern_05_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f523ecfd4dbfb5d4080691a6d7935012
+    layerID: 472
+    mosaicPosition: {x: 4, y: 2945}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_05
+    spriteName: Lava_Pattern_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7bb1c33908a3be749a4d239f116cdbff
+    layerID: 471
+    mosaicPosition: {x: 1847, y: 2631}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_04_01
+    spriteName: Lava_Pattern_04_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6d3b272a3c392dc448d11368eeede5f9
+    layerID: 470
+    mosaicPosition: {x: 1436, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_04
+    spriteName: Lava_Pattern_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e178bca27021b694c990e6a827e12032
+    layerID: 469
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_03
+    spriteName: Lava_Pattern_03_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 76b9999522bc36840b23bc9addf81e6f
+    layerID: 468
+    mosaicPosition: {x: 1842, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_02
+    spriteName: Lava_Pattern_03_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5e52ed608b380d4e8bc825959dca5cd
+    layerID: 467
+    mosaicPosition: {x: 976, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Lava_Pattern_03_01
+    spriteName: Lava_Pattern_03_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4922210f41c280c4ebbfc018c7d2af73
+    layerID: 466
+    mosaicPosition: {x: 4, y: 3178}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 22677c9813b38dd40a53c64e63960751
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8d4b7ed7e78555a4db1ab5c67fe1bf16
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 24eda05299341dc4caeba926333cabf2
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

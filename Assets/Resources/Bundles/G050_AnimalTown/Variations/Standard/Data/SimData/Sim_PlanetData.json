@@ -1,0 +1,81 @@
+{
+  "zones": [
+    {
+      "zoneId": 100,
+      "planets": [
+        {
+          "planetId": 1,
+          "isUnlocked": false,
+          "level": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minedRscInfo": [],
+          "deliveryInfos": [],
+          "battleInfo": {
+            "eventStartedTicke": 0,
+            "damageX1000": "",
+            "isCleared": false
+          },
+          "isBoosterUnlocked": false,
+          "boostState": 0,
+          "boostingDuration": 0.0,
+          "boostRemainTimeInSec": 0.0,
+          "boostCoolTimeDuration": 0.0,
+          "boosterRate": 0.0
+        },
+        {
+          "planetId": 2,
+          "isUnlocked": false,
+          "level": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minedRscInfo": [],
+          "deliveryInfos": [],
+          "battleInfo": {
+            "eventStartedTicke": 0,
+            "damageX1000": "",
+            "isCleared": false
+          },
+          "isBoosterUnlocked": false,
+          "boostState": 0,
+          "boostingDuration": 300.0,
+          "boostRemainTimeInSec": 0.0,
+          "boostCoolTimeDuration": 60.0,
+          "boosterRate": 10.0
+        },
+        {
+          "planetId": 3,
+          "isUnlocked": false,
+          "level": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minedRscInfo": [],
+          "deliveryInfos": [],
+          "battleInfo": {
+            "eventStartedTicke": 0,
+            "damageX1000": "0",
+            "isCleared": false
+          },
+          "isBoosterUnlocked": false,
+          "boostState": 0,
+          "boostingDuration": 300.0,
+          "boostRemainTimeInSec": 0.0,
+          "boostCoolTimeDuration": 60.0,
+          "boosterRate": 10.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33810e96598805e48a6820a6e5305665, type: 3}
+  m_Name: '[1] SkillTree_CompCraftData'
+  m_EditorClassIdentifier: 
+  categoryId: compCraft
+  skillInfoList:
+  - icon: {fileID: 21300000, guid: af455c0ae383a3d489af7bc214326d16, type: 3}
+    skillInfo:
+      name: Unlock Comp Craft
+      id: 100
+      abilityId: unlock_feature
+      abilityParam: compCraft
+      description: Desc
+      unlockCost:
+      - resourceId: coal
+        count: 100
+  - icon: {fileID: 21300000, guid: 3bc4ac46248d49844b1f7f02433fd48f, type: 3}
+    skillInfo:
+      name: Comp Craft Booster Unlock and 5% Faster
+      id: 105
+      abilityId: unlock_craft_buff
+      abilityParam: comp:0.95:1
+      description: Desc
+      unlockCost:
+      - resourceId: ZombieOil
+        count: 500
+      - resourceId: flamingMarble
+        count: 10
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Comp Craft 5% Faster
+      id: 110
+      abilityId: craft_buff
+      abilityParam: comp:0.925:1
+      description: Desc
+      unlockCost:
+      - resourceId: copperBar
+        count: 500
+      - resourceId: demonicWater
+        count: 100
+  - icon: {fileID: 21300000, guid: 3c5622055a48b584e804a3f0e60f2beb, type: 3}
+    skillInfo:
+      name: Comp Craft Slot Cost 5% Cheaper
+      id: 120
+      abilityId: craft_buff
+      abilityParam: comp:0.925:0.95
+      description: Desc
+      unlockCost:
+      - resourceId: skull
+        count: 800
+      - resourceId: infinityPond
+        count: 120
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Comp Craft Booster 5% Faster
+      id: 130
+      abilityId: craft_buff
+      abilityParam: comp:0.9:0.95
+      description: Desc
+      unlockCost:
+      - resourceId: spider
+        count: 900
+      - resourceId: bonePowder
+        count: 250
+  - icon: {fileID: 21300000, guid: 3c5622055a48b584e804a3f0e60f2beb, type: 3}
+    skillInfo:
+      name: Comp Craft Slot Cost 5% Cheaper
+      id: 140
+      abilityId: craft_buff
+      abilityParam: comp:0.9:0.925
+      description: Desc
+      unlockCost:
+      - resourceId: dragonScale
+        count: 200
+      - resourceId: deathWeb
+        count: 150
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Comp Craft Booster 5% Faster
+      id: 150
+      abilityId: craft_buff
+      abilityParam: comp:0.88:0.925
+      description: Desc
+      unlockCost:
+      - resourceId: scaleBundle
+        count: 500
+      - resourceId: iron
+        count: 500
+  - icon: {fileID: 21300000, guid: 3c5622055a48b584e804a3f0e60f2beb, type: 3}
+    skillInfo:
+      name: Comp Craft Slot Cost 5% Cheaper
+      id: 160
+      abilityId: craft_buff
+      abilityParam: comp:0.88:0.9
+      description: Desc
+      unlockCost:
+      - resourceId: bloodyPoison
+        count: 150
+      - resourceId: deathDoll
+        count: 300

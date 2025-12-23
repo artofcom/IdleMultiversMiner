@@ -1,0 +1,117 @@
+{
+    "categoryId": "itemCraft",
+    "skillInfo": [
+        {
+            "name": "Unlock Item Craft",
+            "id": 100,
+            "abilityId": "unlock_feature",
+            "abilityParam": "itemCraft",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "undeadFinger",
+                    "count": 30
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Booster Unlock and 5% Faster",
+            "id": 105,
+            "abilityId": "unlock_craft_buff",
+            "abilityParam": "item:0.95:1",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "Magma",
+                    "count": 400
+                },
+                {
+                    "resourceId": "blazingKnife",
+                    "count": 90
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Booster 5% Faster",
+            "id": 110,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.925:1",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "infinityPond",
+                    "count": 80
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Slot Cost 5% Cheaper",
+            "id": 120,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.925:0.95",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "demonEye",
+                    "count": 100
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Booster 5% Faster",
+            "id": 130,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.9:0.95",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "deathWrapper",
+                    "count": 150
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Slot Cost 5% Cheaper",
+            "id": 140,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.9:0.925",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "deathWrapper",
+                    "count": 500
+                },
+                {
+                    "resourceId": "scaleBundle",
+                    "count": 150
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Booster 5% Faster",
+            "id": 150,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.88:0.925",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "ringOfEternal",
+                    "count": 180
+                }
+            ]
+        },
+        {
+            "name": "Item Craft Slot Cost 5% Cheaper",
+            "id": 160,
+            "abilityId": "craft_buff",
+            "abilityParam": "item:0.88:0.9",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "bookOfDeath",
+                    "count": 150
+                }
+            ]
+        }
+    ]
+}

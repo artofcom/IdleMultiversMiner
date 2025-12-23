@@ -1,0 +1,397 @@
+{
+    "data": [
+        {
+            "zoneId": 100,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Paw Pit",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "acorn",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "blueberries",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=50:incPercent=10000:incBase=50",
+                    "shipCost": "base=50:incPercent=10000:incBase=50",
+                    "cargoCost": "base=50:incPercent=10000:incBase=50",
+                    "shotAccuracyCost": "base=50:incPercent=10000:incBase=50",
+                    "shotIntervalCost": "base=50:incPercent=10000:incBase=50"
+                },
+                {
+                    "id": 2,
+                    "name": "Bunny Burrow",
+                    "openCost": "340",
+                    "obtainables": [
+                        {
+                            "resourceId": "blueberries",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "cherry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=125:incPercent=12500:incBase=62",
+                    "shipCost": "base=125:incPercent=12500:incBase=62",
+                    "cargoCost": "base=125:incPercent=12500:incBase=62",
+                    "shotAccuracyCost": "base=125:incPercent=12500:incBase=62",
+                    "shotIntervalCost": "base=125:incPercent=12500:incBase=62"
+                },
+                {
+                    "id": 3,
+                    "name": "Mole Hole",
+                    "openCost": "580",
+                    "obtainables": [
+                        {
+                            "resourceId": "cherry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=200:incPercent=15000:incBase=75",
+                    "shipCost": "base=200:incPercent=15000:incBase=75",
+                    "cargoCost": "base=200:incPercent=15000:incBase=75",
+                    "shotAccuracyCost": "base=200:incPercent=15000:incBase=75",
+                    "shotIntervalCost": "base=200:incPercent=15000:incBase=75"
+                }
+            ]
+        },
+        {
+            "zoneId": 200,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Cub Cave",
+                    "openCost": "820",
+                    "obtainables": [
+                        {
+                            "resourceId": "cherry",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "acorn",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=275:incPercent=17500:incBase=87",
+                    "shipCost": "base=275:incPercent=17500:incBase=87",
+                    "cargoCost": "base=275:incPercent=17500:incBase=87",
+                    "shotAccuracyCost": "base=275:incPercent=17500:incBase=87",
+                    "shotIntervalCost": "base=275:incPercent=17500:incBase=87"
+                },
+                {
+                    "id": 2,
+                    "name": "Whisker Digs",
+                    "openCost": "1060",
+                    "obtainables": [
+                        {
+                            "resourceId": "corn",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "cherry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=350:incPercent=20000:incBase=100",
+                    "shipCost": "base=350:incPercent=20000:incBase=100",
+                    "cargoCost": "base=350:incPercent=20000:incBase=100",
+                    "shotAccuracyCost": "base=350:incPercent=20000:incBase=100",
+                    "shotIntervalCost": "base=350:incPercent=20000:incBase=100"
+                },
+                {
+                    "id": 3,
+                    "name": "Furry Hollow",
+                    "openCost": "1300",
+                    "obtainables": [
+                        {
+                            "resourceId": "grapes",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "blueberries",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=425:incPercent=22500:incBase=112",
+                    "shipCost": "base=425:incPercent=22500:incBase=112",
+                    "cargoCost": "base=425:incPercent=22500:incBase=112",
+                    "shotAccuracyCost": "base=425:incPercent=22500:incBase=112",
+                    "shotIntervalCost": "base=425:incPercent=22500:incBase=112"
+                }
+            ]
+        },
+        {
+            "zoneId": 300,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Squirrel Stash",
+                    "openCost": "1540",
+                    "obtainables": [
+                        {
+                            "resourceId": "peanuts",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "grapes",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=500:incPercent=25000:incBase=125",
+                    "shipCost": "base=500:incPercent=25000:incBase=125",
+                    "cargoCost": "base=500:incPercent=25000:incBase=125",
+                    "shotAccuracyCost": "base=500:incPercent=25000:incBase=125",
+                    "shotIntervalCost": "base=500:incPercent=25000:incBase=125"
+                },
+                {
+                    "id": 2,
+                    "name": "Claw Cove",
+                    "openCost": "1780",
+                    "obtainables": [
+                        {
+                            "resourceId": "raspberry",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "peanuts",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=575:incPercent=27500:incBase=137",
+                    "shipCost": "base=575:incPercent=27500:incBase=137",
+                    "cargoCost": "base=575:incPercent=27500:incBase=137",
+                    "shotAccuracyCost": "base=575:incPercent=27500:incBase=137",
+                    "shotIntervalCost": "base=575:incPercent=27500:incBase=137"
+                },
+                {
+                    "id": 3,
+                    "name": "Fox Den",
+                    "openCost": "2020",
+                    "obtainables": [
+                        {
+                            "resourceId": "raspberry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=650:incPercent=30000:incBase=150",
+                    "shipCost": "base=650:incPercent=30000:incBase=150",
+                    "cargoCost": "base=650:incPercent=30000:incBase=150",
+                    "shotAccuracyCost": "base=650:incPercent=30000:incBase=150",
+                    "shotIntervalCost": "base=650:incPercent=30000:incBase=150"
+                }
+            ]
+        },
+        {
+            "zoneId": 400,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Critter Corner",
+                    "openCost": "2260",
+                    "obtainables": [
+                        {
+                            "resourceId": "redtreeberries",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "corn",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=725:incPercent=32500:incBase=162",
+                    "shipCost": "base=725:incPercent=32500:incBase=162",
+                    "cargoCost": "base=725:incPercent=32500:incBase=162",
+                    "shotAccuracyCost": "base=725:incPercent=32500:incBase=162",
+                    "shotIntervalCost": "base=725:incPercent=32500:incBase=162"
+                },
+                {
+                    "id": 2,
+                    "name": "Snout Spot",
+                    "openCost": "2500",
+                    "obtainables": [
+                        {
+                            "resourceId": "redtreeberries",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "peanuts",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=800:incPercent=35000:incBase=175",
+                    "shipCost": "base=800:incPercent=35000:incBase=175",
+                    "cargoCost": "base=800:incPercent=35000:incBase=175",
+                    "shotAccuracyCost": "base=800:incPercent=35000:incBase=175",
+                    "shotIntervalCost": "base=800:incPercent=35000:incBase=175"
+                },
+                {
+                    "id": 3,
+                    "name": "Tail Tunnel",
+                    "openCost": "2740",
+                    "obtainables": [
+                        {
+                            "resourceId": "strawberry",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "redtreeberries",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=875:incPercent=37500:incBase=187",
+                    "shipCost": "base=875:incPercent=37500:incBase=187",
+                    "cargoCost": "base=875:incPercent=37500:incBase=187",
+                    "shotAccuracyCost": "base=875:incPercent=37500:incBase=187",
+                    "shotIntervalCost": "base=875:incPercent=37500:incBase=187"
+                }
+            ]
+        },
+        {
+            "zoneId": 500,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Fluff Mine",
+                    "openCost": "2980",
+                    "obtainables": [
+                        {
+                            "resourceId": "strawberry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=950:incPercent=40000:incBase=200",
+                    "shipCost": "base=950:incPercent=40000:incBase=200",
+                    "cargoCost": "base=950:incPercent=40000:incBase=200",
+                    "shotAccuracyCost": "base=950:incPercent=40000:incBase=200",
+                    "shotIntervalCost": "base=950:incPercent=40000:incBase=200"
+                },
+                {
+                    "id": 2,
+                    "name": "Hedgehog Hideout",
+                    "openCost": "3220",
+                    "obtainables": [
+                        {
+                            "resourceId": "walnut",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "raspberry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=1025:incPercent=42500:incBase=212",
+                    "shipCost": "base=1025:incPercent=42500:incBase=212",
+                    "cargoCost": "base=1025:incPercent=42500:incBase=212",
+                    "shotAccuracyCost": "base=1025:incPercent=42500:incBase=212",
+                    "shotIntervalCost": "base=1025:incPercent=42500:incBase=212"
+                }
+            ]
+        },
+        {
+            "zoneId": 600,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Nibble Nook",
+                    "openCost": "3460",
+                    "obtainables": [
+                        {
+                            "resourceId": "watermelon",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "strawberry",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.12",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.03",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=1100:incPercent=45000:incBase=225",
+                    "shipCost": "base=1100:incPercent=45000:incBase=225",
+                    "cargoCost": "base=1100:incPercent=45000:incBase=225",
+                    "shotAccuracyCost": "base=1100:incPercent=45000:incBase=225",
+                    "shotIntervalCost": "base=1100:incPercent=45000:incBase=225"
+                }
+            ]
+        }
+    ]
+}

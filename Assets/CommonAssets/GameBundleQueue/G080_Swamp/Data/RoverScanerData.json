@@ -1,0 +1,43 @@
+{
+    "missions": [
+        {
+            "id": "1",
+            "duration": 60,
+            "rewards": [
+                {
+                    "money": {
+                        "amount": "50",
+                        "type": 1
+                    },
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "duration": 300,
+            "rewards": [
+                {
+                    "money": {
+                        "amount": "50",
+                        "type": 1
+                    },
+                    "chance": 100
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "duration": 300,
+            "rewards": [
+                {
+                    "money": {
+                        "amount": "50",
+                        "type": 1
+                    },
+                    "chance": 100
+                }
+            ]
+        }
+    ]
+}

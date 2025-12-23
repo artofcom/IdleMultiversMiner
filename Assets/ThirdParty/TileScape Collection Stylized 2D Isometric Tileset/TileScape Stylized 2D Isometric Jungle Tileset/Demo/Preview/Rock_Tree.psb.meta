@@ -1,0 +1,1086 @@
+fileFormatVersion: 2
+guid: b300ed617b9f57242b296065c478e1e5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Jungle Tileset/Demo/Preview/Rock_Tree.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Jungle_Rock_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2180
+      width: 364
+      height: 265
+    spriteID: 7634a942a8c33744ebc0e3e23aac8a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2180}
+    spritePosition: {x: 23, y: 430}
+  - name: Jungle_Rock_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 466
+      height: 357
+    spriteID: e3100ce1e1b69484a858920a299c8d98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 0, y: 723}
+  - name: Jungle_Rock_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1300
+      y: 2180
+      width: 341
+      height: 208
+    spriteID: d5ca7a30fdb665a45a5dd6fae163db18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1300, y: 2180}
+    spritePosition: {x: 435, y: 872}
+  - name: Jungle_Rock_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 478
+      y: 2180
+      width: 442
+      height: 235
+    spriteID: b5983efff209cd844925fa1a7c9a35aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 478, y: 2180}
+    spritePosition: {x: 352, y: 553}
+  - name: Jungle_Rock_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 757
+      y: 2545
+      width: 444
+      height: 278
+    spriteID: ae25fd24e2125e440b3d8bd643bec061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 757, y: 2545}
+    spritePosition: {x: 776, y: 765}
+  - name: Jungle_Tree_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2975
+      width: 322
+      height: 428
+    spriteID: 8af7ce506bcaa2e48aba98074c3f4f74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2975}
+    spritePosition: {x: 488, y: 112}
+  - name: Jungle_Tree_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1512
+      y: 2545
+      width: 287
+      height: 393
+    spriteID: f0c60f89afc7fea47a4b9a61a1ec6bbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1512, y: 2545}
+    spritePosition: {x: 134, y: 0}
+  - name: Jungle_Tree_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1209
+      y: 2545
+      width: 295
+      height: 407
+    spriteID: 22567884c532ea34b9619907f5aa7a41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1209, y: 2545}
+    spritePosition: {x: 898, y: 316}
+  - name: Jungle_Tree_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 2975
+      width: 243
+      height: 406
+    spriteID: 3490c0d03475cc8409fd15fae8c84ab5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 2975}
+    spritePosition: {x: 1260, y: 498}
+  - name: Jungle_Tree_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 334
+      y: 2975
+      width: 240
+      height: 412
+    spriteID: f55032c0d8459404697b498c47d15f16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 334, y: 2975}
+    spritePosition: {x: 1557, y: 666}
+  - name: Jungle_Tree_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2545
+      width: 370
+      height: 422
+    spriteID: ad1e5e179f182264f9e06de27a601030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2545}
+    spritePosition: {x: 1206, y: 8}
+  - name: Jungle_Tree_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 2545
+      width: 367
+      height: 418
+    spriteID: defa4f39ad7db4a40ac0c9a7916c398f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 2545}
+    spritePosition: {x: 1516, y: 245}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 847c5683f8f635c4a96712ac636615bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 65dea630ee2a0da4cae3457f77dbfb4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Jungle_Rock_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2180
+      width: 364
+      height: 265
+    spriteID: 7634a942a8c33744ebc0e3e23aac8a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2180}
+    spritePosition: {x: 23, y: 430}
+  - name: Jungle_Rock_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 466
+      height: 357
+    spriteID: e3100ce1e1b69484a858920a299c8d98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 0, y: 723}
+  - name: Jungle_Rock_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1300
+      y: 2180
+      width: 341
+      height: 208
+    spriteID: d5ca7a30fdb665a45a5dd6fae163db18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1300, y: 2180}
+    spritePosition: {x: 435, y: 872}
+  - name: Jungle_Rock_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 478
+      y: 2180
+      width: 442
+      height: 235
+    spriteID: b5983efff209cd844925fa1a7c9a35aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 478, y: 2180}
+    spritePosition: {x: 352, y: 553}
+  - name: Jungle_Rock_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 757
+      y: 2545
+      width: 444
+      height: 278
+    spriteID: ae25fd24e2125e440b3d8bd643bec061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 757, y: 2545}
+    spritePosition: {x: 776, y: 765}
+  - name: Jungle_Tree_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2975
+      width: 322
+      height: 428
+    spriteID: 8af7ce506bcaa2e48aba98074c3f4f74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2975}
+    spritePosition: {x: 488, y: 112}
+  - name: Jungle_Tree_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1512
+      y: 2545
+      width: 287
+      height: 393
+    spriteID: f0c60f89afc7fea47a4b9a61a1ec6bbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1512, y: 2545}
+    spritePosition: {x: 134, y: 0}
+  - name: Jungle_Tree_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1209
+      y: 2545
+      width: 295
+      height: 407
+    spriteID: 22567884c532ea34b9619907f5aa7a41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1209, y: 2545}
+    spritePosition: {x: 898, y: 316}
+  - name: Jungle_Tree_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 2975
+      width: 243
+      height: 406
+    spriteID: 3490c0d03475cc8409fd15fae8c84ab5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 2975}
+    spritePosition: {x: 1260, y: 498}
+  - name: Jungle_Tree_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 334
+      y: 2975
+      width: 240
+      height: 412
+    spriteID: f55032c0d8459404697b498c47d15f16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 334, y: 2975}
+    spritePosition: {x: 1557, y: 666}
+  - name: Jungle_Tree_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2545
+      width: 370
+      height: 422
+    spriteID: ad1e5e179f182264f9e06de27a601030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2545}
+    spritePosition: {x: 1206, y: 8}
+  - name: Jungle_Tree_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 2545
+      width: 367
+      height: 418
+    spriteID: defa4f39ad7db4a40ac0c9a7916c398f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 2545}
+    spritePosition: {x: 1516, y: 245}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 847c5683f8f635c4a96712ac636615bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 65dea630ee2a0da4cae3457f77dbfb4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Jungle_Rock_05
+    spriteName: Jungle_Rock_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7634a942a8c33744ebc0e3e23aac8a42
+    layerID: 17
+    mosaicPosition: {x: 928, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_04
+    spriteName: Jungle_Rock_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e3100ce1e1b69484a858920a299c8d98
+    layerID: 16
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_03
+    spriteName: Jungle_Rock_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d5ca7a30fdb665a45a5dd6fae163db18
+    layerID: 15
+    mosaicPosition: {x: 1300, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_02
+    spriteName: Jungle_Rock_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5983efff209cd844925fa1a7c9a35aa
+    layerID: 14
+    mosaicPosition: {x: 478, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_01
+    spriteName: Jungle_Rock_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae25fd24e2125e440b3d8bd643bec061
+    layerID: 13
+    mosaicPosition: {x: 757, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_05
+    spriteName: Jungle_Tree_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8af7ce506bcaa2e48aba98074c3f4f74
+    layerID: 12
+    mosaicPosition: {x: 4, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_04
+    spriteName: Jungle_Tree_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f0c60f89afc7fea47a4b9a61a1ec6bbd
+    layerID: 11
+    mosaicPosition: {x: 1512, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_03
+    spriteName: Jungle_Tree_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 22567884c532ea34b9619907f5aa7a41
+    layerID: 10
+    mosaicPosition: {x: 1209, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_02
+    spriteName: Jungle_Tree_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3490c0d03475cc8409fd15fae8c84ab5
+    layerID: 9
+    mosaicPosition: {x: 582, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_01
+    spriteName: Jungle_Tree_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f55032c0d8459404697b498c47d15f16
+    layerID: 8
+    mosaicPosition: {x: 334, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_07
+    spriteName: Jungle_Tree_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad1e5e179f182264f9e06de27a601030
+    layerID: 7
+    mosaicPosition: {x: 4, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_06
+    spriteName: Jungle_Tree_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: defa4f39ad7db4a40ac0c9a7916c398f
+    layerID: 6
+    mosaicPosition: {x: 382, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09a40d04e117f0d4fa574b5958d0bc5f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 847c5683f8f635c4a96712ac636615bd
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65dea630ee2a0da4cae3457f77dbfb4b
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Jungle_Rock_05
+    spriteName: Jungle_Rock_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7634a942a8c33744ebc0e3e23aac8a42
+    layerID: 17
+    mosaicPosition: {x: 928, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_04
+    spriteName: Jungle_Rock_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e3100ce1e1b69484a858920a299c8d98
+    layerID: 16
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_03
+    spriteName: Jungle_Rock_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d5ca7a30fdb665a45a5dd6fae163db18
+    layerID: 15
+    mosaicPosition: {x: 1300, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_02
+    spriteName: Jungle_Rock_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b5983efff209cd844925fa1a7c9a35aa
+    layerID: 14
+    mosaicPosition: {x: 478, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Rock_01
+    spriteName: Jungle_Rock_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae25fd24e2125e440b3d8bd643bec061
+    layerID: 13
+    mosaicPosition: {x: 757, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_05
+    spriteName: Jungle_Tree_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8af7ce506bcaa2e48aba98074c3f4f74
+    layerID: 12
+    mosaicPosition: {x: 4, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_04
+    spriteName: Jungle_Tree_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f0c60f89afc7fea47a4b9a61a1ec6bbd
+    layerID: 11
+    mosaicPosition: {x: 1512, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_03
+    spriteName: Jungle_Tree_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 22567884c532ea34b9619907f5aa7a41
+    layerID: 10
+    mosaicPosition: {x: 1209, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_02
+    spriteName: Jungle_Tree_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3490c0d03475cc8409fd15fae8c84ab5
+    layerID: 9
+    mosaicPosition: {x: 582, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_01
+    spriteName: Jungle_Tree_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f55032c0d8459404697b498c47d15f16
+    layerID: 8
+    mosaicPosition: {x: 334, y: 2975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_07
+    spriteName: Jungle_Tree_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad1e5e179f182264f9e06de27a601030
+    layerID: 7
+    mosaicPosition: {x: 4, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Tree_06
+    spriteName: Jungle_Tree_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: defa4f39ad7db4a40ac0c9a7916c398f
+    layerID: 6
+    mosaicPosition: {x: 382, y: 2545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09a40d04e117f0d4fa574b5958d0bc5f
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 847c5683f8f635c4a96712ac636615bd
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65dea630ee2a0da4cae3457f77dbfb4b
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,0 +1,16 @@
+{
+    "currencies": [
+        {
+            "spriteKey": "MiningCoin"
+        },
+        {
+            "spriteKey": "CoreCoin"
+        },
+        {
+            "spriteKey": "GalaxyCoin"
+        },
+        {
+            "spriteKey": "AdsCoin"
+        }
+    ]
+}

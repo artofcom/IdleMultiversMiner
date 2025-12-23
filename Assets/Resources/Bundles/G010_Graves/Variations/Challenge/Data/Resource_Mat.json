@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "id": "blightedbone",
+            "price": "50"
+        },
+        {
+            "id": "whisperingskull",
+            "price": "150"
+        },
+        {
+            "id": "boneidol",
+            "price": "250"
+        },
+        {
+            "id": "hollowvisage",
+            "price": "350"
+        },
+        {
+            "id": "hallowedcranium",
+            "price": "450"
+        },
+        {
+            "id": "infernalwing",
+            "price": "550"
+        },
+        {
+            "id": "shamansvisage",
+            "price": "650"
+        },
+        {
+            "id": "sunfirescales",
+            "price": "750"
+        },
+        {
+            "id": "shamansear",
+            "price": "850"
+        },
+        {
+            "id": "draconiccranium",
+            "price": "950"
+        },
+        {
+            "id": "infernalcodex",
+            "price": "1050"
+        },
+        {
+            "id": "infernalcodexvol2",
+            "price": "1150"
+        },
+        {
+            "id": "infernalcodexvol3",
+            "price": "1250"
+        }
+    ]
+}

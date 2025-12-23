@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "droplet",
+            "price": "50"
+        },
+        {
+            "id": "spring",
+            "price": "200"
+        },
+        {
+            "id": "redsand",
+            "price": "350"
+        },
+        {
+            "id": "bearleather",
+            "price": "500"
+        },
+        {
+            "id": "ironingot",
+            "price": "650"
+        },
+        {
+            "id": "steelingot",
+            "price": "800"
+        },
+        {
+            "id": "essenceofwater",
+            "price": "950"
+        },
+        {
+            "id": "jadeingot",
+            "price": "1100"
+        },
+        {
+            "id": "goldingot",
+            "price": "1250"
+        },
+        {
+            "id": "goldenmane",
+            "price": "1400"
+        },
+        {
+            "id": "enchantedingot",
+            "price": "1550"
+        }
+    ]
+}

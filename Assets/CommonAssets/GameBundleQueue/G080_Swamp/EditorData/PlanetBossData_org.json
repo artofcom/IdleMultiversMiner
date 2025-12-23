@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "zoneId": 600,
+      "planets": [
+        {
+          "id": 1001,
+          "name": "NightMare",
+          "openCost": "1500",
+          "life": 100,
+          "battleDuration": 300,
+          "coolTime": 300,
+          "miningRate": "base=1:incPercent=100:incBase=0.05",
+          "shotAccuracy": "base=1: incPercent=100:incBase=0.1",
+          "shotInterval": "base=2: incPercent=30:incBase=-0.01",
+          "miningCost": "base=100:incPercent=100:incBase=40",
+          "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+          "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+        }
+      ]
+    },
+    {
+      "zoneId": 700,
+      "planets": [
+        {
+          "id": 1001,
+          "name": "DeathBull",
+          "openCost": "30000",
+          "life": 150000,
+          "battleDuration": 7200,
+          "coolTime": 600,
+          "miningRate": "base=1:incPercent=100:incBase=0.05",
+          "shotAccuracy": "base=1: incPercent=100:incBase=0.1",
+          "shotInterval": "base=2: incPercent=30:incBase=-0.01",
+          "miningCost": "base=100:incPercent=100:incBase=40",
+          "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+          "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+        }
+      ]
+    },
+    {
+      "zoneId": 800,
+      "planets": [
+        {
+          "id": 1001,
+          "name": "DeathBull",
+          "openCost": "30000",
+          "life": 150000,
+          "battleDuration": 7200,
+          "coolTime": 600,
+          "miningRate": "base=1:incPercent=100:incBase=0.05",
+          "shotAccuracy": "base=1: incPercent=100:incBase=0.1",
+          "shotInterval": "base=2: incPercent=30:incBase=-0.01",
+          "miningCost": "base=100:incPercent=100:incBase=40",
+          "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+          "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+        }
+      ]
+    },
+    {
+      "zoneId": 900,
+      "planets": [
+        {
+          "id": 1001,
+          "name": "DeathBull",
+          "openCost": "30000",
+          "life": 150000,
+          "battleDuration": 7200,
+          "coolTime": 600,
+          "miningRate": "base=1:incPercent=100:incBase=0.05",
+          "shotAccuracy": "base=1: incPercent=100:incBase=0.1",
+          "shotInterval": "base=2: incPercent=30:incBase=-0.01",
+          "miningCost": "base=100:incPercent=100:incBase=40",
+          "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+          "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+        }
+      ]
+    },
+    {
+      "zoneId": 1000,
+      "planets": [
+        {
+          "id": 1001,
+          "name": "DeathBull",
+          "openCost": "30000",
+          "life": 150000,
+          "battleDuration": 7200,
+          "coolTime": 600,
+          "miningRate": "base=1:incPercent=100:incBase=0.05",
+          "shotAccuracy": "base=1: incPercent=100:incBase=0.1",
+          "shotInterval": "base=2: incPercent=30:incBase=-0.01",
+          "miningCost": "base=100:incPercent=100:incBase=40",
+          "shotAccuracyCost": "base=100:incPercent=100:incBase=40",
+          "shotIntervalCost": "base=100:incPercent=100:incBase=40"
+        }
+      ]
+    }
+  ]
+}

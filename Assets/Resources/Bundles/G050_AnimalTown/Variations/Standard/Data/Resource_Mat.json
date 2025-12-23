@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "acorn",
+            "price": "10"
+        },
+        {
+            "id": "blueberries",
+            "price": "60"
+        },
+        {
+            "id": "cherry",
+            "price": "110"
+        },
+        {
+            "id": "corn",
+            "price": "160"
+        },
+        {
+            "id": "grapes",
+            "price": "210"
+        },
+        {
+            "id": "peanuts",
+            "price": "260"
+        },
+        {
+            "id": "raspberry",
+            "price": "310"
+        },
+        {
+            "id": "redtreeberries",
+            "price": "360"
+        },
+        {
+            "id": "strawberry",
+            "price": "410"
+        },
+        {
+            "id": "walnut",
+            "price": "460"
+        },
+        {
+            "id": "watermelon",
+            "price": "510"
+        }
+    ]
+}

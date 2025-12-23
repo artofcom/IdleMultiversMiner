@@ -1,0 +1,60 @@
+{
+  "listItemData": [
+    {
+      "id": 0,
+      "reward": {
+        "amount": "1000",
+        "type": 0
+      }
+    },
+    {
+      "id": 1,
+      "reward": {
+        "amount": "5000",
+        "type": 0
+      }
+    },
+    {
+      "id": 2,
+      "reward": {
+        "amount": "5",
+        "type": 1
+      }
+    },
+    {
+      "id": 3,
+      "reward": {
+        "amount": "10000",
+        "type": 0
+      }
+    },
+    {
+      "id": 4,
+      "reward": {
+        "amount": "10",
+        "type": 1
+      }
+    },
+    {
+      "id": 5,
+      "reward": {
+        "amount": "10000",
+        "type": 0
+      }
+    },
+    {
+      "id": 6,
+      "reward": {
+        "amount": "100000",
+        "type": 0
+      }
+    },
+    {
+      "id": 7,
+      "reward": {
+        "amount": "20",
+        "type": 1
+      }
+    }
+  ]
+}

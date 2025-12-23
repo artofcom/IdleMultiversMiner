@@ -1,0 +1,161 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_AuraAmplification1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_AuraAmplification1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone1.",
+            "unlockCost": [
+                {
+                    "resourceId": "deathwrapper",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "humanskull",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bonepowder",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_2_ZoneDiscovery3",
+                "Mining_2_AuraAmplification2"
+            ]
+        },
+        {
+            "name": "Unlock Zone 2 Buff",
+            "id": "Mining_2_AuraAmplification2",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "deathdoll",
+                    "count": 10
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 3",
+            "id": "Mining_2_ZoneDiscovery3",
+            "abilityId": "unlock_zone",
+            "abilityParam": "300",
+            "description": "Unlock the Section of Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "spider",
+                    "count": 10
+                },
+                {
+                    "resourceId": "deathweb",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_3_AuraAmplification3",
+                "Mining_3_ZoneDiscovery4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 3 Buff",
+            "id": "Mining_3_AuraAmplification3",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "blazingknife",
+                    "count": 10
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 4",
+            "id": "Mining_3_ZoneDiscovery4",
+            "abilityId": "unlock_zone",
+            "abilityParam": "400",
+            "description": "Unlock the Section of Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "iron",
+                    "count": 10
+                },
+                {
+                    "resourceId": "eternalpyramid",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_4_AuraAmplification4",
+                "Mining_4_ZoneDiscovery5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 4 Buff",
+            "id": "Mining_4_AuraAmplification4",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "400:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "demonicpoison",
+                    "count": 10
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 5",
+            "id": "Mining_4_ZoneDiscovery5",
+            "abilityId": "unlock_zone",
+            "abilityParam": "500",
+            "description": "Unlock the Section of Zone5.",
+            "unlockCost": [
+                {
+                    "resourceId": "soulwater",
+                    "count": 10
+                },
+                {
+                    "resourceId": "infinitypond",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_5_AuraAmplification5"
+            ]
+        },
+        {
+            "name": "Unlock Zone 5 Buff",
+            "id": "Mining_5_AuraAmplification5",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "500:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone5.",
+            "unlockCost": [
+                {
+                    "resourceId": "ironbar",
+                    "count": 10
+                }
+            ],
+            "children": []
+        }
+    ]
+}

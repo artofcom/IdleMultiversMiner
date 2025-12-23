@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33810e96598805e48a6820a6e5305665, type: 3}
+  m_Name: '[3] SkillTree_MobHuntData'
+  m_EditorClassIdentifier: 
+  categoryId: mobHunt
+  skillInfoList:
+  - icon: {fileID: 21300000, guid: e2aab475e5c04b440b5718c767430589, type: 3}
+    skillInfo:
+      name: Unlock Mob Hunt
+      id: 100
+      abilityId: unlock_mob_hunt
+      abilityParam: 1
+      description: Desc
+      unlockCost:
+      - resourceId: resurrection
+        count: 300
+      - resourceId: blazingKnife
+        count: 50
+  - icon: {fileID: 21300000, guid: 2f8cbb88361657146824d20c2df68f78, type: 3}
+    skillInfo:
+      name: Mob Present 5% More Frequent
+      id: 110
+      abilityId: mob_present_frequent
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: infinityPond
+        count: 200
+  - icon: {fileID: 21300000, guid: dc251317cb1427a408bfec5fea200058, type: 3}
+    skillInfo:
+      name: Mob Hunt 5% More Reward
+      id: 120
+      abilityId: mob_hunt_reward
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: demonEye
+        count: 450
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Mob Present 5% More Frequent
+      id: 130
+      abilityId: mob_present_frequent
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: dragonScale
+        count: 350
+      - resourceId: demonEye
+        count: 800
+  - icon: {fileID: 21300000, guid: dc251317cb1427a408bfec5fea200058, type: 3}
+    skillInfo:
+      name: Mob Hunt 5% More Reward
+      id: 140
+      abilityId: mob_hunt_reward
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: ringOfEternal
+        count: 80
+      - resourceId: bonePowder
+        count: 4000

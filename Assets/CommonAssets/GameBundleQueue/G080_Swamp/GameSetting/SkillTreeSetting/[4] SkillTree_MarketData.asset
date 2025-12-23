@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33810e96598805e48a6820a6e5305665, type: 3}
+  m_Name: '[4] SkillTree_MarketData'
+  m_EditorClassIdentifier: 
+  categoryId: market
+  skillInfoList:
+  - icon: {fileID: 21300000, guid: 4d831830e86057d4ba7f23c1b8e649d0, type: 3}
+    skillInfo:
+      name: Unlock Manual Sell Price Booster
+      id: 100
+      abilityId: unlock_sell_price_booster
+      abilityParam: 1
+      description: Desc
+      unlockCost:
+      - resourceId: flamingMarble
+        count: 80
+      - resourceId: undeadFinger
+        count: 600
+  - icon: {fileID: 21300000, guid: dc251317cb1427a408bfec5fea200058, type: 3}
+    skillInfo:
+      name: Sell Price 5% More
+      id: 110
+      abilityId: sell_price_boost
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: skull
+        count: 60
+      - resourceId: demonicWater
+        count: 150
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Sell Price Booster 5% Longer
+      id: 120
+      abilityId: sell_price_time_booster
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: deathWrapper
+        count: 80
+      - resourceId: bonePowder
+        count: 200
+  - icon: {fileID: 21300000, guid: dc251317cb1427a408bfec5fea200058, type: 3}
+    skillInfo:
+      name: Sell Price 5% More
+      id: 130
+      abilityId: sell_price_boost
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: scaleBundle
+        count: 700
+  - icon: {fileID: 21300000, guid: 839d7c3c4fdec3040b52812fa2d2ff37, type: 3}
+    skillInfo:
+      name: Sell Price Booster 5% Longer
+      id: 140
+      abilityId: sell_price_time_booster
+      abilityParam: 5
+      description: Desc
+      unlockCost:
+      - resourceId: deathDoll
+        count: 50
+      - resourceId: ringOfEternal
+        count: 600

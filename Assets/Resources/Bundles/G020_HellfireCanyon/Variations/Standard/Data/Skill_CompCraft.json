@@ -1,0 +1,159 @@
+{
+    "id": "CompCraft",
+    "rootId": "CompCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "CompCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "compcraft",
+            "description": "Unlock Craft for Components.",
+            "unlockCost": [
+                {
+                    "resourceId": "coal",
+                    "count": 30
+                }
+            ],
+            "children": [
+                "CompCraft_1_SwiftQuenching"
+            ]
+        },
+        {
+            "name": "Swift Quenching",
+            "id": "CompCraft_1_SwiftQuenching",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduces Craft Duration by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "CompCraft_2_MaterialEconomy",
+                "CompCraft_2_MultiProductionOptimization"
+            ]
+        },
+        {
+            "name": "Material Economy",
+            "id": "CompCraft_2_MaterialEconomy",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Reduce Cost by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "iron",
+                    "count": 10
+                },
+                {
+                    "resourceId": "copper",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "CompCraft_3_EssenceOfCreation"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization",
+            "id": "CompCraft_2_MultiProductionOptimization",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Save costs 5% less when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "evileye",
+                    "count": 10
+                },
+                {
+                    "resourceId": "copperbar",
+                    "count": 30
+                }
+            ],
+            "children": [
+                "CompCraft_4_EssenseOfCreation2"
+            ]
+        },
+        {
+            "name": "Essence Of Creation",
+            "id": "CompCraft_3_EssenceOfCreation",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Reduce Cost by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "blazingknife",
+                    "count": 10
+                },
+                {
+                    "resourceId": "iron",
+                    "count": 30
+                }
+            ],
+            "children": [
+                "CompCraft_4_MultiProductionOptimization2"
+            ]
+        },
+        {
+            "name": "Essense Of Creation 2",
+            "id": "CompCraft_4_EssenseOfCreation2",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduces Craft Duration by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "thunderbar",
+                    "count": 2
+                },
+                {
+                    "resourceId": "death_skull",
+                    "count": 5
+                }
+            ],
+            "children": [
+                "Mining_6_ZoneDiscovery7"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization 2",
+            "id": "CompCraft_4_MultiProductionOptimization2",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduces Craft Duration by 5% when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "magma",
+                    "count": 100
+                },
+                {
+                    "resourceId": "goldenbug",
+                    "count": 5
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 7",
+            "id": "Mining_6_ZoneDiscovery7",
+            "abilityId": "unlock_zone",
+            "abilityParam": "700",
+            "description": "Unlock the Section of Zone 7.",
+            "unlockCost": [
+                {
+                    "resourceId": "demonarm",
+                    "count": 2
+                },
+                {
+                    "resourceId": "flamingmarble",
+                    "count": 10
+                },
+                {
+                    "resourceId": "eternalpyramid",
+                    "count": 25
+                }
+            ],
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[1] RscCompData 1'
+  m_EditorClassIdentifier: 
+  baseValue: 50
+  rarity: 3
+  resourceSets:
+  - icon: {fileID: 21300000, guid: 36479010581c8bb4aaf9c5fbba8b7637, type: 3}
+    resourceInfo:
+      id: blackjuice
+      price: 50
+  - icon: {fileID: 21300000, guid: ca83f26aedd715745ba662a904671883, type: 3}
+    resourceInfo:
+      id: bluejuice
+      price: 200
+  - icon: {fileID: 21300000, guid: e46d6352e73f9be4da476f553a093136, type: 3}
+    resourceInfo:
+      id: greenjuice
+      price: 350
+  - icon: {fileID: 21300000, guid: e8d5a39ce3bf8a24cbcb03f293332e6c, type: 3}
+    resourceInfo:
+      id: orangejuice
+      price: 500
+  - icon: {fileID: 21300000, guid: 6c4709affa9d7e645ac4a97f4fd6bcdd, type: 3}
+    resourceInfo:
+      id: pinkjuice
+      price: 650
+  - icon: {fileID: 21300000, guid: 18d075098bd79b6488b1d0de1ab4482a, type: 3}
+    resourceInfo:
+      id: purplejuice
+      price: 800
+  - icon: {fileID: 21300000, guid: 366790c61bcfbb74da4bdf8fee78ad07, type: 3}
+    resourceInfo:
+      id: redjuice
+      price: 950
+  - icon: {fileID: 21300000, guid: df5aad806c5154d428ba2cf3165efe35, type: 3}
+    resourceInfo:
+      id: turquoisejuice
+      price: 1100
+  - icon: {fileID: 21300000, guid: 7dc1be1800166bb4eb0d737343d2a7e4, type: 3}
+    resourceInfo:
+      id: whitejuice
+      price: 1250
+  - icon: {fileID: 21300000, guid: a845af3f809c7cb44a055dd90ebf6b1e, type: 3}
+    resourceInfo:
+      id: yellowjuice
+      price: 1400

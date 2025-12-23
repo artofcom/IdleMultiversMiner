@@ -1,0 +1,182 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "sources": [
+                {
+                    "resourceId": "Coal",
+                    "count": 1000
+                }
+            ],
+            "outcomeId": "CoalDummy",
+            "duration": 60,
+            "cost": "10"
+        },
+        {
+            "id": "2",
+            "sources": [
+                {
+                    "resourceId": "Coal",
+                    "count": 600
+                },
+                {
+                    "resourceId": "UndeadFinger",
+                    "count": 150
+                }
+            ],
+            "outcomeId": "ZombieOil",
+            "duration": 75,
+            "cost": "25"
+        },
+        {
+            "id": "3",
+            "sources": [
+                {
+                    "resourceId": "CoalDummy",
+                    "count": 100
+                },
+                {
+                    "resourceId": "Copper",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "Magma",
+            "duration": 90,
+            "cost": "50"
+        },
+        {
+            "id": "4",
+            "sources": [
+                {
+                    "resourceId": "Copper",
+                    "count": 500
+                }
+            ],
+            "outcomeId": "CopperBar",
+            "duration": 120,
+            "cost": "100"
+        },
+        {
+            "id": "5",
+            "sources": [
+                {
+                    "resourceId": "UndeadFinger",
+                    "count": 500
+                },
+                {
+                    "resourceId": "SoulWater",
+                    "count": 100
+                }
+            ],
+            "outcomeId": "DemonicWater",
+            "duration": 150,
+            "cost": "100"
+        },
+        {
+            "id": "6",
+            "sources": [
+                {
+                    "resourceId": "ZombieOil",
+                    "count": 2000
+                },
+                {
+                    "resourceId": "Skull",
+                    "count": 666
+                }
+            ],
+            "outcomeId": "BonePowder",
+            "duration": 150,
+            "cost": "120"
+        },
+        {
+            "id": "7",
+            "sources": [
+                {
+                    "resourceId": "Skull",
+                    "count": 400
+                },
+                {
+                    "resourceId": "Spider",
+                    "count": 500
+                }
+            ],
+            "outcomeId": "DeathWeb",
+            "duration": 200,
+            "cost": "130"
+        },
+        {
+            "id": "8",
+            "sources": [
+                {
+                    "resourceId": "SoulWater",
+                    "count": 20000
+                },
+                {
+                    "resourceId": "DragonScale",
+                    "count": 600
+                }
+            ],
+            "outcomeId": "ScaleBundle",
+            "duration": 230,
+            "cost": "150"
+        },
+        {
+            "id": "9",
+            "sources": [
+                {
+                    "resourceId": "ScaleBundle",
+                    "count": 100
+                },
+                {
+                    "resourceId": "Iron",
+                    "count": 600
+                }
+            ],
+            "outcomeId": "IronBar",
+            "duration": 300,
+            "cost": "150"
+        },
+        {
+            "id": "10",
+            "sources": [
+                {
+                    "resourceId": "SoulWater",
+                    "count": 6000
+                },
+                {
+                    "resourceId": "RedMershroom",
+                    "count": 500
+                }
+            ],
+            "outcomeId": "BloodyPoison",
+            "duration": 350,
+            "cost": "150"
+        },
+        {
+            "id": "10",
+            "sources": [
+                {
+                    "resourceId": "BloodyPoison",
+                    "count": 100
+                },
+                {
+                    "resourceId": "Krypto",
+                    "count": 1000
+                }
+            ],
+            "outcomeId": "BloodyPoison",
+            "duration": 350,
+            "cost": "150"
+        }
+    ],
+    "slotCosts": [
+        "0",
+        "30",
+        "50",
+        "100",
+        "150",
+        "200",
+        "500",
+        "1000"
+    ]
+}

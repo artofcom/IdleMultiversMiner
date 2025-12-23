@@ -1,0 +1,399 @@
+{
+    "data": [
+        {
+            "zoneId": 100,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Molten Core",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "coal",
+                            "yield": 0.699999988079071
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=50:incPercent=10000:incBase=50",
+                    "shipCost": "base=50:incPercent=10000:incBase=50",
+                    "cargoCost": "base=50:incPercent=10000:incBase=50",
+                    "shotAccuracyCost": "base=50:incPercent=10000:incBase=50",
+                    "shotIntervalCost": "base=50:incPercent=10000:incBase=50"
+                },
+                {
+                    "id": 2,
+                    "name": "Blaze Rock",
+                    "openCost": "340",
+                    "obtainables": [
+                        {
+                            "resourceId": "coal",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=125:incPercent=12500:incBase=62",
+                    "shipCost": "base=125:incPercent=12500:incBase=62",
+                    "cargoCost": "base=125:incPercent=12500:incBase=62",
+                    "shotAccuracyCost": "base=125:incPercent=12500:incBase=62",
+                    "shotIntervalCost": "base=125:incPercent=12500:incBase=62"
+                }
+            ]
+        },
+        {
+            "zoneId": 200,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Magma Pit",
+                    "openCost": "580",
+                    "obtainables": [
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.699999988079071
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=200:incPercent=15000:incBase=75",
+                    "shipCost": "base=200:incPercent=15000:incBase=75",
+                    "cargoCost": "base=200:incPercent=15000:incBase=75",
+                    "shotAccuracyCost": "base=200:incPercent=15000:incBase=75",
+                    "shotIntervalCost": "base=200:incPercent=15000:incBase=75"
+                },
+                {
+                    "id": 2,
+                    "name": "Ember Quarry",
+                    "openCost": "820",
+                    "obtainables": [
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "iron",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=275:incPercent=17500:incBase=87",
+                    "shipCost": "base=275:incPercent=17500:incBase=87",
+                    "cargoCost": "base=275:incPercent=17500:incBase=87",
+                    "shotAccuracyCost": "base=275:incPercent=17500:incBase=87",
+                    "shotIntervalCost": "base=275:incPercent=17500:incBase=87"
+                }
+            ]
+        },
+        {
+            "zoneId": 300,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Scorch Mine",
+                    "openCost": "1060",
+                    "obtainables": [
+                        {
+                            "resourceId": "iron",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=350:incPercent=20000:incBase=100",
+                    "shipCost": "base=350:incPercent=20000:incBase=100",
+                    "cargoCost": "base=350:incPercent=20000:incBase=100",
+                    "shotAccuracyCost": "base=350:incPercent=20000:incBase=100",
+                    "shotIntervalCost": "base=350:incPercent=20000:incBase=100"
+                },
+                {
+                    "id": 2,
+                    "name": "Volcanic Vein",
+                    "openCost": "1300",
+                    "obtainables": [
+                        {
+                            "resourceId": "iron",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "coal",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=425:incPercent=22500:incBase=112",
+                    "shipCost": "base=425:incPercent=22500:incBase=112",
+                    "cargoCost": "base=425:incPercent=22500:incBase=112",
+                    "shotAccuracyCost": "base=425:incPercent=22500:incBase=112",
+                    "shotIntervalCost": "base=425:incPercent=22500:incBase=112"
+                }
+            ]
+        },
+        {
+            "zoneId": 400,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Inferno Crag",
+                    "openCost": "1540",
+                    "obtainables": [
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "magma",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=500:incPercent=25000:incBase=125",
+                    "shipCost": "base=500:incPercent=25000:incBase=125",
+                    "cargoCost": "base=500:incPercent=25000:incBase=125",
+                    "shotAccuracyCost": "base=500:incPercent=25000:incBase=125",
+                    "shotIntervalCost": "base=500:incPercent=25000:incBase=125"
+                },
+                {
+                    "id": 2,
+                    "name": "Slag Deep",
+                    "openCost": "1780",
+                    "obtainables": [
+                        {
+                            "resourceId": "magma",
+                            "yield": 0.6000000238418579
+                        },
+                        {
+                            "resourceId": "iron",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=575:incPercent=27500:incBase=137",
+                    "shipCost": "base=575:incPercent=27500:incBase=137",
+                    "cargoCost": "base=575:incPercent=27500:incBase=137",
+                    "shotAccuracyCost": "base=575:incPercent=27500:incBase=137",
+                    "shotIntervalCost": "base=575:incPercent=27500:incBase=137"
+                }
+            ]
+        },
+        {
+            "zoneId": 500,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Ash Bed",
+                    "openCost": "2020",
+                    "obtainables": [
+                        {
+                            "resourceId": "magmachunk",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "copper",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=650:incPercent=30000:incBase=150",
+                    "shipCost": "base=650:incPercent=30000:incBase=150",
+                    "cargoCost": "base=650:incPercent=30000:incBase=150",
+                    "shotAccuracyCost": "base=650:incPercent=30000:incBase=150",
+                    "shotIntervalCost": "base=650:incPercent=30000:incBase=150"
+                },
+                {
+                    "id": 2,
+                    "name": "Thermal Stone",
+                    "openCost": "2260",
+                    "obtainables": [
+                        {
+                            "resourceId": "magmachunk",
+                            "yield": 0.699999988079071
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=725:incPercent=32500:incBase=162",
+                    "shipCost": "base=725:incPercent=32500:incBase=162",
+                    "cargoCost": "base=725:incPercent=32500:incBase=162",
+                    "shotAccuracyCost": "base=725:incPercent=32500:incBase=162",
+                    "shotIntervalCost": "base=725:incPercent=32500:incBase=162"
+                }
+            ]
+        },
+        {
+            "zoneId": 600,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Cinder Cliff",
+                    "openCost": "2500",
+                    "obtainables": [
+                        {
+                            "resourceId": "demonarm",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "magma",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=800:incPercent=35000:incBase=175",
+                    "shipCost": "base=800:incPercent=35000:incBase=175",
+                    "cargoCost": "base=800:incPercent=35000:incBase=175",
+                    "shotAccuracyCost": "base=800:incPercent=35000:incBase=175",
+                    "shotIntervalCost": "base=800:incPercent=35000:incBase=175"
+                },
+                {
+                    "id": 2,
+                    "name": "Furnace Ridge",
+                    "openCost": "2740",
+                    "obtainables": [
+                        {
+                            "resourceId": "dragonegg",
+                            "yield": 0.20000000298023225
+                        },
+                        {
+                            "resourceId": "krypto",
+                            "yield": 0.800000011920929
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=875:incPercent=37500:incBase=187",
+                    "shipCost": "base=875:incPercent=37500:incBase=187",
+                    "cargoCost": "base=875:incPercent=37500:incBase=187",
+                    "shotAccuracyCost": "base=875:incPercent=37500:incBase=187",
+                    "shotIntervalCost": "base=875:incPercent=37500:incBase=187"
+                }
+            ]
+        },
+        {
+            "zoneId": 700,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Brimstone Basin",
+                    "openCost": "2980",
+                    "obtainables": [
+                        {
+                            "resourceId": "demonfoot",
+                            "yield": 0.699999988079071
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=950:incPercent=40000:incBase=200",
+                    "shipCost": "base=950:incPercent=40000:incBase=200",
+                    "cargoCost": "base=950:incPercent=40000:incBase=200",
+                    "shotAccuracyCost": "base=950:incPercent=40000:incBase=200",
+                    "shotIntervalCost": "base=950:incPercent=40000:incBase=200"
+                },
+                {
+                    "id": 2,
+                    "name": "Flare Pit",
+                    "openCost": "3220",
+                    "obtainables": [
+                        {
+                            "resourceId": "gold",
+                            "yield": 0.699999988079071
+                        },
+                        {
+                            "resourceId": "dragonegg",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=1025:incPercent=42500:incBase=212",
+                    "shipCost": "base=1025:incPercent=42500:incBase=212",
+                    "cargoCost": "base=1025:incPercent=42500:incBase=212",
+                    "shotAccuracyCost": "base=1025:incPercent=42500:incBase=212",
+                    "shotIntervalCost": "base=1025:incPercent=42500:incBase=212"
+                }
+            ]
+        },
+        {
+            "zoneId": 800,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Ignis Vault",
+                    "openCost": "3460",
+                    "obtainables": [
+                        {
+                            "resourceId": "krypto",
+                            "yield": 0.699999988079071
+                        },
+                        {
+                            "resourceId": "stardust",
+                            "yield": 0.30000001192092898
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.11",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.02",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=3.00:incPercent=100.00:incBase=-0.01",
+                    "miningCost": "base=1100:incPercent=45000:incBase=225",
+                    "shipCost": "base=1100:incPercent=45000:incBase=225",
+                    "cargoCost": "base=1100:incPercent=45000:incBase=225",
+                    "shotAccuracyCost": "base=1100:incPercent=45000:incBase=225",
+                    "shotIntervalCost": "base=1100:incPercent=45000:incBase=225"
+                }
+            ]
+        }
+    ]
+}

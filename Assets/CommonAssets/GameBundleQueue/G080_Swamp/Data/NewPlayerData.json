@@ -1,0 +1,18 @@
+{
+  "currency": {
+    "money": [
+      {
+        "amount": "500",
+        "type": 0
+      },
+      {
+        "amount": "30",
+        "type": 1
+      }
+    ]
+  },
+  "zoneId": 100,
+  "openedTabBtns" : [
+    "planet","resource","craft","skillTree"
+  ]
+}

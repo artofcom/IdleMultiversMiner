@@ -1,0 +1,144 @@
+{
+    "recipes": [
+        {
+            "id": "Comp_0",
+            "sources": [
+                {
+                    "resourceId": "iceshard",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "droplet",
+            "duration": 10,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_1",
+            "sources": [
+                {
+                    "resourceId": "pileofstones",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "spring",
+            "duration": 21,
+            "cost": "20"
+        },
+        {
+            "id": "Comp_2",
+            "sources": [
+                {
+                    "resourceId": "redpincer",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "redsand",
+            "duration": 32,
+            "cost": "30"
+        },
+        {
+            "id": "Comp_3",
+            "sources": [
+                {
+                    "resourceId": "whaleskull",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "bearleather",
+            "duration": 43,
+            "cost": "40"
+        },
+        {
+            "id": "Comp_4",
+            "sources": [
+                {
+                    "resourceId": "amethyst",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "ironingot",
+            "duration": 54,
+            "cost": "50"
+        },
+        {
+            "id": "Comp_5",
+            "sources": [
+                {
+                    "resourceId": "bearpaw",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "steelingot",
+            "duration": 65,
+            "cost": "60"
+        },
+        {
+            "id": "Comp_6",
+            "sources": [
+                {
+                    "resourceId": "manacrystal",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "essenceofwater",
+            "duration": 76,
+            "cost": "70"
+        },
+        {
+            "id": "Comp_7",
+            "sources": [
+                {
+                    "resourceId": "goldnugget",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "jadeingot",
+            "duration": 87,
+            "cost": "80"
+        },
+        {
+            "id": "Comp_8",
+            "sources": [
+                {
+                    "resourceId": "rawturquoise",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "goldingot",
+            "duration": 98,
+            "cost": "90"
+        },
+        {
+            "id": "Comp_9",
+            "sources": [
+                {
+                    "resourceId": "mysteriousegg",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "goldenmane",
+            "duration": 109,
+            "cost": "100"
+        },
+        {
+            "id": "Comp_10",
+            "sources": [
+                {
+                    "resourceId": "runestone",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "enchantedingot",
+            "duration": 120,
+            "cost": "110"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "10",
+        "30",
+        "50"
+    ]
+}

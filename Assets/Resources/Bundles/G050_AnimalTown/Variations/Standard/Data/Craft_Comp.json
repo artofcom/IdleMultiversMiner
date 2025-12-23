@@ -1,0 +1,132 @@
+{
+    "recipes": [
+        {
+            "id": "Comp_0",
+            "sources": [
+                {
+                    "resourceId": "acorn",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "blackjuice",
+            "duration": 5,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_1",
+            "sources": [
+                {
+                    "resourceId": "blueberries",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "bluejuice",
+            "duration": 10,
+            "cost": "20"
+        },
+        {
+            "id": "Comp_2",
+            "sources": [
+                {
+                    "resourceId": "cherry",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "greenjuice",
+            "duration": 15,
+            "cost": "30"
+        },
+        {
+            "id": "Comp_3",
+            "sources": [
+                {
+                    "resourceId": "corn",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "orangejuice",
+            "duration": 20,
+            "cost": "40"
+        },
+        {
+            "id": "Comp_4",
+            "sources": [
+                {
+                    "resourceId": "grapes",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "pinkjuice",
+            "duration": 25,
+            "cost": "50"
+        },
+        {
+            "id": "Comp_5",
+            "sources": [
+                {
+                    "resourceId": "peanuts",
+                    "count": 35
+                }
+            ],
+            "outcomeId": "purplejuice",
+            "duration": 30,
+            "cost": "60"
+        },
+        {
+            "id": "Comp_6",
+            "sources": [
+                {
+                    "resourceId": "raspberry",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "redjuice",
+            "duration": 35,
+            "cost": "70"
+        },
+        {
+            "id": "Comp_7",
+            "sources": [
+                {
+                    "resourceId": "redtreeberries",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "turquoisejuice",
+            "duration": 40,
+            "cost": "80"
+        },
+        {
+            "id": "Comp_8",
+            "sources": [
+                {
+                    "resourceId": "strawberry",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "whitejuice",
+            "duration": 45,
+            "cost": "90"
+        },
+        {
+            "id": "Comp_9",
+            "sources": [
+                {
+                    "resourceId": "walnut",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "yellowjuice",
+            "duration": 50,
+            "cost": "100"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "10",
+        "30",
+        "50"
+    ]
+}

@@ -1,0 +1,93 @@
+{
+  "boostersInfo": [
+    {
+      "id": "miningBoost",
+      "name": "MINE BOOST",
+      "desc": "x1.2 mine rate for all planets for 1 hour",
+      "boostingRate": 1.2,
+      "type": 0,
+      "duration": 3600,
+      "cost": 10,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fire"
+    },
+
+    {
+      "id": "speedBoost",
+      "name": "DELIVERY SPEED BOOST",
+      "desc": "x1.2 delivery speed rate for all planets for 1 hour",
+      "boostingRate": 1.2,
+      "type": 1,
+      "duration": 3600,
+      "cost": 10,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fish"
+    },
+    {
+      "id": "cargoSizeBoost",
+      "name": "CARGO SIZE BOOST",
+      "desc": "x1.2 cargo size rate for all planets for 1 hour",
+      "boostingRate": 1.2,
+      "type": 2,
+      "duration": 3600,
+      "cost": 10,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_health"
+    },
+    {
+      "id": "fireIntervalBoost",
+      "name": "INTERVAL BOOST",
+      "desc": "x1.2 fire interval rate for all planets for 1 hour",
+      "boostingRate": 1.2,
+      "type": 3,
+      "duration": 3600,
+      "cost": 10,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fire"
+    },
+    {
+      "id": "fireAccuracyBoost",
+      "name": "ACCURACY BOOST",
+      "desc": "x1.2 fire accuracy rate for all planets for 1 hour",
+      "boostingRate": 1.2,
+      "type": 4,
+      "duration": 3600,
+      "cost": 10,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fire"
+    },
+    {
+      "id": "planetBoost",
+      "name": "PLANET BOOST",
+      "desc": "Pick a planet to give x10 mine rate, ship spped and cargo for 5 min",
+      "boostingRate": 5,
+      "type": 3,
+      "duration": 300,
+      "cost": 30,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_history"
+    },
+    {
+      "id": "sendCash",
+      "name": "CASH",
+      "desc": "The Ark sends you $1000",
+      "boostingRate": 1000,
+      "type": 4,
+      "duration": 0,
+      "cost": 30,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fish"
+    },
+    {
+      "id": "productionBoost",
+      "name": "PRODUCTION BOOST",
+      "desc": "x10 speed to all smelters and crafters for 5 min",
+      "boostingRate": 10,
+      "type": 5,
+      "duration": 3600,
+      "cost": 40,
+      "costCurrencyType": 1,
+      "spriteKey": "pictoicon_fire"
+    }
+  ]
+}

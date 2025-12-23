@@ -1,0 +1,179 @@
+{
+    "recipes": [
+        {
+            "id": "Item_0",
+            "sources": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 10
+                },
+                {
+                    "resourceId": "coal",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "demoneye",
+            "duration": 12,
+            "cost": "5"
+        },
+        {
+            "id": "Item_1",
+            "sources": [
+                {
+                    "resourceId": "copperbar",
+                    "count": 20
+                },
+                {
+                    "resourceId": "coaldummy",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "eternalpyramid",
+            "duration": 24,
+            "cost": "5"
+        },
+        {
+            "id": "Item_2",
+            "sources": [
+                {
+                    "resourceId": "death_skull",
+                    "count": 10
+                },
+                {
+                    "resourceId": "coal",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "evileye",
+            "duration": 36,
+            "cost": "5"
+        },
+        {
+            "id": "Item_3",
+            "sources": [
+                {
+                    "resourceId": "blazingknife",
+                    "count": 10
+                },
+                {
+                    "resourceId": "copper",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "thunderbar",
+            "duration": 48,
+            "cost": "10"
+        },
+        {
+            "id": "Item_4",
+            "sources": [
+                {
+                    "resourceId": "firingskull",
+                    "count": 20
+                },
+                {
+                    "resourceId": "iron",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "flamingmarble",
+            "duration": 60,
+            "cost": "10"
+        },
+        {
+            "id": "Item_5",
+            "sources": [
+                {
+                    "resourceId": "goldenmagma",
+                    "count": 20
+                },
+                {
+                    "resourceId": "copperbar",
+                    "count": 45
+                }
+            ],
+            "outcomeId": "goldenbug",
+            "duration": 72,
+            "cost": "10"
+        },
+        {
+            "id": "Item_6",
+            "sources": [
+                {
+                    "resourceId": "goldenskull",
+                    "count": 20
+                },
+                {
+                    "resourceId": "death_skull",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "lavadocument",
+            "duration": 84,
+            "cost": "10"
+        },
+        {
+            "id": "Item_7",
+            "sources": [
+                {
+                    "resourceId": "kryptostones",
+                    "count": 10
+                },
+                {
+                    "resourceId": "firingskull",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "resurrection",
+            "duration": 96,
+            "cost": "10"
+        },
+        {
+            "id": "Item_8",
+            "sources": [
+                {
+                    "resourceId": "magmacore",
+                    "count": 20
+                },
+                {
+                    "resourceId": "goldenmagma",
+                    "count": 50
+                },
+                {
+                    "resourceId": "goldenbug",
+                    "count": 5
+                }
+            ],
+            "outcomeId": "magmatrident",
+            "duration": 108,
+            "cost": "15"
+        },
+        {
+            "id": "Item_9",
+            "sources": [
+                {
+                    "resourceId": "magmadust",
+                    "count": 20
+                },
+                {
+                    "resourceId": "magmacore",
+                    "count": 40
+                },
+                {
+                    "resourceId": "lavadocument",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "bookofdeath",
+            "duration": 120,
+            "cost": "15"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "30",
+        "50"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "blackjuice",
+            "price": "50"
+        },
+        {
+            "id": "bluejuice",
+            "price": "200"
+        },
+        {
+            "id": "greenjuice",
+            "price": "350"
+        },
+        {
+            "id": "orangejuice",
+            "price": "500"
+        },
+        {
+            "id": "pinkjuice",
+            "price": "650"
+        },
+        {
+            "id": "purplejuice",
+            "price": "800"
+        },
+        {
+            "id": "redjuice",
+            "price": "950"
+        },
+        {
+            "id": "turquoisejuice",
+            "price": "1100"
+        },
+        {
+            "id": "whitejuice",
+            "price": "1250"
+        },
+        {
+            "id": "yellowjuice",
+            "price": "1400"
+        }
+    ]
+}

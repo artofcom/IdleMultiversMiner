@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "coaldummy",
+            "price": "50"
+        },
+        {
+            "id": "copperbar",
+            "price": "200"
+        },
+        {
+            "id": "death_skull",
+            "price": "350"
+        },
+        {
+            "id": "blazingknife",
+            "price": "500"
+        },
+        {
+            "id": "firingskull",
+            "price": "650"
+        },
+        {
+            "id": "goldenmagma",
+            "price": "800"
+        },
+        {
+            "id": "goldenskull",
+            "price": "950"
+        },
+        {
+            "id": "kryptostones",
+            "price": "1100"
+        },
+        {
+            "id": "magmacore",
+            "price": "1250"
+        },
+        {
+            "id": "magmadust",
+            "price": "1400"
+        }
+    ]
+}

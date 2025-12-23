@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "bullskull",
+            "price": "10"
+        },
+        {
+            "id": "humanskull",
+            "price": "60"
+        },
+        {
+            "id": "redmershroom",
+            "price": "110"
+        },
+        {
+            "id": "spider",
+            "price": "160"
+        },
+        {
+            "id": "undeadfinger",
+            "price": "210"
+        },
+        {
+            "id": "iron",
+            "price": "260"
+        },
+        {
+            "id": "krypto",
+            "price": "310"
+        },
+        {
+            "id": "soulwater",
+            "price": "360"
+        },
+        {
+            "id": "dragonscale",
+            "price": "410"
+        },
+        {
+            "id": "stardust",
+            "price": "460"
+        }
+    ]
+}

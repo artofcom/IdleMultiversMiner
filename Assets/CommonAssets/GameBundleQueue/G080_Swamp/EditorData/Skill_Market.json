@@ -1,0 +1,86 @@
+{
+    "categoryId": "market",
+    "skillInfo": [
+        {
+            "name": "Unlock Manual Sell Price Booster",
+            "id": 100,
+            "abilityId": "unlock_sell_price_booster",
+            "abilityParam": "1",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "flamingMarble",
+                    "count": 80
+                },
+                {
+                    "resourceId": "undeadFinger",
+                    "count": 600
+                }
+            ]
+        },
+        {
+            "name": "Sell Price 5% More",
+            "id": 110,
+            "abilityId": "sell_price_boost",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "skull",
+                    "count": 60
+                },
+                {
+                    "resourceId": "demonicWater",
+                    "count": 150
+                }
+            ]
+        },
+        {
+            "name": "Sell Price Booster 5% Longer",
+            "id": 120,
+            "abilityId": "sell_price_time_booster",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "deathWrapper",
+                    "count": 80
+                },
+                {
+                    "resourceId": "bonePowder",
+                    "count": 200
+                }
+            ]
+        },
+        {
+            "name": "Sell Price 5% More",
+            "id": 130,
+            "abilityId": "sell_price_boost",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "scaleBundle",
+                    "count": 700
+                }
+            ]
+        },
+        {
+            "name": "Sell Price Booster 5% Longer",
+            "id": 140,
+            "abilityId": "sell_price_time_booster",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "deathDoll",
+                    "count": 50
+                },
+                {
+                    "resourceId": "ringOfEternal",
+                    "count": 600
+                }
+            ]
+        }
+    ]
+}

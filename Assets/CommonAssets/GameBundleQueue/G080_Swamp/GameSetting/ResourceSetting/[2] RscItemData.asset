@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[2] RscItemData'
+  m_EditorClassIdentifier: 
+  resourceSets:
+  - icon: {fileID: 21300000, guid: 657e7e67121ded347b93aed4c82ddb9f, type: 3}
+    resourceInfo:
+      id: Resurrection
+      price: 800
+  - icon: {fileID: 21300000, guid: b1308d840a5b69e49a416792960215e9, type: 3}
+    resourceInfo:
+      id: FlamingMarble
+      price: 900
+  - icon: {fileID: 21300000, guid: 4b4bbb70c78963940b5c354dae9b41bf, type: 3}
+    resourceInfo:
+      id: BlazingKnife
+      price: 950
+  - icon: {fileID: 21300000, guid: 453dc6c17f8b585408916a8c9d21f3a8, type: 3}
+    resourceInfo:
+      id: InfinityPond
+      price: 1000
+  - icon: {fileID: 21300000, guid: 652aebb79e6f5094bb44bd4c383e5d30, type: 3}
+    resourceInfo:
+      id: DemonEye
+      price: 1100
+  - icon: {fileID: 21300000, guid: d5ca2bb3b567b8447930dfdcce1f60d2, type: 3}
+    resourceInfo:
+      id: DeathWrapper
+      price: 1150
+  - icon: {fileID: 21300000, guid: a6b6f59c2bba22c499b320b34b2bea09, type: 3}
+    resourceInfo:
+      id: RingOfEternal
+      price: 1200
+  - icon: {fileID: 21300000, guid: 02091e9358f211944ad7e4c7186c5d6c, type: 3}
+    resourceInfo:
+      id: DeathDoll
+      price: 1250
+  - icon: {fileID: 21300000, guid: 301a939a57c97ba4b9f21bf1a39eef3f, type: 3}
+    resourceInfo:
+      id: BookOfDeath
+      price: 1300
+  - icon: {fileID: 21300000, guid: 83fa17b944086024982ec0269732e0dc, type: 3}
+    resourceInfo:
+      id: EternalPyramid
+      price: 1400

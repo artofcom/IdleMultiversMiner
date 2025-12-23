@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[0] RscMatData'
+  m_EditorClassIdentifier: 
+  baseValue: 50
+  rarity: 2
+  resourceSets:
+  - icon: {fileID: 21300000, guid: a7287d75765e52944981326a6b5b9a7f, type: 3}
+    resourceInfo:
+      id: blightedbone
+      price: 50
+  - icon: {fileID: 21300000, guid: c1d7fba7b6fcce04ab9fc8dc74309c8e, type: 3}
+    resourceInfo:
+      id: whisperingskull
+      price: 150
+  - icon: {fileID: 21300000, guid: 82912d5245e6ad74b9790e900d6826b5, type: 3}
+    resourceInfo:
+      id: boneidol
+      price: 250
+  - icon: {fileID: 21300000, guid: f2a2fcd672ca71f468f9ec2851dcd248, type: 3}
+    resourceInfo:
+      id: hollowvisage
+      price: 350
+  - icon: {fileID: 21300000, guid: ec24c37d5223df2488e920c143ffc1e6, type: 3}
+    resourceInfo:
+      id: hallowedcranium
+      price: 450
+  - icon: {fileID: 21300000, guid: 114518fa5f6a6264c94d890075c23823, type: 3}
+    resourceInfo:
+      id: infernalwing
+      price: 550
+  - icon: {fileID: 21300000, guid: b10e6e4604ecef14fab947cf785f3951, type: 3}
+    resourceInfo:
+      id: shamansvisage
+      price: 650
+  - icon: {fileID: 21300000, guid: 982da319d7d90db41b6f908f9815ec0d, type: 3}
+    resourceInfo:
+      id: sunfirescales
+      price: 750
+  - icon: {fileID: 21300000, guid: c21d04f4337bde4478d5a24fec093620, type: 3}
+    resourceInfo:
+      id: shamansear
+      price: 850
+  - icon: {fileID: 21300000, guid: c75c454375540a24899e94af6fd81704, type: 3}
+    resourceInfo:
+      id: draconiccranium
+      price: 950
+  - icon: {fileID: 21300000, guid: 10d93f76a4c910b448f3e0be8a59b9a7, type: 3}
+    resourceInfo:
+      id: infernalcodex
+      price: 1050
+  - icon: {fileID: 21300000, guid: d1ae44ded3ae49449b9f410d76bd1888, type: 3}
+    resourceInfo:
+      id: infernalcodexvol2
+      price: 1150
+  - icon: {fileID: 21300000, guid: 35a6f08d4edfe8d43aaa1e9a657a18b3, type: 3}
+    resourceInfo:
+      id: infernalcodexvol3
+      price: 1250

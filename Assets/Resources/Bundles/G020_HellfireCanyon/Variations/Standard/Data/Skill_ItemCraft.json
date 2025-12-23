@@ -1,0 +1,159 @@
+{
+    "id": "ItemCraft",
+    "rootId": "ItemCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "ItemCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "itemcraft",
+            "description": "Unlock Craft for Items.",
+            "unlockCost": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_1_SwiftQuenching"
+            ]
+        },
+        {
+            "name": "Swift Quenching",
+            "id": "ItemCraft_1_SwiftQuenching",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduces Craft Duration by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "demoneye",
+                    "count": 10
+                },
+                {
+                    "resourceId": "coaldummy",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_2_MaterialEconomy",
+                "ItemCraft_2_MultiProductionOptimization"
+            ]
+        },
+        {
+            "name": "Material Economy",
+            "id": "ItemCraft_2_MaterialEconomy",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:resource=0.95",
+            "description": "Reduce Cost by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "eternalpyramid",
+                    "count": 10
+                },
+                {
+                    "resourceId": "coal",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_3_EssenceOfCreation"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization",
+            "id": "ItemCraft_2_MultiProductionOptimization",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduces Craft Duration by 5% when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "evileye",
+                    "count": 10
+                },
+                {
+                    "resourceId": "copper",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_4_EssenseOfCreation2"
+            ]
+        },
+        {
+            "name": "Essence Of Creation",
+            "id": "ItemCraft_3_EssenceOfCreation",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:resource=0.95",
+            "description": "Reduce Cost by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "firingskull",
+                    "count": 10
+                },
+                {
+                    "resourceId": "magma",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "ItemCraft_4_MultiProductionOptimization2"
+            ]
+        },
+        {
+            "name": "Essense Of Creation 2",
+            "id": "ItemCraft_4_EssenseOfCreation2",
+            "abilityId": "craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduces Craft Duration by 5%.",
+            "unlockCost": [
+                {
+                    "resourceId": "goldenbug",
+                    "count": 1
+                },
+                {
+                    "resourceId": "krypto",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_7_ZoneDiscovery8"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization 2",
+            "id": "ItemCraft_4_MultiProductionOptimization2",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "item:time=0.95",
+            "description": "Reduces Craft Duration by 5% when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "kryptostones",
+                    "count": 2
+                },
+                {
+                    "resourceId": "dragonegg",
+                    "count": 10
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 8",
+            "id": "Mining_7_ZoneDiscovery8",
+            "abilityId": "unlock_zone",
+            "abilityParam": "800",
+            "description": "Unlock the Section of Zone 8.",
+            "unlockCost": [
+                {
+                    "resourceId": "demonfoot",
+                    "count": 10
+                },
+                {
+                    "resourceId": "lavadocument",
+                    "count": 2
+                }
+            ],
+            "children": []
+        }
+    ]
+}

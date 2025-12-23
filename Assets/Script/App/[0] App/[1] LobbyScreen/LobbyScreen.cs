@@ -1,0 +1,30 @@
+using App.GamePlay.IdleMiner.Common.Types;
+using App.GamePlay.IdleMiner.PopupDialog;
+using IGCore.MVCS;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LobbyScreen : AUnit
+{
+    [SerializeField] AUnit popupDialog;
+
+    // DictorMain.Start() -> AUnitSwitcher.Init() -> LobbyScreen.Init()
+    public override void Init(IGCore.MVCS.AContext ctx)
+    {
+        base.Init(ctx);
+
+        model = new LobbyScreenModel(context, null);
+        controller = new LobbyScreenController(view, model, context);
+
+        model.Init();
+        controller.Init();
+
+        context.AddData(KeySets.CTX_KEYS.LOBBY_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);
+        popupDialog.Init(ctx);
+    }
+    public override void Attach() 
+    {
+        base.Attach();
+    }
+}

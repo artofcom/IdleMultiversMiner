@@ -1,0 +1,132 @@
+{
+    "recipes": [
+        {
+            "id": "Comp_0",
+            "sources": [
+                {
+                    "resourceId": "blightedbone",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "gravewalkersfoot",
+            "duration": 10,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_1",
+            "sources": [
+                {
+                    "resourceId": "whisperingskull",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "wyrmsclaw",
+            "duration": 20,
+            "cost": "9999"
+        },
+        {
+            "id": "Comp_2",
+            "sources": [
+                {
+                    "resourceId": "boneidol",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "prophetsomen",
+            "duration": 30,
+            "cost": "9999"
+        },
+        {
+            "id": "Comp_3",
+            "sources": [
+                {
+                    "resourceId": "hollowvisage",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "nightwing",
+            "duration": 40,
+            "cost": "999"
+        },
+        {
+            "id": "Comp_4",
+            "sources": [
+                {
+                    "resourceId": "hollowvisage",
+                    "count": 1
+                },
+                {
+                    "resourceId": "hallowedcranium",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "vileconcoction",
+            "duration": 40,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_5",
+            "sources": [
+                {
+                    "resourceId": "infernalwing",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "puppetoftorment",
+            "duration": 40,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_6",
+            "sources": [
+                {
+                    "resourceId": "shamansvisage",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "scorchedchart",
+            "duration": 40,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_7",
+            "sources": [
+                {
+                    "resourceId": "sunfirescales",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "whisperplumeparrot",
+            "duration": 40,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_8",
+            "sources": [
+                {
+                    "resourceId": "shamansear",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "witchlightwax",
+            "duration": 40,
+            "cost": "1"
+        },
+        {
+            "id": "Comp_9",
+            "sources": [
+                {
+                    "resourceId": "draconiccranium",
+                    "count": 1
+                }
+            ],
+            "outcomeId": "embergourd",
+            "duration": 40,
+            "cost": "1"
+        }
+    ],
+    "slotCosts": [
+        "2",
+        "9999"
+    ]
+}

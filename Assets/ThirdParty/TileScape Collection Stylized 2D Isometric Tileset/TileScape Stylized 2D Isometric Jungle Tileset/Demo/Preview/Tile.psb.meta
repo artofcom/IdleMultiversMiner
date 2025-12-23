@@ -1,0 +1,7102 @@
+fileFormatVersion: 2
+guid: 31266072be280e24d9cdd9c7456fa405
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Jungle Tileset/Demo/Preview/Tile.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Jungle_Building_Place_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1937
+      width: 77
+      height: 47
+    spriteID: 54a05db7c2375c34e81477ee2f4e6f11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1937}
+    spritePosition: {x: 121, y: 233}
+  - name: Jungle_Building_Place_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3996
+      width: 147
+      height: 88
+    spriteID: 2ccc3d5559af6f54a9480d0ac777274c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3996}
+    spritePosition: {x: 1568, y: 159}
+  - name: Jungle_Straight_02-02 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 4022
+      width: 114
+      height: 67
+    spriteID: 8e24678bbc3da74418339f6ae593844d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 4022}
+    spritePosition: {x: 952, y: 741}
+  - name: Jungle_Straight_02-02 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2668
+      width: 114
+      height: 67
+    spriteID: e5d8eec52878bdd4892cba95ca643418
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2668}
+    spritePosition: {x: 1072, y: 670}
+  - name: Jungle_Straight_02-01 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 96
+      width: 108
+      height: 63
+    spriteID: 060be071d7e9e084b8a8110d737f615a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 96}
+    spritePosition: {x: 891, y: 782}
+  - name: Jungle_Straight_02-01 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 167
+      width: 108
+      height: 63
+    spriteID: e8de55b8c3d4e4b47be4dca03bcce29b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 167}
+    spritePosition: {x: 1021, y: 704}
+  - name: Jungle_Straight_02-02 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2743
+      width: 114
+      height: 67
+    spriteID: 5726a79a474a2084cb42099db9943331
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2743}
+    spritePosition: {x: 1181, y: 606}
+  - name: Jungle_Straight_02-02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 451
+      width: 106
+      height: 64
+    spriteID: d1a1bfbb3e24d524cb8751ce1d018891
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 451}
+    spritePosition: {x: 1514, y: 214}
+  - name: Jungle_Straight_02-01 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 238
+      width: 108
+      height: 63
+    spriteID: 78dbe985cd8df2e4caf0c33bdc249227
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 238}
+    spritePosition: {x: 1130, y: 640}
+  - name: Jungle_Straight_02-01 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 309
+      width: 108
+      height: 63
+    spriteID: 4d99f77bdda26ba4fba576a25518202e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 309}
+    spritePosition: {x: 1460, y: 246}
+  - name: Jungle_Straight_02-01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 380
+      width: 108
+      height: 63
+    spriteID: d483deb6a438947498c6bbf64b522fb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 380}
+    spritePosition: {x: 1406, y: 277}
+  - name: Jungle_Hill_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2180
+      width: 706
+      height: 399
+    spriteID: 84b18199e0f354542b81b44797961b40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2180}
+    spritePosition: {x: 1214, y: 0}
+  - name: Jungle_Three_Way_11 - 2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3805
+      width: 279
+      height: 183
+    spriteID: d96708c8c67dd384f90625e38e94d7e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3805}
+    spritePosition: {x: 1501, y: 784}
+  - name: Jungle_Three_Way_11 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3430
+      width: 121
+      height: 79
+    spriteID: 64a26bbef40daaf4da42c61fa01853e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3430}
+    spritePosition: {x: 193, y: 122}
+  - name: Jungle_Three_Way_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 3996
+      width: 121
+      height: 80
+    spriteID: 319e11a96edfce240a71adfee1347c1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 159, y: 3996}
+    spritePosition: {x: 39, y: 119}
+  - name: Jungle_Three_Way_10 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3004
+      width: 121
+      height: 80
+    spriteID: 58a86512d0781454886b693bb9d872a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3004}
+    spritePosition: {x: 39, y: 20}
+  - name: Jungle_Three_Way_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3092
+      width: 121
+      height: 80
+    spriteID: 9f986e9ff2a3d9a4e9045f932fe25542
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3092}
+    spritePosition: {x: 344, y: 113}
+  - name: Jungle_Three_Way_09 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3180
+      width: 121
+      height: 80
+    spriteID: e631b44590b7258449a0e73473d0f18f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3180}
+    spritePosition: {x: 334, y: 12}
+  - name: Jungle_Three_Way_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2676
+      width: 132
+      height: 74
+    spriteID: ae81d75a4a123584787073ebd3b85b8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2676}
+    spritePosition: {x: 636, y: 15}
+  - name: Jungle_Three_Way_08 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2758
+      width: 132
+      height: 74
+    spriteID: c81fc21f87e6d7a4d9ee1cb4e02f6bac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2758}
+    spritePosition: {x: 636, y: 116}
+  - name: Jungle_Three_Way_07 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3719
+      width: 132
+      height: 76
+    spriteID: 09616e4cea4df11419494dba4b526c57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3719}
+    spritePosition: {x: 471, y: 108}
+  - name: Jungle_Three_Way_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3268
+      width: 233
+      height: 131
+    spriteID: c2eb336b698608c429578673eaf49f1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3268}
+    spritePosition: {x: 697, y: 802}
+  - name: Jungle_Three_Way_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2840
+      width: 131
+      height: 74
+    spriteID: b6c684f8cc077454db5d44aa4d1a576b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2840}
+    spritePosition: {x: 1082, y: 111}
+  - name: Jungle_Three_Way_06 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2922
+      width: 131
+      height: 74
+    spriteID: 7af26417f8f43c74aac457d468c248da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2922}
+    spritePosition: {x: 1082, y: 29}
+  - name: Jungle_Three_Way_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3268
+      width: 131
+      height: 73
+    spriteID: 1122d92e05010914189da70a980b7399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3268}
+    spritePosition: {x: 790, y: 122}
+  - name: Jungle_Three_Way_05 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3349
+      width: 131
+      height: 73
+    spriteID: f63df0c4de5d2424b989f398bafeacc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3349}
+    spritePosition: {x: 790, y: 24}
+  - name: Jungle_Three_Way_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1206
+      width: 80
+      height: 49
+    spriteID: 218a219660926384dafd38761cc87b4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1206}
+    spritePosition: {x: 46, y: 719}
+  - name: Jungle_Three_Way_04 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1263
+      width: 80
+      height: 49
+    spriteID: f5d785b0777e8834d882b27660b30ba7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1263}
+    spritePosition: {x: 41, y: 538}
+  - name: Jungle_Three_Way_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1320
+      width: 80
+      height: 49
+    spriteID: e7e93964f224c01448d219072074a153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1320}
+    spritePosition: {x: 143, y: 719}
+  - name: Jungle_Three_Way_03 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1377
+      width: 80
+      height: 49
+    spriteID: 1919cbd529579eb408d42addf10400b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1377}
+    spritePosition: {x: 139, y: 538}
+  - name: Jungle_Three_Way_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1546
+      width: 80
+      height: 48
+    spriteID: 20de992668b51e14ea974de768f1f8ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1546}
+    spritePosition: {x: 143, y: 781}
+  - name: Jungle_Three_Way_02 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1602
+      width: 80
+      height: 48
+    spriteID: c997ad668d70f434fb15dc576169fc63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1602}
+    spritePosition: {x: 143, y: 606}
+  - name: Jungle_Three_Way_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1434
+      width: 81
+      height: 48
+    spriteID: 300051c5b2c05724ba7b26c41e37d732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1434}
+    spritePosition: {x: 45, y: 781}
+  - name: Jungle_Three_Way_01 - 2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 3966
+      width: 178
+      height: 105
+    spriteID: b81fd8e077af18b4b9a4c9244b32211d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 3966}
+    spritePosition: {x: 1237, y: 536}
+  - name: Jungle_Three_Way_01 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1490
+      width: 81
+      height: 48
+    spriteID: 23a010e1708b1d9449085e43b3701c85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1490}
+    spritePosition: {x: 42, y: 603}
+  - name: Jungle_Thre_Way_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3778
+      width: 130
+      height: 73
+    spriteID: 85028ceec83d8e940a859ee20678575d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3778}
+    spritePosition: {x: 473, y: 12}
+  - name: Jungle_Straight_02-03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3520
+      width: 54
+      height: 33
+    spriteID: df7f09539e610e24899f72f01b1c3d21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3520}
+    spritePosition: {x: 510, y: 955}
+  - name: Jungle_Straight_02-03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 753
+      y: 4048
+      width: 54
+      height: 33
+    spriteID: 28d373364c3f1f94884dfbf0f9997a02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 753, y: 4048}
+    spritePosition: {x: 484, y: 970}
+  - name: Jungle_Straight_02-03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 815
+      y: 4048
+      width: 54
+      height: 33
+    spriteID: 93269841db957d3479464866ac6ac1ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 815, y: 4048}
+    spritePosition: {x: 426, y: 1007}
+  - name: Jungle_Straight_02-03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2818
+      width: 54
+      height: 33
+    spriteID: 3392c2aabda2153448bc6e21e12f8283
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2818}
+    spritePosition: {x: 458, y: 987}
+  - name: Jungle_Straight_02-02 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2978
+      width: 54
+      height: 32
+    spriteID: a59cfa86c2ae4ef47bee39c26491781f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2978}
+    spritePosition: {x: 449, y: 918}
+  - name: Jungle_Straight_02-02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3018
+      width: 54
+      height: 32
+    spriteID: 14e70b46a780c6a49b62d0ab52763e58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3018}
+    spritePosition: {x: 422, y: 934}
+  - name: Jungle_Straight_02-02 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3058
+      width: 54
+      height: 32
+    spriteID: 72afe0851f306eb499eb99990bfe120f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3058}
+    spritePosition: {x: 363, y: 969}
+  - name: Jungle_Straight_02-02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3098
+      width: 54
+      height: 32
+    spriteID: d629db474f7facd4296f394740d28e8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3098}
+    spritePosition: {x: 396, y: 950}
+  - name: Jungle_Straight_02-01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2818
+      width: 55
+      height: 32
+    spriteID: 742e5cdc719a49b46b61b2a8f6fb1205
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2818}
+    spritePosition: {x: 378, y: 883}
+  - name: Jungle_Straight_02-01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2858
+      width: 55
+      height: 32
+    spriteID: 625a2006bfe87744ca3ef8c7e310d6d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2858}
+    spritePosition: {x: 353, y: 899}
+  - name: Jungle_Straight_02-01 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2898
+      width: 55
+      height: 32
+    spriteID: e173a994f55a5254db963dfbd56b628f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2898}
+    spritePosition: {x: 294, y: 934}
+  - name: Jungle_Straight_02-01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2938
+      width: 55
+      height: 32
+    spriteID: 8577b5a318813eb479955b82d4aee20e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2938}
+    spritePosition: {x: 327, y: 915}
+  - name: Jungle_Straight_01-04 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3138
+      width: 54
+      height: 32
+    spriteID: 706ad6341494fc74dbd518dfd8b81f3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3138}
+    spritePosition: {x: 170, y: 966}
+  - name: Jungle_Straight_01-04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3178
+      width: 54
+      height: 32
+    spriteID: 982e649228ec26145ad968c41efb1ffb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3178}
+    spritePosition: {x: 136, y: 947}
+  - name: Jungle_Straight_01-04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3218
+      width: 54
+      height: 32
+    spriteID: 5ddca966d2cadc54a9489cca6192ce69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3218}
+    spritePosition: {x: 111, y: 931}
+  - name: Jungle_Straight_01-04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3258
+      width: 54
+      height: 32
+    spriteID: d6be59b7dfcc02b40896102e15a62328
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3258}
+    spritePosition: {x: 84, y: 915}
+  - name: Jungle_Straight_01-03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3298
+      width: 54
+      height: 32
+    spriteID: 18a26a91139bc7148bf2bc73c2b4ef84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3298}
+    spritePosition: {x: 115, y: 998}
+  - name: Jungle_Straight_01-03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3338
+      width: 54
+      height: 32
+    spriteID: d3e1604b2553df641b01298f924c2486
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3338}
+    spritePosition: {x: 83, y: 978}
+  - name: Jungle_Straight_01-03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3378
+      width: 54
+      height: 32
+    spriteID: cd86ca735ba50094c8a316dff8d996f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3378}
+    spritePosition: {x: 56, y: 962}
+  - name: Jungle_Straight_01-03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3418
+      width: 54
+      height: 32
+    spriteID: 06e1b791f5276ca41b6bf24f9fa73eb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3418}
+    spritePosition: {x: 29, y: 946}
+  - name: Jungle_Straight_01-02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2020
+      y: 2101
+      width: 24
+      height: 30
+    spriteID: 35e46088f3175b3449f1b05b9539fc7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2020, y: 2080}
+    spritePosition: {x: 1896, y: 875}
+  - name: Jungle_Straight_01-02 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2016
+      y: 2047
+      width: 28
+      height: 8
+    spriteID: 413d483d5bd66c349814da83a5c8b3ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1973, y: 2047}
+    spritePosition: {x: 1701, y: 1072}
+  - name: Jungle_Straight_01-02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 821
+      y: 3719
+      width: 85
+      height: 73
+    spriteID: 079498ab5dc4d0241a71ea2eb6e5baa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 821, y: 3719}
+    spritePosition: {x: 1835, y: 819}
+  - name: Jungle_Straight_01-02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2587
+      width: 120
+      height: 73
+    spriteID: 033c9aec656521e479995c72d6e559ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2587}
+    spritePosition: {x: 1479, y: 748}
+  - name: Jungle_Straight_01-01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3458
+      width: 54
+      height: 32
+    spriteID: b9786b5477cfe5249a1ec1d3b9a2d0a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3458}
+    spritePosition: {x: 231, y: 934}
+  - name: Jungle_Straight_01-01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3498
+      width: 54
+      height: 32
+    spriteID: 6a54bffe8b730e347a3ba09072f401a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3498}
+    spritePosition: {x: 196, y: 916}
+  - name: Jungle_Straight_01-01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3538
+      width: 54
+      height: 32
+    spriteID: ed8f66c5c18456f47be740e9f6ac6990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3538}
+    spritePosition: {x: 144, y: 884}
+  - name: Jungle_Straight_01-01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3578
+      width: 54
+      height: 32
+    spriteID: 278d729fdeef08142bf2eedad1227d6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3578}
+    spritePosition: {x: 171, y: 900}
+  - name: Jungle_Stair_Front_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 523
+      width: 83
+      height: 81
+    spriteID: 41ce132d9fe9e5c488b3141ac5a370fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 523}
+    spritePosition: {x: 889, y: 506}
+  - name: Jungle_Stair_Front_Left copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 4
+      width: 87
+      height: 84
+    spriteID: cf72b567ccfebbe49b45a3445febced2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 4}
+    spritePosition: {x: 758, y: 503}
+  - name: Jungle_Stair_Front_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 550
+      y: 3805
+      width: 195
+      height: 190
+    spriteID: 0a0b056936af3a14b9f075eea1624c45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 550, y: 3805}
+    spritePosition: {x: 1351, y: 595}
+  - name: Jungle_Stair_Back_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3941
+      width: 122
+      height: 73
+    spriteID: f1ee2fcdf62961a449e2c730c3001355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3941}
+    spritePosition: {x: 882, y: 599}
+  - name: Jungle_Stair_Back_Left copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 3805
+      width: 251
+      height: 153
+    spriteID: 3f6203d3e43a43b49814d09fff70e0c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 3805}
+    spritePosition: {x: 1226, y: 231}
+  - name: Jungle_Stair_Back_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3859
+      width: 121
+      height: 74
+    spriteID: 031d742b00356104c99baa7eb216cdbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3859}
+    spritePosition: {x: 730, y: 599}
+  - name: Jungle_Round_Big_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 753
+      y: 3805
+      width: 136
+      height: 235
+    spriteID: ad5739348c8eef84892402a190508195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 753, y: 3805}
+    spritePosition: {x: 1160, y: 337}
+  - name: Jungle_Round_Big_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 477
+      y: 3966
+      width: 65
+      height: 113
+    spriteID: 772bc4a32276cb041949fefbf6bdb961
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 477, y: 3966}
+    spritePosition: {x: 324, y: 615}
+  - name: Jungle_Round_Big_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2642
+      width: 185
+      height: 39
+    spriteID: 2ad4280ea1207c14db407f90993f857a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2642}
+    spritePosition: {x: 389, y: 576}
+  - name: Jungle_Round_Big_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2587
+      width: 185
+      height: 47
+    spriteID: 3275b2aec26efb146b5441cb0a8673d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2587}
+    spritePosition: {x: 389, y: 727}
+  - name: Jungle_Round_Big_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 3566
+      width: 66
+      height: 113
+    spriteID: 0d59c7773d9563a40a75e45b189f2ac8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 3566}
+    spritePosition: {x: 575, y: 615}
+  - name: Jungle_Round_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3463
+      width: 43
+      height: 49
+    spriteID: 71a48e6ae855a3846a35dad5617dffa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3463}
+    spritePosition: {x: 817, y: 274}
+  - name: Jungle_Round_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 550
+      y: 4003
+      width: 178
+      height: 73
+    spriteID: ee67481023e0cc34994bc47518d03907
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 550, y: 4003}
+    spritePosition: {x: 1717, y: 787}
+  - name: Jungle_Round_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2101
+      width: 80
+      height: 32
+    spriteID: 7e7ae4c94b94d3d48ae57d7b11f092e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2101}
+    spritePosition: {x: 850, y: 250}
+  - name: Jungle_Round_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2141
+      width: 81
+      height: 29
+    spriteID: a12f3df104302ff429e2e6018be1fae7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2141}
+    spritePosition: {x: 851, y: 317}
+  - name: Jungle_Round_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3407
+      width: 47
+      height: 48
+    spriteID: 29fead4eb2014424a9a7138dc3d899cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3407}
+    spritePosition: {x: 918, y: 275}
+  - name: Jungle_Building_Place_15 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2587
+      width: 132
+      height: 81
+    spriteID: 3c3fe7849946f624c9d57a5430ac0da4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2587}
+    spritePosition: {x: 602, y: 826}
+  - name: Jungle_Building_Place_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1992
+      width: 77
+      height: 47
+    spriteID: 6225ba70b72b6a043968f478746f85b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1992}
+    spritePosition: {x: 31, y: 297}
+  - name: Jungle_Building_Place_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2047
+      width: 76
+      height: 46
+    spriteID: 80e7bdfd16b82a64aa2edc7326683cd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2047}
+    spritePosition: {x: 123, y: 297}
+  - name: Jungle_Building_Place_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1658
+      width: 77
+      height: 49
+    spriteID: 6ed576178f6cb6a42852c30d69361871
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1658}
+    spritePosition: {x: 31, y: 234}
+  - name: Jungle_Building_Place_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1823
+      width: 76
+      height: 49
+    spriteID: 976dfb0493d2bcb448efbe390b610f15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1823}
+    spritePosition: {x: 246, y: 264}
+  - name: Jungle_Building_Place_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1715
+      width: 81
+      height: 46
+    spriteID: b4e0af88c13e79c4d81cdd4bd956d4c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1715}
+    spritePosition: {x: 314, y: 218}
+  - name: Jungle_Building_Place_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1880
+      width: 76
+      height: 49
+    spriteID: 9d198ed2c747ea54494e29d6b87e6fb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1880}
+    spritePosition: {x: 387, y: 264}
+  - name: Jungle_Building_Place_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1769
+      width: 81
+      height: 46
+    spriteID: e07abb79181b5cb4f92b264c6c1ae447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1769}
+    spritePosition: {x: 313, y: 305}
+  - name: Jungle_Building_Place_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1018
+      width: 81
+      height: 49
+    spriteID: f2298d3dc7cd99241ad78cb9005118ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1018}
+    spritePosition: {x: 29, y: 391}
+  - name: Jungle_Building_Place_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 790
+      width: 82
+      height: 49
+    spriteID: 343dba3240fc9fd4da703febeab59305
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 790}
+    spritePosition: {x: 132, y: 391}
+  - name: Jungle_Building_Place_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 847
+      width: 82
+      height: 49
+    spriteID: 4c8a7bdebd764ac4ba32cbe967b6d3a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 847}
+    spritePosition: {x: 601, y: 230}
+  - name: Jungle_Building_Place_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 904
+      width: 82
+      height: 49
+    spriteID: 0c7b3a86feb1f2641b52d458b92f36ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 904}
+    spritePosition: {x: 602, y: 295}
+  - name: Jungle_Building_Place_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 961
+      width: 82
+      height: 49
+    spriteID: f52912653e7d68547a44ca9097975ec1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 961}
+    spritePosition: {x: 503, y: 295}
+  - name: Jungle_Building_Place_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1092
+      width: 81
+      height: 49
+    spriteID: 31e99229afec27f4f93a7dca25b0627c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1092}
+    spritePosition: {x: 504, y: 230}
+  - name: Jungle_Building_Place_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1149
+      width: 81
+      height: 49
+    spriteID: 0f4faa8311bc57e48a478574394b994a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1149}
+    spritePosition: {x: 442, y: 647}
+  - name: Jungle_Z_way_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2689
+      width: 132
+      height: 48
+    spriteID: cc1f38af8e8d71c4b8818b3b8ceae86a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2689}
+    spritePosition: {x: 306, y: 474}
+  - name: Jungle_Z_way_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2745
+      width: 131
+      height: 48
+    spriteID: 627fe4ff664b9eb449d7e3b7485507b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2745}
+    spritePosition: {x: 306, y: 399}
+  - name: Jungle_Z_way_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3407
+      width: 177
+      height: 151
+    spriteID: 452a34050545bc143ba280ae58c002c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3407}
+    spritePosition: {x: 1541, y: 929}
+  - name: Jungle_Z_way_02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3566
+      width: 143
+      height: 145
+    spriteID: 2e979fea7af47884da4009f56e956ced
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3566}
+    spritePosition: {x: 848, y: 909}
+  - name: Jungle_Z_way_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 612
+      width: 80
+      height: 81
+    spriteID: 7a026ab7e07b44541af31fbcb54c4fb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 612}
+    spritePosition: {x: 531, y: 415}
+  - name: Jungle_Z_way_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 701
+      width: 80
+      height: 81
+    spriteID: 8cd51fe3398ae564b817110da8f8723a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 701}
+    spritePosition: {x: 641, y: 418}
+  - name: Jungle_Three_Way_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3517
+      width: 121
+      height: 79
+    spriteID: d590919f122be1341acd5136ffac9fc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3517}
+    spritePosition: {x: 943, y: 114}
+  - name: Jungle_Three_Way_12 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3604
+      width: 121
+      height: 79
+    spriteID: 0649f710b150b9940a145d6860738c3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3604}
+    spritePosition: {x: 943, y: 23}
+  - name: Jungle_Three_Way_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3691
+      width: 121
+      height: 79
+    spriteID: 639605c3f13d82941b1e24150fb3ca75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3691}
+    spritePosition: {x: 193, y: 24}
+  - name: Jungle_Hill_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3268
+      width: 669
+      height: 529
+    spriteID: 58956bd7100d955408eb77e21ebde01d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3268}
+    spritePosition: {x: 1251, y: 551}
+  - name: Layer 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 916
+      height: 1080
+    spriteID: bf74fe10626bbbb4685b9c4ee9c6fb4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1004, y: 0}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: bb14a975e6ff56a4a972f3976304d68f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 8317e5b5975ba524aa3a44b87aa88b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Jungle_Building_Place_13 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1937
+      width: 77
+      height: 47
+    spriteID: 54a05db7c2375c34e81477ee2f4e6f11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1937}
+    spritePosition: {x: 121, y: 233}
+  - name: Jungle_Building_Place_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3996
+      width: 147
+      height: 88
+    spriteID: 2ccc3d5559af6f54a9480d0ac777274c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3996}
+    spritePosition: {x: 1568, y: 159}
+  - name: Jungle_Straight_02-02 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 4022
+      width: 114
+      height: 67
+    spriteID: 8e24678bbc3da74418339f6ae593844d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 4022}
+    spritePosition: {x: 952, y: 741}
+  - name: Jungle_Straight_02-02 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2668
+      width: 114
+      height: 67
+    spriteID: e5d8eec52878bdd4892cba95ca643418
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2668}
+    spritePosition: {x: 1072, y: 670}
+  - name: Jungle_Straight_02-01 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 96
+      width: 108
+      height: 63
+    spriteID: 060be071d7e9e084b8a8110d737f615a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 96}
+    spritePosition: {x: 891, y: 782}
+  - name: Jungle_Straight_02-01 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 167
+      width: 108
+      height: 63
+    spriteID: e8de55b8c3d4e4b47be4dca03bcce29b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 167}
+    spritePosition: {x: 1021, y: 704}
+  - name: Jungle_Straight_02-02 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2743
+      width: 114
+      height: 67
+    spriteID: 5726a79a474a2084cb42099db9943331
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2743}
+    spritePosition: {x: 1181, y: 606}
+  - name: Jungle_Straight_02-02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 451
+      width: 106
+      height: 64
+    spriteID: d1a1bfbb3e24d524cb8751ce1d018891
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 451}
+    spritePosition: {x: 1514, y: 214}
+  - name: Jungle_Straight_02-01 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 238
+      width: 108
+      height: 63
+    spriteID: 78dbe985cd8df2e4caf0c33bdc249227
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 238}
+    spritePosition: {x: 1130, y: 640}
+  - name: Jungle_Straight_02-01 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 309
+      width: 108
+      height: 63
+    spriteID: 4d99f77bdda26ba4fba576a25518202e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 309}
+    spritePosition: {x: 1460, y: 246}
+  - name: Jungle_Straight_02-01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 380
+      width: 108
+      height: 63
+    spriteID: d483deb6a438947498c6bbf64b522fb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 380}
+    spritePosition: {x: 1406, y: 277}
+  - name: Jungle_Hill_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2180
+      width: 706
+      height: 399
+    spriteID: 84b18199e0f354542b81b44797961b40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2180}
+    spritePosition: {x: 1214, y: 0}
+  - name: Jungle_Three_Way_11 - 2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3805
+      width: 279
+      height: 183
+    spriteID: d96708c8c67dd384f90625e38e94d7e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3805}
+    spritePosition: {x: 1501, y: 784}
+  - name: Jungle_Three_Way_11 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3430
+      width: 121
+      height: 79
+    spriteID: 64a26bbef40daaf4da42c61fa01853e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3430}
+    spritePosition: {x: 193, y: 122}
+  - name: Jungle_Three_Way_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 3996
+      width: 121
+      height: 80
+    spriteID: 319e11a96edfce240a71adfee1347c1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 159, y: 3996}
+    spritePosition: {x: 39, y: 119}
+  - name: Jungle_Three_Way_10 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3004
+      width: 121
+      height: 80
+    spriteID: 58a86512d0781454886b693bb9d872a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3004}
+    spritePosition: {x: 39, y: 20}
+  - name: Jungle_Three_Way_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3092
+      width: 121
+      height: 80
+    spriteID: 9f986e9ff2a3d9a4e9045f932fe25542
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3092}
+    spritePosition: {x: 344, y: 113}
+  - name: Jungle_Three_Way_09 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3180
+      width: 121
+      height: 80
+    spriteID: e631b44590b7258449a0e73473d0f18f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3180}
+    spritePosition: {x: 334, y: 12}
+  - name: Jungle_Three_Way_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2676
+      width: 132
+      height: 74
+    spriteID: ae81d75a4a123584787073ebd3b85b8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2676}
+    spritePosition: {x: 636, y: 15}
+  - name: Jungle_Three_Way_08 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2758
+      width: 132
+      height: 74
+    spriteID: c81fc21f87e6d7a4d9ee1cb4e02f6bac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2758}
+    spritePosition: {x: 636, y: 116}
+  - name: Jungle_Three_Way_07 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3719
+      width: 132
+      height: 76
+    spriteID: 09616e4cea4df11419494dba4b526c57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3719}
+    spritePosition: {x: 471, y: 108}
+  - name: Jungle_Three_Way_06 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3268
+      width: 233
+      height: 131
+    spriteID: c2eb336b698608c429578673eaf49f1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3268}
+    spritePosition: {x: 697, y: 802}
+  - name: Jungle_Three_Way_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2840
+      width: 131
+      height: 74
+    spriteID: b6c684f8cc077454db5d44aa4d1a576b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2840}
+    spritePosition: {x: 1082, y: 111}
+  - name: Jungle_Three_Way_06 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2922
+      width: 131
+      height: 74
+    spriteID: 7af26417f8f43c74aac457d468c248da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2922}
+    spritePosition: {x: 1082, y: 29}
+  - name: Jungle_Three_Way_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3268
+      width: 131
+      height: 73
+    spriteID: 1122d92e05010914189da70a980b7399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3268}
+    spritePosition: {x: 790, y: 122}
+  - name: Jungle_Three_Way_05 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3349
+      width: 131
+      height: 73
+    spriteID: f63df0c4de5d2424b989f398bafeacc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3349}
+    spritePosition: {x: 790, y: 24}
+  - name: Jungle_Three_Way_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1206
+      width: 80
+      height: 49
+    spriteID: 218a219660926384dafd38761cc87b4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1206}
+    spritePosition: {x: 46, y: 719}
+  - name: Jungle_Three_Way_04 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1263
+      width: 80
+      height: 49
+    spriteID: f5d785b0777e8834d882b27660b30ba7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1263}
+    spritePosition: {x: 41, y: 538}
+  - name: Jungle_Three_Way_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1320
+      width: 80
+      height: 49
+    spriteID: e7e93964f224c01448d219072074a153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1320}
+    spritePosition: {x: 143, y: 719}
+  - name: Jungle_Three_Way_03 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1377
+      width: 80
+      height: 49
+    spriteID: 1919cbd529579eb408d42addf10400b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1377}
+    spritePosition: {x: 139, y: 538}
+  - name: Jungle_Three_Way_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1546
+      width: 80
+      height: 48
+    spriteID: 20de992668b51e14ea974de768f1f8ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1546}
+    spritePosition: {x: 143, y: 781}
+  - name: Jungle_Three_Way_02 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1602
+      width: 80
+      height: 48
+    spriteID: c997ad668d70f434fb15dc576169fc63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1602}
+    spritePosition: {x: 143, y: 606}
+  - name: Jungle_Three_Way_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1434
+      width: 81
+      height: 48
+    spriteID: 300051c5b2c05724ba7b26c41e37d732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1434}
+    spritePosition: {x: 45, y: 781}
+  - name: Jungle_Three_Way_01 - 2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 3966
+      width: 178
+      height: 105
+    spriteID: b81fd8e077af18b4b9a4c9244b32211d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 3966}
+    spritePosition: {x: 1237, y: 536}
+  - name: Jungle_Three_Way_01 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1490
+      width: 81
+      height: 48
+    spriteID: 23a010e1708b1d9449085e43b3701c85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1490}
+    spritePosition: {x: 42, y: 603}
+  - name: Jungle_Thre_Way_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3778
+      width: 130
+      height: 73
+    spriteID: 85028ceec83d8e940a859ee20678575d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3778}
+    spritePosition: {x: 473, y: 12}
+  - name: Jungle_Straight_02-03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3520
+      width: 54
+      height: 33
+    spriteID: df7f09539e610e24899f72f01b1c3d21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3520}
+    spritePosition: {x: 510, y: 955}
+  - name: Jungle_Straight_02-03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 753
+      y: 4048
+      width: 54
+      height: 33
+    spriteID: 28d373364c3f1f94884dfbf0f9997a02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 753, y: 4048}
+    spritePosition: {x: 484, y: 970}
+  - name: Jungle_Straight_02-03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 815
+      y: 4048
+      width: 54
+      height: 33
+    spriteID: 93269841db957d3479464866ac6ac1ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 815, y: 4048}
+    spritePosition: {x: 426, y: 1007}
+  - name: Jungle_Straight_02-03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2818
+      width: 54
+      height: 33
+    spriteID: 3392c2aabda2153448bc6e21e12f8283
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2818}
+    spritePosition: {x: 458, y: 987}
+  - name: Jungle_Straight_02-02 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2978
+      width: 54
+      height: 32
+    spriteID: a59cfa86c2ae4ef47bee39c26491781f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2978}
+    spritePosition: {x: 449, y: 918}
+  - name: Jungle_Straight_02-02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3018
+      width: 54
+      height: 32
+    spriteID: 14e70b46a780c6a49b62d0ab52763e58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3018}
+    spritePosition: {x: 422, y: 934}
+  - name: Jungle_Straight_02-02 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3058
+      width: 54
+      height: 32
+    spriteID: 72afe0851f306eb499eb99990bfe120f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3058}
+    spritePosition: {x: 363, y: 969}
+  - name: Jungle_Straight_02-02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3098
+      width: 54
+      height: 32
+    spriteID: d629db474f7facd4296f394740d28e8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3098}
+    spritePosition: {x: 396, y: 950}
+  - name: Jungle_Straight_02-01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2818
+      width: 55
+      height: 32
+    spriteID: 742e5cdc719a49b46b61b2a8f6fb1205
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2818}
+    spritePosition: {x: 378, y: 883}
+  - name: Jungle_Straight_02-01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2858
+      width: 55
+      height: 32
+    spriteID: 625a2006bfe87744ca3ef8c7e310d6d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2858}
+    spritePosition: {x: 353, y: 899}
+  - name: Jungle_Straight_02-01 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2898
+      width: 55
+      height: 32
+    spriteID: e173a994f55a5254db963dfbd56b628f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2898}
+    spritePosition: {x: 294, y: 934}
+  - name: Jungle_Straight_02-01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 2938
+      width: 55
+      height: 32
+    spriteID: 8577b5a318813eb479955b82d4aee20e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 2938}
+    spritePosition: {x: 327, y: 915}
+  - name: Jungle_Straight_01-04 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3138
+      width: 54
+      height: 32
+    spriteID: 706ad6341494fc74dbd518dfd8b81f3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3138}
+    spritePosition: {x: 170, y: 966}
+  - name: Jungle_Straight_01-04 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3178
+      width: 54
+      height: 32
+    spriteID: 982e649228ec26145ad968c41efb1ffb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3178}
+    spritePosition: {x: 136, y: 947}
+  - name: Jungle_Straight_01-04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3218
+      width: 54
+      height: 32
+    spriteID: 5ddca966d2cadc54a9489cca6192ce69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3218}
+    spritePosition: {x: 111, y: 931}
+  - name: Jungle_Straight_01-04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3258
+      width: 54
+      height: 32
+    spriteID: d6be59b7dfcc02b40896102e15a62328
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3258}
+    spritePosition: {x: 84, y: 915}
+  - name: Jungle_Straight_01-03 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3298
+      width: 54
+      height: 32
+    spriteID: 18a26a91139bc7148bf2bc73c2b4ef84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3298}
+    spritePosition: {x: 115, y: 998}
+  - name: Jungle_Straight_01-03 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3338
+      width: 54
+      height: 32
+    spriteID: d3e1604b2553df641b01298f924c2486
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3338}
+    spritePosition: {x: 83, y: 978}
+  - name: Jungle_Straight_01-03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3378
+      width: 54
+      height: 32
+    spriteID: cd86ca735ba50094c8a316dff8d996f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3378}
+    spritePosition: {x: 56, y: 962}
+  - name: Jungle_Straight_01-03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3418
+      width: 54
+      height: 32
+    spriteID: 06e1b791f5276ca41b6bf24f9fa73eb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3418}
+    spritePosition: {x: 29, y: 946}
+  - name: Jungle_Straight_01-02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2020
+      y: 2101
+      width: 24
+      height: 30
+    spriteID: 35e46088f3175b3449f1b05b9539fc7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2020, y: 2080}
+    spritePosition: {x: 1896, y: 875}
+  - name: Jungle_Straight_01-02 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2016
+      y: 2047
+      width: 28
+      height: 8
+    spriteID: 413d483d5bd66c349814da83a5c8b3ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1973, y: 2047}
+    spritePosition: {x: 1701, y: 1072}
+  - name: Jungle_Straight_01-02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 821
+      y: 3719
+      width: 85
+      height: 73
+    spriteID: 079498ab5dc4d0241a71ea2eb6e5baa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 821, y: 3719}
+    spritePosition: {x: 1835, y: 819}
+  - name: Jungle_Straight_01-02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1068
+      y: 2587
+      width: 120
+      height: 73
+    spriteID: 033c9aec656521e479995c72d6e559ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1068, y: 2587}
+    spritePosition: {x: 1479, y: 748}
+  - name: Jungle_Straight_01-01 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3458
+      width: 54
+      height: 32
+    spriteID: b9786b5477cfe5249a1ec1d3b9a2d0a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3458}
+    spritePosition: {x: 231, y: 934}
+  - name: Jungle_Straight_01-01 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3498
+      width: 54
+      height: 32
+    spriteID: 6a54bffe8b730e347a3ba09072f401a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3498}
+    spritePosition: {x: 196, y: 916}
+  - name: Jungle_Straight_01-01 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3538
+      width: 54
+      height: 32
+    spriteID: ed8f66c5c18456f47be740e9f6ac6990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3538}
+    spritePosition: {x: 144, y: 884}
+  - name: Jungle_Straight_01-01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 3578
+      width: 54
+      height: 32
+    spriteID: 278d729fdeef08142bf2eedad1227d6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1130, y: 3578}
+    spritePosition: {x: 171, y: 900}
+  - name: Jungle_Stair_Front_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 523
+      width: 83
+      height: 81
+    spriteID: 41ce132d9fe9e5c488b3141ac5a370fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 523}
+    spritePosition: {x: 889, y: 506}
+  - name: Jungle_Stair_Front_Left copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 4
+      width: 87
+      height: 84
+    spriteID: cf72b567ccfebbe49b45a3445febced2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 4}
+    spritePosition: {x: 758, y: 503}
+  - name: Jungle_Stair_Front_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 550
+      y: 3805
+      width: 195
+      height: 190
+    spriteID: 0a0b056936af3a14b9f075eea1624c45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 550, y: 3805}
+    spritePosition: {x: 1351, y: 595}
+  - name: Jungle_Stair_Back_Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3941
+      width: 122
+      height: 73
+    spriteID: f1ee2fcdf62961a449e2c730c3001355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3941}
+    spritePosition: {x: 882, y: 599}
+  - name: Jungle_Stair_Back_Left copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 3805
+      width: 251
+      height: 153
+    spriteID: 3f6203d3e43a43b49814d09fff70e0c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 3805}
+    spritePosition: {x: 1226, y: 231}
+  - name: Jungle_Stair_Back_Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3859
+      width: 121
+      height: 74
+    spriteID: 031d742b00356104c99baa7eb216cdbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3859}
+    spritePosition: {x: 730, y: 599}
+  - name: Jungle_Round_Big_04 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 753
+      y: 3805
+      width: 136
+      height: 235
+    spriteID: ad5739348c8eef84892402a190508195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 753, y: 3805}
+    spritePosition: {x: 1160, y: 337}
+  - name: Jungle_Round_Big_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 477
+      y: 3966
+      width: 65
+      height: 113
+    spriteID: 772bc4a32276cb041949fefbf6bdb961
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 477, y: 3966}
+    spritePosition: {x: 324, y: 615}
+  - name: Jungle_Round_Big_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2642
+      width: 185
+      height: 39
+    spriteID: 2ad4280ea1207c14db407f90993f857a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2642}
+    spritePosition: {x: 389, y: 576}
+  - name: Jungle_Round_Big_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2587
+      width: 185
+      height: 47
+    spriteID: 3275b2aec26efb146b5441cb0a8673d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2587}
+    spritePosition: {x: 389, y: 727}
+  - name: Jungle_Round_Big_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 3566
+      width: 66
+      height: 113
+    spriteID: 0d59c7773d9563a40a75e45b189f2ac8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 3566}
+    spritePosition: {x: 575, y: 615}
+  - name: Jungle_Round_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3463
+      width: 43
+      height: 49
+    spriteID: 71a48e6ae855a3846a35dad5617dffa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3463}
+    spritePosition: {x: 817, y: 274}
+  - name: Jungle_Round_03 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 550
+      y: 4003
+      width: 178
+      height: 73
+    spriteID: ee67481023e0cc34994bc47518d03907
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 550, y: 4003}
+    spritePosition: {x: 1717, y: 787}
+  - name: Jungle_Round_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2101
+      width: 80
+      height: 32
+    spriteID: 7e7ae4c94b94d3d48ae57d7b11f092e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2101}
+    spritePosition: {x: 850, y: 250}
+  - name: Jungle_Round_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2141
+      width: 81
+      height: 29
+    spriteID: a12f3df104302ff429e2e6018be1fae7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2141}
+    spritePosition: {x: 851, y: 317}
+  - name: Jungle_Round_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 866
+      y: 3407
+      width: 47
+      height: 48
+    spriteID: 29fead4eb2014424a9a7138dc3d899cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 866, y: 3407}
+    spritePosition: {x: 918, y: 275}
+  - name: Jungle_Building_Place_15 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 2587
+      width: 132
+      height: 81
+    spriteID: 3c3fe7849946f624c9d57a5430ac0da4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 2587}
+    spritePosition: {x: 602, y: 826}
+  - name: Jungle_Building_Place_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1992
+      width: 77
+      height: 47
+    spriteID: 6225ba70b72b6a043968f478746f85b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1992}
+    spritePosition: {x: 31, y: 297}
+  - name: Jungle_Building_Place_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2047
+      width: 76
+      height: 46
+    spriteID: 80e7bdfd16b82a64aa2edc7326683cd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2047}
+    spritePosition: {x: 123, y: 297}
+  - name: Jungle_Building_Place_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1658
+      width: 77
+      height: 49
+    spriteID: 6ed576178f6cb6a42852c30d69361871
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1658}
+    spritePosition: {x: 31, y: 234}
+  - name: Jungle_Building_Place_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1823
+      width: 76
+      height: 49
+    spriteID: 976dfb0493d2bcb448efbe390b610f15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1823}
+    spritePosition: {x: 246, y: 264}
+  - name: Jungle_Building_Place_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1715
+      width: 81
+      height: 46
+    spriteID: b4e0af88c13e79c4d81cdd4bd956d4c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1715}
+    spritePosition: {x: 314, y: 218}
+  - name: Jungle_Building_Place_09
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1880
+      width: 76
+      height: 49
+    spriteID: 9d198ed2c747ea54494e29d6b87e6fb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1880}
+    spritePosition: {x: 387, y: 264}
+  - name: Jungle_Building_Place_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1769
+      width: 81
+      height: 46
+    spriteID: e07abb79181b5cb4f92b264c6c1ae447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1769}
+    spritePosition: {x: 313, y: 305}
+  - name: Jungle_Building_Place_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1018
+      width: 81
+      height: 49
+    spriteID: f2298d3dc7cd99241ad78cb9005118ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1018}
+    spritePosition: {x: 29, y: 391}
+  - name: Jungle_Building_Place_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 790
+      width: 82
+      height: 49
+    spriteID: 343dba3240fc9fd4da703febeab59305
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 790}
+    spritePosition: {x: 132, y: 391}
+  - name: Jungle_Building_Place_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 847
+      width: 82
+      height: 49
+    spriteID: 4c8a7bdebd764ac4ba32cbe967b6d3a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 847}
+    spritePosition: {x: 601, y: 230}
+  - name: Jungle_Building_Place_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 904
+      width: 82
+      height: 49
+    spriteID: 0c7b3a86feb1f2641b52d458b92f36ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 904}
+    spritePosition: {x: 602, y: 295}
+  - name: Jungle_Building_Place_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 961
+      width: 82
+      height: 49
+    spriteID: f52912653e7d68547a44ca9097975ec1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 961}
+    spritePosition: {x: 503, y: 295}
+  - name: Jungle_Building_Place_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1092
+      width: 81
+      height: 49
+    spriteID: 31e99229afec27f4f93a7dca25b0627c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1092}
+    spritePosition: {x: 504, y: 230}
+  - name: Jungle_Building_Place_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1149
+      width: 81
+      height: 49
+    spriteID: 0f4faa8311bc57e48a478574394b994a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1149}
+    spritePosition: {x: 442, y: 647}
+  - name: Jungle_Z_way_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2689
+      width: 132
+      height: 48
+    spriteID: cc1f38af8e8d71c4b8818b3b8ceae86a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2689}
+    spritePosition: {x: 306, y: 474}
+  - name: Jungle_Z_way_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1196
+      y: 2745
+      width: 131
+      height: 48
+    spriteID: 627fe4ff664b9eb449d7e3b7485507b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1196, y: 2745}
+    spritePosition: {x: 306, y: 399}
+  - name: Jungle_Z_way_02 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3407
+      width: 177
+      height: 151
+    spriteID: 452a34050545bc143ba280ae58c002c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3407}
+    spritePosition: {x: 1541, y: 929}
+  - name: Jungle_Z_way_02 copy 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 681
+      y: 3566
+      width: 143
+      height: 145
+    spriteID: 2e979fea7af47884da4009f56e956ced
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 681, y: 3566}
+    spritePosition: {x: 848, y: 909}
+  - name: Jungle_Z_way_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 612
+      width: 80
+      height: 81
+    spriteID: 7a026ab7e07b44541af31fbcb54c4fb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 612}
+    spritePosition: {x: 531, y: 415}
+  - name: Jungle_Z_way_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 701
+      width: 80
+      height: 81
+    spriteID: 8cd51fe3398ae564b817110da8f8723a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 701}
+    spritePosition: {x: 641, y: 418}
+  - name: Jungle_Three_Way_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3517
+      width: 121
+      height: 79
+    spriteID: d590919f122be1341acd5136ffac9fc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3517}
+    spritePosition: {x: 943, y: 114}
+  - name: Jungle_Three_Way_12 - 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3604
+      width: 121
+      height: 79
+    spriteID: 0649f710b150b9940a145d6860738c3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3604}
+    spritePosition: {x: 943, y: 23}
+  - name: Jungle_Three_Way_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 3691
+      width: 121
+      height: 79
+    spriteID: 639605c3f13d82941b1e24150fb3ca75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 3691}
+    spritePosition: {x: 193, y: 24}
+  - name: Jungle_Hill_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3268
+      width: 669
+      height: 529
+    spriteID: 58956bd7100d955408eb77e21ebde01d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3268}
+    spritePosition: {x: 1251, y: 551}
+  - name: Layer 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 916
+      height: 1080
+    spriteID: bf74fe10626bbbb4685b9c4ee9c6fb4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1004, y: 0}
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: bb14a975e6ff56a4a972f3976304d68f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 8317e5b5975ba524aa3a44b87aa88b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Jungle_Building_Place_13 copy
+    spriteName: Jungle_Building_Place_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54a05db7c2375c34e81477ee2f4e6f11
+    layerID: 172
+    mosaicPosition: {x: 1932, y: 1937}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_13
+    spriteName: Jungle_Building_Place_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ccc3d5559af6f54a9480d0ac777274c
+    layerID: 93
+    mosaicPosition: {x: 4, y: 3996}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 5
+    spriteName: Jungle_Straight_02-02 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e24678bbc3da74418339f6ae593844d
+    layerID: 170
+    mosaicPosition: {x: 928, y: 4022}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 4
+    spriteName: Jungle_Straight_02-02 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e5d8eec52878bdd4892cba95ca643418
+    layerID: 169
+    mosaicPosition: {x: 1068, y: 2668}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 7
+    spriteName: Jungle_Straight_02-01 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 060be071d7e9e084b8a8110d737f615a
+    layerID: 171
+    mosaicPosition: {x: 1932, y: 96}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 6
+    spriteName: Jungle_Straight_02-01 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e8de55b8c3d4e4b47be4dca03bcce29b
+    layerID: 168
+    mosaicPosition: {x: 1932, y: 167}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 3
+    spriteName: Jungle_Straight_02-02 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5726a79a474a2084cb42099db9943331
+    layerID: 166
+    mosaicPosition: {x: 1068, y: 2743}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 2
+    spriteName: Jungle_Straight_02-02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d1a1bfbb3e24d524cb8751ce1d018891
+    layerID: 156
+    mosaicPosition: {x: 1932, y: 451}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 5
+    spriteName: Jungle_Straight_02-01 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 78dbe985cd8df2e4caf0c33bdc249227
+    layerID: 167
+    mosaicPosition: {x: 1932, y: 238}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 4
+    spriteName: Jungle_Straight_02-01 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4d99f77bdda26ba4fba576a25518202e
+    layerID: 164
+    mosaicPosition: {x: 1932, y: 309}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 3
+    spriteName: Jungle_Straight_02-01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d483deb6a438947498c6bbf64b522fb2
+    layerID: 163
+    mosaicPosition: {x: 1932, y: 380}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Hill_02
+    spriteName: Jungle_Hill_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 84b18199e0f354542b81b44797961b40
+    layerID: 161
+    mosaicPosition: {x: 928, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11 - 2 copy
+    spriteName: Jungle_Three_Way_11 - 2 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d96708c8c67dd384f90625e38e94d7e1
+    layerID: 138
+    mosaicPosition: {x: 4, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11 - 2
+    spriteName: Jungle_Three_Way_11 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 64a26bbef40daaf4da42c61fa01853e2
+    layerID: 135
+    mosaicPosition: {x: 928, y: 3430}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_10
+    spriteName: Jungle_Three_Way_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 319e11a96edfce240a71adfee1347c1b
+    layerID: 134
+    mosaicPosition: {x: 159, y: 3996}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_10 - 2
+    spriteName: Jungle_Three_Way_10 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58a86512d0781454886b693bb9d872a0
+    layerID: 133
+    mosaicPosition: {x: 928, y: 3004}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_09
+    spriteName: Jungle_Three_Way_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9f986e9ff2a3d9a4e9045f932fe25542
+    layerID: 132
+    mosaicPosition: {x: 928, y: 3092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_09 - 2
+    spriteName: Jungle_Three_Way_09 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e631b44590b7258449a0e73473d0f18f
+    layerID: 131
+    mosaicPosition: {x: 928, y: 3180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_08
+    spriteName: Jungle_Three_Way_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae81d75a4a123584787073ebd3b85b8c
+    layerID: 130
+    mosaicPosition: {x: 928, y: 2676}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_08 - 2
+    spriteName: Jungle_Three_Way_08 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c81fc21f87e6d7a4d9ee1cb4e02f6bac
+    layerID: 129
+    mosaicPosition: {x: 928, y: 2758}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_07 - 2
+    spriteName: Jungle_Three_Way_07 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09616e4cea4df11419494dba4b526c57
+    layerID: 128
+    mosaicPosition: {x: 681, y: 3719}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06 copy
+    spriteName: Jungle_Three_Way_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c2eb336b698608c429578673eaf49f1d
+    layerID: 182
+    mosaicPosition: {x: 681, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06
+    spriteName: Jungle_Three_Way_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6c684f8cc077454db5d44aa4d1a576b
+    layerID: 127
+    mosaicPosition: {x: 928, y: 2840}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06 - 2
+    spriteName: Jungle_Three_Way_06 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7af26417f8f43c74aac457d468c248da
+    layerID: 126
+    mosaicPosition: {x: 928, y: 2922}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_05
+    spriteName: Jungle_Three_Way_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1122d92e05010914189da70a980b7399
+    layerID: 125
+    mosaicPosition: {x: 928, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_05 - 2
+    spriteName: Jungle_Three_Way_05 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f63df0c4de5d2424b989f398bafeacc1
+    layerID: 124
+    mosaicPosition: {x: 928, y: 3349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_04
+    spriteName: Jungle_Three_Way_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 218a219660926384dafd38761cc87b4d
+    layerID: 123
+    mosaicPosition: {x: 1932, y: 1206}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_04 - 2
+    spriteName: Jungle_Three_Way_04 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f5d785b0777e8834d882b27660b30ba7
+    layerID: 122
+    mosaicPosition: {x: 1932, y: 1263}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_03
+    spriteName: Jungle_Three_Way_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7e93964f224c01448d219072074a153
+    layerID: 121
+    mosaicPosition: {x: 1932, y: 1320}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_03 - 2
+    spriteName: Jungle_Three_Way_03 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1919cbd529579eb408d42addf10400b5
+    layerID: 120
+    mosaicPosition: {x: 1932, y: 1377}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_02
+    spriteName: Jungle_Three_Way_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20de992668b51e14ea974de768f1f8ec
+    layerID: 119
+    mosaicPosition: {x: 1932, y: 1546}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_02 - 2
+    spriteName: Jungle_Three_Way_02 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c997ad668d70f434fb15dc576169fc63
+    layerID: 118
+    mosaicPosition: {x: 1932, y: 1602}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01
+    spriteName: Jungle_Three_Way_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 300051c5b2c05724ba7b26c41e37d732
+    layerID: 117
+    mosaicPosition: {x: 1932, y: 1434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01 - 2 copy
+    spriteName: Jungle_Three_Way_01 - 2 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b81fd8e077af18b4b9a4c9244b32211d
+    layerID: 165
+    mosaicPosition: {x: 291, y: 3966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01 - 2
+    spriteName: Jungle_Three_Way_01 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23a010e1708b1d9449085e43b3701c85
+    layerID: 116
+    mosaicPosition: {x: 1932, y: 1490}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Thre_Way_07
+    spriteName: Jungle_Thre_Way_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85028ceec83d8e940a859ee20678575d
+    layerID: 115
+    mosaicPosition: {x: 928, y: 3778}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy 2
+    spriteName: Jungle_Straight_02-03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: df7f09539e610e24899f72f01b1c3d21
+    layerID: 152
+    mosaicPosition: {x: 866, y: 3520}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy
+    spriteName: Jungle_Straight_02-03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28d373364c3f1f94884dfbf0f9997a02
+    layerID: 151
+    mosaicPosition: {x: 753, y: 4048}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy 3
+    spriteName: Jungle_Straight_02-03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 93269841db957d3479464866ac6ac1ef
+    layerID: 181
+    mosaicPosition: {x: 815, y: 4048}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03
+    spriteName: Jungle_Straight_02-03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3392c2aabda2153448bc6e21e12f8283
+    layerID: 114
+    mosaicPosition: {x: 1068, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 6
+    spriteName: Jungle_Straight_02-02 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a59cfa86c2ae4ef47bee39c26491781f
+    layerID: 175
+    mosaicPosition: {x: 1130, y: 2978}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy
+    spriteName: Jungle_Straight_02-02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 14e70b46a780c6a49b62d0ab52763e58
+    layerID: 155
+    mosaicPosition: {x: 1130, y: 3018}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 7
+    spriteName: Jungle_Straight_02-02 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 72afe0851f306eb499eb99990bfe120f
+    layerID: 180
+    mosaicPosition: {x: 1130, y: 3058}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02
+    spriteName: Jungle_Straight_02-02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d629db474f7facd4296f394740d28e8c
+    layerID: 113
+    mosaicPosition: {x: 1130, y: 3098}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 2
+    spriteName: Jungle_Straight_02-01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 742e5cdc719a49b46b61b2a8f6fb1205
+    layerID: 154
+    mosaicPosition: {x: 1130, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy
+    spriteName: Jungle_Straight_02-01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 625a2006bfe87744ca3ef8c7e310d6d6
+    layerID: 153
+    mosaicPosition: {x: 1130, y: 2858}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 8
+    spriteName: Jungle_Straight_02-01 copy 8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e173a994f55a5254db963dfbd56b628f
+    layerID: 179
+    mosaicPosition: {x: 1130, y: 2898}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01
+    spriteName: Jungle_Straight_02-01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8577b5a318813eb479955b82d4aee20e
+    layerID: 112
+    mosaicPosition: {x: 1130, y: 2938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy 3
+    spriteName: Jungle_Straight_01-04 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 706ad6341494fc74dbd518dfd8b81f3b
+    layerID: 176
+    mosaicPosition: {x: 1130, y: 3138}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy 2
+    spriteName: Jungle_Straight_01-04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 982e649228ec26145ad968c41efb1ffb
+    layerID: 149
+    mosaicPosition: {x: 1130, y: 3178}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy
+    spriteName: Jungle_Straight_01-04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5ddca966d2cadc54a9489cca6192ce69
+    layerID: 148
+    mosaicPosition: {x: 1130, y: 3218}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04
+    spriteName: Jungle_Straight_01-04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6be59b7dfcc02b40896102e15a62328
+    layerID: 111
+    mosaicPosition: {x: 1130, y: 3258}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy 3
+    spriteName: Jungle_Straight_01-03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 18a26a91139bc7148bf2bc73c2b4ef84
+    layerID: 178
+    mosaicPosition: {x: 1130, y: 3298}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy 2
+    spriteName: Jungle_Straight_01-03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3e1604b2553df641b01298f924c2486
+    layerID: 147
+    mosaicPosition: {x: 1130, y: 3338}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy
+    spriteName: Jungle_Straight_01-03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cd86ca735ba50094c8a316dff8d996f1
+    layerID: 146
+    mosaicPosition: {x: 1130, y: 3378}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03
+    spriteName: Jungle_Straight_01-03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 06e1b791f5276ca41b6bf24f9fa73eb6
+    layerID: 110
+    mosaicPosition: {x: 1130, y: 3418}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy 2
+    spriteName: Jungle_Straight_01-02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 35e46088f3175b3449f1b05b9539fc7e
+    layerID: 141
+    mosaicPosition: {x: 2020, y: 2101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy 3
+    spriteName: Jungle_Straight_01-02 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 413d483d5bd66c349814da83a5c8b3ee
+    layerID: 143
+    mosaicPosition: {x: 2016, y: 2047}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy
+    spriteName: Jungle_Straight_01-02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 079498ab5dc4d0241a71ea2eb6e5baa7
+    layerID: 140
+    mosaicPosition: {x: 821, y: 3719}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02
+    spriteName: Jungle_Straight_01-02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 033c9aec656521e479995c72d6e559ff
+    layerID: 109
+    mosaicPosition: {x: 1068, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy 3
+    spriteName: Jungle_Straight_01-01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b9786b5477cfe5249a1ec1d3b9a2d0a3
+    layerID: 177
+    mosaicPosition: {x: 1130, y: 3458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy 2
+    spriteName: Jungle_Straight_01-01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a54bffe8b730e347a3ba09072f401a0
+    layerID: 145
+    mosaicPosition: {x: 1130, y: 3498}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy
+    spriteName: Jungle_Straight_01-01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed8f66c5c18456f47be740e9f6ac6990
+    layerID: 144
+    mosaicPosition: {x: 1130, y: 3538}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01
+    spriteName: Jungle_Straight_01-01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 278d729fdeef08142bf2eedad1227d6d
+    layerID: 108
+    mosaicPosition: {x: 1130, y: 3578}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Right
+    spriteName: Jungle_Stair_Front_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41ce132d9fe9e5c488b3141ac5a370fa
+    layerID: 107
+    mosaicPosition: {x: 1932, y: 523}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Left copy
+    spriteName: Jungle_Stair_Front_Left copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cf72b567ccfebbe49b45a3445febced2
+    layerID: 136
+    mosaicPosition: {x: 1932, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Left
+    spriteName: Jungle_Stair_Front_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a0b056936af3a14b9f075eea1624c45
+    layerID: 106
+    mosaicPosition: {x: 550, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Right
+    spriteName: Jungle_Stair_Back_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1ee2fcdf62961a449e2c730c3001355
+    layerID: 105
+    mosaicPosition: {x: 928, y: 3941}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Left copy
+    spriteName: Jungle_Stair_Back_Left copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3f6203d3e43a43b49814d09fff70e0c1
+    layerID: 162
+    mosaicPosition: {x: 291, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Left
+    spriteName: Jungle_Stair_Back_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 031d742b00356104c99baa7eb216cdbf
+    layerID: 104
+    mosaicPosition: {x: 928, y: 3859}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_04 copy
+    spriteName: Jungle_Round_Big_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad5739348c8eef84892402a190508195
+    layerID: 158
+    mosaicPosition: {x: 753, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_04
+    spriteName: Jungle_Round_Big_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 772bc4a32276cb041949fefbf6bdb961
+    layerID: 103
+    mosaicPosition: {x: 477, y: 3966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_03
+    spriteName: Jungle_Round_Big_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ad4280ea1207c14db407f90993f857a
+    layerID: 102
+    mosaicPosition: {x: 1196, y: 2642}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_02
+    spriteName: Jungle_Round_Big_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3275b2aec26efb146b5441cb0a8673d4
+    layerID: 101
+    mosaicPosition: {x: 1196, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_01
+    spriteName: Jungle_Round_Big_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d59c7773d9563a40a75e45b189f2ac8
+    layerID: 100
+    mosaicPosition: {x: 832, y: 3566}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_04
+    spriteName: Jungle_Round_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 71a48e6ae855a3846a35dad5617dffa8
+    layerID: 99
+    mosaicPosition: {x: 866, y: 3463}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_03 copy
+    spriteName: Jungle_Round_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ee67481023e0cc34994bc47518d03907
+    layerID: 139
+    mosaicPosition: {x: 550, y: 4003}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_03
+    spriteName: Jungle_Round_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7e7ae4c94b94d3d48ae57d7b11f092e1
+    layerID: 98
+    mosaicPosition: {x: 1932, y: 2101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_02
+    spriteName: Jungle_Round_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a12f3df104302ff429e2e6018be1fae7
+    layerID: 97
+    mosaicPosition: {x: 1932, y: 2141}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_01
+    spriteName: Jungle_Round_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 29fead4eb2014424a9a7138dc3d899cb
+    layerID: 96
+    mosaicPosition: {x: 866, y: 3407}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_15 copy
+    spriteName: Jungle_Building_Place_15 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3c3fe7849946f624c9d57a5430ac0da4
+    layerID: 183
+    mosaicPosition: {x: 928, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_15
+    spriteName: Jungle_Building_Place_15
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6225ba70b72b6a043968f478746f85b1
+    layerID: 95
+    mosaicPosition: {x: 1932, y: 1992}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_14
+    spriteName: Jungle_Building_Place_14
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80e7bdfd16b82a64aa2edc7326683cd2
+    layerID: 94
+    mosaicPosition: {x: 1932, y: 2047}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_12
+    spriteName: Jungle_Building_Place_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ed576178f6cb6a42852c30d69361871
+    layerID: 92
+    mosaicPosition: {x: 1932, y: 1658}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_11
+    spriteName: Jungle_Building_Place_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 976dfb0493d2bcb448efbe390b610f15
+    layerID: 91
+    mosaicPosition: {x: 1932, y: 1823}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_10
+    spriteName: Jungle_Building_Place_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b4e0af88c13e79c4d81cdd4bd956d4c6
+    layerID: 90
+    mosaicPosition: {x: 1932, y: 1715}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_09
+    spriteName: Jungle_Building_Place_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9d198ed2c747ea54494e29d6b87e6fb0
+    layerID: 89
+    mosaicPosition: {x: 1932, y: 1880}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_08
+    spriteName: Jungle_Building_Place_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e07abb79181b5cb4f92b264c6c1ae447
+    layerID: 88
+    mosaicPosition: {x: 1932, y: 1769}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_07
+    spriteName: Jungle_Building_Place_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f2298d3dc7cd99241ad78cb9005118ff
+    layerID: 87
+    mosaicPosition: {x: 1932, y: 1018}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_06
+    spriteName: Jungle_Building_Place_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 343dba3240fc9fd4da703febeab59305
+    layerID: 86
+    mosaicPosition: {x: 1932, y: 790}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_05
+    spriteName: Jungle_Building_Place_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c8a7bdebd764ac4ba32cbe967b6d3a9
+    layerID: 85
+    mosaicPosition: {x: 1932, y: 847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_04
+    spriteName: Jungle_Building_Place_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c7b3a86feb1f2641b52d458b92f36ea
+    layerID: 84
+    mosaicPosition: {x: 1932, y: 904}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_03
+    spriteName: Jungle_Building_Place_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f52912653e7d68547a44ca9097975ec1
+    layerID: 83
+    mosaicPosition: {x: 1932, y: 961}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_02
+    spriteName: Jungle_Building_Place_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 31e99229afec27f4f93a7dca25b0627c
+    layerID: 82
+    mosaicPosition: {x: 1932, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_01
+    spriteName: Jungle_Building_Place_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0f4faa8311bc57e48a478574394b994a
+    layerID: 81
+    mosaicPosition: {x: 1932, y: 1149}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_04
+    spriteName: Jungle_Z_way_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc1f38af8e8d71c4b8818b3b8ceae86a
+    layerID: 80
+    mosaicPosition: {x: 1196, y: 2689}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_03
+    spriteName: Jungle_Z_way_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 627fe4ff664b9eb449d7e3b7485507b5
+    layerID: 79
+    mosaicPosition: {x: 1196, y: 2745}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02 copy
+    spriteName: Jungle_Z_way_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 452a34050545bc143ba280ae58c002c9
+    layerID: 142
+    mosaicPosition: {x: 681, y: 3407}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02 copy 2
+    spriteName: Jungle_Z_way_02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e979fea7af47884da4009f56e956ced
+    layerID: 184
+    mosaicPosition: {x: 681, y: 3566}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02
+    spriteName: Jungle_Z_way_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a026ab7e07b44541af31fbcb54c4fb3
+    layerID: 78
+    mosaicPosition: {x: 1932, y: 612}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_01
+    spriteName: Jungle_Z_way_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8cd51fe3398ae564b817110da8f8723a
+    layerID: 77
+    mosaicPosition: {x: 1932, y: 701}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_12
+    spriteName: Jungle_Three_Way_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d590919f122be1341acd5136ffac9fc3
+    layerID: 76
+    mosaicPosition: {x: 928, y: 3517}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_12 - 2
+    spriteName: Jungle_Three_Way_12 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0649f710b150b9940a145d6860738c3a
+    layerID: 75
+    mosaicPosition: {x: 928, y: 3604}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11
+    spriteName: Jungle_Three_Way_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 639605c3f13d82941b1e24150fb3ca75
+    layerID: 74
+    mosaicPosition: {x: 928, y: 3691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Hill_08
+    spriteName: Jungle_Hill_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58956bd7100d955408eb77e21ebde01d
+    layerID: 73
+    mosaicPosition: {x: 4, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 6
+    spriteName: Layer 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bf74fe10626bbbb4685b9c4ee9c6fb4d
+    layerID: 290
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc49a20e1511fb149bce44fab5440611
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb14a975e6ff56a4a972f3976304d68f
+    layerID: 7
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8317e5b5975ba524aa3a44b87aa88b79
+    layerID: 3
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Jungle_Building_Place_13 copy
+    spriteName: Jungle_Building_Place_13 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54a05db7c2375c34e81477ee2f4e6f11
+    layerID: 172
+    mosaicPosition: {x: 1932, y: 1937}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_13
+    spriteName: Jungle_Building_Place_13
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ccc3d5559af6f54a9480d0ac777274c
+    layerID: 93
+    mosaicPosition: {x: 4, y: 3996}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 5
+    spriteName: Jungle_Straight_02-02 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e24678bbc3da74418339f6ae593844d
+    layerID: 170
+    mosaicPosition: {x: 928, y: 4022}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 4
+    spriteName: Jungle_Straight_02-02 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e5d8eec52878bdd4892cba95ca643418
+    layerID: 169
+    mosaicPosition: {x: 1068, y: 2668}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 7
+    spriteName: Jungle_Straight_02-01 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 060be071d7e9e084b8a8110d737f615a
+    layerID: 171
+    mosaicPosition: {x: 1932, y: 96}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 6
+    spriteName: Jungle_Straight_02-01 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e8de55b8c3d4e4b47be4dca03bcce29b
+    layerID: 168
+    mosaicPosition: {x: 1932, y: 167}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 3
+    spriteName: Jungle_Straight_02-02 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5726a79a474a2084cb42099db9943331
+    layerID: 166
+    mosaicPosition: {x: 1068, y: 2743}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 2
+    spriteName: Jungle_Straight_02-02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d1a1bfbb3e24d524cb8751ce1d018891
+    layerID: 156
+    mosaicPosition: {x: 1932, y: 451}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 5
+    spriteName: Jungle_Straight_02-01 copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 78dbe985cd8df2e4caf0c33bdc249227
+    layerID: 167
+    mosaicPosition: {x: 1932, y: 238}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 4
+    spriteName: Jungle_Straight_02-01 copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4d99f77bdda26ba4fba576a25518202e
+    layerID: 164
+    mosaicPosition: {x: 1932, y: 309}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 3
+    spriteName: Jungle_Straight_02-01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d483deb6a438947498c6bbf64b522fb2
+    layerID: 163
+    mosaicPosition: {x: 1932, y: 380}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Hill_02
+    spriteName: Jungle_Hill_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 84b18199e0f354542b81b44797961b40
+    layerID: 161
+    mosaicPosition: {x: 928, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11 - 2 copy
+    spriteName: Jungle_Three_Way_11 - 2 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d96708c8c67dd384f90625e38e94d7e1
+    layerID: 138
+    mosaicPosition: {x: 4, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11 - 2
+    spriteName: Jungle_Three_Way_11 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 64a26bbef40daaf4da42c61fa01853e2
+    layerID: 135
+    mosaicPosition: {x: 928, y: 3430}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_10
+    spriteName: Jungle_Three_Way_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 319e11a96edfce240a71adfee1347c1b
+    layerID: 134
+    mosaicPosition: {x: 159, y: 3996}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_10 - 2
+    spriteName: Jungle_Three_Way_10 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58a86512d0781454886b693bb9d872a0
+    layerID: 133
+    mosaicPosition: {x: 928, y: 3004}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_09
+    spriteName: Jungle_Three_Way_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9f986e9ff2a3d9a4e9045f932fe25542
+    layerID: 132
+    mosaicPosition: {x: 928, y: 3092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_09 - 2
+    spriteName: Jungle_Three_Way_09 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e631b44590b7258449a0e73473d0f18f
+    layerID: 131
+    mosaicPosition: {x: 928, y: 3180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_08
+    spriteName: Jungle_Three_Way_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ae81d75a4a123584787073ebd3b85b8c
+    layerID: 130
+    mosaicPosition: {x: 928, y: 2676}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_08 - 2
+    spriteName: Jungle_Three_Way_08 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c81fc21f87e6d7a4d9ee1cb4e02f6bac
+    layerID: 129
+    mosaicPosition: {x: 928, y: 2758}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_07 - 2
+    spriteName: Jungle_Three_Way_07 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09616e4cea4df11419494dba4b526c57
+    layerID: 128
+    mosaicPosition: {x: 681, y: 3719}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06 copy
+    spriteName: Jungle_Three_Way_06 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c2eb336b698608c429578673eaf49f1d
+    layerID: 182
+    mosaicPosition: {x: 681, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06
+    spriteName: Jungle_Three_Way_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6c684f8cc077454db5d44aa4d1a576b
+    layerID: 127
+    mosaicPosition: {x: 928, y: 2840}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_06 - 2
+    spriteName: Jungle_Three_Way_06 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7af26417f8f43c74aac457d468c248da
+    layerID: 126
+    mosaicPosition: {x: 928, y: 2922}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_05
+    spriteName: Jungle_Three_Way_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1122d92e05010914189da70a980b7399
+    layerID: 125
+    mosaicPosition: {x: 928, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_05 - 2
+    spriteName: Jungle_Three_Way_05 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f63df0c4de5d2424b989f398bafeacc1
+    layerID: 124
+    mosaicPosition: {x: 928, y: 3349}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_04
+    spriteName: Jungle_Three_Way_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 218a219660926384dafd38761cc87b4d
+    layerID: 123
+    mosaicPosition: {x: 1932, y: 1206}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_04 - 2
+    spriteName: Jungle_Three_Way_04 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f5d785b0777e8834d882b27660b30ba7
+    layerID: 122
+    mosaicPosition: {x: 1932, y: 1263}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_03
+    spriteName: Jungle_Three_Way_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e7e93964f224c01448d219072074a153
+    layerID: 121
+    mosaicPosition: {x: 1932, y: 1320}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_03 - 2
+    spriteName: Jungle_Three_Way_03 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1919cbd529579eb408d42addf10400b5
+    layerID: 120
+    mosaicPosition: {x: 1932, y: 1377}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_02
+    spriteName: Jungle_Three_Way_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 20de992668b51e14ea974de768f1f8ec
+    layerID: 119
+    mosaicPosition: {x: 1932, y: 1546}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_02 - 2
+    spriteName: Jungle_Three_Way_02 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c997ad668d70f434fb15dc576169fc63
+    layerID: 118
+    mosaicPosition: {x: 1932, y: 1602}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01
+    spriteName: Jungle_Three_Way_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 300051c5b2c05724ba7b26c41e37d732
+    layerID: 117
+    mosaicPosition: {x: 1932, y: 1434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01 - 2 copy
+    spriteName: Jungle_Three_Way_01 - 2 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b81fd8e077af18b4b9a4c9244b32211d
+    layerID: 165
+    mosaicPosition: {x: 291, y: 3966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_01 - 2
+    spriteName: Jungle_Three_Way_01 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23a010e1708b1d9449085e43b3701c85
+    layerID: 116
+    mosaicPosition: {x: 1932, y: 1490}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Thre_Way_07
+    spriteName: Jungle_Thre_Way_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85028ceec83d8e940a859ee20678575d
+    layerID: 115
+    mosaicPosition: {x: 928, y: 3778}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy 2
+    spriteName: Jungle_Straight_02-03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: df7f09539e610e24899f72f01b1c3d21
+    layerID: 152
+    mosaicPosition: {x: 866, y: 3520}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy
+    spriteName: Jungle_Straight_02-03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28d373364c3f1f94884dfbf0f9997a02
+    layerID: 151
+    mosaicPosition: {x: 753, y: 4048}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03 copy 3
+    spriteName: Jungle_Straight_02-03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 93269841db957d3479464866ac6ac1ef
+    layerID: 181
+    mosaicPosition: {x: 815, y: 4048}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-03
+    spriteName: Jungle_Straight_02-03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3392c2aabda2153448bc6e21e12f8283
+    layerID: 114
+    mosaicPosition: {x: 1068, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 6
+    spriteName: Jungle_Straight_02-02 copy 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a59cfa86c2ae4ef47bee39c26491781f
+    layerID: 175
+    mosaicPosition: {x: 1130, y: 2978}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy
+    spriteName: Jungle_Straight_02-02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 14e70b46a780c6a49b62d0ab52763e58
+    layerID: 155
+    mosaicPosition: {x: 1130, y: 3018}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02 copy 7
+    spriteName: Jungle_Straight_02-02 copy 7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 72afe0851f306eb499eb99990bfe120f
+    layerID: 180
+    mosaicPosition: {x: 1130, y: 3058}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-02
+    spriteName: Jungle_Straight_02-02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d629db474f7facd4296f394740d28e8c
+    layerID: 113
+    mosaicPosition: {x: 1130, y: 3098}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 2
+    spriteName: Jungle_Straight_02-01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 742e5cdc719a49b46b61b2a8f6fb1205
+    layerID: 154
+    mosaicPosition: {x: 1130, y: 2818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy
+    spriteName: Jungle_Straight_02-01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 625a2006bfe87744ca3ef8c7e310d6d6
+    layerID: 153
+    mosaicPosition: {x: 1130, y: 2858}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01 copy 8
+    spriteName: Jungle_Straight_02-01 copy 8
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e173a994f55a5254db963dfbd56b628f
+    layerID: 179
+    mosaicPosition: {x: 1130, y: 2898}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_02-01
+    spriteName: Jungle_Straight_02-01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8577b5a318813eb479955b82d4aee20e
+    layerID: 112
+    mosaicPosition: {x: 1130, y: 2938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy 3
+    spriteName: Jungle_Straight_01-04 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 706ad6341494fc74dbd518dfd8b81f3b
+    layerID: 176
+    mosaicPosition: {x: 1130, y: 3138}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy 2
+    spriteName: Jungle_Straight_01-04 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 982e649228ec26145ad968c41efb1ffb
+    layerID: 149
+    mosaicPosition: {x: 1130, y: 3178}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04 copy
+    spriteName: Jungle_Straight_01-04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5ddca966d2cadc54a9489cca6192ce69
+    layerID: 148
+    mosaicPosition: {x: 1130, y: 3218}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-04
+    spriteName: Jungle_Straight_01-04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d6be59b7dfcc02b40896102e15a62328
+    layerID: 111
+    mosaicPosition: {x: 1130, y: 3258}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy 3
+    spriteName: Jungle_Straight_01-03 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 18a26a91139bc7148bf2bc73c2b4ef84
+    layerID: 178
+    mosaicPosition: {x: 1130, y: 3298}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy 2
+    spriteName: Jungle_Straight_01-03 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3e1604b2553df641b01298f924c2486
+    layerID: 147
+    mosaicPosition: {x: 1130, y: 3338}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03 copy
+    spriteName: Jungle_Straight_01-03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cd86ca735ba50094c8a316dff8d996f1
+    layerID: 146
+    mosaicPosition: {x: 1130, y: 3378}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-03
+    spriteName: Jungle_Straight_01-03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 06e1b791f5276ca41b6bf24f9fa73eb6
+    layerID: 110
+    mosaicPosition: {x: 1130, y: 3418}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy 2
+    spriteName: Jungle_Straight_01-02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 35e46088f3175b3449f1b05b9539fc7e
+    layerID: 141
+    mosaicPosition: {x: 2020, y: 2101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy 3
+    spriteName: Jungle_Straight_01-02 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 413d483d5bd66c349814da83a5c8b3ee
+    layerID: 143
+    mosaicPosition: {x: 2016, y: 2047}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02 copy
+    spriteName: Jungle_Straight_01-02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 079498ab5dc4d0241a71ea2eb6e5baa7
+    layerID: 140
+    mosaicPosition: {x: 821, y: 3719}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-02
+    spriteName: Jungle_Straight_01-02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 033c9aec656521e479995c72d6e559ff
+    layerID: 109
+    mosaicPosition: {x: 1068, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy 3
+    spriteName: Jungle_Straight_01-01 copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b9786b5477cfe5249a1ec1d3b9a2d0a3
+    layerID: 177
+    mosaicPosition: {x: 1130, y: 3458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy 2
+    spriteName: Jungle_Straight_01-01 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a54bffe8b730e347a3ba09072f401a0
+    layerID: 145
+    mosaicPosition: {x: 1130, y: 3498}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01 copy
+    spriteName: Jungle_Straight_01-01 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed8f66c5c18456f47be740e9f6ac6990
+    layerID: 144
+    mosaicPosition: {x: 1130, y: 3538}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Straight_01-01
+    spriteName: Jungle_Straight_01-01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 278d729fdeef08142bf2eedad1227d6d
+    layerID: 108
+    mosaicPosition: {x: 1130, y: 3578}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Right
+    spriteName: Jungle_Stair_Front_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41ce132d9fe9e5c488b3141ac5a370fa
+    layerID: 107
+    mosaicPosition: {x: 1932, y: 523}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Left copy
+    spriteName: Jungle_Stair_Front_Left copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cf72b567ccfebbe49b45a3445febced2
+    layerID: 136
+    mosaicPosition: {x: 1932, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Front_Left
+    spriteName: Jungle_Stair_Front_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a0b056936af3a14b9f075eea1624c45
+    layerID: 106
+    mosaicPosition: {x: 550, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Right
+    spriteName: Jungle_Stair_Back_Right
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1ee2fcdf62961a449e2c730c3001355
+    layerID: 105
+    mosaicPosition: {x: 928, y: 3941}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Left copy
+    spriteName: Jungle_Stair_Back_Left copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3f6203d3e43a43b49814d09fff70e0c1
+    layerID: 162
+    mosaicPosition: {x: 291, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Stair_Back_Left
+    spriteName: Jungle_Stair_Back_Left
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 031d742b00356104c99baa7eb216cdbf
+    layerID: 104
+    mosaicPosition: {x: 928, y: 3859}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_04 copy
+    spriteName: Jungle_Round_Big_04 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad5739348c8eef84892402a190508195
+    layerID: 158
+    mosaicPosition: {x: 753, y: 3805}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_04
+    spriteName: Jungle_Round_Big_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 772bc4a32276cb041949fefbf6bdb961
+    layerID: 103
+    mosaicPosition: {x: 477, y: 3966}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_03
+    spriteName: Jungle_Round_Big_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ad4280ea1207c14db407f90993f857a
+    layerID: 102
+    mosaicPosition: {x: 1196, y: 2642}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_02
+    spriteName: Jungle_Round_Big_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3275b2aec26efb146b5441cb0a8673d4
+    layerID: 101
+    mosaicPosition: {x: 1196, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_Big_01
+    spriteName: Jungle_Round_Big_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d59c7773d9563a40a75e45b189f2ac8
+    layerID: 100
+    mosaicPosition: {x: 832, y: 3566}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_04
+    spriteName: Jungle_Round_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 71a48e6ae855a3846a35dad5617dffa8
+    layerID: 99
+    mosaicPosition: {x: 866, y: 3463}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_03 copy
+    spriteName: Jungle_Round_03 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ee67481023e0cc34994bc47518d03907
+    layerID: 139
+    mosaicPosition: {x: 550, y: 4003}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_03
+    spriteName: Jungle_Round_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7e7ae4c94b94d3d48ae57d7b11f092e1
+    layerID: 98
+    mosaicPosition: {x: 1932, y: 2101}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_02
+    spriteName: Jungle_Round_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a12f3df104302ff429e2e6018be1fae7
+    layerID: 97
+    mosaicPosition: {x: 1932, y: 2141}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Round_01
+    spriteName: Jungle_Round_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 29fead4eb2014424a9a7138dc3d899cb
+    layerID: 96
+    mosaicPosition: {x: 866, y: 3407}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_15 copy
+    spriteName: Jungle_Building_Place_15 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3c3fe7849946f624c9d57a5430ac0da4
+    layerID: 183
+    mosaicPosition: {x: 928, y: 2587}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_15
+    spriteName: Jungle_Building_Place_15
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6225ba70b72b6a043968f478746f85b1
+    layerID: 95
+    mosaicPosition: {x: 1932, y: 1992}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_14
+    spriteName: Jungle_Building_Place_14
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80e7bdfd16b82a64aa2edc7326683cd2
+    layerID: 94
+    mosaicPosition: {x: 1932, y: 2047}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_12
+    spriteName: Jungle_Building_Place_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ed576178f6cb6a42852c30d69361871
+    layerID: 92
+    mosaicPosition: {x: 1932, y: 1658}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_11
+    spriteName: Jungle_Building_Place_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 976dfb0493d2bcb448efbe390b610f15
+    layerID: 91
+    mosaicPosition: {x: 1932, y: 1823}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_10
+    spriteName: Jungle_Building_Place_10
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b4e0af88c13e79c4d81cdd4bd956d4c6
+    layerID: 90
+    mosaicPosition: {x: 1932, y: 1715}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_09
+    spriteName: Jungle_Building_Place_09
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9d198ed2c747ea54494e29d6b87e6fb0
+    layerID: 89
+    mosaicPosition: {x: 1932, y: 1880}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_08
+    spriteName: Jungle_Building_Place_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e07abb79181b5cb4f92b264c6c1ae447
+    layerID: 88
+    mosaicPosition: {x: 1932, y: 1769}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_07
+    spriteName: Jungle_Building_Place_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f2298d3dc7cd99241ad78cb9005118ff
+    layerID: 87
+    mosaicPosition: {x: 1932, y: 1018}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_06
+    spriteName: Jungle_Building_Place_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 343dba3240fc9fd4da703febeab59305
+    layerID: 86
+    mosaicPosition: {x: 1932, y: 790}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_05
+    spriteName: Jungle_Building_Place_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c8a7bdebd764ac4ba32cbe967b6d3a9
+    layerID: 85
+    mosaicPosition: {x: 1932, y: 847}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_04
+    spriteName: Jungle_Building_Place_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0c7b3a86feb1f2641b52d458b92f36ea
+    layerID: 84
+    mosaicPosition: {x: 1932, y: 904}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_03
+    spriteName: Jungle_Building_Place_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f52912653e7d68547a44ca9097975ec1
+    layerID: 83
+    mosaicPosition: {x: 1932, y: 961}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_02
+    spriteName: Jungle_Building_Place_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 31e99229afec27f4f93a7dca25b0627c
+    layerID: 82
+    mosaicPosition: {x: 1932, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Building_Place_01
+    spriteName: Jungle_Building_Place_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0f4faa8311bc57e48a478574394b994a
+    layerID: 81
+    mosaicPosition: {x: 1932, y: 1149}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_04
+    spriteName: Jungle_Z_way_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc1f38af8e8d71c4b8818b3b8ceae86a
+    layerID: 80
+    mosaicPosition: {x: 1196, y: 2689}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_03
+    spriteName: Jungle_Z_way_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 627fe4ff664b9eb449d7e3b7485507b5
+    layerID: 79
+    mosaicPosition: {x: 1196, y: 2745}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02 copy
+    spriteName: Jungle_Z_way_02 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 452a34050545bc143ba280ae58c002c9
+    layerID: 142
+    mosaicPosition: {x: 681, y: 3407}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02 copy 2
+    spriteName: Jungle_Z_way_02 copy 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e979fea7af47884da4009f56e956ced
+    layerID: 184
+    mosaicPosition: {x: 681, y: 3566}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_02
+    spriteName: Jungle_Z_way_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a026ab7e07b44541af31fbcb54c4fb3
+    layerID: 78
+    mosaicPosition: {x: 1932, y: 612}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Z_way_01
+    spriteName: Jungle_Z_way_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8cd51fe3398ae564b817110da8f8723a
+    layerID: 77
+    mosaicPosition: {x: 1932, y: 701}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_12
+    spriteName: Jungle_Three_Way_12
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d590919f122be1341acd5136ffac9fc3
+    layerID: 76
+    mosaicPosition: {x: 928, y: 3517}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_12 - 2
+    spriteName: Jungle_Three_Way_12 - 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0649f710b150b9940a145d6860738c3a
+    layerID: 75
+    mosaicPosition: {x: 928, y: 3604}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Three_Way_11
+    spriteName: Jungle_Three_Way_11
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 639605c3f13d82941b1e24150fb3ca75
+    layerID: 74
+    mosaicPosition: {x: 928, y: 3691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jungle_Hill_08
+    spriteName: Jungle_Hill_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58956bd7100d955408eb77e21ebde01d
+    layerID: 73
+    mosaicPosition: {x: 4, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 6
+    spriteName: Layer 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bf74fe10626bbbb4685b9c4ee9c6fb4d
+    layerID: 290
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc49a20e1511fb149bce44fab5440611
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb14a975e6ff56a4a972f3976304d68f
+    layerID: 7
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8317e5b5975ba524aa3a44b87aa88b79
+    layerID: 3
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

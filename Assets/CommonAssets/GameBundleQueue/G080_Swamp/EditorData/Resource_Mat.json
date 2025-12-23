@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "Coal",
+            "price": "25"
+        },
+        {
+            "id": "UndeadFinger",
+            "price": "50"
+        },
+        {
+            "id": "Copper",
+            "price": "100"
+        },
+        {
+            "id": "SoulWater",
+            "price": "200"
+        },
+        {
+            "id": "Skull",
+            "price": "300"
+        },
+        {
+            "id": "Spider",
+            "price": "350"
+        },
+        {
+            "id": "DragonScale",
+            "price": "400"
+        },
+        {
+            "id": "Iron",
+            "price": "500"
+        },
+        {
+            "id": "RedMershroom",
+            "price": "550"
+        },
+        {
+            "id": "Krypto",
+            "price": "650"
+        },
+        {
+            "id": "StarDust",
+            "price": "800"
+        }
+    ]
+}

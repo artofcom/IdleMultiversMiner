@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: adee68ccbf037d3439bdf0b86f31aef7
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Magic Tileset/Demo/Preview/House_Log_Plant.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Magic_Plant_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1426
+      y: 2454
+      width: 298
+      height: 203
+    spriteID: b537dcc3dd26faa43a81c5be0be32b83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1426, y: 2454}
+    spritePosition: {x: 857, y: 761}
+  - name: Magic_Plant_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1125
+      y: 2180
+      width: 293
+      height: 247
+    spriteID: 2b9aa208d8b042140bd43eac66037940
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1125, y: 2180}
+    spritePosition: {x: 873, y: 377}
+  - name: Magic_Plant_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 2454
+      width: 288
+      height: 171
+    spriteID: 5a2498eaae1619240b49c5c94fbcdd1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 2454}
+    spritePosition: {x: 510, y: 169}
+  - name: Magic_Plant_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1426
+      y: 2180
+      width: 261
+      height: 266
+    spriteID: 5895b9e98a5102847a8a9487fbd300e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1426, y: 2180}
+    spritePosition: {x: 889, y: 17}
+  - name: Magic_Plant_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 600
+      y: 2180
+      width: 273
+      height: 305
+    spriteID: 14a3378045f3ca3469089ca37fc8c9b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 600, y: 2180}
+    spritePosition: {x: 525, y: 523}
+  - name: Magic_Log_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 881
+      y: 2180
+      width: 236
+      height: 318
+    spriteID: e6f287913b387b540868c545a08498eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 881, y: 2180}
+    spritePosition: {x: 173, y: 722}
+  - name: Magic_Log_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1695
+      y: 2180
+      width: 317
+      height: 207
+    spriteID: f63f09f031098104097ecfea4978fcf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1695, y: 2180}
+    spritePosition: {x: 133, y: 397}
+  - name: Magic_Log_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 553
+      y: 2691
+      width: 318
+      height: 180
+    spriteID: 17c8ba5797acbd3448b13d5bfc72b7ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 553, y: 2691}
+    spritePosition: {x: 133, y: 17}
+  - name: Magic_House_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2691
+      width: 541
+      height: 540
+    spriteID: 60208da4b4fba8e4a81a223d1e7d3445
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -43, y: 2691}
+    spritePosition: {x: 1322, y: 0}
+  - name: Magic_House_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 588
+      height: 503
+    spriteID: 748c6b5572801ec48a64a18443b74606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1332, y: 577}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: dd36d3d2a117ba24187da1b7b8a209d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 84aa3069d5c86cc489f222c5b2c2d3ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Magic_Plant_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1426
+      y: 2454
+      width: 298
+      height: 203
+    spriteID: b537dcc3dd26faa43a81c5be0be32b83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1426, y: 2454}
+    spritePosition: {x: 857, y: 761}
+  - name: Magic_Plant_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1125
+      y: 2180
+      width: 293
+      height: 247
+    spriteID: 2b9aa208d8b042140bd43eac66037940
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1125, y: 2180}
+    spritePosition: {x: 873, y: 377}
+  - name: Magic_Plant_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1732
+      y: 2454
+      width: 288
+      height: 171
+    spriteID: 5a2498eaae1619240b49c5c94fbcdd1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1732, y: 2454}
+    spritePosition: {x: 510, y: 169}
+  - name: Magic_Plant_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1426
+      y: 2180
+      width: 261
+      height: 266
+    spriteID: 5895b9e98a5102847a8a9487fbd300e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1426, y: 2180}
+    spritePosition: {x: 889, y: 17}
+  - name: Magic_Plant_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 600
+      y: 2180
+      width: 273
+      height: 305
+    spriteID: 14a3378045f3ca3469089ca37fc8c9b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 600, y: 2180}
+    spritePosition: {x: 525, y: 523}
+  - name: Magic_Log_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 881
+      y: 2180
+      width: 236
+      height: 318
+    spriteID: e6f287913b387b540868c545a08498eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 881, y: 2180}
+    spritePosition: {x: 173, y: 722}
+  - name: Magic_Log_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1695
+      y: 2180
+      width: 317
+      height: 207
+    spriteID: f63f09f031098104097ecfea4978fcf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1695, y: 2180}
+    spritePosition: {x: 133, y: 397}
+  - name: Magic_Log_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 553
+      y: 2691
+      width: 318
+      height: 180
+    spriteID: 17c8ba5797acbd3448b13d5bfc72b7ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 553, y: 2691}
+    spritePosition: {x: 133, y: 17}
+  - name: Magic_House_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2691
+      width: 541
+      height: 540
+    spriteID: 60208da4b4fba8e4a81a223d1e7d3445
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -43, y: 2691}
+    spritePosition: {x: 1322, y: 0}
+  - name: Magic_House_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 588
+      height: 503
+    spriteID: 748c6b5572801ec48a64a18443b74606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1332, y: 577}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: dd36d3d2a117ba24187da1b7b8a209d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 84aa3069d5c86cc489f222c5b2c2d3ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Magic_Plant_04
+    spriteName: Magic_Plant_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b537dcc3dd26faa43a81c5be0be32b83
+    layerID: 233
+    mosaicPosition: {x: 1426, y: 2454}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_03
+    spriteName: Magic_Plant_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b9aa208d8b042140bd43eac66037940
+    layerID: 232
+    mosaicPosition: {x: 1125, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_02
+    spriteName: Magic_Plant_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a2498eaae1619240b49c5c94fbcdd1f
+    layerID: 231
+    mosaicPosition: {x: 1732, y: 2454}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_01
+    spriteName: Magic_Plant_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5895b9e98a5102847a8a9487fbd300e4
+    layerID: 230
+    mosaicPosition: {x: 1426, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_05
+    spriteName: Magic_Plant_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 14a3378045f3ca3469089ca37fc8c9b3
+    layerID: 229
+    mosaicPosition: {x: 600, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_02
+    spriteName: Magic_Log_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6f287913b387b540868c545a08498eb
+    layerID: 228
+    mosaicPosition: {x: 881, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_01
+    spriteName: Magic_Log_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f63f09f031098104097ecfea4978fcf1
+    layerID: 227
+    mosaicPosition: {x: 1695, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_03
+    spriteName: Magic_Log_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 17c8ba5797acbd3448b13d5bfc72b7ee
+    layerID: 226
+    mosaicPosition: {x: 553, y: 2691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_House_01
+    spriteName: Magic_House_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60208da4b4fba8e4a81a223d1e7d3445
+    layerID: 225
+    mosaicPosition: {x: 4, y: 2691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_House_02
+    spriteName: Magic_House_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 748c6b5572801ec48a64a18443b74606
+    layerID: 224
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 642376e42af85ef428c2f3a28239d411
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd36d3d2a117ba24187da1b7b8a209d8
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 84aa3069d5c86cc489f222c5b2c2d3ae
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Magic_Plant_04
+    spriteName: Magic_Plant_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b537dcc3dd26faa43a81c5be0be32b83
+    layerID: 233
+    mosaicPosition: {x: 1426, y: 2454}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_03
+    spriteName: Magic_Plant_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b9aa208d8b042140bd43eac66037940
+    layerID: 232
+    mosaicPosition: {x: 1125, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_02
+    spriteName: Magic_Plant_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a2498eaae1619240b49c5c94fbcdd1f
+    layerID: 231
+    mosaicPosition: {x: 1732, y: 2454}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_01
+    spriteName: Magic_Plant_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5895b9e98a5102847a8a9487fbd300e4
+    layerID: 230
+    mosaicPosition: {x: 1426, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Plant_05
+    spriteName: Magic_Plant_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 14a3378045f3ca3469089ca37fc8c9b3
+    layerID: 229
+    mosaicPosition: {x: 600, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_02
+    spriteName: Magic_Log_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6f287913b387b540868c545a08498eb
+    layerID: 228
+    mosaicPosition: {x: 881, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_01
+    spriteName: Magic_Log_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f63f09f031098104097ecfea4978fcf1
+    layerID: 227
+    mosaicPosition: {x: 1695, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_Log_03
+    spriteName: Magic_Log_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 17c8ba5797acbd3448b13d5bfc72b7ee
+    layerID: 226
+    mosaicPosition: {x: 553, y: 2691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_House_01
+    spriteName: Magic_House_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 60208da4b4fba8e4a81a223d1e7d3445
+    layerID: 225
+    mosaicPosition: {x: 4, y: 2691}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Magic_House_02
+    spriteName: Magic_House_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 748c6b5572801ec48a64a18443b74606
+    layerID: 224
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 642376e42af85ef428c2f3a28239d411
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd36d3d2a117ba24187da1b7b8a209d8
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 84aa3069d5c86cc489f222c5b2c2d3ae
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "CoalDummy",
+            "price": "450"
+        },
+        {
+            "id": "ZombieOil",
+            "price": "500"
+        },
+        {
+            "id": "Magma",
+            "price": "550"
+        },
+        {
+            "id": "CopperBar",
+            "price": "600"
+        },
+        {
+            "id": "DemonicWater",
+            "price": "700"
+        },
+        {
+            "id": "BonePowder",
+            "price": "750"
+        },
+        {
+            "id": "DeathWeb",
+            "price": "770"
+        },
+        {
+            "id": "ScaleBundle",
+            "price": "850"
+        },
+        {
+            "id": "IronBar",
+            "price": "900"
+        },
+        {
+            "id": "BloodyPoison",
+            "price": "950"
+        },
+        {
+            "id": "DemonicPoison",
+            "price": "980"
+        }
+    ]
+}

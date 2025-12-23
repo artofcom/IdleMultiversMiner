@@ -1,0 +1,28 @@
+{
+    "id": "Goal",
+    "rootId": "GoalSection_0_Reset",
+    "skillInfoPool": [
+        {
+            "name": "Game Reset",
+            "id": "GoalSection_0_Reset",
+            "abilityId": "game_reset",
+            "abilityParam": "star:15",
+            "description": "Open the ailiby to Reset the level and earn 15 Stars as rewards.",
+            "unlockCost": [
+                {
+                    "resourceId": "ringofeternal",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bookofdeath",
+                    "count": 30
+                },
+                {
+                    "resourceId": "resurrection",
+                    "count": 50
+                }
+            ],
+            "children": []
+        }
+    ]
+}

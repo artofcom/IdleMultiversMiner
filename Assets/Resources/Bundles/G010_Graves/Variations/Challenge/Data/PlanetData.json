@@ -1,0 +1,310 @@
+{
+    "data": [
+        {
+            "zoneId": 100,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Lost Soul",
+                    "openCost": "100",
+                    "obtainables": [
+                        {
+                            "resourceId": "blightedbone",
+                            "yield": 0.6499999761581421
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=50:incPercent=10000:incBase=50",
+                    "shipCost": "base=50:incPercent=10000:incBase=50",
+                    "cargoCost": "base=50:incPercent=10000:incBase=50",
+                    "shotAccuracyCost": "base=50:incPercent=10000:incBase=50",
+                    "shotIntervalCost": "base=50:incPercent=10000:incBase=50"
+                },
+                {
+                    "id": 2,
+                    "name": "Creepy Land",
+                    "openCost": "340",
+                    "obtainables": [
+                        {
+                            "resourceId": "blightedbone",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "whisperingskull",
+                            "yield": 0.4000000059604645
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=125:incPercent=12500:incBase=62",
+                    "shipCost": "base=125:incPercent=12500:incBase=62",
+                    "cargoCost": "base=125:incPercent=12500:incBase=62",
+                    "shotAccuracyCost": "base=125:incPercent=12500:incBase=62",
+                    "shotIntervalCost": "base=125:incPercent=12500:incBase=62"
+                },
+                {
+                    "id": 3,
+                    "name": "Smoke Hills",
+                    "openCost": "580",
+                    "obtainables": [
+                        {
+                            "resourceId": "hollowvisage",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "boneidol",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=200:incPercent=15000:incBase=75",
+                    "shipCost": "base=200:incPercent=15000:incBase=75",
+                    "cargoCost": "base=200:incPercent=15000:incBase=75",
+                    "shotAccuracyCost": "base=200:incPercent=15000:incBase=75",
+                    "shotIntervalCost": "base=200:incPercent=15000:incBase=75"
+                }
+            ]
+        },
+        {
+            "zoneId": 200,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Bad Soul",
+                    "openCost": "820",
+                    "obtainables": [
+                        {
+                            "resourceId": "hallowedcranium",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=275:incPercent=17500:incBase=87",
+                    "shipCost": "base=275:incPercent=17500:incBase=87",
+                    "cargoCost": "base=275:incPercent=17500:incBase=87",
+                    "shotAccuracyCost": "base=275:incPercent=17500:incBase=87",
+                    "shotIntervalCost": "base=275:incPercent=17500:incBase=87"
+                },
+                {
+                    "id": 2,
+                    "name": "Sad Land",
+                    "openCost": "1060",
+                    "obtainables": [
+                        {
+                            "resourceId": "infernalwing",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "hallowedcranium",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=350:incPercent=20000:incBase=100",
+                    "shipCost": "base=350:incPercent=20000:incBase=100",
+                    "cargoCost": "base=350:incPercent=20000:incBase=100",
+                    "shotAccuracyCost": "base=350:incPercent=20000:incBase=100",
+                    "shotIntervalCost": "base=350:incPercent=20000:incBase=100"
+                },
+                {
+                    "id": 3,
+                    "name": "Insane Field",
+                    "openCost": "1300",
+                    "obtainables": [
+                        {
+                            "resourceId": "shamansvisage",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "infernalwing",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=425:incPercent=22500:incBase=112",
+                    "shipCost": "base=425:incPercent=22500:incBase=112",
+                    "cargoCost": "base=425:incPercent=22500:incBase=112",
+                    "shotAccuracyCost": "base=425:incPercent=22500:incBase=112",
+                    "shotIntervalCost": "base=425:incPercent=22500:incBase=112"
+                }
+            ]
+        },
+        {
+            "zoneId": 300,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Cross Lane",
+                    "openCost": "1540",
+                    "obtainables": [
+                        {
+                            "resourceId": "sunfirescales",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "shamansvisage",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=500:incPercent=25000:incBase=125",
+                    "shipCost": "base=500:incPercent=25000:incBase=125",
+                    "cargoCost": "base=500:incPercent=25000:incBase=125",
+                    "shotAccuracyCost": "base=500:incPercent=25000:incBase=125",
+                    "shotIntervalCost": "base=500:incPercent=25000:incBase=125"
+                },
+                {
+                    "id": 2,
+                    "name": "Chase Grass",
+                    "openCost": "1780",
+                    "obtainables": [
+                        {
+                            "resourceId": "shamansear",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=575:incPercent=27500:incBase=137",
+                    "shipCost": "base=575:incPercent=27500:incBase=137",
+                    "cargoCost": "base=575:incPercent=27500:incBase=137",
+                    "shotAccuracyCost": "base=575:incPercent=27500:incBase=137",
+                    "shotIntervalCost": "base=575:incPercent=27500:incBase=137"
+                },
+                {
+                    "id": 3,
+                    "name": "Lost Forest",
+                    "openCost": "2020",
+                    "obtainables": [
+                        {
+                            "resourceId": "draconiccranium",
+                            "yield": 0.5
+                        },
+                        {
+                            "resourceId": "shamansear",
+                            "yield": 0.5
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=650:incPercent=30000:incBase=150",
+                    "shipCost": "base=650:incPercent=30000:incBase=150",
+                    "cargoCost": "base=650:incPercent=30000:incBase=150",
+                    "shotAccuracyCost": "base=650:incPercent=30000:incBase=150",
+                    "shotIntervalCost": "base=650:incPercent=30000:incBase=150"
+                }
+            ]
+        },
+        {
+            "zoneId": 400,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Ghost Field",
+                    "openCost": "2260",
+                    "obtainables": [
+                        {
+                            "resourceId": "infernalcodex",
+                            "yield": 1.0
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=725:incPercent=32500:incBase=162",
+                    "shipCost": "base=725:incPercent=32500:incBase=162",
+                    "cargoCost": "base=725:incPercent=32500:incBase=162",
+                    "shotAccuracyCost": "base=725:incPercent=32500:incBase=162",
+                    "shotIntervalCost": "base=725:incPercent=32500:incBase=162"
+                }
+            ]
+        },
+        {
+            "zoneId": 500,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Mad Dust",
+                    "openCost": "2500",
+                    "obtainables": [
+                        {
+                            "resourceId": "infernalcodexvol2",
+                            "yield": 1.0
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=800:incPercent=35000:incBase=175",
+                    "shipCost": "base=800:incPercent=35000:incBase=175",
+                    "cargoCost": "base=800:incPercent=35000:incBase=175",
+                    "shotAccuracyCost": "base=800:incPercent=35000:incBase=175",
+                    "shotIntervalCost": "base=800:incPercent=35000:incBase=175"
+                }
+            ]
+        },
+        {
+            "zoneId": 600,
+            "planets": [
+                {
+                    "id": 1,
+                    "name": "Peak Hills",
+                    "openCost": "2740",
+                    "obtainables": [
+                        {
+                            "resourceId": "infernalcodexvol3",
+                            "yield": 1.0
+                        }
+                    ],
+                    "miningRate": "base=1.00:incPercent=100.00:incBase=0.00",
+                    "shipSpeed": "base=0.50:incPercent=50.00:incBase=0.15",
+                    "cargoSize": "base=5.00:incPercent=500.00:incBase=0.05",
+                    "shotAccuracy": "base=0.80:incPercent=80.00:incBase=0.01",
+                    "shotInterval": "base=2.00:incPercent=100.00:incBase=-0.02",
+                    "miningCost": "base=875:incPercent=37500:incBase=187",
+                    "shipCost": "base=875:incPercent=37500:incBase=187",
+                    "cargoCost": "base=875:incPercent=37500:incBase=187",
+                    "shotAccuracyCost": "base=875:incPercent=37500:incBase=187",
+                    "shotIntervalCost": "base=875:incPercent=37500:incBase=187"
+                }
+            ]
+        }
+    ]
+}

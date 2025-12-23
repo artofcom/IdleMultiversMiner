@@ -1,0 +1,159 @@
+{
+    "recipes": [
+        {
+            "id": "Item_0",
+            "sources": [
+                {
+                    "resourceId": "droplet",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "beer",
+            "duration": 10,
+            "cost": "25"
+        },
+        {
+            "id": "Item_1",
+            "sources": [
+                {
+                    "resourceId": "spring",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "bloodwine",
+            "duration": 20,
+            "cost": "57"
+        },
+        {
+            "id": "Item_2",
+            "sources": [
+                {
+                    "resourceId": "redsand",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "bowlofhoney",
+            "duration": 30,
+            "cost": "89"
+        },
+        {
+            "id": "Item_3",
+            "sources": [
+                {
+                    "resourceId": "bearleather",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "furboots",
+            "duration": 40,
+            "cost": "122"
+        },
+        {
+            "id": "Item_4",
+            "sources": [
+                {
+                    "resourceId": "ironingot",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "furgloves",
+            "duration": 50,
+            "cost": "154"
+        },
+        {
+            "id": "Item_5",
+            "sources": [
+                {
+                    "resourceId": "steelingot",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "mechaincsgoggle",
+            "duration": 60,
+            "cost": "187"
+        },
+        {
+            "id": "Item_6",
+            "sources": [
+                {
+                    "resourceId": "essenceofwater",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "furhat",
+            "duration": 70,
+            "cost": "219"
+        },
+        {
+            "id": "Item_7",
+            "sources": [
+                {
+                    "resourceId": "jadeingot",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "metalgear",
+            "duration": 80,
+            "cost": "252"
+        },
+        {
+            "id": "Item_8",
+            "sources": [
+                {
+                    "resourceId": "goldingot",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "leatherroll",
+            "duration": 90,
+            "cost": "284"
+        },
+        {
+            "id": "Item_9",
+            "sources": [
+                {
+                    "resourceId": "goldenmane",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "firetome",
+            "duration": 100,
+            "cost": "317"
+        },
+        {
+            "id": "Item_10",
+            "sources": [
+                {
+                    "resourceId": "enchantedingot",
+                    "count": 100
+                }
+            ],
+            "outcomeId": "lavablade",
+            "duration": 110,
+            "cost": "349"
+        },
+        {
+            "id": "Item_11",
+            "sources": [
+                {
+                    "resourceId": "enchantedingot",
+                    "count": 15
+                },
+                {
+                    "resourceId": "runestone",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "icespellscroll",
+            "duration": 120,
+            "cost": "382"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "30",
+        "50"
+    ]
+}

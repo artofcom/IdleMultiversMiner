@@ -1,0 +1,2814 @@
+fileFormatVersion: 2
+guid: 81cf86c2ccec08641a948b96916ffae4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320721
+  packageName: 'TileScape Collection: Stylized 2D Isometric Tileset'
+  packageVersion: 1.0
+  assetPath: Assets/TileScape Collection Stylized 2D Isometric Tileset/TileScape
+    Stylized 2D Isometric Desert Tileset/Demo/Preview/Pattern.psb
+  uploadId: 759399
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Desert_Pattern_023
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 2653
+      width: 328
+      height: 195
+    spriteID: 7d537b3fe2df9764b8ea5695925e4991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 384, y: 2653}
+    spritePosition: {x: 0, y: 885}
+  - name: Desert_Pattern_022
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 2994
+      width: 190
+      height: 81
+    spriteID: ce6eadfd024444c45af1c2aa0d891e6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 2994}
+    spritePosition: {x: 1252, y: 39}
+  - name: Desert_Pattern_021
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 503
+      y: 2392
+      width: 222
+      height: 58
+    spriteID: 7f1f4c0f8600e5448b4d95015de69a6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 503, y: 2392}
+    spritePosition: {x: 1009, y: 22}
+  - name: Desert_Pattern_020
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1242
+      y: 2653
+      width: 365
+      height: 107
+    spriteID: 8e3f48a6d4f754e45b5ee7c207c45441
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1242, y: 2653}
+    spritePosition: {x: 1113, y: 156}
+  - name: Desert_Pattern_019
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1162
+      y: 2856
+      width: 196
+      height: 104
+    spriteID: 88ebf27b433877a47a47b1d414cf7033
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1162, y: 2856}
+    spritePosition: {x: 823, y: 656}
+  - name: Desert_Pattern_018
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1469
+      y: 2458
+      width: 364
+      height: 135
+    spriteID: 3e1744ad590cd4f458d607c233fb211a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1469, y: 2458}
+    spritePosition: {x: 925, y: 736}
+  - name: Desert_Pattern_017
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1891
+      y: 2653
+      width: 151
+      height: 85
+    spriteID: be396835566d8ff44b3652c343b15348
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1891, y: 2653}
+    spritePosition: {x: 1140, y: 473}
+  - name: Desert_Pattern_016
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1615
+      y: 2653
+      width: 268
+      height: 136
+    spriteID: 771faba6e190b314d9238e423a8389e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1615, y: 2653}
+    spritePosition: {x: 1023, y: 578}
+  - name: Desert_Pattern_015
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1144
+      y: 2458
+      width: 317
+      height: 184
+    spriteID: 626a257759db47d4680c8e2d838cd177
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1144, y: 2458}
+    spritePosition: {x: 971, y: 285}
+  - name: Desert_Pattern_014
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2653
+      width: 372
+      height: 195
+    spriteID: 3fbed0b5b61459f4b8de2fc1568f8212
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2653}
+    spritePosition: {x: 1026, y: 862}
+  - name: Desert_Pattern_013
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 975
+      y: 2653
+      width: 259
+      height: 154
+    spriteID: 1735998917eb3e9419ab99401a3a6d57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 975, y: 2653}
+    spritePosition: {x: 155, y: 17}
+  - name: Desert_Pattern_012
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1003
+      y: 2180
+      width: 492
+      height: 198
+    spriteID: d3a13b126e4cffe4c813a9523635d7a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1003, y: 2180}
+    spritePosition: {x: 517, y: 12}
+  - name: Desert_Pattern_011
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 402
+      y: 2458
+      width: 381
+      height: 180
+    spriteID: ba9ac4b1dcb2ab849a0ed83fffac21d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 402, y: 2458}
+    spritePosition: {x: 327, y: 180}
+  - name: Desert_Pattern_010
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 2180
+      width: 433
+      height: 192
+    spriteID: ac0677230edcb044c83b65505fd42473
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1503, y: 2180}
+    spritePosition: {x: 607, y: 849}
+  - name: Desert_Pattern_009
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 503
+      y: 2180
+      width: 492
+      height: 204
+    spriteID: e68a398ec53a0bc4187b673f4dff410f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 503, y: 2180}
+    spritePosition: {x: 380, y: 645}
+  - name: Desert_Pattern_008
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 279
+      y: 2856
+      width: 213
+      height: 126
+    spriteID: cb0e9c3a9a564624e9d30641ec4ea977
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 279, y: 2856}
+    spritePosition: {x: 1289, y: 692}
+  - name: Desert_Pattern_007
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2856
+      width: 267
+      height: 130
+    spriteID: f4e7d84850a7ad549bdfb8e391078717
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2856}
+    spritePosition: {x: 1358, y: 502}
+  - name: Desert_Pattern_006
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 748
+      y: 2856
+      width: 222
+      height: 105
+    spriteID: 916b7fde6cd517a47ab46085c8880034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 748, y: 2856}
+    spritePosition: {x: 1625, y: 646}
+  - name: Desert_Pattern_005
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 491
+      height: 270
+    spriteID: 65d3cfefe9a1d2741827fbd26fb6f688
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1429, y: 810}
+  - name: Desert_Pattern_004
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1566
+      y: 2856
+      width: 194
+      height: 103
+    spriteID: a6638eb784010ca48ab2c68c9c1693ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1566, y: 2856}
+    spritePosition: {x: 1653, y: 459}
+  - name: Desert_Pattern_003
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3187
+      width: 156
+      height: 91
+    spriteID: 67e166f2339b1ab46ba9351d0bd25815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3187}
+    spritePosition: {x: 1718, y: 300}
+  - name: Desert_Pattern_002
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1366
+      y: 2856
+      width: 192
+      height: 106
+    spriteID: 86f242ea997505044a261c36767378fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1366, y: 2856}
+    spritePosition: {x: 1427, y: 307}
+  - name: Desert_Pattern_001
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2458
+      width: 390
+      height: 187
+    spriteID: f177c8c8b96e6c6499bcb622a7546f24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2458}
+    spritePosition: {x: 1505, y: 48}
+  - name: Desert_Hill_Stone_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1452
+      y: 2768
+      width: 94
+      height: 71
+    spriteID: d60b419147bf3f44c8d39281baedece8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1452, y: 2768}
+    spritePosition: {x: 1019, y: 523}
+  - name: Desert_Hill_Stone_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2180
+      width: 68
+      height: 77
+    spriteID: 74b27298235da60479d4d39a2dcfdc63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2180}
+    spritePosition: {x: 1007, y: 180}
+  - name: Desert_Hill_Stone_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1891
+      y: 2746
+      width: 92
+      height: 64
+    spriteID: 48d37dfac8165c54c9e8f6e7f7fcbf26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1891, y: 2746}
+    spritePosition: {x: 925, y: 328}
+  - name: Desert_Hill_Stone_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2329
+      width: 60
+      height: 48
+    spriteID: ed0f09d678360ad4cb0bc6191597d158
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2329}
+    spritePosition: {x: 902, y: 476}
+  - name: Desert_Hill_Stone_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2265
+      width: 67
+      height: 56
+    spriteID: bae0c3ce3f1472c48b3dd0b04e053447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2265}
+    spritePosition: {x: 792, y: 257}
+  - name: Desert_Hill_Stone_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3089
+      width: 160
+      height: 90
+    spriteID: 748202380b4da50499201a6fdaa4754f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3089}
+    spritePosition: {x: 792, y: 559}
+  - name: Desert_Hill_Stone_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2994
+      width: 211
+      height: 87
+    spriteID: b8b914f04332a644a8742c93962395b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2994}
+    spritePosition: {x: 658, y: 377}
+  - name: Desert_Hill_Stone_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1242
+      y: 2768
+      width: 202
+      height: 77
+    spriteID: db911a5c78ddd4741bbf715ad756babe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1242, y: 2768}
+    spritePosition: {x: 518, y: 529}
+  - name: Desert_Pattern_031
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1945
+      y: 2856
+      width: 92
+      height: 93
+    spriteID: acb1db22181848d42b4f8f7324bd4e2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1945, y: 2856}
+    spritePosition: {x: 471, y: 380}
+  - name: Desert_Pattern_030
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3286
+      width: 113
+      height: 104
+    spriteID: 1cba189258182e840a5a971766d89871
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3286}
+    spritePosition: {x: 345, y: 500}
+  - name: Desert_Pattern_029
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1841
+      y: 2458
+      width: 184
+      height: 128
+    spriteID: 829108231fafe6447995720e5c02f6a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1841, y: 2458}
+    spritePosition: {x: 0, y: 162}
+  - name: Desert_Pattern_028
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1768
+      y: 2856
+      width: 169
+      height: 116
+    spriteID: e0304b7f21776b14aa8a86011d1ded1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1768, y: 2856}
+    spritePosition: {x: 28, y: 348}
+  - name: Desert_Pattern_027
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 978
+      y: 2856
+      width: 176
+      height: 116
+    spriteID: a5cea225e19f3bf4e86bd8f00a03c822
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 2856}
+    spritePosition: {x: 196, y: 322}
+  - name: Desert_Pattern_026
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 2856
+      width: 240
+      height: 100
+    spriteID: 6ad1f34c4f06a64448ad22695a3b7e5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 2856}
+    spritePosition: {x: 328, y: 878}
+  - name: Desert_Pattern_025
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 791
+      y: 2458
+      width: 345
+      height: 187
+    spriteID: b6557d5ceba33004794f020365200cdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 791, y: 2458}
+    spritePosition: {x: 0, y: 675}
+  - name: Desert_Pattern_024
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 720
+      y: 2653
+      width: 247
+      height: 187
+    spriteID: 5a5bea4eaab6417419eef741f75937d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 720, y: 2653}
+    spritePosition: {x: 41, y: 459}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 80f729aeefec70040bccd73c7f789679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: a26e269cd3907fc4d8b873cc4f1f3224
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  rigSpriteImportData:
+  - name: Desert_Pattern_023
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 2653
+      width: 328
+      height: 195
+    spriteID: 7d537b3fe2df9764b8ea5695925e4991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 384, y: 2653}
+    spritePosition: {x: 0, y: 885}
+  - name: Desert_Pattern_022
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 2994
+      width: 190
+      height: 81
+    spriteID: ce6eadfd024444c45af1c2aa0d891e6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 2994}
+    spritePosition: {x: 1252, y: 39}
+  - name: Desert_Pattern_021
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 503
+      y: 2392
+      width: 222
+      height: 58
+    spriteID: 7f1f4c0f8600e5448b4d95015de69a6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 503, y: 2392}
+    spritePosition: {x: 1009, y: 22}
+  - name: Desert_Pattern_020
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1242
+      y: 2653
+      width: 365
+      height: 107
+    spriteID: 8e3f48a6d4f754e45b5ee7c207c45441
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1242, y: 2653}
+    spritePosition: {x: 1113, y: 156}
+  - name: Desert_Pattern_019
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1162
+      y: 2856
+      width: 196
+      height: 104
+    spriteID: 88ebf27b433877a47a47b1d414cf7033
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1162, y: 2856}
+    spritePosition: {x: 823, y: 656}
+  - name: Desert_Pattern_018
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1469
+      y: 2458
+      width: 364
+      height: 135
+    spriteID: 3e1744ad590cd4f458d607c233fb211a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1469, y: 2458}
+    spritePosition: {x: 925, y: 736}
+  - name: Desert_Pattern_017
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1891
+      y: 2653
+      width: 151
+      height: 85
+    spriteID: be396835566d8ff44b3652c343b15348
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1891, y: 2653}
+    spritePosition: {x: 1140, y: 473}
+  - name: Desert_Pattern_016
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1615
+      y: 2653
+      width: 268
+      height: 136
+    spriteID: 771faba6e190b314d9238e423a8389e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1615, y: 2653}
+    spritePosition: {x: 1023, y: 578}
+  - name: Desert_Pattern_015
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1144
+      y: 2458
+      width: 317
+      height: 184
+    spriteID: 626a257759db47d4680c8e2d838cd177
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1144, y: 2458}
+    spritePosition: {x: 971, y: 285}
+  - name: Desert_Pattern_014
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2653
+      width: 372
+      height: 195
+    spriteID: 3fbed0b5b61459f4b8de2fc1568f8212
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2653}
+    spritePosition: {x: 1026, y: 862}
+  - name: Desert_Pattern_013
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 975
+      y: 2653
+      width: 259
+      height: 154
+    spriteID: 1735998917eb3e9419ab99401a3a6d57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 975, y: 2653}
+    spritePosition: {x: 155, y: 17}
+  - name: Desert_Pattern_012
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1003
+      y: 2180
+      width: 492
+      height: 198
+    spriteID: d3a13b126e4cffe4c813a9523635d7a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1003, y: 2180}
+    spritePosition: {x: 517, y: 12}
+  - name: Desert_Pattern_011
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 402
+      y: 2458
+      width: 381
+      height: 180
+    spriteID: ba9ac4b1dcb2ab849a0ed83fffac21d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 402, y: 2458}
+    spritePosition: {x: 327, y: 180}
+  - name: Desert_Pattern_010
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 2180
+      width: 433
+      height: 192
+    spriteID: ac0677230edcb044c83b65505fd42473
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1503, y: 2180}
+    spritePosition: {x: 607, y: 849}
+  - name: Desert_Pattern_009
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 503
+      y: 2180
+      width: 492
+      height: 204
+    spriteID: e68a398ec53a0bc4187b673f4dff410f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 503, y: 2180}
+    spritePosition: {x: 380, y: 645}
+  - name: Desert_Pattern_008
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 279
+      y: 2856
+      width: 213
+      height: 126
+    spriteID: cb0e9c3a9a564624e9d30641ec4ea977
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 279, y: 2856}
+    spritePosition: {x: 1289, y: 692}
+  - name: Desert_Pattern_007
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2856
+      width: 267
+      height: 130
+    spriteID: f4e7d84850a7ad549bdfb8e391078717
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2856}
+    spritePosition: {x: 1358, y: 502}
+  - name: Desert_Pattern_006
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 748
+      y: 2856
+      width: 222
+      height: 105
+    spriteID: 916b7fde6cd517a47ab46085c8880034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 748, y: 2856}
+    spritePosition: {x: 1625, y: 646}
+  - name: Desert_Pattern_005
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2180
+      width: 491
+      height: 270
+    spriteID: 65d3cfefe9a1d2741827fbd26fb6f688
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2180}
+    spritePosition: {x: 1429, y: 810}
+  - name: Desert_Pattern_004
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1566
+      y: 2856
+      width: 194
+      height: 103
+    spriteID: a6638eb784010ca48ab2c68c9c1693ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1566, y: 2856}
+    spritePosition: {x: 1653, y: 459}
+  - name: Desert_Pattern_003
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3187
+      width: 156
+      height: 91
+    spriteID: 67e166f2339b1ab46ba9351d0bd25815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3187}
+    spritePosition: {x: 1718, y: 300}
+  - name: Desert_Pattern_002
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1366
+      y: 2856
+      width: 192
+      height: 106
+    spriteID: 86f242ea997505044a261c36767378fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1366, y: 2856}
+    spritePosition: {x: 1427, y: 307}
+  - name: Desert_Pattern_001
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2458
+      width: 390
+      height: 187
+    spriteID: f177c8c8b96e6c6499bcb622a7546f24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2458}
+    spritePosition: {x: 1505, y: 48}
+  - name: Desert_Hill_Stone_08
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1452
+      y: 2768
+      width: 94
+      height: 71
+    spriteID: d60b419147bf3f44c8d39281baedece8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1452, y: 2768}
+    spritePosition: {x: 1019, y: 523}
+  - name: Desert_Hill_Stone_07
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2180
+      width: 68
+      height: 77
+    spriteID: 74b27298235da60479d4d39a2dcfdc63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2180}
+    spritePosition: {x: 1007, y: 180}
+  - name: Desert_Hill_Stone_06
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1891
+      y: 2746
+      width: 92
+      height: 64
+    spriteID: 48d37dfac8165c54c9e8f6e7f7fcbf26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1891, y: 2746}
+    spritePosition: {x: 925, y: 328}
+  - name: Desert_Hill_Stone_05
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2329
+      width: 60
+      height: 48
+    spriteID: ed0f09d678360ad4cb0bc6191597d158
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2329}
+    spritePosition: {x: 902, y: 476}
+  - name: Desert_Hill_Stone_04
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 2265
+      width: 67
+      height: 56
+    spriteID: bae0c3ce3f1472c48b3dd0b04e053447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 2265}
+    spritePosition: {x: 792, y: 257}
+  - name: Desert_Hill_Stone_03
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3089
+      width: 160
+      height: 90
+    spriteID: 748202380b4da50499201a6fdaa4754f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3089}
+    spritePosition: {x: 792, y: 559}
+  - name: Desert_Hill_Stone_02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2994
+      width: 211
+      height: 87
+    spriteID: b8b914f04332a644a8742c93962395b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2994}
+    spritePosition: {x: 658, y: 377}
+  - name: Desert_Hill_Stone_01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1242
+      y: 2768
+      width: 202
+      height: 77
+    spriteID: db911a5c78ddd4741bbf715ad756babe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1242, y: 2768}
+    spritePosition: {x: 518, y: 529}
+  - name: Desert_Pattern_031
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1945
+      y: 2856
+      width: 92
+      height: 93
+    spriteID: acb1db22181848d42b4f8f7324bd4e2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1945, y: 2856}
+    spritePosition: {x: 471, y: 380}
+  - name: Desert_Pattern_030
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3286
+      width: 113
+      height: 104
+    spriteID: 1cba189258182e840a5a971766d89871
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3286}
+    spritePosition: {x: 345, y: 500}
+  - name: Desert_Pattern_029
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1841
+      y: 2458
+      width: 184
+      height: 128
+    spriteID: 829108231fafe6447995720e5c02f6a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1841, y: 2458}
+    spritePosition: {x: 0, y: 162}
+  - name: Desert_Pattern_028
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1768
+      y: 2856
+      width: 169
+      height: 116
+    spriteID: e0304b7f21776b14aa8a86011d1ded1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1768, y: 2856}
+    spritePosition: {x: 28, y: 348}
+  - name: Desert_Pattern_027
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 978
+      y: 2856
+      width: 176
+      height: 116
+    spriteID: a5cea225e19f3bf4e86bd8f00a03c822
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 2856}
+    spritePosition: {x: 196, y: 322}
+  - name: Desert_Pattern_026
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 2856
+      width: 240
+      height: 100
+    spriteID: 6ad1f34c4f06a64448ad22695a3b7e5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 2856}
+    spritePosition: {x: 328, y: 878}
+  - name: Desert_Pattern_025
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 791
+      y: 2458
+      width: 345
+      height: 187
+    spriteID: b6557d5ceba33004794f020365200cdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 791, y: 2458}
+    spritePosition: {x: 0, y: 675}
+  - name: Desert_Pattern_024
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 720
+      y: 2653
+      width: 247
+      height: 187
+    spriteID: 5a5bea4eaab6417419eef741f75937d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 720, y: 2653}
+    spritePosition: {x: 41, y: 459}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 80f729aeefec70040bccd73c7f789679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: a26e269cd3907fc4d8b873cc4f1f3224
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Desert_Pattern_023
+    spriteName: Desert_Pattern_023
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d537b3fe2df9764b8ea5695925e4991
+    layerID: 296
+    mosaicPosition: {x: 384, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_022
+    spriteName: Desert_Pattern_022
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ce6eadfd024444c45af1c2aa0d891e6a
+    layerID: 295
+    mosaicPosition: {x: 223, y: 2994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_021
+    spriteName: Desert_Pattern_021
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f1f4c0f8600e5448b4d95015de69a6d
+    layerID: 294
+    mosaicPosition: {x: 503, y: 2392}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_020
+    spriteName: Desert_Pattern_020
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e3f48a6d4f754e45b5ee7c207c45441
+    layerID: 293
+    mosaicPosition: {x: 1242, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_019
+    spriteName: Desert_Pattern_019
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 88ebf27b433877a47a47b1d414cf7033
+    layerID: 292
+    mosaicPosition: {x: 1162, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_018
+    spriteName: Desert_Pattern_018
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3e1744ad590cd4f458d607c233fb211a
+    layerID: 291
+    mosaicPosition: {x: 1469, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_017
+    spriteName: Desert_Pattern_017
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be396835566d8ff44b3652c343b15348
+    layerID: 290
+    mosaicPosition: {x: 1891, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_016
+    spriteName: Desert_Pattern_016
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 771faba6e190b314d9238e423a8389e4
+    layerID: 289
+    mosaicPosition: {x: 1615, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_015
+    spriteName: Desert_Pattern_015
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 626a257759db47d4680c8e2d838cd177
+    layerID: 288
+    mosaicPosition: {x: 1144, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_014
+    spriteName: Desert_Pattern_014
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3fbed0b5b61459f4b8de2fc1568f8212
+    layerID: 287
+    mosaicPosition: {x: 4, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_013
+    spriteName: Desert_Pattern_013
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1735998917eb3e9419ab99401a3a6d57
+    layerID: 286
+    mosaicPosition: {x: 975, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_012
+    spriteName: Desert_Pattern_012
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3a13b126e4cffe4c813a9523635d7a9
+    layerID: 285
+    mosaicPosition: {x: 1003, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_011
+    spriteName: Desert_Pattern_011
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ba9ac4b1dcb2ab849a0ed83fffac21d0
+    layerID: 284
+    mosaicPosition: {x: 402, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_010
+    spriteName: Desert_Pattern_010
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac0677230edcb044c83b65505fd42473
+    layerID: 283
+    mosaicPosition: {x: 1503, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_009
+    spriteName: Desert_Pattern_009
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e68a398ec53a0bc4187b673f4dff410f
+    layerID: 282
+    mosaicPosition: {x: 503, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_008
+    spriteName: Desert_Pattern_008
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb0e9c3a9a564624e9d30641ec4ea977
+    layerID: 281
+    mosaicPosition: {x: 279, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_007
+    spriteName: Desert_Pattern_007
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f4e7d84850a7ad549bdfb8e391078717
+    layerID: 280
+    mosaicPosition: {x: 4, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_006
+    spriteName: Desert_Pattern_006
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 916b7fde6cd517a47ab46085c8880034
+    layerID: 279
+    mosaicPosition: {x: 748, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_005
+    spriteName: Desert_Pattern_005
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65d3cfefe9a1d2741827fbd26fb6f688
+    layerID: 278
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_004
+    spriteName: Desert_Pattern_004
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a6638eb784010ca48ab2c68c9c1693ee
+    layerID: 277
+    mosaicPosition: {x: 1566, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_003
+    spriteName: Desert_Pattern_003
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 67e166f2339b1ab46ba9351d0bd25815
+    layerID: 276
+    mosaicPosition: {x: 4, y: 3187}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_002
+    spriteName: Desert_Pattern_002
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 86f242ea997505044a261c36767378fb
+    layerID: 275
+    mosaicPosition: {x: 1366, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_001
+    spriteName: Desert_Pattern_001
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f177c8c8b96e6c6499bcb622a7546f24
+    layerID: 274
+    mosaicPosition: {x: 4, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_08
+    spriteName: Desert_Hill_Stone_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d60b419147bf3f44c8d39281baedece8
+    layerID: 273
+    mosaicPosition: {x: 1452, y: 2768}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_07
+    spriteName: Desert_Hill_Stone_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 74b27298235da60479d4d39a2dcfdc63
+    layerID: 272
+    mosaicPosition: {x: 1944, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_06
+    spriteName: Desert_Hill_Stone_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 48d37dfac8165c54c9e8f6e7f7fcbf26
+    layerID: 271
+    mosaicPosition: {x: 1891, y: 2746}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_05
+    spriteName: Desert_Hill_Stone_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed0f09d678360ad4cb0bc6191597d158
+    layerID: 270
+    mosaicPosition: {x: 1944, y: 2329}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_04
+    spriteName: Desert_Hill_Stone_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bae0c3ce3f1472c48b3dd0b04e053447
+    layerID: 269
+    mosaicPosition: {x: 1944, y: 2265}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_03
+    spriteName: Desert_Hill_Stone_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 748202380b4da50499201a6fdaa4754f
+    layerID: 268
+    mosaicPosition: {x: 4, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_02
+    spriteName: Desert_Hill_Stone_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b8b914f04332a644a8742c93962395b0
+    layerID: 267
+    mosaicPosition: {x: 4, y: 2994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_01
+    spriteName: Desert_Hill_Stone_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db911a5c78ddd4741bbf715ad756babe
+    layerID: 266
+    mosaicPosition: {x: 1242, y: 2768}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_031
+    spriteName: Desert_Pattern_031
+    isGroup: 0
+    parentIndex: -1
+    spriteID: acb1db22181848d42b4f8f7324bd4e2a
+    layerID: 265
+    mosaicPosition: {x: 1945, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_030
+    spriteName: Desert_Pattern_030
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1cba189258182e840a5a971766d89871
+    layerID: 264
+    mosaicPosition: {x: 4, y: 3286}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_029
+    spriteName: Desert_Pattern_029
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 829108231fafe6447995720e5c02f6a3
+    layerID: 263
+    mosaicPosition: {x: 1841, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_028
+    spriteName: Desert_Pattern_028
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0304b7f21776b14aa8a86011d1ded1c
+    layerID: 262
+    mosaicPosition: {x: 1768, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_027
+    spriteName: Desert_Pattern_027
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a5cea225e19f3bf4e86bd8f00a03c822
+    layerID: 261
+    mosaicPosition: {x: 978, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_026
+    spriteName: Desert_Pattern_026
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ad1f34c4f06a64448ad22695a3b7e5d
+    layerID: 260
+    mosaicPosition: {x: 500, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_025
+    spriteName: Desert_Pattern_025
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6557d5ceba33004794f020365200cdd
+    layerID: 259
+    mosaicPosition: {x: 791, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_024
+    spriteName: Desert_Pattern_024
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a5bea4eaab6417419eef741f75937d5
+    layerID: 258
+    mosaicPosition: {x: 720, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fff3a0822b3f60c45822f0129ca9e0d5
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80f729aeefec70040bccd73c7f789679
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a26e269cd3907fc4d8b873cc4f1f3224
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Desert_Pattern_023
+    spriteName: Desert_Pattern_023
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d537b3fe2df9764b8ea5695925e4991
+    layerID: 296
+    mosaicPosition: {x: 384, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_022
+    spriteName: Desert_Pattern_022
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ce6eadfd024444c45af1c2aa0d891e6a
+    layerID: 295
+    mosaicPosition: {x: 223, y: 2994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_021
+    spriteName: Desert_Pattern_021
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f1f4c0f8600e5448b4d95015de69a6d
+    layerID: 294
+    mosaicPosition: {x: 503, y: 2392}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_020
+    spriteName: Desert_Pattern_020
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e3f48a6d4f754e45b5ee7c207c45441
+    layerID: 293
+    mosaicPosition: {x: 1242, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_019
+    spriteName: Desert_Pattern_019
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 88ebf27b433877a47a47b1d414cf7033
+    layerID: 292
+    mosaicPosition: {x: 1162, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_018
+    spriteName: Desert_Pattern_018
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3e1744ad590cd4f458d607c233fb211a
+    layerID: 291
+    mosaicPosition: {x: 1469, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_017
+    spriteName: Desert_Pattern_017
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be396835566d8ff44b3652c343b15348
+    layerID: 290
+    mosaicPosition: {x: 1891, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_016
+    spriteName: Desert_Pattern_016
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 771faba6e190b314d9238e423a8389e4
+    layerID: 289
+    mosaicPosition: {x: 1615, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_015
+    spriteName: Desert_Pattern_015
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 626a257759db47d4680c8e2d838cd177
+    layerID: 288
+    mosaicPosition: {x: 1144, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_014
+    spriteName: Desert_Pattern_014
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3fbed0b5b61459f4b8de2fc1568f8212
+    layerID: 287
+    mosaicPosition: {x: 4, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_013
+    spriteName: Desert_Pattern_013
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1735998917eb3e9419ab99401a3a6d57
+    layerID: 286
+    mosaicPosition: {x: 975, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_012
+    spriteName: Desert_Pattern_012
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d3a13b126e4cffe4c813a9523635d7a9
+    layerID: 285
+    mosaicPosition: {x: 1003, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_011
+    spriteName: Desert_Pattern_011
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ba9ac4b1dcb2ab849a0ed83fffac21d0
+    layerID: 284
+    mosaicPosition: {x: 402, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_010
+    spriteName: Desert_Pattern_010
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac0677230edcb044c83b65505fd42473
+    layerID: 283
+    mosaicPosition: {x: 1503, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_009
+    spriteName: Desert_Pattern_009
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e68a398ec53a0bc4187b673f4dff410f
+    layerID: 282
+    mosaicPosition: {x: 503, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_008
+    spriteName: Desert_Pattern_008
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb0e9c3a9a564624e9d30641ec4ea977
+    layerID: 281
+    mosaicPosition: {x: 279, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_007
+    spriteName: Desert_Pattern_007
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f4e7d84850a7ad549bdfb8e391078717
+    layerID: 280
+    mosaicPosition: {x: 4, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_006
+    spriteName: Desert_Pattern_006
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 916b7fde6cd517a47ab46085c8880034
+    layerID: 279
+    mosaicPosition: {x: 748, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_005
+    spriteName: Desert_Pattern_005
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65d3cfefe9a1d2741827fbd26fb6f688
+    layerID: 278
+    mosaicPosition: {x: 4, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_004
+    spriteName: Desert_Pattern_004
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a6638eb784010ca48ab2c68c9c1693ee
+    layerID: 277
+    mosaicPosition: {x: 1566, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_003
+    spriteName: Desert_Pattern_003
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 67e166f2339b1ab46ba9351d0bd25815
+    layerID: 276
+    mosaicPosition: {x: 4, y: 3187}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_002
+    spriteName: Desert_Pattern_002
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 86f242ea997505044a261c36767378fb
+    layerID: 275
+    mosaicPosition: {x: 1366, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_001
+    spriteName: Desert_Pattern_001
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f177c8c8b96e6c6499bcb622a7546f24
+    layerID: 274
+    mosaicPosition: {x: 4, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_08
+    spriteName: Desert_Hill_Stone_08
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d60b419147bf3f44c8d39281baedece8
+    layerID: 273
+    mosaicPosition: {x: 1452, y: 2768}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_07
+    spriteName: Desert_Hill_Stone_07
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 74b27298235da60479d4d39a2dcfdc63
+    layerID: 272
+    mosaicPosition: {x: 1944, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_06
+    spriteName: Desert_Hill_Stone_06
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 48d37dfac8165c54c9e8f6e7f7fcbf26
+    layerID: 271
+    mosaicPosition: {x: 1891, y: 2746}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_05
+    spriteName: Desert_Hill_Stone_05
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed0f09d678360ad4cb0bc6191597d158
+    layerID: 270
+    mosaicPosition: {x: 1944, y: 2329}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_04
+    spriteName: Desert_Hill_Stone_04
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bae0c3ce3f1472c48b3dd0b04e053447
+    layerID: 269
+    mosaicPosition: {x: 1944, y: 2265}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_03
+    spriteName: Desert_Hill_Stone_03
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 748202380b4da50499201a6fdaa4754f
+    layerID: 268
+    mosaicPosition: {x: 4, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_02
+    spriteName: Desert_Hill_Stone_02
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b8b914f04332a644a8742c93962395b0
+    layerID: 267
+    mosaicPosition: {x: 4, y: 2994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Hill_Stone_01
+    spriteName: Desert_Hill_Stone_01
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db911a5c78ddd4741bbf715ad756babe
+    layerID: 266
+    mosaicPosition: {x: 1242, y: 2768}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_031
+    spriteName: Desert_Pattern_031
+    isGroup: 0
+    parentIndex: -1
+    spriteID: acb1db22181848d42b4f8f7324bd4e2a
+    layerID: 265
+    mosaicPosition: {x: 1945, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_030
+    spriteName: Desert_Pattern_030
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1cba189258182e840a5a971766d89871
+    layerID: 264
+    mosaicPosition: {x: 4, y: 3286}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_029
+    spriteName: Desert_Pattern_029
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 829108231fafe6447995720e5c02f6a3
+    layerID: 263
+    mosaicPosition: {x: 1841, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_028
+    spriteName: Desert_Pattern_028
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0304b7f21776b14aa8a86011d1ded1c
+    layerID: 262
+    mosaicPosition: {x: 1768, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_027
+    spriteName: Desert_Pattern_027
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a5cea225e19f3bf4e86bd8f00a03c822
+    layerID: 261
+    mosaicPosition: {x: 978, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_026
+    spriteName: Desert_Pattern_026
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ad1f34c4f06a64448ad22695a3b7e5d
+    layerID: 260
+    mosaicPosition: {x: 500, y: 2856}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_025
+    spriteName: Desert_Pattern_025
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6557d5ceba33004794f020365200cdd
+    layerID: 259
+    mosaicPosition: {x: 791, y: 2458}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Desert_Pattern_024
+    spriteName: Desert_Pattern_024
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a5bea4eaab6417419eef741f75937d5
+    layerID: 258
+    mosaicPosition: {x: 720, y: 2653}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fff3a0822b3f60c45822f0129ca9e0d5
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 80f729aeefec70040bccd73c7f789679
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a26e269cd3907fc4d8b873cc4f1f3224
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

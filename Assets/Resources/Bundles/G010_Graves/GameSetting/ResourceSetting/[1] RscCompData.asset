@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19914a3f21d90f4f8ba6aad22a9454b, type: 3}
+  m_Name: '[1] RscCompData'
+  m_EditorClassIdentifier: 
+  baseValue: 900
+  rarity: 0.1
+  resourceSets:
+  - icon: {fileID: 21300000, guid: 814eb0fbaa4576d4f9a112dced12676b, type: 3}
+    resourceInfo:
+      id: gravewalkersfoot
+      price: 900
+  - icon: {fileID: 21300000, guid: 5c4c23dfca6aa0b45b224474002ca4fe, type: 3}
+    resourceInfo:
+      id: wyrmsclaw
+      price: 990
+  - icon: {fileID: 21300000, guid: 8f072e1bd8e394e46a77476dcd79db48, type: 3}
+    resourceInfo:
+      id: prophetsomen
+      price: 1080
+  - icon: {fileID: 21300000, guid: c98d7666658efb44cb6a98ee3da453f6, type: 3}
+    resourceInfo:
+      id: nightwing
+      price: 1170
+  - icon: {fileID: 21300000, guid: 4526f733aea9d584aa0f7fd5169dbbba, type: 3}
+    resourceInfo:
+      id: vileconcoction
+      price: 1260
+  - icon: {fileID: 21300000, guid: afadd295c9ce3ee4eb82a6096a47c948, type: 3}
+    resourceInfo:
+      id: puppetoftorment
+      price: 1350
+  - icon: {fileID: 21300000, guid: cd18b9661f296714297a19540b3d16fa, type: 3}
+    resourceInfo:
+      id: scorchedchart
+      price: 1440
+  - icon: {fileID: 21300000, guid: 8845af3ceaaa44a4187a0c929ffc6080, type: 3}
+    resourceInfo:
+      id: whisperplumeparrot
+      price: 1530
+  - icon: {fileID: 21300000, guid: b32b2751e08d8eb4fba5e209bb8ebede, type: 3}
+    resourceInfo:
+      id: witchlightwax
+      price: 1620
+  - icon: {fileID: 21300000, guid: 77a628f36c178fd46a53552fc005bdd2, type: 3}
+    resourceInfo:
+      id: embergourd
+      price: 1710

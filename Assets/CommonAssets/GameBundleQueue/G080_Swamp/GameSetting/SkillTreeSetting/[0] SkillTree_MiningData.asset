@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33810e96598805e48a6820a6e5305665, type: 3}
+  m_Name: '[0] SkillTree_MiningData'
+  m_EditorClassIdentifier: 
+  categoryId: mining
+  skillInfoList:
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 01 Manual Booster
+      id: 100
+      abilityId: mining_zone_buff
+      abilityParam: 100:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: coal
+        count: 2
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 02
+      id: 110
+      abilityId: unlock_zone
+      abilityParam: 200
+      description: Desc
+      unlockCost:
+      - resourceId: zombieOil
+        count: 500
+      - resourceId: resurrection
+        count: 100
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 02 Manual Booster
+      id: 120
+      abilityId: mining_zone_buff
+      abilityParam: 200:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: copper
+        count: 500
+      - resourceId: magma
+        count: 150
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 03
+      id: 130
+      abilityId: unlock_zone
+      abilityParam: 300
+      description: Desc
+      unlockCost:
+      - resourceId: flamingMarble
+        count: 150
+      - resourceId: magma
+        count: 500
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 03 Manual Booster
+      id: 140
+      abilityId: mining_zone_buff
+      abilityParam: 300:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: copperBar
+        count: 400
+      - resourceId: demonicWater
+        count: 100
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 04
+      id: 150
+      abilityId: unlock_zone
+      abilityParam: 400
+      description: Desc
+      unlockCost:
+      - resourceId: blazingKnife
+        count: 500
+      - resourceId: infinityPond
+        count: 80
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 04 Manual Booster
+      id: 160
+      abilityId: mining_zone_buff
+      abilityParam: 400:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: infinityPond
+        count: 500
+      - resourceId: bonePowder
+        count: 100
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 05
+      id: 170
+      abilityId: unlock_zone
+      abilityParam: 500
+      description: Desc
+      unlockCost:
+      - resourceId: copperBar
+        count: 5000
+      - resourceId: demonEye
+        count: 150
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 05 Manual Booster
+      id: 180
+      abilityId: mining_zone_buff
+      abilityParam: 500:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: deathWeb
+        count: 150
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 06
+      id: 190
+      abilityId: unlock_zone
+      abilityParam: 600
+      description: Desc
+      unlockCost:
+      - resourceId: bonePowder
+        count: 700
+      - resourceId: deathWrapper
+        count: 50
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 06 Manual Booster
+      id: 200
+      abilityId: mining_zone_buff
+      abilityParam: 600:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: scaleBundle
+        count: 70
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 07
+      id: 210
+      abilityId: unlock_zone
+      abilityParam: 700
+      description: Desc
+      unlockCost:
+      - resourceId: deathWrapper
+        count: 300
+      - resourceId: scaleBundle
+        count: 150
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 07 Manual Booster
+      id: 220
+      abilityId: mining_zone_buff
+      abilityParam: 700:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: scaleBundle
+        count: 5000
+      - resourceId: ringOfEternal
+        count: 80
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 08
+      id: 230
+      abilityId: unlock_zone
+      abilityParam: 800
+      description: Desc
+      unlockCost:
+      - resourceId: ironBar
+        count: 150
+      - resourceId: ringOfEternal
+        count: 500
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 08 Manual Booster
+      id: 240
+      abilityId: mining_zone_buff
+      abilityParam: 800:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: deathDoll
+        count: 80
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 09
+      id: 250
+      abilityId: unlock_zone
+      abilityParam: 900
+      description: Desc
+      unlockCost:
+      - resourceId: deathDoll
+        count: 500
+      - resourceId: ironBar
+        count: 150
+  - icon: {fileID: 21300000, guid: a65b6dd420b9ac145a97e8063608e049, type: 3}
+    skillInfo:
+      name: Zone 09 Manual Booster
+      id: 260
+      abilityId: mining_zone_buff
+      abilityParam: 900:300:10:60
+      description: Desc
+      unlockCost:
+      - resourceId: bloodyPoison
+        count: 70
+  - icon: {fileID: 21300000, guid: 8ecd0b0262d44dd44ab047fc952953d1, type: 3}
+    skillInfo:
+      name: Unlock Zone 10
+      id: 270
+      abilityId: unlock_zone
+      abilityParam: 1000
+      description: Desc
+      unlockCost:
+      - resourceId: deathDoll
+        count: 700
+      - resourceId: bookOfDeath
+        count: 250

@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "deathwrapper",
+            "price": "80"
+        },
+        {
+            "id": "deathdoll",
+            "price": "320"
+        },
+        {
+            "id": "demoneye",
+            "price": "560"
+        },
+        {
+            "id": "blazingknife",
+            "price": "800"
+        },
+        {
+            "id": "eternalpyramid",
+            "price": "1040"
+        },
+        {
+            "id": "flamingmarble",
+            "price": "1280"
+        },
+        {
+            "id": "infinitypond",
+            "price": "1520"
+        },
+        {
+            "id": "resurrection",
+            "price": "1760"
+        },
+        {
+            "id": "bookofdeath",
+            "price": "2000"
+        },
+        {
+            "id": "ringofeternal",
+            "price": "2240"
+        }
+    ]
+}

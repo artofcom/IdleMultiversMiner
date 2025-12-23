@@ -1,0 +1,20 @@
+{
+    "id": "ItemCraft",
+    "rootId": "ItemCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "ItemCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "itemcraft",
+            "description": "Unlock the Forge for Items.",
+            "unlockCost": [
+                {
+                    "resourceId": "gravewalkersfoot",
+                    "count": 2
+                }
+            ],
+            "children": []
+        }
+    ]
+}

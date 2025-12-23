@@ -1,0 +1,716 @@
+{
+    "resources": [
+        {
+            "id": "mat_0",
+            "sellPrice": "10",
+            "eClass": 0
+        },
+        {
+            "id": "mat_1",
+            "sellPrice": "20",
+            "eClass": 0
+        },
+        {
+            "id": "mat_2",
+            "sellPrice": "40",
+            "eClass": 0
+        },
+        {
+            "id": "mat_3",
+            "sellPrice": "80",
+            "eClass": 0
+        },
+        {
+            "id": "mat_4",
+            "sellPrice": "160",
+            "eClass": 0
+        },
+        {
+            "id": "mat_5",
+            "sellPrice": "320",
+            "eClass": 0
+        },
+        {
+            "id": "mat_6",
+            "sellPrice": "640",
+            "eClass": 0
+        },
+        {
+            "id": "mat_7",
+            "sellPrice": "1280",
+            "eClass": 0
+        },
+        {
+            "id": "mat_8",
+            "sellPrice": "2560",
+            "eClass": 0
+        },
+        {
+            "id": "mat_9",
+            "sellPrice": "5120",
+            "eClass": 0
+        },
+        {
+            "id": "comp_0",
+            "sellPrice": "200",
+            "eClass": 1
+        },
+        {
+            "id": "comp_1",
+            "sellPrice": "400",
+            "eClass": 1
+        },
+        {
+            "id": "comp_2",
+            "sellPrice": "800",
+            "eClass": 1
+        },
+        {
+            "id": "comp_3",
+            "sellPrice": "1600",
+            "eClass": 1
+        },
+        {
+            "id": "comp_4",
+            "sellPrice": "3200",
+            "eClass": 1
+        },
+        {
+            "id": "comp_5",
+            "sellPrice": "6400",
+            "eClass": 1
+        },
+        {
+            "id": "comp_6",
+            "sellPrice": "12800",
+            "eClass": 1
+        },
+        {
+            "id": "comp_7",
+            "sellPrice": "25600",
+            "eClass": 1
+        },
+        {
+            "id": "comp_8",
+            "sellPrice": "51200",
+            "eClass": 1
+        },
+        {
+            "id": "comp_9",
+            "sellPrice": "102400",
+            "eClass": 1
+        },
+        {
+            "id": "item_0",
+            "sellPrice": "2000",
+            "eClass": 2
+        },
+        {
+            "id": "item_1",
+            "sellPrice": "4000",
+            "eClass": 2
+        },
+        {
+            "id": "item_2",
+            "sellPrice": "8000",
+            "eClass": 2
+        },
+        {
+            "id": "item_3",
+            "sellPrice": "16000",
+            "eClass": 2
+        },
+        {
+            "id": "item_4",
+            "sellPrice": "32000",
+            "eClass": 2
+        },
+        {
+            "id": "item_5",
+            "sellPrice": "64000",
+            "eClass": 2
+        },
+        {
+            "id": "item_6",
+            "sellPrice": "128000",
+            "eClass": 2
+        },
+        {
+            "id": "item_7",
+            "sellPrice": "256000",
+            "eClass": 2
+        },
+        {
+            "id": "item_8",
+            "sellPrice": "512000",
+            "eClass": 2
+        },
+        {
+            "id": "item_9",
+            "sellPrice": "1024000",
+            "eClass": 2
+        }
+    ],
+    "planets": [
+        {
+            "id": "planet_1",
+            "obtainables": [
+                {
+                    "resourceId": "mat_0",
+                    "rate": 1.944685935974121
+                },
+                {
+                    "resourceId": "mat_1",
+                    "rate": 1.4585144519805909
+                }
+            ],
+            "performances": {
+                "baseValue": 48.617149353027347,
+                "increaseValue": 48.617149353027347
+            },
+            "upgradeCost": {
+                "baseValue": "500",
+                "increaseValue": "500"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_2",
+            "obtainables": [
+                {
+                    "resourceId": "mat_1",
+                    "rate": 0.4861714839935303
+                },
+                {
+                    "resourceId": "mat_2",
+                    "rate": 0.38893717527389529
+                }
+            ],
+            "performances": {
+                "baseValue": 194.46859741210938,
+                "increaseValue": 194.46859741210938
+            },
+            "upgradeCost": {
+                "baseValue": "5000",
+                "increaseValue": "5000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_3",
+            "obtainables": [
+                {
+                    "resourceId": "mat_2",
+                    "rate": 0.29170289635658266
+                },
+                {
+                    "resourceId": "mat_3",
+                    "rate": 0.24308574199676515
+                }
+            ],
+            "performances": {
+                "baseValue": 972.3429565429688,
+                "increaseValue": 729.2572021484375
+            },
+            "upgradeCost": {
+                "baseValue": "50000",
+                "increaseValue": "75000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_4",
+            "obtainables": [
+                {
+                    "resourceId": "mat_3",
+                    "rate": 0.19446858763694764
+                },
+                {
+                    "resourceId": "mat_4",
+                    "rate": 0.14585144817829133
+                }
+            ],
+            "performances": {
+                "baseValue": 1944.6859130859375,
+                "increaseValue": 972.3429565429688
+            },
+            "upgradeCost": {
+                "baseValue": "100000",
+                "increaseValue": "150000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_5",
+            "obtainables": [
+                {
+                    "resourceId": "mat_4",
+                    "rate": 0.14585144817829133
+                },
+                {
+                    "resourceId": "mat_5",
+                    "rate": 0.11668115854263306
+                }
+            ],
+            "performances": {
+                "baseValue": 2917.02880859375,
+                "increaseValue": 1458.514404296875
+            },
+            "upgradeCost": {
+                "baseValue": "200000",
+                "increaseValue": "300000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_6",
+            "obtainables": [
+                {
+                    "resourceId": "mat_5",
+                    "rate": 0.11668115854263306
+                },
+                {
+                    "resourceId": "mat_6",
+                    "rate": 0.09723429381847382
+                }
+            ],
+            "performances": {
+                "baseValue": 3889.371826171875,
+                "increaseValue": 1944.6859130859375
+            },
+            "upgradeCost": {
+                "baseValue": "400000",
+                "increaseValue": "600000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_7",
+            "obtainables": [
+                {
+                    "resourceId": "mat_6",
+                    "rate": 0.09723429381847382
+                },
+                {
+                    "resourceId": "mat_7",
+                    "rate": 0.07778744399547577
+                }
+            ],
+            "performances": {
+                "baseValue": 4861.71484375,
+                "increaseValue": 2430.857421875
+            },
+            "upgradeCost": {
+                "baseValue": "800000",
+                "increaseValue": "1200000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_8",
+            "obtainables": [
+                {
+                    "resourceId": "mat_7",
+                    "rate": 0.07778744399547577
+                },
+                {
+                    "resourceId": "mat_8",
+                    "rate": 0.05834057927131653
+                }
+            ],
+            "performances": {
+                "baseValue": 5834.0576171875,
+                "increaseValue": 2917.02880859375
+            },
+            "upgradeCost": {
+                "baseValue": "1600000",
+                "increaseValue": "2400000"
+            },
+            "currencyType": 0
+        },
+        {
+            "id": "planet_9",
+            "obtainables": [
+                {
+                    "resourceId": "mat_8",
+                    "rate": 0.05834057927131653
+                },
+                {
+                    "resourceId": "mat_9",
+                    "rate": 0.038893721997737887
+                }
+            ],
+            "performances": {
+                "baseValue": 6806.40087890625,
+                "increaseValue": 3403.200439453125
+            },
+            "upgradeCost": {
+                "baseValue": "3200000",
+                "increaseValue": "4800000"
+            },
+            "currencyType": 0
+        }
+    ],
+    "compRecipes": [
+        {
+            "id": "comp_recipe_0",
+            "sources": [
+                {
+                    "resourceId": "mat_0",
+                    "amount": "100"
+                }
+            ],
+            "outputId": "comp_0",
+            "duration": 10
+        },
+        {
+            "id": "comp_recipe_1",
+            "sources": [
+                {
+                    "resourceId": "mat_1",
+                    "amount": "100"
+                }
+            ],
+            "outputId": "comp_1",
+            "duration": 20
+        },
+        {
+            "id": "comp_recipe_2",
+            "sources": [
+                {
+                    "resourceId": "mat_2",
+                    "amount": "50"
+                }
+            ],
+            "outputId": "comp_2",
+            "duration": 30
+        },
+        {
+            "id": "comp_recipe_3",
+            "sources": [
+                {
+                    "resourceId": "mat_3",
+                    "amount": "40"
+                }
+            ],
+            "outputId": "comp_3",
+            "duration": 40
+        },
+        {
+            "id": "comp_recipe_4",
+            "sources": [
+                {
+                    "resourceId": "mat_4",
+                    "amount": "35"
+                }
+            ],
+            "outputId": "comp_4",
+            "duration": 50
+        },
+        {
+            "id": "comp_recipe_5",
+            "sources": [
+                {
+                    "resourceId": "mat_5",
+                    "amount": "30"
+                }
+            ],
+            "outputId": "comp_5",
+            "duration": 60
+        },
+        {
+            "id": "comp_recipe_6",
+            "sources": [
+                {
+                    "resourceId": "mat_6",
+                    "amount": "25"
+                }
+            ],
+            "outputId": "comp_6",
+            "duration": 70
+        },
+        {
+            "id": "comp_recipe_7",
+            "sources": [
+                {
+                    "resourceId": "mat_7",
+                    "amount": "20"
+                }
+            ],
+            "outputId": "comp_7",
+            "duration": 80
+        },
+        {
+            "id": "comp_recipe_8",
+            "sources": [
+                {
+                    "resourceId": "mat_8",
+                    "amount": "15"
+                }
+            ],
+            "outputId": "comp_8",
+            "duration": 90
+        },
+        {
+            "id": "comp_recipe_9",
+            "sources": [
+                {
+                    "resourceId": "mat_9",
+                    "amount": "10"
+                }
+            ],
+            "outputId": "comp_9",
+            "duration": 100
+        }
+    ],
+    "itemRecipes": [
+        {
+            "id": "item_recipe_0",
+            "sources": [
+                {
+                    "resourceId": "comp_0",
+                    "amount": "100"
+                }
+            ],
+            "outputId": "item_0",
+            "duration": 40
+        },
+        {
+            "id": "item_recipe_1",
+            "sources": [
+                {
+                    "resourceId": "comp_1",
+                    "amount": "100"
+                }
+            ],
+            "outputId": "item_1",
+            "duration": 60
+        },
+        {
+            "id": "item_recipe_2",
+            "sources": [
+                {
+                    "resourceId": "comp_2",
+                    "amount": "10"
+                }
+            ],
+            "outputId": "item_2",
+            "duration": 80
+        },
+        {
+            "id": "item_recipe_3",
+            "sources": [
+                {
+                    "resourceId": "comp_3",
+                    "amount": "8"
+                }
+            ],
+            "outputId": "item_3",
+            "duration": 100
+        },
+        {
+            "id": "item_recipe_4",
+            "sources": [
+                {
+                    "resourceId": "comp_4",
+                    "amount": "6"
+                }
+            ],
+            "outputId": "item_4",
+            "duration": 120
+        },
+        {
+            "id": "item_recipe_5",
+            "sources": [
+                {
+                    "resourceId": "comp_5",
+                    "amount": "5"
+                }
+            ],
+            "outputId": "item_5",
+            "duration": 140
+        },
+        {
+            "id": "item_recipe_6",
+            "sources": [
+                {
+                    "resourceId": "comp_6",
+                    "amount": "4"
+                }
+            ],
+            "outputId": "item_6",
+            "duration": 160
+        },
+        {
+            "id": "item_recipe_7",
+            "sources": [
+                {
+                    "resourceId": "comp_7",
+                    "amount": "3"
+                }
+            ],
+            "outputId": "item_7",
+            "duration": 180
+        },
+        {
+            "id": "item_recipe_8",
+            "sources": [
+                {
+                    "resourceId": "comp_8",
+                    "amount": "2"
+                }
+            ],
+            "outputId": "item_8",
+            "duration": 200
+        },
+        {
+            "id": "item_recipe_9",
+            "sources": [
+                {
+                    "resourceId": "comp_9",
+                    "amount": "1"
+                }
+            ],
+            "outputId": "item_9",
+            "duration": 220
+        }
+    ],
+    "skillTree": [
+        {
+            "id": "skill_1",
+            "sources": [
+                {
+                    "resourceId": "item_0",
+                    "amount": "100"
+                }
+            ],
+            "feature": "basic_mining",
+            "effectRate": 1.100000023841858,
+            "unlockPlanets": [
+                2
+            ]
+        },
+        {
+            "id": "skill_2",
+            "sources": [
+                {
+                    "resourceId": "item_1",
+                    "amount": "150"
+                }
+            ],
+            "feature": "advanced_mining",
+            "effectRate": 1.2000000476837159,
+            "unlockPlanets": [
+                3
+            ]
+        },
+        {
+            "id": "skill_3",
+            "sources": [
+                {
+                    "resourceId": "item_2",
+                    "amount": "225"
+                }
+            ],
+            "feature": "efficient_crafting",
+            "effectRate": 1.149999976158142,
+            "unlockPlanets": [
+                4
+            ]
+        },
+        {
+            "id": "skill_4",
+            "sources": [
+                {
+                    "resourceId": "item_3",
+                    "amount": "337"
+                }
+            ],
+            "feature": "resource_optimization",
+            "effectRate": 1.25,
+            "unlockPlanets": [
+                5
+            ]
+        },
+        {
+            "id": "skill_5",
+            "sources": [
+                {
+                    "resourceId": "item_4",
+                    "amount": "505"
+                }
+            ],
+            "feature": "automated_systems",
+            "effectRate": 1.2999999523162842,
+            "unlockPlanets": [
+                6
+            ]
+        },
+        {
+            "id": "skill_6",
+            "sources": [
+                {
+                    "resourceId": "item_5",
+                    "amount": "757"
+                }
+            ],
+            "feature": "quantum_mining",
+            "effectRate": 1.399999976158142,
+            "unlockPlanets": [
+                7
+            ]
+        },
+        {
+            "id": "skill_7",
+            "sources": [
+                {
+                    "resourceId": "item_6",
+                    "amount": "1135"
+                }
+            ],
+            "feature": "dimensional_crafting",
+            "effectRate": 1.5,
+            "unlockPlanets": [
+                8
+            ]
+        },
+        {
+            "id": "skill_8",
+            "sources": [
+                {
+                    "resourceId": "item_7",
+                    "amount": "1702"
+                }
+            ],
+            "feature": "reality_manipulation",
+            "effectRate": 1.600000023841858,
+            "unlockPlanets": [
+                9
+            ]
+        },
+        {
+            "id": "skill_9",
+            "sources": [
+                {
+                    "resourceId": "item_8",
+                    "amount": "2553"
+                }
+            ],
+            "feature": "universal_control",
+            "effectRate": 1.7999999523162842,
+            "unlockPlanets": []
+        },
+        {
+            "id": "skill_10",
+            "sources": [
+                {
+                    "resourceId": "item_9",
+                    "amount": "3829"
+                }
+            ],
+            "feature": "game_over",
+            "effectRate": 2.0,
+            "unlockPlanets": []
+        }
+    ]
+}

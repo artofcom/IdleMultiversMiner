@@ -1,0 +1,118 @@
+{
+    "id": "Mining",
+    "rootId": "Mining_1_AuraAmplification1",
+    "skillInfoPool": [
+        {
+            "name": "Unlock Zone 1 Buff",
+            "id": "Mining_1_AuraAmplification1",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "100:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone1.",
+            "unlockCost": [
+                {
+                    "resourceId": "gravewalkersfoot",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "Mining_1_ZoneDiscovery2"
+            ]
+        },
+        {
+            "name": "Zone Discovery 2",
+            "id": "Mining_1_ZoneDiscovery2",
+            "abilityId": "unlock_zone",
+            "abilityParam": "200",
+            "description": "Unlock the Section of Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "bindingsigil",
+                    "count": 5
+                },
+                {
+                    "resourceId": "wyrmsclaw",
+                    "count": 20
+                }
+            ],
+            "children": [
+                "Mining_2_AuraAmplification2",
+                "Mining_2_ZoneDiscovery3"
+            ]
+        },
+        {
+            "name": "Unlock Zone 2 Buff",
+            "id": "Mining_2_AuraAmplification2",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "200:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone2.",
+            "unlockCost": [
+                {
+                    "resourceId": "soulfirecrystal",
+                    "count": 5
+                },
+                {
+                    "resourceId": "prophetsomen",
+                    "count": 40
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 3",
+            "id": "Mining_2_ZoneDiscovery3",
+            "abilityId": "unlock_zone",
+            "abilityParam": "300",
+            "description": "Unlock the Section of Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "scorchedchart",
+                    "count": 5
+                },
+                {
+                    "resourceId": "vileconcoction",
+                    "count": 20
+                }
+            ],
+            "children": [
+                "Mining_3_AuraAmplification3",
+                "Mining_3_ZoneDiscovery4"
+            ]
+        },
+        {
+            "name": "Unlock Zone 3 Buff",
+            "id": "Mining_3_AuraAmplification3",
+            "abilityId": "mining_zone_buff",
+            "abilityParam": "300:60:5:10",
+            "description": "Unlock the Zone-Wide Buff for Zone3.",
+            "unlockCost": [
+                {
+                    "resourceId": "celestineorb",
+                    "count": 3
+                },
+                {
+                    "resourceId": "infernalwing",
+                    "count": 50
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 4",
+            "id": "Mining_3_ZoneDiscovery4",
+            "abilityId": "unlock_zone",
+            "abilityParam": "400",
+            "description": "Unlock the Section of Zone4.",
+            "unlockCost": [
+                {
+                    "resourceId": "witchlightwax",
+                    "count": 10
+                },
+                {
+                    "resourceId": "sunfirescales",
+                    "count": 30
+                }
+            ],
+            "children": []
+        }
+    ]
+}

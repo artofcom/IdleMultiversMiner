@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "demoneye",
+            "price": "80"
+        },
+        {
+            "id": "eternalpyramid",
+            "price": "320"
+        },
+        {
+            "id": "evileye",
+            "price": "560"
+        },
+        {
+            "id": "thunderbar",
+            "price": "800"
+        },
+        {
+            "id": "flamingmarble",
+            "price": "1040"
+        },
+        {
+            "id": "goldenbug",
+            "price": "1280"
+        },
+        {
+            "id": "lavadocument",
+            "price": "1520"
+        },
+        {
+            "id": "resurrection",
+            "price": "1760"
+        },
+        {
+            "id": "magmatrident",
+            "price": "2000"
+        },
+        {
+            "id": "bookofdeath",
+            "price": "2240"
+        }
+    ]
+}

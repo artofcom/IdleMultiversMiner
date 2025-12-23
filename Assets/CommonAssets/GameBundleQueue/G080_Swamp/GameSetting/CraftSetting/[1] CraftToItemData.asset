@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30a71ee01df8f14cbfa40106e6e3702, type: 3}
+  m_Name: '[1] CraftToItemData'
+  m_EditorClassIdentifier: 
+  craftData:
+    recipes:
+    - id: 1
+      sources:
+      - resourceId: ZombieOil
+        count: 500
+      - resourceId: Magma
+        count: 700
+      outcomeId: Resurrection
+      duration: 120
+      cost: 10
+    - id: 2
+      sources:
+      - resourceId: Magma
+        count: 2000
+      outcomeId: FlamingMarble
+      duration: 300
+      cost: 20
+    - id: 3
+      sources:
+      - resourceId: Magma
+        count: 1000
+      - resourceId: CopperBar
+        count: 3000
+      outcomeId: BlazingKnife
+      duration: 360
+      cost: 50
+    - id: 4
+      sources:
+      - resourceId: DemonicWater
+        count: 3000
+      - resourceId: DeathWeb
+        count: 500
+      outcomeId: InfinityPond
+      duration: 360
+      cost: 80
+    - id: 5
+      sources:
+      - resourceId: FlamingMarble
+        count: 120
+      - resourceId: BonePowder
+        count: 500
+      outcomeId: DemonEye
+      duration: 360
+      cost: 80
+    - id: 6
+      sources:
+      - resourceId: BlazingKnife
+        count: 50
+      - resourceId: DeathWeb
+        count: 1000
+      outcomeId: DeathWrapper
+      duration: 360
+      cost: 100
+    - id: 7
+      sources:
+      - resourceId: DemonicWater
+        count: 2000
+      - resourceId: IronBar
+        count: 600
+      outcomeId: RingOfEternal
+      duration: 300
+      cost: 150
+    - id: 8
+      sources:
+      - resourceId: DeathWeb
+        count: 3000
+      - resourceId: BloodyPoison
+        count: 2000
+      outcomeId: DeathDoll
+      duration: 400
+      cost: 150
+    - id: 9
+      sources:
+      - resourceId: RingOfEternal
+        count: 1000
+      - resourceId: BloodyPoison
+        count: 5000
+      outcomeId: BookOfDeath
+      duration: 460
+      cost: 150
+    - id: 10
+      sources:
+      - resourceId: BookOfDeath
+        count: 666
+      - resourceId: StarDust
+        count: 60000
+      outcomeId: EternalPyramid
+      duration: 500
+      cost: 200
+    slotCosts:
+    - 0
+    - 30
+    - 50
+    - 100
+    - 150
+    - 200
+    - 500
+    - 1000

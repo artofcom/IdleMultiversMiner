@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "gravewalkersfoot",
+            "price": "900"
+        },
+        {
+            "id": "wyrmsclaw",
+            "price": "990"
+        },
+        {
+            "id": "prophetsomen",
+            "price": "1080"
+        },
+        {
+            "id": "nightwing",
+            "price": "1170"
+        },
+        {
+            "id": "vileconcoction",
+            "price": "1260"
+        },
+        {
+            "id": "puppetoftorment",
+            "price": "1350"
+        },
+        {
+            "id": "scorchedchart",
+            "price": "1440"
+        },
+        {
+            "id": "whisperplumeparrot",
+            "price": "1530"
+        },
+        {
+            "id": "witchlightwax",
+            "price": "1620"
+        },
+        {
+            "id": "embergourd",
+            "price": "1710"
+        }
+    ]
+}

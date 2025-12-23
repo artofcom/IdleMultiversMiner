@@ -1,0 +1,176 @@
+{
+    "recipes": [
+        {
+            "id": "Comp_0",
+            "sources": [
+                {
+                    "resourceId": "coal",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "coaldummy",
+            "duration": 10,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_1",
+            "sources": [
+                {
+                    "resourceId": "copper",
+                    "count": 20
+                },
+                {
+                    "resourceId": "coal",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "copperbar",
+            "duration": 20,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_2",
+            "sources": [
+                {
+                    "resourceId": "iron",
+                    "count": 20
+                },
+                {
+                    "resourceId": "demoneye",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "death_skull",
+            "duration": 30,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_3",
+            "sources": [
+                {
+                    "resourceId": "magma",
+                    "count": 20
+                },
+                {
+                    "resourceId": "coal",
+                    "count": 40
+                },
+                {
+                    "resourceId": "eternalpyramid",
+                    "count": 2
+                }
+            ],
+            "outcomeId": "blazingknife",
+            "duration": 40,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_4",
+            "sources": [
+                {
+                    "resourceId": "magmachunk",
+                    "count": 30
+                },
+                {
+                    "resourceId": "iron",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "firingskull",
+            "duration": 50,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_5",
+            "sources": [
+                {
+                    "resourceId": "krypto",
+                    "count": 20
+                },
+                {
+                    "resourceId": "iron",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "goldenmagma",
+            "duration": 60,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_6",
+            "sources": [
+                {
+                    "resourceId": "demonarm",
+                    "count": 30
+                },
+                {
+                    "resourceId": "magmachunk",
+                    "count": 40
+                },
+                {
+                    "resourceId": "evileye",
+                    "count": 10
+                }
+            ],
+            "outcomeId": "goldenskull",
+            "duration": 70,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_7",
+            "sources": [
+                {
+                    "resourceId": "dragonegg",
+                    "count": 20
+                },
+                {
+                    "resourceId": "krypto",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "kryptostones",
+            "duration": 80,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_8",
+            "sources": [
+                {
+                    "resourceId": "demonfoot",
+                    "count": 20
+                },
+                {
+                    "resourceId": "magmachunk",
+                    "count": 45
+                }
+            ],
+            "outcomeId": "magmacore",
+            "duration": 90,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_9",
+            "sources": [
+                {
+                    "resourceId": "gold",
+                    "count": 25
+                },
+                {
+                    "resourceId": "dragonegg",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "magmadust",
+            "duration": 100,
+            "cost": "10"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "10",
+        "30",
+        "50"
+    ]
+}

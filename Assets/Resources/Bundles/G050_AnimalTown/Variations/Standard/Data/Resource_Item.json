@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "creamsoup",
+            "price": "80"
+        },
+        {
+            "id": "eggtoast",
+            "price": "320"
+        },
+        {
+            "id": "freshsalad",
+            "price": "560"
+        },
+        {
+            "id": "fruitbasket",
+            "price": "800"
+        },
+        {
+            "id": "fruitpie",
+            "price": "1040"
+        },
+        {
+            "id": "meatpie",
+            "price": "1280"
+        },
+        {
+            "id": "meatstew",
+            "price": "1520"
+        },
+        {
+            "id": "mushrooms",
+            "price": "1760"
+        },
+        {
+            "id": "sandwich",
+            "price": "2000"
+        },
+        {
+            "id": "witchssoup",
+            "price": "2240"
+        }
+    ]
+}

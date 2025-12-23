@@ -1,0 +1,131 @@
+{
+    "recipes": [
+        {
+            "id": "Item_0",
+            "sources": [
+                {
+                    "resourceId": "bonepowder",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "deathwrapper",
+            "duration": 10,
+            "cost": "5"
+        },
+        {
+            "id": "Item_1",
+            "sources": [
+                {
+                    "resourceId": "coaldummy",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "deathdoll",
+            "duration": 20,
+            "cost": "5"
+        },
+        {
+            "id": "Item_2",
+            "sources": [
+                {
+                    "resourceId": "deathweb",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "demoneye",
+            "duration": 30,
+            "cost": "5"
+        },
+        {
+            "id": "Item_3",
+            "sources": [
+                {
+                    "resourceId": "copperbar",
+                    "count": 100
+                }
+            ],
+            "outcomeId": "blazingknife",
+            "duration": 40,
+            "cost": "10"
+        },
+        {
+            "id": "Item_4",
+            "sources": [
+                {
+                    "resourceId": "bloodypoison",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "eternalpyramid",
+            "duration": 50,
+            "cost": "10"
+        },
+        {
+            "id": "Item_5",
+            "sources": [
+                {
+                    "resourceId": "demonicpoison",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "flamingmarble",
+            "duration": 60,
+            "cost": "10"
+        },
+        {
+            "id": "Item_6",
+            "sources": [
+                {
+                    "resourceId": "zombieoil",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "infinitypond",
+            "duration": 70,
+            "cost": "10"
+        },
+        {
+            "id": "Item_7",
+            "sources": [
+                {
+                    "resourceId": "demonicwater",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "resurrection",
+            "duration": 80,
+            "cost": "15"
+        },
+        {
+            "id": "Item_8",
+            "sources": [
+                {
+                    "resourceId": "ironbar",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "bookofdeath",
+            "duration": 90,
+            "cost": "15"
+        },
+        {
+            "id": "Item_9",
+            "sources": [
+                {
+                    "resourceId": "magma",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "ringofeternal",
+            "duration": 100,
+            "cost": "15"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "30",
+        "50"
+    ]
+}

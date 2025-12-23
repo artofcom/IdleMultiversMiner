@@ -1,0 +1,28 @@
+{
+    "id": "Goal",
+    "rootId": "GoalSection_0_Final",
+    "skillInfoPool": [
+        {
+            "name": "Game Reset",
+            "id": "GoalSection_0_Final",
+            "abilityId": "game_reset",
+            "abilityParam": "star:10",
+            "description": "Open the ailiby to Reset the level and earn 10 Stars as rewards.",
+            "unlockCost": [
+                {
+                    "resourceId": "infernalcodex",
+                    "count": 5
+                },
+                {
+                    "resourceId": "infernalcodexvol2",
+                    "count": 5
+                },
+                {
+                    "resourceId": "infernalcodexvol3",
+                    "count": 5
+                }
+            ],
+            "children": []
+        }
+    ]
+}

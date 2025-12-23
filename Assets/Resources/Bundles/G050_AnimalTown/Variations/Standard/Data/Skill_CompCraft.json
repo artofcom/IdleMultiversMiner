@@ -1,0 +1,159 @@
+{
+    "id": "CompCraft",
+    "rootId": "CompCraft_0_EchoOfMalice",
+    "skillInfoPool": [
+        {
+            "name": "Echo Of Malice",
+            "id": "CompCraft_0_EchoOfMalice",
+            "abilityId": "unlock_feature",
+            "abilityParam": "compcraft",
+            "description": "Unlock Craft for Components.",
+            "unlockCost": [
+                {
+                    "resourceId": "acorn",
+                    "count": 10
+                }
+            ],
+            "children": [
+                "CompCraft_1_SwiftQuenching"
+            ]
+        },
+        {
+            "name": "Swift Quenching",
+            "id": "CompCraft_1_SwiftQuenching",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduce forge duration 5% faster.",
+            "unlockCost": [
+                {
+                    "resourceId": "bluejuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "blackjuice",
+                    "count": 35
+                }
+            ],
+            "children": [
+                "CompCraft_2_MaterialEconomy",
+                "CompCraft_2_MultiProductionOptimization"
+            ]
+        },
+        {
+            "name": "Material Economy",
+            "id": "CompCraft_2_MaterialEconomy",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Save costs 5% less.",
+            "unlockCost": [
+                {
+                    "resourceId": "greenjuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "bluejuice",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "CompCraft_3_EssenceOfCreation"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization",
+            "id": "CompCraft_2_MultiProductionOptimization",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Save costs 5% less when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "orangejuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "cherry",
+                    "count": 35
+                }
+            ],
+            "children": [
+                "CompCraft_4_EssenseOfCreation2"
+            ]
+        },
+        {
+            "name": "Essence Of Creation",
+            "id": "CompCraft_3_EssenceOfCreation",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:resource=0.95",
+            "description": "Save costs 5% less.",
+            "unlockCost": [
+                {
+                    "resourceId": "fruitbasket",
+                    "count": 10
+                },
+                {
+                    "resourceId": "freshsalad",
+                    "count": 40
+                }
+            ],
+            "children": [
+                "CompCraft_4_MultiProductionOptimization2"
+            ]
+        },
+        {
+            "name": "Essense Of Creation 2",
+            "id": "CompCraft_4_EssenseOfCreation2",
+            "abilityId": "craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduce forge duration 5% faster.",
+            "unlockCost": [
+                {
+                    "resourceId": "purplejuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "pinkjuice",
+                    "count": 25
+                }
+            ],
+            "children": [
+                "CompCraft_4_ZoneDiscovery5"
+            ]
+        },
+        {
+            "name": "Multi Production Optimization 2",
+            "id": "CompCraft_4_MultiProductionOptimization2",
+            "abilityId": "multi_craft_buff",
+            "abilityParam": "comp:time=0.95",
+            "description": "Reduce forge duration 5% faster when Bulk.",
+            "unlockCost": [
+                {
+                    "resourceId": "meatstew",
+                    "count": 10
+                },
+                {
+                    "resourceId": "peanuts",
+                    "count": 35
+                }
+            ],
+            "children": []
+        },
+        {
+            "name": "Zone Discovery 5",
+            "id": "CompCraft_4_ZoneDiscovery5",
+            "abilityId": "unlock_zone",
+            "abilityParam": "500",
+            "description": "Unlock the Section of Zone5.",
+            "unlockCost": [
+                {
+                    "resourceId": "turquoisejuice",
+                    "count": 10
+                },
+                {
+                    "resourceId": "raspberry",
+                    "count": 50
+                }
+            ],
+            "children": []
+        }
+    ]
+}

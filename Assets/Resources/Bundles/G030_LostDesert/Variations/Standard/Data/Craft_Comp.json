@@ -1,0 +1,148 @@
+{
+    "recipes": [
+        {
+            "id": "Comp_0",
+            "sources": [
+                {
+                    "resourceId": "bullskull",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "bonepowder",
+            "duration": 10,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_1",
+            "sources": [
+                {
+                    "resourceId": "humanskull",
+                    "count": 35
+                }
+            ],
+            "outcomeId": "coaldummy",
+            "duration": 15,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_2",
+            "sources": [
+                {
+                    "resourceId": "redmershroom",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "deathweb",
+            "duration": 20,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_3",
+            "sources": [
+                {
+                    "resourceId": "spider",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "copperbar",
+            "duration": 25,
+            "cost": "5"
+        },
+        {
+            "id": "Comp_4",
+            "sources": [
+                {
+                    "resourceId": "undeadfinger",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "bloodypoison",
+            "duration": 30,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_5",
+            "sources": [
+                {
+                    "resourceId": "iron",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "demonicpoison",
+            "duration": 35,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_6",
+            "sources": [
+                {
+                    "resourceId": "krypto",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "zombieoil",
+            "duration": 40,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_7",
+            "sources": [
+                {
+                    "resourceId": "soulwater",
+                    "count": 15
+                }
+            ],
+            "outcomeId": "demonicwater",
+            "duration": 45,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_8",
+            "sources": [
+                {
+                    "resourceId": "dragonscale",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "ironbar",
+            "duration": 50,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_9",
+            "sources": [
+                {
+                    "resourceId": "stardust",
+                    "count": 20
+                }
+            ],
+            "outcomeId": "magma",
+            "duration": 55,
+            "cost": "10"
+        },
+        {
+            "id": "Comp_10",
+            "sources": [
+                {
+                    "resourceId": "dragonscale",
+                    "count": 10
+                },
+                {
+                    "resourceId": "blazingknife",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "scalebundle",
+            "duration": 60,
+            "cost": "15"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "10",
+        "30",
+        "50"
+    ]
+}

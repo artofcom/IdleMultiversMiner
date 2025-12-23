@@ -1,0 +1,82 @@
+{
+    "categoryId": "mobHunt",
+    "skillInfo": [
+        {
+            "name": "Unlock Mob Hunt",
+            "id": 100,
+            "abilityId": "unlock_mob_hunt",
+            "abilityParam": "1",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "resurrection",
+                    "count": 300
+                },
+                {
+                    "resourceId": "blazingKnife",
+                    "count": 50
+                }
+            ]
+        },
+        {
+            "name": "Mob Present 5% More Frequent",
+            "id": 110,
+            "abilityId": "mob_present_frequent",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "infinityPond",
+                    "count": 200
+                }
+            ]
+        },
+        {
+            "name": "Mob Hunt 5% More Reward",
+            "id": 120,
+            "abilityId": "mob_hunt_reward",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "demonEye",
+                    "count": 450
+                }
+            ]
+        },
+        {
+            "name": "Mob Present 5% More Frequent",
+            "id": 130,
+            "abilityId": "mob_present_frequent",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "dragonScale",
+                    "count": 350
+                },
+                {
+                    "resourceId": "demonEye",
+                    "count": 800
+                }
+            ]
+        },
+        {
+            "name": "Mob Hunt 5% More Reward",
+            "id": 140,
+            "abilityId": "mob_hunt_reward",
+            "abilityParam": "5",
+            "description": "Desc",
+            "unlockCost": [
+                {
+                    "resourceId": "ringOfEternal",
+                    "count": 80
+                },
+                {
+                    "resourceId": "bonePowder",
+                    "count": 4000
+                }
+            ]
+        }
+    ]
+}

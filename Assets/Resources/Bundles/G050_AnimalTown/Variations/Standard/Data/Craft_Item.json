@@ -1,0 +1,159 @@
+{
+    "recipes": [
+        {
+            "id": "Item_0",
+            "sources": [
+                {
+                    "resourceId": "acorn",
+                    "count": 25
+                },
+                {
+                    "resourceId": "blackjuice",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "creamsoup",
+            "duration": 10,
+            "cost": "25"
+        },
+        {
+            "id": "Item_1",
+            "sources": [
+                {
+                    "resourceId": "blueberries",
+                    "count": 20
+                },
+                {
+                    "resourceId": "bluejuice",
+                    "count": 30
+                }
+            ],
+            "outcomeId": "eggtoast",
+            "duration": 20,
+            "cost": "50"
+        },
+        {
+            "id": "Item_2",
+            "sources": [
+                {
+                    "resourceId": "cherry",
+                    "count": 25
+                },
+                {
+                    "resourceId": "greenjuice",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "freshsalad",
+            "duration": 30,
+            "cost": "75"
+        },
+        {
+            "id": "Item_3",
+            "sources": [
+                {
+                    "resourceId": "orangejuice",
+                    "count": 25
+                },
+                {
+                    "resourceId": "eggtoast",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "fruitbasket",
+            "duration": 40,
+            "cost": "100"
+        },
+        {
+            "id": "Item_4",
+            "sources": [
+                {
+                    "resourceId": "pinkjuice",
+                    "count": 20
+                },
+                {
+                    "resourceId": "fruitbasket",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "fruitpie",
+            "duration": 50,
+            "cost": "125"
+        },
+        {
+            "id": "Item_5",
+            "sources": [
+                {
+                    "resourceId": "purplejuice",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "meatpie",
+            "duration": 60,
+            "cost": "150"
+        },
+        {
+            "id": "Item_6",
+            "sources": [
+                {
+                    "resourceId": "redjuice",
+                    "count": 25
+                },
+                {
+                    "resourceId": "fruitpie",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "meatstew",
+            "duration": 70,
+            "cost": "175"
+        },
+        {
+            "id": "Item_7",
+            "sources": [
+                {
+                    "resourceId": "turquoisejuice",
+                    "count": 45
+                }
+            ],
+            "outcomeId": "mushrooms",
+            "duration": 80,
+            "cost": "200"
+        },
+        {
+            "id": "Item_8",
+            "sources": [
+                {
+                    "resourceId": "whitejuice",
+                    "count": 25
+                }
+            ],
+            "outcomeId": "sandwich",
+            "duration": 90,
+            "cost": "225"
+        },
+        {
+            "id": "Item_9",
+            "sources": [
+                {
+                    "resourceId": "yellowjuice",
+                    "count": 20
+                },
+                {
+                    "resourceId": "meatstew",
+                    "count": 40
+                }
+            ],
+            "outcomeId": "witchssoup",
+            "duration": 100,
+            "cost": "250"
+        }
+    ],
+    "slotCosts": [
+        "5",
+        "5",
+        "10",
+        "30",
+        "60"
+    ]
+}

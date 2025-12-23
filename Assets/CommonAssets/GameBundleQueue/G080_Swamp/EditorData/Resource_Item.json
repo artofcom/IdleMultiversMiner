@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": "Resurrection",
+            "price": "800"
+        },
+        {
+            "id": "FlamingMarble",
+            "price": "900"
+        },
+        {
+            "id": "BlazingKnife",
+            "price": "950"
+        },
+        {
+            "id": "InfinityPond",
+            "price": "1000"
+        },
+        {
+            "id": "DemonEye",
+            "price": "1100"
+        },
+        {
+            "id": "DeathWrapper",
+            "price": "1150"
+        },
+        {
+            "id": "RingOfEternal",
+            "price": "1200"
+        },
+        {
+            "id": "DeathDoll",
+            "price": "1250"
+        },
+        {
+            "id": "BookOfDeath",
+            "price": "1300"
+        },
+        {
+            "id": "EternalPyramid",
+            "price": "1400"
+        }
+    ]
+}
