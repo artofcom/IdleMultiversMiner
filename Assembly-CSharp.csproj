@@ -113,7 +113,6 @@
     <Compile Include="Assets\Script\App\[0] App\[2] PlayScreen\PlayScreenController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[10] Resources\ResourceController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\MiningStatModel.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyTask\DailyTaskView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\CraftSingleItemComp.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\Aimer.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[30] Manager\Views\ManagerPanelView.cs" />
@@ -122,10 +121,11 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[33] Meteor\MeteorDataModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[05] IdleHellBoy\HBGamePlayUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[31] BoosterList\View\BoosterListPanelView.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyTask\DailyTaskModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerColonizationData.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\UnityIAPService.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\AModel.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingDialogView.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[30] LostDesert\SkillTreeUnitLostDesert.cs" />
     <Compile Include="Assets\Script\App\[0] App\[0] TitleScreen\TitleScreenPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\CraftView.cs" />
@@ -164,6 +164,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\ResourceData.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[11] InBox\InBoxController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[40] FrozenPlains\SkillTreeUnitFrozenPlains.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\SubViews\PlanetStatComp.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[07] Shop\ShopUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogModel.cs" />
@@ -179,7 +180,6 @@
     <Compile Include="Assets\Script\App\[5] MetaSystem\[15] GameCards\GameCardsView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SkillTreeModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\CraftData.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyTask\DailyTaskPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[10] Bonus\TimedBonus.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\TextFileIO.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerBoosterData.cs" />
@@ -230,6 +230,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PanelDialogViewManager.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogUnit.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\AssetBundle\AssetBundleInfo.cs" />
+    <Compile Include="Assets\Script\App\[9] Subsystem\DailyMissionConfig.cs" />
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbySceenController.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\Analytics\UnityAnalyticsService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SubComp\SkillItemBundleComp.cs" />
@@ -238,9 +239,9 @@
     <Compile Include="Assets\Script\App\[5] MetaSystem\[11] InBox\InBoxPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\SubViews\PlanetResourceItemComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[04] GamePlay\SubViews\PlanetControllerComp.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionController.cs" />
     <Compile Include="Assets\ThirdParty\Layer Lab\Scripts\PanelControl.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[07] Shop\ShopController.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyTask\DailyTaskController.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\AssetBundle\AssetBundleManager.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\MinerMover.cs" />
@@ -271,7 +272,6 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[31] BoosterList\BoosterDataModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[10] Graves\SkillTreeModelGraves.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\SkillTreePopupDialog.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[55] DailyAttend\DailyAttendPopupDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SubComp\AUnlockable.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[04] GamePlay\SubViews\Base\PlanetBaseComp.cs" />
@@ -281,9 +281,9 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\SlotPlay\CrazySlotView.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\SubSystem\IDataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerDailyAttendData.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionModel.cs" />
     <Compile Include="Assets\Script\App\[0] App\[0] TitleScreen\TitleScreenService.cs" />
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbySceenService.cs" />
-    <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\OptionDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[30] Manager\ManagerController.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\BigIntegerJsonConverter.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\Views\SkillTreePathComp.cs" />
@@ -302,13 +302,11 @@
     <Compile Include="Assets\ThirdParty\PinchablePageScroller\Script\PinchablePageScroller.cs" />
     <Compile Include="Assets\Script\App\[0] App\AppController.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\GameObjectPooler.cs" />
-    <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\GameCardsPortalComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\TwoSpotRunner.cs" />
     <Compile Include="Assets\Script\App\[0] App\[0] TitleScreen\TitleScreenView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\RecruitManagerPopupDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\AResourceUpgradeItemComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerView.cs" />
-    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyTask\DailyTaskUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\CraftPlayerModel.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\WWW\WWWImageGet.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\AdsService\AdmobHandler.cs" />
@@ -369,6 +367,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[20] HellfireCanyon\SkillTreeModelLava.cs" />
     <Compile Include="Assets\Script\App\[0] App\[2] PlayScreen\PlayScreen.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\MiningStatView.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionView.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[11] InBox\InBoxUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\PlanetManagerCardComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\SpritesHolderGroupComp.cs" />

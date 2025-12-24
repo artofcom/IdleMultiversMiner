@@ -450,7 +450,6 @@ GameObject:
   m_Component:
   - component: {fileID: 925789406240120239}
   - component: {fileID: 301601576130114186}
-  - component: {fileID: 2548712149054314779}
   m_Layer: 5
   m_Name: GamePortalView
   m_TagString: Untagged
@@ -491,18 +490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameCardsPortalComp
   CardsRoot: {fileID: 8583354516519450697}
---- !u!114 &2548712149054314779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2525492166447471594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1332ea66692e70046b1e113ddfc421c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameCardsView
 --- !u!1 &2693148870428163977
 GameObject:
   m_ObjectHideFlags: 0
