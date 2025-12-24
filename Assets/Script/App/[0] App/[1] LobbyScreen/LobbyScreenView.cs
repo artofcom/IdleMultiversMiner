@@ -8,26 +8,23 @@ using IGCore.MVCS;
 
 public class LobbyScreenView : AView
 {
-    static public Action<string> EventOnBtnStart;
+    // static public Action<string> EventOnBtnStart;
     static public Action EventOnBtnOptionDialogClicked;
     static public Action EventOnBtnShopDialogClicked;
     static public Action EventOnBtnDailyMissionClicked;
 
     [SerializeField] List<GameObject> views;
     [SerializeField] TopUIComp topHUDView;
-    [SerializeField] Transform BGMListRoot;
-    [SerializeField] Transform SoundFXListRoot;
     
     public TopUIComp TopHUDView => topHUDView;
 
     public class Presentor : APresentor
     {
-        public Presentor(GameCardsPortalComp.Presentor gameCardsPresentor)
+        public Presentor()
         {
-            GameCardsPresentor = gameCardsPresentor;
+            //GameCardsPresentor = gameCardsPresentor;
         }   
-
-        public GameCardsPortalComp.Presentor GameCardsPresentor { get; private set; }
+        //public GameCardsView.Presentor GameCardsPresentor { get; private set; }
     }
 
     // Start is called before the first frame update
@@ -40,8 +37,8 @@ public class LobbyScreenView : AView
           for(int q = 0; q < views.Count; ++q)
             views[q].gameObject.SetActive(false);
 
-        views[1].gameObject.SetActive(true);
-        (views[1].GetComponent<GameCardsPortalComp>()).EventGameCardClicked += OnBtnGameStart;
+       // views[1].gameObject.SetActive(true);
+       // (views[1].GetComponent<GameCardsView>()).EventGameCardClicked += OnBtnGameStart;
     }
 
 
@@ -51,17 +48,21 @@ public class LobbyScreenView : AView
         if(presentor == null)
             return;
 
-        (views[1].GetComponent<GameCardsPortalComp>()).Refresh(presentor.GameCardsPresentor);
+       // (views[1].GetComponent<GameCardsView>()).Refresh(presentor.GameCardsPresentor);
     }
 
-    public AView GetGameCardView(string gameKey)
-    {
-        return (views[1].GetComponent<GameCardsPortalComp>()).GetGameCardView(gameKey);
-    }
+    //public AView GetGameCardView(string gameKey)
+    //{
+    //    return (views[1].GetComponent<GameCardsView>()).GetGameCardView(gameKey);
+    //}
 
-    void OnBtnGameStart(string gameKey)
+    
+    public void OnBtnGamePortalClicked()
     {
-        EventOnBtnStart?.Invoke(gameKey);
+        for(int q = 0; q < views.Count; ++q)
+            views[q].gameObject.SetActive(false);
+
+        // views[1].gameObject.SetActive(true);
     }
 
     public void OnBtnParkClicked()
@@ -71,13 +72,7 @@ public class LobbyScreenView : AView
 
         views[0].gameObject.SetActive(true);
     }
-    public void OnBtnGamePortalClicked()
-    {
-        for(int q = 0; q < views.Count; ++q)
-            views[q].gameObject.SetActive(false);
-
-        views[1].gameObject.SetActive(true);
-    }
+    
     public void OnBtnOptionClicked()
     {
         EventOnBtnOptionDialogClicked?.Invoke();
@@ -93,31 +88,7 @@ public class LobbyScreenView : AView
         EventOnBtnDailyMissionClicked?.Invoke();
     }
 
-    public void EnableSoundFX(bool enable)
-    {
-        if(SoundFXListRoot == null) return;
-
-        for(int q = 0; q < SoundFXListRoot.childCount; ++q)
-        {
-            var audio = SoundFXListRoot.GetChild(q).GetComponent<AudioSource>();
-            if(audio == null) continue;
-
-            audio.volume = enable ? 0.9f : .0f;
-        }
-    }
-
-    public void EnableBGM(bool enable)
-    {
-        if(BGMListRoot == null) return;
-
-        for(int q = 0; q < BGMListRoot.childCount; ++q)
-        {
-            var audio = BGMListRoot.GetChild(q).GetComponent<AudioSource>();
-            if(audio == null) continue;
-
-            audio.volume = enable ? 0.9f : .0f;
-        }
-    }
+    
 
     /*
      * 

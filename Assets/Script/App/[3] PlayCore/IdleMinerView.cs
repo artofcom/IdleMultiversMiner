@@ -181,7 +181,7 @@ namespace App.GamePlay.IdleMiner
                 audio.volume = enable ? 0.9f : .0f;
             }
         }
-
+      
         #endregion ===> Interfaces
 
 

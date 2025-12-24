@@ -74,8 +74,8 @@ namespace App.GamePlay.IdleMiner
             View.EventOnBtnTimedBonusClicked += View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked += View_OnBtnGameCardsPortalClicked;
 
-            OptionDialog.EventOnBtnBGMClicked += EventOptionDlgOnBtnBGMClicked;
-            OptionDialog.EventOnBtnSoundFXClicked += EventOptionDlgOnBtnSoundFXClicked;
+            SettingDialogView.EventOnBtnBGMClicked += EventOptionDlgOnBtnBGMClicked;
+            SettingDialogView.EventOnBtnSoundFXClicked += EventOptionDlgOnBtnSoundFXClicked;
             
 
          //   OptionPopupDialog.EventOnClickedPlayerLocalData += OptionDialog_OnBtnClearPlayerDataClicked;
@@ -120,8 +120,8 @@ namespace App.GamePlay.IdleMiner
             View.EventOnBtnTimedBonusClicked -= View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked -= View_OnBtnGameCardsPortalClicked;
 
-            OptionDialog.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
-            OptionDialog.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
+            SettingDialogView.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
+            SettingDialogView.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
 
   //          View.EventOnBtnOptionClicked -= View_OnBtnOptionClicked;
   //          View.EventOnBtnShopClicked -= View_OnBtnShopClicked;
@@ -289,7 +289,7 @@ namespace App.GamePlay.IdleMiner
 
         void View_OnBtnGameCardsPortalClicked()
         {
-            var cardsCompPresentInfo = new GameCardsPortalComp.Presentor( BuildGameCardsPortalData() );
+            var cardsCompPresentInfo = new GameCardsView.Presentor( BuildGameCardsPortalData() );
 
             var presentInfo = new GameCardsPortalDialog.PresentInfo(message:string.Empty, cardsCompPresentInfo, GameCardsPortalDlg_OnBtnGameCardClicked);
 
@@ -395,7 +395,7 @@ namespace App.GamePlay.IdleMiner
             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
                 (errMsg, ret) => { },
                 "OptionDialog", 
-                new OptionDialog.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
+                new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
                 new System.Action<APopupDialog>( (popupDlg) => 
                 { 
                     Debug.Log("Option Dialog has been closed.");

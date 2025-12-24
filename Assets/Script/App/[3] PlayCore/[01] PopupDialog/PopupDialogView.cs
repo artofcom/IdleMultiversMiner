@@ -5,11 +5,13 @@ using UnityEngine.Assertions;
 
 namespace App.GamePlay.IdleMiner.PopupDialog
 {
-    public class PopupDialogView : IGCore.MVCS.AView
+    public class PopupDialogView : AView
     {
         [SerializeField] List<APopupDialog> dialogs;
+        [SerializeField] List<AUnit> dialogUnits;
 
         public List<APopupDialog> Dialogs => dialogs;
+        public List<AUnit> DialogUnits => dialogUnits;
 
         protected virtual void Awake()
         {

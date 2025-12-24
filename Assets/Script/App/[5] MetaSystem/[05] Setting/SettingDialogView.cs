@@ -4,16 +4,20 @@ using UnityEngine;
 
 namespace App.GamePlay.IdleMiner.PopupDialog
 {
-    public class OptionDialog : APopupDialog
+    public class SettingDialogView : APopupDialog
     {
         [SerializeField] ButtonToggle btnToggleSoundFX;
         [SerializeField] ButtonToggle btnToggleBGM;
+        [SerializeField] Transform SoundFXListRoot;
 
         public static Action<bool> EventOnBtnBGMClicked;
         public static Action<bool> EventOnBtnSoundFXClicked;
 
         // Debug Actions.
         public static Action EventOnShowGameReset;
+
+
+        [SerializeField] Transform BGMListRoot;
 
         public class PresentInfo : APresentor
         {
@@ -59,6 +63,35 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         public void OnBtnGameResetClicked()
         {
             EventOnShowGameReset?.Invoke();
+        }
+
+
+
+
+        public void EnableSoundFX(bool enable)
+        {
+            if(SoundFXListRoot == null) return;
+
+            for(int q = 0; q < SoundFXListRoot.childCount; ++q)
+            {
+                var audio = SoundFXListRoot.GetChild(q).GetComponent<AudioSource>();
+                if(audio == null) continue;
+
+                audio.volume = enable ? 0.9f : .0f;
+            }
+        }
+
+        public void EnableBGM(bool enable)
+        {
+            if(BGMListRoot == null) return;
+
+            for(int q = 0; q < BGMListRoot.childCount; ++q)
+            {
+                var audio = BGMListRoot.GetChild(q).GetComponent<AudioSource>();
+                if(audio == null) continue;
+
+                audio.volume = enable ? 0.9f : .0f;
+            }
         }
     }
 }

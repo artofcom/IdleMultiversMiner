@@ -38,7 +38,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
         #region ===> Interfaces
 
-        internal APopupDialog DisplayPopupDialog(string id, IGCore.MVCS.AView.APresentor presentor, Action<APopupDialog> OnCloseCallBack)
+        APopupDialog DisplayPopupDialog(string id, AView.APresentor presentor, Action<APopupDialog> OnCloseCallBack)
         {
             int idx = -1;
             for(int q = 0; q < popupDialogView.Dialogs.Count; ++q)
@@ -54,6 +54,21 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             {
                 popupDialogView.Dialogs[idx].Display(presentor, OnCloseCallBack);
                 return popupDialogView.Dialogs[idx];
+            }
+            return null;
+        }
+
+        AUnit DisplayPopupDialog(string id)
+        {
+            for(int q = 0; q < popupDialogView.DialogUnits.Count; ++q) 
+            {
+                if(string.Compare(popupDialogView.DialogUnits[q].name, id, ignoreCase:true) == 0)
+                {
+                    if(!popupDialogView.DialogUnits[q].IsAttached)
+                        popupDialogView.DialogUnits[q].Attach();
+
+                    return popupDialogView.DialogUnits[q];
+                }
             }
             return null;
         }
@@ -77,6 +92,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         void RegisterRequestables()
         {
             context.AddRequestDelegate(dialogKey, "DisplayPopupDialog", displayPopupDialog);
+            context.AddRequestDelegate(dialogKey, "DisplayUnitPopupDialog", displayUnitPopupDialog);
         }
 
         object displayPopupDialog(params object[] data)
@@ -85,10 +101,21 @@ namespace App.GamePlay.IdleMiner.PopupDialog
                 return null;
 
             string dlgId = (string)data[0];
-            IGCore.MVCS.AView.APresentor presentor = (IGCore.MVCS.AView.APresentor)data[1];
+            AView.APresentor presentor = (AView.APresentor)data[1];
             Action<APopupDialog> onCloseCallback = (Action<APopupDialog>)data[2];
 
             return DisplayPopupDialog(dlgId, presentor, onCloseCallback);
+        }
+        object displayUnitPopupDialog(params object[] data)
+        {
+            if(data.Length < 1)
+                return null;
+
+            string dlgId = (string)data[0];
+            //IGCore.MVCS.AView.APresentor presentor = (IGCore.MVCS.AView.APresentor)data[1];
+            //Action<APopupDialog> onCloseCallback = (Action<APopupDialog>)data[2];
+
+            return DisplayPopupDialog(dlgId);
         }
 
         #endregion

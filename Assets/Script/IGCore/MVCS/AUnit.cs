@@ -22,6 +22,7 @@ namespace IGCore.MVCS
                     controller.OnEventClose = value; 
             }
         }
+        public bool IsAttached => (View==null ? false : View.gameObject.activeSelf);
 
         protected virtual void Awake()
         {

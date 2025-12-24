@@ -2,7 +2,7 @@ using IGCore.MVCS;
 using Unity.Services.Analytics;
 using UnityEngine;
 
-public class DailyTaskUnit : AUnit
+public class DailyMissionUnit : AUnit
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,13 +13,18 @@ public class DailyTaskUnit : AUnit
     {
         base.Init(context);
 
-        var playerModel = new DailyTaskPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
-        model = new DailyTaskModel(context, playerModel);
-        controller = new DailyTaskController(view, model, context);
+        var playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
+        model = new DailyMissionModel(context, playerModel);
+        controller = new DailyMissionController(view, model, context);
 
         
         playerModel.Init();
         model.Init();
         controller.Init();
+    }
+
+    public void OnBtnCloseClicked()
+    {
+        this.Detach();
     }
 }

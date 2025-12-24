@@ -2,11 +2,10 @@ using App.GamePlay.IdleMiner.Common.PlayerModel;
 using IGCore.MVCS;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class DailyTaskPlayerModel : GatewayWritablePlayerModel
+public class DailyMissionPlayerModel : GatewayWritablePlayerModel
 {
-    public DailyTaskPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+    public DailyMissionPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
 
 
     public override void Init()

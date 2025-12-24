@@ -11,13 +11,13 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
         // Serialize Fields -------------------------------
         //
-        [SerializeField] GameCardsPortalComp portalComp;
+        [SerializeField] GameCardsView portalComp;
         
         Action<string> OnCardClicked;
 
         public class PresentInfo : APresentor
         {            
-            public PresentInfo(string message, GameCardsPortalComp.Presentor cardsPresentor, Action<string> onCardClicked)
+            public PresentInfo(string message, GameCardsView.Presentor cardsPresentor, Action<string> onCardClicked)
             {
                 Message = message;
                 this.cardsPresentor = cardsPresentor;
@@ -25,7 +25,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             }
 
             public string Message { get; private set; }
-            public GameCardsPortalComp.Presentor cardsPresentor { get; private set; }
+            public GameCardsView.Presentor cardsPresentor { get; private set; }
             public Action<string> OnCardClicked { get; private set; }
         }
 

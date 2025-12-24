@@ -9,6 +9,8 @@ public class LobbyScreen : AUnit
 {
     [SerializeField] AUnit popupDialog;
 
+    [SerializeField] AUnit gameCardsUnit;
+
     // DictorMain.Start() -> AUnitSwitcher.Init() -> LobbyScreen.Init()
     public override void Init(IGCore.MVCS.AContext ctx)
     {
@@ -26,5 +28,7 @@ public class LobbyScreen : AUnit
     public override void Attach() 
     {
         base.Attach();
+
+        gameCardsUnit.Attach();
     }
 }

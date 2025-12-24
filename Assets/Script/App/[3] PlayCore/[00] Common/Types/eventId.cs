@@ -11,6 +11,8 @@ namespace App.GamePlay.IdleMiner.Common.Types
         public const string SETTING_BGM_CHANGED = "SettingBGMChanged";
         public const string SETTING_SOUND_FX_CHANGED = "SettingSoundFXChanged";
         
+        public const string GAME_LEVEL_START = "GameLevelStart";
+
         public const string CRAFT_SLOT_EXTENDED = "CraftSlotExtended";
         public const string CRAFT_RECIPE_PURCHASED = "CraftRecipePurchased";
         public const string CRAFT_RECIPE_ASSIGNED = "CraftRecipeAssigned";

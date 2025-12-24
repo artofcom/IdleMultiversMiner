@@ -22,7 +22,7 @@ public class LobbyScreenController : AController
 
     TopUICompController topUICtrl;
 
-    bool bLoadingGame = false;
+    EventsGroup Events = new EventsGroup();
 
     public LobbyScreenController(AView view, AModel model, AContext ctx)
         : base(view, model, ctx)
@@ -32,32 +32,19 @@ public class LobbyScreenController : AController
 
     public override void Init()
     {
-        object queryRet = context.RequestQuery("AppPlayerModel", "IsBGMOn");
-        bool bEnabled = queryRet != null ? (bool)queryRet : true;
-        (view as LobbyScreenView).EnableBGM(bEnabled);
-
-        queryRet = context.RequestQuery("AppPlayerModel", "IsSoundFXOn");
-        bEnabled = queryRet != null ? (bool)queryRet : true;
-        (view as LobbyScreenView).EnableSoundFX(bEnabled);
+        
     }
 
     protected override void OnViewEnable()
     {
-        LobbyScreenView.EventOnBtnStart += EventOnBtnStart;
+        Events.RegisterEvent(EventID.GAME_LEVEL_START, EventOnBtnStart);
         LobbyScreenView.EventOnBtnOptionDialogClicked += EventOnBtnOptionDlgClicked;
         LobbyScreenView.EventOnBtnShopDialogClicked += EventOnBtnShopDlgClicked;
         LobbyScreenView.EventOnBtnDailyMissionClicked += EventOnBtnDailyMissionClicked;
-        
-        OptionDialog.EventOnBtnBGMClicked += EventOptionDlgOnBtnBGMClicked;
-        OptionDialog.EventOnBtnSoundFXClicked += EventOptionDlgOnBtnSoundFXClicked;
 
         ShopPopupDialog.EventOnBuyClicked += ShopDlg_EventOnBtnBuyClicked;
 
-        bLoadingGame = false;
-
         RefreshView();
-
-        view.StartCoroutine(coUpdate());
 
         DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, WAIT_TIME_SEC, () =>
         {
@@ -67,18 +54,14 @@ public class LobbyScreenController : AController
     
     protected override void OnViewDisable() 
     {
-        LobbyScreenView.EventOnBtnStart -= EventOnBtnStart;
+        Events.UnRegisterAll();
+        
         LobbyScreenView.EventOnBtnOptionDialogClicked -= EventOnBtnOptionDlgClicked;
         LobbyScreenView.EventOnBtnShopDialogClicked -= EventOnBtnShopDlgClicked;
         ShopPopupDialog.EventOnBuyClicked -= ShopDlg_EventOnBtnBuyClicked;
         LobbyScreenView.EventOnBtnDailyMissionClicked -= EventOnBtnDailyMissionClicked;
 
-        OptionDialog.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
-        OptionDialog.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
-
         ShopPopupDialog.EventOnBuyClicked -= ShopDlg_EventOnBtnBuyClicked;
-
-        bLoadingGame = false;
     }
 
     public override void Resume(int awayTimeInSec) { }
@@ -88,62 +71,19 @@ public class LobbyScreenController : AController
     public override void WriteData() { }
 
     
-    IEnumerator coUpdate()
-    {
-        yield return new WaitForSeconds(0.1f);
-        RefreshView();
-
-        while(true)
-        {
-            yield return new WaitForSeconds(1.0f);
-
-            RefreshView();
-        }
-    }
-
     void RefreshView()
     {
         if(context == null)     return;
 
-        GameCardComp.Presentor presentor = null;
-        List<Tuple < string, AView.APresentor >> listPresentor = new List<Tuple < string, AView.APresentor >>();
-        object queryResult = context.RequestQuery("AppPlayerModel", "GetGameCardCount");
-        if(queryResult == null) return;
-        
-        int cntGameCardsData = (int)queryResult;
-        for(int q = 0; q < cntGameCardsData; ++q)
-        {
-            var cardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfoFromIndex", q);
-            if(cardInfo == null)        continue;
-
-            //AView cardView = (view as LobbyScreenView).GetGameCardView( cardInfo.GameId );
-            //if(cardView == null)        continue;
-            //var cardComp = (cardView as GameCardComp);
-            //if(cardComp == null)        continue;
-
-            long lastPlayedTick;
-            string awayTime = "AwayTime : Unknown";
-            if(long.TryParse(cardInfo.LastPlayedTimeStamp, out lastPlayedTick)) 
-            {
-                long elapsedTicks = IdleMinerPlayerModel.UTCNowTick - lastPlayedTick;
-                double awayTimeInSec = (new TimeSpan(elapsedTicks)).TotalSeconds;
-                awayTime = $"AwayTime : {TimeExt.ToTimeString((long)awayTimeInSec, TimeExt.UnitOption.SHORT_NAME, TimeExt.TimeOption.HOUR, useUpperCase:true)}";
-            }
-            presentor = new GameCardComp.Presentor(string.Empty, awayTime, $"Reset : {cardInfo.ResetCount}", false);
-            listPresentor.Add( new Tuple<string, AView.APresentor>(cardInfo.GameId, presentor));
-        }
-
-        view.Refresh(new LobbyScreenView.Presentor( new GameCardsPortalComp.Presentor(listPresentor) ) );
-
-        // Debug.Log("Refreshing Lobby view....");
+        // view.Refresh()
     }
 
-
-    void EventOnBtnStart(string gameKey) 
+    void EventOnBtnStart(object data) 
     { 
-        if(bLoadingGame)        return;
+        if(data == null)
+            return;
 
-        bLoadingGame = true;
+        string gameKey = (string)data;
 
         this.context.AddData("gameKey" , gameKey.ToLower());
 
@@ -155,7 +95,7 @@ public class LobbyScreenController : AController
          context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
             (errMsg, ret) => {}, 
             "OptionDialog",  
-            new OptionDialog.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
+            new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
             new Action<APopupDialog>( (popupDlg) => 
             { 
                 Debug.Log("Option Dialog has been closed.");
@@ -178,15 +118,15 @@ public class LobbyScreenController : AController
 
     void EventOnBtnDailyMissionClicked()
     {
-        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
             (errMsg, ret) => {}, 
-            "DailyMissionDialog",  
-            new DailyTaskView.Presentor(),
+            "DailyMission");  
+            /*new DailyTaskView.Presentor(),
             new Action<APopupDialog>( (popupDlg) => 
             { 
                 Debug.Log("Shop Dialog has been closed.");
 
-            } ) );
+            } ) );*/
     }
 
     void ShopDlg_EventOnBtnBuyClicked(int amount)
@@ -195,20 +135,7 @@ public class LobbyScreenController : AController
         context.RequestQuery("AppPlayerModel", "UpdateIAPCurrency", amount, offset);
     }
 
-    void EventOptionDlgOnBtnBGMClicked(bool isOn)
-    {
-        Debug.Log("BGM has been clicked..." + isOn);
-        context.RequestQuery("AppPlayerModel", "SetBGM", isOn);
-        (view as LobbyScreenView).EnableBGM(isOn);
-    }
-    void EventOptionDlgOnBtnSoundFXClicked(bool isOn)
-    {
-        Debug.Log("SoundFX has been clicked..." + isOn);
-        context.RequestQuery("AppPlayerModel", "SetSoundFX", isOn);
-        (view as LobbyScreenView).EnableSoundFX(isOn);
-    }
-
-
+    
     /*
     LobbyScreenView _view;
     GameContext _context;

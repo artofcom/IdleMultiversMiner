@@ -174,14 +174,14 @@ namespace App.GamePlay.IdleMiner.GamePlay
             View.StartCoroutine( coStartView() );
 
             View.EventOnBtnGameResetClicked += EventOnBtnGameResetClicked;
-            OptionDialog.EventOnShowGameReset += EventOnBtnShowGameResetClicked;
+            SettingDialogView.EventOnShowGameReset += EventOnBtnShowGameResetClicked;
         }
         protected override void OnViewDisable()
         {
             Debug.Log("OnViewDisable : GamePlayController.");
 
             View.EventOnBtnGameResetClicked -= EventOnBtnGameResetClicked;
-            OptionDialog.EventOnShowGameReset -= EventOnBtnShowGameResetClicked;
+            SettingDialogView.EventOnShowGameReset -= EventOnBtnShowGameResetClicked;
         }
 
         public override void Dispose()
