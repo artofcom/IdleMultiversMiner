@@ -54,8 +54,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
             
             this.miningCost = miningCost;               this.shipCost = shipCost;   this.cargoCost = cargoCost;
             this.shotAccuracyCost = shotAccuracyCost;   this.shotIntervalCost = shotIntervalCost;
-
-            this.Convert();
         }
 
         public List<ObtainStat> Obtainables => obtainables;
@@ -106,9 +104,9 @@ namespace App.GamePlay.IdleMiner.Common.Model
         //public int[] Level { get; set; } = new int[(int)eSTAT.MAX] { 1, 1, 1 };
         //public Sprite SpriteIcon { get; set; } = null;
         
-        public override void Convert()
+        public override void OnAfterDeserialize()
         {
-            base.Convert();
+            base.OnAfterDeserialize();
 
             string[] performanceData = { miningRate, shipSpeed, cargoSize, shotAccuracy, shotInterval };
             for (int q = 0; q < stats.Length; ++q)
@@ -127,9 +125,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
                 else
                     costs[q] = new LevelBasedBigInteger(_defaultValue: BigInteger.Zero, _increasePercent: 0, _increaseBase: 0);
             }
-
-            for (int q = 0; q < obtainables.Count; ++q)
-                obtainables[q].Convert();
         }
 
 #if UNITY_EDITOR
@@ -165,7 +160,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
         {
             this.zoneId = zoneId;   
             this.planets = data;
-            this.Convert();
         }
 
 
@@ -173,11 +167,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
         public int ZoneId => zoneId;
         public List<PlanetData> Planets => planets;
 
-        public void Convert()
-        {
-            for (int q = 0; q < Planets.Count; ++q)
-                Planets[q].Convert();
-        }
         public PlanetData GetPlanetData(int planetId)
         {
             for(int q = 0; q < planets.Count; ++q)
@@ -217,11 +206,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
         // Accessor.
         public List<PlanetZoneData> Data => data;
 
-        public void Convert()
-        {
-            for (int q = 0; q < Data.Count; ++q)
-                Data[q].Convert();
-        }
         public PlanetZoneData GetZoneData(int zoneId)
         {
             for(int q = 0; q < data.Count; ++q)

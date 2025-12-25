@@ -248,6 +248,8 @@ namespace App.GamePlay.IdleMiner.Craft
 
         }
         
+        public override void WriteData() { }
+
         public override void Dispose()
         {
             EventSystem.UnRegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
@@ -260,11 +262,6 @@ namespace App.GamePlay.IdleMiner.Craft
             View?.EventOnBtnProgXClicked.RemoveAllListeners();
 
             context.RemoveRequestDelegate("Craft", "SIM_UpdateResourceReqStatus");
-        }
-
-        public override void WriteData()
-        {
-            Model.PlayerData.WriteData();
         }
 
         public override void Resume(int durationSec)

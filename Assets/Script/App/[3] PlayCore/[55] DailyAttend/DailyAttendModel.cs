@@ -9,7 +9,7 @@ using App.GamePlay.IdleMiner.Common.Model;
 namespace App.GamePlay.IdleMiner
 {
     [Serializable]
-    public class DailyAttendItemData
+    public class DailyAttendItemData : ISerializationCallbackReceiver
     {
         [SerializeField] int id;
         [SerializeField] CurrencyAmount reward = null;
@@ -17,7 +17,8 @@ namespace App.GamePlay.IdleMiner
         public int Id => id;
         public CurrencyAmount Reward => reward;
         
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             reward?.Init();
         }
@@ -29,12 +30,6 @@ namespace App.GamePlay.IdleMiner
         [SerializeField] List<DailyAttendItemData> listItemData;
      
         public List<DailyAttendItemData> ListItemData => listItemData;
-
-        public void Convert()
-        {
-            for(int q = 0; q < listItemData.Count; ++q)
-                listItemData[q].Convert();
-        }
     }
 
 

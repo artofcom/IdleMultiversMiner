@@ -535,12 +535,10 @@ namespace App.GamePlay.IdleMiner.GamePlay
             var textData = Resources.Load<TextAsset>(planetDataPath);   // gmSetting.PlanetsDataPath);
             planetDataGroup = JsonUtility.FromJson<PlanetZoneGroup>(textData.text);
             Assert.IsNotNull(planetDataGroup);
-            planetDataGroup.Convert();
 
             textData = Resources.Load<TextAsset>(bossDataPath);         // gmSetting.PlanetBossDataPath);
             planetBossDataGroup = JsonUtility.FromJson<PlanetZoneBossGroup>(textData.text);
             Assert.IsNotNull(planetBossDataGroup);
-            planetBossDataGroup.Convert();
 
 
             //---------------------------------------------------------------------//

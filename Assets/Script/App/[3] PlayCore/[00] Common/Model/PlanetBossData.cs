@@ -38,18 +38,12 @@ namespace App.GamePlay.IdleMiner.Common.Model
         {
             this.zoneId = zoneId;
             this.planets = data;
-            this.Convert();
         }
 
         // Accessor.
         public int ZoneId => zoneId;
         public List<PlanetBossData> Planets => planets;
 
-        public void Convert()
-        {
-            for (int q = 0; q < Planets.Count; ++q)
-                Planets[q].Convert();
-        }
         public PlanetBossData GetPlanetData(int planetId)
         {
             for(int q = 0; q < planets.Count; ++q)
@@ -69,11 +63,6 @@ namespace App.GamePlay.IdleMiner.Common.Model
         // Accessor.
         public List<PlanetZoneBossData> Data => data;
 
-        public void Convert()
-        {
-            for (int q = 0; q < Data.Count; ++q)
-                Data[q].Convert();
-        }
         public PlanetZoneBossData GetZoneData(int zoneId)
         {
             for(int q = 0; q < data.Count; ++q)

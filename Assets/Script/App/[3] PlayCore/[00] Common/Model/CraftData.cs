@@ -35,7 +35,7 @@ namespace App.GamePlay.IdleMiner
     }
 
     [Serializable]
-    public class RecipeInfo
+    public class RecipeInfo : ISerializationCallbackReceiver
     {
         [SerializeField] string id;
         [SerializeField] List<ResourceRequirement> sources;    // 1 ~ 3
@@ -60,7 +60,8 @@ namespace App.GamePlay.IdleMiner
             this.id = id;   this.outcomeId = outcomeId;
             this.sources = listSrc;
         }
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             BigInteger biCost;
             bool ret = BigInteger.TryParse(Cost, out biCost);
@@ -79,7 +80,7 @@ namespace App.GamePlay.IdleMiner
     }
 
     [Serializable]
-    public class CraftData
+    public class CraftData : ISerializationCallbackReceiver
     {
         public const int MAX_SLOT = 50;
 
@@ -98,11 +99,9 @@ namespace App.GamePlay.IdleMiner
         // RT data.
         public List<BigInteger> BISlotCosts { get; private set; } = new List<BigInteger>();
         
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
-            for (int q = 0; q < Recipes.Count; ++q)
-                Recipes[q].Convert();
-
             if(BISlotCosts == null )    BISlotCosts = new List<BigInteger>();
             BISlotCosts.Clear();
             for (int q = 0; q < SlotCosts.Count; ++q)

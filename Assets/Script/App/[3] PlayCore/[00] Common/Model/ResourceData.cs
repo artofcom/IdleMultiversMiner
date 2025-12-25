@@ -12,7 +12,7 @@ namespace App.GamePlay.IdleMiner
     public enum eRscStageType { MATERIAL = 0, COMPONENT, ITEM, eMax };
 
     [Serializable]
-    public class ResourceInfo : IBigIntegerConverter
+    public class ResourceInfo : ISerializationCallbackReceiver
     {
         [SerializeField] string id;
         [SerializeField] string price;
@@ -36,7 +36,8 @@ namespace App.GamePlay.IdleMiner
 #if UNITY_EDITOR
         public void SetId(string id) { this.id = id; }
 #endif
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             BigInteger biPrice;
             bool ret = BigInteger.TryParse(Price, out biPrice);
@@ -81,12 +82,11 @@ namespace App.GamePlay.IdleMiner
         public List<ResourceInfo> Data => data;
 
 
-        public void Convert(eRscStageType _lv)
+        public void Init(eRscStageType _lv)
         {
             for (int q = 0; q < Data.Count; ++q)
             {
                 Data[q].eLevel = _lv;
-                Data[q].Convert();
             }
         }
 

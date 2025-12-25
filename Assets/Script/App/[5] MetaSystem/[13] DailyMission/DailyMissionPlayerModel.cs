@@ -140,6 +140,8 @@ public class DailyMissionPlayerModel : GatewayWritablePlayerModel
         for(int k = 0; k < (int)DailyMissionConfig.GoalType.MAX; ++k)
             progressInfo.Add(new ProgressInfo((DailyMissionConfig.GoalType)k));
 
+        ResetNotificator();
+
         (context as IdleMinerContext).SaveMetaData();
     }
 
@@ -180,13 +182,11 @@ public class DailyMissionPlayerModel : GatewayWritablePlayerModel
         (context as IdleMinerContext).SaveMetaData();
     }
 
-    public void ResetNotificator()
+    void ResetNotificator()
     {
         notificationInfo.Sanitize();
         notificationInfo.SeenReasons.Clear();
         notificationInfo.UnseenReasons.Clear();
-
-        (context as IdleMinerContext).SaveMetaData();
     }
 
     void RegisterRequestables()

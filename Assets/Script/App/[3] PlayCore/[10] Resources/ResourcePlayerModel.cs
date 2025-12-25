@@ -39,14 +39,13 @@ namespace App.GamePlay.IdleMiner.Resouces
         
         static string DataKey_ResourceData => $"{nameof(ResourcePlayerModel)}_ResourceData";//$"{IdleMinerContext.GameKey}_{IdleMinerContext.AccountName}_ResourceData_";
         EventsGroup Events = new EventsGroup();
+
+
         #region ===> Interfaces
 
         public ResourcePlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
 
-        public void WriteData()
-        {
-            SaveResourceData();
-        }
+        public void WriteData() {}
 
 
         public override void Init()
@@ -128,6 +127,12 @@ namespace App.GamePlay.IdleMiner.Resouces
                 else         info.BICountX1000 += _countx1000;
             }
 
+            if(info.BICountX1000 < BigInteger.Zero)
+            {
+                Debug.LogError($"[Rsc] {rscId} count is going to negative value !..Resetting. {info.BICountX1000} => 0");
+                info.BICountX1000 = BigInteger.Zero;
+            }
+
             BigInteger newValue = info.BICount;
             
             if(oldValue < newValue)
@@ -170,15 +175,6 @@ namespace App.GamePlay.IdleMiner.Resouces
         #region ===> Helpers
 
 
-        void SaveResourceData()
-        {
-           // Assert.IsNotNull(ResourceCollectInfos);
-            //WriteFileInternal(DataKey_ResourceDataCount, ResourceCollectInfos.Count, false);
-            //for(int q = 0; q < ResourceCollectInfos.Count; ++q)
-            //{
-            //    WriteFileInternal(DataKey_ResourceData + q.ToString(), ResourceCollectInfos[q]);
-            //}
-        }
         void LoadResourceData()
         {
             if(context.IsSimulationMode())
@@ -208,7 +204,6 @@ namespace App.GamePlay.IdleMiner.Resouces
                 {
                     string rscId = resourceCollections.ResourceCollectInfos[q].RscId_.ToLower();
                     Assert.IsTrue(!RscCollections.ContainsKey( rscId ));
-                    resourceCollections.ResourceCollectInfos[q].Convert();
                     RscCollections.Add( rscId, resourceCollections.ResourceCollectInfos[q]);
                 }
 

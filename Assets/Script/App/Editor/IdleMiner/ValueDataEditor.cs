@@ -102,10 +102,7 @@ public class ValueDataEditor : EditorWindow
                 
                 // Craft-Recipe Data.
                 CraftData compCraftData = JsonUtility.FromJson<CraftData>(Resources.Load<TextAsset>(settingPnl.CraftCompDataPath).text);
-                if(compCraftData != null)   compCraftData.Convert();
-                CraftData itemCraftData = JsonUtility.FromJson<CraftData>(Resources.Load<TextAsset>(settingPnl.CraftItemDataPath).text);
-                if(itemCraftData != null)   itemCraftData.Convert();
-                
+                CraftData itemCraftData = JsonUtility.FromJson<CraftData>(Resources.Load<TextAsset>(settingPnl.CraftItemDataPath).text);   
                 this.InitEditor(infoList, settingPnl, compCraftData, itemCraftData);
                 return true;
             }

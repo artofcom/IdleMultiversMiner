@@ -10,7 +10,7 @@ using UnityEngine.Assertions;
 namespace App.GamePlay.IdleMiner.Common.Model
 {
     [Serializable]
-    public class ObtainStat
+    public class ObtainStat : ISerializationCallbackReceiver
     {
         //public const string EVENT_OBTAINED = "OnOnMaterialObtained";
 
@@ -29,14 +29,15 @@ namespace App.GamePlay.IdleMiner.Common.Model
         public string ResourceId => resourceId;
         public float Yield => yield;
 
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             yield = (float)(Math.Round(yield, 2));
         }
     }
 
     [Serializable]
-    public class PlanetBaseData : IBigIntegerConverter
+    public class PlanetBaseData : ISerializationCallbackReceiver
     {
         // Data Fields.
         [SerializeField] protected int id;                  // 1 ~ 
@@ -59,8 +60,8 @@ namespace App.GamePlay.IdleMiner.Common.Model
 #if UNITY_EDITOR
         public void SetOpenCost(string openCost) { this.openCost = openCost; }
 #endif
-
-        public virtual void Convert() 
+        public virtual void OnBeforeSerialize() { }
+        public virtual void OnAfterDeserialize()
         {
             BigInteger biTempCost;
             if(BigInteger.TryParse(openCost, out biTempCost))

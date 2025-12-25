@@ -213,6 +213,8 @@ public class DailyMissionController : AController
     void OnDailyMissionReset(object data)
     {
         DailyMissionModel.DMPlayerModel.Reset();
+        
         RefreshNotificator();
+        RefreshView();
     }
 }

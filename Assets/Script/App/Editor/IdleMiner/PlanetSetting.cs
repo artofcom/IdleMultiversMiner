@@ -6,12 +6,13 @@ using System;
 using System.Numerics;
 
 [Serializable]
-public class CurveInfo
+public class CurveInfo : ISerializationCallbackReceiver
 {
     [SerializeField] AnimationCurve curve = AnimationCurve.Linear(0f, 0f, 1.0f, 1.0f);
     [SerializeField] string min = "0", max = "100";
 
-    public void Convert()
+    public void OnBeforeSerialize() { }
+    public void OnAfterDeserialize()
     {
         if (min.Contains(".") || max.Contains("."))
         {
@@ -53,11 +54,6 @@ public class ResourceSetting
     [SerializeField] string JsonPath;
 
     public string JsonFilePath => JsonPath;
-
-    public void Convert()
-    {
-        PriceCurve.Convert();
-    }
 }
 
 
@@ -136,6 +132,7 @@ public class PlanetSetting : ScriptableObject
 
     private void OnValidate()
     {
+        /*
         rscLevel0.Convert();
         rscLevel1.Convert();
         rscLevel2.Convert();
@@ -161,6 +158,7 @@ public class PlanetSetting : ScriptableObject
         craftItemRecipeCostCurve.Convert();
         craftItemRecipeDurationCurve.Convert();
         craftItemSlotCostCurve.Convert();
+        */
 
         Debug.Log("OnValidate called...");
     }

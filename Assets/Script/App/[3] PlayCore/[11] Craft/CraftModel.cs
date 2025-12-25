@@ -66,7 +66,6 @@ namespace App.GamePlay.IdleMiner.Craft
 
         void ConvertCraftData(CraftData craftData)
         {
-            craftData.Convert();
             for (int q = 0; q < craftData.Recipes.Count; ++q)
             {
                 var recipe = craftData.Recipes[q];

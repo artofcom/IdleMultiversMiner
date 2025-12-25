@@ -1,12 +1,13 @@
-using System.Numerics;
 using System;
+using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 namespace App.GamePlay.IdleMiner.Common.PlayerModel
 {
     [Serializable]
-    public class ResourceCollectInfo
+    public class ResourceCollectInfo : ISerializationCallbackReceiver
     {
         [SerializeField] string RscId;
         [SerializeField] string CountX1000Str;
@@ -30,12 +31,16 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
         public bool AutoSell_   { get => AutoSell;  set => AutoSell = value; } 
         public string RscId_    { get => RscId;     set => RscId = value; }
 
-
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             BigInteger biCountx1000;
             bool ret = BigInteger.TryParse(CountX1000Str, out biCountx1000);
-            if (ret) BICountX1000 = biCountx1000;
+            if (ret)
+            {
+                biCountx1000 = biCountx1000 < BigInteger.Zero ? BigInteger.Zero : biCountx1000;
+                BICountX1000 = biCountx1000;
+            }
             Assert.IsTrue(ret, "Parse Error! " + CountX1000Str);
         }
     }

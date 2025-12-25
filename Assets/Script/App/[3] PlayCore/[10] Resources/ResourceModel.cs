@@ -62,19 +62,19 @@ namespace App.GamePlay.IdleMiner.Resouces
         {
             var textData = Resources.Load<TextAsset>(gamePath + "/Data/Resource_Mat");
             ResourceData.Add(JsonUtility.FromJson<ResourceData>(textData.text));
-            ResourceData[ResourceData.Count - 1].Convert(eRscStageType.MATERIAL);
+            ResourceData[ResourceData.Count - 1].Init(eRscStageType.MATERIAL);
             for(int q = 0; q < ResourceData[ResourceData.Count - 1].Data.Count; ++q)
                 dictMatCache.Add(ResourceData[ResourceData.Count - 1].Data[q].Id.ToLower(), ResourceData[ResourceData.Count - 1].Data[q]);
 
             textData = Resources.Load<TextAsset>(gamePath + "/Data/Resource_Comp");
             ResourceData.Add(JsonUtility.FromJson<ResourceData>(textData.text));
-            ResourceData[ResourceData.Count - 1].Convert(eRscStageType.COMPONENT);
+            ResourceData[ResourceData.Count - 1].Init(eRscStageType.COMPONENT);
             for(int q = 0; q < ResourceData[ResourceData.Count - 1].Data.Count; ++q)
                 dictCompCache.Add(ResourceData[ResourceData.Count - 1].Data[q].Id.ToLower(), ResourceData[ResourceData.Count - 1].Data[q]);
 
             textData = Resources.Load<TextAsset>(gamePath + "/Data/Resource_Item");
             ResourceData.Add(JsonUtility.FromJson<ResourceData>(textData.text));
-            ResourceData[ResourceData.Count - 1].Convert(eRscStageType.ITEM);
+            ResourceData[ResourceData.Count - 1].Init(eRscStageType.ITEM);
             for(int q = 0; q < ResourceData[ResourceData.Count - 1].Data.Count; ++q)
                 dictItemCache.Add(ResourceData[ResourceData.Count - 1].Data[q].Id.ToLower(), ResourceData[ResourceData.Count - 1].Data[q]);
 

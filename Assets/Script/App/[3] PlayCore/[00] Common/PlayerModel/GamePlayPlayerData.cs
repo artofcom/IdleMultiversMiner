@@ -75,7 +75,7 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
     }
 
     [Serializable]
-    public class BattleInfo
+    public class BattleInfo : ISerializationCallbackReceiver
     {
         [SerializeField] protected long eventStartedTicke;
         [SerializeField] protected string damageX1000;
@@ -95,7 +95,9 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
 
         public long EventStartedTick {  get => eventStartedTicke; set => eventStartedTicke = value; }
         public bool IsCleared { get => isCleared; set => isCleared = value; }
-        public void Convert()
+        
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             BigInteger bigInteger;
             bool ret = BigInteger.TryParse(damageX1000, out bigInteger);
@@ -175,8 +177,6 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
             {
                 if (!isUnlocked)
                     battleInfo.BIDamageX1000 = 0;
-
-                battleInfo.Convert();
             }
             else
                 battleInfo = null;

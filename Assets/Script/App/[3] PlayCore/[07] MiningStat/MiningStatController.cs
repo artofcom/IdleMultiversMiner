@@ -144,11 +144,8 @@ namespace App.GamePlay.IdleMiner.MiningStat
                 RefreshPanelView(MiningStatView.SECTION.ALL);
         }      
 
-        public override void WriteData()
-        {
-            Model.PlayerData.WriteData();
-        }
-
+        public override void WriteData() { }
+        
         #endregion ===> Initiailization.
 
 

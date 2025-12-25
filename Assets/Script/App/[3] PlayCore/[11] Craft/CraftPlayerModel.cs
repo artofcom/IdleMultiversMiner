@@ -132,33 +132,7 @@ namespace App.GamePlay.IdleMiner.Craft
             LoadCraftData(eRscStageType.COMPONENT);
             LoadCraftData(eRscStageType.ITEM);
         }
-        public void WriteData()
-        {
-            //SaveCraftData(eRscStageType.COMPONENT);
-            //SaveCraftData(eRscStageType.ITEM);
-        }
-
-        /*void SaveCraftData(eRscStageType type)
-        {
-            List<CraftingSlot> targetSlots = type==eRscStageType.COMPONENT ? craftingCompSlots : craftingItemSlots;
-            Assert.IsNotNull(targetSlots);
-            
-            bool isFeatureOpened = type==eRscStageType.COMPONENT ? isCompCraftOpened : isItemCraftOpened;
-            WriteFileInternal(DataKey_CraftOpened(type), isFeatureOpened, convertToJson:false);
-            
-            WriteFileInternal(DataKey_CraftDataCount(type), targetSlots.Count, convertToJson:false);
-            for (int q = 0; q < targetSlots.Count; ++q)
-            {
-                WriteFileInternal(DataKey_CraftData(type, q), targetSlots[q]);
-            }
-            int purchasedRecipIndex = type==eRscStageType.COMPONENT ? purchasedCompRecipIndex : purchasedItemRecipIndex;
-            WriteFileInternal(DataKey_CraftPurchasedRecipIndex(type), purchasedRecipIndex, convertToJson:false);
-
-            // CraftBuffStat buffStat = type==eRscStageType.COMPONENT ? compBuffStat : itemBuffStat;
-            // WriteFileInternal(DataKey_CraftBuffData(type), buffStat);
-
-        }*/
-
+        
         void LoadCraftData(eRscStageType type)
         {
             CraftStoreData craftData = null;

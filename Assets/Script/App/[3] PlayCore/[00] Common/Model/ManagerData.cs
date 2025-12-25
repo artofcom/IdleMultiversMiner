@@ -10,7 +10,7 @@ using App.GamePlay.IdleMiner.Common.Model;
 namespace App.GamePlay.IdleMiner
 {
     [Serializable]
-    public class RecruitProductInfo
+    public class RecruitProductInfo : ISerializationCallbackReceiver
     {
         [SerializeField] string id;
         [SerializeField] string name;
@@ -26,7 +26,9 @@ namespace App.GamePlay.IdleMiner
         public int MaxLevel => maxLevel;
 
         int minLevel, maxLevel;
-        public void Convert()
+
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             Cost.Init();
             Assert.IsTrue(!string.IsNullOrEmpty(level));
@@ -55,12 +57,6 @@ namespace App.GamePlay.IdleMiner
         [SerializeField] List<RecruitProductInfo> products;
 
         public List<RecruitProductInfo> Products => products;
-
-        public void Convert()
-        {
-            for (int q = 0; q < Products.Count; ++q)
-                Products[q].Convert();
-        }
     }
 
     [Serializable]
@@ -94,7 +90,7 @@ namespace App.GamePlay.IdleMiner
     }
 
     [Serializable]
-    public class ManagerSlotInfo
+    public class ManagerSlotInfo : ISerializationCallbackReceiver
     {
         [SerializeField] string costData;
         [SerializeField] int costType;
@@ -103,7 +99,8 @@ namespace App.GamePlay.IdleMiner
 
         LevelBasedInt cost = null;
 
-        public void Convert()
+        public void OnBeforeSerialize() { }
+        public void OnAfterDeserialize()
         {
             cost = new LevelBasedInt(costData);
         }
@@ -136,11 +133,5 @@ namespace App.GamePlay.IdleMiner
         public int RequiredManagerCountToPromoteLv5 => requiredManagerCountToPromoteLv5;
         public RecruitInfo RecruitInfo => recruitInfo;
         public ManagerSlotInfo SlotInfo => slotInfo;
-
-        public void Convert()
-        {
-            recruitInfo.Convert();
-            slotInfo.Convert();
-        }
     }
 }
