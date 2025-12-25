@@ -7,6 +7,7 @@ using IGCore.MVCS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -14,6 +15,8 @@ public class DailyMissionController : AController
 {
     DailyMissionModel DailyMissionModel => model as DailyMissionModel;
     EventsGroup events = new EventsGroup();
+
+    DailyMissionView View => view as DailyMissionView;
 
     public SpriteConfig CommonSpriteConfigCache { get; set; }
 
@@ -26,9 +29,13 @@ public class DailyMissionController : AController
         events.RegisterEvent(EventID.CRAFT_SUCCESSED, OnCraftSuccessed);
         events.RegisterEvent(EventID.MINING_STAT_UPGRADED, OnMiningStatUpgraded);
         events.RegisterEvent(EventID.ADS_WATCHED, OnAdsWatched);
+        events.RegisterEvent(EventID.DAILY_MISSION_GOAL_ACHIEVED, OnGoalAchieved);
+        events.RegisterEvent(EventID.DAILY_MISSION_RESET, OnDailyMissionReset);
 
-        (view as DailyMissionView).EventOnBtnClaimClicked += OnBtnClaimClicked;
-        (view as DailyMissionView).EventOnBtnResetClicked += OnBtnResetClicked;
+        View.EventOnBtnClaimClicked += OnBtnClaimClicked;
+        View.EventOnBtnResetClicked += OnBtnResetClicked;
+
+        RefreshNotificator();
     }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
@@ -36,7 +43,10 @@ public class DailyMissionController : AController
 
     protected override void OnViewEnable()  
     { 
+        DailyMissionModel.DMPlayerModel.SeenAllNotification();
+
         RefreshView();
+        RefreshNotificator();
 
         view.StartCoroutine( coUpdate() );
     }
@@ -47,8 +57,8 @@ public class DailyMissionController : AController
         base.Dispose();
 
         events.UnRegisterAll();
-        (view as DailyMissionView).EventOnBtnClaimClicked -= OnBtnClaimClicked;
-        (view as DailyMissionView).EventOnBtnResetClicked -= OnBtnResetClicked;
+        View.EventOnBtnClaimClicked -= OnBtnClaimClicked;
+        View.EventOnBtnResetClicked -= OnBtnResetClicked;
     }
 
     void RefreshView()
@@ -107,6 +117,28 @@ public class DailyMissionController : AController
         }
     }
 
+    void RefreshNotificator()
+    {
+        var notiInfo = DailyMissionModel.DMPlayerModel.NotificatorInfo;
+        if(notiInfo == null)
+            return;
+
+        View.DailyMissionNotificator.Reset();
+
+        if(notiInfo.SeenReasons != null)
+        {
+            for(int q = 0; q < notiInfo.SeenReasons.Count; ++q)
+                View.DailyMissionNotificator.EnableNotification(notiInfo.SeenReasons[q]);
+            
+            View.DailyMissionNotificator.DisableNotification();
+        }
+        if(notiInfo.UnseenReasons != null)
+        {
+            for(int q = 0; q < notiInfo.UnseenReasons.Count; ++q)
+                View.DailyMissionNotificator.EnableNotification(notiInfo.UnseenReasons[q]);
+        }
+    }
+
     void OnBtnClaimClicked(int nGoalType)
     {
         var goalType = (DailyMissionConfig.GoalType)nGoalType;
@@ -154,5 +186,19 @@ public class DailyMissionController : AController
         DailyMissionModel.IncreaseGoalCount(DailyMissionConfig.GoalType.WatchAds);
 
         RefreshView();
+    }
+
+    void OnGoalAchieved(object data)
+    {
+        DailyMissionConfig.GoalType goalType = (DailyMissionConfig.GoalType)data;
+        
+        if(DailyMissionModel.DMPlayerModel.AddNotificationReason(goalType.ToString()))
+            RefreshNotificator();
+    }
+
+    void OnDailyMissionReset(object data)
+    {
+        DailyMissionModel.DMPlayerModel.Reset();
+        RefreshNotificator();
     }
 }

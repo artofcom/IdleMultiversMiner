@@ -96,6 +96,7 @@
     <Compile Include="Assets\Script\IGCore\SubSystem\Audio\ButtonAudioPlayer.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[55] DailyAttend\DailyAttendController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\ManagerData.cs" />
+    <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PlayerModel\NotificationPlayerData.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\FrameResourceComp.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\EaseFuncLib.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerController.cs" />
@@ -259,6 +260,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\MiningStatController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Upgradable.cs" />
+    <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\CraftListMultiItemComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\ScriptableObjects\SkillTreeDataSetting.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[40] RoverScanner\RoverScannerData.cs" />
     <Compile Include="Assets\Script\App\[0] App\AppView.cs" />
@@ -299,7 +301,6 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Base\AIdleBaseController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\ARefreshable.cs" />
     <Compile Include="Assets\Script\IGCore\Simulator\GameData.cs" />
-    <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\CraftListDoubleItemComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PlayerModel\GamePlayPlayerData.cs" />
     <Compile Include="Assets\ThirdParty\PinchablePageScroller\Script\PinchablePageScroller.cs" />
     <Compile Include="Assets\Script\App\[0] App\AppController.cs" />

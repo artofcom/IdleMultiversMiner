@@ -2,9 +2,11 @@
 using App.GamePlay.Common;
 using App.GamePlay.IdleMiner.Common;
 using App.GamePlay.IdleMiner.Common.Model;
+using App.GamePlay.IdleMiner.Common.PlayerModel;
 using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Events;
+using Core.Util;
 using Core.Utils;
 using IGCore.Components;
 using IGCore.MVCS;
@@ -96,6 +98,8 @@ namespace App.GamePlay.IdleMiner
             {
                 View.EnableBGM((bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"));
                 View.EnableSoundFX((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"));
+
+                RefreshNotificator();
             }
         }
 
@@ -213,14 +217,24 @@ namespace App.GamePlay.IdleMiner
 
         void Event_DailyMissionGoalAchieved(object data)
         {
-            DailyMissionConfig.GoalType goldType = (DailyMissionConfig.GoalType)data;
-            View.DailyMissionNotificator.EnableNotification(goldType.ToString());
+            if(context.IsSimulationMode())
+                return;
+
+            DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, 0.1f, () =>
+            {
+                RefreshNotificator();
+            });
         }
 
         void Event_DailyMissionReset(object data)
         {
-            View.DailyMissionNotificator.DisableNotification();
-            View.DailyMissionNotificator.Reset();
+            if(context.IsSimulationMode())
+                return;
+
+            DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, 0.1f, () =>
+            {
+                RefreshNotificator();
+            });
         }
 
         void ShopDialog_OnBtnBuyClicked(int amount)
@@ -310,11 +324,12 @@ namespace App.GamePlay.IdleMiner
 
         void View_OnBtnDailyMissionClicked()
         {
-             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
                 (errMsg, ret) => {}, 
                 "DailyMission"); 
             
-            View.DailyMissionNotificator.DisableNotification();
+            context.RequestQuery("DailyMission.PlayerData", "SeenAllNotificationInfo");
+            RefreshNotificator();
         }
 
 
@@ -566,6 +581,33 @@ namespace App.GamePlay.IdleMiner
                 starCurrency.ToString(), 
                 Model.PlayerData.OpenedTabBtns);
             View.Refresh( info );
+        }
+
+        void RefreshNotificator()
+        {
+            // Daily Mission.
+            NotificationInfo dailyMissionNotiInfo = null;
+
+            context.RequestQuery("DailyMission.PlayerData", "GetNotificationInfo",  
+                (errMsg, ret) => 
+                {
+                    dailyMissionNotiInfo = (NotificationInfo)ret;
+                }); 
+            Assert.IsNotNull( dailyMissionNotiInfo );
+
+            View.DailyMissionNotificator.Reset();
+            if(dailyMissionNotiInfo.SeenReasons != null)
+            {
+                for(int q = 0; q < dailyMissionNotiInfo.SeenReasons.Count; ++q)
+                    View.DailyMissionNotificator.EnableNotification(dailyMissionNotiInfo.SeenReasons[q]);
+            
+                View.DailyMissionNotificator.DisableNotification();
+            }
+            if(dailyMissionNotiInfo.UnseenReasons != null)
+            {
+                for(int q = 0; q < dailyMissionNotiInfo.UnseenReasons.Count; ++q)
+                    View.DailyMissionNotificator.EnableNotification(dailyMissionNotiInfo.UnseenReasons[q]);
+            }
         }
 
         #endregion

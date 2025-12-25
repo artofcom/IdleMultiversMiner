@@ -27,6 +27,7 @@ public class DailyMissionView : APopupDialog
     List<DailyMissionListItemComp> Items = new List<DailyMissionListItemComp>();
     bool IsStarted = false;
 
+    public INotificator DailyMissionNotificator => dailyMissionNotificator as INotificator;
 
     public class Presentor : APresentor
     {

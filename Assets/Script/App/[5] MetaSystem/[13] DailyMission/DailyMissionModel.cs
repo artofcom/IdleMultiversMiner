@@ -67,6 +67,6 @@ public class DailyMissionModel : AModel
         Assert.IsNotNull(configData);
         
         if(configData.GoalCount == count)
-            EventSystem.DispatchEvent(EventID.DAILY_MISSION_GOAL_ACHIEVED);
+            EventSystem.DispatchEvent(EventID.DAILY_MISSION_GOAL_ACHIEVED, goalType);
     }
 }

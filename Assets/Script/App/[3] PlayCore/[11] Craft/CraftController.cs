@@ -319,7 +319,7 @@ namespace App.GamePlay.IdleMiner.Craft
             eRscStageType eLv = View.TabIndex == 0 ? eRscStageType.COMPONENT : eRscStageType.ITEM;
             string closedSlotMsg = eLv == eRscStageType.COMPONENT ? "BUILD\n TO-COMP" : "BUILD\n TO-ITEM";
             List<CraftingSlot> listCraftSlots = Model.GetCraftSlotList(eLv);
-            List<CraftListDoubleItemComp.PresentInfo> presentInfo = new List<CraftListDoubleItemComp.PresentInfo>();
+            List<CraftListMultiItemComp.PresentInfo> presentInfo = new List<CraftListMultiItemComp.PresentInfo>();
             
             bool isFeatureOpened = eLv == eRscStageType.COMPONENT ? Model.PlayerData.IsCompCraftOpened : Model.PlayerData.IsItemCraftOpened;
             if(!isFeatureOpened)
@@ -362,7 +362,7 @@ namespace App.GamePlay.IdleMiner.Craft
                 }
                 idx += q;
 
-                var presentor = new CraftListDoubleItemComp.PresentInfo(listCraftComp);
+                var presentor = new CraftListMultiItemComp.PresentInfo(listCraftComp);
                 presentInfo.Add(presentor);
             }
             
@@ -611,7 +611,7 @@ namespace App.GamePlay.IdleMiner.Craft
 
         RecipeListPopupDialog.PresentInfo BuildRecipePopupDialogPresentInfo(eRscStageType eLv)
         {
-            List<CraftListDoubleItemComp.PresentInfo> presentInfo = new List<CraftListDoubleItemComp.PresentInfo>();
+            List<CraftListMultiItemComp.PresentInfo> presentInfo = new List<CraftListMultiItemComp.PresentInfo>();
             List<RecipeInfo> purchasedRecipeInfoList = Model.GetRecipeInfoList(eLv, purchasedOnly:true);
             
             bool done = false;
@@ -665,7 +665,7 @@ namespace App.GamePlay.IdleMiner.Craft
                 }
                 idx += q;
 
-                var presentor = new CraftListDoubleItemComp.PresentInfo(listComp);
+                var presentor = new CraftListMultiItemComp.PresentInfo(listComp);
                 presentInfo.Add(presentor);
             }
 

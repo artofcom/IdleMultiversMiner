@@ -35,15 +35,15 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
         public int SelectedSlotIndex => mSelectedSlotIndex;
 
-        List<CraftListDoubleItemComp> RecipeItems = new List<CraftListDoubleItemComp>();
+        List<CraftListMultiItemComp> RecipeItems = new List<CraftListMultiItemComp>();
 
         public class PresentInfo : APresentor
         {
-            public PresentInfo(List<CraftListDoubleItemComp.PresentInfo> _info)
+            public PresentInfo(List<CraftListMultiItemComp.PresentInfo> _info)
             {
                 infos = _info;
             }
-            public List<CraftListDoubleItemComp.PresentInfo> infos { get; private set; }
+            public List<CraftListMultiItemComp.PresentInfo> infos { get; private set; }
         }
 
         // Start is called before the first frame update
@@ -96,12 +96,12 @@ namespace App.GamePlay.IdleMiner.PopupDialog
                 RecipeItems.Clear();
             }
 
-            int innerItemCount = RecipeItemCache.GetComponent<CraftListDoubleItemComp>().SingleItemCount;
+            int innerItemCount = RecipeItemCache.GetComponent<CraftListMultiItemComp>().SingleItemCount;
             for (int q = 0; q < info.infos.Count; ++q)
             {
                 var obj = rebuildList ? Instantiate(RecipeItemCache, Content) : RecipeItems[q].gameObject;
                 obj.SetActive(true);
-                var itemComp = obj.GetComponent<CraftListDoubleItemComp>();
+                var itemComp = obj.GetComponent<CraftListMultiItemComp>();
                 Assert.IsNotNull(itemComp);
 
                 itemComp.Init(q * innerItemCount, gameObject.name);

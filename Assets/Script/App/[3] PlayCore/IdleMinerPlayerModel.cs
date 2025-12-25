@@ -188,7 +188,7 @@ namespace App.GamePlay.IdleMiner
         public CurrencyAmount GetCurrencyAmount(eCurrencyType currencyType)
         {
             if(currencyType == eCurrencyType.IAP_COIN)
-                return new CurrencyAmount(((int)context.RequestQuery("AppPlayerModel", "GetIAPCurrency")).ToString(), eCurrencyType.IAP_COIN);
+                return new CurrencyAmount(((long)context.RequestQuery("AppPlayerModel", "GetIAPCurrency")).ToString(), eCurrencyType.IAP_COIN);
 
             if (moneyData.Money == null)
                 return null;

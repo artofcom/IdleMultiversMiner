@@ -47,13 +47,13 @@ namespace App.GamePlay.IdleMiner.Craft
         [ImplementsInterface(typeof(INotificator))] 
         [SerializeField] MonoBehaviour itemTabNotificator;
 
-        public int InnerSingleCraftItemCount => RecipeItemCache!=null ? RecipeItemCache.GetComponent<CraftListDoubleItemComp>().SingleItemCount : 0;
+        public int InnerSingleCraftItemCount => RecipeItemCache!=null ? RecipeItemCache.GetComponent<CraftListMultiItemComp>().SingleItemCount : 0;
         public INotificator NotificatorComp => mainBtnNotificator as INotificator;
 
         // Members.
         EventsGroup Events = new EventsGroup();
         GameObjectPooler ListItemPooler = new GameObjectPooler();
-        List<CraftListDoubleItemComp> ListItems = new List<CraftListDoubleItemComp>();
+        List<CraftListMultiItemComp> ListItems = new List<CraftListMultiItemComp>();
         bool IsStarted = false;
 
         bool isPanelHigh;
@@ -78,12 +78,12 @@ namespace App.GamePlay.IdleMiner.Craft
             {
                 infos = null;
             }
-            public PresentInfo(List<CraftListDoubleItemComp.PresentInfo> _info, string status)
+            public PresentInfo(List<CraftListMultiItemComp.PresentInfo> _info, string status)
             {
                 infos = _info;
                 this.status = status;
             }
-            public List<CraftListDoubleItemComp.PresentInfo> infos { get; private set; }
+            public List<CraftListMultiItemComp.PresentInfo> infos { get; private set; }
             public string status;
         }
 
@@ -185,10 +185,10 @@ namespace App.GamePlay.IdleMiner.Craft
                 var obj = rebuildList ? GameObjectPooler.GetPoolItem(ListItemPooler, Content, Vector3.zero) : ListItems[q].gameObject;
                 obj.SetActive(true);
                 obj.transform.localPosition = new Vector3(obj.transform.localPosition.x, obj.transform.localPosition.y, .0f);
-                var itemComp = obj.GetComponent<CraftListDoubleItemComp>();
+                var itemComp = obj.GetComponent<CraftListMultiItemComp>();
                 Assert.IsNotNull(itemComp);
 
-                itemComp.Init(q*2, DIALOG_KEY);
+                itemComp.Init(q*itemComp.SingleItemCount, DIALOG_KEY);
                 itemComp.Refresh(info.infos[q]);
 
                 if(rebuildList)
