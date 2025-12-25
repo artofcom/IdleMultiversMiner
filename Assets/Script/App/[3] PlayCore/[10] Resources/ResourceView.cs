@@ -112,7 +112,6 @@ namespace App.GamePlay.IdleMiner.Resouces
 
             bool IsRscSelected = false;
             bool IsSelectedAusoSellOn = false;
-            int idx = 0;
             for (int q = 0; q < info.ItemPresentInfo.Count; ++q)
             {
                 var obj = rebuildList ? GameObjectPooler.GetPoolItem(ListItemPooler, Content, Vector3.zero) : Items[q].gameObject;
@@ -130,8 +129,6 @@ namespace App.GamePlay.IdleMiner.Resouces
                     IsRscSelected = true;
                     IsSelectedAusoSellOn = info.ItemPresentInfo[q].autoSell;
                 }
-
-                ++idx;
             }
 
             PnlRscSelected.SetActive(IsRscSelected);

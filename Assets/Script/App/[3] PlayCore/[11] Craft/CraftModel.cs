@@ -24,7 +24,7 @@ namespace App.GamePlay.IdleMiner.Craft
         { }
            
 
-        public override void Init()
+        public override void Init(object data = null)
         {
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);

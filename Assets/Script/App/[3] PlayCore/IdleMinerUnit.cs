@@ -2,6 +2,7 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using App.MetaSystem.Bonus;
 using Core.Events;
+using IGCore.Components;
 using IGCore.MVCS;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace App.GamePlay.IdleMiner
         [SerializeField] AUnit popupDialog;
 
         [SerializeField] TimedBonus timedBonus;
-
+        
 #if UNITY_EDITOR
         [Header("Simulator Settins")]
         [SerializeField] string simulationPath = "Bundles/G010_Graves/Variations/Standard";
@@ -84,7 +85,7 @@ namespace App.GamePlay.IdleMiner
             controller.Init();  
 
             Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, Event_ResetGamePlay_InitGame);
-            Events.RegisterEvent(EventID.RESOURCE_UPDATED, Event_Resource_Updated);
+            Events.RegisterEvent(EventID.RESOURCE_UPDATED, Event_Resource_Updated);            
 
             if(!ctx.IsSimulationMode())
             {
@@ -117,8 +118,7 @@ namespace App.GamePlay.IdleMiner
 
             context.DisposeGame();
 
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, Event_ResetGamePlay_InitGame);
-            Events.UnRegisterEvent(EventID.RESOURCE_UPDATED, Event_Resource_Updated);
+            Events.UnRegisterAll();
         }
 
         public override void Attach()

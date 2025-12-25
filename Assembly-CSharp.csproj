@@ -180,6 +180,7 @@
     <Compile Include="Assets\Script\App\[5] MetaSystem\[15] GameCards\GameCardsView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SkillTreeModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\CraftData.cs" />
+    <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionListItemComp.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[10] Bonus\TimedBonus.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\TextFileIO.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerBoosterData.cs" />
@@ -289,6 +290,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\Views\SkillTreePathComp.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\DOTween\CurveTweener.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\CraftController.cs" />
+    <Compile Include="Assets\Script\App\[9] Subsystem\SpriteConfig.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[10] Bonus\Interfaces\IBonus.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\TopUIComp.cs" />
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbySceenModel.cs" />

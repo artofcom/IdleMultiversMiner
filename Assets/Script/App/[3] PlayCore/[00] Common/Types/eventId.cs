@@ -13,6 +13,7 @@ namespace App.GamePlay.IdleMiner.Common.Types
         
         public const string GAME_LEVEL_START = "GameLevelStart";
 
+        public const string CRAFT_SUCCESSED = "CraftSuccessed";
         public const string CRAFT_SLOT_EXTENDED = "CraftSlotExtended";
         public const string CRAFT_RECIPE_PURCHASED = "CraftRecipePurchased";
         public const string CRAFT_RECIPE_ASSIGNED = "CraftRecipeAssigned";
@@ -35,6 +36,10 @@ namespace App.GamePlay.IdleMiner.Common.Types
 
         public const string PLANET_BOOSTER_TRIGGERED = "PlanetBoosterTriggered";
         public const string PLANET_BOOSTER_FINISHED = "PlanetBoosterFinished";
+
+        public const string ADS_WATCHED = "AdsWatched";
+        public const string DAILY_MISSION_GOAL_ACHIEVED = "DailyMissionGoalAchieved";
+        public const string DAILY_MISSION_RESET = "DailyMissionReset";
 
         // Main Notification.
         // public const string LEARNABL_SKILL_FOUND = "LearnableSkillFound";

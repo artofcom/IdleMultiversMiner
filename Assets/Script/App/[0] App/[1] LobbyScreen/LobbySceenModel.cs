@@ -6,5 +6,5 @@ public class LobbyScreenModel : IGCore.MVCS.AModel
 {
     public LobbyScreenModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
 
-    public override void Init() {}
+    public override void Init(object data = null) {}
 }

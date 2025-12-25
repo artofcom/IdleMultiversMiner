@@ -16,7 +16,7 @@ namespace App.GamePlay.IdleMiner
 
         public IdleMinerModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData)  { }
 
-        public override void Init()
+        public override void Init(object data = null)
         {
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);

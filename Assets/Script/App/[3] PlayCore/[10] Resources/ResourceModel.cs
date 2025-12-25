@@ -24,7 +24,7 @@ namespace App.GamePlay.IdleMiner.Resouces
 
         public ResourceModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel _playerData) : base(ctx, _playerData)  {}
 
-        public override void Init()
+        public override void Init(object data = null)
         {
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);

@@ -18,7 +18,7 @@ namespace IGCore.MVCS
         protected bool _isInitialized = false;
         public bool IsInitialized => _isInitialized && playerData.IsInitialized;
         
-        public abstract void Init();
+        public abstract void Init(object data = null);
         
         
         public virtual void Dispose() { }

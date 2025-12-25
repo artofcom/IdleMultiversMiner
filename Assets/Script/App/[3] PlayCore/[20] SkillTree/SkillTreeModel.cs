@@ -26,7 +26,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public SkillTreeModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData) 
         { }
            
-        public override void Init()
+        public override void Init(object data = null)
         {
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
@@ -221,8 +221,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
             }
             
             // Debug.Log("Learning Skills - " + skill_id);
-            bool needToSaveData = !isPartOfInitProcess && !context.IsSimulationMode();
-            EventSystem.DispatchEvent(EventID.SKILL_LEARNED, new Tuple<string, string, string, bool>(skill_id, selectedInfo.AbilityID, selectedInfo.AbilityParam, needToSaveData));
+            EventSystem.DispatchEvent(EventID.SKILL_LEARNED, new Tuple<string, string, string, bool>(skill_id, selectedInfo.AbilityID, selectedInfo.AbilityParam, isPartOfInitProcess));
 
             if(!isPartOfInitProcess)
             {

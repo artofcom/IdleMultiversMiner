@@ -53,7 +53,7 @@ namespace App.GamePlay.IdleMiner
 
         public RoverScannerDataModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
 
-        public override void Init()
+        public override void Init(object data = null)
         {
            // var textData = Resources.Load<TextAsset>(GAMEDATA_PATH + "RoverScanerData");
            // RoverData = JsonUtility.FromJson<RoverData>(textData.text);

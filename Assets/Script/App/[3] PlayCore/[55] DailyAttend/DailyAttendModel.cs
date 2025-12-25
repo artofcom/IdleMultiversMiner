@@ -46,7 +46,7 @@ namespace App.GamePlay.IdleMiner
 
         public DailyAttendModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
 
-        public override void Init(){}
+        public override void Init(object data = null){}
 
         /*
         void InitDailyAttend()

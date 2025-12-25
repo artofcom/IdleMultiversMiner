@@ -6,6 +6,7 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Events;
 using Core.Utils;
+using IGCore.Components;
 using IGCore.MVCS;
 using System;
 using System.Collections;
@@ -62,6 +63,9 @@ namespace App.GamePlay.IdleMiner
             Events.RegisterEvent(EventID.CRAFT_RECIPE_PURCHASED, EventOnCraftStatusChanged);
             Events.RegisterEvent(EventID.CRAFT_SLOT_EXTENDED, EventOnCraftStatusChanged);
 
+            Events.RegisterEvent(EventID.DAILY_MISSION_GOAL_ACHIEVED, Event_DailyMissionGoalAchieved);
+            Events.RegisterEvent(EventID.DAILY_MISSION_RESET, Event_DailyMissionReset);
+
       //      View.EventOnBtnOptionClicked += View_OnBtnOptionClicked;
      // //      View.EventOnBtnShopClicked += View_OnBtnShopClicked;
      //       View.EventOnBtnTimedBonusClicked += View_OnBtnTimedBonusClicked;
@@ -73,6 +77,7 @@ namespace App.GamePlay.IdleMiner
             View.EventOnBtnAdsBonusClicked += View_OnBtnAdsBonusClicked;
             View.EventOnBtnTimedBonusClicked += View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked += View_OnBtnGameCardsPortalClicked;
+            View.EventOnBtnDailyMissionClicked += View_OnBtnDailyMissionClicked;
 
             SettingDialogView.EventOnBtnBGMClicked += EventOptionDlgOnBtnBGMClicked;
             SettingDialogView.EventOnBtnSoundFXClicked += EventOptionDlgOnBtnSoundFXClicked;
@@ -99,26 +104,14 @@ namespace App.GamePlay.IdleMiner
             base.Dispose();
 
             // Alloc Events.
-            Events.UnRegisterEvent(EventID.APPLICATION_FOCUSED, EventOnApplicationFocus);
-            Events.UnRegisterEvent(EventID.APPLICATION_PAUSED, EventOnApplicationPause);
-            Events.UnRegisterEvent(EventID.GAME_CURRENCY_UPDATED, EventOnMoneyUpdated);
-
-            Events.RegisterEvent(EventID.MINING_STAT_UPGRADED, EventOnMiningStatusChanged);
-            Events.UnRegisterEvent(EventID.PLANET_UNLOCKED, EventOnMiningStatusChanged);
-            Events.UnRegisterEvent(EventID.PLANET_BOOSTER_TRIGGERED, EventOnMiningStatusChanged);
-
-            Events.UnRegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-           // Events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, EventOnResetRefresh);
-
-            Events.UnRegisterEvent(EventID.CRAFT_RECIPE_ASSIGNED, EventOnCraftStatusChanged);
-            Events.UnRegisterEvent(EventID.CRAFT_RECIPE_PURCHASED, EventOnCraftStatusChanged);
-            Events.UnRegisterEvent(EventID.CRAFT_SLOT_EXTENDED, EventOnCraftStatusChanged);
+            Events.UnRegisterAll();
 
             View.EventOnBtnBackClicked -= View_OnBtnBackClicked;
             View.EventOnBtnSettingClicked -= View_OnBtnSettingClicked;
             View.EventOnBtnAdsBonusClicked -= View_OnBtnAdsBonusClicked;
             View.EventOnBtnTimedBonusClicked -= View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked -= View_OnBtnGameCardsPortalClicked;
+            View.EventOnBtnDailyMissionClicked -= View_OnBtnDailyMissionClicked;
 
             SettingDialogView.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
             SettingDialogView.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
@@ -218,6 +211,18 @@ namespace App.GamePlay.IdleMiner
             WriteData(); 
         }
 
+        void Event_DailyMissionGoalAchieved(object data)
+        {
+            DailyMissionConfig.GoalType goldType = (DailyMissionConfig.GoalType)data;
+            View.DailyMissionNotificator.EnableNotification(goldType.ToString());
+        }
+
+        void Event_DailyMissionReset(object data)
+        {
+            View.DailyMissionNotificator.DisableNotification();
+            View.DailyMissionNotificator.Reset();
+        }
+
         void ShopDialog_OnBtnBuyClicked(int amount)
         {
             Model.PlayerData.AddMoney(new CurrencyAmount(amount.ToString(), eCurrencyType.IAP_COIN));
@@ -302,6 +307,16 @@ namespace App.GamePlay.IdleMiner
                     Debug.Log("Game Portal Dialog has been closed.");
                 } ) );   
         }
+
+        void View_OnBtnDailyMissionClicked()
+        {
+             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+                (errMsg, ret) => {}, 
+                "DailyMission"); 
+            
+            View.DailyMissionNotificator.DisableNotification();
+        }
+
 
         List<Tuple < string, AView.APresentor >> BuildGameCardsPortalData()
         { 

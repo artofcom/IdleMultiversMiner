@@ -1,9 +1,11 @@
 using IGCore.MVCS;
-using Unity.Services.Analytics;
 using UnityEngine;
 
 public class DailyMissionUnit : AUnit
 {
+    [SerializeField] DailyMissionConfig dailyMissionConfig;
+    [SerializeField] SpriteConfig commonSpriteConfig;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,9 +19,10 @@ public class DailyMissionUnit : AUnit
         model = new DailyMissionModel(context, playerModel);
         controller = new DailyMissionController(view, model, context);
 
+        (controller as DailyMissionController).CommonSpriteConfigCache = commonSpriteConfig;
         
         playerModel.Init();
-        model.Init();
+        model.Init(dailyMissionConfig);
         controller.Init();
     }
 

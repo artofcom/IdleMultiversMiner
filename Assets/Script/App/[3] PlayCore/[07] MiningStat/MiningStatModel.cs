@@ -26,7 +26,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
         { 
             // this.InitModel((string)ctx.GetData("planet_data_path"), (string)ctx.GetData("bossplanet_data_path"));
         }
-        public override void Init() 
+        public override void Init(object data = null) 
         { 
             _isInitialized = true;
         }

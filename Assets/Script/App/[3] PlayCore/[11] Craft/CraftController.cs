@@ -6,14 +6,15 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Events;
 using IGCore.MVCS;
+using IGCore.Simulator.GameData;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
-using System.Linq;
 
 namespace App.GamePlay.IdleMiner.Craft
 {
@@ -422,13 +423,13 @@ namespace App.GamePlay.IdleMiner.Craft
             string skill_id = skill_id_n_ability_id_param.Item1;
             string abilityId = skill_id_n_ability_id_param.Item2.ToLower();
             string abilityParam = skill_id_n_ability_id_param.Item3.ToLower();
-            bool needToSaveData = (bool)skill_id_n_ability_id_param.Item4;
+            bool isPartOfInitProcess = (bool)skill_id_n_ability_id_param.Item4;
 
             // Debug.Log("<color=green>Learning Skills - " + skill_id + " </color>");
             ((ISkillLeaner)this).LearnSkill(skill_id, abilityId, abilityParam);
 
             // Show noti when this is (NOT a part of init process && Unlock_Feature)
-            if(needToSaveData && 0==string.Compare(abilityId, UnlockCraftFeatureSkill.Id, ignoreCase:true))
+            if(!isPartOfInitProcess && 0==string.Compare(abilityId, UnlockCraftFeatureSkill.Id, ignoreCase:true) && !context.IsSimulationMode())
                 View.UpdateNotificator(skill_id, abilityParam.Contains("comp") ? eRscStageType.COMPONENT : eRscStageType.ITEM);
             
             RefreshCraftView();
@@ -982,6 +983,8 @@ namespace App.GamePlay.IdleMiner.Craft
 
                 craftSlot.Spend(recipeInfo.GetDuration(fTimeBuff));    
                 craftSlot.Idle();
+
+                EventSystem.DispatchEvent(EventID.CRAFT_SUCCESSED, eLv);
             }
         }
 

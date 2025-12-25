@@ -18,33 +18,33 @@ MonoBehaviour:
     desc: Upgrade Mining Stats 10 times.
     goalType: 0
     goalCount: 10
-    rewardType: iap
+    rewardType: volt
     rewardAmount: 5
   - icon: {fileID: 21300000, guid: 3fea4538bfaa2d342adac3cec0ebc274, type: 3}
     name: Craft Component
     desc: Craft Components 10 times.
     goalType: 1
     goalCount: 10
-    rewardType: iap
+    rewardType: volt
     rewardAmount: 5
   - icon: {fileID: 21300000, guid: 6ca813f82b1e335419d633a2c4c5ea43, type: 3}
     name: Craft Items
     desc: Craft Items 5 times.
     goalType: 2
     goalCount: 5
-    rewardType: iap
+    rewardType: volt
     rewardAmount: 5
   - icon: {fileID: 21300000, guid: 5540eebc34d5d4745ba10ca9eb01de37, type: 3}
     name: Learn Skills
     desc: Learn 3 Skills
     goalType: 3
     goalCount: 3
-    rewardType: iap
+    rewardType: volt
     rewardAmount: 5
   - icon: {fileID: 21300000, guid: d535ffb65bf754dda95c3181d7389600, type: 3}
     name: Watch Ads
     desc: Watch Ads 3 times.
     goalType: 4
     goalCount: 3
-    rewardType: iap
+    rewardType: volt
     rewardAmount: 5

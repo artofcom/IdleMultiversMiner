@@ -1,7 +1,5 @@
 using App.GamePlay.IdleMiner.Common.Types;
-using App.GamePlay.IdleMiner.MiningStat;
 using Core.Events;
-using Core.Tween;
 //using App.GamePlay.IdleGame.SubSystem.UIComponent;
 //using App.GamePlay.IdleGame.SubSystem.GamePlay;
 using Core.Utils;
@@ -9,9 +7,7 @@ using FrameCore.UI;
 using IGCore.Components;
 using IGCore.MVCS;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using UI.Scroller;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -41,6 +37,7 @@ namespace App.GamePlay.IdleMiner
         public Action EventOnBtnTimedBonusClicked;
         public Action EventOnBtnAdsBonusClicked;
         public Action EventOnGameCardsPortalClicked;
+        public Action EventOnBtnDailyMissionClicked;
 
     //    [SerializeField] IMGameSetting gameSetting;
    //     [SerializeField] MonoBehaviour CoroutineRunner;
@@ -48,6 +45,9 @@ namespace App.GamePlay.IdleMiner
         //[SerializeField] PinchablePageScroller PinchableScroller;
         [SerializeField] TabButtons MainTabBtns;
         [SerializeField] MainTabComp featureTabBtns;
+
+        [ImplementsInterface(typeof(INotificator))] 
+        [SerializeField] MonoBehaviour dailyMissionNotificator;
 
         //[ImplementsInterface(typeof(App.SubSystem.IBonus))] 
         //[SerializeField] GameObject btnTimedBonus;
@@ -61,6 +61,7 @@ namespace App.GamePlay.IdleMiner
         //public IMGameSetting GameSetting => gameSetting;
         public Core.Platform.AdmobHandler AdmonHandler => admobHandler;
         public TopUIComp TopHUDView => TopUIComp;
+        public INotificator DailyMissionNotificator => dailyMissionNotificator as INotificator;
 
         [SerializeField] Transform BGMListRoot;
         [SerializeField] Transform SoundFXListRoot;
@@ -234,6 +235,11 @@ namespace App.GamePlay.IdleMiner
         {
             EventOnBtnAdsBonusClicked?.Invoke();
         }
+        public void OnBtnDailyMissionClicked()
+        {
+            EventOnBtnDailyMissionClicked?.Invoke();
+        }
+
         #endregion ===> Event Handlers
 
 

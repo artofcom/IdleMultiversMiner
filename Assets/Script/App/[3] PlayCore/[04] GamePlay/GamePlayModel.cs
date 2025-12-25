@@ -41,7 +41,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         public GamePlayModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData)  { }
 
-        public override void Init()
+        public override void Init(object data = null)
         {
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
