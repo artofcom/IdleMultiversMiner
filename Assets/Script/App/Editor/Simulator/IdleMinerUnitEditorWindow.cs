@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using UnityEditor;
 using App.GamePlay.IdleMiner;
 
 public class IdleMinerUnitEditorWindow : EditorWindow

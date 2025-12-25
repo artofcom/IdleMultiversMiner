@@ -65,7 +65,7 @@ namespace IGCore.MVCS
         }
 
 
-        protected void OnDestroy()
+        protected virtual void OnDestroy()
         {
             Dispose();
         }

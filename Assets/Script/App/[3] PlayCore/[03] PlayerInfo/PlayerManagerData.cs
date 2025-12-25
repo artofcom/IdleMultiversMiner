@@ -118,7 +118,7 @@ namespace App.GamePlay.IdleMiner
                 managerSlots = new List<ManagerSlotData>();
 
             managerSlots.Clear();
-            int count = 0;
+            //int count = 0;
          /*   ReadFileInternal<int>($"{mAccount}_ManagerSlotDataCount", ref count);
             for (int q = 0; q < count; ++q)
             {
@@ -134,7 +134,7 @@ namespace App.GamePlay.IdleMiner
                 ownedManagers = new List<OwnedManagerInfo>();
 
             ownedManagers.Clear();
-            int count = 0;
+           // int count = 0;
          /*   ReadFileInternal<int>($"{mAccount}_ManagerCollectionDataCount", ref count);
             for (int q = 0; q < count; ++q)
             {

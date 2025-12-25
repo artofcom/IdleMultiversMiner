@@ -652,7 +652,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
              //   return new PlanetManagerCardComp.PresentInfo();
 
             //ManagerInfo mngInfo = Model.GetManagerInfo(ownedMngInfo.ManagerId);
-            int levelidx = 1;// ownedMngInfo.Level - 1;
+           // int levelidx = 1;// ownedMngInfo.Level - 1;
             
             return new PlanetManagerCardComp.PresentInfo(
                 _icon: null,// controller.View.GetManagerSprite(mngInfo.SpriteKey), 

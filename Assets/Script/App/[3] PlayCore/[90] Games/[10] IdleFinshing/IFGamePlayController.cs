@@ -12,7 +12,7 @@ namespace App.GamePlay.IdleMiner.Games.IdleFinishing
     //
     public class IFGamePlayController : GamePlayController
     {
-        int tempValue;
+        // int tempValue;
 
         // Skill Sector.
         class TestTestTestSkill : App.GamePlay.IdleMiner.Common.ISkillBehavior
@@ -22,7 +22,7 @@ namespace App.GamePlay.IdleMiner.Games.IdleFinishing
                 IFGamePlayController ifGameCtrler = (IFGamePlayController)ctrler;
 
                 // Accessable to private member.
-                ifGameCtrler.tempValue = 10;
+                // ifGameCtrler.tempValue = 10;
                 
                 // Accessable to protected member from parent class.
               //  ifGameCtrler.bZoneInitizlized = ifGameCtrler.bZoneInitizlized;// true;

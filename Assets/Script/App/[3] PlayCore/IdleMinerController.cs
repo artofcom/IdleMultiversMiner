@@ -21,7 +21,7 @@ namespace App.GamePlay.IdleMiner
 {
     public class IdleMinerController : AController
     {
-        IEnumerator miningPumpCoroutine = null;
+        //  IEnumerator miningPumpCoroutine = null;
         IEnumerator welcomebackDlgCoroutine = null;
 
         //  Events ----------------------------------------

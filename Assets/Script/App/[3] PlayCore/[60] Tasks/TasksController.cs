@@ -21,7 +21,7 @@ namespace App.GamePlay.IdleMiner
     //
     public class TasksController : IGCore.MVCS.AController//  AMinerModule
     {
-        APopupDialog dailyAttendDialogCache = null;
+        // APopupDialog dailyAttendDialogCache = null;
 
        // public TasksController(IdleMinerController controller) : base(controller) { }
         

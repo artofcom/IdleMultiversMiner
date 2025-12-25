@@ -2,7 +2,6 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using App.MetaSystem.Bonus;
 using Core.Events;
-using IGCore.Components;
 using IGCore.MVCS;
 using System.Collections;
 using System.Collections.Generic;
@@ -47,7 +46,6 @@ namespace App.GamePlay.IdleMiner
 
         EventsGroup Events = new EventsGroup();
         int curTabIndex = -1;
-        IdleMinerModel model;
 
         AUnit StartUnit => startUnit==null ? ((subUnits!=null && subUnits.Count>0) ? subUnits[0] : null) : startUnit; 
         
@@ -160,7 +158,7 @@ namespace App.GamePlay.IdleMiner
             yield return new WaitForSeconds(0.25f);
             
             // Resume Module.
-            int interval =  (int)model.PlayerData.FlushAwayTime();
+            int interval =  (int)(model as IdleMinerModel).PlayerData.FlushAwayTime();
             Debug.Log("[InitSeq]:[Resume-Unit] Away Idle Time in Sec " + interval.ToString());
 
             foreach(var module in subUnits)

@@ -66,8 +66,11 @@ namespace App.GamePlay.IdleMiner
             BigInteger biCost;
             bool ret = BigInteger.TryParse(Cost, out biCost);
             if (ret) BICost = biCost;
-
-            Assert.IsTrue(ret, "Cost should be a BigInteger");
+            else
+            {
+                cost = "0";
+                BICost = BigInteger.Zero;
+            }
         }
         public int GetDuration(float timeBuff)
         {

@@ -13,7 +13,7 @@ namespace App.GamePlay.IdleMiner
         IdleMinerController controller;
 
         EventsGroup Events = new EventsGroup();
-        ManagerPanelView ManagerPnlView = null;
+        // ManagerPanelView ManagerPnlView = null;
         int CurPlanetId = -1;
         string SelectedManagerInfoId = string.Empty;
         List<string> SelecteManagerInfoIdList = new List<string>();
@@ -434,7 +434,7 @@ namespace App.GamePlay.IdleMiner
                 if (Model.PlayerData.OwnedManagers[q].Level == mainChr.Level && Model.PlayerData.OwnedManagers[q].Id != selectedOwnedManagerId)
                     listMng.Add(Model.PlayerData.OwnedManagers[q]);
             }
-           */
+           
             bool IsSelected(string ownedId)
             {
                 for (int q = 0; q < SelecteManagerInfoIdList.Count; ++q)
@@ -446,7 +446,7 @@ namespace App.GamePlay.IdleMiner
             }
 
             var listItem3Presentor = new List<ManagerList3ItemComp.PresentInfo>();
-           /* for (int q = 0; q < listMng.Count; q += 3)
+            for (int q = 0; q < listMng.Count; q += 3)
             {
                 List<ManagerItemComp.PresentInfo> list3PresentsInfo = new List<ManagerItemComp.PresentInfo>();
 
@@ -476,7 +476,7 @@ namespace App.GamePlay.IdleMiner
 
             int count = 0;// Model.GetRequiredOtherCardToPromote(mainChr.Level);
             string msg = $"Discard other {count} of {mainMngCard.Level} star managers to promote.";
-            return new PromoteManagerPopupDialog.PresentInfo(msg, SelecteManagerInfoIdList.Count >= count, mainMngCard, listItem3Presentor);
+            return new PromoteManagerPopupDialog.PresentInfo(msg, SelecteManagerInfoIdList.Count >= count, mainMngCard, null);// listItem3Presentor);
         }
 
        // PlanetSectorComp.PresentInfo  BuildPlanetSectionInfo(PlanetData planetData, float dist)

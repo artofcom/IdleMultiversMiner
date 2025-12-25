@@ -47,13 +47,15 @@ namespace App.GamePlay.IdleMiner
          //   Assert.IsNotNull(TextSkillName);
         }
 
-        private void OnEnable()
+        protected override void OnEnable()
         {
+            base.OnEnable();
             //Events.RegisterEvent(RecipeSingleItemComp.EVENT_SLOT_CLICKED, SingleRecipeItemComp_OnBtnSlotClicked);
             //Events.RegisterEvent(RecipeSingleItemComp.EVENT_LOCKED_CLICKED, SingleRecipeItemComp_OnBtnLockedSlotClicked);
         }
-        private void OnDisable()
+        protected override void OnDisable()
         {
+            base.OnDisable();
             //Events.UnRegisterEvent(RecipeSingleItemComp.EVENT_SLOT_CLICKED, SingleRecipeItemComp_OnBtnSlotClicked);
             //Events.UnRegisterEvent(RecipeSingleItemComp.EVENT_LOCKED_CLICKED, SingleRecipeItemComp_OnBtnLockedSlotClicked);
         }

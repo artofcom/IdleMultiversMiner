@@ -63,7 +63,7 @@ namespace App.GamePlay.IdleMiner
 
 
 
-        string MODEL_KEY = nameof(IdleMinerPlayerModel);
+        // string MODEL_KEY = nameof(IdleMinerPlayerModel);
 
         #region ===> Properties.
 

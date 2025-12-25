@@ -140,15 +140,18 @@ namespace App.GamePlay.IdleMiner
             BtnHire.interactable = presentor.CanHire;
         }
 
-        private void OnEnable()
+        protected override void OnEnable()
         {
-            EventSystem.DispatchEvent(EVENT_ONENABLED, this);
+            base.OnEnable();
 
+            EventSystem.DispatchEvent(EVENT_ONENABLED, this);
             ManagerItemComp.EventOnBtnCardClicked += ManagerItemComp_OnBtnCardClicked;
         }
 
-        private void OnDisable()
+        protected override void OnDisable()
         {
+            base.OnDisable();
+
             ManagerItemComp.EventOnBtnCardClicked -= ManagerItemComp_OnBtnCardClicked;
         }
 

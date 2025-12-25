@@ -998,7 +998,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         Sprite GetManagerSpriteOnThePlanet(int planetId)
         {
-            Sprite spriteMng = null;
+         //   Sprite spriteMng = null;
          /*   OwnedManagerInfo ownedMngInfo = Model.PlayerData.GetAssignedManagerInfoForPlanet(planetId);
             if(ownedMngInfo != null)
             {

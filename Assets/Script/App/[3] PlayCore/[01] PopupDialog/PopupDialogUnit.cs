@@ -19,7 +19,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         }
 
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
             base.Dispose();
 

@@ -1,10 +1,5 @@
 using UnityEngine;
 using UnityEngine.Assertions;
-using System.Collections;
-using System;
-using System.Numerics;
-using System.IO;
-using Core.Utils;
 using App.GamePlay.IdleMiner.Common.Model;
 
 namespace App.GamePlay.IdleMiner

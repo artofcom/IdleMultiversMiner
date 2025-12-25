@@ -63,7 +63,7 @@ public class SkillTreeDataBuildCompEditor : Editor
 
     void WriteResourceData(SkillTreeDataSetting targetSetting, string fileName)
     {
-        const string DATA_SUB_PATH = "/EditorData/";
+        // const string DATA_SUB_PATH = "/EditorData/";
 
 /*        SkillCategory skillCategory = new SkillCategory();
         skillCategory.SetCategoryId(targetSetting.CategoryId);

@@ -1,19 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
 using App.GamePlay.IdleMiner;
-using Codice.CM.Common;
-using System.Threading;
 using System;
 using UnityEngine.Assertions;
-using System.Security.Permissions;
 using System.Threading.Tasks;
-using Core.Utils;
 using System.Numerics;
-using Codice.CM.SEIDInfo;
-using Unity.VisualScripting;
 
 public class ValueDataEditor : EditorWindow
 {
@@ -27,12 +20,12 @@ public class ValueDataEditor : EditorWindow
 
 
     int mViewType = 0;  // 0 - ResourceView, 1 - PlanetView.
-    int mPlanetCount = 10;
+    //int mPlanetCount = 10;
     bool mToggleFlag = true;
     string mOutputPath = string.Empty;
     int mSelectedRscType = 0;
     bool IsReloadSettingFailed = true;
-    int mSelectedPlanetIdx = 0;
+    //int mSelectedPlanetIdx = 0;
 
     public class EditorRscInfo
     {
@@ -49,7 +42,7 @@ public class ValueDataEditor : EditorWindow
     }
 
     List<EditorRscInfo> RscInfoList; 
-    bool IsCalcuatePlanetOpenCost = true;
+    //bool IsCalcuatePlanetOpenCost = true;
     PlanetSetting planetSetting;
    // PlanetDataGroup srcPlanetDataGroup;
     CraftData craftCompData, craftItemData;

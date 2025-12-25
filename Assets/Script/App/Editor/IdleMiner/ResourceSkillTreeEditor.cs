@@ -16,7 +16,7 @@ public class ResourceSkillTreeEditor : EditorWindow
 
     SkillItemCategoryComp skillCategoryComp;
 
-    int idxSelected = 0;
+    // int idxSelected = 0;
     List<List<Rect>> spriteRects = new List<List<Rect>>();
     Dictionary<string, Rect> skillRect = new Dictionary<string, Rect>();
     Dictionary<string, int> targetSkills = new Dictionary<string, int>();
