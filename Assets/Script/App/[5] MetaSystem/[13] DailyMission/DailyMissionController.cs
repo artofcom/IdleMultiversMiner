@@ -7,7 +7,6 @@ using IGCore.MVCS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -61,6 +60,17 @@ public class DailyMissionController : AController
         View.EventOnBtnResetClicked -= OnBtnResetClicked;
     }
 
+    int SortByProgStatus(DailyMissionPlayerModel.ProgressInfo a, DailyMissionPlayerModel.ProgressInfo b)
+    {
+        if(a.IsClaimed != b.IsClaimed)
+            return a.IsClaimed ? 1 : -1;
+        
+        if(!a.IsClaimed) 
+            return a.Count > b.Count ? -1 : 1;
+        
+        return 0;
+    }  
+
     void RefreshView()
     {
         var progressPlayerInfo = DailyMissionModel?.DMPlayerModel?.ProgressBundleInfo;
@@ -69,9 +79,13 @@ public class DailyMissionController : AController
 
         DailyMissionConfig.Mission missionData;
         var listItems = new List<DailyMissionListItemComp.Presentor>();
-        for(int q = 0; q < progressPlayerInfo.ListProgressInfos.Count; ++q)
+        var listProgInfo = new List<DailyMissionPlayerModel.ProgressInfo>(progressPlayerInfo.ListProgressInfos);
+
+        listProgInfo.Sort((a, b) => { return SortByProgStatus(a, b); });
+
+        for(int q = 0; q < listProgInfo.Count; ++q)
         {
-            DailyMissionPlayerModel.ProgressInfo progInfo = progressPlayerInfo.ListProgressInfos[q];
+            DailyMissionPlayerModel.ProgressInfo progInfo = listProgInfo[q];
             
             missionData = DailyMissionModel.GetData(progInfo.GoalType);
             Assert.IsNotNull(missionData);
