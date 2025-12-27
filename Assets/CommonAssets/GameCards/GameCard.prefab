@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset : 4'
+  m_text: 'Reset : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c5ee151f9307453bad78be36b51a077, type: 2}
   m_sharedMaterial: {fileID: 2517202264660172603, guid: 5c5ee151f9307453bad78be36b51a077,
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'AwayTime : 05:45:22'
+  m_text: 'AwayTime : N/A'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c5ee151f9307453bad78be36b51a077, type: 2}
   m_sharedMaterial: {fileID: 2517202264660172603, guid: 5c5ee151f9307453bad78be36b51a077,
@@ -443,7 +443,6 @@ MonoBehaviour:
   txtAwayTime: {fileID: 6235001440049414742}
   txtResetCount: {fileID: 476017670658266035}
   newTagRoot: {fileID: 8332260922457351006}
-  gameKey: gamekey
 --- !u!1 &2137231503820224078
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,11 +76,6 @@ public class GameCardsController : AController
             var cardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfoFromIndex", q);
             if(cardInfo == null)        continue;
 
-            //AView cardView = (view as LobbyScreenView).GetGameCardView( cardInfo.GameId );
-            //if(cardView == null)        continue;
-            //var cardComp = (cardView as GameCardComp);
-            //if(cardComp == null)        continue;
-
             long lastPlayedTick;
             string awayTime = "AwayTime : Unknown";
             if(long.TryParse(cardInfo.LastPlayedTimeStamp, out lastPlayedTick)) 

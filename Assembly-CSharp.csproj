@@ -101,6 +101,7 @@
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\EaseFuncLib.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PlayerModel\ResourcePlayerData.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\IAuthService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogPlayerModel.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\UI\DraggableRectTransform.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\SubViews\PlanetDamageItemComp.cs" />
@@ -171,6 +172,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogModel.cs" />
     <Compile Include="Assets\Script\App\[0] App\AppModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerUnit.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\IService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SkillTreelView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[41] Beacon\AdsBeaconController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[55] DailyAttend\DailyAttendItem.cs" />
@@ -252,6 +254,7 @@
     <Compile Include="Assets\Script\IGCore\MVCS\Requestable.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[30] Manager\ManagerUnit.cs" />
     <Compile Include="Assets\Script\IGCore\MetaSystem\NotificationSystem\NoDupNotificatorComp.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\UnityService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\SkillData.cs" />
     <Compile Include="Assets\Script\App\[0] App\[5] Others\Interface\IMVCS.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Data\DataManager.cs" />
@@ -1571,12 +1574,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.Authentication">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Authentication.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.Editor.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
@@ -1589,6 +1600,10 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Authentication.PlayerAccounts">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">

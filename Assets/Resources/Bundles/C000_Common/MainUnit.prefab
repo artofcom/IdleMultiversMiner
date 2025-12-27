@@ -23972,14 +23972,14 @@ MonoBehaviour:
         count: 0
       outcomeId: 
       duration: 0
-      cost: 
+      cost: 0
     - id: 
       sources:
       - resourceId: 
         count: 0
       outcomeId: gravewalkersfoot
       duration: 0
-      cost: 
+      cost: 0
     slotCosts: []
 --- !u!1 &4230574364704939792
 GameObject:
@@ -24018,7 +24018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -98}
+  m_AnchoredPosition: {x: -100, y: -119}
   m_SizeDelta: {x: 145.62859, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5272244149992961076
@@ -24397,7 +24397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -291, y: -82.9998}
+  m_AnchoredPosition: {x: -291, y: -104}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &7320895909344944886
@@ -30907,7 +30907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9, y: -157}
+  m_AnchoredPosition: {x: -9, y: -195}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &3543951868154340543

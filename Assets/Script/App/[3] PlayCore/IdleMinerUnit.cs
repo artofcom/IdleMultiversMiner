@@ -158,11 +158,11 @@ namespace App.GamePlay.IdleMiner
             yield return new WaitForSeconds(0.25f);
             
             // Resume Module.
-            int interval =  (int)(model as IdleMinerModel).PlayerData.FlushAwayTime();
-            Debug.Log("[InitSeq]:[Resume-Unit] Away Idle Time in Sec " + interval.ToString());
+            int awayTime = (model as IdleMinerModel).PlayerData.IdleAwayTime;
+            Debug.Log("[InitSeq]:[Resume-Unit] Away Idle Time in Sec " + awayTime.ToString());
 
             foreach(var module in subUnits)
-                module.Resume(interval);
+                module.Resume(awayTime);
 
 
             // Pump Loop.

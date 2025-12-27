@@ -425,7 +425,7 @@ namespace App.GamePlay.IdleMiner
             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
                 (errMsg, ret) => { },
                 "OptionDialog", 
-                new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
+                new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"),  (string)context.GetData("PlayerId")),
                 new System.Action<APopupDialog>( (popupDlg) => 
                 { 
                     Debug.Log("Option Dialog has been closed.");
@@ -534,7 +534,7 @@ namespace App.GamePlay.IdleMiner
            if (Model.PlayerData.IdleAwayTime < 1 || isNewPlayer)
                 yield break;
 
-            int idlePumpTime = Model.PlayerData.IdleAwayTime;
+            int idlePumpTime = (int)Model.PlayerData.FlushAwayTime(); //Model.PlayerData.IdleAwayTime;
 
             yield return null;// new WaitUntil(() => string.IsNullOrEmpty(WelcomeBackPopupDialog.sID) == false);
 

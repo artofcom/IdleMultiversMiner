@@ -95,7 +95,7 @@ public class LobbyScreenController : AController
          context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
             (errMsg, ret) => {}, 
             "OptionDialog",  
-            new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn")),
+            new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"), (string)context.GetData("PlayerId")),
             new Action<APopupDialog>( (popupDlg) => 
             { 
                 Debug.Log("Option Dialog has been closed.");
