@@ -13,15 +13,10 @@ namespace IGCore.MVCS
 
         public AView View                   => view;
         public AController Controller       => controller;
-        public Action<string> OnEventClose  
-        { 
-            get => controller?.OnEventClose; 
-            set
-            {
-                if(controller != null)
-                    controller.OnEventClose = value; 
-            }
-        }
+        
+        public Action<object> OnEventAttached;
+        public Action<object> OnEventDetached;
+
         public bool IsAttached => (View==null ? false : View.gameObject.activeSelf);
 
         protected virtual void Awake()
@@ -45,11 +40,13 @@ namespace IGCore.MVCS
         {
             Debug.Log("Attaching Unit " + this.name);
             View?.gameObject.SetActive(true);
+            OnEventAttached?.Invoke(this);
         }
         public virtual void Detach()
         {
             Debug.Log("Detaching Unit " + this.name);
             View?.gameObject.SetActive(false);
+            OnEventDetached?.Invoke(this);
         }
         public virtual void Resume(int awayTimeInSec)
         {

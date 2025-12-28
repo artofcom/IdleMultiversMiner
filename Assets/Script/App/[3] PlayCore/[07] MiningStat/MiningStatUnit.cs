@@ -15,7 +15,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
 
             playerModel = new MiningStatPlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
             model = new MiningStatModel(context, playerModel);
-            controller = new MiningStatController(view, model, context);
+            controller = new MiningStatController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

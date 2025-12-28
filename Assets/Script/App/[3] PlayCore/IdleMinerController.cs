@@ -40,10 +40,10 @@ namespace App.GamePlay.IdleMiner
 
         #region AController
 
-        public IdleMinerController(AView view, AModel model, AContext context)
-            : base(view, model, context)
+        public IdleMinerController(AUnit unit, AView view, AModel model, AContext context)
+            : base(unit, view, model, context)
         { 
-            topUICompController = new TopUICompController(((IdleMinerView)view).TopHUDView, model, context);
+            topUICompController = new TopUICompController(null, ((IdleMinerView)view).TopHUDView, model, context);
         }
 
         // PlayScreen.Attach() -> IdleMinerControler.() -> AController.() -> InitController()
@@ -369,7 +369,10 @@ namespace App.GamePlay.IdleMiner
             (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>
             {
                 context.AddData("gameKey" , gameKey.ToLower());
-                OnEventClose?.Invoke("PlayScreen");
+                
+                //OnEventClose?.Invoke("PlayScreen");
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen");
+
             }));
        
         }
@@ -414,44 +417,22 @@ namespace App.GamePlay.IdleMiner
         void View_OnBtnBackClicked()
         {
             Debug.Log("IEM - OnBtnBackClicked..");
-            (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>  OnEventClose?.Invoke("LobbyScreen")) );
+            (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>
+            {
+                // OnEventClose?.Invoke("LobbyScreen");
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "LobbyScreen");
+
+            }));
+
         }
 
         void View_OnBtnSettingClicked()
         {
             //Model.PlayerData.AddMoney(new CurrencyAmount("50", eCurrencyType.IAP_COIN));
             //Model.PlayerData.AddMoney(new CurrencyAmount("500", eCurrencyType.MINING_COIN));
-
-            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
-                (errMsg, ret) => { },
-                "OptionDialog", 
-                new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"),  (string)context.GetData("PlayerId")),
-                new System.Action<APopupDialog>( (popupDlg) => 
-                { 
-                    Debug.Log("Option Dialog has been closed.");
-                } ) );
-            
-            /*
-            // Sample of Displaying Message Dialog.
-             var presentInfo = new MessageDialog.PresentInfo( 
-                message :  "Message", 
-                title : "Title", type : MessageDialog.Type.YES_NO, 
-                callbackYes : () => 
-                {
-                    Model.PlayerData.AddMoney(new CurrencyAmount("500", eCurrencyType.IAP_COIN));
-                    // Model.PlayerData.AddMoney(new CurrencyAmount("1000", eCurrencyType.MINING_COIN));
-                });
-
-            context.RequestQuery((string)context.GetData(KeySets.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
-                "MessageDialog",  
-                presentInfo,
-                new System.Action<APopupDialog>( (popupDlg) => 
-                { 
-                    Debug.Log("Message Dialog has been closed.");
-
-                } ) );
-
-            */
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+                (errMsg, ret) => {}, 
+                "OptionDialog");  
         }
 
         

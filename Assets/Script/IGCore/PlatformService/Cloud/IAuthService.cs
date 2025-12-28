@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 namespace IGCore.PlatformService.Cloud
 {
@@ -8,5 +9,13 @@ namespace IGCore.PlatformService.Cloud
         event Action<string> EventOnSignInFailed;
         event Action EventOnSignOut;
         event Action EventOnSessionExpired;
+        event Action<bool> EventOnLinkAccount;
+
+        Task SignIn();
+        Task LinkAccountWithPlatform();
+        Task<bool> UnlinkAccountWithPlatform();
+        void SignOut();
+        bool IsAccountLinkedWithIdentity(string identityName);
+        
     }
 }

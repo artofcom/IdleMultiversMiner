@@ -8,6 +8,7 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner;
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner.Resouces
 {
@@ -27,8 +28,8 @@ namespace App.GamePlay.IdleMiner.Resouces
 
         #region ===> Core
 
-        public ResourceController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public ResourceController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
         public override void Init() 

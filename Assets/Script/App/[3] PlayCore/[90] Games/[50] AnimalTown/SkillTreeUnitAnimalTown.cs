@@ -10,7 +10,7 @@ public class SkillTreeUnitAnimalTown : SkillTreeUnit
 
         playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
         model = new SkillTreeModelAnimalTown(context, playerModel);
-        controller = new SkillTreeController(view, model, context);
+        controller = new SkillTreeController(this, view, model, context);
 
         playerModel.Init();
         model.Init();

@@ -7,7 +7,7 @@ public class BoosterUnit : IGCore.MVCS.AUnit
     {
         base.Init(ctx);
 
-        controller = new BoosterController(view, new BoosterModel(context, null), context);
+        controller = new BoosterController(this, view, new BoosterModel(context, null), context);
     }
 
     public override void Attach()

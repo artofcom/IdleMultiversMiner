@@ -5,16 +5,18 @@ using UnityEngine;
 using UnityEngine.Assertions;
 //using Core.Events;
 //using System;
+using IGCore.MVCS;
+
 
 namespace App.GamePlay.IdleMiner
 {
 
     //  SkillTree Controlling.-------------------------------------
     //
-    public class BoosterController : IGCore.MVCS.AController// AMinerModule
+    public class BoosterController : AController// AMinerModule
     {
-        public BoosterController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public BoosterController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
         public override void Init(){}

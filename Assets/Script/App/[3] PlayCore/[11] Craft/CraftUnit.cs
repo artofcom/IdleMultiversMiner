@@ -16,7 +16,7 @@ namespace App.GamePlay.IdleMiner.Craft
 
             playerModel = new CraftPlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
             model = new CraftModel(context, playerModel);
-            controller = new CraftController(view, model, context);
+            controller = new CraftController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

@@ -17,7 +17,7 @@ public class ShopUnit : AUnit
 
         playerModel = new ShopPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
         model = new ShopModel(context, playerModel);
-        controller = new ShopController(view, model, context);
+        controller = new ShopController(this, view, model, context);
 
         
         playerModel.Init();

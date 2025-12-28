@@ -14,17 +14,22 @@ public class TitleScreen : AUnit
     [ImplementsInterface(typeof(IAuthService))]
     [SerializeField] MonoBehaviour authService;
 
+    [ImplementsInterface(typeof(IUnitSwitcher))]
+    [SerializeField] MonoBehaviour unitSwitcher;
+
     IAuthService AuthService => authService as IAuthService;
+    IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
 
     // DictorMain.Start() -> AUnitSwitcher.Init() -> TitleScreen.Init()
     public override void Init(IGCore.MVCS.AContext ctx)
     {
         base.Init(ctx);
         context.AddData("PlayerId", string.Empty);
+        context.AddData("IsAccountLinked", false);
 
         var playerModel = new TitleScreenPlayerModel(ctx);
         model = new TitleScreenModel(context, playerModel);
-        controller = new TitleScreenController(view, model, context);
+        controller = new TitleScreenController(this, view, model, context);
 
         playerModel.Init();
         model.Init();
@@ -35,6 +40,8 @@ public class TitleScreen : AUnit
         AuthService.EventOnSignInFailed += OnSignInFailed;
         AuthService.EventOnSignOut += OnSignOut;
         AuthService.EventOnSessionExpired += OnSessionExpired;
+
+        view.OnViewEnable += OnViewEnable;
     }
 
     public override void Dispose()
@@ -45,15 +52,28 @@ public class TitleScreen : AUnit
         AuthService.EventOnSignInFailed -= OnSignInFailed;
         AuthService.EventOnSignOut -= OnSignOut;
         AuthService.EventOnSessionExpired -= OnSessionExpired;
+
+        view.OnViewEnable -= OnViewEnable;
+    }
+
+    void OnViewEnable()
+    {
+        AuthService.SignIn();
     }
 
     void OnSignedIn(string playerId)
     {
         context.AddData("PlayerId", playerId);
+        context.AddData("IsAccountLinked", AuthService.IsAccountLinkedWithIdentity("unity"));
     }
     void OnSignInFailed(string msg)
     {
     }
     void OnSignOut() { }
     void OnSessionExpired() { }
+
+    public void SwitchUnit(string nextUnit)
+    {
+        UnitSwitcher.SwitchUnit(nextUnit);
+    }
 }

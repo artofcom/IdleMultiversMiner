@@ -11,12 +11,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class LobbyScreenController : AController
 {
     const float WAIT_TIME_SEC = 1.5f;
 
-    public Action<Type> OnClose;    // Next AController Type.
+    //public Action<Type> OnClose;    // Next AController Type.
 
     IdleMinerContext IMContext => (IdleMinerContext)context;
 
@@ -24,10 +25,10 @@ public class LobbyScreenController : AController
 
     EventsGroup Events = new EventsGroup();
 
-    public LobbyScreenController(AView view, AModel model, AContext ctx)
-        : base(view, model, ctx)
+    public LobbyScreenController(AUnit unit, AView view, AModel model, AContext ctx)
+        : base(unit, view, model, ctx)
     { 
-        topUICtrl = new TopUICompController(((LobbyScreenView)view).TopHUDView, model, context);
+        topUICtrl = new TopUICompController(null, ((LobbyScreenView)view).TopHUDView, model, context);
     }
 
     public override void Init()
@@ -48,7 +49,7 @@ public class LobbyScreenController : AController
 
         DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, WAIT_TIME_SEC, () =>
         {
-            OnClose?.Invoke(typeof(TitleScreenController));
+            //OnClose?.Invoke(typeof(TitleScreenController));
         });
     }
     
@@ -87,20 +88,39 @@ public class LobbyScreenController : AController
 
         this.context.AddData("gameKey" , gameKey.ToLower());
 
-        OnEventClose?.Invoke("PlayScreen");
+        (unit as LobbyScreen).SwitchUnit("PlayScreen");
     }
 
     void EventOnBtnOptionDlgClicked()
     {
-         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
-            (errMsg, ret) => {}, 
-            "OptionDialog",  
-            new SettingDialogView.PresentInfo((bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"), (string)context.GetData("PlayerId")),
+        AUnit dialogUnit = null;
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+            (errMsg, ret) => 
+            {
+                dialogUnit = ret as AUnit;
+                Assert.IsNotNull(dialogUnit);
+            }, 
+            "OptionDialog", 
             new Action<APopupDialog>( (popupDlg) => 
             { 
-                Debug.Log("Option Dialog has been closed.");
+                Debug.Log("Option dlg has been closed from X.");
 
-            } ) );
+            } ));
+
+        dialogUnit.OnEventDetached += OnOptionDialogClosed;
+    }
+
+    void OnOptionDialogClosed(object dlgUnit)
+    {
+        var settingDlgUnit = dlgUnit as SettingUnit;
+        settingDlgUnit.OnEventDetached -= OnOptionDialogClosed;
+        Debug.Log("Option Dialog has been closed.");
+        
+        Debug.Log("Should Sign Out " + settingDlgUnit.ShouldSignOut);
+        Debug.Log("Should delete Acc " + settingDlgUnit.ShouldDeleteAccount);
+
+
+        (unit as LobbyScreen).SwitchUnit("TitleScreen");
     }
 
     void EventOnBtnShopDlgClicked()

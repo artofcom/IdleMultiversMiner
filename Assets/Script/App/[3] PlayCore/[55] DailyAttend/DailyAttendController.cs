@@ -14,20 +14,22 @@ using Core.Events;
 using System;
 using System.Globalization;
 using App.GamePlay.IdleMiner.PopupDialog;
+using IGCore.MVCS;
+
 
 namespace App.GamePlay.IdleMiner
 {
 
     //  SkillTree Controlling.-------------------------------------
     //
-    public class DailyAttendController : IGCore.MVCS.AController// AMinerModule
+    public class DailyAttendController : AController// AMinerModule
     {
        // APopupDialog dailyAttendDialogCache = null;
 
         //public DailyAttendController(IdleMinerController controller) : base(controller) { }
         
-        public DailyAttendController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public DailyAttendController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
         public override void Init()

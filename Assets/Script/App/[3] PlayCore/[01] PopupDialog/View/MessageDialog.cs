@@ -83,7 +83,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             btnGroupTwo.SetActive(presentInfo.Type == Type.YES_NO);
 
             txt01BtnConfirm.text = presentInfo.BtnMsgOk;
-            txt02BtnOk.text = presentInfo.BtnMsgNo;
+            txt02BtnOk.text = presentInfo.BtnMsgOk;
             txt02BtnCancel.text = presentInfo.BtnMsgNo;
 
             callbackOnOk = presentInfo.YesCallback;

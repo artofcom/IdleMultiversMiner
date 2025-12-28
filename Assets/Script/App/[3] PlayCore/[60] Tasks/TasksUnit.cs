@@ -7,7 +7,7 @@ public class TasksUnit : IGCore.MVCS.AUnit
     {
         base.Init(ctx);
 
-        controller = new TasksController(view, new TaskModel(context, null), context);
+        controller = new TasksController(this, view, new TaskModel(context, null), context);
     }
 
     public override void Attach()

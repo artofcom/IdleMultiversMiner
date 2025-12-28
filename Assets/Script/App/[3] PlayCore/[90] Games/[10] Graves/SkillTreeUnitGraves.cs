@@ -10,7 +10,7 @@ public class SkillTreeUnitGraves : SkillTreeUnit
 
         playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
         model = new SkillTreeModelGraves(context, playerModel);
-        controller = new SkillTreeController(view, model, context);
+        controller = new SkillTreeController(this, view, model, context);
 
         playerModel.Init();
         model.Init();

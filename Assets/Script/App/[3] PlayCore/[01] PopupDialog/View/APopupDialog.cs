@@ -9,7 +9,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
     {
         //public string DialogID { get; set; } = "";
 
-        Action<APopupDialog> OnCloseCallback;
+        public Action<APopupDialog> OnCloseCallback;
 
 
 
@@ -18,18 +18,14 @@ namespace App.GamePlay.IdleMiner.PopupDialog
            // DialogID = id;
         }
 
-        public virtual void Display(APresentor presentor, Action<APopupDialog> onCloseCallback)
+        public virtual void Display(APresentor presentor)
         {
             //UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(DialogID));
 
             gameObject.SetActive(true);
 
-            OnCloseCallback = onCloseCallback;
-
             Refresh(presentor);
         }
-
-
 
         public virtual void OnClose()
         {
@@ -37,6 +33,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
                 OnCloseCallback.Invoke(this);
 
             gameObject.SetActive(false);
+            OnCloseCallback = null;
         }
     }
 }

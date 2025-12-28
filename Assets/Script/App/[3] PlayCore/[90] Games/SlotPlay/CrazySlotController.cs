@@ -1,9 +1,10 @@
 using UnityEngine;
+using IGCore.MVCS;
 
-public class CrazySlotController : IGCore.MVCS.AController
+public class CrazySlotController : AController
 {
-    public CrazySlotController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-        : base(view, model, ctx)
+    public CrazySlotController(AUnit unit, AView view, AModel model, AContext ctx)
+        : base(unit, view, model, ctx)
     { }
 
     public override void Init() {}

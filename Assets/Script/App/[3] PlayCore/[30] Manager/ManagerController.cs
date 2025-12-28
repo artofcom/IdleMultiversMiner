@@ -1,21 +1,21 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
-
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner
 {
     //  SkillTree Controlling.-------------------------------------
     //
-    public class ManagerController : IGCore.MVCS.AController// AMinerModule
+    public class ManagerController : AController// AMinerModule
     {
         ManagerPanelController mngPanelController;
 
 
         //public ManagerController(IdleMinerController _controller) : base(_controller) { }
         
-         public ManagerController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+         public ManagerController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
 

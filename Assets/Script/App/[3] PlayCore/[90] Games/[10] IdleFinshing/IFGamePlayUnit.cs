@@ -15,7 +15,7 @@ namespace App.GamePlay.IdleMiner.Games.IdleFinishing
 
             var playerModel = new GamePlayPlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService);
             var model = new GamePlayModel(context, playerModel);
-            controller = new IFGamePlayController(view, model, context);
+            controller = new IFGamePlayController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

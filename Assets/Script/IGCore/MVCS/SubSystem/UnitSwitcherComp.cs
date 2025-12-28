@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace IGCore.MVCS
 {
-    public class UnitSwitcherComp : MonoBehaviour
+    public class UnitSwitcherComp : MonoBehaviour, IUnitSwitcher
     {
         [SerializeField] protected List<AUnit> units;
         [SerializeField] protected AUnit startUnit;
@@ -21,7 +21,7 @@ namespace IGCore.MVCS
                 startUnit = units[0];
         }
 
-        public virtual void Init(IGCore.MVCS.AContext ctx)
+        public virtual void Init(AContext ctx)
         {
             foreach(var module in units)
                 module.Init(ctx);
@@ -29,29 +29,19 @@ namespace IGCore.MVCS
             foreach(var module in units)
             {
                 if(module == startUnit)
-                {
                     module.Attach();
-                    module.OnEventClose += OnEventClose;
-                }
                 else 
                     module.Detach();
             }
         }
 
-        protected virtual void OnEventClose(string nextModuleId)
+        public virtual void SwitchUnit(string nextModuleId)
         {
             foreach(var module in units)
             {
-                // Debug.Log("====" + module.GetType().Name.ToLower() + "____" + nextModuleId.ToLower());
-                // module.View.gameObject.SetActive();
-
-                module.OnEventClose -= OnEventClose;
                 bool isTargetModule = module.GetType().Name.ToLower().Contains(nextModuleId.ToLower());
                 if(isTargetModule)
-                {
                     module.Attach();
-                    module.OnEventClose += OnEventClose;
-                }
                 else                    
                     module.Detach();
             }

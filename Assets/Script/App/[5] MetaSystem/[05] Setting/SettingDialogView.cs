@@ -1,3 +1,4 @@
+using IGCore.PlatformService.Cloud;
 using System;
 using TMPro;
 using UnityEngine;
@@ -11,27 +12,45 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         [SerializeField] ButtonToggle btnToggleBGM;
         [SerializeField] Transform SoundFXListRoot;
         [SerializeField] TMP_Text txtPlayerId;
+        [SerializeField] Transform BGMListRoot;
+        [SerializeField] GameObject LinkAccountRoot;
+        [SerializeField] GameObject UnlinkAccountRoot;
+        [SerializeField] GameObject SignOutRoot;
+        [SerializeField] GameObject DeleteAccountRoot;
+
+        [ImplementsInterface(typeof(IAuthService))]
+        [SerializeField] MonoBehaviour authService;
 
         public static Action<bool> EventOnBtnBGMClicked;
         public static Action<bool> EventOnBtnSoundFXClicked;
+        public static Action EventOnLinkAccountClicked;
+        public static Action EventOnUnlinkAccountClicked;
+        public static Action EventOnSignOutClicked;
+        public static Action EventOnDeleteAccountClicked;
 
         // Debug Actions.
         public static Action EventOnShowGameReset;
 
 
-        [SerializeField] Transform BGMListRoot;
+
+        public IAuthService AuthService => authService as IAuthService;
 
         public class PresentInfo : APresentor
         {
-            public PresentInfo(bool isFXAudioOn, bool isBGMOn, string playerId)
+            public PresentInfo(bool isFXAudioOn, bool isBGMOn, bool isOffline, bool isLinked, string playerId)
             {
                 IsBGMOn = isBGMOn;
                 IsFXAudioOn = isFXAudioOn;
+                IsOffline = isOffline;
+                IsLinked = isLinked;    
                 PlayerId = playerId;
             }
 
             public bool IsFXAudioOn { get; private set; }
             public bool IsBGMOn { get; private set; }
+            
+            public bool IsOffline { get; private set; }
+            public bool IsLinked { get; private set; }
             public string PlayerId { get; private set; }
         }
 
@@ -52,6 +71,13 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
             btnToggleBGM.IsOn = presentInfo.IsBGMOn;
             btnToggleSoundFX.IsOn = presentInfo.IsFXAudioOn;
+            
+            LinkAccountRoot.SetActive(!presentInfo.IsLinked);
+            UnlinkAccountRoot.SetActive(presentInfo.IsLinked);
+
+            DeleteAccountRoot.SetActive(!presentInfo.IsLinked);
+            SignOutRoot.SetActive(presentInfo.IsLinked);
+
             txtPlayerId.text = presentInfo.PlayerId;
         }
 
@@ -70,8 +96,22 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             EventOnShowGameReset?.Invoke();
         }
 
-
-
+        public void OnBtnLinkAccountClicked()
+        {
+            EventOnLinkAccountClicked?.Invoke();
+        }
+        public void OnBtnUnlinkAccountClicked()
+        {
+            EventOnUnlinkAccountClicked?.Invoke();
+        }
+        public void OnBtnSignOutClicked()
+        {
+            EventOnSignOutClicked?.Invoke();
+        }
+        public void OnBtnDeleteAccountClicked()
+        {
+            EventOnDeleteAccountClicked?.Invoke();
+        }
 
         public void EnableSoundFX(bool enable)
         {

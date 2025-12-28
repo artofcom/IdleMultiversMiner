@@ -209,8 +209,8 @@ namespace App.GamePlay.IdleMiner.Craft
 
         #region ===> Initializers
 
-        public CraftController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx) { }
+        public CraftController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx) { }
 
 
         //==========================================================================

@@ -14,7 +14,7 @@ namespace App.GamePlay.IdleMiner.Resouces
 
             playerModel = new ResourcePlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService);
             model = new ResourceModel(context, playerModel);
-            controller = new ResourceController(view, model, context);
+            controller = new ResourceController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

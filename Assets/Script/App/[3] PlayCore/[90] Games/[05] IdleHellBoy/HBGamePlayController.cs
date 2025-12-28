@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner.GamePlay;
-
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner.Games.IdleHellBoy
 {
@@ -10,8 +10,8 @@ namespace App.GamePlay.IdleMiner.Games.IdleHellBoy
     //
     public class HBGamePlayController : GamePlayController
     {
-         public HBGamePlayController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+         public HBGamePlayController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
         /*

@@ -15,7 +15,7 @@ public class GameCardsUnit : AUnit
 
         var playerModel = new GameCardsPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
         model = new GameCardsModel(context, playerModel);
-        controller = new GameCardsController(view, model, context);
+        controller = new GameCardsController(this, view, model, context);
 
         
         playerModel.Init();

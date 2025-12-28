@@ -12,21 +12,21 @@ using Core.Events;
 //using Unity.Services.Analytics;
 //using Unity.Services.Core;
 using App.GamePlay.IdleMiner.PopupDialog;
-
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner
 {
 
     //  Tasks Controlling.-------------------------------------
     //
-    public class TasksController : IGCore.MVCS.AController//  AMinerModule
+    public class TasksController : AController//  AMinerModule
     {
         // APopupDialog dailyAttendDialogCache = null;
 
        // public TasksController(IdleMinerController controller) : base(controller) { }
         
-        public TasksController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public TasksController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
 

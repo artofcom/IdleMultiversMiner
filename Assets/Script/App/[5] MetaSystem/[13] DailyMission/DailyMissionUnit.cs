@@ -17,7 +17,7 @@ public class DailyMissionUnit : AUnit
 
         var playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
         model = new DailyMissionModel(context, playerModel);
-        controller = new DailyMissionController(view, model, context);
+        controller = new DailyMissionController(this, view, model, context);
 
         (controller as DailyMissionController).CommonSpriteConfigCache = commonSpriteConfig;
         

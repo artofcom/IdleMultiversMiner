@@ -12,7 +12,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             base.Init(ctx);
 
             model = new ManagerModel(context, null);
-            controller = new ManagerController(view, model, context);
+            controller = new ManagerController(this, view, model, context);
 
             model.Init();
             controller.Init();  

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InBoxController : AController
 {
-    public InBoxController(AView view, AModel model, AContext context) : base(view, model, context)
+    public InBoxController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
     public override void Init() { }

@@ -1,10 +1,13 @@
 using IGCore.MVCS;
-using Unity.Services.Analytics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SettingUnit : AUnit
 {
     APlayerModel playerModel;
+
+    public bool ShouldSignOut { get ;set; } = false;
+    public bool ShouldDeleteAccount { get ;set; } = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,12 +20,20 @@ public class SettingUnit : AUnit
 
         playerModel = new SettingPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
         model = new SettingModel(context, playerModel);
-        controller = new SettingController(view, model, context);
+        controller = new SettingController(this, view, model, context);
 
         
         playerModel.Init();
         model.Init();
         controller.Init();
+    }
+
+    public override void Attach()
+    {
+        base.Attach();
+
+        ShouldSignOut = false;
+        ShouldDeleteAccount = false;
     }
 
     public override void Dispose() 

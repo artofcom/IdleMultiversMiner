@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner
 {
@@ -8,8 +9,8 @@ namespace App.GamePlay.IdleMiner
     {
         // public MeteorController(IdleMinerController controller) : base(controller) { }
         
-        public MeteorController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public MeteorController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
         public override void Init() {}

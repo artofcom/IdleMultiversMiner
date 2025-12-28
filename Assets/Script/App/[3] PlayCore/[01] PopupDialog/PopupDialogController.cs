@@ -1,7 +1,6 @@
 using UnityEngine;
 using IGCore.MVCS;
 using System;
-using App.GamePlay.IdleMiner.Common.Model;
 using Core.Util;
 
 
@@ -12,8 +11,8 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         string dialogKey;
         PopupDialogView popupDialogView => (PopupDialogView)view;
 
-        public PopupDialogController(string dialogKey, IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public PopupDialogController(string dialogKey, AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { 
             // init.
 
@@ -52,20 +51,24 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
             if (idx >= 0)
             {
-                popupDialogView.Dialogs[idx].Display(presentor, OnCloseCallBack);
+                popupDialogView.Dialogs[idx].OnCloseCallback += OnCloseCallBack;
+                popupDialogView.Dialogs[idx].Display(presentor);
                 return popupDialogView.Dialogs[idx];
             }
             return null;
         }
 
-        AUnit DisplayPopupDialog(string id)
+        AUnit DisplayPopupDialog(string id, Action<APopupDialog> OnCloseCallBack)
         {
             for(int q = 0; q < popupDialogView.DialogUnits.Count; ++q) 
             {
                 if(string.Compare(popupDialogView.DialogUnits[q].name, id, ignoreCase:true) == 0)
                 {
                     if(!popupDialogView.DialogUnits[q].IsAttached)
+                    {
+                        (popupDialogView.DialogUnits[q].View as APopupDialog).OnCloseCallback += OnCloseCallBack;
                         popupDialogView.DialogUnits[q].Attach();
+                    }
 
                     return popupDialogView.DialogUnits[q];
                 }
@@ -112,10 +115,9 @@ namespace App.GamePlay.IdleMiner.PopupDialog
                 return null;
 
             string dlgId = (string)data[0];
-            //IGCore.MVCS.AView.APresentor presentor = (IGCore.MVCS.AView.APresentor)data[1];
-            //Action<APopupDialog> onCloseCallback = (Action<APopupDialog>)data[2];
+            Action<APopupDialog> onCloseCallback = (Action<APopupDialog>)data[1];
 
-            return DisplayPopupDialog(dlgId);
+            return DisplayPopupDialog(dlgId, onCloseCallback);
         }
 
         #endregion

@@ -11,6 +11,7 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner;
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner.SkillTree
 {
@@ -30,8 +31,8 @@ namespace App.GamePlay.IdleMiner.SkillTree
         const int PUMP_REFRESH_COUNT = 5;
         int cntPump = 0;
 
-        public SkillTreeController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public SkillTreeController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
 

@@ -13,7 +13,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
             playerModel = new GamePlayPlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService);
             model = new GamePlayModel(context, playerModel);
-            controller = new GamePlayController(view, model, context);
+            controller = new GamePlayController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

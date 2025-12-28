@@ -11,6 +11,7 @@ using App.GamePlay.IdleMiner.Common.Model;
 using App.GamePlay.IdleMiner.Common.PlayerModel;
 using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.Resouces;
+using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner.MiningStat
 {
@@ -55,8 +56,8 @@ namespace App.GamePlay.IdleMiner.MiningStat
         
         #region ===> Initiailization.
 
-        public MiningStatController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public MiningStatController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
         
 

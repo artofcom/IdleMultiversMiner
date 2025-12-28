@@ -12,7 +12,7 @@ namespace App.GamePlay.Demo
 
         public override void Attach()
         {
-            controller = new CrazySlotController(view, new CrazySlotModel(context, null), context);
+            controller = new CrazySlotController(this, view, new CrazySlotModel(context, null), context);
 
             base.Attach();
         }

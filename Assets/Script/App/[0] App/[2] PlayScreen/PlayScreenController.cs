@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Core.Events;
+using App.GamePlay.Common;
 using App.GamePlay.IdleMiner;
-using System;
-using UnityEngine.Assertions;
-using Core.Util;
+using IGCore.MVCS;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class PlayScreenController : IGCore.MVCS.AController
 {
@@ -16,8 +13,8 @@ public class PlayScreenController : IGCore.MVCS.AController
     IdleMinerUnit IdleMinerUnitCache;
     IdleMinerContext IMContext => (IdleMinerContext)context;
 
-    public PlayScreenController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-        : base(view, model, ctx)
+    public PlayScreenController(AUnit unit, AView view, AModel model, AContext ctx)
+        : base(unit, view, model, ctx)
     { 
         
     }
@@ -29,28 +26,13 @@ public class PlayScreenController : IGCore.MVCS.AController
         Debug.Log("============================= GamePlay Enter ");
 
         // view.StartCoroutine( coOnViewEnabled() );
+        context.AddRequestDelegate("PlayScreen", "SwitchUnit", switchUnit);
     }
 
-    /*IEnumerator coOnViewEnabled()
+    protected override void OnViewDisable() 
     {
-        while(true)
-        {
-            IdleMinerUnitCache = (IdleMinerUnit) context.GetData("gamePlayModule");
-            if(IdleMinerUnitCache != null)
-                break;
-
-            yield return null;
-        }
-
-       // ((IdleMinerView)IdleMinerUnitCache.View).EventOnBtnOptionClicked += EventOnBtnOptionClicked; 
-
-        DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, WAIT_TIME_SEC, () =>
-        {
-            // OnEventClose?.Invoke("TitleScreen");
-        });
-    }*/
-    
-    protected override void OnViewDisable() { }
+        context.RemoveRequestDelegate("PlayScreen", "SwitchUnit");
+    }
 
     public override void Resume(int awayTimeInSec) { }
     
@@ -65,7 +47,17 @@ public class PlayScreenController : IGCore.MVCS.AController
 
     void EventOnBtnOptionClicked() 
     {
-        OnEventClose?.Invoke("TitleScreen");
+        (unit as PlayScreen).SwitchUnit("TitleScreen");
+    }
+
+    object switchUnit(params object[] data) // int amount, bool isOffset)
+    {
+        if(data.Length < 1)
+            return null;
+
+        string nextUnitId = (string)data[0];
+        (unit as PlayScreen).SwitchUnit(nextUnitId);
+        return null;
     }
 
     /*

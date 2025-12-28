@@ -16,7 +16,7 @@ namespace IGCore.MVCS
             Assert.IsNotNull(screenBlocker);
         }
 
-        protected override void OnEventClose(string nextModuleId)
+        public override void SwitchUnit(string nextModuleId)
         {
             StartCoroutine(coOnEventClose(nextModuleId));   
         }
@@ -34,7 +34,7 @@ namespace IGCore.MVCS
 
 
             // Turn On/Off Instantly.
-            base.OnEventClose(nextModuleId);
+            base.SwitchUnit(nextModuleId);
 
 
             fStart = Time.time;

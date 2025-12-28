@@ -16,7 +16,7 @@ public class GameCardsController : AController
 
     bool bLoadingGame = false;
 
-    public GameCardsController(AView view, AModel model, AContext context) : base(view, model, context)
+    public GameCardsController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
     public override void Init() { }

@@ -26,9 +26,11 @@ public class PlayScreen : AUnit
     [SerializeField] List<GameKeyPathSet> gameKeyPathSets;
     [SerializeField] Transform transformParent;
 
+    [ImplementsInterface(typeof(IUnitSwitcher))]
+    [SerializeField] MonoBehaviour unitSwitcher;
     
     AUnit idleMinerModule;
-
+    IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
     Dictionary<string, string> dictGameKeyPathSets = new Dictionary<string, string>();
     
     // DictorMain.Start() -> AUnitSwitcher.Init() -> PlayerScreen.Init()
@@ -37,7 +39,7 @@ public class PlayScreen : AUnit
         base.Init(ctx);
 
         model = new PlayScreenModel(ctx, null);
-        controller = new PlayScreenController(view, model, ctx);
+        controller = new PlayScreenController(this, view, model, ctx);
 
         model.Init();
         controller.Init();
@@ -76,7 +78,6 @@ public class PlayScreen : AUnit
         idleMinerModule.Init(context);
         
         idleMinerModule.Attach();
-        idleMinerModule.OnEventClose += EventOnLoadNextModule;
 
         (analyticsService as IAnalyticsService)?.SendEvent($"GamePlayStarted_{gameKey}");
     }
@@ -86,16 +87,16 @@ public class PlayScreen : AUnit
         base.Detach();   
     }
 
-    void EventOnLoadNextModule(string unitName)
+    public void SwitchUnit(string nextUnit)
     {
-        OnEventClose?.Invoke(unitName);
-        
+        UnitSwitcher.SwitchUnit(nextUnit);
+
         // Detach and Destory Game Module.
         if(idleMinerModule != null )
         {
             idleMinerModule.Detach();
 
-            idleMinerModule.OnEventClose -= EventOnLoadNextModule;
+           // idleMinerModule.OnEventClose -= EventOnLoadNextModule;
             Destroy(idleMinerModule.gameObject);
         }
         idleMinerModule = null;

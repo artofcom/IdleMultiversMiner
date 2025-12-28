@@ -7,7 +7,7 @@ public class MeteorUnit :  IGCore.MVCS.AUnit
     {
         base.Init(ctx);
 
-        controller = new MeteorController(view, new MeteorModel(context, null), context);
+        controller = new MeteorController(this, view, new MeteorModel(context, null), context);
     }
 
     public override void Attach()

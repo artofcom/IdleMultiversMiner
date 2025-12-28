@@ -4,16 +4,16 @@ namespace IGCore.MVCS
 {
     public abstract class AController
     {
-        public Action<string> OnEventClose;
-
+        protected AUnit unit;
         protected AContext context;
         protected AView view;
         protected AModel model;
         
         public virtual AContext Context => context;
 
-        public AController(AView view, AModel model, AContext context)
+        public AController(AUnit unit, AView view, AModel model, AContext context)
         {
+            this.unit = unit;
             this.view = view;
             this.model = model;
             this.context = context;

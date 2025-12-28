@@ -17,7 +17,7 @@ public class InBoxUnit : AUnit
 
         playerModel = new InBoxPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
         model = new InBoxModel(context, playerModel);
-        controller = new InBoxController(view, model, context);
+        controller = new InBoxController(this, view, model, context);
 
         
         playerModel.Init();

@@ -26,7 +26,7 @@ public class AppMainUnit : AUnit
 
         var playerModel = new AppPlayerModel(_minerContext, ((IdleMinerContext)_minerContext).MetaDataGatewayService);
         model = new AppModel(_minerContext, playerModel);
-        controller = new AppController(view, model, _minerContext);
+        controller = new AppController(this, view, model, _minerContext);
 
         playerModel.Init();
         model.Init();

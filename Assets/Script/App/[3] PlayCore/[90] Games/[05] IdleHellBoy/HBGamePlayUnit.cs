@@ -15,7 +15,7 @@ namespace App.GamePlay.IdleMiner.Games.IdleHellBoy
 
             var playerModel = new GamePlayPlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService );
             var model = new GamePlayModel(context, playerModel );
-            controller = new HBGamePlayController(view, model, context);
+            controller = new HBGamePlayController(this, view, model, context);
 
             playerModel.Init();
             model.Init();

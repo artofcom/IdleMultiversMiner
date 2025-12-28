@@ -155,8 +155,8 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         #region ===> CORE.
 
-        public GamePlayController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public GamePlayController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
 

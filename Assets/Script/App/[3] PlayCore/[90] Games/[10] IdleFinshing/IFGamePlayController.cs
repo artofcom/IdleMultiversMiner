@@ -29,8 +29,8 @@ namespace App.GamePlay.IdleMiner.Games.IdleFinishing
             }
         }
 
-        public IFGamePlayController(IGCore.MVCS.AView view, IGCore.MVCS.AModel model, IGCore.MVCS.AContext ctx)
-            : base(view, model, ctx)
+        public IFGamePlayController(AUnit unit, AView view, AModel model, AContext ctx)
+            : base(unit, view, model, ctx)
         { }
 
 

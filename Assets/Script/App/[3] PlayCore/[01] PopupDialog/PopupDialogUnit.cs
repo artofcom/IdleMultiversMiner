@@ -15,7 +15,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
             base.Init(ctx);
 
-            controller = new PopupDialogController(dialogKey, view, new PopupDialogModel(context, null), context);
+            controller = new PopupDialogController(dialogKey, this, view, new PopupDialogModel(context, null), context);
         }
 
 

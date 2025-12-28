@@ -18,7 +18,7 @@ namespace App.GamePlay.IdleMiner
 
         EventsGroup Events = new EventsGroup();
 
-        public TopUICompController(AView view, AModel model, AContext context) : base(view, model, context)
+        public TopUICompController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
         {  
             topUIView = view as TopUIComp;
         }

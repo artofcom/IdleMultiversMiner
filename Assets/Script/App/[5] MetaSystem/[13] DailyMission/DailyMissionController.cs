@@ -19,7 +19,7 @@ public class DailyMissionController : AController
 
     public SpriteConfig CommonSpriteConfigCache { get; set; }
 
-    public DailyMissionController(AView view, AModel model, AContext context) : base(view, model, context)
+    public DailyMissionController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
     public override void Init() 
