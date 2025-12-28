@@ -297,7 +297,7 @@ namespace App.GamePlay.IdleMiner
                 });
 
 
-            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                 "MessageDialog",  
                 presentInfo,
                 new Action<APopupDialog>( (popupDlg) => 
@@ -324,9 +324,14 @@ namespace App.GamePlay.IdleMiner
 
         void View_OnBtnDailyMissionClicked()
         {
-            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", 
                 (errMsg, ret) => {}, 
-                "DailyMission"); 
+                "DailyMission",
+                new Action<APopupDialog>( (popupDlg) => 
+                { 
+                    Debug.Log("Daily Mission Dialog has been closed.");
+
+                } ));
             
             context.RequestQuery("DailyMission.PlayerData", "SeenAllNotificationInfo");
             RefreshNotificator();
@@ -401,7 +406,7 @@ namespace App.GamePlay.IdleMiner
                     Model.PlayerData.AddMoney( new CurrencyAmount(bonusGold.ToString(), eCurrencyType.MINING_COIN) );
                 });
 
-            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                 "MessageDialog",  
                 presentInfo,
                 new Action<APopupDialog>( (popupDlg) => 
@@ -430,9 +435,14 @@ namespace App.GamePlay.IdleMiner
         {
             //Model.PlayerData.AddMoney(new CurrencyAmount("50", eCurrencyType.IAP_COIN));
             //Model.PlayerData.AddMoney(new CurrencyAmount("500", eCurrencyType.MINING_COIN));
-            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", 
                 (errMsg, ret) => {}, 
-                "OptionDialog");  
+                "OptionDialog", 
+                new Action<APopupDialog>( (popupDlg) => 
+                { 
+                    Debug.Log("Option dlg has been closed from X.");
+
+                }));  
         }
 
         

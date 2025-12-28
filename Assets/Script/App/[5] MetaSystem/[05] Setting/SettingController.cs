@@ -3,17 +3,20 @@ using App.GamePlay.IdleMiner.PopupDialog;
 using IGCore.MVCS;
 using System;
 using System.Threading.Tasks;
+using Unity.Services.Authentication.PlayerAccounts;
 using UnityEngine;
 
 public class SettingController : AController
 {
     SettingDialogView View;
+    SettingUnit settingUnit;
 
     public SettingController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
     public override void Init() 
     { 
+        settingUnit = unit as SettingUnit;
         View = (view as SettingDialogView);
         object queryRet = context.RequestQuery("AppPlayerModel", "IsBGMOn");
         bool bEnabled = queryRet != null ? (bool)queryRet : true;
@@ -35,8 +38,9 @@ public class SettingController : AController
         SettingDialogView.EventOnUnlinkAccountClicked += EventOptionDlgOnBtnUnlinkAccountClicked;
         SettingDialogView.EventOnSignOutClicked += EventOnSignOutClicked;
         SettingDialogView.EventOnDeleteAccountClicked += EventOnDeleteAccountClicked;
+        SettingDialogView.EventOnAccountManagementClicked += EventOnAccountManagementClicked;
 
-        View.AuthService.EventOnLinkAccount += EventOnLinkAccount;
+        settingUnit.AuthService.EventOnLinkAccount += EventOnLinkAccount;
 
         RefreshView();
     }
@@ -48,8 +52,9 @@ public class SettingController : AController
         SettingDialogView.EventOnUnlinkAccountClicked -= EventOptionDlgOnBtnUnlinkAccountClicked;
         SettingDialogView.EventOnSignOutClicked -= EventOnSignOutClicked;
         SettingDialogView.EventOnDeleteAccountClicked -= EventOnDeleteAccountClicked;
+        SettingDialogView.EventOnAccountManagementClicked -= EventOnAccountManagementClicked;
 
-        View.AuthService.EventOnLinkAccount -= EventOnLinkAccount;
+        settingUnit.AuthService.EventOnLinkAccount -= EventOnLinkAccount;
     }
 
 
@@ -80,21 +85,24 @@ public class SettingController : AController
     }
     async void EventOptionDlgOnBtnLinkAccountClicked()
     {
-        await View.AuthService.LinkAccountWithPlatform();
+        await settingUnit.AuthService.LinkAccountWithPlayer();
     }
     async void EventOptionDlgOnBtnUnlinkAccountClicked()
     {
-        if(await View.AuthService.UnlinkAccountWithPlatform())
+        if(await settingUnit.AuthService.UnlinkAccountWithPlayer())
         {
             await Task.Delay(100);
 
-            context.UpdateData("IsAccountLinked", View.AuthService.IsAccountLinkedWithIdentity("unity"));
+            context.UpdateData("IsAccountLinked", settingUnit.AuthService.IsAccountLinkedWithPlayer("unity"));
             RefreshView();
         }
     }
     void EventOnSignOutClicked() 
     { 
-        (unit as SettingUnit).ShouldSignOut = true;
+        // (unit as SettingUnit).ShouldSignOut = true;
+
+        context.UpdateData("IsTitleViewLoginRequired", true);
+        settingUnit.AuthService.SignOut();
         unit.Detach();
     }
 
@@ -108,14 +116,16 @@ public class SettingController : AController
                 title : "Warnning", type : MessageDialog.Type.YES_NO, 
                 callbackYes : () => 
                 {
-                    View.AuthService.SignOut();
-
-                    (unit as SettingUnit).ShouldDeleteAccount = true;
+                    // (unit as SettingUnit).ShouldDeleteAccount = true;
+                    
+                    context.UpdateData("IsTitleViewLoginRequired", true);
+                    settingUnit.AuthService.SignOut();
                     unit.Detach();
 
                 }, "YES", "NO");
 
-        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
             "MessageDialog",  
             presentInfo,
             new Action<APopupDialog>( (popupDlg) => 
@@ -128,8 +138,27 @@ public class SettingController : AController
     {
         if(successed)
         {
-            context.UpdateData("IsAccountLinked", View.AuthService.IsAccountLinkedWithIdentity("unity"));
+            context.UpdateData("IsAccountLinked", settingUnit.AuthService.IsAccountLinkedWithPlayer("unity"));
             RefreshView();
         }
+        else
+        {
+            var presentInfo = new MessageDialog.PresentInfo( 
+                message :  "Link Account has been failed.", 
+                title : "Warnning", type : MessageDialog.Type.CONFIRM);
+
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                "MessageDialog",  
+                presentInfo,
+                new Action<APopupDialog>( (popupDlg) => 
+                { 
+                    Debug.Log("Message Dialog has been closed.");
+                } ) );  
+        }
+    }
+
+    void EventOnAccountManagementClicked()
+    {
+        Application.OpenURL( settingUnit.AuthService.GetManagementURL() );
     }
 }

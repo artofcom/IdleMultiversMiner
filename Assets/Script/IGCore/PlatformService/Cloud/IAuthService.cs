@@ -9,13 +9,20 @@ namespace IGCore.PlatformService.Cloud
         event Action<string> EventOnSignInFailed;
         event Action EventOnSignOut;
         event Action EventOnSessionExpired;
+
         event Action<bool> EventOnLinkAccount;
 
-        Task SignIn();
-        Task LinkAccountWithPlatform();
-        Task<bool> UnlinkAccountWithPlatform();
+        event Action EventOnPlayerAccountSignedIn;
+        event Action EventOnPlayerAccountSignInFailed;
+        event Action EventOnPlayerAccountSignedOut;
+
+        Task SignInAsync();
+        Task PlayerSignInAsync();
+        Task LinkAccountWithPlayer();
+        Task<bool> UnlinkAccountWithPlayer();
         void SignOut();
-        bool IsAccountLinkedWithIdentity(string identityName);
+        bool IsAccountLinkedWithPlayer(string playerId);
+        string GetManagementURL();
         
     }
 }

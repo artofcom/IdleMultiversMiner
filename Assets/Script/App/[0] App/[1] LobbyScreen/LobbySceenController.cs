@@ -94,7 +94,7 @@ public class LobbyScreenController : AController
     void EventOnBtnOptionDlgClicked()
     {
         AUnit dialogUnit = null;
-        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", 
             (errMsg, ret) => 
             {
                 dialogUnit = ret as AUnit;
@@ -125,7 +125,7 @@ public class LobbyScreenController : AController
 
     void EventOnBtnShopDlgClicked()
     {
-         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayPopupDialog", 
+         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", 
             (errMsg, ret) => {}, 
             "ShopDialog",  
             new ShopPopupDialog.PresentInfo(null, null, null),
@@ -138,15 +138,14 @@ public class LobbyScreenController : AController
 
     void EventOnBtnDailyMissionClicked()
     {
-        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.LOBBY_DLG_KEY), "DisplayUnitPopupDialog", 
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", 
             (errMsg, ret) => {}, 
-            "DailyMission");  
-            /*new DailyTaskView.Presentor(),
+            "DailyMission",
             new Action<APopupDialog>( (popupDlg) => 
             { 
-                Debug.Log("Shop Dialog has been closed.");
+                Debug.Log("Daily Mission Dialog has been closed.");
 
-            } ) );*/
+            } ));
     }
 
     void ShopDlg_EventOnBtnBuyClicked(int amount)

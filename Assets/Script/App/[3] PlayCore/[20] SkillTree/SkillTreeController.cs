@@ -149,7 +149,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
                 {
                     RefreshView();
 
-                    context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                    context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                         "MessageDialog",  
                         new MessageDialog.PresentInfo( $"You learned {skill_id} skill.", title:"Info", type : MessageDialog.Type.CONFIRM, callbackYes : () => {}),
                         new Action<APopupDialog>( (popupDlg) => 

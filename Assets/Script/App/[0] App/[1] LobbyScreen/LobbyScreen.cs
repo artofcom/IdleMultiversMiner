@@ -1,8 +1,6 @@
 using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using IGCore.MVCS;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LobbyScreen : AUnit
@@ -17,7 +15,7 @@ public class LobbyScreen : AUnit
     IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
 
     // DictorMain.Start() -> AUnitSwitcher.Init() -> LobbyScreen.Init()
-    public override void Init(IGCore.MVCS.AContext ctx)
+    public override void Init(AContext ctx)
     {
         base.Init(ctx);
 
@@ -27,7 +25,7 @@ public class LobbyScreen : AUnit
         model.Init();
         controller.Init();
 
-        context.AddData(KeySets.CTX_KEYS.LOBBY_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);
+        context.AddData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);
         popupDialog.Init(ctx);
     }
     public override void Attach() 

@@ -17,9 +17,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         [SerializeField] GameObject UnlinkAccountRoot;
         [SerializeField] GameObject SignOutRoot;
         [SerializeField] GameObject DeleteAccountRoot;
-
-        [ImplementsInterface(typeof(IAuthService))]
-        [SerializeField] MonoBehaviour authService;
+        
 
         public static Action<bool> EventOnBtnBGMClicked;
         public static Action<bool> EventOnBtnSoundFXClicked;
@@ -27,13 +25,10 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         public static Action EventOnUnlinkAccountClicked;
         public static Action EventOnSignOutClicked;
         public static Action EventOnDeleteAccountClicked;
+        public static Action EventOnAccountManagementClicked;
 
         // Debug Actions.
         public static Action EventOnShowGameReset;
-
-
-
-        public IAuthService AuthService => authService as IAuthService;
 
         public class PresentInfo : APresentor
         {
@@ -111,6 +106,10 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         public void OnBtnDeleteAccountClicked()
         {
             EventOnDeleteAccountClicked?.Invoke();
+        }
+        public void OnBtnAccountManagement()
+        {
+            EventOnAccountManagementClicked?.Invoke();
         }
 
         public void EnableSoundFX(bool enable)

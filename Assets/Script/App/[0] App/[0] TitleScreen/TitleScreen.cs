@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using IGCore.MVCS;
 using IGCore.SubSystem.Analytics;
@@ -17,11 +15,11 @@ public class TitleScreen : AUnit
     [ImplementsInterface(typeof(IUnitSwitcher))]
     [SerializeField] MonoBehaviour unitSwitcher;
 
-    IAuthService AuthService => authService as IAuthService;
+    public IAuthService AuthService => authService as IAuthService;
     IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
 
     // DictorMain.Start() -> AUnitSwitcher.Init() -> TitleScreen.Init()
-    public override void Init(IGCore.MVCS.AContext ctx)
+    public override void Init(AContext ctx)
     {
         base.Init(ctx);
         context.AddData("PlayerId", string.Empty);
@@ -57,18 +55,10 @@ public class TitleScreen : AUnit
     }
 
     void OnViewEnable()
-    {
-        AuthService.SignIn();
-    }
+    {}
 
-    void OnSignedIn(string playerId)
-    {
-        context.AddData("PlayerId", playerId);
-        context.AddData("IsAccountLinked", AuthService.IsAccountLinkedWithIdentity("unity"));
-    }
-    void OnSignInFailed(string msg)
-    {
-    }
+    void OnSignedIn(string playerId) {}
+    void OnSignInFailed(string msg) {}
     void OnSignOut() { }
     void OnSessionExpired() { }
 

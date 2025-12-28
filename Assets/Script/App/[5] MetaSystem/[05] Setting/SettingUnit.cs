@@ -1,4 +1,5 @@
 using IGCore.MVCS;
+using IGCore.PlatformService.Cloud;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -6,8 +7,13 @@ public class SettingUnit : AUnit
 {
     APlayerModel playerModel;
 
+    [ImplementsInterface(typeof(IAuthService))]
+    [SerializeField] MonoBehaviour authService;
+
     public bool ShouldSignOut { get ;set; } = false;
     public bool ShouldDeleteAccount { get ;set; } = false;
+
+    public IAuthService AuthService => authService as IAuthService;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
