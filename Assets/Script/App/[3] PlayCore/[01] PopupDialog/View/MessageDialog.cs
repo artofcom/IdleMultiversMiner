@@ -8,18 +8,21 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 {
     public class MessageDialog : APopupDialog
     {
-        public enum Type { CONFIRM, YES_NO, };
+        public enum Type { CONFIRM, YES_NO_TO_BETTER, YES_NO_TO_WORSE };
 
         // Serialize Fields -------------------------------
         //
         [SerializeField] TMP_Text txtTitle;
         [SerializeField] TMP_Text txtMessage;
         [SerializeField] GameObject btnGroupOne;
-        [SerializeField] GameObject btnGroupTwo;
+        [SerializeField] GameObject btnGroupTwoBetter;
+        [SerializeField] GameObject btnGroupTwoWorse;
 
         [SerializeField] TMP_Text txt01BtnConfirm;
-        [SerializeField] TMP_Text txt02BtnOk;
-        [SerializeField] TMP_Text txt02BtnCancel;
+        [SerializeField] TMP_Text txt02BetterBtnOk;
+        [SerializeField] TMP_Text txt02BetterBtnCancel;
+        [SerializeField] TMP_Text txt02WorseBtnOk;
+        [SerializeField] TMP_Text txt02WorseBtnCancel;
 
         Action callbackOnOk;
 
@@ -54,11 +57,14 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             Assert.IsNotNull(txtTitle);
             Assert.IsNotNull(txtMessage);
             Assert.IsNotNull(btnGroupOne);
-            Assert.IsNotNull(btnGroupTwo);
+            Assert.IsNotNull(btnGroupTwoBetter);
+            Assert.IsNotNull(btnGroupTwoWorse);
             
             Assert.IsNotNull(txt01BtnConfirm);
-            Assert.IsNotNull(txt02BtnOk);
-            Assert.IsNotNull(txt02BtnCancel);
+            Assert.IsNotNull(txt02BetterBtnOk);
+            Assert.IsNotNull(txt02BetterBtnCancel);
+            Assert.IsNotNull(txt02WorseBtnOk);
+            Assert.IsNotNull(txt02WorseBtnCancel);
         }
 
         public override void InitDialog(string id)
@@ -80,11 +86,14 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             txtMessage.text = presentInfo.Message;
 
             btnGroupOne.SetActive(presentInfo.Type == Type.CONFIRM);
-            btnGroupTwo.SetActive(presentInfo.Type == Type.YES_NO);
+            btnGroupTwoBetter.SetActive(presentInfo.Type == Type.YES_NO_TO_BETTER);
+            btnGroupTwoWorse.SetActive(presentInfo.Type == Type.YES_NO_TO_WORSE);
 
             txt01BtnConfirm.text = presentInfo.BtnMsgOk;
-            txt02BtnOk.text = presentInfo.BtnMsgOk;
-            txt02BtnCancel.text = presentInfo.BtnMsgNo;
+            txt02BetterBtnOk.text = presentInfo.BtnMsgOk;
+            txt02BetterBtnCancel.text = presentInfo.BtnMsgNo;
+            txt02WorseBtnOk.text = presentInfo.BtnMsgOk;
+            txt02WorseBtnCancel.text = presentInfo.BtnMsgNo;
 
             callbackOnOk = presentInfo.YesCallback;
         }

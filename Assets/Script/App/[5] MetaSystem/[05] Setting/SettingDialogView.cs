@@ -1,4 +1,3 @@
-using IGCore.PlatformService.Cloud;
 using System;
 using TMPro;
 using UnityEngine;
@@ -13,6 +12,9 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         [SerializeField] Transform SoundFXListRoot;
         [SerializeField] TMP_Text txtPlayerId;
         [SerializeField] Transform BGMListRoot;
+        
+        [SerializeField] GameObject OfflineRoot;
+        [SerializeField] GameObject OnlineRoot;
         [SerializeField] GameObject LinkAccountRoot;
         [SerializeField] GameObject UnlinkAccountRoot;
         [SerializeField] GameObject SignOutRoot;
@@ -32,11 +34,11 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
         public class PresentInfo : APresentor
         {
-            public PresentInfo(bool isFXAudioOn, bool isBGMOn, bool isOffline, bool isLinked, string playerId)
+            public PresentInfo(bool isFXAudioOn, bool isBGMOn, bool isSignedIn, bool isLinked, string playerId)
             {
                 IsBGMOn = isBGMOn;
                 IsFXAudioOn = isFXAudioOn;
-                IsOffline = isOffline;
+                IsSignedIn = isSignedIn;
                 IsLinked = isLinked;    
                 PlayerId = playerId;
             }
@@ -44,7 +46,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             public bool IsFXAudioOn { get; private set; }
             public bool IsBGMOn { get; private set; }
             
-            public bool IsOffline { get; private set; }
+            public bool IsSignedIn { get; private set; }
             public bool IsLinked { get; private set; }
             public string PlayerId { get; private set; }
         }
@@ -63,6 +65,9 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             var presentInfo = (PresentInfo)presentor;
             if (presentInfo == null)
                 return;
+
+            OfflineRoot.SetActive(!presentInfo.IsSignedIn);
+            OnlineRoot.SetActive(presentInfo.IsSignedIn);
 
             btnToggleBGM.IsOn = presentInfo.IsBGMOn;
             btnToggleSoundFX.IsOn = presentInfo.IsFXAudioOn;

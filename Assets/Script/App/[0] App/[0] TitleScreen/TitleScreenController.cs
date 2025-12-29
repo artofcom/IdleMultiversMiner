@@ -2,10 +2,9 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Util;
 using IGCore.MVCS;
-using IGCore.PlatformService.Cloud;
 using System;
-using System.Collections;
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class TitleScreenController : AController
 {
@@ -15,12 +14,15 @@ public class TitleScreenController : AController
 
     TitleScreen titleScreen => unit as TitleScreen;
 
+    bool isBacgroundLoginWorking = false;
+
     public TitleScreenController(AUnit unit, AView view, AModel model, AContext ctx)
         : base(unit, view, model, ctx)
     {}
 
     public override void Init()
     {
+        isBacgroundLoginWorking = false;
         titleScreen.AuthService.EventOnSignedIn += OnSignedIn;
         titleScreen.AuthService.EventOnSignInFailed += OnSignInFailed;
     }
@@ -70,14 +72,56 @@ public class TitleScreenController : AController
     
     void OnSignedIn(string playerId) 
     {
-        Debug.Log($"<color=green>Login has been successed. PlayerId : [{playerId}]</color>");
+        Debug.Log($"<color=green>[TitleScreen] SignIn Successed. PlayerId : [{playerId}]</color>");
         context.AddData("PlayerId", playerId);
         context.AddData("IsAccountLinked", titleScreen.AuthService.IsAccountLinkedWithPlayer("unity"));
-        titleScreen.SwitchUnit("LobbyScreen");
+        
+        if(titleScreen.IsAttached)
+            titleScreen.SwitchUnit("LobbyScreen");
     }
     void OnSignInFailed(string errorMessage)
     {
-        Debug.Log($"<color=red>{errorMessage}</color>");
-        titleScreen.SwitchUnit("LobbyScreen");
+        Debug.Log($"<color=red>[TitleScreen] SignInFailed : {errorMessage}</color>");
+        
+        if(titleScreen.IsAttached)
+            titleScreen.SwitchUnit("LobbyScreen");
+
+        if(false == isBacgroundLoginWorking)
+        {
+            // Should Try Login In the background.
+            TryBackgroundLogin(interval:5);
+        }
     }
+
+    
+
+    async Task TryBackgroundLogin(int interval)
+    {
+        isBacgroundLoginWorking = true;
+
+        while(!titleScreen.AuthService.IsSignedIn())
+        {
+            if(Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                Debug.Log("[BackgroundLogin] : No internet connection.");
+                await Task.Delay(5000);
+                continue;
+            }
+
+            Debug.Log("[BackgroundLogin] : Try Sign In....");
+            await Task.Delay(interval * 1000);
+
+            try
+            {
+                await titleScreen.AuthService.SignInAsync();
+            }
+            catch(Exception ex) 
+            {
+                Debug.Log($"[BackgroundLogin] : Login failed... {ex.Message}");
+            }
+        }
+
+        isBacgroundLoginWorking = false;
+    }
+
 }

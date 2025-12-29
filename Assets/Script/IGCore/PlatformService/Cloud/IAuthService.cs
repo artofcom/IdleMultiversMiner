@@ -10,12 +10,13 @@ namespace IGCore.PlatformService.Cloud
         event Action EventOnSignOut;
         event Action EventOnSessionExpired;
 
-        event Action<bool> EventOnLinkAccount;
+        event Action<bool, string> EventOnLinkAccount;
 
         event Action EventOnPlayerAccountSignedIn;
         event Action EventOnPlayerAccountSignInFailed;
         event Action EventOnPlayerAccountSignedOut;
 
+        bool IsSignedIn();
         Task SignInAsync();
         Task PlayerSignInAsync();
         Task LinkAccountWithPlayer();

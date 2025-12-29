@@ -64,7 +64,7 @@ public class SettingController : AController
         var presentInfo = new SettingDialogView.PresentInfo(
                 (bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), 
                 (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"), 
-                isOffline:false, 
+                isSignedIn : settingUnit.AuthService.IsSignedIn(),
                 (bool)context.GetData("IsAccountLinked"),
                 (string)context.GetData("PlayerId"));
 
@@ -112,8 +112,8 @@ public class SettingController : AController
         //unit.Detach();
 
         var presentInfo = new MessageDialog.PresentInfo( 
-                message :  "About to delete Account, continue?", 
-                title : "Warnning", type : MessageDialog.Type.YES_NO, 
+                message :  "If you proceed, all your progress will be permanently deleted. You will not be able to recover this data later.\r\n\r\nAre you sure you want to delete everything?", 
+                title : "Delete Guest Account?", type : MessageDialog.Type.YES_NO_TO_WORSE, 
                 callbackYes : () => 
                 {
                     // (unit as SettingUnit).ShouldDeleteAccount = true;
@@ -122,7 +122,7 @@ public class SettingController : AController
                     settingUnit.AuthService.SignOut();
                     unit.Detach();
 
-                }, "YES", "NO");
+                }, "Delete Forever", "Cancel");
 
 
         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
@@ -134,7 +134,7 @@ public class SettingController : AController
             } ) );  
     }
 
-    void EventOnLinkAccount(bool successed)
+    void EventOnLinkAccount(bool successed, string errMessage)
     {
         if(successed)
         {
@@ -144,8 +144,8 @@ public class SettingController : AController
         else
         {
             var presentInfo = new MessageDialog.PresentInfo( 
-                message :  "Link Account has been failed.", 
-                title : "Warnning", type : MessageDialog.Type.CONFIRM);
+                message :  errMessage, 
+                title : "Linking Account has been failed!", type : MessageDialog.Type.CONFIRM);
 
             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                 "MessageDialog",  

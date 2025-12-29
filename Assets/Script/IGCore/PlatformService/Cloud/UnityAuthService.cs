@@ -19,7 +19,7 @@ namespace IGCore.PlatformService.Cloud
         public event Action<string> EventOnSignInFailed;
         public event Action EventOnSignOut;
         public event Action EventOnSessionExpired;
-        public event Action<bool> EventOnLinkAccount;
+        public event Action<bool, string> EventOnLinkAccount;
 
         public event Action EventOnPlayerAccountSignedIn;
         public event Action EventOnPlayerAccountSignInFailed;
@@ -83,8 +83,19 @@ namespace IGCore.PlatformService.Cloud
 
         #region Interfaces
 
+        public bool IsSignedIn()
+        {
+            return (isInitialized && AuthenticationService.Instance!=null && AuthenticationService.Instance.IsSignedIn);
+        }
+
         public async Task SignInAsync()             // EventOnSignedIn or EventOnSignInFailed
         {
+            if(Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                EventOnSignInFailed?.Invoke("No internet connection");
+                return;
+            }
+
             while(!isInitialized)
                 await Task.Delay(1000);
 
@@ -229,7 +240,7 @@ namespace IGCore.PlatformService.Cloud
                 {
                     Debug.LogError("[Auth] Fetching PAS Token has been failed..");
                     if(isLinkingAccount)
-                        EventOnLinkAccount?.Invoke(false);
+                        EventOnLinkAccount?.Invoke(false, "Fetching AccessToken for the PlayerAccount has been failed." );
 
                     isLinkingAccount = false;
                     return;
@@ -240,7 +251,7 @@ namespace IGCore.PlatformService.Cloud
                 {
                     await AuthenticationService.Instance.LinkWithUnityAsync(PlayerAccountService.Instance.AccessToken);
                     Debug.Log("[Auth] Unity Account Link has been successed.");
-                    EventOnLinkAccount?.Invoke(true);
+                    EventOnLinkAccount?.Invoke(true, string.Empty);
                 }
                 else
                     await AuthenticationService.Instance.SignInWithUnityAsync(PlayerAccountService.Instance.AccessToken);
@@ -253,7 +264,7 @@ namespace IGCore.PlatformService.Cloud
             {
                 Debug.LogException(e);
                 if(isLinkingAccount)
-                    EventOnLinkAccount?.Invoke(false);
+                    EventOnLinkAccount?.Invoke(false, e.Message);
             }
 
             isLinkingAccount = false;
@@ -269,7 +280,7 @@ namespace IGCore.PlatformService.Cloud
             EventOnPlayerAccountSignInFailed?.Invoke();
             
             if(isLinkingAccount) 
-                EventOnLinkAccount?.Invoke(false);
+                EventOnLinkAccount?.Invoke(false, e.Message);
 
             isLinkingAccount = false;
         }

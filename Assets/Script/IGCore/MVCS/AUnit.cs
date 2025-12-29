@@ -17,7 +17,7 @@ namespace IGCore.MVCS
         public Action<object> OnEventAttached;
         public Action<object> OnEventDetached;
 
-        public bool IsAttached => (View==null ? false : View.gameObject.activeSelf);
+        public bool IsAttached => (View==null ? false : View.gameObject.activeSelf && View.gameObject.activeInHierarchy);
 
         protected virtual void Awake()
         {
