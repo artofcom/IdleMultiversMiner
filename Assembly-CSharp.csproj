@@ -72,7 +72,6 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\MainTabComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[40] RoverScanner\RoverScanerController.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\TimeExt.cs" />
-    <Compile Include="Assets\Script\IGCore\MVCS\SubSystem\IWritableModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[30] Manager\Views\StarGradeComp.cs" />
     <Compile Include="Assets\Script\App\[0] App\[5] Others\Interface\AView.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogView.cs" />
@@ -98,6 +97,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\ManagerData.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PlayerModel\NotificationPlayerData.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\FrameResourceComp.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\UnityCloudService.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\EaseFuncLib.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\PlayerModel\ResourcePlayerData.cs" />
@@ -127,10 +127,12 @@
     <Compile Include="Assets\Script\IGCore\PlatformService\UnityIAPService.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\AModel.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingDialogView.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\StringCompressor.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionUnit.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[30] LostDesert\SkillTreeUnitLostDesert.cs" />
     <Compile Include="Assets\Script\App\[0] App\[0] TitleScreen\TitleScreenPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\CraftView.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\DataCloudGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SubComp\SkillItemComp.cs" />
     <Compile Include="Assets\ThirdParty\PinchablePageScroller\SampleScenes\SceneScript\SampleScene01.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[40] FrozenPlains\SkillTreeModelFrozenPlains.cs" />
@@ -153,7 +155,6 @@
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbyScreen.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\WritablePlayerData.cs" />
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbyScreenView.cs" />
-    <Compile Include="Assets\Script\IGCore\MVCS\GatewayWritablePlayerData.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\AUnitSwitcher.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[15] GameCards\GameCardsUnit.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Attribute\ImplementsInterfaceAttribute.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\TextFileIO.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerBoosterData.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\UI\BackUp\DraggableImage_v1.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\GatewayWritablePlayerData.cs" />
     <Compile Include="Assets\Script\App\[0] App\[2] PlayScreen\PlayScreenService.cs" />
     <Compile Include="Assets\Script\IGCore\MetaSystem\NotificationSystem\NotificatorComp.cs" />
     <Compile Include="Assets\ThirdParty\Layer Lab\Scripts\PanelView.cs" />
@@ -241,6 +243,7 @@
     <Compile Include="Assets\Script\IGCore\PlatformService\Analytics\UnityAnalyticsService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SubComp\SkillItemBundleComp.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingPlayerModel.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\DataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\WelcomeBackPopupDialog.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[11] InBox\InBoxPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\SubViews\PlanetResourceItemComp.cs" />
@@ -250,6 +253,7 @@
     <Compile Include="Assets\Script\App\[5] MetaSystem\[07] Shop\ShopController.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\AssetBundle\AssetBundleManager.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingController.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\IDataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\MinerMover.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\DOTween\LineTweener.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\MiningStatUnit.cs" />
@@ -270,6 +274,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[40] RoverScanner\RoverScannerData.cs" />
     <Compile Include="Assets\Script\App\[0] App\AppView.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Events\GenericEvents.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Util\IWritableModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[30] Manager\Views\ManagerItemComp.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\AController.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[05] Setting\SettingUnit.cs" />
@@ -287,7 +292,6 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[31] BoosterList\BoosterUnit.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\SafeArea.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\SlotPlay\CrazySlotView.cs" />
-    <Compile Include="Assets\Script\IGCore\MVCS\SubSystem\IDataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[03] PlayerInfo\PlayerDailyAttendData.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionModel.cs" />
     <Compile Include="Assets\Script\App\[0] App\[0] TitleScreen\TitleScreenService.cs" />
@@ -327,10 +331,10 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\Views\ResourceStatComp.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Utils\LevelBaseValue.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\UI\BackUp\DraggableImage_v2.cs" />
+    <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\ICloudSaveService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\GameResetDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\RecipeListPopupDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[35] Colonization\ColonizationData.cs" />
-    <Compile Include="Assets\Script\IGCore\MVCS\DataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\Views\SkillBtnComp.cs" />
     <Compile Include="Assets\Script\IGCore\MetaSystem\NotificationSystem\INotificator.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\PopupDialogController.cs" />
@@ -1553,6 +1557,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.CloudSave.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.CloudSave.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
@@ -1619,6 +1627,10 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.CloudSave">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.CloudSave.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">

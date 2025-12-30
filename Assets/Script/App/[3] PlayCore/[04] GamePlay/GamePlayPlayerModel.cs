@@ -1,4 +1,5 @@
 // using App.GamePlay.IdleMiner.Common.Model;
+using App.GamePlay.Common;
 using App.GamePlay.IdleMiner.Common.PlayerModel;
 using App.GamePlay.IdleMiner.Common.Types;
 using Core.Events;
@@ -16,10 +17,11 @@ namespace App.GamePlay.IdleMiner.GamePlay
     {
         #region ===> Properties
 
+        const string EnvironmentDataKey = "Environment";
         string DateKey_ZoneInfo => $"{nameof(GamePlayPlayerModel)}_{nameof(ZoneGroupStatusInfo)}";
 
-        // Serialize Fields.
-        [SerializeField] ZoneGroupStatusInfo unlockedZoneGroup = new ZoneGroupStatusInfo();
+        ZoneGroupStatusInfo unlockedZoneGroup = new ZoneGroupStatusInfo();
+        EnvironmentInfo environment;
 
         // Accessor.
         public ZoneGroupStatusInfo UnlockedZoneGroup => unlockedZoneGroup;
@@ -255,6 +257,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             Assert.IsNotNull(unlockedZoneGroup);
             List<Tuple<string, string>> listDataSet = new List<Tuple<string, string>>();
+            listDataSet.Add(new Tuple<string, string>(EnvironmentDataKey, JsonUtility.ToJson(environment)));
             listDataSet.Add(new Tuple<string, string>(DateKey_ZoneInfo, JsonUtility.ToJson(unlockedZoneGroup)));
             return listDataSet;
         }
@@ -288,6 +291,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         //}
         void LoadPlanetData()
         {
+            FetchData(EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
             FetchData<ZoneGroupStatusInfo>(DateKey_ZoneInfo, out unlockedZoneGroup, fallback:new ZoneGroupStatusInfo());
         }
         void LoadSimPlanetData()

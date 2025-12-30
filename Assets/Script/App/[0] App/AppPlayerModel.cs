@@ -17,9 +17,8 @@ public class AppPlayerModel : GatewayWritablePlayerModel
 
     public AppPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService)  { }
 
-    public static string AccountName => "DefaultAccount00";
-    static string EnvironmentDataKey = AccountName + "_Environment";
-    static string CurrencyDataKey = AccountName + "_Currencies";
+    static string EnvironmentDataKey = "Environment";
+    static string CurrencyDataKey = "Currencies";
 
 
     public override void Init()

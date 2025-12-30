@@ -7,18 +7,18 @@ namespace App.GamePlay.Common
     [Serializable]
     public class  EnvironmentInfo
     {
-        [SerializeField] string version;
+        [SerializeField] string dataVersion;
         [SerializeField] string appVersion;
         [SerializeField] string deviceName;
         [SerializeField] long timeStamp;
 
         public EnvironmentInfo(string version)
         {
-            this.version = version;     
+            this.dataVersion = version;     
             this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
             this.timeStamp = DateTime.UtcNow.Ticks;
         }
-        public string Version => version;
+        public string DataVersion => dataVersion;
         public string DeviceName => deviceName;
         public long TimeStamp => timeStamp;
         public string AppVersion => appVersion;

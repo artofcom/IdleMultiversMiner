@@ -1,10 +1,11 @@
+using App.GamePlay.IdleMiner;
+using Core.Events;
+using IGCore.MVCS;
+using IGCore.PlatformService.Cloud;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Core.Events;
-using App.GamePlay.IdleMiner;
 using UnityEngine.Assertions;
-using IGCore.MVCS;
 
 public class AppMainUnit : AUnit
 {
@@ -13,13 +14,18 @@ public class AppMainUnit : AUnit
     // MetaSystems.
     [SerializeField] List<AUnit> metaSystems;
 
+    [ImplementsInterface(typeof(ICloudService))]
+    [SerializeField] MonoBehaviour cloudService;
+
     AContext _minerContext = null;
 
     protected override void Awake() 
     { 
         base.Awake();
         
-        _minerContext = new IdleMinerContext();
+        //_minerContext = new IdleMinerContext();
+        _minerContext = new IdleMinerContext(cloudService as ICloudService);
+        
         ((IdleMinerContext)_minerContext).Init(this);
 
         Init(_minerContext);

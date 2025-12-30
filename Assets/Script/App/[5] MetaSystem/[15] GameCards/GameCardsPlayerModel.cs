@@ -14,7 +14,7 @@ public class GameCardsPlayerModel : GatewayWritablePlayerModel
 
     public GameCardsPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
 
-    string DataKey => IdleMinerContext.AccountName + "_GameCardsData";
+    string DataKey => "GameCardsData";
 
     public override void Init()
     {

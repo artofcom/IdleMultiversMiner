@@ -464,7 +464,7 @@ namespace App.GamePlay.IdleMiner.Craft
             else
             {
                 var presentInfo = new ToastMessageDialog.PresentInfo( message :  "Insufficient VOLT.", duration:1.5f );
-                context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                     "ToastMessageDialog", presentInfo,
                     new Action<APopupDialog>( (popupDlg) => 
                     { 
@@ -566,7 +566,7 @@ namespace App.GamePlay.IdleMiner.Craft
                 else
                 {
                     var presentData = new ToastMessageDialog.PresentInfo( message :  "Insufficient VOLT.", duration:1.5f );
-                    context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                    context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                         "ToastMessageDialog", presentData,
                         new Action<APopupDialog>( (popupDlg) => 
                         { 

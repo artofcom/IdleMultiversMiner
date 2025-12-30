@@ -35,6 +35,8 @@ public class DailyMissionController : AController
         View.EventOnBtnResetClicked += OnBtnResetClicked;
 
         RefreshNotificator();
+
+        unit.StartCoroutine( coUpdate() );
     }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
@@ -46,8 +48,6 @@ public class DailyMissionController : AController
 
         RefreshView();
         RefreshNotificator();
-
-        view.StartCoroutine( coUpdate() );
     }
     protected override void OnViewDisable() { }
 
@@ -127,7 +127,8 @@ public class DailyMissionController : AController
 
             DailyMissionModel.Pump();
 
-            RefreshView();
+            if(unit.IsAttached)
+                RefreshView();
         }
     }
 

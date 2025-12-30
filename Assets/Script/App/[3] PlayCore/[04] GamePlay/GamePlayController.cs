@@ -661,7 +661,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             else
             {
                 var presentInfo = new ToastMessageDialog.PresentInfo( message :  "Insufficient GOLD.", duration:1.5f );
-                context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
                     "ToastMessageDialog", presentInfo,
                     new Action<APopupDialog>( (popupDlg) => 
                     { 

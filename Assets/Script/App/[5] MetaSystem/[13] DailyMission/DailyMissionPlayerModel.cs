@@ -48,8 +48,8 @@ public class DailyMissionPlayerModel : GatewayWritablePlayerModel
     public ProgressInfoBundle ProgressBundleInfo => progressInfo;
     public NotificationInfo NotificatorInfo => notificationInfo;
 
-    string DataKey => IdleMinerContext.AccountName + "_DailyMissionData";
-    string NotificationDataKey => IdleMinerContext.AccountName + "_DailyMissionNotificationData";
+    string DataKey => "DailyMissionData";
+    string NotificationDataKey => "DailyMissionNotificationData";
 
 
     public DailyMissionPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }

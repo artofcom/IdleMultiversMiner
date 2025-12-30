@@ -12,7 +12,8 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         [SerializeField] Transform SoundFXListRoot;
         [SerializeField] TMP_Text txtPlayerId;
         [SerializeField] Transform BGMListRoot;
-        
+        [SerializeField] TMP_Text txtVersion;
+
         [SerializeField] GameObject OfflineRoot;
         [SerializeField] GameObject OnlineRoot;
         [SerializeField] GameObject LinkAccountRoot;
@@ -34,13 +35,14 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
         public class PresentInfo : APresentor
         {
-            public PresentInfo(bool isFXAudioOn, bool isBGMOn, bool isSignedIn, bool isLinked, string playerId)
+            public PresentInfo(bool isFXAudioOn, bool isBGMOn, bool isSignedIn, bool isLinked, string playerId, string strVersion)
             {
                 IsBGMOn = isBGMOn;
                 IsFXAudioOn = isFXAudioOn;
                 IsSignedIn = isSignedIn;
                 IsLinked = isLinked;    
                 PlayerId = playerId;
+                Version = strVersion;
             }
 
             public bool IsFXAudioOn { get; private set; }
@@ -49,6 +51,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             public bool IsSignedIn { get; private set; }
             public bool IsLinked { get; private set; }
             public string PlayerId { get; private set; }
+            public string Version { get; private set; }
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -79,6 +82,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             SignOutRoot.SetActive(presentInfo.IsLinked);
 
             txtPlayerId.text = presentInfo.PlayerId;
+            txtVersion.text = presentInfo.Version;
         }
 
         public void OnBtnSoundFXClicked(bool isOn)

@@ -287,7 +287,7 @@ namespace App.GamePlay.IdleMiner
             
             context.AddData("DefaultZoneId", newPlayerData.ZoneId);
 
-            PlayerPrefs.SetString(PREFAB_ACCOUNT, IdleMinerContext.AccountName);
+            // PlayerPrefs.SetString(PREFAB_ACCOUNT, IdleMinerContext.AccountName);
 
             RefreshAwayTime();
 

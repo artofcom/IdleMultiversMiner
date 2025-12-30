@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static IGCore.MVCS.Requestable;
+using System.Threading.Tasks;
 
 namespace IGCore.MVCS
 {
@@ -15,7 +16,7 @@ namespace IGCore.MVCS
 
         public EventsGroup EventGroup => Events;
 
-        abstract public void InitGame();
+        abstract public Task InitGame();
         abstract public void DisposeGame();
 
         public void AddData(string key, object data)

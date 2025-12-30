@@ -21,7 +21,7 @@ public class SettingPlayerModel : GatewayWritablePlayerModel
 
     public SettingPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
 
-    string DataKey => IdleMinerContext.AccountName + "_SettingData";
+    string DataKey => "SettingData";
 
     public override void Init()
     {

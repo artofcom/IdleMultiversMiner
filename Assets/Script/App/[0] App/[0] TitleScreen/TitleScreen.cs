@@ -12,10 +12,14 @@ public class TitleScreen : AUnit
     [ImplementsInterface(typeof(IAuthService))]
     [SerializeField] MonoBehaviour authService;
 
+    [ImplementsInterface(typeof(ICloudService))]
+    [SerializeField] MonoBehaviour cloudService;
+
     [ImplementsInterface(typeof(IUnitSwitcher))]
     [SerializeField] MonoBehaviour unitSwitcher;
 
     public IAuthService AuthService => authService as IAuthService;
+    public ICloudService CloudService => cloudService as ICloudService;
     IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
 
     // DictorMain.Start() -> AUnitSwitcher.Init() -> TitleScreen.Init()

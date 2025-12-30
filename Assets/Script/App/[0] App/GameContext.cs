@@ -1,6 +1,8 @@
 using IGCore.MVCS;
+using IGCore.PlatformService.Cloud;
 using UnityEngine;
 using UnityEngine.Assertions;
+using System.Threading.Tasks;
 
 public class SimDefines
 {
@@ -24,11 +26,9 @@ public sealed class IdleMinerContext : AContext
 
     public MonoBehaviour CoRunner => coRunner;
     
-    
     public IDataGatewayService GameCoreGatewayService => gameCoreGatewayService;
     public IDataGatewayService MetaDataGatewayService => metaDataGatewayService;
-    public static string AccountName => AppPlayerModel.AccountName;
-
+    
     static IdleMinerContext _instance;
     public static string GameKey
     {
@@ -55,6 +55,13 @@ public sealed class IdleMinerContext : AContext
         metaDataGatewayService = new DataGatewayService();
     }
 
+    public IdleMinerContext(ICloudService cloudService)
+    {
+        _instance = this;
+        gameCoreGatewayService = new DataCloudGatewayService(cloudService);
+        metaDataGatewayService = new DataCloudGatewayService(cloudService);
+    }
+
     public void Init(MonoBehaviour runner)
     {
         if(!IsSimulationMode()) 
@@ -69,10 +76,10 @@ public sealed class IdleMinerContext : AContext
         }
     }
 
-    public override void InitGame()
+    public override async Task InitGame()
     {
         gameCoreGatewayService.ClearModels();
-        LoadPlayerData();
+        await LoadPlayerData();
     }
 
     public override void DisposeGame()
@@ -117,30 +124,30 @@ public sealed class IdleMinerContext : AContext
 
 
     #region Data Gateway Services.
-    public void SavePlayerData()
+    public async Task SavePlayerData()
     {
-        string fileName = $"/{AccountName}_{GameKey}_PlayerData.json";
-        gameCoreGatewayService.WriteData(Application.persistentDataPath + fileName, clearAll:false);
+        string dataKey = $"{GameKey}_PlayerData";
+        await gameCoreGatewayService.WriteData(dataKey, clearAll:false);
     }
-    void LoadPlayerData()
-    {
-        string fileName = $"/{AccountName}_{GameKey}_PlayerData.json";
-        gameCoreGatewayService.ReadData(Application.persistentDataPath + fileName);
+    async Task LoadPlayerData()
+    {   
+        string dataKey = $"{GameKey}_PlayerData";
+        await gameCoreGatewayService.ReadData(dataKey);
     }
-    public void ResetPlayerData()
+    public async Task ResetPlayerData()
     {
-        string fileName = $"/{AccountName}_{GameKey}_PlayerData.json";
-        gameCoreGatewayService.WriteData(Application.persistentDataPath + fileName, clearAll:true);
+        string dataKey = $"{GameKey}_PlayerData";
+        await gameCoreGatewayService.WriteData(dataKey, clearAll:true);
     }
-    void LoadMetaData()
+    async Task LoadMetaData()
     {
-        string fileName = $"/{AccountName}_MetaData.json";
-        metaDataGatewayService.ReadData(Application.persistentDataPath + fileName);
+        string dataKey = "MetaData";
+        await metaDataGatewayService.ReadData(dataKey);
     }
-    public void SaveMetaData()
+    public async Task SaveMetaData()
     {
-        string fileName = $"/{AccountName}_MetaData.json";
-        metaDataGatewayService.WriteData(Application.persistentDataPath + fileName, clearAll:false);
+        string dataKey = "MetaData";
+        await metaDataGatewayService.WriteData(dataKey, clearAll:false);
     }
     #endregion
 }

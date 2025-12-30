@@ -66,7 +66,8 @@ public class SettingController : AController
                 (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"), 
                 isSignedIn : settingUnit.AuthService.IsSignedIn(),
                 (bool)context.GetData("IsAccountLinked"),
-                (string)context.GetData("PlayerId"));
+                (string)context.GetData("PlayerId"), 
+                "Version " + Application.version);
 
         View.Refresh(presentInfo);
     }
@@ -103,7 +104,16 @@ public class SettingController : AController
 
         context.UpdateData("IsTitleViewLoginRequired", true);
         settingUnit.AuthService.SignOut();
-        unit.Detach();
+                
+        var presentData = new ToastMessageDialog.PresentInfo( message :  "Player has signed out.", duration:1.5f, ToastMessageDialog.Type.INFO);
+        context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+            "ToastMessageDialog", presentData,
+            new Action<APopupDialog>( (popupDlg) => 
+            { 
+                Debug.Log("ToastMessage Dialog has been closed.");
+                unit.Detach();
+
+            } ) ); 
     }
 
     void EventOnDeleteAccountClicked() 

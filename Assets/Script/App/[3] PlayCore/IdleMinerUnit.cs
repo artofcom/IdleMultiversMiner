@@ -62,7 +62,7 @@ namespace App.GamePlay.IdleMiner
             timedBonus.awardingIntervalInMin = gameConfig.TimedBonusIntervalInMin;
         }
 
-        public override void Init(AContext ctx)
+        public override async void Init(AContext ctx)
         {
             base.Init(ctx);
 
@@ -70,7 +70,8 @@ namespace App.GamePlay.IdleMiner
             if(context.GetData("IsSimMode") == null)
                 context.AddData("IsSimMode", false);
 
-            context.InitGame();
+            await context.InitGame();
+
             foreach(var module in subUnits)
                 module.Init(ctx);
             
@@ -156,7 +157,8 @@ namespace App.GamePlay.IdleMiner
         {
             // Wait for init Up.: 3Sec is good enough for now.
             yield return new WaitForSeconds(0.25f);
-            
+            yield return new WaitUntil( () => model!=null && model.IsInitialized );
+
             // Resume Module.
             int awayTime = (model as IdleMinerModel).PlayerData.IdleAwayTime;
             Debug.Log("[InitSeq]:[Resume-Unit] Away Idle Time in Sec " + awayTime.ToString());
