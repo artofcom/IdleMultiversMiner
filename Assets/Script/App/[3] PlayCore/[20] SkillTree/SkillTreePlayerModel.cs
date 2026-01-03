@@ -172,6 +172,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
             }
 
             categoryProcInfo.Update(oldWorkingSkill, workingSkills);//, isLearned);
+            SetDirty();
             return true;
         }
 

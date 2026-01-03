@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 public interface IDataGatewayService 
 {
     string AccountId { get; set; }
+    bool IsDirty { get; set; }
 
     void RegisterDataModel(IWritableModel model);
     void UnRegisterDataModel(IWritableModel model);

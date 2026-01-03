@@ -62,6 +62,7 @@ public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 
         gameCardInfo.ResetCount += 1;
         updateGameCardInfo(gameCardInfo);
+        SetDirty();
     }
 
     void RegisterRequestables()
@@ -86,8 +87,8 @@ public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
         if(data.Length < 1)
             return null;
 
-        gameCardBundle.UpdateGameCardInfo(data[0] as GameCardInfo);
-        (context as IdleMinerContext).SaveMetaData();
+        gameCardBundle.UpdateGameCardInfo(data[0] as GameCardInfo);    
+        SetDirty();
         return null;
     }
     object getGameCardInfo(params object [] data) 

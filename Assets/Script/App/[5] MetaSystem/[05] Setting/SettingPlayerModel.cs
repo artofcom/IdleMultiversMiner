@@ -82,7 +82,7 @@ public class SettingPlayerModel : MultiGatewayWritablePlayerModel
             return settingData.IsBGMOn;
 
         settingData.IsBGMOn = isOn;
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
         return settingData.IsBGMOn;
     }
     object IsBGMOn(params object[] data)
@@ -99,7 +99,7 @@ public class SettingPlayerModel : MultiGatewayWritablePlayerModel
             return settingData.IsSoundFXOn;
 
         settingData.IsSoundFXOn = isOn;
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
         return settingData.IsSoundFXOn;
     }
     object IsSoundFXOn(params object[] data)

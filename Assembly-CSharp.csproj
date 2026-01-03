@@ -90,6 +90,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\PlanetDamageSectorComp.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[07] Shop\ShopModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Comp\GameCardComp.cs" />
+    <Compile Include="Assets\Script\App\[9] Subsystem\AppConfig.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\ReadOnlyAttribute.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[04] GamePlay\GamePlayUnit.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Audio\ButtonAudioPlayer.cs" />
@@ -165,7 +166,6 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\IncreaseManagerSlotDialog.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\Model\ResourceData.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[11] InBox\InBoxController.cs" />
-    <Compile Include="Assets\Script\IGCore\PlatformService\Util\IAccountBasedDataGatewayService.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[90] Games\[40] FrozenPlains\SkillTreeUnitFrozenPlains.cs" />
     <Compile Include="Assets\Script\App\[5] MetaSystem\[13] DailyMission\DailyMissionPlayerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\SubViews\SubViews\PlanetStatComp.cs" />
@@ -266,6 +266,7 @@
     <Compile Include="Assets\Script\App\[3] PlayCore\IdleMinerModel.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[07] MiningStat\MiningStatController.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Upgradable.cs" />
+    <Compile Include="Assets\Script\IGCore\SubSystem\Utils\TaskExtensions.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\CraftListMultiItemComp.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[00] Common\ScriptableObjects\SkillTreeDataSetting.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[40] RoverScanner\RoverScannerData.cs" />

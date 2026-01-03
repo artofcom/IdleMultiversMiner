@@ -252,7 +252,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             Debug.Log("<color=red> Resetting All of this Game Systems... </color>");
             
-            IMContext.ResetPlayerData();
+            IMContext.ResetPlayerData().Forget();
             EventSystem.DispatchEvent(EventID.SKILL_RESET_GAME_INIT);
 
             // Add some effect or so.

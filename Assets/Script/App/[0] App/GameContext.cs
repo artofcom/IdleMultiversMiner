@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Assertions;
+using System.Collections;
 
 public class SimDefines
 {
@@ -67,6 +68,9 @@ public sealed class IdleMinerContext : AContext
     // !!! Service SubScriber PlayerModel should fetch data via this index.
     public int ValidGatewayServiceIndex { get; set; } = -1;
 
+
+    bool isPlayingGame = false;
+
     static IdleMinerContext _instance;
     public static string GameKey
     {
@@ -118,16 +122,21 @@ public sealed class IdleMinerContext : AContext
 
     public override async Task InitGame()
     {
-        int idxGateway = ValidGatewayServiceIndex;
-
         gameCoreGatewayService.ClearModels();
-        await LoadPlayerData(idxGateway);
+        gameCoreCloudGatewayService.ClearModels();
+        isPlayingGame = true;
+        await LoadPlayerData(ValidGatewayServiceIndex);
     }
 
     public override void DisposeGame()
     {
+        SavePlayerData(isLocal:true).Forget();
+        SavePlayerData(isLocal:false).Forget();
+
         gameResourceDataBuildComp = null; 
+        isPlayingGame = false;
     }
+
 
     #region ===> Sprite Accessors
 
@@ -166,16 +175,24 @@ public sealed class IdleMinerContext : AContext
 
 
     #region Data Gateway Services.
-    public async Task SavePlayerData()
+    async Task<bool> SavePlayerData(bool isLocal)
     {
         string dataKey = $"{GameKey}_PlayerData";
         
-        await gameCoreGatewayService.WriteData(dataKey, clearAll:false);
-        Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
-
-        bool ret = await gameCoreCloudGatewayService.WriteData(dataKey, clearAll:false);
-        if(ret)
-            Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");
+        bool ret = false;
+        if(isLocal)
+        {
+            ret = await gameCoreGatewayService.WriteData(dataKey, clearAll:false);
+            if(ret)
+                Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
+        }
+        else
+        {
+            ret = await gameCoreCloudGatewayService.WriteData(dataKey, clearAll: false);
+            if(ret)
+                Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");
+        }
+        return ret;
     }
     async Task<bool> LoadPlayerData(int idxGatewayService)
     {   
@@ -212,26 +229,44 @@ public sealed class IdleMinerContext : AContext
         bool ret = await dataGatewayService.ReadData(dataKey);
         return ret;
     }
-    public async Task SaveMetaData()
+    async Task<bool> SaveMetaData(bool isLocal)
     {
         string dataKey = "MetaData";
 
-        await metaDataGatewayService.WriteData(dataKey, clearAll:false);
-        Debug.Log("<color=blue>[Data] Storing Meta Data in Local has been successed.</color>");
-
-        bool ret = await metaDataCloudGatewayService.WriteData(dataKey, clearAll:false);
-        if(ret)
-            Debug.Log("<color=green>[Data] Storing Meta Data in Cloud has been successed.</color>");
+        bool ret = false;
+        if(isLocal)
+        {
+            ret = await metaDataGatewayService.WriteData(dataKey, clearAll:false);
+            if(ret)
+                Debug.Log("<color=blue>[Data] Storing Meta Data in Local has been successed.</color>");
+        }
+        else
+        {
+            ret = await metaDataCloudGatewayService.WriteData(dataKey, clearAll: false);
+            if(ret)
+                Debug.Log("<color=green>[Data] Storing Meta Data in Cloud has been successed.</color>");
+        }
+        return ret;
     }
     public int GetLatestMetaDataIndex()
     {
+        Assert.IsNotNull(metaDataGatewayService);
+        Assert.IsNotNull((metaDataGatewayService as DataGatewayService));
+        Assert.IsNotNull((metaDataGatewayService as DataGatewayService).ServiceData);
+        Assert.IsNotNull((metaDataGatewayService as DataGatewayService).ServiceData.Environment);
+
+        Assert.IsNotNull(metaDataCloudGatewayService);
+        Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService));
+        Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService).ServiceData);
+        Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService).ServiceData.Environment);
+
         long localDataTS = (metaDataGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
         long cloudDataTS = (metaDataCloudGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
 
         return localDataTS >= cloudDataTS ? IDX_LOCA_DATA_SERVICE : IDX_CLOUD_DATA_SERVICE; 
     }
     // 
-    public void SetSignedInPlayerId(string playerId)
+    public void SetSignedInPlayerIdForGatewayServices(string playerId)
     {
         // Set account id for the gateway services to nativate file paths.
         MetaDataGatewayService.AccountId = playerId;
@@ -239,5 +274,52 @@ public sealed class IdleMinerContext : AContext
         GameCoreGatewayService.AccountId = playerId;
         GameCoreCloudGatewayService.AccountId = playerId;
     }
+
+    public void RunMetaDataSaveDog()
+    {
+        UpdateMetaDataSaveAsync(isLocal:true).Forget();
+        UpdateMetaDataSaveAsync(isLocal:false).Forget();
+    }
+
+    async Task UpdateMetaDataSaveAsync(bool isLocal)
+    {
+        AppConfig appConfig = null;
+        while(Application.isPlaying)
+        {
+            if(appConfig == null)
+                appConfig = (AppConfig)GetData("AppConfig", null);
+
+            int delay = 1000;
+            if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.MetaDataSaveLocalInterval * 1000;
+            else        delay = appConfig==null ? 5 * 1000 : appConfig.MetaDataSaveCloudInterval * 1000;
+            
+            await Task.Delay(delay);
+            await SaveMetaData(isLocal);
+        }
+    }
+
+    public void RunGameDataSaveDog()
+    {
+        UpdateGameDataSaveAsync(isLocal:true).Forget();
+        UpdateGameDataSaveAsync(isLocal:false).Forget();
+    }
+    
+    async Task UpdateGameDataSaveAsync(bool isLocal)
+    {
+        AppConfig appConfig = null;
+        while(Application.isPlaying && isPlayingGame)
+        {
+            if(appConfig == null)
+                appConfig = (AppConfig)GetData("AppConfig", null);
+
+            int delay = 1000;
+            if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.GameDataSaveLocalInterval * 1000;
+            else        delay = appConfig==null ? 5 * 1000 : appConfig.GameDataSaveCloudInterval * 1000;
+
+            await Task.Delay(delay);
+            await SavePlayerData(isLocal);
+        }
+    }
+
     #endregion
 }

@@ -83,6 +83,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         progressInfo.IncreaseCount();
         Debug.Log($"[DailyMission] : {goalType} count has been added to {progressInfo.Count}.");
 
+        SetDirty();
         return progressInfo.Count;
     }
 
@@ -99,6 +100,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
             return false;
 
         progressInfo.Claim();
+        SetDirty();
         return true;
     }
 
@@ -143,7 +145,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 
         ResetNotificator();
 
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
     }
 
     public bool Pump()
@@ -170,7 +172,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
                 return false;
         }
         notificationInfo.UnseenReasons.Add(reason);
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
         return true;
     }
 
@@ -180,7 +182,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         notificationInfo.SeenReasons.AddRange(notificationInfo.UnseenReasons);
         notificationInfo.UnseenReasons.Clear();
 
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
     }
 
     void ResetNotificator()
@@ -188,6 +190,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         notificationInfo.Sanitize();
         notificationInfo.SeenReasons.Clear();
         notificationInfo.UnseenReasons.Clear();
+        SetDirty();
     }
 
     void RegisterRequestables()

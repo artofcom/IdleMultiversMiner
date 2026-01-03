@@ -147,6 +147,8 @@ namespace App.GamePlay.IdleMiner
 
         public override void Dispose()
         {
+            UpdateGameCardsTimeStamp();
+
             base.Dispose(); 
             Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
 
@@ -289,9 +291,20 @@ namespace App.GamePlay.IdleMiner
 
             RegisterRequestables();
 
+            UpdateGameCardsTimeStamp();
+
             IsInitialized = true;
         }
         
+        void UpdateGameCardsTimeStamp()
+        {
+            var gameCardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfo", IdleMinerContext.GameKey);
+            if(gameCardInfo == null)
+                gameCardInfo = new GameCardInfo(IdleMinerContext.GameKey);
+            gameCardInfo.LastPlayedTimeStamp = UTCNowTick.ToString();
+            context.RequestQuery("AppPlayerModel", "UpdateGameCardInfo", gameCardInfo);
+        }
+
         void RegisterRequestables()
         {
             context.AddRequestDelegate("IdleMiner", "IsAffordableCurrency", isAffordableCurrency);
@@ -360,6 +373,7 @@ namespace App.GamePlay.IdleMiner
                 var newMoney = new CurrencyAmount(_money.ToString(), currencyType);
                 moneyData.Money.Add(newMoney);
             }
+            SetDirty();
         }
         
         void LoadTimeStamp()
@@ -377,21 +391,12 @@ namespace App.GamePlay.IdleMiner
         void SaveMoneyData(List<Tuple<string, string>> listDataSet)
         {
             Assert.IsNotNull(moneyData);
-            // WriteFileInternal(DataKey_MoneyData, moneyData);
             listDataSet.Add(new Tuple<string, string>(DataKey_MoneyData, JsonUtility.ToJson(moneyData)));
         }
         void SaveTimeStamp(List<Tuple<string, string>> listDataSet)
         {
             timeStamp = UTCNowTick.ToString();
-            // WriteFileInternal(DataKey_TimeStamp, timeStamp, false);
             listDataSet.Add(new Tuple<string, string>(DataKey_TimeStamp, timeStamp));
-
-            // Update game time stamp.
-            var gameCardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfo", IdleMinerContext.GameKey);
-            if(gameCardInfo == null)
-                gameCardInfo = new GameCardInfo(IdleMinerContext.GameKey);
-            gameCardInfo.LastPlayedTimeStamp = timeStamp;
-            context.RequestQuery("AppPlayerModel", "UpdateGameCardInfo", gameCardInfo);
         }
 
         void SaveOpenedTabBtns(List<Tuple<string, string>> listDataSet)

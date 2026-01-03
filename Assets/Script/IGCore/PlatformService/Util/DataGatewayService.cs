@@ -32,11 +32,11 @@ namespace IGCore.MVCS
             [SerializeField] string deviceName;
             [SerializeField] long timeStamp;
 
-            public EnvironmentInfo(string version)
+            public EnvironmentInfo(string version, long timeStamp)
             {
                 this.dataVersion = version;     
                 this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
-                this.timeStamp = DateTime.UtcNow.Ticks;
+                this.timeStamp = timeStamp;// DateTime.UtcNow.Ticks;
             }
             public string DataVersion => dataVersion;
             public string DeviceName => deviceName;
@@ -51,6 +51,11 @@ namespace IGCore.MVCS
             [SerializeField] List<DataPair> data;
 
             Dictionary<string, string> dictData;
+            public DataInService()
+            {
+                data = new List<DataPair>();
+                environment = new EnvironmentInfo("1.0", 0);
+            }
             public List<DataPair> Data          {   get => data; set => data = value;}
             public EnvironmentInfo Environment  {   get => environment; set => environment = value; }
             public void Init()
@@ -77,6 +82,7 @@ namespace IGCore.MVCS
 
 
         public string AccountId { get; set; } = string.Empty;
+        public bool IsDirty { get; set; }
 
         protected DataInService serviceData = new DataInService();
         protected List<IWritableModel> models = new List<IWritableModel>();
@@ -96,15 +102,18 @@ namespace IGCore.MVCS
             models.Clear();
         }
 
-        public virtual async Task<bool> WriteData(string dataKey, bool clearAll)
+        public virtual Task<bool> WriteData(string dataKey, bool clearAll)
         {
+            if(!IsDirty)        return Task.FromResult(false);
+
+            IsDirty = false;
             UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(AccountId));
 
             if(serviceData.Data == null)
                 serviceData.Data = new List<DataPair>();
             
             if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                serviceData.Environment = new EnvironmentInfo("1.0");
+                serviceData.Environment = new EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
 
             serviceData.Clear();
 
@@ -130,10 +139,10 @@ namespace IGCore.MVCS
             string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
             TextFileIO.WriteTextFile(fileName, jsonText);
             // Debug.Log($"Writing data...{filePath}, {jsonText}");
-            return true;
+            return Task.FromResult(true);
         }
 
-        public virtual async Task<bool> ReadData(string dataKey)
+        public virtual Task<bool> ReadData(string dataKey)
         {
             string fileNamePath = Path.Combine(Application.persistentDataPath, AccountId, dataKey + ".json");
             string jsonString = TextFileIO.ReadTextFile(fileNamePath);
@@ -143,7 +152,7 @@ namespace IGCore.MVCS
                 serviceData = new DataInService();
 
             serviceData.Init();
-            return true;
+            return Task.FromResult(true);
         }
 
         public virtual string GetData(string model_id)

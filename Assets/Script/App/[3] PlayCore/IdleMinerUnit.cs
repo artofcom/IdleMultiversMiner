@@ -47,6 +47,7 @@ namespace App.GamePlay.IdleMiner
         EventsGroup Events = new EventsGroup();
         int curTabIndex = -1;
 
+        IdleMinerPlayerModel playerModel;
         AUnit StartUnit => startUnit==null ? ((subUnits!=null && subUnits.Count>0) ? subUnits[0] : null) : startUnit; 
         
 
@@ -75,7 +76,7 @@ namespace App.GamePlay.IdleMiner
             foreach(var module in subUnits)
                 module.Init(ctx);
             
-            var playerModel = new IdleMinerPlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
+            playerModel = new IdleMinerPlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
             model = new IdleMinerModel(context, playerModel);
             controller = new IdleMinerController(this, view, model, context);
 
@@ -92,6 +93,8 @@ namespace App.GamePlay.IdleMiner
                 ((IdleMinerView)view).EventOnTabBtnChanged += OnTabBtnChanged;
 
                 context.AddData(KeySets.CTX_KEYS.GAME_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);
+
+                (context as IdleMinerContext).RunGameDataSaveDog();
             }
         }
 
@@ -108,14 +111,16 @@ namespace App.GamePlay.IdleMiner
         {
             base.Dispose();
 
+            context.DisposeGame();
+
+            playerModel.Dispose();
+
             foreach(var module in subUnits)
                 module.Dispose();
 
             popupDialog.Dispose();
 
             model.Dispose();
-
-            context.DisposeGame();
 
             Events.UnRegisterAll();
         }

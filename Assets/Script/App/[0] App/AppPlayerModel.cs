@@ -60,7 +60,7 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
             metaCurrencyBundle = new MetaCurrencyBundle();
             metaCurrencyBundle.AddCurrency(new MetaCurrency("iap", DefaultIAP));
             metaCurrencyBundle.AddCurrency(new MetaCurrency("star", DefaultStar));
-            (context as IdleMinerContext).SaveMetaData();
+            SetDirty();
         }
 
         Debug.Log($"<color=green>User App Data : Star[{metaCurrencyBundle.GetCurrency("iap").Amount}], Volt:[{metaCurrencyBundle.GetCurrency("star").Amount}]</color>");
@@ -100,7 +100,7 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
 
         string type = "star";
         metaCurrencyBundle.SetCurrency(type, isOffset ? metaCurrencyBundle.GetCurrency(type).Amount + amount : amount);
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
 
         EventSystem.DispatchEvent(EventID.STAR_AMOUNT_CHANGED);
         return metaCurrencyBundle.GetCurrency(type).Amount;
@@ -119,7 +119,7 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
         
         string type = "iap";
         metaCurrencyBundle.SetCurrency(type, isOffset ? metaCurrencyBundle.GetCurrency(type).Amount + amount : amount);
-        (context as IdleMinerContext).SaveMetaData();
+        SetDirty();
 
         EventSystem.DispatchEvent(EventID.IAP_MONEY_CHANGED);
         return metaCurrencyBundle.GetCurrency(type).Amount;

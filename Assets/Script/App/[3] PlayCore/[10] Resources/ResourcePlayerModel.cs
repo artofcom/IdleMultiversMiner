@@ -137,6 +137,8 @@ namespace App.GamePlay.IdleMiner.Resouces
             
             if(oldValue < newValue)
                 EventSystem.DispatchEvent(EventID.RESOURCE_UPDATED, new Tuple<string, BigInteger>(rscId, newValue));
+
+            SetDirty();
         }
 
         public void UpdateResource(string rscId, int count, bool offset = true)
@@ -163,6 +165,7 @@ namespace App.GamePlay.IdleMiner.Resouces
 
             BigInteger soldCount = collectInfo.BICount;
             SellResource(srcId, collectInfo.BICount);
+            SetDirty();
             return soldCount;
         }
 

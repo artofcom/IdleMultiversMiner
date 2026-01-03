@@ -87,5 +87,11 @@ namespace IGCore.MVCS
             for(int q = 0; q < gatewayServices.Count; q++) 
                 gatewayServices[q].UnRegisterDataModel(this);
         }
+
+        public void SetDirty()
+        {
+            for(int q = 0; q < gatewayServices.Count; q++) 
+                gatewayServices[q].IsDirty = true;
+        }
     }
 }

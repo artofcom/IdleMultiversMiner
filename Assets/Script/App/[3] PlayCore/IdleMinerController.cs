@@ -152,7 +152,7 @@ namespace App.GamePlay.IdleMiner
                 return;
 
             //Model.SavePlayerData();
-            IMContext.SavePlayerData();
+            //IMContext.RequestStoreGameData();
 
             mLastWriteTime = Time.time;
           //  Debug.Log("[DataRecorded]..Player Data has been written... " + mLastWriteTime.ToString());

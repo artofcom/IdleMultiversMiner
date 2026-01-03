@@ -93,6 +93,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             if(!planetInfo.IsUnlocked)
             {
                 planetInfo.OpenPlanet();
+                SetDirty();
                 return true;
             }
 
@@ -107,6 +108,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             
             unlockedZoneGroup.Add(zoneId, planetIds, distanceList);
             EventSystem.DispatchEvent(EventID.ZONE_UNLOCKED, zoneId);
+            SetDirty();
             return true;
         }
 
@@ -118,6 +120,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
             info.Upgrade(stat, offsetUpLevel);
             EventSystem.DispatchEvent(EventID.MINING_STAT_UPGRADED, new Tuple<int, int>(zoneId, planetId));
+            SetDirty();
             return true;
         }
 
@@ -128,6 +131,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
                 return;
 
             info.ResetStat(stat);
+            SetDirty();
             EventSystem.DispatchEvent(EventID.MINING_STAT_RESET, new Tuple<int, int>(zoneId, planetId));
         }
 
@@ -201,6 +205,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
                 planetInfo.MinedRscInfo.Add(new MinedResourceInfo(resourceId, offsetX1000));
             }
+            SetDirty();
         }
         
         public void UpdateDamageX1000(int zoneId, int planetId, BigInteger offsetDamageX1000)
@@ -210,6 +215,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
                 return;
 
             planetInfo.UpdateDamageX1000(offsetDamageX1000);
+            SetDirty();
             EventSystem.DispatchEvent(EventID.PLANET_DAMAGED, planetId);
         }
 
@@ -220,6 +226,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         public void UnlockZoneBooster(int zoneId, float duration, float buffRate, float coolTimeDuration)
         {
+            SetDirty();
             unlockedZoneGroup.UnlockMiningBooster(zoneId, duration, buffRate, coolTimeDuration);
         }
 
@@ -231,6 +238,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
             if(planetInfo.TriggerBooster())
             {
+                SetDirty();
                 EventSystem.DispatchEvent(EventID.PLANET_BOOSTER_TRIGGERED, new Tuple<int, int>(zoneId, planetId));
                 return true;
             }

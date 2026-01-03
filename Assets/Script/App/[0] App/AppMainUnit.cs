@@ -4,7 +4,6 @@ using Core.Events;
 using IGCore.MVCS;
 using IGCore.PlatformService.Cloud;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -15,6 +14,7 @@ public class AppMainUnit : AUnit
 {
     const string DEVICE_GUEST = "device_guest_id";
 
+    [SerializeField] AppConfig appConfig;
     [SerializeField] UnitSwitcherComp unitSwitcher;
 
     // MetaSystems.
@@ -59,14 +59,23 @@ public class AppMainUnit : AUnit
         _minerContext = new IdleMinerContext(cloudService as ICloudService);
         
         IMContext.Init(this);
+        IMContext.AddData("AppConfig", appConfig);
 
         Init(_minerContext);
 
         unitSwitcher.Init(_minerContext);
     }
+    protected void Start()
+    {
+        Application.targetFrameRate = 61;
+    }
 
+    private void OnApplicationQuit()
+    {
+        Debug.Log("Application Quit.");
+    }
 
-    async Task LoadPlayerDataModel(bool isSignedIn, string curSignedPlayerId)
+    async Task LoadAppMetaPlayerDataModel(bool isSignedIn, string curSignedPlayerId)
     {   
         string prevSignedPlayerId = PlayerPrefs.GetString(DataKeys.PREV_PLAYER_ID, string.Empty);
         Debug.Log($"<color=green>[AppMain] Singed PlayerId [{prevSignedPlayerId}] / [{curSignedPlayerId}] </color>");
@@ -94,7 +103,7 @@ public class AppMainUnit : AUnit
             bool ret = MigrateDataFilesToPlayer(Path.Combine(Application.persistentDataPath, DEVICE_GUEST), Path.Combine(Application.persistentDataPath, curSignedPlayerId));
             if(false == ret)
             { 
-                Debug.Log($"<color=green>[Migration] Data migration has been failed. Let's Keep using device_id for now...</color>");
+                Debug.Log($"<color=red>[Migration] Data migration has been failed. Let's Keep using device_id for now...</color>");
                 curSignedPlayerId = DEVICE_GUEST;
                 shouldUseCloudData = false;
             }
@@ -117,20 +126,19 @@ public class AppMainUnit : AUnit
         //
         
         Assert.IsTrue(!string.IsNullOrEmpty(curSignedPlayerId));
-        Debug.Log($"<color=green>[AppMain] Aligned Type [{eAccountStatus}], Singed PlayerId [{prevSignedPlayerId}] / [{curSignedPlayerId}] </color>");
+        dataLocation = shouldUseCloudData ? "CLOUD" : "LOCAL";
+        Debug.Log($"<color=green>[AppMain] Aligned Type [{eAccountStatus}], Target [{dataLocation}], Singed PlayerId [{prevSignedPlayerId}] / [{curSignedPlayerId}] </color>");
 
-        IMContext.SetSignedInPlayerId(curSignedPlayerId);
+        IMContext.SetSignedInPlayerIdForGatewayServices(curSignedPlayerId);
         
         
         playerModel = new AppPlayerModel(_minerContext, IMContext.MetaGatewayServiceList);
         model = new AppModel(_minerContext, playerModel);
         controller = new AppController(this, view, model, _minerContext);
 
-
-
         IMContext.ValidGatewayServiceIndex = shouldUseCloudData ? IdleMinerContext.IDX_CLOUD_DATA_SERVICE : IdleMinerContext.IDX_LOCA_DATA_SERVICE;
 
-        if (shouldUseCloudData)     // version check.
+        if (shouldUseCloudData) 
         {
             bool fetchData = await FetchCloudData();
             while(Application.isPlaying && !fetchData)
@@ -142,21 +150,16 @@ public class AppMainUnit : AUnit
             await FetchLocalData();
 
             // case 1 : Signed-in to Same Device - Mostly Local should be the latest one. - So should upload to cloud.
-            // case 2 : Signed-in to another device - Cloud data should be the lastest one.
+            // case 2 : Signed-in to another device - Cloud data should/could be the lastest one.
             IMContext.ValidGatewayServiceIndex = IMContext.GetLatestMetaDataIndex();
-            if(IMContext.ValidGatewayServiceIndex == IdleMinerContext.IDX_LOCA_DATA_SERVICE)
-            {
-                await Task.Delay(1000);
-                IMContext.SaveMetaData();
-            }
-
+            
             string target = IMContext.ValidGatewayServiceIndex == IdleMinerContext.IDX_LOCA_DATA_SERVICE ? "LOCAL" : "CLOUD";            
             Debug.Log($"[AppMain] Data Selector : [{target}] data has been selected for {curSignedPlayerId}.");
         }
         else 
             await FetchLocalData();
 
-
+        // Init Modulels.
         model.Init();
         controller.Init();
         playerModel.Init();
@@ -165,6 +168,15 @@ public class AppMainUnit : AUnit
         {
             for(int q = 0; q < metaSystems.Count; q++) 
                 metaSystems[q].Init(_minerContext);
+        }
+
+        IMContext.RunMetaDataSaveDog();
+
+        // Make sure to sync cloud data with the local one.
+        if(shouldUseCloudData && IMContext.ValidGatewayServiceIndex==IdleMinerContext.IDX_LOCA_DATA_SERVICE)
+        {
+            await Task.Delay(1000);
+            playerModel.SetDirty();
         }
 
         EventSystem.DispatchEvent(EventID.APPLICATION_PLAYERDATA_INITIALIZEDD);
@@ -317,33 +329,19 @@ public class AppMainUnit : AUnit
         }
     }
 
-    protected void Start()
-    {
-        Application.targetFrameRate = 61;
-    }
-
-    private void OnApplicationQuit()
-    {
-        Debug.Log("Application Quit.");
-    }
-
+    
 
     async void OnSignedIn(string playerId)
     {
         context.UpdateData("PlayerId", playerId);
-        //isWaitingForSignIn = false;
-        //isSignInSuccessed = true;
 
         await Task.Delay(100);
 
-        LoadPlayerDataModel(isSignedIn:true, playerId);
+        LoadAppMetaPlayerDataModel(isSignedIn:true, playerId).Forget();
     }
     void OnSignInFailed(string reason)
     {
-        //isWaitingForSignIn = false;
-        //isSignInSuccessed = false;
-
-        LoadPlayerDataModel(isSignedIn:false, string.Empty);
+        LoadAppMetaPlayerDataModel(isSignedIn:false, string.Empty).Forget();
     }
     void OnSignedOut() 
     { 

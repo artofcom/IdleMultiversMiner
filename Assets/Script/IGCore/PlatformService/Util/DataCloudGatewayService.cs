@@ -19,13 +19,17 @@ namespace IGCore.MVCS
 
         public override async Task<bool> WriteData(string dataKey, bool clearAll)
         {
+            if(!IsDirty)        return false;
+
+            IsDirty = false;
+
             Assert.IsNotNull(cloudService);
 
             if(serviceData.Data == null)
                 serviceData.Data = new List<DataPair>();
 
             if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                serviceData.Environment = new EnvironmentInfo("1.0");
+                serviceData.Environment = new EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
 
             serviceData.Clear();
 
