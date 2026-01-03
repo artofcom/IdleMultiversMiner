@@ -23,7 +23,6 @@ namespace IGCore.PlatformService.Cloud
         IAuthService AuthService => authService as IAuthService;
 
         bool isInitialized = false;
-        public bool IsInitialized => isInitialized;
 
         async void Awake()
         {
@@ -35,38 +34,41 @@ namespace IGCore.PlatformService.Cloud
         async Task InitAsync()
         {
             while(!Service.IsInitialized() || !AuthService.IsSignedIn() || CloudSaveService.Instance==null)
-                await Task.Delay(1000);
+                await Task.Delay(500);
 
             Debug.Log("[Cloud] Cloud Service has been registered successfully.");
             isInitialized = true;
         }
 
-        private void OnDestroy()
-        {
-            //AuthenticationService.Instance.SignedIn -= OnSignedIn;
-        }
+        private void OnDestroy() {}
 
 
         #region Interfaces
 
+        public bool IsInitialized()
+        {
+            return isInitialized;
+        }
+
         // Error Message.
-        public async Task<string> SaveUserData(string key, string userData) 
+        public async Task<Tuple<bool, string>> SaveUserData(string key, string userData) 
         { 
-            if(!isInitialized)
-                return "[Cloud] SaveUserData has been failed due to the unfinished initialization.";
-
-            string encodedString = userData;
-            if(compressData)
-            {
-                encodedString = StringCompressor.CompressToEncodedString(userData);
-                Debug.Log($"[Cloud] Original Size {userData.Length} -> Compressed Size {encodedString.Length}");
-            }
-
-            var data = new Dictionary<string, object> { {key, encodedString } };
             try
             { 
+                if(!isInitialized)
+                    throw new Exception("[Cloud] Module Not initialized.");
+                
+                string encodedString = userData;
+                if(compressData)
+                {
+                    encodedString = StringCompressor.CompressToEncodedString(userData);
+                    Debug.Log($"[Cloud] Original Size {userData.Length} -> Compressed Size {encodedString.Length}");
+                }
+
+                var data = new Dictionary<string, object> { {key, encodedString } };
+
                 await CloudSaveService.Instance.Data.Player.SaveAsync(data);
-                return string.Empty;
+                return new Tuple<bool, string>(true, string.Empty);
             }
             //catch (CloudSaveValidationException ex) { }
             //catch (CloudSaveRateLimitedException ex) { }
@@ -75,32 +77,35 @@ namespace IGCore.PlatformService.Cloud
             catch (Exception ex) 
             {
                 Debug.LogException(ex);
-                return ex.Message;
+                //throw ex;
+                return new Tuple<bool, string>(false, ex.Message);
             }
         }
 
         // UserData.
-        public async Task<string> LoadUserData(string key) 
+        public async Task<Tuple<bool, string>> LoadUserData(string key) 
         {
-            if(!isInitialized)
-                return string.Empty;
-
             try
             {
-                var data = await CloudSaveService.Instance.Data.Player.LoadAsync(new HashSet<string>{{key}});
+                if(!isInitialized)
+                    throw new Exception("[Cloud] Module Not initialized.");
 
-                if(data.TryGetValue(key, out var value))
+                var dictData = await CloudSaveService.Instance.Data.Player.LoadAsync(new HashSet<string>{{key}});
+
+                if(dictData!=null && dictData.TryGetValue(key, out var value))
                 {
                     string originalJson = compressData ? StringCompressor.DecompressFromEncodedString(value.Value.GetAsString()) : value.Value.GetAsString();
                     Debug.Log($"[Cloud] Fetching the UserData has been successed. : {originalJson}");
-                    return originalJson;
+                    
+                    return new Tuple<bool, string>(true, originalJson);
                 }
+                return new Tuple<bool, string>(false, $"[Cloud] Fetch data has been failed. [{dictData}]");
             }
             catch(Exception ex) 
             {
                 Debug.LogException(ex);
+                return new Tuple<bool, string>(false, ex.Message);
             }
-            return string.Empty;
         }
 
         #endregion

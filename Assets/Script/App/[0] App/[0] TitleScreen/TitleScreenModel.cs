@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using IGCore.MVCS;
 
-public class TitleScreenModel : IGCore.MVCS.AModel
+public class TitleScreenModel : NoPlayerDataModel
 {
-    public TitleScreenModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
+    public TitleScreenModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData) { }
 
     public override void Init(object data = null) {}
 }

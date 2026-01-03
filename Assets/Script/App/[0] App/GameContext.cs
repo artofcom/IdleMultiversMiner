@@ -1,8 +1,9 @@
 using IGCore.MVCS;
 using IGCore.PlatformService.Cloud;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Assertions;
-using System.Threading.Tasks;
 
 public class SimDefines
 {
@@ -18,8 +19,8 @@ public sealed class IdleMinerContext : AContext
 {   
     MonoBehaviour coRunner;   
     SpritesHolderGroupComp spriteHolder;
-    IDataGatewayService metaDataGatewayService;
-    IDataGatewayService gameCoreGatewayService;
+    IDataGatewayService metaDataGatewayService, metaDataCloudGatewayService;
+    IDataGatewayService gameCoreGatewayService, gameCoreCloudGatewayService;
 
     // Game Specific Data.
     ResourceDataBuildComp gameResourceDataBuildComp;
@@ -28,7 +29,44 @@ public sealed class IdleMinerContext : AContext
     
     public IDataGatewayService GameCoreGatewayService => gameCoreGatewayService;
     public IDataGatewayService MetaDataGatewayService => metaDataGatewayService;
-    
+    public IDataGatewayService GameCoreCloudGatewayService => gameCoreCloudGatewayService;
+    public IDataGatewayService MetaDataCloudGatewayService => metaDataCloudGatewayService;
+
+    public const int IDX_LOCA_DATA_SERVICE = 0;
+    public const int IDX_CLOUD_DATA_SERVICE = 1;
+
+    List<IDataGatewayService> metaGatewayServiceList;
+    public List<IDataGatewayService> MetaGatewayServiceList
+    {
+        get
+        { 
+            if(metaGatewayServiceList == null)
+            {
+                metaGatewayServiceList = new List<IDataGatewayService>() { 
+                                                MetaDataGatewayService,             // 0 - Local Data.
+                                                MetaDataCloudGatewayService };      // 1 - Cloud Data.
+            }
+            return metaGatewayServiceList;
+        }
+    }
+    List<IDataGatewayService> gameGatewayServiceList;
+    public List<IDataGatewayService> GameGatewayServiceList
+    {
+        get
+        { 
+            if(gameGatewayServiceList == null)
+            {
+                gameGatewayServiceList = new List<IDataGatewayService>() { 
+                                                GameCoreGatewayService,             // 0 - Local Data.
+                                                GameCoreCloudGatewayService };      // 1 - Cloud Data.
+            }
+            return gameGatewayServiceList;
+        }
+    }
+
+    // !!! Service SubScriber PlayerModel should fetch data via this index.
+    public int ValidGatewayServiceIndex { get; set; } = -1;
+
     static IdleMinerContext _instance;
     public static string GameKey
     {
@@ -51,15 +89,17 @@ public sealed class IdleMinerContext : AContext
     public IdleMinerContext()
     {
         _instance = this;
-        gameCoreGatewayService = new DataGatewayService();
-        metaDataGatewayService = new DataGatewayService();
+        //gameCoreGatewayService = new DataGatewayService();
+        //metaDataGatewayService = new DataGatewayService();
     }
 
     public IdleMinerContext(ICloudService cloudService)
     {
         _instance = this;
-        gameCoreGatewayService = new DataCloudGatewayService(cloudService);
-        metaDataGatewayService = new DataCloudGatewayService(cloudService);
+        gameCoreGatewayService = new DataGatewayService();
+        metaDataGatewayService = new DataGatewayService();
+        gameCoreCloudGatewayService = new DataCloudGatewayService(cloudService);
+        metaDataCloudGatewayService = new DataCloudGatewayService(cloudService);
     }
 
     public void Init(MonoBehaviour runner)
@@ -70,7 +110,7 @@ public sealed class IdleMinerContext : AContext
             coRunner = runner;
             
             metaDataGatewayService.ClearModels();
-            LoadMetaData();
+            // LoadMetaData();
             
             Assert.IsNotNull(spriteHolder);
         }
@@ -78,8 +118,10 @@ public sealed class IdleMinerContext : AContext
 
     public override async Task InitGame()
     {
+        int idxGateway = ValidGatewayServiceIndex;
+
         gameCoreGatewayService.ClearModels();
-        await LoadPlayerData();
+        await LoadPlayerData(idxGateway);
     }
 
     public override void DisposeGame()
@@ -127,27 +169,75 @@ public sealed class IdleMinerContext : AContext
     public async Task SavePlayerData()
     {
         string dataKey = $"{GameKey}_PlayerData";
+        
         await gameCoreGatewayService.WriteData(dataKey, clearAll:false);
+        Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
+
+        bool ret = await gameCoreCloudGatewayService.WriteData(dataKey, clearAll:false);
+        if(ret)
+            Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");
     }
-    async Task LoadPlayerData()
+    async Task<bool> LoadPlayerData(int idxGatewayService)
     {   
+        if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
+        {
+            Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
+            return false;
+        }
+
+        IDataGatewayService dataGatewayService = GameGatewayServiceList[idxGatewayService];
+
         string dataKey = $"{GameKey}_PlayerData";
-        await gameCoreGatewayService.ReadData(dataKey);
+        bool ret = await dataGatewayService.ReadData(dataKey);
+        return ret;
     }
     public async Task ResetPlayerData()
     {
         string dataKey = $"{GameKey}_PlayerData";
         await gameCoreGatewayService.WriteData(dataKey, clearAll:true);
+        await gameCoreCloudGatewayService.WriteData(dataKey, clearAll:true);
     }
-    async Task LoadMetaData()
+    public async Task<bool> LoadMetaData(int idxGatewayService)
     {
+        if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
+        {
+            Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
+            return false;
+        }
+        
+        IDataGatewayService dataGatewayService = MetaGatewayServiceList[idxGatewayService];
+
+        // string playerId = PlayerPrefs.GetString(DataKeys.PLAYER_ID, string.Empty);
         string dataKey = "MetaData";
-        await metaDataGatewayService.ReadData(dataKey);
+        bool ret = await dataGatewayService.ReadData(dataKey);
+        return ret;
     }
     public async Task SaveMetaData()
     {
         string dataKey = "MetaData";
+
         await metaDataGatewayService.WriteData(dataKey, clearAll:false);
+        Debug.Log("<color=blue>[Data] Storing Meta Data in Local has been successed.</color>");
+
+        bool ret = await metaDataCloudGatewayService.WriteData(dataKey, clearAll:false);
+        if(ret)
+            Debug.Log("<color=green>[Data] Storing Meta Data in Cloud has been successed.</color>");
+    }
+    public int GetLatestMetaDataIndex()
+    {
+        long localDataTS = (metaDataGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
+        long cloudDataTS = (metaDataCloudGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
+
+        return localDataTS >= cloudDataTS ? IDX_LOCA_DATA_SERVICE : IDX_CLOUD_DATA_SERVICE; 
+    }
+    // 
+    public void SetSignedInPlayerId(string playerId)
+    {
+        // Set account id for the gateway services to nativate file paths.
+        MetaDataGatewayService.AccountId = playerId;
+        MetaDataCloudGatewayService.AccountId = playerId;
+        GameCoreGatewayService.AccountId = playerId;
+        GameCoreCloudGatewayService.AccountId = playerId;
     }
     #endregion
 }

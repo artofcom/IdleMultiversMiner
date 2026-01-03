@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using IGCore.MVCS;
 
-public class LobbyScreenModel : IGCore.MVCS.AModel
+public class LobbyScreenModel : NoPlayerDataModel
 {
-    public LobbyScreenModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
+    public LobbyScreenModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData) { }
 
     public override void Init(object data = null) {}
 }

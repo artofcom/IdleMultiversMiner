@@ -1,6 +1,4 @@
 using IGCore.MVCS;
-using Unity.Services.Analytics;
-using UnityEngine;
 
 public class InBoxUnit : AUnit
 {
@@ -15,7 +13,7 @@ public class InBoxUnit : AUnit
     {
         base.Init(context);
 
-        playerModel = new InBoxPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
+        playerModel = new InBoxPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new InBoxModel(context, playerModel);
         controller = new InBoxController(this, view, model, context);
 

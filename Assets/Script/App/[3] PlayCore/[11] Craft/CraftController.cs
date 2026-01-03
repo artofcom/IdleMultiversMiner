@@ -6,7 +6,6 @@ using App.GamePlay.IdleMiner.Common.Types;
 using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Events;
 using IGCore.MVCS;
-using IGCore.Simulator.GameData;
 using System;
 using System.Collections;
 using System.Collections.Generic;

@@ -1,11 +1,7 @@
 using IGCore.MVCS;
-using Unity.Services.Analytics;
-using UnityEngine;
 
 public class ShopUnit : AUnit
 {
-    APlayerModel playerModel;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,12 +11,10 @@ public class ShopUnit : AUnit
     {
         base.Init(context);
 
-        playerModel = new ShopPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
-        model = new ShopModel(context, playerModel);
+        model = new ShopModel(context, null);
         controller = new ShopController(this, view, model, context);
 
         
-        playerModel.Init();
         model.Init();
         controller.Init();
     }
@@ -28,6 +22,5 @@ public class ShopUnit : AUnit
     public override void Dispose() 
     { 
         base.Dispose();
-        playerModel.Dispose();
     }
 }

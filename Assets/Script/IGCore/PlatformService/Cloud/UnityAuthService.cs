@@ -88,6 +88,7 @@ namespace IGCore.PlatformService.Cloud
             return (isInitialized && AuthenticationService.Instance!=null && AuthenticationService.Instance.IsSignedIn);
         }
 
+
         public async Task SignInAsync()             // EventOnSignedIn or EventOnSignInFailed
         {
             if(Application.internetReachability == NetworkReachability.NotReachable)

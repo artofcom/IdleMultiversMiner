@@ -12,7 +12,7 @@ namespace App.GamePlay.IdleMiner.Resouces
         {
             base.Init(ctx);
 
-            playerModel = new ResourcePlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService);
+            playerModel = new ResourcePlayerModel(context, (context as IdleMinerContext).GameGatewayServiceList);
             model = new ResourceModel(context, playerModel);
             controller = new ResourceController(this, view, model, context);
 

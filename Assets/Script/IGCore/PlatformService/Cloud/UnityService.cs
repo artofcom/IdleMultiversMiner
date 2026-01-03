@@ -24,7 +24,7 @@ namespace IGCore.PlatformService.Cloud
         {
             var waitSec = new WaitForSeconds(retryInterval);
             
-            while(isInitialized == false)
+            while(Application.isPlaying && isInitialized==false)
             {
                 if(Application.internetReachability == NetworkReachability.NotReachable)
                 {

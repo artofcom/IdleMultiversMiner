@@ -75,7 +75,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
         
     }
 
-    public class SkillTreePlayerModel : GatewayWritablePlayerModel
+    public class SkillTreePlayerModel : MultiGatewayWritablePlayerModel
     {        
         public static readonly string EVENT_ON_SKILLMINING_BUFF_UPDATE = "OnSkillMiningBuffUpdated"; 
 
@@ -90,7 +90,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
 
         EventsGroup Events = new EventsGroup();
 
-        public SkillTreePlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService)  { }
+        public SkillTreePlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService)  { }
 
         static string DataKey_SkillTree => $"{nameof(SkillTreePlayerModel)}_SkillTreeData";
 
@@ -127,8 +127,9 @@ namespace App.GamePlay.IdleMiner.SkillTree
         {
             if(context.IsSimulationMode())
                 return;
-
-            FetchData(DataKey_SkillTree, out skillTreeProcInfo, fallback:new SkillTreeProcInfo());
+            
+            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            FetchData(idxGatewayService, DataKey_SkillTree, out skillTreeProcInfo, fallback:new SkillTreeProcInfo());
 
 //            ReadFileInternal<SkillAbilityInfo>($"{mAccount}_SkillAbilityData", ref skillAbilityInfo);
         }

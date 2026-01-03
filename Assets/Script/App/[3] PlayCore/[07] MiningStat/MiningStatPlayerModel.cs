@@ -5,9 +5,9 @@ using IGCore.MVCS;
 
 namespace App.GamePlay.IdleMiner.MiningStat
 {
-    public class MiningStatPlayerModel : GatewayWritablePlayerModel
+    public class MiningStatPlayerModel : MultiGatewayWritablePlayerModel
     {
-        public MiningStatPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) 
+        public MiningStatPlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService) 
         {
             // InitPlayerData();
         }

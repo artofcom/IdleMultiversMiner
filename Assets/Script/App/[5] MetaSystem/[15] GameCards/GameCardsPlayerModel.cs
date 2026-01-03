@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using App.GamePlay.IdleMiner.Common.Types;
 
-public class GameCardsPlayerModel : GatewayWritablePlayerModel
+public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 {
     GameCardBundle gameCardBundle;
 
     EventsGroup events = new EventsGroup();
 
-    public GameCardsPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+    public GameCardsPlayerModel(AContext ctx, List<IDataGatewayService> gatewayServices) : base(ctx, gatewayServices) { }
 
     string DataKey => "GameCardsData";
 
@@ -42,7 +42,7 @@ public class GameCardsPlayerModel : GatewayWritablePlayerModel
 
     void LoadGameCardData()
     {
-        FetchData(DataKey, out gameCardBundle, new GameCardBundle());
+        FetchData((context as IdleMinerContext).ValidGatewayServiceIndex, DataKey, out gameCardBundle, new GameCardBundle());
     }
 
     public override List<Tuple<string, string>> GetSaveDataWithKeys()

@@ -8,7 +8,7 @@ public class SkillTreeUnitLostDesert : SkillTreeUnit
     {
         this.context = ctx;
 
-        playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
+        playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
         model = new SkillTreeModelLostDesert(context, playerModel);
         controller = new SkillTreeController(this, view, model, context);
 

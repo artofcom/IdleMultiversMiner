@@ -13,7 +13,7 @@ using UnityEngine.Assertions;
 namespace App.GamePlay.IdleMiner.Resouces
 {
 
-    internal class ResourcePlayerModel : GatewayWritablePlayerModel
+    internal class ResourcePlayerModel : MultiGatewayWritablePlayerModel
     {
         [Serializable]
         public class ListResourceCollections
@@ -43,7 +43,7 @@ namespace App.GamePlay.IdleMiner.Resouces
 
         #region ===> Interfaces
 
-        public ResourcePlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+        public ResourcePlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService) { }
 
         public void WriteData() {}
 
@@ -179,8 +179,11 @@ namespace App.GamePlay.IdleMiner.Resouces
         {
             if(context.IsSimulationMode())
                 resourceCollections = new ListResourceCollections();
-            else 
-                FetchData(DataKey_ResourceData, out resourceCollections, fallback: new ListResourceCollections());
+            else
+            {
+                int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+                FetchData(idxGatewayService, DataKey_ResourceData, out resourceCollections, fallback: new ListResourceCollections());
+            }
         }
 
         void ResetGamePlay_InitGame(object data)

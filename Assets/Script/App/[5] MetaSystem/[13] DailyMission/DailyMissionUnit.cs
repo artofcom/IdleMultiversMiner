@@ -15,7 +15,7 @@ public class DailyMissionUnit : AUnit
     {
         base.Init(context);
 
-        var playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
+        var playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new DailyMissionModel(context, playerModel);
         controller = new DailyMissionController(this, view, model, context);
 

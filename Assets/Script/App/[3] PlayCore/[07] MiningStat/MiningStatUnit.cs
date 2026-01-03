@@ -13,7 +13,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
 
             ctx.AddRequestDelegate("MiningStat", "Attach", attach);
 
-            playerModel = new MiningStatPlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
+            playerModel = new MiningStatPlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
             model = new MiningStatModel(context, playerModel);
             controller = new MiningStatController(this, view, model, context);
 

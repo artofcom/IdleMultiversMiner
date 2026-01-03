@@ -5,7 +5,6 @@ using App.GamePlay.IdleMiner.Common.Types;
 using Core.Events;
 using Core.Utils;
 using IGCore.MVCS;
-using IGCore.Simulator.GameData;
 using System;
 using System.Collections;
 using System.Collections.Generic;

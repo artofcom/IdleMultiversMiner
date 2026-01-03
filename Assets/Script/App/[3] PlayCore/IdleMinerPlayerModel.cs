@@ -1,10 +1,6 @@
 using App.GamePlay.Common;
 using App.GamePlay.IdleMiner.Common.Model;
 using App.GamePlay.IdleMiner.Common.Types;
-using App.GamePlay.IdleMiner.Craft;
-using App.GamePlay.IdleMiner.GamePlay;
-using App.GamePlay.IdleMiner.Resouces;
-using App.GamePlay.IdleMiner.SkillTree;
 using Core.Events;
 using Core.Utils;
 using IGCore.MVCS;
@@ -53,7 +49,7 @@ namespace App.GamePlay.IdleMiner
     }
 
 
-    internal class IdleMinerPlayerModel : GatewayWritablePlayerModel
+    internal class IdleMinerPlayerModel : MultiGatewayWritablePlayerModel
     {
         public const string PREFAB_ACCOUNT = "RecentAccount";
 
@@ -111,7 +107,7 @@ namespace App.GamePlay.IdleMiner
 
         #region ===> Interfaces
 
-        public IdleMinerPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+        public IdleMinerPlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService) { }
         
 
         public double FlushAwayTime()
@@ -139,15 +135,15 @@ namespace App.GamePlay.IdleMiner
             timeStamp = UTCNowTick.ToString();
         }
 
-        public void SaveData()
-        {
-            IMCTX.SavePlayerData();
+        //public void SaveData()
+        //{
+            // IMCTX.SavePlayerData();
 
             //SaveTimeStamp();
             //SaveMoneyData();
             //SaveOpenedTabBtns();
             //PlayerPrefs.Save();
-        }
+        //}
 
         public override void Dispose()
         {
@@ -368,12 +364,14 @@ namespace App.GamePlay.IdleMiner
         
         void LoadTimeStamp()
         {
-            FetchData<string>(DataKey_TimeStamp, out timeStamp, fallback:string.Empty);
+            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            FetchData<string>(idxGatewayService, DataKey_TimeStamp, out timeStamp, fallback:string.Empty);
         }
 
         void LoadMoneyData()
         {
-            FetchData<PlayerMoneyData>(DataKey_MoneyData, out moneyData, fallback:new PlayerMoneyData());
+            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            FetchData<PlayerMoneyData>(idxGatewayService, DataKey_MoneyData, out moneyData, fallback:new PlayerMoneyData());
         }
 
         void SaveMoneyData(List<Tuple<string, string>> listDataSet)
@@ -410,8 +408,9 @@ namespace App.GamePlay.IdleMiner
         }
         void LoadOpenedTabBtns()
         {
+            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
             string textData = string.Empty;
-            FetchData<string>(DataKey_OpenedTabBtns, out textData, fallback:string.Empty);
+            FetchData<string>(idxGatewayService, DataKey_OpenedTabBtns, out textData, fallback:string.Empty);
             
             listOpenedTabBtn.Clear();
             string[] tabNames = string.IsNullOrEmpty(textData) ? null : textData.Split(':');

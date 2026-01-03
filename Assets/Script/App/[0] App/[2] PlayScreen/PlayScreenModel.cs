@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using IGCore.MVCS;
 
-public class PlayScreenModel : IGCore.MVCS.AModel
+public class PlayScreenModel : NoPlayerDataModel
 {
-    public PlayScreenModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
+    public PlayScreenModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData) { }
 
     public override void Init(object data = null) {}
 }

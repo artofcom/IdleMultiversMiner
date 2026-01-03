@@ -29,11 +29,10 @@ public class TitleScreen : AUnit
         context.AddData("PlayerId", string.Empty);
         context.AddData("IsAccountLinked", false);
 
-        var playerModel = new TitleScreenPlayerModel(ctx);
-        model = new TitleScreenModel(context, playerModel);
+
+        model = new TitleScreenModel(context, null);
         controller = new TitleScreenController(this, view, model, context);
 
-        playerModel.Init();
         model.Init();
         controller.Init();
         (analyticsService as IAnalyticsService).Init();

@@ -15,11 +15,11 @@ public class  SettingData
     public bool IsBGMOn { get => isBGMOn; set => isBGMOn = value; }
 }
 
-public class SettingPlayerModel : GatewayWritablePlayerModel
+public class SettingPlayerModel : MultiGatewayWritablePlayerModel
 {
     SettingData settingData;
 
-    public SettingPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+    public SettingPlayerModel(AContext ctx, List<IDataGatewayService> gatewayServices) : base(ctx, gatewayServices) { }
 
     string DataKey => "SettingData";
 
@@ -45,7 +45,7 @@ public class SettingPlayerModel : GatewayWritablePlayerModel
 
     void LoadSettingData()
     {
-        FetchData(DataKey, out settingData, new SettingData());
+        FetchData((context as IdleMinerContext).ValidGatewayServiceIndex, DataKey, out settingData, new SettingData());
     }
 
     public override List<Tuple<string, string>> GetSaveDataWithKeys()

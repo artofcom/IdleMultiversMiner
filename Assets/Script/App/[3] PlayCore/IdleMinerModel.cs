@@ -21,10 +21,10 @@ namespace App.GamePlay.IdleMiner
         }
 
         
-        public void SavePlayerData()
-        {
-           PlayerData.SaveData();
-        }
+        //public void SavePlayerData()
+        //{
+           //PlayerData.SaveData();
+        //}
 
         public void EventOnFocused()
         {

@@ -5,26 +5,6 @@ using UnityEngine;
 namespace App.GamePlay.Common
 {
     [Serializable]
-    public class  EnvironmentInfo
-    {
-        [SerializeField] string dataVersion;
-        [SerializeField] string appVersion;
-        [SerializeField] string deviceName;
-        [SerializeField] long timeStamp;
-
-        public EnvironmentInfo(string version)
-        {
-            this.dataVersion = version;     
-            this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
-            this.timeStamp = DateTime.UtcNow.Ticks;
-        }
-        public string DataVersion => dataVersion;
-        public string DeviceName => deviceName;
-        public long TimeStamp => timeStamp;
-        public string AppVersion => appVersion;
-    }
-
-    [Serializable]
     public class MetaCurrency
     {
         [SerializeField] string type;

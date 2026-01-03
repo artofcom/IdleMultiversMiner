@@ -23,7 +23,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         {
             base.Dispose();
 
-            controller.Dispose();
+            controller?.Dispose();
         }
     }
 }

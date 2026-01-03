@@ -4,22 +4,28 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
+using UnityEngine.Assertions;
 
 namespace IGCore.MVCS
 {
     public class DataCloudGatewayService : DataGatewayService
     {
-        ICloudService cloudService;
+        protected ICloudService cloudService;
 
         public DataCloudGatewayService(ICloudService cloudService)
         {
             this.cloudService = cloudService;
         }
 
-        public override async Task WriteData(string dataKey, bool clearAll)
+        public override async Task<bool> WriteData(string dataKey, bool clearAll)
         {
+            Assert.IsNotNull(cloudService);
+
             if(serviceData.Data == null)
                 serviceData.Data = new List<DataPair>();
+
+            if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
+                serviceData.Environment = new EnvironmentInfo("1.0");
 
             serviceData.Clear();
 
@@ -39,48 +45,37 @@ namespace IGCore.MVCS
             
             string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
 
-            // Writing it in local.            
-            string fileName = Application.persistentDataPath + "/" + dataKey + ".json";
-            TextFileIO.WriteTextFile(fileName, jsonText);
-
-            string errMessage = await cloudService.SaveUserData(dataKey, jsonText);
-            if(false == string.IsNullOrEmpty(errMessage))
-                Debug.Log($"<color=red>[CloudGateWay] : SaveData [{dataKey}] has been failed.... => {errMessage}</color>");
+            Tuple<bool, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
+            if(false == cloudResult.Item1)
+                Debug.Log($"<color=red>[CloudGateWay] : SaveData [{dataKey}] has been failed.., {cloudResult.Item2}</color>");
             else 
                 Debug.Log($"<color=green>[CloudGateWay] : SaveData [{dataKey}] has been successed.</color>");
+
+            return cloudResult.Item1;
         }
 
-        public override async Task ReadData(string dataKey)
-        {
-            string jsonString = await cloudService.LoadUserData(dataKey);
-            if(string.IsNullOrEmpty(jsonString))
-            {
-                Debug.Log($"<color=red>[CloudGateWay] : ReadData [{dataKey}] has been failed. Try reading it in local.. </color>");
-                
-                string fileName = Application.persistentDataPath + "/" + dataKey + ".json";
-                jsonString = TextFileIO.ReadTextFile(fileName);
-                if(string.IsNullOrEmpty(jsonString))
-                {
-                    Debug.LogError($"[CloudGateWay] : ReadData [{dataKey}] in local has been failed !");
-                    return;
-                }
-            }
-            else 
-                Debug.Log($"<color=green>[CloudGateWay] : ReadData [{dataKey}] has been successed</color>");
+        public override async Task<bool> ReadData(string dataKey)
+        {   
+            serviceData = null;
 
-            serviceData = JsonUtility.FromJson<DataInService>(jsonString);
+            Tuple<bool, string> cloudResult = await cloudService.LoadUserData(dataKey);
+            if(false == cloudResult.Item1)
+            {
+                Debug.Log($"<color=red>[CloudGateWay] : ReadData data from Cloud has been failed. [{dataKey}] </color>");
+                return false;
+            }
+            else
+            {
+                Debug.Log($"<color=green>[CloudGateWay] : ReadData data from Cloud has been done. - [{dataKey}]</color>");
+                Debug.Log($"<color=green>[CloudGateWay] : [{cloudResult.Item2}]</color>");
+                serviceData = JsonUtility.FromJson<DataInService>(cloudResult.Item2);
+            }            
+            
             if(serviceData == null)
                 serviceData = new DataInService();
 
             serviceData.Init();
-        }
-
-        public override string GetData(string model_id)
-        {
-            if(serviceData == null)
-                return string.Empty;
-
-            return serviceData.GetData(model_id);
+            return true;
         }
     } 
 }

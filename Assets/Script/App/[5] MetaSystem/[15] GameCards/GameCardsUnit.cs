@@ -1,6 +1,4 @@
 using IGCore.MVCS;
-using Unity.Services.Analytics;
-using UnityEngine;
 
 public class GameCardsUnit : AUnit
 {
@@ -13,7 +11,7 @@ public class GameCardsUnit : AUnit
     {
         base.Init(context);
 
-        var playerModel = new GameCardsPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
+        var playerModel = new GameCardsPlayerModel(context, ((IdleMinerContext)context).MetaGatewayServiceList);
         model = new GameCardsModel(context, playerModel);
         controller = new GameCardsController(this, view, model, context);
 

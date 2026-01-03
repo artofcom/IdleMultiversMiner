@@ -12,4 +12,9 @@ namespace App.GamePlay.IdleMiner.Common.Types
             public const string GAME_DLG_KEY = "GameDialogKey";
         }
     }
+
+    public class DataKeys
+    {
+        public const string PREV_PLAYER_ID = "prev_player_id";
+    }
 }

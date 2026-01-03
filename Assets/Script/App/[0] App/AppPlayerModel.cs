@@ -8,18 +8,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class AppPlayerModel : GatewayWritablePlayerModel
+public class AppPlayerModel : MultiGatewayWritablePlayerModel
 {
-    EnvironmentInfo environment;
     MetaCurrencyBundle metaCurrencyBundle;
 
     EventsGroup events = new EventsGroup();
 
-    public AppPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService)  { }
+    public AppPlayerModel(AContext ctx, List<IDataGatewayService> gatewayServiceList) : base(ctx, gatewayServiceList)  { }
 
-    static string EnvironmentDataKey = "Environment";
     static string CurrencyDataKey = "Currencies";
 
+    const int DefaultIAP = 50;
+    const int DefaultStar = 10;
 
     public override void Init()
     {     
@@ -48,13 +48,18 @@ public class AppPlayerModel : GatewayWritablePlayerModel
     // App Data Warpper.
     void LoadAppData()
     {        
-        FetchData(EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
-        FetchData(CurrencyDataKey, out metaCurrencyBundle, null);
+        string curSignedPlayerId = (string)context.GetData("PlayerId", string.Empty);
+        //string lastSignedPlayerId = PlayerPrefs.GetString(DataKeys.PLAYER_ID, string.Empty);
+
+        int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+        // FetchData(idxGatewayService, EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
+        FetchData(idxGatewayService, CurrencyDataKey, out metaCurrencyBundle, null);
+
         if(metaCurrencyBundle==null || metaCurrencyBundle.GetCurrency("iap")==null)
         {
             metaCurrencyBundle = new MetaCurrencyBundle();
-            metaCurrencyBundle.AddCurrency(new MetaCurrency("iap", 50));
-            metaCurrencyBundle.AddCurrency(new MetaCurrency("star", 10));
+            metaCurrencyBundle.AddCurrency(new MetaCurrency("iap", DefaultIAP));
+            metaCurrencyBundle.AddCurrency(new MetaCurrency("star", DefaultStar));
             (context as IdleMinerContext).SaveMetaData();
         }
 
@@ -129,9 +134,7 @@ public class AppPlayerModel : GatewayWritablePlayerModel
     public override List<Tuple<string, string>> GetSaveDataWithKeys()
     {
         List<Tuple<string, string>> listDataSet = new List<Tuple<string, string>>();
-            
-        Assert.IsNotNull(environment);
-        listDataSet.Add(new Tuple<string, string>(EnvironmentDataKey, JsonUtility.ToJson(environment)));
+        
         Assert.IsNotNull(metaCurrencyBundle);
         listDataSet.Add(new Tuple<string, string>(CurrencyDataKey, JsonUtility.ToJson(metaCurrencyBundle)));
         

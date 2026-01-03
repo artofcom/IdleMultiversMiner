@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InBoxPlayerModel : GatewayWritablePlayerModel
+public class InBoxPlayerModel : MultiGatewayWritablePlayerModel
 {
-    public InBoxPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+    public InBoxPlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService) { }
 
 
     public override void Init()

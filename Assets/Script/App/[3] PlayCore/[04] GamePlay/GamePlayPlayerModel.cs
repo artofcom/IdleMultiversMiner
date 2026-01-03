@@ -4,7 +4,6 @@ using App.GamePlay.IdleMiner.Common.PlayerModel;
 using App.GamePlay.IdleMiner.Common.Types;
 using Core.Events;
 using IGCore.MVCS;
-using IGCore.Simulator.GameData;
 using System;
 using System.Collections.Generic;
 using System.Numerics;
@@ -13,7 +12,7 @@ using UnityEngine.Assertions;
 
 namespace App.GamePlay.IdleMiner.GamePlay
 {
-    internal class GamePlayPlayerModel : GatewayWritablePlayerModel
+    internal class GamePlayPlayerModel : MultiGatewayWritablePlayerModel
     {
         #region ===> Properties
 
@@ -21,7 +20,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
         string DateKey_ZoneInfo => $"{nameof(GamePlayPlayerModel)}_{nameof(ZoneGroupStatusInfo)}";
 
         ZoneGroupStatusInfo unlockedZoneGroup = new ZoneGroupStatusInfo();
-        EnvironmentInfo environment;
 
         // Accessor.
         public ZoneGroupStatusInfo UnlockedZoneGroup => unlockedZoneGroup;
@@ -36,7 +34,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         #region ===> Interfaces
 
-        public GamePlayPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+        public GamePlayPlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService) { }
 
 
         public override void Init()
@@ -257,7 +255,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             Assert.IsNotNull(unlockedZoneGroup);
             List<Tuple<string, string>> listDataSet = new List<Tuple<string, string>>();
-            listDataSet.Add(new Tuple<string, string>(EnvironmentDataKey, JsonUtility.ToJson(environment)));
             listDataSet.Add(new Tuple<string, string>(DateKey_ZoneInfo, JsonUtility.ToJson(unlockedZoneGroup)));
             return listDataSet;
         }
@@ -291,8 +288,8 @@ namespace App.GamePlay.IdleMiner.GamePlay
         //}
         void LoadPlanetData()
         {
-            FetchData(EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
-            FetchData<ZoneGroupStatusInfo>(DateKey_ZoneInfo, out unlockedZoneGroup, fallback:new ZoneGroupStatusInfo());
+            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            FetchData<ZoneGroupStatusInfo>(idxGatewayService, DateKey_ZoneInfo, out unlockedZoneGroup, fallback:new ZoneGroupStatusInfo());
         }
         void LoadSimPlanetData()
         {

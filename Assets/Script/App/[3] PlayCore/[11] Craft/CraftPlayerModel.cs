@@ -53,7 +53,7 @@ namespace App.GamePlay.IdleMiner.Craft
     }
 
 
-    public class CraftPlayerModel : GatewayWritablePlayerModel
+    public class CraftPlayerModel : MultiGatewayWritablePlayerModel
     {
         public class CraftStoreData
         {
@@ -107,7 +107,7 @@ namespace App.GamePlay.IdleMiner.Craft
             return $"{nameof(CraftPlayerModel)}_Craft{key}BuffData";
         }
 
-        public CraftPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService)  { }
+        public CraftPlayerModel(AContext ctx, List<IDataGatewayService> gatewayService) : base(ctx, gatewayService)  { }
 
         public override void Init()
         {
@@ -138,8 +138,11 @@ namespace App.GamePlay.IdleMiner.Craft
             CraftStoreData craftData = null;
             if(context.IsSimulationMode())
                 craftData = new CraftStoreData();
-            else 
-                FetchData(DataKey_CraftData(type), out craftData, new CraftStoreData());
+            else
+            {
+                int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+                FetchData(idxGatewayService, DataKey_CraftData(type), out craftData, new CraftStoreData());
+            }
             
             if(type == eRscStageType.COMPONENT) 
                 compCraftData = craftData;

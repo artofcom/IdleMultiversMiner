@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using App.GamePlay.IdleMiner.Common.PlayerModel;
 
-public class DailyMissionPlayerModel : GatewayWritablePlayerModel
+public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 {
     [Serializable]
     public class ProgressInfo
@@ -52,7 +52,7 @@ public class DailyMissionPlayerModel : GatewayWritablePlayerModel
     string NotificationDataKey => "DailyMissionNotificationData";
 
 
-    public DailyMissionPlayerModel(AContext ctx, IDataGatewayService gatewayService) : base(ctx, gatewayService) { }
+    public DailyMissionPlayerModel(AContext ctx, List<IDataGatewayService> gatewayServices) : base(ctx, gatewayServices) { }
 
 
     public override void Init()
@@ -114,8 +114,9 @@ public class DailyMissionPlayerModel : GatewayWritablePlayerModel
 
     void LoadData()
     {
-        FetchData(DataKey, out progressInfo, null);
-        FetchData(NotificationDataKey, out notificationInfo, new NotificationInfo());
+        int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+        FetchData(idxGatewayService, DataKey, out progressInfo, null);
+        FetchData(idxGatewayService, NotificationDataKey, out notificationInfo, new NotificationInfo());
         
         bool resetData = progressInfo==null || progressInfo.ListProgressInfos.Count==0;
         

@@ -114,10 +114,11 @@ public class PlayScreen : AUnit
     [InitializeOnLoadMethod]
     static void InitializeMenuState()   
     {   
-        Debug.Log($"Initializing editor selected game key......");
-        SetCurGameKeyIndex(idxCurGameKey);  
+       // Debug.Log($"Initializing editor selected game key......");
+      //  SetCurGameKeyIndex(idxCurGameKey);  
     }
 
+    /*
     [MenuItem("PlasticGames/Active Game/Gravewardens_Harvest", false, 0)]
     public static void SetGravesMode()  { SetCurGameKeyIndex(0); }
     
@@ -141,7 +142,7 @@ public class PlayScreen : AUnit
             }
             Debug.Log($"Active mode set to : {gameKeys[idxCurGameKey]}");
         }
-    }
+    }*/
 #endif
 
     /*

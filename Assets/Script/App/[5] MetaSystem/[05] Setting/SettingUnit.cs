@@ -24,7 +24,7 @@ public class SettingUnit : AUnit
     {
         base.Init(context);
 
-        playerModel = new SettingPlayerModel(context, (context as IdleMinerContext).MetaDataGatewayService);
+        playerModel = new SettingPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new SettingModel(context, playerModel);
         controller = new SettingController(this, view, model, context);
 
@@ -45,6 +45,6 @@ public class SettingUnit : AUnit
     public override void Dispose() 
     { 
         base.Dispose();
-        playerModel.Dispose();
+        playerModel?.Dispose();
     }
 }

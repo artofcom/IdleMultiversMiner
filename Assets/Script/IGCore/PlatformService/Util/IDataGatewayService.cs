@@ -2,11 +2,13 @@ using System.Threading.Tasks;
 
 public interface IDataGatewayService 
 {
+    string AccountId { get; set; }
+
     void RegisterDataModel(IWritableModel model);
     void UnRegisterDataModel(IWritableModel model);
     void ClearModels();
 
-    Task WriteData(string filePath, bool clearAll);
-    Task ReadData(string filePath);
+    Task<bool> WriteData(string dataKey, bool clearAll);
+    Task<bool> ReadData(string dataKey);
     string GetData(string model_id);
 }

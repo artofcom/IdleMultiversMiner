@@ -75,7 +75,7 @@ namespace App.GamePlay.IdleMiner
             foreach(var module in subUnits)
                 module.Init(ctx);
             
-            var playerModel = new IdleMinerPlayerModel(context, (ctx as IdleMinerContext).GameCoreGatewayService);
+            var playerModel = new IdleMinerPlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
             model = new IdleMinerModel(context, playerModel);
             controller = new IdleMinerController(this, view, model, context);
 

@@ -11,7 +11,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             base.Init(ctx);
 
-            playerModel = new GamePlayPlayerModel(context, (context as IdleMinerContext).GameCoreGatewayService);
+            playerModel = new GamePlayPlayerModel(context, (context as IdleMinerContext).GameGatewayServiceList);
             model = new GamePlayModel(context, playerModel);
             controller = new GamePlayController(this, view, model, context);
 

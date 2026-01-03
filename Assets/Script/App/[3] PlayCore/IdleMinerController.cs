@@ -151,7 +151,8 @@ namespace App.GamePlay.IdleMiner
             if(IMContext.IsSimulationMode())
                 return;
 
-            Model.SavePlayerData();
+            //Model.SavePlayerData();
+            IMContext.SavePlayerData();
 
             mLastWriteTime = Time.time;
           //  Debug.Log("[DataRecorded]..Player Data has been written... " + mLastWriteTime.ToString());
