@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using IGCore.PlatformService;
 
 namespace IGCore.MVCS
 {
@@ -90,8 +91,10 @@ namespace IGCore.MVCS
 
         public void SetDirty()
         {
-            for(int q = 0; q < gatewayServices.Count; q++) 
+            for(int q = 0; q < gatewayServices.Count; q++)
+            {
                 gatewayServices[q].IsDirty = true;
+            }
         }
     }
 }

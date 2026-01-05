@@ -85,11 +85,8 @@ public class TitleScreenController : AController
     void OnSignedIn(string playerId) 
     {
         Debug.Log($"<color=green>[TitleScreen] SignIn Successed. PlayerId : [{playerId}]</color>");
-        bool isAccountLinked = titleScreen.AuthService.IsAccountLinkedWithPlayer("unity");
-        context.AddData("PlayerId", playerId);
-        context.AddData("IsAccountLinked", isAccountLinked);
         
-        string playerType = isAccountLinked ? "Player" : "Guest";
+        string playerType = titleScreen.AuthService.IsAccountLinkedWithPlayer("unity") ? "Player" : "Guest";
         var presentData = new ToastMessageDialog.PresentInfo( message :  $"{playerType} [{playerId}] has signed in.", duration:3.0f, ToastMessageDialog.Type.INFO);
         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
             "ToastMessageDialog", presentData,

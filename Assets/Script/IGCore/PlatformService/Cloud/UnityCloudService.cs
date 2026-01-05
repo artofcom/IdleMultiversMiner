@@ -1,10 +1,11 @@
-using UnityEngine;
-using System;
-using UnityEngine.Assertions;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using Unity.Services.CloudSave;
 using IGCore.PlatformService.Util;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Unity.Services.CloudSave;
+using Unity.Services.Core;
+using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace IGCore.PlatformService.Cloud
 {
@@ -51,12 +52,12 @@ namespace IGCore.PlatformService.Cloud
         }
 
         // Error Message.
-        public async Task<Tuple<bool, string>> SaveUserData(string key, string userData) 
+        public async Task<Tuple<ICloudService.ResultType, string>> SaveUserData(string key, string userData) 
         { 
             try
             { 
                 if(!isInitialized)
-                    throw new Exception("[Cloud] Module Not initialized.");
+                    return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eServiceNotInitialized, "[Cloud] Module Not initialized.");
                 
                 string encodedString = userData;
                 if(compressData)
@@ -68,22 +69,33 @@ namespace IGCore.PlatformService.Cloud
                 var data = new Dictionary<string, object> { {key, encodedString } };
 
                 await CloudSaveService.Instance.Data.Player.SaveAsync(data);
-                return new Tuple<bool, string>(true, string.Empty);
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eSuccessed, string.Empty);
             }
-            //catch (CloudSaveValidationException ex) { }
-            //catch (CloudSaveRateLimitedException ex) { }
-            //catch (CloudSaveConflictException ex) { }
-            //catch (CloudSaveException ex) { }
+            catch (CloudSaveException e)
+            {
+                switch (e.Reason)
+                {
+                    case CloudSaveExceptionReason.NoInternetConnection:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eNoNetworkConnection, "[Cloud] No network connection.!");
+                    case CloudSaveExceptionReason.ProjectIdMissing:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eInvalidProjectId, "[Cloud] Invalid Project Id.!");
+                    default:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eUnknownError, "[Cloud] Unknown Error. " + e.ErrorCode);
+                }
+            }
+            catch (RequestFailedException e)
+            {
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eInvalidAuth, "[Cloud] Invalid Auth.! " + e.ErrorCode);
+            }
             catch (Exception ex) 
             {
-                Debug.LogException(ex);
-                //throw ex;
-                return new Tuple<bool, string>(false, ex.Message);
+                Debug.LogWarning("[Cloud] Exception : " + ex.Message);
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eUnknownError, ex.Message);
             }
         }
 
         // UserData.
-        public async Task<Tuple<bool, string>> LoadUserData(string key) 
+        public async Task<Tuple<ICloudService.ResultType, string>> LoadUserData(string key) 
         {
             try
             {
@@ -97,14 +109,30 @@ namespace IGCore.PlatformService.Cloud
                     string originalJson = compressData ? StringCompressor.DecompressFromEncodedString(value.Value.GetAsString()) : value.Value.GetAsString();
                     Debug.Log($"[Cloud] Fetching the UserData has been successed. : {originalJson}");
                     
-                    return new Tuple<bool, string>(true, originalJson);
+                    return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eSuccessed, originalJson);
                 }
-                return new Tuple<bool, string>(false, $"[Cloud] Fetch data has been failed. [{dictData}]");
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eDataNotFound, "[Cloud] Data Not Found.");
+            }
+            catch (CloudSaveException e)
+            {
+                switch (e.Reason)
+                {
+                    case CloudSaveExceptionReason.NoInternetConnection:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eNoNetworkConnection, "[Cloud] No network connection.!");
+                    case CloudSaveExceptionReason.ProjectIdMissing:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eInvalidProjectId, "[Cloud] Invalid Project Id.!");
+                    default:
+                        return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eUnknownError, "[Cloud] Unknown Error. " + e.ErrorCode);
+                }
+            }
+            catch (RequestFailedException e)
+            {
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eInvalidAuth, "[Cloud] Invalid Auth.! " + e.ErrorCode);
             }
             catch(Exception ex) 
             {
-                Debug.LogException(ex);
-                return new Tuple<bool, string>(false, ex.Message);
+                Debug.LogWarning("[Cloud] Exception : " + ex.Message);
+                return new Tuple<ICloudService.ResultType, string>(ICloudService.ResultType.eUnknownError, ex.Message);
             }
         }
 

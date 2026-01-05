@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using App.GamePlay.IdleMiner.Common.PlayerModel;
+using IGCore.PlatformService;
 
 public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 {
@@ -84,6 +85,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         Debug.Log($"[DailyMission] : {goalType} count has been added to {progressInfo.Count}.");
 
         SetDirty();
+        (context as IdleMinerContext).SaveMetaDataInstantly();
         return progressInfo.Count;
     }
 
@@ -101,6 +103,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 
         progressInfo.Claim();
         SetDirty();
+        (context as IdleMinerContext).SaveMetaDataInstantly();
         return true;
     }
 
@@ -116,7 +119,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadData()
     {
-        int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+        int idxGatewayService = (context as IdleMinerContext).TargetMetaDataGatewayServiceIndex;
         FetchData(idxGatewayService, DataKey, out progressInfo, null);
         FetchData(idxGatewayService, NotificationDataKey, out notificationInfo, new NotificationInfo());
         
@@ -146,6 +149,7 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         ResetNotificator();
 
         SetDirty();
+        (context as IdleMinerContext).SaveMetaDataInstantly();
     }
 
     public bool Pump()

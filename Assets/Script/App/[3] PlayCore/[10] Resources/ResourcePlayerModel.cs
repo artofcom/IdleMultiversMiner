@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner.Resouces
 {
@@ -166,6 +167,7 @@ namespace App.GamePlay.IdleMiner.Resouces
             BigInteger soldCount = collectInfo.BICount;
             SellResource(srcId, collectInfo.BICount);
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             return soldCount;
         }
 
@@ -184,7 +186,7 @@ namespace App.GamePlay.IdleMiner.Resouces
                 resourceCollections = new ListResourceCollections();
             else
             {
-                int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+                int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
                 FetchData(idxGatewayService, DataKey_ResourceData, out resourceCollections, fallback: new ListResourceCollections());
             }
         }

@@ -3,7 +3,6 @@ using App.GamePlay.IdleMiner.PopupDialog;
 using IGCore.MVCS;
 using System;
 using System.Threading.Tasks;
-using Unity.Services.Authentication.PlayerAccounts;
 using UnityEngine;
 
 public class SettingController : AController
@@ -46,6 +45,8 @@ public class SettingController : AController
     }
     protected override void OnViewDisable() 
     {
+        (context as IdleMinerContext).SaveMetaDataInstantly();
+
         SettingDialogView.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
         SettingDialogView.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
         SettingDialogView.EventOnLinkAccountClicked -= EventOptionDlgOnBtnLinkAccountClicked;

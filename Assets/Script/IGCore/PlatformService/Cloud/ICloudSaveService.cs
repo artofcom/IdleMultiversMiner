@@ -5,13 +5,18 @@ namespace IGCore.PlatformService.Cloud
 {
     public interface ICloudService 
     {
+        public enum ResultType
+        {
+            eSuccessed, eServiceNotInitialized, eInvalidAuth, eDataNotFound, eNoNetworkConnection, eInvalidProjectId, eUnknownError
+        }
+
         // event Action<string> EventOnSignedIn;
         bool IsInitialized();
 
         // Ret : isSuccessed , Error Message.
-        Task<Tuple<bool, string>> SaveUserData(string key, string jsonString);
+        Task<Tuple<ResultType, string>> SaveUserData(string key, string jsonString);
         
         // Ret : isSuccessed, string data.
-        Task<Tuple<bool, string>> LoadUserData(string key);
+        Task<Tuple<ResultType, string>> LoadUserData(string key);
     }
 }

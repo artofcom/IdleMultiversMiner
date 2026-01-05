@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using IGCore.MVCS;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner.MiningStat
 {

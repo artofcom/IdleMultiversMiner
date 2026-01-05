@@ -11,6 +11,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         [SerializeField] ButtonToggle btnToggleBGM;
         [SerializeField] Transform SoundFXListRoot;
         [SerializeField] TMP_Text txtPlayerId;
+        [SerializeField] TMP_Text txtOfflinePlayerId;
         [SerializeField] Transform BGMListRoot;
         [SerializeField] TMP_Text txtVersion;
 
@@ -82,6 +83,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             SignOutRoot.SetActive(presentInfo.IsLinked);
 
             txtPlayerId.text = presentInfo.PlayerId;
+            txtOfflinePlayerId.text = presentInfo.PlayerId;
             txtVersion.text = presentInfo.Version;
         }
 

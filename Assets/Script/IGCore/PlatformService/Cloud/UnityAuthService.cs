@@ -26,8 +26,8 @@ namespace IGCore.PlatformService.Cloud
         public event Action EventOnPlayerAccountSignedOut;
 
 
-        string playerId;
-        public string PlayerId => playerId;
+        //string playerId;
+        //public string PlayerId => playerId;
 
         IService Service => service as IService;
 
@@ -88,6 +88,10 @@ namespace IGCore.PlatformService.Cloud
             return (isInitialized && AuthenticationService.Instance!=null && AuthenticationService.Instance.IsSignedIn);
         }
 
+        public string GetPlayerId()
+        {
+            return AuthenticationService.Instance.PlayerId;
+        }
 
         public async Task SignInAsync()             // EventOnSignedIn or EventOnSignInFailed
         {
@@ -110,7 +114,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(RequestFailedException ex)  
             {
-                Debug.LogException(ex);   
+                Debug.LogWarning("[Auth] Exception : " + ex.Message);
 
                 if(ex.ErrorCode == 401 || ex.ErrorCode == 403)
                 {
@@ -125,7 +129,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(Exception e) 
             {
-                Debug.LogException(e);
+                Debug.LogWarning("[Auth] Exception : " + e.Message);
             }
         }
 
@@ -141,7 +145,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(Exception e)
             {
-                Debug.LogException(e);
+                Debug.LogWarning("[Auth] Exception : " + e.Message);
             }
         }
 
@@ -159,7 +163,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(Exception e)
             {
-                Debug.LogException(e);
+                Debug.LogWarning("[Auth] Exception : " + e.Message);
             }
         }
 
@@ -175,7 +179,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(Exception e) 
             {
-                Debug.LogException(e);
+                Debug.LogWarning("[Auth] Exception : " + e.Message);
 
                 return false;
             }
@@ -263,7 +267,7 @@ namespace IGCore.PlatformService.Cloud
             }
             catch(Exception e) 
             {
-                Debug.LogException(e);
+                Debug.LogWarning("[Auth] Exception : " + e.Message);
                 if(isLinkingAccount)
                     EventOnLinkAccount?.Invoke(false, e.Message);
             }
@@ -288,7 +292,7 @@ namespace IGCore.PlatformService.Cloud
 
         void OnSignedIn()
         {
-            playerId = AuthenticationService.Instance.PlayerId;
+            string playerId = AuthenticationService.Instance.PlayerId;
             
             Debug.Log($"<color=green>[Auth][PlayerId] [{playerId}] has logined in successfully.</color>");
             Debug.Log($"<color=green>[Auth][PlayerName] [{AuthenticationService.Instance.PlayerName}].</color>");
@@ -306,7 +310,7 @@ namespace IGCore.PlatformService.Cloud
 
         void OnSignedOut()
         {
-            playerId = AuthenticationService.Instance.PlayerId;
+            string playerId = AuthenticationService.Instance.PlayerId;
             Debug.Log($"[Auth] Anonym [{playerId}] has been signed out successfully.");
             
             EventOnSignOut?.Invoke();
@@ -358,7 +362,7 @@ namespace IGCore.PlatformService.Cloud
                 }
                 catch(RequestFailedException ex)  
                 {
-                    Debug.LogException(ex);   
+                    Debug.LogWarning("[Auth] Exception : " + ex.Message);
 
                     if(ex.ErrorCode == 401 || ex.ErrorCode == 403)
                     {
@@ -373,7 +377,7 @@ namespace IGCore.PlatformService.Cloud
                 }
                 catch(Exception e) 
                 {
-                    Debug.LogException(e);
+                    Debug.LogWarning("[Auth] Exception : " + e.Message);
                 }
 
                 await Task.Delay(retryInterval * 1000);

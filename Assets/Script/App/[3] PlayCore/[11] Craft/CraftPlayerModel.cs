@@ -8,6 +8,7 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner.Common.Types;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner.Craft
 {
@@ -140,7 +141,7 @@ namespace App.GamePlay.IdleMiner.Craft
                 craftData = new CraftStoreData();
             else
             {
-                int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+                int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
                 FetchData(idxGatewayService, DataKey_CraftData(type), out craftData, new CraftStoreData());
             }
             
@@ -172,6 +173,7 @@ namespace App.GamePlay.IdleMiner.Craft
             craftSlots[idxSlot].Idle();
 
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             EventSystem.DispatchEvent(EventID.CRAFT_RECIPE_ASSIGNED);
             return true;
         }
@@ -213,6 +215,7 @@ namespace App.GamePlay.IdleMiner.Craft
             listRecipeList.Add(slot);
 
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             EventSystem.DispatchEvent(EventID.CRAFT_SLOT_EXTENDED);
             return true;
         }
@@ -237,6 +240,7 @@ namespace App.GamePlay.IdleMiner.Craft
             craftData.PurchasedRecipeIndex++;
             
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             EventSystem.DispatchEvent(EventID.CRAFT_RECIPE_PURCHASED);
             return true;
         }
@@ -245,6 +249,7 @@ namespace App.GamePlay.IdleMiner.Craft
         {
             CraftStoreData craftData = eLevel==eRscStageType.COMPONENT ? compCraftData : itemCraftData;
             craftData.IsFeatureOpened = true;
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
 
@@ -260,12 +265,14 @@ namespace App.GamePlay.IdleMiner.Craft
         {
             CraftBuffStat buffState = eCraftLevel==eRscStageType.COMPONENT ? compBuffStat : itemBuffStat;
             buffState.SetStat(buffState.DurationRate*rate, buffState.RequestRate);
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
         public void UpdateReqResourceBuff(eRscStageType eCraftLevel, float rate)
         {
             CraftBuffStat buffState = eCraftLevel==eRscStageType.COMPONENT ? compBuffStat : itemBuffStat;
             buffState.SetStat(buffState.DurationRate, buffState.RequestRate*rate);
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
 
@@ -284,12 +291,14 @@ namespace App.GamePlay.IdleMiner.Craft
         {
             CraftBuffStat buffState = eCraftLevel==eRscStageType.COMPONENT ? multiProductionCompBuffStat : multiProductionItemBuffStat;
             buffState.SetStat(buffState.DurationRate*rate, buffState.RequestRate);
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
         public void UpdateMultiProductionReqResourceBuff(eRscStageType eCraftLevel, float rate)
         {
             CraftBuffStat buffState = eCraftLevel==eRscStageType.COMPONENT ? multiProductionCompBuffStat : multiProductionItemBuffStat;
             buffState.SetStat(buffState.DurationRate, buffState.RequestRate*rate);
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
 
@@ -310,6 +319,7 @@ namespace App.GamePlay.IdleMiner.Craft
 
             compCraftData.Reset();
             itemCraftData.Reset();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             SetDirty();
         }
 

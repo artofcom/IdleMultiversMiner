@@ -6,31 +6,52 @@ using UnityEngine;
 using System.Threading.Tasks;
 using UnityEngine.Assertions;
 
-namespace IGCore.MVCS
+namespace IGCore.PlatformService
 {
-    public class DataCloudGatewayService : DataGatewayService
+    public class DataCloudGatewayService : ICloudDataGatewayService
     {
         protected ICloudService cloudService;
+
+        public string AccountId { get; set; } = string.Empty;
+        public bool IsDirty { get; set; }
+
+        protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
+        protected List<IWritableModel> models = new List<IWritableModel>();
+
+        public DataGateWay.DataInService ServiceData => serviceData;
+
+        public void RegisterDataModel(IWritableModel model)
+        {
+            models.Add(model);
+        }
+        public void UnRegisterDataModel(IWritableModel model)
+        {
+            models.Remove(model);
+        }
+        public void ClearModels()
+        {
+            models.Clear();
+        }
 
         public DataCloudGatewayService(ICloudService cloudService)
         {
             this.cloudService = cloudService;
         }
 
-        public override async Task<bool> WriteData(string dataKey, bool clearAll)
+        public async Task<ICloudService.ResultType> WriteData(string dataKey, bool clearAll)
         {
-            if(!IsDirty)        return false;
-
-            IsDirty = false;
+            // if(!IsDirty)        return false;
+            // IsDirty = false;
 
             Assert.IsNotNull(cloudService);
 
             if(serviceData.Data == null)
-                serviceData.Data = new List<DataPair>();
+                serviceData.Data = new List<DataGateWay.DataPair>();
 
             if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                serviceData.Environment = new EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
 
+            serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
             serviceData.Clear();
 
             if(!clearAll)
@@ -43,14 +64,14 @@ namespace IGCore.MVCS
                         continue;
 
                     for(int q = 0; q < listDataSet.Count; q++)
-                        serviceData.Data.Add(new DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                        serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
                 }
             }
             
             string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
 
-            Tuple<bool, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
-            if(false == cloudResult.Item1)
+            Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
+            if(cloudResult.Item1 != ICloudService.ResultType.eSuccessed)
                 Debug.Log($"<color=red>[CloudGateWay] : SaveData [{dataKey}] has been failed.., {cloudResult.Item2}</color>");
             else 
                 Debug.Log($"<color=green>[CloudGateWay] : SaveData [{dataKey}] has been successed.</color>");
@@ -58,28 +79,34 @@ namespace IGCore.MVCS
             return cloudResult.Item1;
         }
 
-        public override async Task<bool> ReadData(string dataKey)
+        public async Task<ICloudService.ResultType> ReadData(string dataKey)
         {   
             serviceData = null;
 
-            Tuple<bool, string> cloudResult = await cloudService.LoadUserData(dataKey);
-            if(false == cloudResult.Item1)
+            Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.LoadUserData(dataKey);
+            if(ICloudService.ResultType.eSuccessed != cloudResult.Item1)
             {
                 Debug.Log($"<color=red>[CloudGateWay] : ReadData data from Cloud has been failed. [{dataKey}] </color>");
-                return false;
+                return cloudResult.Item1;
             }
-            else
-            {
-                Debug.Log($"<color=green>[CloudGateWay] : ReadData data from Cloud has been done. - [{dataKey}]</color>");
-                Debug.Log($"<color=green>[CloudGateWay] : [{cloudResult.Item2}]</color>");
-                serviceData = JsonUtility.FromJson<DataInService>(cloudResult.Item2);
-            }            
+            
+            Debug.Log($"<color=green>[CloudGateWay] : ReadData data from Cloud has been done. - [{dataKey}]</color>");
+            Debug.Log($"<color=green>[CloudGateWay] : [{cloudResult.Item2}]</color>");
+            serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(cloudResult.Item2);
             
             if(serviceData == null)
-                serviceData = new DataInService();
+                return ICloudService.ResultType.eUnknownError; 
 
             serviceData.Init();
-            return true;
+            return ICloudService.ResultType.eSuccessed;
+        }
+
+        public virtual string GetData(string model_id)
+        {
+            if(serviceData == null)
+                return string.Empty;
+
+            return serviceData.GetData(model_id);
         }
     } 
 }

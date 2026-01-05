@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using App.GamePlay.IdleMiner.Common.Types;
+using IGCore.PlatformService;
 
 public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 {
@@ -42,7 +43,7 @@ public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadGameCardData()
     {
-        FetchData((context as IdleMinerContext).ValidGatewayServiceIndex, DataKey, out gameCardBundle, new GameCardBundle());
+        FetchData((context as IdleMinerContext).TargetMetaDataGatewayServiceIndex, DataKey, out gameCardBundle, new GameCardBundle());
     }
 
     public override List<Tuple<string, string>> GetSaveDataWithKeys()

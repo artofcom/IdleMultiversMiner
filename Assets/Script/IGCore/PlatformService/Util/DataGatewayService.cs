@@ -5,89 +5,17 @@ using UnityEngine;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace IGCore.MVCS
+namespace IGCore.PlatformService
 {
-    public class DataGatewayService : IDataGatewayService
+    public class DataGatewayService : ILocalDataGatewayService
     {
-        [Serializable]
-        public class DataPair
-        {
-            public DataPair() { }
-            public DataPair(string key, string value) 
-            {
-                this.key = key;     this.value = value;
-            }
-            [SerializeField] string key;
-            [SerializeField] string value;
-
-            public string Key => key;
-            public string Value => value;
-        }
-
-        [Serializable]
-        public class  EnvironmentInfo
-        {
-            [SerializeField] string dataVersion;
-            [SerializeField] string appVersion;
-            [SerializeField] string deviceName;
-            [SerializeField] long timeStamp;
-
-            public EnvironmentInfo(string version, long timeStamp)
-            {
-                this.dataVersion = version;     
-                this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
-                this.timeStamp = timeStamp;// DateTime.UtcNow.Ticks;
-            }
-            public string DataVersion => dataVersion;
-            public string DeviceName => deviceName;
-            public long TimeStamp => timeStamp;
-            public string AppVersion => appVersion;
-        }
-
-        [Serializable]
-        public class DataInService
-        {
-            [SerializeField] EnvironmentInfo environment;
-            [SerializeField] List<DataPair> data;
-
-            Dictionary<string, string> dictData;
-            public DataInService()
-            {
-                data = new List<DataPair>();
-                environment = new EnvironmentInfo("1.0", 0);
-            }
-            public List<DataPair> Data          {   get => data; set => data = value;}
-            public EnvironmentInfo Environment  {   get => environment; set => environment = value; }
-            public void Init()
-            {
-                if(data == null)    return;
-
-                dictData = new Dictionary<string, string>();
-                for(int q = 0; q < data.Count; q++) 
-                    dictData.Add(data[q].Key, data[q].Value);
-            }
-            public string GetData(string key)
-            {
-                if(dictData!=null && dictData.ContainsKey(key))
-                    return dictData[key];
-                
-                return string.Empty;
-            }
-            public void Clear()
-            {
-                Data?.Clear();
-                dictData?.Clear();
-            }
-        }
-
-
         public string AccountId { get; set; } = string.Empty;
         public bool IsDirty { get; set; }
 
-        protected DataInService serviceData = new DataInService();
+        protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
         protected List<IWritableModel> models = new List<IWritableModel>();
 
-        public DataInService ServiceData => serviceData;
+        public DataGateWay.DataInService ServiceData => serviceData;
 
         public void RegisterDataModel(IWritableModel model)
         {
@@ -110,11 +38,12 @@ namespace IGCore.MVCS
             UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(AccountId));
 
             if(serviceData.Data == null)
-                serviceData.Data = new List<DataPair>();
+                serviceData.Data = new List<DataGateWay.DataPair>();
             
             if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                serviceData.Environment = new EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
 
+            serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
             serviceData.Clear();
 
             if(!clearAll)
@@ -127,7 +56,7 @@ namespace IGCore.MVCS
                         continue;
 
                     for(int q = 0; q < listDataSet.Count; q++)
-                        serviceData.Data.Add(new DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                        serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
                 }
             }
             
@@ -147,9 +76,9 @@ namespace IGCore.MVCS
             string fileNamePath = Path.Combine(Application.persistentDataPath, AccountId, dataKey + ".json");
             string jsonString = TextFileIO.ReadTextFile(fileNamePath);
 
-            serviceData = JsonUtility.FromJson<DataInService>(jsonString);
+            serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(jsonString);
             if(serviceData == null)
-                serviceData = new DataInService();
+                return Task.FromResult(false);  //serviceData = new DataInService();
 
             serviceData.Init();
             return Task.FromResult(true);

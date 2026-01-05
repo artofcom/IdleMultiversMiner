@@ -36,12 +36,7 @@ public class TitleScreen : AUnit
         model.Init();
         controller.Init();
         (analyticsService as IAnalyticsService).Init();
-
-        AuthService.EventOnSignedIn += OnSignedIn;
-        AuthService.EventOnSignInFailed += OnSignInFailed;
-        AuthService.EventOnSignOut += OnSignOut;
-        AuthService.EventOnSessionExpired += OnSessionExpired;
-
+       
         view.OnViewEnable += OnViewEnable;
     }
 
@@ -49,21 +44,16 @@ public class TitleScreen : AUnit
     {
         base.Dispose();
 
-        AuthService.EventOnSignedIn -= OnSignedIn;
-        AuthService.EventOnSignInFailed -= OnSignInFailed;
-        AuthService.EventOnSignOut -= OnSignOut;
-        AuthService.EventOnSessionExpired -= OnSessionExpired;
-
         view.OnViewEnable -= OnViewEnable;
     }
 
     void OnViewEnable()
     {}
 
-    void OnSignedIn(string playerId) {}
-    void OnSignInFailed(string msg) {}
-    void OnSignOut() { }
-    void OnSessionExpired() { }
+    //void OnSignedIn(string playerId) {}
+    //void OnSignInFailed(string msg) {}
+    //void OnSignOut() { }
+    //void OnSessionExpired() { }
 
     public void SwitchUnit(string nextUnit)
     {

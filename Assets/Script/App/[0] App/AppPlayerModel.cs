@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using IGCore.PlatformService;
 
 public class AppPlayerModel : MultiGatewayWritablePlayerModel
 {
@@ -51,7 +52,7 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
         string curSignedPlayerId = (string)context.GetData("PlayerId", string.Empty);
         //string lastSignedPlayerId = PlayerPrefs.GetString(DataKeys.PLAYER_ID, string.Empty);
 
-        int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+        int idxGatewayService = (context as IdleMinerContext).TargetMetaDataGatewayServiceIndex;
         // FetchData(idxGatewayService, EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
         FetchData(idxGatewayService, CurrencyDataKey, out metaCurrencyBundle, null);
 

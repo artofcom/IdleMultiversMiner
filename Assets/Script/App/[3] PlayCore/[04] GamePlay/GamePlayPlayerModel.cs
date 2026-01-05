@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner.GamePlay
 {
@@ -94,6 +95,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             {
                 planetInfo.OpenPlanet();
                 SetDirty();
+                (context as IdleMinerContext).SavePlayerDataInstantly();
                 return true;
             }
 
@@ -109,6 +111,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             unlockedZoneGroup.Add(zoneId, planetIds, distanceList);
             EventSystem.DispatchEvent(EventID.ZONE_UNLOCKED, zoneId);
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             return true;
         }
 
@@ -121,6 +124,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             info.Upgrade(stat, offsetUpLevel);
             EventSystem.DispatchEvent(EventID.MINING_STAT_UPGRADED, new Tuple<int, int>(zoneId, planetId));
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             return true;
         }
 
@@ -132,6 +136,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
             info.ResetStat(stat);
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             EventSystem.DispatchEvent(EventID.MINING_STAT_RESET, new Tuple<int, int>(zoneId, planetId));
         }
 
@@ -227,6 +232,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         public void UnlockZoneBooster(int zoneId, float duration, float buffRate, float coolTimeDuration)
         {
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             unlockedZoneGroup.UnlockMiningBooster(zoneId, duration, buffRate, coolTimeDuration);
         }
 
@@ -239,6 +245,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             if(planetInfo.TriggerBooster())
             {
                 SetDirty();
+                (context as IdleMinerContext).SavePlayerDataInstantly();
                 EventSystem.DispatchEvent(EventID.PLANET_BOOSTER_TRIGGERED, new Tuple<int, int>(zoneId, planetId));
                 return true;
             }
@@ -296,7 +303,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         //}
         void LoadPlanetData()
         {
-            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
             FetchData<ZoneGroupStatusInfo>(idxGatewayService, DateKey_ZoneInfo, out unlockedZoneGroup, fallback:new ZoneGroupStatusInfo());
         }
         void LoadSimPlanetData()

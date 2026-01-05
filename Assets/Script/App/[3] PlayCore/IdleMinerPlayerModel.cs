@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner
 {
@@ -378,13 +379,13 @@ namespace App.GamePlay.IdleMiner
         
         void LoadTimeStamp()
         {
-            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
             FetchData<string>(idxGatewayService, DataKey_TimeStamp, out timeStamp, fallback:string.Empty);
         }
 
         void LoadMoneyData()
         {
-            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
             FetchData<PlayerMoneyData>(idxGatewayService, DataKey_MoneyData, out moneyData, fallback:new PlayerMoneyData());
         }
 
@@ -413,7 +414,7 @@ namespace App.GamePlay.IdleMiner
         }
         void LoadOpenedTabBtns()
         {
-            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
             string textData = string.Empty;
             FetchData<string>(idxGatewayService, DataKey_OpenedTabBtns, out textData, fallback:string.Empty);
             

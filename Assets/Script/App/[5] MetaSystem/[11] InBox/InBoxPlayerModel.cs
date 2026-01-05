@@ -1,8 +1,7 @@
-using App.GamePlay.IdleMiner.Common.PlayerModel;
 using IGCore.MVCS;
+using IGCore.PlatformService;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class InBoxPlayerModel : MultiGatewayWritablePlayerModel
 {

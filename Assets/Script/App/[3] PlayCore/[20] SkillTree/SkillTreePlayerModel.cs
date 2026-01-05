@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner.Common.Types;
+using IGCore.PlatformService;
 
 namespace App.GamePlay.IdleMiner.SkillTree
 {
@@ -128,7 +129,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
             if(context.IsSimulationMode())
                 return;
             
-            int idxGatewayService = (context as IdleMinerContext).ValidGatewayServiceIndex;
+            int idxGatewayService = (context as IdleMinerContext).TargetGameDataGatewayServiceIndex;
             FetchData(idxGatewayService, DataKey_SkillTree, out skillTreeProcInfo, fallback:new SkillTreeProcInfo());
 
 //            ReadFileInternal<SkillAbilityInfo>($"{mAccount}_SkillAbilityData", ref skillAbilityInfo);
@@ -173,6 +174,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
 
             categoryProcInfo.Update(oldWorkingSkill, workingSkills);//, isLearned);
             SetDirty();
+            (context as IdleMinerContext).SavePlayerDataInstantly();
             return true;
         }
 

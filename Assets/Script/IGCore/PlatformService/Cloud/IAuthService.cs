@@ -24,6 +24,6 @@ namespace IGCore.PlatformService.Cloud
         void SignOut();
         bool IsAccountLinkedWithPlayer(string playerId);
         string GetManagementURL();
-        
+        string GetPlayerId();
     }
 }

@@ -4,6 +4,7 @@ using IGCore.MVCS;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using IGCore.PlatformService;
 
 [Serializable]
 public class  SettingData
@@ -45,7 +46,7 @@ public class SettingPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadSettingData()
     {
-        FetchData((context as IdleMinerContext).ValidGatewayServiceIndex, DataKey, out settingData, new SettingData());
+        FetchData((context as IdleMinerContext).TargetMetaDataGatewayServiceIndex, DataKey, out settingData, new SettingData());
     }
 
     public override List<Tuple<string, string>> GetSaveDataWithKeys()

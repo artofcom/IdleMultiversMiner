@@ -46,7 +46,7 @@ namespace IGCore.PlatformService.Cloud
                 }
                 catch(Exception e) 
                 {
-                    Debug.LogException(e);   
+                    Debug.LogWarning("[Auth] Exception : " + e.Message);   
                 }
 
                 await Task.Delay(retryInterval * 1000);
