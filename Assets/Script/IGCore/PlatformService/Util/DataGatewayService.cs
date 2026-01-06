@@ -9,7 +9,6 @@ namespace IGCore.PlatformService
 {
     public class DataGatewayService : ILocalDataGatewayService
     {
-        public string AccountId { get; set; } = string.Empty;
         public bool IsDirty { get; set; }
 
         protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
@@ -30,12 +29,12 @@ namespace IGCore.PlatformService
             models.Clear();
         }
 
-        public virtual Task<bool> WriteData(string dataKey, bool clearAll)
+        public virtual Task<bool> WriteData(string accountId, string dataKey, bool clearAll)
         {
             if(!IsDirty)        return Task.FromResult(false);
 
             IsDirty = false;
-            UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(AccountId));
+            UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(accountId));
 
             if(serviceData.Data == null)
                 serviceData.Data = new List<DataGateWay.DataPair>();
@@ -60,7 +59,7 @@ namespace IGCore.PlatformService
                 }
             }
             
-            string fullPath = Path.Combine(Application.persistentDataPath, AccountId);
+            string fullPath = Path.Combine(Application.persistentDataPath, accountId);
             if (!Directory.Exists(fullPath))
                 Directory.CreateDirectory(fullPath);
 
@@ -71,9 +70,9 @@ namespace IGCore.PlatformService
             return Task.FromResult(true);
         }
 
-        public virtual Task<bool> ReadData(string dataKey)
+        public virtual Task<bool> ReadData(string accountId, string dataKey)
         {
-            string fileNamePath = Path.Combine(Application.persistentDataPath, AccountId, dataKey + ".json");
+            string fileNamePath = Path.Combine(Application.persistentDataPath, accountId, dataKey + ".json");
             string jsonString = TextFileIO.ReadTextFile(fileNamePath);
 
             serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(jsonString);

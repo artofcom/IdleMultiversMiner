@@ -47,7 +47,7 @@ public sealed partial class IdleMinerContext : AContext
 #if UNITY_EDITOR
             if(Application.isPlaying)
             {
-                Assert.IsTrue(false == string.IsNullOrEmpty( (string)_instance.GetData("gameKey") ));
+                Assert.IsTrue(false==string.IsNullOrEmpty( (string)_instance.GetData("gameKey") ), "GameKey should not be empty!" );
                 return (string)_instance.GetData("gameKey");
             }
             return PlayScreen.EditorGameKey;
@@ -105,18 +105,14 @@ public sealed partial class IdleMinerContext : AContext
     
     #region DataController Wrapper
     
-    public void InitDataControllerOnSignIn()
-    {
-        dataController?.InitOnSignIn();  
-    }
     public void SavePrevPlayerId(string playerId)
     {
         dataController?.SavePrevPlayerId(playerId);
     }
 
-    public async Task SelectDataLocationAsync()
+    public async Task<bool> LoadUserDataAsync(bool isMetaData)
     {
-        await dataController.SelectDataLocationAsync();
+        return await dataController.LoadUserDataAsync(isMetaData);
     }
     public void SaveMetaDataInstantly()
     {

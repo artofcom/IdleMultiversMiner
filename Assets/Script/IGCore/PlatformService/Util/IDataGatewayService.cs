@@ -8,7 +8,6 @@ namespace IGCore.PlatformService
 {
     public interface IDataGatewayService 
     {
-        string AccountId { get; set; }
         bool IsDirty { get; set; }
 
         void RegisterDataModel(IWritableModel model);
@@ -21,14 +20,14 @@ namespace IGCore.PlatformService
 
     public interface ILocalDataGatewayService : IDataGatewayService
     {
-        Task<bool> WriteData(string dataKey, bool clearAll);
-        Task<bool> ReadData(string dataKey);
+        Task<bool> WriteData(string accountId, string dataKey, bool clearAll);
+        Task<bool> ReadData(string accountId, string dataKey);
     }
 
     public interface ICloudDataGatewayService : IDataGatewayService
     {
         Task<ICloudService.ResultType> WriteData(string dataKey, bool clearAll);
-        Task<ICloudService.ResultType> ReadData(string dataKey);
+        Task<ICloudService.ResultType> ReadData( string dataKey);
     }
 
 

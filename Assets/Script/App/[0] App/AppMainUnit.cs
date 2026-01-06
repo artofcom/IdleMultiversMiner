@@ -6,6 +6,7 @@ using IGCore.PlatformService.Cloud;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -63,13 +64,17 @@ public class AppMainUnit : AUnit
 
     async Task LoadAppMetaDataModel(string curSignedPlayerId)
     {   
-        IMContext.InitDataControllerOnSignIn();
-        
         playerModel = new AppPlayerModel(_minerContext, IMContext.MetaGatewayServiceList);
         model = new AppModel(_minerContext, playerModel);
         controller = new AppController(this, view, model, _minerContext);
 
-        await IMContext.SelectDataLocationAsync();
+        bool isDone = false;
+        while(Application.isPlaying && !isDone)
+        {
+            isDone = await IMContext.LoadUserDataAsync(isMetaData:true);
+            await Task.Delay(1000);
+            Debug.Log("Try Selecting Load Meta Data....Local / Cloud / Guest..");
+        }
 
         // Init Modulels with loading data.
         model.Init();

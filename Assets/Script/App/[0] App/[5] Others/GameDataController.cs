@@ -4,14 +4,10 @@ using IGCore.PlatformService;
 using IGCore.PlatformService.Cloud;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using Unity.Services.CloudSave;
 using UnityEngine;
 using UnityEngine.Assertions;
-using static UnityEditor.ShaderData;
 
 public sealed partial class IdleMinerContext : AContext
 {
@@ -21,13 +17,60 @@ public sealed partial class IdleMinerContext : AContext
     // Internal class so it can access to all private members of the IdleMinerContext.
     public class GameDataController
     {
-        const int IDX_LOCA_DATA_SERVICE = 0;
-        const int IDX_CLOUD_DATA_SERVICE = 1;
+
+        //  상황                   Signed In        로컬(ID_A)      클라우드       게스트       선택                  판정 및 액션 (Action)
+        //  1. 클린 신규           Online   0           X                X            X         Local       [신규 생성] 아무 데이터도 없으므로 새 시작
+        //  2. 게스트 연동         Online   0           X                X            O         Local       [마이그레이션] 게스트 -> ID_A 복사 후 게스트 삭제
+        //  3. 기기 변경           Online   0           X                O            X         Cloud       [다운로드] 클라우드 데이터를 ID_A에 내려받음
+        //  4. 데이터 충돌         Online   0           X                O            O         Latter      [최신데이터 선택]
+        
+        //  5. 단순 이어하기       Online   0           O                X            X         Local       [업로드] ID_A 를 클라우드 업로드
+        //  6. 단순 이어하기       Online   0           O                X            O         Latter      [최신데이터 선택]
+        //  7. 단순 이어하기       Online   0           O                O            X         Latter      [최신데이터 선택]
+        //  8. 복합 충돌           Online   0           O                O            O         Latter      [최신데이터 선택]
+        
+        //  9. Network Error       Online   O           O         미확인(Error)       X         Local       로컬에만 업데이트 & timestamp 고정. 이후 온라인시 클라우드가 최신이면 user에게 물어봄.
+        // 10.                     Online   O           O         미확인(Error)       O         Local       Act like 9 and Guest 삭제.
+        // 11                      Online   O           X         미확인(Error)       X          X          Retry 후 네트워크 상태 확인 창.
+        // 12                      Online   O           X         미확인(Error)       O          X          Retry 후 네트워크 상태 확인 창.
+
+        //  13 오프라인 신규       Offline  X           X              미확인         X         Local       [게스트] 신규 Device 게스트 Player.
+        //  14 오프라인 게스트     Offline  X           X              미확인         O         Local       [게스트 유지] 오프라인이므로 게스트 ID로 플레이
+        //  15 오프라인 복귀       Offline  X           O              미확인         X         Local       [로컬 우선] 네트워크 확인 불가하므로 ID_A 로드
+        //  16 Offline Player      Offline  X           O              미확인         O         Local       ID_A 로드, 게스트 삭제.
+        
+        enum AccountStatus
+        {
+            SignedIn_X_Local_X_Cloud_X_Guest_X, 
+            SignedIn_X_Local_X_Cloud_X_Guest_O, 
+            SignedIn_X_Local_O_Cloud_X_Guest_X, 
+            SignedIn_X_Local_O_Cloud_X_Guest_O, 
+
+            SignedIn_O_Local_X_Cloud_X_Guest_X, 
+            SignedIn_O_Local_X_Cloud_X_Guest_O, 
+            SignedIn_O_Local_X_Cloud_O_Guest_X, 
+            SignedIn_O_Local_X_Cloud_O_Guest_O, 
+
+            SignedIn_O_Local_O_Cloud_X_Guest_X, 
+            SignedIn_O_Local_O_Cloud_X_Guest_O, 
+            SignedIn_O_Local_O_Cloud_O_Guest_X, 
+            SignedIn_O_Local_O_Cloud_O_Guest_O, 
+
+            SignedIn_O_Local_X_Cloud_Err_Guest_X, 
+            SignedIn_O_Local_X_Cloud_Err_Guest_O, 
+            SignedIn_O_Local_O_Cloud_Err_Guest_X, 
+            SignedIn_O_Local_O_Cloud_Err_Guest_O, 
+        }
+
+
+        const int LOCAL_DATA_SERVICE_IDX = 0;
+        const int CLOUD_DATA_SERVICE_IDX = 1;
 
         IdleMinerContext contextCache;
 
-        ILocalDataGatewayService metaDataGatewayService, gameCoreGatewayService;
-        ICloudDataGatewayService metaDataCloudGatewayService, gameCoreCloudGatewayService;
+        ILocalDataGatewayService guestMetaDataGatewayService, guestGameDataGatewayService;
+        ILocalDataGatewayService metaDataGatewayService, gameDataGatewayService;
+        ICloudDataGatewayService metaDataCloudGatewayService, gameDataCloudGatewayService;
 
         // !!! Service SubScriber PlayerModel should fetch data via this index.
         public int TargetMetaDataGatewayServiceIndex { get; private set; } = -1;
@@ -41,7 +84,9 @@ public sealed partial class IdleMinerContext : AContext
         
         const string META_DATA_KEY = "MetaData";
         const string DEVICE_GUEST = "device_guest_id";
-        //AccountStatus eAccountStatus = AccountStatus.UNKNOWN;
+        
+        public string PlayerId { get; private set; } = "";
+
         IAuthService authService;
         ICloudService cloudService;
 
@@ -51,225 +96,186 @@ public sealed partial class IdleMinerContext : AContext
 
             this.authService = authService;
             this.cloudService = cloudService;
-            gameCoreGatewayService = new DataGatewayService();
+            guestMetaDataGatewayService = new DataGatewayService();
+            guestGameDataGatewayService = new DataGatewayService();
+            gameDataGatewayService = new DataGatewayService();
             metaDataGatewayService = new DataGatewayService();
-            gameCoreCloudGatewayService = new DataCloudGatewayService(cloudService);
+            gameDataCloudGatewayService = new DataCloudGatewayService(cloudService);
             metaDataCloudGatewayService = new DataCloudGatewayService(cloudService);
 
-            gameGatewayServiceList = new List<IDataGatewayService>() { gameCoreGatewayService, gameCoreCloudGatewayService };      
+            gameGatewayServiceList = new List<IDataGatewayService>() { gameDataGatewayService, gameDataCloudGatewayService };      
             metaGatewayServiceList = new List<IDataGatewayService>() { metaDataGatewayService,  metaDataCloudGatewayService }; 
         }
 
         public void Init()   {}
 
-        public void InitOnSignIn()
+        // isMetaData : false => GameData.
+        public async Task<bool> LoadUserDataAsync(bool isMetaData)
         {
-            /*string prevSignedPlayerId = PlayerPrefs.GetString(DataKeys.PREV_PLAYER_ID, string.Empty);
-            Debug.Log($"<color=green>[AppMain] Singed PlayerId [{prevSignedPlayerId}] / [{curSignedPlayerId}] </color>");
-
-            string dataLocation = isOnline ? "CLOUD" : "LOCAL";
-            Debug.Log($"<color=green>[AppMain] Target Data Location : [{dataLocation}]</color>");
-
-            if(!isOnline)
-                curSignedPlayerId = DEVICE_GUEST;
-
-            /*
-            eAccountStatus = GetAccountStatusById(prevSignedPlayerId, curSignedPlayerId);
-            switch(eAccountStatus)
+            try
             {
-            case AccountStatus.NULL_2_ID_A:             // [Cloud] Signed In Player.
-                SavePrevPlayerId(curSignedPlayerId);
-                break;
-            case AccountStatus.NULL_2_NULL:             // [Local] Offline Guest. => DEVICE_ID
-                curSignedPlayerId = DEVICE_GUEST;
-                SavePrevPlayerId(curSignedPlayerId);
-                break;
-            case AccountStatus.DEVICE_ID_2_NULL:        // [Local] Local Data of Device_id
-                curSignedPlayerId = DEVICE_GUEST;    
-                break;
+                var taskCloudInit = WaitUntil(() => cloudService.IsInitialized());
+                var timeOut = Task.Delay(5000);
+                var completedTask = await Task.WhenAny(taskCloudInit, timeOut);
 
-            case AccountStatus.DEVICE_ID_2_ID_A:        // [Cloud] Migrate device_id guest data to ID_A
-            {
-                bool ret = MigrateDataFilesToPlayer(Path.Combine(Application.persistentDataPath, DEVICE_GUEST), Path.Combine(Application.persistentDataPath, curSignedPlayerId));
-                if(false == ret)
-                { 
-                    Debug.Log($"<color=red>[Migration] Data migration has been failed. Let's Keep using device_id for now...</color>");
-                    curSignedPlayerId = DEVICE_GUEST;
-                    isOnline = false;
-                }
-                else 
-                    SavePrevPlayerId(curSignedPlayerId);
-                break;
-            }
-            case AccountStatus.ID_A_2_NULL:             // [Local] Local Data of ID_A
-                curSignedPlayerId = prevSignedPlayerId;    
-                break;
-            case AccountStatus.ID_A_2_ID_A:             // [Any] Local Data of ID_A
-                break;
-            case AccountStatus.ID_A_2_ID_B:             // [Cloud] Local Data of ID_B
-                SavePrevPlayerId(curSignedPlayerId);
-                break;
-            default:
-                Assert.IsTrue(false, "Unknown Status !!! " + eAccountStatus);
-                break;
-            }
-        
-            // Logging.
-            dataLocation = isOnline ? "CLOUD" : "LOCAL";
-            */
-            // Debug.Log($"<color=green>[AppMain] Aligned Type [{eAccountStatus}], Target [{dataLocation}], Singed PlayerId [{prevSignedPlayerId}] / [{curSignedPlayerId}] </color>");
-        
-            //bool isOnline = authService.IsSignedIn(); 
-            //string curSignedPlayerId = string.IsNullOrEmpty(authService.GetPlayerId()) ? DEVICE_GUEST : authService.GetPlayerId();
-            //Assert.IsTrue(!string.IsNullOrEmpty(curSignedPlayerId));
+                PlayerId = isMetaData ? authService.GetPlayerId() : PlayerId;
 
-            // Assign Proper Cur Signed In Player Id.
-            //contextCache.UpdateData("PlayerId", curSignedPlayerId);
+                SetTargetGatewayServiceIndex(isMetaData, authService.IsSignedIn() ? CLOUD_DATA_SERVICE_IDX : LOCAL_DATA_SERVICE_IDX);
 
-           // Debug.Log($"<color=green>[DataController] IsOnline [{authService.IsSignedIn()}], PlayerId [{curSignedPlayerId}]</color>");
+                var loadRet = await TryLoadAllUserData(isMetaData);
 
-            // Set Target Data Location.
-            //contextCache.UpdateData("ShouldUseCloudData", shouldUseCloudData);   
-        }
+                AccountStatus eAccStatus = GetAccountStatus(loadRet.Item1, loadRet.Item2, loadRet.Item3, loadRet.Item4);
 
-        //  상황                  네트워크           로컬(ID_A)      클라우드       게스트       선택                  판정 및 액션 (Action)
-        //  1. 클린 신규           Online   0           X                X            X         Local       [신규 생성] 아무 데이터도 없으므로 새 시작
-        //  3. 게스트 연동         Online   0           X                X            O         Local       [마이그레이션] 게스트 -> ID_A 복사 후 게스트 삭제
-        //  4. 기기 변경           Online   0           X                O            X         Cloud       [다운로드] 클라우드 데이터를 ID_A에 내려받음
-        //  7. 데이터 충돌         Online   0           X                O            O         Latter      [최신데이터 선택]
-        
-        //  -. 단순 이어하기       Online   0           O                X            X         Local       [업로드] ID_A 를 클라우드 업로드
-        //  5. 단순 이어하기       Online   0           O                X            O         Latter      [최신데이터 선택]
-        //  -. 단순 이어하기       Online   0           O                O            X         Latter      [최신데이터 선택]
-        //  8. 복합 충돌           Online   0           O                O            O         Latter      [최신데이터 선택]
-        
-        // 클라우드 파일얻기 실패  Online   O           O              미확인         X         Local       로컬에만 업데이트 & timestamp 고정. 이후 온라인시 클라우드가 최신이면 user에게 물어봄.
-        //                         Online   O           X              미확인         X          X          Retry 후 네트워크 상태 확인 창.
-        //                         Online   O           X              미확인         O          X          Retry 후 네트워크 상태 확인 창.
-
-        //  0. 오프라인 신규       Offline  X           X              미확인         X         Local       [게스트] 신규 Device 게스트 Player.
-        //  2. 오프라인 게스트     Offline  X           X              미확인         O         Local       [게스트 유지] 오프라인이므로 게스트 ID로 플레이
-        //  6. 오프라인 복귀       Offline  X           O              미확인         X         Local       [로컬 우선] 네트워크 확인 불가하므로 ID_A 로드
-        
-        
-
-        public async Task SelectDataLocationAsync()
-        {
-            bool isOnline = authService.IsSignedIn();
-            bool isFoundLocalData = false;
-            bool isFoundCloudData = true;
-            bool isSuccessedFetchingCloudData = true;
-            bool isFoundLocalGuestData = false;
-
-
-            TargetMetaDataGatewayServiceIndex = isOnline ? IDX_CLOUD_DATA_SERVICE : IDX_LOCA_DATA_SERVICE;
-
-            SetSignedInPlayerIdForGatewayServices(DEVICE_GUEST);
-            isFoundLocalGuestData = await metaDataGatewayService.ReadData(META_DATA_KEY);
-
-            string curSignedPlayerId = authService.GetPlayerId();             
-
-            if (isOnline) 
-            {
-                Assert.IsTrue(!string.IsNullOrEmpty(curSignedPlayerId));
-                SetSignedInPlayerIdForGatewayServices(curSignedPlayerId);
-
-                var loadTask = metaDataCloudGatewayService.ReadData(META_DATA_KEY);   //CloudSaveService.Instance.Data.Player.LoadAsync(new HashSet<string> { key });
-                var timeoutTask = Task.Delay(5000);
-
-                var completedTask = await Task.WhenAny(loadTask, timeoutTask);
-                if (completedTask == timeoutTask)
+                int selectedIndex = 0;
+                switch( eAccStatus )
                 {
-                    Debug.LogWarning("[Cloud] Meta Data Server response timeout !");
-                    isSuccessedFetchingCloudData = false;
-                }
-                else
-                {
-                    if(loadTask.Result == ICloudService.ResultType.eDataNotFound)
-                        isFoundCloudData = false;
-                    if(loadTask.Result != ICloudService.ResultType.eSuccessed)
-                        isSuccessedFetchingCloudData = false;
-                    else
-                        isFoundLocalData = await metaDataGatewayService.ReadData(META_DATA_KEY);
-                }
+                case AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_O:          // 16. Offline Player
+                    if(isMetaData)  DeleteDeviceGuestDataFiles();
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
 
-                
-                if(!isSuccessedFetchingCloudData)
+                case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_X:          // 13. Offline New Device Guest
+                case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_O:          // 14. Offline Device-Guest                    
+                    PlayerId = DEVICE_GUEST;
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+
+                case AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_X:          // 15. Offline Player
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+
+
+                case AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_X:          // 01. New Player Account.
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+                case AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_O:          // 02. Promote Guest to Player.
+                    if(isMetaData)
+                    { 
+                        MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                        await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);
+                    }
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+                case AccountStatus.SignedIn_O_Local_X_Cloud_O_Guest_X:          // 03. Use Cloud Data.
+                    SetTargetGatewayServiceIndex(isMetaData, CLOUD_DATA_SERVICE_IDX);
+                    break;
+                case AccountStatus.SignedIn_O_Local_X_Cloud_O_Guest_O:          // 04. Select [DeviceGuest VS Cloud]
                 {
-                    TargetMetaDataGatewayServiceIndex = IDX_LOCA_DATA_SERVICE;
-                }
-                else
-                {
-                    if(isFoundLocalData)
+                    var guestGWS = isMetaData ? guestMetaDataGatewayService : guestGameDataGatewayService;
+                    var cloudGWS = isMetaData ? metaDataCloudGatewayService : gameDataCloudGatewayService;
+                    selectedIndex = SelectLatestDataGatewayService( (
+                                guestGWS as DataGatewayService).ServiceData.Environment.TimeStamp, 
+                                (cloudGWS as DataCloudGatewayService).ServiceData.Environment.TimeStamp);
+                    if(isMetaData && selectedIndex==0)
                     {
-                        if(isFoundCloudData)
-                        {
-                            if(isFoundLocalGuestData)
-                                ; //TargetMetaDataGatewayServiceIndex = Compare_Cloud_Guest
-                            else 
-                                TargetMetaDataGatewayServiceIndex = IDX_CLOUD_DATA_SERVICE;
+                        MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                        await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);
+                    }
+                    SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
+                    break;
+                }
+                case AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_X:          // 05. Use Local Data.
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+                case AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_O:          // 06. Select [DeviceGuest VS Local]
+                {
+                    var guestGWS = isMetaData ? guestMetaDataGatewayService : guestGameDataGatewayService;
+                    var localGWS = isMetaData ? metaDataGatewayService : gameDataGatewayService;
+
+                    selectedIndex = SelectLatestDataGatewayService(
+                                (guestGWS as DataGatewayService).ServiceData.Environment.TimeStamp, 
+                                (localGWS as DataGatewayService).ServiceData.Environment.TimeStamp);
+                    if(isMetaData && selectedIndex==0)
+                    {
+                        MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                        await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);
+                    }
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+                }
+                case AccountStatus.SignedIn_O_Local_O_Cloud_O_Guest_X:          // 07. Select [Local VS Cloud]
+                {
+                    var localGWS = isMetaData ? metaDataGatewayService : gameDataGatewayService;
+                    var cloudGWS = isMetaData ? metaDataCloudGatewayService : gameDataCloudGatewayService;
+                    selectedIndex = SelectLatestDataGatewayService(
+                                (localGWS as DataGatewayService).ServiceData.Environment.TimeStamp, 
+                                (cloudGWS as DataCloudGatewayService).ServiceData.Environment.TimeStamp);
+                    SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
+                    break;
+                }
+                case AccountStatus.SignedIn_O_Local_O_Cloud_O_Guest_O:          // 08. Select [Guest VS Local VS Cloud]
+                {
+                    var guestGWS = isMetaData ? guestMetaDataGatewayService : guestGameDataGatewayService;
+                    var localGWS = isMetaData ? metaDataGatewayService : gameDataGatewayService;
+                    var cloudGWS = isMetaData ? metaDataCloudGatewayService : gameDataCloudGatewayService;
+
+                    selectedIndex = SelectLatestDataGatewayService(
+                                (guestGWS as DataGatewayService).ServiceData.Environment.TimeStamp,
+                                (localGWS as DataGatewayService).ServiceData.Environment.TimeStamp, 
+                                (cloudGWS as DataCloudGatewayService).ServiceData.Environment.TimeStamp);
+                    if(selectedIndex == 0)
+                    {
+                        if(isMetaData)
+                        { 
+                            MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                            await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);
                         }
-                        else 
-                            TargetMetaDataGatewayServiceIndex = IDX_LOCA_DATA_SERVICE;
+                        SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
                     }
-                    else // ! isFoundLocalData
-                    {
-                        if(isFoundCloudData)
-                            ; // compare.
-                        else 
-                            TargetMetaDataGatewayServiceIndex = IDX_LOCA_DATA_SERVICE;
-                    }
+                    else if(selectedIndex == 1)
+                        SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    else 
+                        SetTargetGatewayServiceIndex(isMetaData, CLOUD_DATA_SERVICE_IDX);
+                    break;
                 }
-               // string target = TargetMetaDataGatewayServiceIndex == IDX_LOCA_DATA_SERVICE ? "LOCAL" : "CLOUD";
-               // Debug.Log($"[AppMain] Data Selector : [{target}] data has been selected for MetaData.");
+                case AccountStatus.SignedIn_O_Local_X_Cloud_Err_Guest_X:        // 11. Cloud data 얻기 실패 after sign in ==> Retry for now.
+                case AccountStatus.SignedIn_O_Local_X_Cloud_Err_Guest_O:        // 12
+                    // UNACCEPTABLE CASE - RETRY !!!
+                    return false;
+                case AccountStatus.SignedIn_O_Local_O_Cloud_Err_Guest_O:        // 10
+                    // DeleteDeviceGuestDataFiles();
+                    return false;
+                case AccountStatus.SignedIn_O_Local_O_Cloud_Err_Guest_X:        // 09
+                    // Write Data on Local with No TimeStamp Updates, and then once back to online, compare timestamp. -> if cloud is later then ask player what to select.
+                    //TargetMetaDataGatewayServiceIndex = IDX_LOCA_DATA_SERVICE;
+                    return false;
+                default:
+                    Assert.IsTrue(false, $"Unacceptable case {eAccStatus} found !!!" );
+                    break;
+                }
+
+                if(isMetaData)  {   Assert.IsTrue(TargetMetaDataGatewayServiceIndex >= 0, $"Invalid Target Meta GatewayValue : {TargetMetaDataGatewayServiceIndex}");  }
+                else            {   Assert.IsTrue(TargetGameDataGatewayServiceIndex >= 0, $"Invalid Target Game GatewayValue : {TargetGameDataGatewayServiceIndex}");  }
+
+                Assert.IsTrue(!string.IsNullOrEmpty(PlayerId), "Player Id is empty !");
+                contextCache.UpdateData("PlayerId", PlayerId);
+
+                // Logging.
+                int curIdx = isMetaData ? TargetMetaDataGatewayServiceIndex : TargetGameDataGatewayServiceIndex;
+                string target = curIdx==LOCAL_DATA_SERVICE_IDX ? "LOCAL" : "CLOUD";
+                Debug.Log($"<color=green>[DataCtrl][Info] status [{eAccStatus}], Target [{target}], PlayerId [{PlayerId}] </color>");
+                return true;
             }
-            else
+            catch( Exception ex ) 
             {
-                if(!string.IsNullOrEmpty(curSignedPlayerId))
-                {
-                    SetSignedInPlayerIdForGatewayServices(curSignedPlayerId);
-
-                    isFoundLocalData = await FetchLocalData();
-                    if(isFoundLocalData == false)
-                    {
-                        // Time to Reset Your game data.
-                        Debug.Log("<color=red>[AppMain] Failed to read local data.. Resetting All Data...</color>");
-                    }
-                }
-
-                TargetMetaDataGatewayServiceIndex = IDX_LOCA_DATA_SERVICE;
+                Debug.LogWarning("[DataCotnroller] : " + ex.Message);
+                return false;
             }
         }
 
     
         public async Task InitGame()
         {
-            gameCoreGatewayService.ClearModels();
-            gameCoreCloudGatewayService.ClearModels();
+            gameDataGatewayService.ClearModels();
+            gameDataCloudGatewayService.ClearModels();
 
-            // fix here = AddData selection logic.
-            bool shouldUseCloudData = (bool)contextCache.GetData("ShouldUseCloudData", false);
-        
-            TargetGameDataGatewayServiceIndex = shouldUseCloudData ? IDX_CLOUD_DATA_SERVICE : IDX_LOCA_DATA_SERVICE;
-            if(shouldUseCloudData)
+            bool isDone = false;
+            while(Application.isPlaying && !isDone)
             {
-                bool ret = await LoadPlayerData(IDX_CLOUD_DATA_SERVICE);
-                while(Application.isPlaying && !ret)
-                {
-                    await Task.Delay(1000);
-                    Debug.Log("[Contex] Try Load GameData in Cloud.");
-                    ret = await LoadPlayerData(IDX_CLOUD_DATA_SERVICE);
-                }
-
-                bool fetchLocalData = await LoadPlayerData(IDX_LOCA_DATA_SERVICE);
-            
-                TargetGameDataGatewayServiceIndex = fetchLocalData==false ? IDX_CLOUD_DATA_SERVICE : GetLatestGameDataIndex();
-
-                string target = TargetGameDataGatewayServiceIndex == IDX_LOCA_DATA_SERVICE ? "LOCAL" : "CLOUD";
-                Debug.Log($"[Context] Data Selector : [{target}] data has been selected for GamePlayerData.");
+                isDone = await LoadUserDataAsync(isMetaData:false);
+                await Task.Delay(1000);
+                Debug.Log("Try Selecting Load Meta Data....Local / Cloud / Guest..");
             }
-            else
-                await LoadPlayerData(TargetGameDataGatewayServiceIndex);
         }
 
         public void DisposeGame()
@@ -299,7 +305,7 @@ public sealed partial class IdleMinerContext : AContext
        
             if(isLocal)
             {
-                bool ret = await gameCoreGatewayService.WriteData(dataKey, clearAll);
+                bool ret = await gameDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"), dataKey, clearAll);
                 if(ret)
                 {
                     Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
@@ -308,7 +314,7 @@ public sealed partial class IdleMinerContext : AContext
             }
             else
             {
-                if(ICloudService.ResultType.eSuccessed == await gameCoreCloudGatewayService.WriteData(dataKey, clearAll))
+                if(ICloudService.ResultType.eSuccessed == await gameDataCloudGatewayService.WriteData(dataKey, clearAll))
                 {
                     Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");
                     return true;
@@ -316,58 +322,20 @@ public sealed partial class IdleMinerContext : AContext
             }
             return false;
         }
-        async Task<bool> LoadPlayerData(int idxGatewayService)
-        {   
-            if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
-            {
-                Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
-                return false;
-            }
-
-            IDataGatewayService dataGatewayService = GameGatewayServiceList[idxGatewayService];
-
-            string dataKey = $"{GameKey}_PlayerData";
-            if(idxGatewayService == IDX_LOCA_DATA_SERVICE)
-            {
-                return await (dataGatewayService as ILocalDataGatewayService).ReadData(dataKey);
-            }
-            else
-            {
-                return (ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey));
-            }
-        }
+        
         public void ResetPlayerData()
         {
             SavePlayerData(isLocal:true, clearAll:true).Forget();
             SavePlayerData(isLocal:false, clearAll:true).Forget();
         }
-        public async Task<bool> LoadMetaData(int idxGatewayService)
-        {
-            if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
-            {
-                Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
-                return false;
-            }
         
-            IDataGatewayService dataGatewayService = MetaGatewayServiceList[idxGatewayService];
-
-            string dataKey = "MetaData";
-            if(idxGatewayService == IDX_LOCA_DATA_SERVICE)
-            {
-                return await (dataGatewayService as ILocalDataGatewayService).ReadData(dataKey);
-            }
-            else
-            {
-                return ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey);
-            }
-        }
         async Task<bool> SaveMetaData(bool isLocal)
         {
             string dataKey = "MetaData";
 
             if(isLocal)
             {
-                bool ret = await metaDataGatewayService.WriteData(dataKey, clearAll:false);
+                bool ret = await metaDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"),dataKey, clearAll:false);
                 if(ret)
                 {
                     Debug.Log("<color=blue>[Data] Storing Meta Data in Local has been successed.</color>");
@@ -384,49 +352,7 @@ public sealed partial class IdleMinerContext : AContext
             }
             return false;
         }
-        public int GetLatestMetaDataIndex()
-        {
-            Assert.IsNotNull(metaDataGatewayService);
-            Assert.IsNotNull((metaDataGatewayService as DataGatewayService));
-            Assert.IsNotNull((metaDataGatewayService as DataGatewayService).ServiceData);
-            Assert.IsNotNull((metaDataGatewayService as DataGatewayService).ServiceData.Environment);
-
-            Assert.IsNotNull(metaDataCloudGatewayService);
-            Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService));
-            Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService).ServiceData);
-            Assert.IsNotNull((metaDataCloudGatewayService as DataGatewayService).ServiceData.Environment);
-
-            long localDataTS = (metaDataGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
-            long cloudDataTS = (metaDataCloudGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
-
-            return localDataTS >= cloudDataTS ? IDX_LOCA_DATA_SERVICE : IDX_CLOUD_DATA_SERVICE; 
-        }
-        public int GetLatestGameDataIndex()
-        {
-            Assert.IsNotNull(gameCoreGatewayService);
-            Assert.IsNotNull((gameCoreGatewayService as DataGatewayService));
-            Assert.IsNotNull((gameCoreGatewayService as DataGatewayService).ServiceData);
-            Assert.IsNotNull((gameCoreGatewayService as DataGatewayService).ServiceData.Environment);
-
-            Assert.IsNotNull(gameCoreCloudGatewayService);
-            Assert.IsNotNull((gameCoreCloudGatewayService as DataGatewayService));
-            Assert.IsNotNull((gameCoreCloudGatewayService as DataGatewayService).ServiceData);
-            Assert.IsNotNull((gameCoreCloudGatewayService as DataGatewayService).ServiceData.Environment);
-
-            long localDataTS = (gameCoreGatewayService as DataGatewayService).ServiceData.Environment.TimeStamp;
-            long cloudDataTS = (gameCoreCloudGatewayService  as DataGatewayService).ServiceData.Environment.TimeStamp;
-
-            return localDataTS >= cloudDataTS ? IDX_LOCA_DATA_SERVICE : IDX_CLOUD_DATA_SERVICE; 
-        }
-        // 
-        public void SetSignedInPlayerIdForGatewayServices(string playerId)
-        {
-            // Set account id for the gateway services to nativate file paths.
-            metaDataGatewayService.AccountId = playerId;
-            metaDataCloudGatewayService.AccountId = playerId;
-            gameCoreGatewayService.AccountId = playerId;
-            gameCoreCloudGatewayService.AccountId = playerId;
-        }
+        
 
         public void RunMetaDataSaveDog()
         {
@@ -485,38 +411,6 @@ public sealed partial class IdleMinerContext : AContext
             PlayerPrefs.Save();
         }
 
-        async Task<bool> FetchLocalData()
-        {
-            await Task.Delay(100);
-        
-            bool ret = await LoadMetaData( IDX_LOCA_DATA_SERVICE );
-
-            return ret;
-        }
-
-        async Task<bool> FetchCloudData() 
-        {
-            long elTime = 0;
-            int interval = 500;
-            int MaxNetworkWaitSec = 5;
-            while (Application.isPlaying && !cloudService.IsInitialized() && elTime<=MaxNetworkWaitSec*1000)
-            {
-                await Task.Delay(interval);
-                elTime += interval;
-            }
-
-            if(!cloudService.IsInitialized())
-            {
-                Debug.Log("<color=red>[AppMain] Fetching Data From Cloud has been failed due to time-out. </color>");
-                return false;
-            }
-
-           // return ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey);
-
-            bool ret  = await LoadMetaData( IDX_CLOUD_DATA_SERVICE );
-            return ret;
-        }
-
         bool MigrateDataFilesToPlayer(string sourceDir, string destDir)
         {
             try
@@ -552,6 +446,286 @@ public sealed partial class IdleMinerContext : AContext
                 return false;
             }
         }
+        
+        bool DeleteDeviceGuestDataFiles()
+        {
+            try
+            {
+                const string sourceDir = DEVICE_GUEST;
+
+                if (!Directory.Exists(sourceDir))
+                    return false;
+
+                if (Directory.Exists(sourceDir))
+                {
+                    Directory.Delete(sourceDir, recursive:true); 
+                    Debug.Log("[DataController] : Guest Folder has been deleted.");
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"[DataController] Expection has happened during deletion process : {e.Message}");
+                return false;
+            }
+        }
+
+        // foundLocal, foundCloud, foundGuest, failedToLoadCloudDueToNetwork
+        //
+        async Task<Tuple<bool, bool, bool, bool>> TryLoadAllUserData(bool isMetaData)
+        {
+            bool isFoundLocalData = false;
+            bool isFoundCloudData = false;
+            bool hadErrorWhenFetchingCloudData = false;
+
+            // Try Load Local Guest.
+            string gameDataKey = isMetaData ? string.Empty : $"{GameKey}_PlayerData";
+            bool isFoundLocalGuestData = isMetaData ? await guestMetaDataGatewayService.ReadData(DEVICE_GUEST, META_DATA_KEY) : await guestGameDataGatewayService.ReadData(DEVICE_GUEST, gameDataKey);
+            
+            if (authService.IsSignedIn()) 
+            {
+                // Try Load Cloud.
+                var cloudTask = isMetaData ? metaDataCloudGatewayService.ReadData(META_DATA_KEY) : gameDataCloudGatewayService.ReadData(gameDataKey); 
+                var timeoutTask = Task.Delay(5000);
+
+                var completedTask = await Task.WhenAny(cloudTask, timeoutTask);
+                if (completedTask == timeoutTask)
+                {
+                    Debug.LogWarning("[Cloud] Meta Data Server response timeout !");
+                    hadErrorWhenFetchingCloudData = true;
+                }
+                else
+                {
+                    if(cloudTask.Result == ICloudService.ResultType.eDataNotFound)
+                    {
+                        isFoundCloudData = false;
+                        Debug.LogWarning("[Cloud] No Meta Cloud Data found.");
+                    }
+                    else if(cloudTask.Result != ICloudService.ResultType.eSuccessed)
+                    {
+                        Debug.LogWarning("[Cloud] Meta Cloud Data load failed due to network reason.!");
+                        hadErrorWhenFetchingCloudData = true;
+                    }
+                    else
+                    {
+                        isFoundCloudData = true;
+
+                        // Try Local Load.
+                        isFoundLocalData = isMetaData ? await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY) : await gameDataGatewayService.ReadData(PlayerId, gameDataKey);
+                    }
+                }
+            }
+            else
+            {
+                // Try Local Load.
+                if(!string.IsNullOrEmpty(PlayerId))
+                {
+                    isFoundLocalData = isMetaData ? await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY) : await gameDataGatewayService.ReadData(PlayerId, gameDataKey);
+                }
+            }
+
+            return new Tuple<bool, bool, bool, bool>(isFoundLocalData, isFoundCloudData, isFoundLocalGuestData, hadErrorWhenFetchingCloudData);
+        }
+
+        void SetTargetGatewayServiceIndex(bool isMetaData, int idx)
+        {
+            if(isMetaData)  
+                TargetMetaDataGatewayServiceIndex = idx;
+            else            
+                TargetGameDataGatewayServiceIndex = idx;
+        }
+
+        async Task WaitUntil(Func<bool> predicate)
+        {
+            while (Application.isPlaying && !predicate())
+            {
+                await Task.Delay(100); 
+            }
+        }
+
+        AccountStatus GetAccountStatus(bool isFoundLocalData, bool isFoundCloudData, bool isFoundLocalGuestData, bool failedToGetCloudDataDueToNetwork)
+        {            
+            AccountStatus eStatus = AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_X;
+            
+            if (authService.IsSignedIn()) 
+            {
+                if(failedToGetCloudDataDueToNetwork)
+                {
+                    if(isFoundLocalData)
+                    {
+                        if(isFoundLocalGuestData)
+                            eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_Err_Guest_O;
+                        else 
+                            eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_Err_Guest_X;
+                    }
+                    else
+                    {
+                        if(isFoundLocalGuestData)
+                            eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_Err_Guest_O;
+                        else 
+                            eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_Err_Guest_X;
+                    }
+                }
+                else
+                {
+                    if(isFoundLocalData)
+                    {
+                        if(isFoundCloudData)
+                        {
+                            if(isFoundLocalGuestData)
+                                eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_O_Guest_O;
+                            else 
+                                eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_O_Guest_X;
+                        }
+                        else
+                        {
+                            if(isFoundLocalGuestData)
+                                eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_O;
+                            else 
+                                eStatus = AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_X;
+                        }
+                    }
+                    else
+                    {
+                        if(isFoundCloudData)
+                        {
+                            if(isFoundLocalGuestData)
+                                eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_O_Guest_O;
+                            else 
+                                eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_O_Guest_X;
+                        }
+                        else
+                        {
+                            if (isFoundLocalGuestData)
+                                eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_O;
+                            else
+                                eStatus = AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_X;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if(isFoundLocalGuestData)
+                {
+                    if (isFoundLocalGuestData)
+                        eStatus = AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_O;
+                    else
+                        eStatus = AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_X;
+                }
+                else
+                {
+                    if (isFoundLocalGuestData)
+                        eStatus = AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_O;
+                    else
+                        eStatus = AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_X;
+                }
+            }
+            return eStatus;
+        }
+
+
+        int SelectLatestDataGatewayService(long timestamp1, long timestamp2)
+        {
+            return timestamp1>=timestamp2 ? 0 : 1;
+        }
+        int SelectLatestDataGatewayService(long timestamp1, long timestamp2, long timestamp3)
+        {
+            if(timestamp1 >= timestamp2)
+            {
+                int ret = SelectLatestDataGatewayService(timestamp1, timestamp3);
+                return ret==0 ? 0 : 2;
+            }
+            else
+            {
+                int ret = SelectLatestDataGatewayService(timestamp2, timestamp3);
+                return ret==0 ? 1 : 2;
+            }
+        }
+
+
+
+        /*
+         * 
+         * 
+        
+        async Task<bool> LoadPlayerData(int idxGatewayService)
+        {   
+            if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
+            {
+                Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
+                return false;
+            }
+
+            IDataGatewayService dataGatewayService = GameGatewayServiceList[idxGatewayService];
+
+            string dataKey = $"{GameKey}_PlayerData";
+            if(idxGatewayService == LOCAL_DATA_SERVICE_IDX)
+            {
+                return await (dataGatewayService as ILocalDataGatewayService).ReadData((string)contextCache.GetData("PlayerId"), dataKey);
+            }
+            else
+            {
+                return (ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey));
+            }
+        }
+
+
+        async Task<bool> LoadMetaData(int idxGatewayService)
+        {
+            if(idxGatewayService<0 || idxGatewayService>=MetaGatewayServiceList.Count)
+            {
+                Assert.IsTrue(false, "Invalid MetaGateWayService Index.." + idxGatewayService);
+                return false;
+            }
+        
+            IDataGatewayService dataGatewayService = MetaGatewayServiceList[idxGatewayService];
+
+            string dataKey = "MetaData";
+            if(idxGatewayService == LOCAL_DATA_SERVICE_IDX)
+            {
+                return await (dataGatewayService as ILocalDataGatewayService).ReadData((string)contextCache.GetData("PlayerId"), dataKey);
+            }
+            else
+            {
+                return ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey);
+            }
+        }
+
+
+        async Task<bool> FetchLocalData()
+        {
+            await Task.Delay(100);
+        
+            bool ret = await LoadMetaData( LOCAL_DATA_SERVICE_IDX );
+
+            return ret;
+        }
+
+        async Task<bool> FetchCloudData() 
+        {
+            long elTime = 0;
+            int interval = 500;
+            int MaxNetworkWaitSec = 5;
+            while (Application.isPlaying && !cloudService.IsInitialized() && elTime<=MaxNetworkWaitSec*1000)
+            {
+                await Task.Delay(interval);
+                elTime += interval;
+            }
+
+            if(!cloudService.IsInitialized())
+            {
+                Debug.Log("<color=red>[AppMain] Fetching Data From Cloud has been failed due to time-out. </color>");
+                return false;
+            }
+
+           // return ICloudService.ResultType.eSuccessed == await (dataGatewayService as ICloudDataGatewayService).ReadData(dataKey);
+
+            bool ret  = await LoadMetaData( CLOUD_DATA_SERVICE_IDX );
+            return ret;
+        }
+
+
 
         /*
         //      ID recognition matrix.

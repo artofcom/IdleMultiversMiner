@@ -12,7 +12,6 @@ namespace IGCore.PlatformService
     {
         protected ICloudService cloudService;
 
-        public string AccountId { get; set; } = string.Empty;
         public bool IsDirty { get; set; }
 
         protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
