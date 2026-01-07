@@ -105,10 +105,10 @@ public sealed partial class IdleMinerContext : AContext
     
     #region DataController Wrapper
     
-    public void SavePrevPlayerId(string playerId)
-    {
-        dataController?.SavePrevPlayerId(playerId);
-    }
+    //public void SavePrevPlayerId(string playerId)
+    //{
+    //    dataController?.SavePrevPlayerId(playerId);
+    //}
 
     public async Task<bool> LoadUserDataAsync(bool isMetaData)
     {

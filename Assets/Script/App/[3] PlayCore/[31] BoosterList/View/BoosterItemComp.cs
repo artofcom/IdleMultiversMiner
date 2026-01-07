@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Core.Events;
-using Unity.VisualScripting;
 using System;
 
 namespace App.GamePlay.IdleMiner

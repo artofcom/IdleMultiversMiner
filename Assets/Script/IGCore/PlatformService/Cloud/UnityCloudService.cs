@@ -20,6 +20,8 @@ namespace IGCore.PlatformService.Cloud
 
         // public event Action<string> EventOnSignedIn;
         
+        public event Action EventOnInitialized;
+
         IService Service => service as IService;
         IAuthService AuthService => authService as IAuthService;
 
@@ -29,17 +31,17 @@ namespace IGCore.PlatformService.Cloud
         {
             Assert.IsNotNull(service);
 
-            await InitAsync();
+            AuthService.EventOnSignedIn += OnSignedIn;
         }
 
-        async Task InitAsync()
+        void OnSignedIn(string playerId)
         {
-            while(!Service.IsInitialized() || !AuthService.IsSignedIn() || CloudSaveService.Instance==null)
-                await Task.Delay(500);
-
             Debug.Log("[Cloud] Cloud Service has been registered successfully.");
             isInitialized = true;
+
+            EventOnInitialized?.Invoke();
         }
+
 
         private void OnDestroy() {}
 

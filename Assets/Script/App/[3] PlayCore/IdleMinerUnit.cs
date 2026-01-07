@@ -63,15 +63,13 @@ namespace App.GamePlay.IdleMiner
             timedBonus.awardingIntervalInMin = gameConfig.TimedBonusIntervalInMin;
         }
 
-        public override async void Init(AContext ctx)
+        public override void Init(AContext ctx)
         {
             base.Init(ctx);
 
             context.AddData("GameConfig", gameConfig);
             if(context.GetData("IsSimMode") == null)
                 context.AddData("IsSimMode", false);
-
-            await context.InitGame();
 
             foreach(var module in subUnits)
                 module.Init(ctx);
@@ -110,8 +108,6 @@ namespace App.GamePlay.IdleMiner
         public override void Dispose()
         {
             base.Dispose();
-
-            context.DisposeGame();
 
             playerModel.Dispose();
 

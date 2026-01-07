@@ -42,62 +42,79 @@ namespace IGCore.PlatformService
             // if(!IsDirty)        return false;
             // IsDirty = false;
 
-            Assert.IsNotNull(cloudService);
-
-            if(serviceData.Data == null)
-                serviceData.Data = new List<DataGateWay.DataPair>();
-
-            if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
-
-            serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
-            serviceData.Clear();
-
-            if(!clearAll)
+            try
             {
-                // Poll Data from Models.
-                for(int k = 0; k < models.Count; ++k)
+                Assert.IsNotNull(cloudService);
+
+                if(serviceData.Data == null)
+                    serviceData.Data = new List<DataGateWay.DataPair>();
+
+                if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
+                    serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+
+                serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
+                serviceData.Clear();
+
+                if(!clearAll)
                 {
-                    List<Tuple<string, string>> listDataSet  = models[k].GetSaveDataWithKeys();
-                    if(listDataSet == null)
-                        continue;
+                    // Poll Data from Models.
+                    for(int k = 0; k < models.Count; ++k)
+                    {
+                        List<Tuple<string, string>> listDataSet  = models[k].GetSaveDataWithKeys();
+                        if(listDataSet == null)
+                            continue;
 
-                    for(int q = 0; q < listDataSet.Count; q++)
-                        serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                        for(int q = 0; q < listDataSet.Count; q++)
+                            serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                    }
                 }
-            }
             
-            string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
+                string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
 
-            Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
-            if(cloudResult.Item1 != ICloudService.ResultType.eSuccessed)
-                Debug.Log($"<color=red>[CloudGateWay] : SaveData [{dataKey}] has been failed.., {cloudResult.Item2}</color>");
-            else 
-                Debug.Log($"<color=green>[CloudGateWay] : SaveData [{dataKey}] has been successed.</color>");
+                Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
+                if(cloudResult.Item1 != ICloudService.ResultType.eSuccessed)
+                    Debug.Log($"<color=red>[CloudGateWay] : SaveData [{dataKey}] has been failed.., {cloudResult.Item2}</color>");
+                else 
+                    Debug.Log($"<color=green>[CloudGateWay] : SaveData [{dataKey}] has been successed.</color>");
 
-            return cloudResult.Item1;
+                return cloudResult.Item1;
+            }
+            catch (Exception ex) 
+            {
+                Debug.LogWarning(ex.Message);
+                return ICloudService.ResultType.eUnknownError;
+            }
+
         }
 
         public async Task<ICloudService.ResultType> ReadData(string dataKey)
         {   
             serviceData = null;
 
-            Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.LoadUserData(dataKey);
-            if(ICloudService.ResultType.eSuccessed != cloudResult.Item1)
+            try
             {
-                Debug.Log($"<color=red>[CloudGateWay] : ReadData data from Cloud has been failed. [{dataKey}] </color>");
-                return cloudResult.Item1;
-            }
+                Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.LoadUserData(dataKey);
+                if(ICloudService.ResultType.eSuccessed != cloudResult.Item1)
+                {
+                    Debug.Log($"<color=red>[CloudGateWay] : ReadData data from Cloud has been failed. [{dataKey}] </color>");
+                    return cloudResult.Item1;
+                }
             
-            Debug.Log($"<color=green>[CloudGateWay] : ReadData data from Cloud has been done. - [{dataKey}]</color>");
-            Debug.Log($"<color=green>[CloudGateWay] : [{cloudResult.Item2}]</color>");
-            serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(cloudResult.Item2);
+                Debug.Log($"<color=green>[CloudGateWay] : ReadData data from Cloud has been done. - [{dataKey}]</color>");
+                Debug.Log($"<color=green>[CloudGateWay] : [{cloudResult.Item2}]</color>");
+                serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(cloudResult.Item2);
             
-            if(serviceData == null)
-                return ICloudService.ResultType.eUnknownError; 
+                if(serviceData == null)
+                    return ICloudService.ResultType.eUnknownError; 
 
-            serviceData.Init();
-            return ICloudService.ResultType.eSuccessed;
+                serviceData.Init();
+                return ICloudService.ResultType.eSuccessed;
+            }
+            catch (Exception ex) 
+            {
+                Debug.LogWarning(ex.Message);
+                return ICloudService.ResultType.eUnknownError;
+            }
         }
 
         public virtual string GetData(string model_id)

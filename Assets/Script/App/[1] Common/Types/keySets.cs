@@ -15,6 +15,6 @@ namespace App.GamePlay.IdleMiner.Common.Types
 
     public class DataKeys
     {
-        public const string PREV_PLAYER_ID = "prev_player_id";
+        //public const string PREV_PLAYER_ID = "prev_player_id";
     }
 }

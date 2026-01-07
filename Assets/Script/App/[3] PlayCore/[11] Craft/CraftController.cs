@@ -11,9 +11,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
+#if UNITY_EDITOR
+using Unity.VisualScripting;
+#endif
 
 namespace App.GamePlay.IdleMiner.Craft
 {
@@ -1073,6 +1075,7 @@ namespace App.GamePlay.IdleMiner.Craft
         //
         void SIM_UpdateResourceReqStatus()
         {
+#if UNITY_EDITOR
             List<SkillInfo> workingSkills = null;
             context.RequestQuery(unitName:"SkillTree", endPoint:"SIM_CollectAllWorkingNodes",  (errMsg, ret) =>
             {
@@ -1086,10 +1089,12 @@ namespace App.GamePlay.IdleMiner.Craft
                 return;
             }
             _sim_updateResourceReqStatusForSkills(workingSkills);
+#endif
         }
 
         void _sim_updateResourceReqStatusForSkills(List<SkillInfo> workingSkillNodes)
         {
+#if UNITY_EDITOR
             if(workingSkillNodes == null)       return;
 
             HashSet<string> resourcesShouldBeReserved = new HashSet<string>();
@@ -1184,6 +1189,7 @@ namespace App.GamePlay.IdleMiner.Craft
             foreach(var resourceId in resourcesShouldBeReserved)
                 strReqRsc += $"{resourceId}, ";
             Debug.Log($"<color=grey>[SIM][Focusing Skill] id:[{focusingSkillNodeId}], {resourcesShouldBeReserved.Count}:{strReqRsc} </color>");
+#endif
         }
 
         void SIM_AssignRecipesFromSlots(HashSet<string> usingRecipes) 
@@ -1194,6 +1200,7 @@ namespace App.GamePlay.IdleMiner.Craft
 
         void _sim_assignRecipesFromSlotsIfNotNeeded(eRscStageType eType, HashSet<string> usingRecipes)
         {
+#if UNITY_EDITOR
             if(usingRecipes == null)
                 return;
 
@@ -1218,11 +1225,13 @@ namespace App.GamePlay.IdleMiner.Craft
                 Model.AssignRecipeToSlot(eType, idx, info.Id);
                 idx++;
             }
+#endif
         }
 
         List<CraftRequirement> FindAllCraftsNeedingResource(string resourceId, float buffRate)
         {
             List<CraftRequirement> result = new List<CraftRequirement>();
+#if UNITY_EDITOR
             resourceId = resourceId.ToLower();
     
             for(int q = 0; q < Model.CompCraftData.Recipes.Count; q++)
@@ -1266,7 +1275,7 @@ namespace App.GamePlay.IdleMiner.Craft
                     }
                 }
             }
-    
+#endif
             return result;
         }
         

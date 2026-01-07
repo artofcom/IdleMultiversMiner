@@ -6,7 +6,6 @@ using IGCore.PlatformService.Cloud;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -32,7 +31,7 @@ public class AppMainUnit : AUnit
     AppPlayerModel playerModel;
 
     IdleMinerContext IMContext => _minerContext as IdleMinerContext;
-
+    bool isWaitingForSignIn = true;
    
 
     protected override void Awake() 
@@ -52,9 +51,16 @@ public class AppMainUnit : AUnit
 
         unitSwitcher.Init(_minerContext);
     }
-    protected void Start()
+    protected async void Start()
     {
         Application.targetFrameRate = 61;
+
+        var signInTask = WaitUntil( () => isWaitingForSignIn==false );
+        var timeOut = Task.Delay(MaxNetworkWaitSec * 1000);
+
+        await Task.WhenAny(signInTask, timeOut);
+
+        LoadAppMetaDataModel( (string)context.GetData("PlayerId", string.Empty) ).Forget();
     }
 
     private void OnApplicationQuit()
@@ -107,17 +113,23 @@ public class AppMainUnit : AUnit
 
         await Task.Delay(100);
 
-        LoadAppMetaDataModel(playerId).Forget();
+        isWaitingForSignIn = false;
     }
     void OnSignInFailed(string reason)
     {
-        LoadAppMetaDataModel(string.Empty).Forget();
+        isWaitingForSignIn = false;
     }
     void OnSignedOut() 
     { 
-        IMContext.SavePrevPlayerId(string.Empty);
+        isWaitingForSignIn = true;
     }
-
+    async Task WaitUntil(Func<bool> predicate)
+    {
+        while (Application.isPlaying && !predicate())
+        {
+            await Task.Delay(100); 
+        }
+    }
 #if UNITY_EDITOR
     [UnityEditor.MenuItem("PlasticGames/Clear PlayerData/All")]
     private static void ClearPlayerPrefab()

@@ -53,7 +53,7 @@ public class PlayScreen : AUnit
     }
 
     // LobbyScreenController.EventOnBtnStart() -> AUnitSwitcher.OnEventClose() -> Attach()
-    public override void Attach()
+    public override async void Attach()
     {
         // Temp Code. 
         string gameKey = (string) this.context.GetData("gameKey");
@@ -67,6 +67,8 @@ public class PlayScreen : AUnit
 
         string mainPrefabPath = dictGameKeyPathSets[gameKey] + "/MainUnit";
         GameObject prefabGamePlayModule = Resources.Load<GameObject>(mainPrefabPath);
+
+        await context.InitGame();
 
         idleMinerModule = (Instantiate(prefabGamePlayModule, transformParent)).GetComponent<AUnit>();
         Assert.IsNotNull(idleMinerModule);   
@@ -84,6 +86,8 @@ public class PlayScreen : AUnit
 
     public override void Detach()
     {
+        context.DisposeGame();
+
         base.Detach();   
     }
 

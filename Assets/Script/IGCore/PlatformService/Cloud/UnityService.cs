@@ -9,6 +9,8 @@ namespace IGCore.PlatformService.Cloud
     {
         [SerializeField] int retryInterval = 5;
 
+        public event Action EventOnInitialized;
+
         bool isInitialized = false;
 
         async void Awake()
@@ -38,6 +40,7 @@ namespace IGCore.PlatformService.Cloud
                     Debug.Log("<color=green>[UnityService] Connection has been completed.</color>");
                     
                     isInitialized = true;
+                    EventOnInitialized?.Invoke();
                 }
                 catch (OperationCanceledException)
                 {

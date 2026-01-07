@@ -41,14 +41,16 @@ namespace IGCore.PlatformService.Cloud
         {
             Assert.IsNotNull(service);
 
-            await InitAsync();
+            Service.EventOnInitialized += OnServiceInitialized;
+        }
+
+        void OnServiceInitialized()
+        {
+            InitAsync().Forget();
         }
 
         async Task InitAsync()
         {
-            while(!Service.IsInitialized())
-                await Task.Delay(1000);
-
             AuthenticationService.Instance.SignedIn += OnSignedIn;
             AuthenticationService.Instance.SignInFailed += OnSignInFailed;
             AuthenticationService.Instance.SignedOut += OnSignedOut;
@@ -58,8 +60,8 @@ namespace IGCore.PlatformService.Cloud
 
             isInitialized = true;
 
-            while(PlayerAccountService.Instance == null)
-                await Task.Delay(1000);
+            while(Application.isPlaying && PlayerAccountService.Instance==null)
+                await Task.Delay(200);
 
             PlayerAccountService.Instance.SignedIn += OnPlayerAccountSignedIn;
             PlayerAccountService.Instance.SignInFailed += OnPlayerAccountSignInFailed;
@@ -101,7 +103,7 @@ namespace IGCore.PlatformService.Cloud
                 return;
             }
 
-            while(!isInitialized)
+            while(Application.isPlaying &&!isInitialized)
                 await Task.Delay(1000);
 
             try
@@ -343,7 +345,7 @@ namespace IGCore.PlatformService.Cloud
 
             var waitSec = new WaitForSeconds(retryInterval);
             
-            while(false==IsConnected && false==destroyCancellationToken.IsCancellationRequested)
+            while(Application.isPlaying && false==IsConnected && false==destroyCancellationToken.IsCancellationRequested)
             {
                 if(Application.internetReachability == NetworkReachability.NotReachable)
                 {

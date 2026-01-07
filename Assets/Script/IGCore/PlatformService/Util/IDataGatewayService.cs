@@ -87,8 +87,11 @@ namespace IGCore.PlatformService
                 if(data == null)    return;
 
                 dictData = new Dictionary<string, string>();
-                for(int q = 0; q < data.Count; q++) 
-                    dictData.Add(data[q].Key, data[q].Value);
+                for(int q = 0; q < data.Count; q++)
+                {
+                    if(!dictData.ContainsKey(data[q].Key))
+                        dictData.Add(data[q].Key, data[q].Value);
+                }
             }
             public string GetData(string key)
             {

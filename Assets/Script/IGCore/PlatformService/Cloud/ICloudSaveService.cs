@@ -10,6 +10,8 @@ namespace IGCore.PlatformService.Cloud
             eSuccessed, eServiceNotInitialized, eInvalidAuth, eDataNotFound, eNoNetworkConnection, eInvalidProjectId, eUnknownError
         }
 
+        event Action EventOnInitialized;
+
         // event Action<string> EventOnSignedIn;
         bool IsInitialized();
 

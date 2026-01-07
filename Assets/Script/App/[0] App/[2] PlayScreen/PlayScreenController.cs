@@ -1,7 +1,6 @@
 using App.GamePlay.Common;
 using App.GamePlay.IdleMiner;
 using IGCore.MVCS;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayScreenController : IGCore.MVCS.AController
