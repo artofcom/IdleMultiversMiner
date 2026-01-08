@@ -3,6 +3,7 @@ using App.GamePlay.IdleMiner.PopupDialog;
 using Core.Events;
 using Core.Util;
 using IGCore.MVCS;
+using IGCore.PlatformService.Cloud;
 using System;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class TitleScreenController : AController
     IdleMinerContext IMContext => (IdleMinerContext)context;
 
     TitleScreen titleScreen => unit as TitleScreen;
-    EventsGroup Events = new EventsGroup();
+    bool isWaitingForSignIn = true;
 
     // bool isBacgroundLoginWorking = false;
 
@@ -28,21 +29,29 @@ public class TitleScreenController : AController
         titleScreen.AuthService.EventOnSignedIn += OnSignedIn;
         titleScreen.AuthService.EventOnSignInFailed += OnSignInFailed;
         titleScreen.AuthService.EventOnSignOut += OnSignOut;
-        Events.RegisterEvent(EventID.APPLICATION_PLAYERDATA_INITIALIZEDD, OnAppPlayerDataInitialized);
     }
 
-    protected override void OnViewEnable()
+    protected async override void OnViewEnable()
     {
         Debug.Log("============================= Title Enter ");
 
         bool isSignInAfterSignOutRequired = (bool)context.GetData("IsTitleViewLoginRequired", false);
         
+        // Lock DataGateways.
+        IMContext.LockGatewayService(isMetaData:true, lock_it:true);
+        IMContext.LockGatewayService(isMetaData:false, lock_it:true);
+
         if(false == isSignInAfterSignOutRequired)   // General Case.
         {
-            titleScreen.AuthService.SignInAsync();
+            await ConductSignInProcess();
+
+            EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)TransitToLobbyScene); 
         }
         else
         {
+            // 
+            // In this case, [ConductSignInProcess] will be done in the dialog.
+            //
             DelayedAction.TriggerActionWithDelay(IMContext.CoRunner, WAIT_TIME_SEC, () =>
             {
                 context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", (errMsg, ret) => { },
@@ -50,6 +59,8 @@ public class TitleScreenController : AController
                     new Action<APopupDialog>((popupDlg) =>
                     {
                         Debug.Log("Login Dialog has been closed.");
+                        EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)TransitToLobbyScene);
+
                     }));
             });
         }
@@ -75,17 +86,36 @@ public class TitleScreenController : AController
         titleScreen.AuthService.EventOnSignOut -= OnSignOut;
     }
 
-    void OnAppPlayerDataInitialized(object data)
+    void TransitToLobbyScene()
     {
         if(titleScreen.IsAttached)
             titleScreen.SwitchUnit("LobbyScreen");
     }
 
+    async Task ConductSignInProcess()
+    {
+        isWaitingForSignIn = true;
+        titleScreen.AuthService.SignInAsync().Forget();
+
+        var appConfig = (AppConfig)context.GetData("AppConfig", null);
+        int maxWaitTime = appConfig != null ? appConfig.MaxServiceSignInWaitTime : 5;
+        
+        var signInTask = WaitUntil( () => isWaitingForSignIn==false );
+        var timeOut = Task.Delay(maxWaitTime * 1000);
+
+        await Task.WhenAny(signInTask, timeOut);
+    }
     
+
+
     void OnSignedIn(string playerId) 
     {
         Debug.Log($"<color=green>[TitleScreen] SignIn Successed. PlayerId : [{playerId}]</color>");
         
+        isWaitingForSignIn = false;
+        context.UpdateData("PlayerId", playerId);
+        context.AddData("IsAccountLinked", titleScreen.AuthService.IsAccountLinkedWithPlayer("unity"));
+
         string playerType = titleScreen.AuthService.IsAccountLinkedWithPlayer("unity") ? "Player" : "Guest";
         var presentData = new ToastMessageDialog.PresentInfo( message :  $"{playerType} [{playerId}] has signed in.", duration:3.0f, ToastMessageDialog.Type.INFO);
         context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
@@ -99,14 +129,19 @@ public class TitleScreenController : AController
     {
         Debug.Log($"<color=red>[TitleScreen] SignInFailed : {errorMessage}</color>");
         
-        /*if(false == isBacgroundLoginWorking)
-        {
-            // Should Try Login In the background.
-            TryBackgroundLogin(interval:5);
-        }*/
+        isWaitingForSignIn = false;
     }
     void OnSignOut()
     {
+        isWaitingForSignIn = true;
+    }
+
+    async Task WaitUntil(Func<bool> predicate)
+    {
+        while (Application.isPlaying && !predicate())
+        {
+            await Task.Delay(100); 
+        }
     }
     
     /*

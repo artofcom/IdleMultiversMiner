@@ -9,6 +9,7 @@ namespace IGCore.PlatformService
     public interface IDataGatewayService 
     {
         bool IsDirty { get; set; }
+        bool IsLocked { get; set; }
 
         void RegisterDataModel(IWritableModel model);
         void UnRegisterDataModel(IWritableModel model);

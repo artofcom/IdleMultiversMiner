@@ -22,5 +22,11 @@ public class InBoxView : APopupDialog
         if(presentor == null)
             return;
     }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        OnClose();
+    }
     
 }

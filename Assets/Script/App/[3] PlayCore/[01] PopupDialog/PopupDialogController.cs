@@ -111,7 +111,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         }
         object displayUnitPopupDialog(params object[] data)
         {
-            if(data.Length < 1)
+            if(data.Length < 2)
                 return null;
 
             string dlgId = (string)data[0];

@@ -32,12 +32,14 @@ public class PlayScreen : AUnit
     AUnit idleMinerModule;
     IUnitSwitcher UnitSwitcher => unitSwitcher as IUnitSwitcher;
     Dictionary<string, string> dictGameKeyPathSets = new Dictionary<string, string>();
-    
+    IdleMinerContext IMContext;
+
     // DictorMain.Start() -> AUnitSwitcher.Init() -> PlayerScreen.Init()
     public override void Init(AContext ctx)
     {
         base.Init(ctx);
 
+        IMContext = ctx as IdleMinerContext;
         model = new PlayScreenModel(ctx, null);
         controller = new PlayScreenController(this, view, model, ctx);
 
@@ -63,11 +65,11 @@ public class PlayScreen : AUnit
             return;
         }
         
-        ((IdleMinerContext)context).AddData("gamePath", dictGameKeyPathSets[gameKey]);
+        IMContext.AddData("gamePath", dictGameKeyPathSets[gameKey]);
 
         string mainPrefabPath = dictGameKeyPathSets[gameKey] + "/MainUnit";
         GameObject prefabGamePlayModule = Resources.Load<GameObject>(mainPrefabPath);
-
+    
         await context.InitGame();
 
         idleMinerModule = (Instantiate(prefabGamePlayModule, transformParent)).GetComponent<AUnit>();
@@ -78,8 +80,10 @@ public class PlayScreen : AUnit
 
         // Idle Miner Module.
         idleMinerModule.Init(context);
-        
         idleMinerModule.Attach();
+    
+        IMContext.LockGatewayService(isMetaData:false, lock_it:false);
+        IMContext.RunGameDataSaveDog();
 
         (analyticsService as IAnalyticsService)?.SendEvent($"GamePlayStarted_{gameKey}");
     }
@@ -100,7 +104,11 @@ public class PlayScreen : AUnit
         {
             idleMinerModule.Detach();
 
-           // idleMinerModule.OnEventClose -= EventOnLoadNextModule;
+            // DO NOT allow to save any game data after this point.
+            IMContext.SavePlayerDataInstantly();
+            IMContext.LockGatewayService(isMetaData:false, lock_it:true);
+            IMContext.StopGatewaySaveDog(isMetaData:false);
+
             Destroy(idleMinerModule.gameObject);
         }
         idleMinerModule = null;

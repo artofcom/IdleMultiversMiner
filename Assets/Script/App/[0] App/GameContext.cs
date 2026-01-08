@@ -126,9 +126,22 @@ public sealed partial class IdleMinerContext : AContext
     {
         dataController.RunGameDataSaveDog();
     }
+    public void RunMetaDataSaveDog()
+    {
+        dataController.RunMetaDataSaveDog();
+    }
     public void ResetPlayerData()
     {
         dataController?.ResetPlayerData();
+    }
+    public void LockGatewayService(bool isMetaData, bool lock_it)
+    {
+        dataController?.LockGatewayService(isMetaData, lock_it);
+    }
+    public void StopGatewaySaveDog(bool isMetaData)
+    {
+        if(isMetaData)  dataController.StopMetaDataSaveDog();
+        else            dataController.StopGameDataSaveDog();
     }
     #endregion
 

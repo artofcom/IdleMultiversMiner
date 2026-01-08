@@ -29,47 +29,43 @@ public class AppMainUnit : AUnit
 
     AContext _minerContext = null;
     AppPlayerModel playerModel;
+    EventsGroup Events = new EventsGroup();
 
     IdleMinerContext IMContext => _minerContext as IdleMinerContext;
-    bool isWaitingForSignIn = true;
    
 
     protected override void Awake() 
     { 
         base.Awake();
         
-        AuthService.EventOnSignedIn += OnSignedIn;
-        AuthService.EventOnSignInFailed += OnSignInFailed;
-        AuthService.EventOnSignOut += OnSignedOut;
-
         _minerContext = new IdleMinerContext(AuthService, CloudService);
         
         IMContext.Init(this);
         IMContext.AddData("AppConfig", appConfig);
 
         Init(_minerContext);
+        Events.RegisterEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, EventOnSignedInOrTimeOut);
 
         unitSwitcher.Init(_minerContext);
-    }
-    protected async void Start()
-    {
+
         Application.targetFrameRate = 61;
-
-        var signInTask = WaitUntil( () => isWaitingForSignIn==false );
-        var timeOut = Task.Delay(MaxNetworkWaitSec * 1000);
-
-        await Task.WhenAny(signInTask, timeOut);
-
-        LoadAppMetaDataModel( (string)context.GetData("PlayerId", string.Empty) ).Forget();
     }
+    
 
     private void OnApplicationQuit()
     {
         Debug.Log("Application Quit.");
     }
 
-    async Task LoadAppMetaDataModel(string curSignedPlayerId)
+    void EventOnSignedInOrTimeOut(object data)
+    {
+        LoadAppMetaDataModel((Action)data).Forget();
+    }
+
+    async Task LoadAppMetaDataModel(Action onFinished)
     {   
+        IMContext.StopGatewaySaveDog(isMetaData:true);
+
         playerModel = new AppPlayerModel(_minerContext, IMContext.MetaGatewayServiceList);
         model = new AppModel(_minerContext, playerModel);
         controller = new AppController(this, view, model, _minerContext);
@@ -93,43 +89,12 @@ public class AppMainUnit : AUnit
                 metaSystems[q].Init(_minerContext);
         }
 
-        //IMContext.RunMetaDataSaveDog();
-        // Make sure to sync cloud data with the local one.
-        //if(shouldUseCloudData && IMContext.TargetMetaDataGatewayServiceIndex==IdleMinerContext.IDX_LOCA_DATA_SERVICE)
-        //{
-        //    await Task.Delay(1000);
-        //    playerModel.SetDirty();
-        //}
+        IMContext.LockGatewayService(isMetaData:true, lock_it:false);
+        IMContext.RunMetaDataSaveDog();
 
-        EventSystem.DispatchEvent(EventID.APPLICATION_PLAYERDATA_INITIALIZEDD);
+        onFinished?.Invoke();
     }
 
-
-
-    async void OnSignedIn(string playerId)
-    {
-        context.UpdateData("PlayerId", playerId);
-        context.AddData("IsAccountLinked", AuthService.IsAccountLinkedWithPlayer("unity"));
-
-        await Task.Delay(100);
-
-        isWaitingForSignIn = false;
-    }
-    void OnSignInFailed(string reason)
-    {
-        isWaitingForSignIn = false;
-    }
-    void OnSignedOut() 
-    { 
-        isWaitingForSignIn = true;
-    }
-    async Task WaitUntil(Func<bool> predicate)
-    {
-        while (Application.isPlaying && !predicate())
-        {
-            await Task.Delay(100); 
-        }
-    }
 #if UNITY_EDITOR
     [UnityEditor.MenuItem("PlasticGames/Clear PlayerData/All")]
     private static void ClearPlayerPrefab()

@@ -13,6 +13,7 @@ namespace IGCore.PlatformService
         protected ICloudService cloudService;
 
         public bool IsDirty { get; set; }
+        public bool IsLocked { get; set; } = false;
 
         protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
         protected List<IWritableModel> models = new List<IWritableModel>();
@@ -39,11 +40,17 @@ namespace IGCore.PlatformService
 
         public async Task<ICloudService.ResultType> WriteData(string dataKey, bool clearAll)
         {
-            // if(!IsDirty)        return false;
-            // IsDirty = false;
-
             try
             {
+                if(!IsDirty)        return ICloudService.ResultType.eNoneToUpdate;
+                IsDirty = false;
+
+                if(IsLocked)
+                {
+                    Debug.Log("<color=red>[CloudGateWay] : Serivce is Locked !!!</color>");
+                    return ICloudService.ResultType.eLocked;
+                }
+
                 Assert.IsNotNull(cloudService);
 
                 if(serviceData.Data == null)

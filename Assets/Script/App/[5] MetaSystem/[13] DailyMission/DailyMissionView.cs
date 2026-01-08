@@ -68,6 +68,8 @@ public class DailyMissionView : APopupDialog
         for (int q = 0; q < Items.Count; ++q)
             GameObjectPooler.ReleasePoolItem(ListItemPooler, Items[q].gameObject);
         Items.Clear();
+
+        OnClose();
     }
 
     public override void Refresh(APresentor presentData)

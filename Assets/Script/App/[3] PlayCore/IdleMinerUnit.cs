@@ -90,9 +90,7 @@ namespace App.GamePlay.IdleMiner
                 popupDialog.Init(ctx);
                 ((IdleMinerView)view).EventOnTabBtnChanged += OnTabBtnChanged;
 
-                context.AddData(KeySets.CTX_KEYS.GAME_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);
-
-                (context as IdleMinerContext).RunGameDataSaveDog();
+                context.AddData(KeySets.CTX_KEYS.GAME_DLG_KEY, ((PopupDialogUnit)popupDialog).DialogKey);                
             }
         }
 

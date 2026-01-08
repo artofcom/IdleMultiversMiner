@@ -148,5 +148,11 @@ namespace App.GamePlay.IdleMiner.PopupDialog
                 audio.volume = enable ? 0.9f : .0f;
             }
         }
+
+        protected override void OnDisable()
+        {
+            base.OnDisable();
+            OnClose();
+        }
     }
 }

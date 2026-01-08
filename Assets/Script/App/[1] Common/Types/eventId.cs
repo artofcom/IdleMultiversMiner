@@ -6,7 +6,7 @@ namespace App.GamePlay.IdleMiner.Common.Types
         public const string APPLICATION_FOCUSED = "ApplicationFocused";
         public const string APPLICATION_PAUSED = "ApplicationPaused";
 
-        public const string APPLICATION_PLAYERDATA_INITIALIZEDD = "ApplicationPlayerDataInitialized";
+        public const string PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT = "OnPlayerHasSignedIn_Or_TimedOut";
 
         public const string IAP_MONEY_CHANGED = "IAP_MoneyAmountChanged";
         public const string STAR_AMOUNT_CHANGED = "StarAmountChanged";

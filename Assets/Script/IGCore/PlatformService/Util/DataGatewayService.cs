@@ -1,15 +1,17 @@
 using Core.Utils;
+using IGCore.PlatformService.Cloud;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using System.Threading.Tasks;
 using System.IO;
+using System.Threading.Tasks;
+using UnityEngine;
 
 namespace IGCore.PlatformService
 {
     public class DataGatewayService : ILocalDataGatewayService
     {
         public bool IsDirty { get; set; }
+        public bool IsLocked { get; set; } = false;
 
         protected DataGateWay.DataInService serviceData = new DataGateWay.DataInService();
         protected List<IWritableModel> models = new List<IWritableModel>();
@@ -33,9 +35,16 @@ namespace IGCore.PlatformService
         {
             try
             {
-                if(!IsDirty)        return Task.FromResult(false);
+                if(IsLocked)
+                {
+                    Debug.Log("<color=red>[GateWay] : Serivce is Locked !!!</color>");
+                    return Task.FromResult(false);
+                }
 
+                
+                if(!IsDirty)        return Task.FromResult(false);
                 IsDirty = false;
+
                 UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(accountId));
 
                 if(serviceData.Data == null)

@@ -5,6 +5,7 @@ using IGCore.PlatformService.Cloud;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -68,7 +69,7 @@ public sealed partial class IdleMinerContext : AContext
 
         IdleMinerContext contextCache;
 
-        ILocalDataGatewayService guestMetaDataGatewayService, guestGameDataGatewayService;
+        ILocalDataGatewayService guestMetaDataGatewayService;
         ILocalDataGatewayService metaDataGatewayService, gameDataGatewayService;
         ICloudDataGatewayService metaDataCloudGatewayService, gameDataCloudGatewayService;
 
@@ -82,9 +83,12 @@ public sealed partial class IdleMinerContext : AContext
         List<IDataGatewayService> gameGatewayServiceList;
         public List<IDataGatewayService> GameGatewayServiceList => gameGatewayServiceList;
         
+        CancellationTokenSource metaGatewayDogCTS;
+        CancellationTokenSource gameGatewayDogCTS;
+
         const string META_DATA_KEY = "MetaData";
-        const string DEVICE_GUEST = "device_guest_id";
         const string LAST_PLAYER_ID_KEY = "LastSignedPlayerId";
+        string DEVICE_GUEST => "GUEST_" + SystemInfo.deviceUniqueIdentifier;
         
         string GameDataKey => IdleMinerContext.GameKey + "_PlayerData";
         public string PlayerId { get; private set; } = string.Empty;
@@ -99,7 +103,6 @@ public sealed partial class IdleMinerContext : AContext
             this.authService = authService;
             this.cloudService = cloudService;
             guestMetaDataGatewayService = new DataGatewayService();
-            guestGameDataGatewayService = new DataGatewayService();
             gameDataGatewayService = new DataGatewayService();
             metaDataGatewayService = new DataGatewayService();
             gameDataCloudGatewayService = new DataCloudGatewayService(cloudService);
@@ -119,7 +122,7 @@ public sealed partial class IdleMinerContext : AContext
         {
             try
             {
-                PlayerId = isMetaData ? authService.GetPlayerId() : PlayerId;
+                PlayerId = isMetaData ? PlayerPrefs.GetString(LAST_PLAYER_ID_KEY, string.Empty) : PlayerId;
 
                 SetTargetGatewayServiceIndex(isMetaData, authService.IsSignedIn() ? CLOUD_DATA_SERVICE_IDX : LOCAL_DATA_SERVICE_IDX);
 
@@ -137,7 +140,7 @@ public sealed partial class IdleMinerContext : AContext
 
                 case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_X:          // 13. Offline New Device Guest
                 case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_O:          // 14. Offline Device-Guest                    
-                    PlayerId = DEVICE_GUEST;
+                    if(isMetaData) PlayerId = DEVICE_GUEST;
                     SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
                     break;
 
@@ -162,17 +165,22 @@ public sealed partial class IdleMinerContext : AContext
                     break;
                 case AccountStatus.SignedIn_O_Local_X_Cloud_O_Guest_O:          // 04. Select [DeviceGuest VS Cloud]
                 {
-                    var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : (guestGameDataGatewayService as DataGatewayService);
-                    var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
-                    long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp;
-                    selectedIndex = SelectLatestDataGatewayService( guestTS, cloudTS );
-                    if(isMetaData && selectedIndex==0)
+                    if(isMetaData)
                     {
-                        MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
-                        await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY); // Meta data only here.
+                        var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
+                        var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
+                        long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
+                        long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp;
+                        selectedIndex = SelectLatestDataGatewayService( guestTS, cloudTS );
+                        if(selectedIndex == 0)
+                        {
+                            MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                            await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY); // Meta data only here.
+                        }
+                        SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
                     }
-                    SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
+                    else 
+                        SetTargetGatewayServiceIndex(isMetaData, CLOUD_DATA_SERVICE_IDX);
                     break;
                 }
                 case AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_X:          // 05. Use Local Data.
@@ -180,15 +188,18 @@ public sealed partial class IdleMinerContext : AContext
                     break;
                 case AccountStatus.SignedIn_O_Local_O_Cloud_X_Guest_O:          // 06. Select [DeviceGuest VS Local]
                 {
-                    var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : (guestGameDataGatewayService as DataGatewayService);
-                    var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
-                    long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                    long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
-                    selectedIndex = SelectLatestDataGatewayService(guestTS, localTS);
-                    if(isMetaData && selectedIndex==0)
-                    {
-                        MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
-                        await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);// Meta data only here.
+                    if(isMetaData)
+                    { 
+                        var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
+                        var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
+                        long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
+                        long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
+                        selectedIndex = SelectLatestDataGatewayService(guestTS, localTS);
+                        if(selectedIndex == 0)
+                        {
+                            MigrateDataFilesToPlayer(DEVICE_GUEST, PlayerId);
+                            await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY);// Meta data only here.
+                        }
                     }
                     SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
                     break;
@@ -205,7 +216,7 @@ public sealed partial class IdleMinerContext : AContext
                 }
                 case AccountStatus.SignedIn_O_Local_O_Cloud_O_Guest_O:          // 08. Select [Guest VS Local VS Cloud]
                 {
-                    var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : (guestGameDataGatewayService as DataGatewayService);
+                    var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
                     var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
                     var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
                     long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
@@ -284,6 +295,20 @@ public sealed partial class IdleMinerContext : AContext
             //SavePlayerData(isLocal:false).Forget();
         }
 
+        public void LockGatewayService(bool isMetaData, bool lock_it)
+        {
+            if(isMetaData)
+            {
+                metaDataGatewayService.IsLocked = lock_it;
+                metaDataCloudGatewayService.IsLocked = lock_it;
+            }
+            else
+            {
+                gameDataGatewayService.IsLocked = lock_it;
+                gameDataCloudGatewayService.IsLocked = lock_it;
+            }
+        }
+
         void OnSignedIn(string playerId)
         {
             SaveLastSignedPrevPlayerId(playerId);
@@ -298,23 +323,27 @@ public sealed partial class IdleMinerContext : AContext
 
         public void SavePlayerDataInstantly()
         {
-            //SavePlayerData(isLocal:true).Forget();
-            //SavePlayerData(isLocal:false).Forget();
+            SavePlayerData(isLocal:true).Forget();
+            SavePlayerData(isLocal:false).Forget();
         }
         public void SaveMetaDataInstantly()
         {
-           // SaveMetaData(isLocal:true).Forget();
-            //SaveMetaData(isLocal:false).Forget();
+            SaveMetaData(isLocal:true).Forget();
+            SaveMetaData(isLocal:false).Forget();
         }
         async Task<bool> SavePlayerData(bool isLocal, bool clearAll = false)
         {
             if(isLocal)
             {
-                bool ret = await gameDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"), GameDataKey, clearAll);
-                if(ret)
+                if(true == await gameDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"), GameDataKey, clearAll))
                 {
                     Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
                     return true;
+                }
+                else
+                {
+                    if(gameDataGatewayService.IsDirty)
+                        Debug.Log("<color=red>[Data] Storing Local Player Data has been failed..</color>");
                 }
             }
             else
@@ -324,35 +353,47 @@ public sealed partial class IdleMinerContext : AContext
                     Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");
                     return true;
                 }
+                else
+                {
+                    if(gameDataCloudGatewayService.IsDirty)
+                        Debug.Log("<color=red>[Data] Storing Cloud Player Data has been failed..</color>");
+                }
             }
             return false;
         }
         
         public void ResetPlayerData()
         {
-            //SavePlayerData(isLocal:true, clearAll:true).Forget();
-            //SavePlayerData(isLocal:false, clearAll:true).Forget();
+            SavePlayerData(isLocal:true, clearAll:true).Forget();
+            SavePlayerData(isLocal:false, clearAll:true).Forget();
         }
         
         async Task<bool> SaveMetaData(bool isLocal)
         {
-            string dataKey = "MetaData";
-
             if(isLocal)
             {
-                bool ret = await metaDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"),dataKey, clearAll:false);
-                if(ret)
+                if(true == await metaDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"), META_DATA_KEY, clearAll:false))
                 {
                     Debug.Log("<color=blue>[Data] Storing Meta Data in Local has been successed.</color>");
                     return true;
                 }
+                else
+                {
+                    if(metaDataGatewayService.IsDirty)
+                        Debug.Log("<color=red>[Data] Storing Local Meta Data has been failed..</color>");
+                }
             }
             else
             {
-                if(ICloudService.ResultType.eSuccessed == await metaDataCloudGatewayService.WriteData(dataKey, clearAll:false))
+                if(ICloudService.ResultType.eSuccessed == await metaDataCloudGatewayService.WriteData(META_DATA_KEY, clearAll:false))
                 {
                     Debug.Log("<color=green>[Data] Storing Meta Data in Cloud has been successed.</color>");
                     return true;
+                }
+                else
+                {
+                    if(metaDataCloudGatewayService.IsDirty)
+                        Debug.Log("<color=red>[Data] Storing Cloud Meta Data has been failed..</color>");
                 }
             }
             return false;
@@ -361,8 +402,15 @@ public sealed partial class IdleMinerContext : AContext
 
         public void RunMetaDataSaveDog()
         {
+            metaGatewayDogCTS?.Cancel();
+            metaGatewayDogCTS = new CancellationTokenSource();
+
             UpdateMetaDataSaveAsync(isLocal:true).Forget();
             UpdateMetaDataSaveAsync(isLocal:false).Forget();
+        }
+        public void StopMetaDataSaveDog()
+        {
+            metaGatewayDogCTS?.Cancel();
         }
 
         async Task UpdateMetaDataSaveAsync(bool isLocal)
@@ -370,6 +418,8 @@ public sealed partial class IdleMinerContext : AContext
             AppConfig appConfig = null;
             while(Application.isPlaying)
             {
+                metaGatewayDogCTS.Token.ThrowIfCancellationRequested();
+
                 if(appConfig == null)
                     appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
 
@@ -377,22 +427,33 @@ public sealed partial class IdleMinerContext : AContext
                 if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.MetaDataSaveLocalInterval * 1000;
                 else        delay = appConfig==null ? 5 * 1000 : appConfig.MetaDataSaveCloudInterval * 1000;
             
-                await Task.Delay(delay);
+                await Task.Delay(delay, metaGatewayDogCTS.Token);
                 await SaveMetaData(isLocal);
             }
         }
 
         public void RunGameDataSaveDog()
         {
+            gameGatewayDogCTS?.Cancel();
+            gameGatewayDogCTS = new CancellationTokenSource();
+
             UpdateGameDataSaveAsync(isLocal:true).Forget();
             UpdateGameDataSaveAsync(isLocal:false).Forget();
         }
     
+        public void StopGameDataSaveDog()
+        {
+            gameGatewayDogCTS?.Cancel();
+        }
         async Task UpdateGameDataSaveAsync(bool isLocal)
         {
+            Assert.IsNotNull(gameGatewayDogCTS);
+
             AppConfig appConfig = null;
             while(Application.isPlaying && contextCache.isPlayingGame)
             {
+                gameGatewayDogCTS.Token.ThrowIfCancellationRequested();
+
                 if(appConfig == null)
                     appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
 
@@ -400,7 +461,7 @@ public sealed partial class IdleMinerContext : AContext
                 if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.GameDataSaveLocalInterval * 1000;
                 else        delay = appConfig==null ? 5 * 1000 : appConfig.GameDataSaveCloudInterval * 1000;
 
-                await Task.Delay(delay);
+                await Task.Delay(delay, gameGatewayDogCTS.Token);
                 await SavePlayerData(isLocal);
             }
         }
@@ -456,7 +517,7 @@ public sealed partial class IdleMinerContext : AContext
         {
             try
             {
-                const string sourceDir = DEVICE_GUEST;
+                string sourceDir = DEVICE_GUEST;
 
                 if (!Directory.Exists(sourceDir))
                     return false;
@@ -488,14 +549,16 @@ public sealed partial class IdleMinerContext : AContext
 
             Debug.Log("<color=yellow>[DataCtrler] Try Loading Guest Data..</color>");
             string gameDataKey = isMetaData ? string.Empty : GameDataKey;
-            bool isFoundLocalGuestData = isMetaData ? await guestMetaDataGatewayService.ReadData(DEVICE_GUEST, META_DATA_KEY) : await guestGameDataGatewayService.ReadData(DEVICE_GUEST, gameDataKey);
+            bool isFoundLocalGuestData = isMetaData ? await guestMetaDataGatewayService.ReadData(DEVICE_GUEST, META_DATA_KEY) : false;
             Debug.Log($"<color=yellow>[DataCtrler] Guest Data Loading : {isFoundCloudData}.</color>");
+
+            var appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
 
             if (authService.IsSignedIn()) 
             {
                 Debug.Log("<color=yellow>[DataCtrler] Try Loading Cloud Data... </color>");
                 var cloudDownloadTask = isMetaData ? metaDataCloudGatewayService.ReadData(META_DATA_KEY) : gameDataCloudGatewayService.ReadData(gameDataKey); 
-                var timeoutTask = Task.Delay(5000);
+                var timeoutTask = Task.Delay(appConfig!=null ? appConfig.MaxServiceSignInWaitTime*1000 : 5000);
 
                 var completedTask = await Task.WhenAny(cloudDownloadTask, timeoutTask);
                 if (completedTask == timeoutTask)

@@ -30,4 +30,10 @@ public class LoginDialogView : APopupDialog
     {
         EventOnAnonymLoginClicked?.Invoke();
     }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        OnClose();
+    }
 }

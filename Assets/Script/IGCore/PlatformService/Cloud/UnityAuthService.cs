@@ -37,7 +37,7 @@ namespace IGCore.PlatformService.Cloud
 
         bool isLinkingAccount = false;
 
-        async void Awake()
+        void Awake()
         {
             Assert.IsNotNull(service);
 

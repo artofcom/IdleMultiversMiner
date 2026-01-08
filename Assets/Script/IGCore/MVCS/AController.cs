@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace IGCore.MVCS
 {
@@ -25,6 +26,7 @@ namespace IGCore.MVCS
             
                 view.OnViewEnable += OnViewEnable;
                 view.OnViewDisable += OnViewDisable;
+                Debug.Log($"[controller] [{GetType().Name}] contrctor called.");
             }
         }
 
@@ -38,6 +40,7 @@ namespace IGCore.MVCS
             {
                 view.OnViewDisable -= OnViewDisable;
                 view.OnViewDisable -= OnViewDisable;
+                Debug.Log($"[controller] [{GetType().Name}] dispose called.");
             }
         }
 

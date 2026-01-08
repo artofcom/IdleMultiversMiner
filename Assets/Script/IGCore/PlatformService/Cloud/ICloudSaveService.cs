@@ -7,7 +7,7 @@ namespace IGCore.PlatformService.Cloud
     {
         public enum ResultType
         {
-            eSuccessed, eServiceNotInitialized, eInvalidAuth, eDataNotFound, eNoNetworkConnection, eInvalidProjectId, eUnknownError
+            eSuccessed, eServiceNotInitialized, eInvalidAuth, eDataNotFound, eNoNetworkConnection, eInvalidProjectId, eNoneToUpdate, eLocked, eUnknownError
         }
 
         event Action EventOnInitialized;
