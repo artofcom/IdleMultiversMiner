@@ -11,12 +11,13 @@ public class InBoxUnit : AUnit
 
     public override void Init(AContext context)
     {
+        Dispose();
+
         base.Init(context);
 
         playerModel = new InBoxPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new InBoxModel(context, playerModel);
         controller = new InBoxController(this, view, model, context);
-
         
         playerModel.Init();
         model.Init();

@@ -9,11 +9,12 @@ public class ShopUnit : AUnit
 
     public override void Init(AContext context)
     {
+        Dispose();
+
         base.Init(context);
 
         model = new ShopModel(context, null);
         controller = new ShopController(this, view, model, context);
-
         
         model.Init();
         controller.Init();

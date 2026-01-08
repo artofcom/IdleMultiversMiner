@@ -11,6 +11,8 @@ public class LoginDialogUnit : AUnit
 
     public override void Init(AContext context)
     {
+        Dispose();
+
         base.Init(context);
 
         model = new LoginDialogModel(context, null);

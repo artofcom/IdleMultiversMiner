@@ -21,12 +21,13 @@ public class SettingUnit : AUnit
 
     public override void Init(AContext context)
     {
+        Dispose();
+
         base.Init(context);
 
         playerModel = new SettingPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new SettingModel(context, playerModel);
         controller = new SettingController(this, view, model, context);
-
         
         playerModel.Init();
         model.Init();

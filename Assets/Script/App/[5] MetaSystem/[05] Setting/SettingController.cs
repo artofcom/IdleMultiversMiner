@@ -42,6 +42,8 @@ public class SettingController : AController
         settingUnit.AuthService.EventOnLinkAccount += EventOnLinkAccount;
 
         RefreshView();
+
+        Debug.Log("[Setting] OnViewEnabled");
     }
     protected override void OnViewDisable() 
     {
@@ -56,6 +58,7 @@ public class SettingController : AController
         SettingDialogView.EventOnAccountManagementClicked -= EventOnAccountManagementClicked;
 
         settingUnit.AuthService.EventOnLinkAccount -= EventOnLinkAccount;
+        Debug.Log("[Setting] OnViewDisable");
     }
 
 

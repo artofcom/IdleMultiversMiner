@@ -66,6 +66,8 @@ public class AppMainUnit : AUnit
     {   
         IMContext.StopGatewaySaveDog(isMetaData:true);
 
+        Dispose();
+
         playerModel = new AppPlayerModel(_minerContext, IMContext.MetaGatewayServiceList);
         model = new AppModel(_minerContext, playerModel);
         controller = new AppController(this, view, model, _minerContext);
@@ -93,6 +95,12 @@ public class AppMainUnit : AUnit
         IMContext.RunMetaDataSaveDog();
 
         onFinished?.Invoke();
+    }
+
+    public override void Dispose()
+    {
+        playerModel?.Dispose();
+        base.Dispose();
     }
 
 #if UNITY_EDITOR

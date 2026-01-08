@@ -38,7 +38,7 @@ namespace IGCore.MVCS
         {
             if(!context.IsSimulationMode())
             {
-                view.OnViewDisable -= OnViewDisable;
+                view.OnViewEnable -= OnViewEnable;
                 view.OnViewDisable -= OnViewDisable;
                 Debug.Log($"[controller] [{GetType().Name}] dispose called.");
             }

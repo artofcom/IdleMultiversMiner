@@ -6,6 +6,8 @@ public class DailyMissionUnit : AUnit
     [SerializeField] DailyMissionConfig dailyMissionConfig;
     [SerializeField] SpriteConfig commonSpriteConfig;
 
+    DailyMissionPlayerModel playerModel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,9 +15,11 @@ public class DailyMissionUnit : AUnit
 
     public override void Init(AContext context)
     {
+        Dispose();
+
         base.Init(context);
 
-        var playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
+        playerModel = new DailyMissionPlayerModel(context, (context as IdleMinerContext).MetaGatewayServiceList);
         model = new DailyMissionModel(context, playerModel);
         controller = new DailyMissionController(this, view, model, context);
 
@@ -29,5 +33,5 @@ public class DailyMissionUnit : AUnit
     public void OnBtnCloseClicked()
     {
         this.Detach();
-    }
+    }    
 }
