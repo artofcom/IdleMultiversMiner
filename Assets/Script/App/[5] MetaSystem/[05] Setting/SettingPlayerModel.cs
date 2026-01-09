@@ -46,6 +46,7 @@ public class SettingPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadSettingData()
     {
+        settingData = null;
         FetchData((context as IdleMinerContext).TargetMetaDataGatewayServiceIndex, DataKey, out settingData, new SettingData());
     }
 

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace IGCore.PlatformService
 {
@@ -47,17 +48,24 @@ namespace IGCore.PlatformService
 
                 UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(accountId));
 
-                if(serviceData.Data == null)
-                    serviceData.Data = new List<DataGateWay.DataPair>();
+                if(serviceData == null)
+                    serviceData = new DataGateWay.DataInService();
+                else
+                {
+                    if (serviceData.Data == null)
+                        serviceData.Data = new List<DataGateWay.DataPair>();
             
-                if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                    serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                    if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
+                        serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                }
 
-                serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
+                serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;                
                 serviceData.Clear();
 
                 if(!clearAll)
                 {
+                    Assert.IsTrue(serviceData.Data.Count == 0);
+
                     // Poll Data from Models.
                     for(int k = 0; k < models.Count; ++k)
                     {
@@ -66,9 +74,14 @@ namespace IGCore.PlatformService
                             continue;
 
                         for(int q = 0; q < listDataSet.Count; q++)
+                        {
                             serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                            Debug.Log($"[DataGateway] {listDataSet[q].Item1} data has been collected for writing.");
+                        }
                     }
+                    Debug.Log($"[DataGateway] Total Data Size : {serviceData.Data.Count}");
                 }
+                serviceData.Init();
             
                 string fullPath = Path.Combine(Application.persistentDataPath, accountId);
                 if (!Directory.Exists(fullPath))
@@ -89,6 +102,8 @@ namespace IGCore.PlatformService
 
         public virtual Task<bool> ReadData(string accountId, string dataKey)
         {
+            serviceData = null;
+
             try
             {
                 string fileNamePath = Path.Combine(Application.persistentDataPath, accountId, dataKey + ".json");
@@ -103,7 +118,7 @@ namespace IGCore.PlatformService
             }
             catch (Exception ex) 
             {
-                Debug.LogWarning(ex.Message);
+                Debug.LogWarning(ex.Message);    
                 return Task.FromResult(false);
             }
         }

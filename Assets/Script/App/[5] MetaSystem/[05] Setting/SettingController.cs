@@ -38,7 +38,7 @@ public class SettingController : AController
         SettingDialogView.EventOnSignOutClicked += EventOnSignOutClicked;
         SettingDialogView.EventOnDeleteAccountClicked += EventOnDeleteAccountClicked;
         SettingDialogView.EventOnAccountManagementClicked += EventOnAccountManagementClicked;
-
+        
         settingUnit.AuthService.EventOnLinkAccount += EventOnLinkAccount;
 
         RefreshView();
@@ -65,13 +65,15 @@ public class SettingController : AController
 
     void RefreshView()
     {
+        string playerId = (string)context.GetData("PlayerId");
+        playerId = playerId.Contains("GUEST") ? "GUEST_PLAYER" : playerId;
+
         var presentInfo = new SettingDialogView.PresentInfo(
                 (bool)context.RequestQuery("AppPlayerModel", "IsSoundFXOn"), 
                 (bool)context.RequestQuery("AppPlayerModel", "IsBGMOn"), 
                 isSignedIn : settingUnit.AuthService.IsSignedIn(),
                 (bool)context.GetData("IsAccountLinked"),
-                (string)context.GetData("PlayerId"), 
-                "Version " + Application.version);
+                playerId,  "Version " + Application.version);
 
         View.Refresh(presentInfo);
     }

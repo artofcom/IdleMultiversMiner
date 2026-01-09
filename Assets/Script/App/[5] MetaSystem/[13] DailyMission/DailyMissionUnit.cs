@@ -34,4 +34,10 @@ public class DailyMissionUnit : AUnit
     {
         this.Detach();
     }    
+
+    public override void Dispose()
+    {
+        playerModel?.Dispose();
+        base.Dispose();
+    }
 }

@@ -64,8 +64,6 @@ public class AppMainUnit : AUnit
 
     async Task LoadAppMetaDataModel(Action onFinished)
     {   
-        IMContext.StopGatewaySaveDog(isMetaData:true);
-
         Dispose();
 
         playerModel = new AppPlayerModel(_minerContext, IMContext.MetaGatewayServiceList);
@@ -90,9 +88,6 @@ public class AppMainUnit : AUnit
             for(int q = 0; q < metaSystems.Count; q++) 
                 metaSystems[q].Init(_minerContext);
         }
-
-        IMContext.LockGatewayService(isMetaData:true, lock_it:false);
-        IMContext.RunMetaDataSaveDog();
 
         onFinished?.Invoke();
     }

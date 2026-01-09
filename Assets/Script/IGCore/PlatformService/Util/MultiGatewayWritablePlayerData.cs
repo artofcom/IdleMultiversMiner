@@ -79,6 +79,8 @@ namespace IGCore.MVCS
             Assert.IsNotNull(gatewayServices);
             for(int q = 0; q < gatewayServices.Count; q++) 
                 gatewayServices[q].RegisterDataModel(this);
+
+            Debug.Log($"[MGWPS] {this.GetType().Name} has been initialized.");
         }
 
         public override void Dispose()
@@ -87,6 +89,8 @@ namespace IGCore.MVCS
 
             for(int q = 0; q < gatewayServices.Count; q++) 
                 gatewayServices[q].UnRegisterDataModel(this);
+
+            Debug.Log($"[MGWPS] {this.GetType().Name} has been disposed.");
         }
 
         public void SetDirty()

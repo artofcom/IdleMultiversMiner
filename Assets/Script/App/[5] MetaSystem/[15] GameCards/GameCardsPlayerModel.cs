@@ -43,6 +43,7 @@ public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadGameCardData()
     {
+        gameCardBundle = null;
         FetchData((context as IdleMinerContext).TargetMetaDataGatewayServiceIndex, DataKey, out gameCardBundle, new GameCardBundle());
     }
 

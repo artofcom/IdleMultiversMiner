@@ -52,13 +52,27 @@ public class GameCardsView : AView
         if(dictGameCards.Count == 0)
             Init();
 
+        HashSet<string> processedCards = new HashSet<string>();
         for(int q = 0; q < presentor.GameCardsPresentor.Count; ++q) 
         {
             string gameKey = (presentor.GameCardsPresentor[q].Item1).ToLower();
             if(dictGameCards.ContainsKey( gameKey ))
+            {
                 dictGameCards[gameKey].Refresh(presentor.GameCardsPresentor[q].Item2);
+                processedCards.Add(gameKey);
+            }
             else 
                 Debug.LogWarning($"Could not find the game key from the Lobby Cards ..[{gameKey}]");
+        }
+
+        // Now take care of the others that don't have data/presentor.
+        foreach(var card in dictGameCards)
+        {
+            if(!processedCards.Contains(card.Key))
+            {
+                card.Value.Refresh(null);
+                processedCards.Add(card.Key);
+            }
         }
     }
 

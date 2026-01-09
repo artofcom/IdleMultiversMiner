@@ -53,11 +53,16 @@ namespace IGCore.PlatformService
 
                 Assert.IsNotNull(cloudService);
 
-                if(serviceData.Data == null)
-                    serviceData.Data = new List<DataGateWay.DataPair>();
+                if(serviceData == null)
+                    serviceData = new DataGateWay.DataInService();
+                else
+                {
+                    if (serviceData.Data == null)
+                        serviceData.Data = new List<DataGateWay.DataPair>();
 
-                if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                    serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                    if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
+                        serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                }
 
                 serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
                 serviceData.Clear();

@@ -96,6 +96,7 @@ public sealed partial class IdleMinerContext : AContext
         IAuthService authService;
         ICloudService cloudService;
 
+        bool isAccountLinked = false;
         public GameDataController(IdleMinerContext context, IAuthService authService, ICloudService cloudService)
         {
             contextCache = context;
@@ -134,11 +135,16 @@ public sealed partial class IdleMinerContext : AContext
                 switch( eAccStatus )
                 {
                 case AccountStatus.SignedIn_X_Local_O_Cloud_X_Guest_O:          // 16. Offline Player
-                    if(isMetaData)  DeleteDeviceGuestDataFiles();
+                    if(isMetaData)  DeletePlayerDataFiles(DEVICE_GUEST);
                     SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
                     break;
 
                 case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_X:          // 13. Offline New Device Guest
+                    Debug.Log("<color=red>[DataController][NewPlayer] No Data Found. Creating DeviceGuest player...</color>");
+                    if(isMetaData) PlayerId = DEVICE_GUEST;
+                    SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
+                    break;
+
                 case AccountStatus.SignedIn_X_Local_X_Cloud_X_Guest_O:          // 14. Offline Device-Guest                    
                     if(isMetaData) PlayerId = DEVICE_GUEST;
                     SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
@@ -150,8 +156,10 @@ public sealed partial class IdleMinerContext : AContext
 
 
                 case AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_X:          // 01. New Player Account.
+                    Debug.Log("<color=red>[DataController][NewPlayer] No Data Found. Creating Cloud Player...</color>");
                     SetTargetGatewayServiceIndex(isMetaData, LOCAL_DATA_SERVICE_IDX);
                     break;
+
                 case AccountStatus.SignedIn_O_Local_X_Cloud_X_Guest_O:          // 02. Promote Guest to Player.
                     if(isMetaData)
                     { 
@@ -312,9 +320,13 @@ public sealed partial class IdleMinerContext : AContext
         void OnSignedIn(string playerId)
         {
             SaveLastSignedPrevPlayerId(playerId);
+            isAccountLinked = authService.IsAccountLinkedWithPlayer("unity");
         }
         void OnSignedOut()
         {
+            if(!isAccountLinked && !string.IsNullOrEmpty(PlayerId) && !PlayerId.Contains("GUEST"))
+                DeletePlayerDataFiles(PlayerId);
+
             SaveLastSignedPrevPlayerId(string.Empty);
         }
 
@@ -481,6 +493,9 @@ public sealed partial class IdleMinerContext : AContext
         {
             try
             {
+                sourceDir = Path.Combine(Application.persistentDataPath, sourceDir);
+                destDir = Path.Combine(Application.persistentDataPath, destDir);
+
                 if (!Directory.Exists(sourceDir))
                     return false;
 
@@ -513,11 +528,11 @@ public sealed partial class IdleMinerContext : AContext
             }
         }
         
-        bool DeleteDeviceGuestDataFiles()
+        public bool DeletePlayerDataFiles(string playerId)
         {
             try
             {
-                string sourceDir = DEVICE_GUEST;
+                string sourceDir = Path.Combine(Application.persistentDataPath, playerId);
 
                 if (!Directory.Exists(sourceDir))
                     return false;
@@ -525,7 +540,7 @@ public sealed partial class IdleMinerContext : AContext
                 if (Directory.Exists(sourceDir))
                 {
                     Directory.Delete(sourceDir, recursive:true); 
-                    Debug.Log("[DataController] : Guest Folder has been deleted.");
+                    Debug.Log($"<color=red>[DataController] : Player Data {playerId} has been DELETED !!!</color>");
                 }
                 return true;
             }
@@ -541,7 +556,7 @@ public sealed partial class IdleMinerContext : AContext
         async Task<Tuple<bool, bool, bool, bool>> TryLoadAllUserData(bool isMetaData)
         {
             bool isFoundLocalData = false;
-            bool isFoundCloudData = false;
+            bool isFoundCloudData = true;
             bool hadErrorWhenFetchingCloudData = false;
 
             string loadingTarget = isMetaData ? "META_DATA" : "GAME_DATA";
@@ -550,9 +565,10 @@ public sealed partial class IdleMinerContext : AContext
             Debug.Log("<color=yellow>[DataCtrler] Try Loading Guest Data..</color>");
             string gameDataKey = isMetaData ? string.Empty : GameDataKey;
             bool isFoundLocalGuestData = isMetaData ? await guestMetaDataGatewayService.ReadData(DEVICE_GUEST, META_DATA_KEY) : false;
-            Debug.Log($"<color=yellow>[DataCtrler] Guest Data Loading : {isFoundCloudData}.</color>");
+            Debug.Log($"<color=yellow>[DataCtrler] Guest Data Loading : {isFoundLocalGuestData}.</color>");
 
             var appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
+            bool shouldLoadLocalData = false;
 
             if (authService.IsSignedIn()) 
             {
@@ -571,6 +587,7 @@ public sealed partial class IdleMinerContext : AContext
                     if(cloudDownloadTask.Result == ICloudService.ResultType.eDataNotFound)
                     {
                         isFoundCloudData = false;
+                        shouldLoadLocalData = true;
                         Debug.Log($"<color=red>[DataCtrler] Cloud Loading has been done, but no data found.</color>");
                     }
                     else if(cloudDownloadTask.Result != ICloudService.ResultType.eSuccessed)
@@ -580,13 +597,8 @@ public sealed partial class IdleMinerContext : AContext
                     }
                     else
                     {
-                        isFoundCloudData = true;
-                        Debug.Log("<color=yellow>[DataCtrler] Cloud Loading has been done.. </color>");
-
-                        Debug.Log("<color=yellow>[DataCtrler] Try loading local player data... </color>");
-                        Assert.IsTrue(!string.IsNullOrEmpty(PlayerId));
-                        isFoundLocalData = isMetaData ? await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY) : await gameDataGatewayService.ReadData(PlayerId, gameDataKey);
-                        Debug.Log($"<color=yellow>[DataCtrler] Local player data load has been {isFoundCloudData}. </color>");
+                        shouldLoadLocalData = true;
+                        Debug.Log("<color=yellow>[DataCtrler] Cloud Loading has been done successfully. </color>");
                     }
                 }
             }
@@ -594,11 +606,15 @@ public sealed partial class IdleMinerContext : AContext
             {
                 // Offline but try loading local data.
                 if(!string.IsNullOrEmpty(PlayerId))
-                {
-                    Debug.Log($"<color=yellow>[DataCtrler] Offline Mode - Try loading local player data...[{PlayerId}] </color>");
-                    isFoundLocalData = isMetaData ? await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY) : await gameDataGatewayService.ReadData(PlayerId, gameDataKey);
-                    Debug.Log($"<color=yellow>[DataCtrler] Local player data load has been {isFoundCloudData}. </color>");
-                }
+                    shouldLoadLocalData = true;
+            }
+
+            if(shouldLoadLocalData)
+            {
+                Assert.IsTrue(!string.IsNullOrEmpty(PlayerId));
+                Debug.Log($"<color=yellow>[DataCtrler] Try loading local player data...[{PlayerId}] </color>");
+                isFoundLocalData = isMetaData ? await metaDataGatewayService.ReadData(PlayerId, META_DATA_KEY) : await gameDataGatewayService.ReadData(PlayerId, gameDataKey);
+                Debug.Log($"<color=yellow>[DataCtrler] Local player data load has been {isFoundCloudData}. </color>");
             }
 
             return new Tuple<bool, bool, bool, bool>(isFoundLocalData, isFoundCloudData, isFoundLocalGuestData, hadErrorWhenFetchingCloudData);

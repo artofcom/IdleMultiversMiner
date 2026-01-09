@@ -40,15 +40,16 @@ public class TitleScreenController : AController
         // Lock DataGateways.
         IMContext.LockGatewayService(isMetaData:true, lock_it:true);
         IMContext.LockGatewayService(isMetaData:false, lock_it:true);
+        IMContext.StopGatewaySaveDog(isMetaData:true);
 
         if(false == isSignInAfterSignOutRequired)   // General Case.
         {
             await ConductSignInProcess();
 
-            EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)TransitToLobbyScene); 
+            EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)OnSignInProcessFinished); 
         }
         else
-        {
+        {    
             // 
             // In this case, [ConductSignInProcess] will be done in the dialog.
             //
@@ -59,8 +60,7 @@ public class TitleScreenController : AController
                     new Action<APopupDialog>((popupDlg) =>
                     {
                         Debug.Log("Login Dialog has been closed.");
-                        EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)TransitToLobbyScene);
-
+                        EventSystem.DispatchEvent(EventID.PLAYER_HAS_SIGNEDIN_OR_TIMED_OUT, (Action)OnSignInProcessFinished);
                     }));
             });
         }
@@ -86,8 +86,11 @@ public class TitleScreenController : AController
         titleScreen.AuthService.EventOnSignOut -= OnSignOut;
     }
 
-    void TransitToLobbyScene()
+    void OnSignInProcessFinished()
     {
+        IMContext.LockGatewayService(isMetaData:true, lock_it:false);
+        IMContext.RunMetaDataSaveDog();
+
         if(titleScreen.IsAttached)
             titleScreen.SwitchUnit("LobbyScreen");
     }

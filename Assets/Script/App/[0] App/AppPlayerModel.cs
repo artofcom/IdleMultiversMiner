@@ -19,9 +19,6 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
 
     static string CurrencyDataKey = "Currencies";
 
-    const int DefaultIAP = 50;
-    const int DefaultStar = 10;
-
     public override void Init()
     {     
         base.Init();
@@ -50,17 +47,20 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
     void LoadAppData()
     {        
         string curSignedPlayerId = (string)context.GetData("PlayerId", string.Empty);
-        //string lastSignedPlayerId = PlayerPrefs.GetString(DataKeys.PLAYER_ID, string.Empty);
-
         int idxGatewayService = (context as IdleMinerContext).TargetMetaDataGatewayServiceIndex;
-        // FetchData(idxGatewayService, EnvironmentDataKey, out environment, new EnvironmentInfo("1.0"));
+        
+        metaCurrencyBundle = null;
         FetchData(idxGatewayService, CurrencyDataKey, out metaCurrencyBundle, null);
 
         if(metaCurrencyBundle==null || metaCurrencyBundle.GetCurrency("iap")==null)
         {
+            var appConfig = (AppConfig)context.GetData("AppConfig", null);
             metaCurrencyBundle = new MetaCurrencyBundle();
-            metaCurrencyBundle.AddCurrency(new MetaCurrency("iap", DefaultIAP));
-            metaCurrencyBundle.AddCurrency(new MetaCurrency("star", DefaultStar));
+            metaCurrencyBundle.AddCurrency(new MetaCurrency("iap", appConfig==null ? 50 : appConfig.NewPlayerIAP));
+            metaCurrencyBundle.AddCurrency(new MetaCurrency("star", appConfig==null ? 0 : appConfig.NewPlayerStar));
+
+            Debug.Log($"<color=red>[AppPlayerModel][NewPlayer] : New Player [{curSignedPlayerId}] Created !!!</color>");
+
             SetDirty();
         }
 

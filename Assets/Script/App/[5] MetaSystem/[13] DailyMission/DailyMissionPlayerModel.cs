@@ -119,6 +119,9 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
 
     void LoadData()
     {
+        progressInfo = null;
+        notificationInfo = null;
+
         int idxGatewayService = (context as IdleMinerContext).TargetMetaDataGatewayServiceIndex;
         FetchData(idxGatewayService, DataKey, out progressInfo, null);
         FetchData(idxGatewayService, NotificationDataKey, out notificationInfo, new NotificationInfo());

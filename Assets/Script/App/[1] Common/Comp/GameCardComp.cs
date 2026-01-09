@@ -52,7 +52,10 @@ public class GameCardComp : AView
     {
         Presentor presentor = presentData as Presentor;
         if(presentor == null)
+        {
+            DrawDefault();
             return;
+        }
 
         if(!presentor.IsEnabled)
         {
@@ -64,5 +67,13 @@ public class GameCardComp : AView
         txtAwayTime.text = presentor.txtAwayTime;
         txtResetCount.text = presentor.txtResetCount;
         newTagRoot.SetActive(presentor.isNewGame);
+    }
+
+    void DrawDefault()
+    {
+        // txtTitle.text = string.IsNullOrEmpty(presentor.txtTitle) ? txtTitle.text : presentor.txtTitle;
+        txtAwayTime.text = "N/A";
+        txtResetCount.text = "Reset : 0";
+        newTagRoot.SetActive(false);
     }
 }
