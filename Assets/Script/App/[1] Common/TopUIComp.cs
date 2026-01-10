@@ -34,7 +34,6 @@ namespace App.GamePlay.IdleMiner
             Events.RegisterEvent(EventID.IAP_MONEY_CHANGED, EventOnMainCurrencyChanged);
             Events.RegisterEvent(EventID.STAR_AMOUNT_CHANGED, EventOnMainCurrencyChanged);
             //Events.RegisterEvent(EventID.GAME_CURRENCY_UPDATED, EventOnGameCurrencyUpdated);
-            Events.RegisterEvent(EventID.GAME_RESET_REFRESH, EventOnRefreshView);
             
             DelayedAction.TriggerActionWithDelay(view, 0.01f, () => { RefreshView(); } );
         }
@@ -42,7 +41,6 @@ namespace App.GamePlay.IdleMiner
         { 
             Events.UnRegisterEvent(EventID.IAP_MONEY_CHANGED, EventOnMainCurrencyChanged);
             Events.UnRegisterEvent(EventID.STAR_AMOUNT_CHANGED, EventOnMainCurrencyChanged);
-            Events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, EventOnRefreshView);
             //Events.UnRegisterEvent(EventID.GAME_CURRENCY_UPDATED, EventOnGameCurrencyUpdated);
         }
         public override void Resume(int awayTimeInSec) { }
@@ -50,11 +48,6 @@ namespace App.GamePlay.IdleMiner
         public override void WriteData() { }
 
         void EventOnMainCurrencyChanged(object data)
-        {
-            RefreshView();
-        }
-
-        void EventOnRefreshView(object data) 
         {
             RefreshView();
         }

@@ -62,11 +62,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             mIsInitialized = true;
         }
 
-        public virtual void CleanUp()
-        {
-            mIsInitialized = false;
-        }
-
         public override void Refresh(APresentor presentor)
         {
             var presentInfo = (BasePresentInfo)presentor;

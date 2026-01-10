@@ -82,11 +82,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             planetsComp.Init(CoroutineRunner, MainCharObj, FlyMonObjCache, (initer as ViewIniter).dictAreaComp);
         }
 
-        public void CleanUp()
-        {
-            planetsComp.CleanUp();
-        }
-
         public override void Refresh(APresentor presentData)
         {}
 

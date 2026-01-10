@@ -61,7 +61,6 @@ namespace App.GamePlay.IdleMiner.Resouces
 
             InitResourceCollection();
 
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized = true;
         }
 
@@ -75,7 +74,6 @@ namespace App.GamePlay.IdleMiner.Resouces
             RscCollections?.Clear();         
             RscCollections = null;
 
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized = false;
         }
 
@@ -197,13 +195,6 @@ namespace App.GamePlay.IdleMiner.Resouces
                 FetchData(idxGatewayService, DataKey_ResourceData, out resourceCollections, fallback: new ListResourceCollections());
             }
         }
-
-        void ResetGamePlay_InitGame(object data)
-        {
-            LoadResourceData();
-            InitResourceCollection();
-        }
-
 
         //==========================================================================
         //

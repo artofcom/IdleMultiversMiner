@@ -33,8 +33,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
             _InitModel();
-
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
         }
 
         protected virtual void _InitModel()
@@ -50,15 +48,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
             _isInitialized = true;
         }
 
-        void ResetGamePlay_InitGame(object data)
-        {
-            PlayerData.ResetGamePlay_InitGame(caller:this);
-
-            SanatizeData();
-
-            InitSkillStatusBuffer();
-        }
-
+        
 
         protected virtual void LoadData(string gamePath)
         {
@@ -87,8 +77,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
             }
 
             UnregisterRequestables();
-
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
 
             _isInitialized = false;
         }

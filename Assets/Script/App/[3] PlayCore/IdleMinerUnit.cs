@@ -82,7 +82,6 @@ namespace App.GamePlay.IdleMiner
             model.Init();
             controller.Init();  
 
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, Event_ResetGamePlay_InitGame);
             Events.RegisterEvent(EventID.RESOURCE_UPDATED, Event_Resource_Updated);            
 
             if(!ctx.IsSimulationMode())
@@ -136,12 +135,6 @@ namespace App.GamePlay.IdleMiner
 
 
         #region ===> Helpers
-
-        void Event_ResetGamePlay_InitGame(object data)
-        {
-            timedBonus.SetEnable(enable:false);
-            Debug.Log("<color=green>TimeBons has been Disabled.!</color>");
-        }
 
         void Event_Resource_Updated(object data)
         {

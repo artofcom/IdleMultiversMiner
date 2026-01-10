@@ -70,8 +70,6 @@ namespace App.GamePlay.IdleMiner.MiningStat
             Events.RegisterEvent(EventID.MINING_STAT_RESET, PlayerData_OnStatReset);
             Events.RegisterEvent(EventID.PLANET_DAMAGED, PlayerData_OnPlanetAttacked);
 
-            Events.RegisterEvent(EventID.GAME_RESET_REFRESH, OnRefreshAllView);
-
             MiningStatView.EventOnUpgradeClicked += PlanetPanelView_OnStatUpgradeClicked;
             MiningStatView.EventOnStatResetClicked += PlanetPanelView_OnStatResetClicked;
             MiningStatView.EventOnUpgradeLevelModeClicked += PlanetPanelView_OnUpgradeLevelModeClicked;
@@ -99,9 +97,6 @@ namespace App.GamePlay.IdleMiner.MiningStat
 
             Events.UnRegisterEvent(EventID.MINING_STAT_RESET, PlayerData_OnStatReset);
             Events.UnRegisterEvent(EventID.PLANET_DAMAGED, PlayerData_OnPlanetAttacked);
-
-            Events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnRefreshAllView);
- 
 
             MiningStatView.EventOnUpgradeClicked -= PlanetPanelView_OnStatUpgradeClicked;
             MiningStatView.EventOnStatResetClicked -= PlanetPanelView_OnStatResetClicked;
@@ -181,12 +176,6 @@ namespace App.GamePlay.IdleMiner.MiningStat
         void PlayerData_OnPlanetAttacked(object data)
         {
             // No Updates required due to the updates from Pump() that's happening every 1 sec.
-        }
-
-        void OnRefreshAllView(object data)
-        {
-            if(View.gameObject.activeSelf)
-                RefreshPanelView(MiningStatView.SECTION.ALL);
         }
 
         void PlanetPanelView_OnStatUpgradeClicked(Tuple<int, int, eABILITY> tupData)

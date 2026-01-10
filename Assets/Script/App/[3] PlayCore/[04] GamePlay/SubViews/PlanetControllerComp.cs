@@ -66,17 +66,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             }
         }
 
-        public void CleanUp()
-        {
-            for (int q = 0; q < zoneList.Count; ++q)   // zone list.
-            {
-                int zId = zoneList[q].ZoneId;
-                zoneList[q].ClearnUp();
-                zoneList[q].gameObject.SetActive( false );
-            }
-
-        }
-
         public void UpdateArea(Dictionary<int, List<MiningZoneComp.BaseInfo>> dictZonenfo)
         {
             for (int q = 0; q < zoneList.Count; ++q)

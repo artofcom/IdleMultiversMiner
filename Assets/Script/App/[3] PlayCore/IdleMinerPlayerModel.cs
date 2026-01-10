@@ -151,7 +151,6 @@ namespace App.GamePlay.IdleMiner
             UpdateGameCardsTimeStamp();
 
             base.Dispose(); 
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
 
             UnRegisterRequestables();
         }
@@ -246,8 +245,6 @@ namespace App.GamePlay.IdleMiner
             base.Init();
             
             InitPlayerModel();
-
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
         }
 
         void InitPlayerModel()
@@ -449,17 +446,8 @@ namespace App.GamePlay.IdleMiner
 
                 LoadOpenedTabBtns();
             }
-
-            mIsDataLoaded = true;
         }
         #endregion
-
-
-        void ResetGamePlay_InitGame(object data)
-        {
-            mIsDataLoaded = false;
-            this.InitPlayerModel();
-        }
 
 
         public static void ClearAllData()

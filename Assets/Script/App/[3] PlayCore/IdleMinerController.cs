@@ -64,7 +64,6 @@ namespace App.GamePlay.IdleMiner
             Events.RegisterEvent(EventID.PLANET_BOOSTER_TRIGGERED, EventOnMiningStatusChanged);
 
             Events.RegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-         //   Events.RegisterEvent(EventID.GAME_RESET_REFRESH, EventOnResetRefresh);
 
             Events.RegisterEvent(EventID.CRAFT_RECIPE_ASSIGNED, EventOnCraftStatusChanged);
             Events.RegisterEvent(EventID.CRAFT_RECIPE_PURCHASED, EventOnCraftStatusChanged);

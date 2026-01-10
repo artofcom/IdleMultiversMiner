@@ -44,8 +44,6 @@ namespace App.GamePlay.IdleMiner.Resouces
             events.RegisterEvent(ResourceItemComp.EVENT_PANEL_CLICKED, ElementItemComp_OnPnlClicked);
             events.RegisterEvent(ResourceItemComp.EVENT_AUTOSELL_CLICKED, ElementItemComp_OnAutoSellClicked);
             events.RegisterEvent(EventID.RESOURCE_UPDATED, ResourceListView_OnResourceUpdated);
-
-            events.RegisterEvent(EventID.GAME_RESET_REFRESH, OnRefreshView);
         }
 
         public override void Dispose()
@@ -60,8 +58,6 @@ namespace App.GamePlay.IdleMiner.Resouces
             events.UnRegisterEvent(ResourceItemComp.EVENT_PANEL_CLICKED, ElementItemComp_OnPnlClicked);
             events.UnRegisterEvent(ResourceItemComp.EVENT_AUTOSELL_CLICKED, ElementItemComp_OnAutoSellClicked);
             events.UnRegisterEvent(EventID.RESOURCE_UPDATED, ResourceListView_OnResourceUpdated);
-
-            events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnRefreshView);
         }
 
         public override void Resume(int duration)
@@ -187,11 +183,6 @@ namespace App.GamePlay.IdleMiner.Resouces
             var rscId_value = (Tuple<string, BigInteger>)data;
             Debug.Log($"<color=green>[SIM][Action] Resource {rscId_value.Item1} count has been increased to {rscId_value.Item2}.</color>");
             
-            RefreshView();
-        }
-
-        void OnRefreshView(object data)
-        {
             RefreshView();
         }
 

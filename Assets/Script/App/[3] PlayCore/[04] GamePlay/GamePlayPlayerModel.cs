@@ -45,7 +45,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             InitPlayerData();
             RegisterRequestables();
 
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             ZoneStatusInfo.OnManualBoosterFinished += ZoneStatusInfo_OnManualBoosterFinished;
             
             IsInitialized = true;
@@ -59,7 +58,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             unlockedZoneGroup = null;
             UnregisterRequestables();
 
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             ZoneStatusInfo.OnManualBoosterFinished -= ZoneStatusInfo_OnManualBoosterFinished;
 
             IsInitialized = false;
@@ -267,11 +265,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
 
         #region ===> Helpers
-
-        void ResetGamePlay_InitGame(object data)
-        {
-            InitPlayerData();
-        }
 
         void InitPlayerData()
         {

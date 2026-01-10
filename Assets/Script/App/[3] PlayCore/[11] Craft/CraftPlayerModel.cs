@@ -122,7 +122,6 @@ namespace App.GamePlay.IdleMiner.Craft
 
             LoadCraftData();
 
-            Events.RegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized = true;
         }
 
@@ -133,7 +132,6 @@ namespace App.GamePlay.IdleMiner.Craft
             compCraftData?.Dispose();
             itemCraftData?.Dispose();
 
-            Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized= false;
         }       
 
@@ -322,16 +320,7 @@ namespace App.GamePlay.IdleMiner.Craft
             return buffState.RequestRate;
         }
 
-        void ResetGamePlay_InitGame(object data) 
-        {
-            LoadCraftData();
-
-            compCraftData.Reset();
-            itemCraftData.Reset();
-            (context as IdleMinerContext).SavePlayerDataInstantly();
-            SetDirty();
-        }
-
+        
         #region IWritableModel
 
         public override List<Tuple<string, string>> GetSaveDataWithKeys()

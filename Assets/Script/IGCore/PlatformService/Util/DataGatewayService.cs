@@ -40,14 +40,12 @@ namespace IGCore.PlatformService
         {
             try
             {
-                if(IsLocked)
+                if(IsLocked || !IsDirty)
                 {
-                    Debug.Log("<color=red>[GateWay] : Serivce is Locked !!!</color>");
+                    Debug.Log("<color=orange>[GateWay] : Serivce is Locked or Not Dirty..</color>");
                     return Task.FromResult(false);
                 }
 
-                
-                if(!IsDirty)        return Task.FromResult(false);
                 IsDirty = false;
 
                 Assert.IsTrue(!string.IsNullOrEmpty(accountId));

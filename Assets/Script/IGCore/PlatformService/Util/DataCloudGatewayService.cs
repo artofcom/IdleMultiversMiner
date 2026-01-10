@@ -45,14 +45,13 @@ namespace IGCore.PlatformService
         {
             try
             {
-                if(!IsDirty)        return ICloudService.ResultType.eNoneToUpdate;
-                IsDirty = false;
-
-                if(IsLocked)
+                if(IsLocked || !IsDirty)
                 {
-                    Debug.Log("<color=red>[CloudGateWay] : Serivce is Locked !!!</color>");
-                    return ICloudService.ResultType.eLocked;
+                    Debug.Log("<color=orange>[CloudGateWay] : Serivce is Locked or Not Dirty...</color>");
+                    return IsLocked ? ICloudService.ResultType.eLocked : ICloudService.ResultType.eDataNotFound;
                 }
+
+                IsDirty = false;
 
                 Assert.IsNotNull(cloudService);
 

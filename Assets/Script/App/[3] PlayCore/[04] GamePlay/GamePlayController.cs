@@ -11,6 +11,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -258,32 +259,24 @@ namespace App.GamePlay.IdleMiner.GamePlay
             EnableGameReset(true);
         }
 
-        void ResetGame()
+        //
+        // This function is core of this game. 
+        // Should have no bugs and must work strait-forward.
+        //
+        async void ResetGame()
         {
             Debug.Log("<color=red> Resetting All of this Game Systems... </color>");
             
-            IMContext.ResetPlayerData();
-            EventSystem.DispatchEvent(EventID.SKILL_RESET_GAME_INIT);
-
-            // Add some effect or so.
-            DelayedAction.TriggerActionWithDelay(View, 0.05f, () =>
-            {
-                View.CleanUp();
-
-                InitZone();
-
-                View.Init( new GamePlayView.ViewIniter( BuildPlanetBaseInfoDictionary() ) );
-
-                EventSystem.DispatchEvent(EventID.GAME_RESET_REFRESH, IdleMinerContext.GameKey);
-
-                EnableGameReset(enable:false);
-
-                Debug.Log("<color=red> Refreshing All Views... </color>");
-            });
-
-            // Hold off mining process for a while for game-reset.
             bEnableMiningProcess = false;
-            DelayedAction.TriggerActionWithDelay(view, delay:3.0f, () => bEnableMiningProcess = true);
+
+            IMContext.ResetPlayerData();
+            IMContext.LockGatewayService(isMetaData:false, lock_it:true);
+
+            await Task.Delay(100);
+
+            context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen");
+
+            EventSystem.DispatchEvent(EventID.GAME_RESET_REFRESH, IdleMinerContext.GameKey);
         }
 
         void EventOnBtnGameResetClicked()
@@ -341,7 +334,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             //events.RegisterEvent("EVENT_ONVISIBLE_PLANET_ADDED", OnVisiblePlanetAdded);
             events.RegisterEvent(EventID.MINING_STAT_UPGRADED, PlayerData_OnStatupgraded);
             events.RegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-            events.RegisterEvent(EventID.GAME_RESET_REFRESH, EventOnRefreshAllView);
             events.RegisterEvent(EventID.ZONE_UNLOCKED, EventOnZoneUnlocked);
 
             PlanetComp[] planetComps = View.transform.GetComponentsInChildren<PlanetComp>(includeInactive:true);
@@ -1119,10 +1111,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             if(isSaveData)  WriteData();
         }
         
-        void EventOnRefreshAllView(object data)
-        {
-            // RefreshView(data);
-        }
         void EventOnZoneUnlocked(object data)
         {
             int zoneId = (int)data;

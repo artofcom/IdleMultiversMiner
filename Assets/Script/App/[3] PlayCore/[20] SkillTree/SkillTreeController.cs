@@ -47,7 +47,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
                 View.EventOnSkillItemClicked += OnSkillBtnClicked;
             
             Events.RegisterEvent(EventID.RESOURCE_UPDATED, SkillTreeView_OnResourceUpdated);
-            Events.RegisterEvent(EventID.GAME_RESET_REFRESH, OnEventRefreshView);
 
             await Task.Delay(50);
 
@@ -60,7 +59,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
                 View.EventOnSkillItemClicked -= OnSkillBtnClicked;
 
             Events.UnRegisterEvent(EventID.RESOURCE_UPDATED, SkillTreeView_OnResourceUpdated);
-            Events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnEventRefreshView);
         }        
 
         public override void Resume(int awayTimeInSec) 
@@ -247,14 +245,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
             if(context.IsSimulationMode())
                 return;
 #endif
-            if(View.gameObject.activeSelf)
-                RefreshView();
-        }
-
-        void OnEventRefreshView(object data)
-        {
-            View.Notificator.Reset();
-
             if(View.gameObject.activeSelf)
                 RefreshView();
         }

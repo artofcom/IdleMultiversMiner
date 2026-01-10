@@ -227,13 +227,10 @@ namespace App.GamePlay.IdleMiner.Craft
 
             //Events = new EventsGroup();
             //Events.RegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-            //Events.RegisterEvent(EventID.GAME_RESET_REFRESH, EventOnRefreshView);
-
+            
             EventSystem.UnRegisterAll(this);// EventID.SKILL_LEARNED, EventOnSkillLearned);
-            // EventSystem.UnRegisterEvent(EventID.GAME_RESET_REFRESH, EventOnRefreshView);
 
             EventSystem.RegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-            EventSystem.RegisterEvent(EventID.GAME_RESET_REFRESH, EventOnResetRefresh);
 
             Debug.Log("[InitSeq]:[CraftController] Init...");
         
@@ -258,7 +255,6 @@ namespace App.GamePlay.IdleMiner.Craft
             base.Dispose();
 
             EventSystem.UnRegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
-            EventSystem.UnRegisterEvent(EventID.GAME_RESET_REFRESH, EventOnResetRefresh);
 
             View?.EventTabIndexChanged.RemoveAllListeners();
             View?.EventOnEmptySlotClicked.RemoveAllListeners();
@@ -436,14 +432,6 @@ namespace App.GamePlay.IdleMiner.Craft
             
             RefreshCraftView();
         }
-
-        void EventOnResetRefresh(object data)
-        {
-            View.InitAfterReset();
-
-            RefreshCraftView();
-        }
-
 
         void OnCraftPnlTabSelectionChanged(int idxTab)
         {

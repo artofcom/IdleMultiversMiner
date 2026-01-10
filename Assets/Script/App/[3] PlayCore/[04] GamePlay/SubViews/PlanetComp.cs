@@ -105,22 +105,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             base.Init();
         }
 
-        public override void CleanUp()
-        {
-            Debug.Log($"<color=green>[Planet-CleanUp] Id:[{this.planetId}] clean up in progress..</color>");
-
-            mMainCharObj = null;
-
-            mFlyMonObj.Stop();
-            mFlyMonObj.OnArrivalAtTarget1.RemoveAllListeners();
-            mFlyMonObj.OnArrivalAtTarget2.RemoveAllListeners();
-            Destroy(mFlyMonObj.gameObject);
-            mFlyMonObj = null;
-            openedRoot.gameObject.SetActive(false);
-            closedRoot.gameObject.SetActive(true);
-
-            base.CleanUp();
-        }
 
         //===================================================================//
         //

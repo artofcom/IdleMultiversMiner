@@ -27,8 +27,6 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
 
         RegisterRequestables();
 
-        events.RegisterEvent(EventID.GAME_RESET_REFRESH, OnGameResetRefresh);
-
         IsInitialized = true;
     }
 
@@ -37,8 +35,6 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
         base.Dispose();
 
         UnregisterRequestables();
-
-        events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnGameResetRefresh);
 
         metaCurrencyBundle.Dispose();
         metaCurrencyBundle = null;
@@ -70,10 +66,7 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
         Debug.Log($"<color=green>User App Data : Star[{metaCurrencyBundle.GetCurrency("iap").Amount}], Volt:[{metaCurrencyBundle.GetCurrency("star").Amount}]</color>");
     }
 
-    void OnGameResetRefresh(object data)
-    {
-    }
-
+    
 
     
     #region Requestables.

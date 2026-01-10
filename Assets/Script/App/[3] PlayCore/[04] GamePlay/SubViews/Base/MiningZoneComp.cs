@@ -88,26 +88,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
             }
         }
 
-        public void ClearnUp()
-        {
-            Debug.Log($"<color=green>[Zone-CleanUp] Zone [{this.ZoneId}] clean up in progress..</color>");
-
-            for (int q = 0; q < planets.Count; ++q)
-            {
-                switch(planets[q].Type)
-                {
-                    case PlanetData.KEY:
-                        (planets[q] as PlanetComp).CleanUp();
-                        break;
-                    default:
-                        UnityEngine.Assertions.Assert.IsTrue(false, "Unsupported Type.");
-                        break;
-                }
-                planets[q].gameObject.SetActive(false);
-            }
-            gameObject.SetActive(false);
-        }
-
         public PlanetBaseComp GetPlanetComp(int planetId)
         {
             for (int q = 0; q < planets.Count; ++q)

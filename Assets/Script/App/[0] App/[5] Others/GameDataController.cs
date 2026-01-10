@@ -367,6 +367,7 @@ public sealed partial class IdleMinerContext : AContext
         {
             if(isLocal)
             {
+                if(clearAll)    gameDataGatewayService.IsDirty = true;
                 if(true == await gameDataGatewayService.WriteData((string)contextCache.GetData("PlayerId"), GameDataKey, clearAll))
                 {
                     Debug.Log("<color=blue>[Data] Storing Player Data in Local has been successed.</color>");
@@ -380,6 +381,7 @@ public sealed partial class IdleMinerContext : AContext
             }
             else
             {
+                if(clearAll)    gameDataCloudGatewayService.IsDirty = true;
                 if(ICloudService.ResultType.eSuccessed == await gameDataCloudGatewayService.WriteData(GameDataKey, clearAll))
                 {
                     Debug.Log("<color=green>[Data] Storing Player Data in Cloud has been successed.</color>");

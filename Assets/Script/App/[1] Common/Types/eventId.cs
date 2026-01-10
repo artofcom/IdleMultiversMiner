@@ -23,7 +23,6 @@ namespace App.GamePlay.IdleMiner.Common.Types
         public const string RESOURCE_UPDATED = "ResourceUpdated";
         public const string SKILL_LEARNED = "SkillLearned";
         
-        public const string SKILL_RESET_GAME_INIT = "SkillResetGameInit";
         public const string GAME_RESET_REFRESH = "GameResetRefreshAllView";
         
         public const string GAME_CURRENCY_UPDATED = "GameCurrencyUpdated";
