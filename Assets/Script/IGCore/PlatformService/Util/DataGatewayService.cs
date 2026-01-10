@@ -1,5 +1,6 @@
 using Core.Utils;
 using IGCore.PlatformService.Cloud;
+using NUnit.Framework.Internal.Filters;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,17 +23,17 @@ namespace IGCore.PlatformService
         public void RegisterDataModel(IWritableModel model)
         {
             models.Add(model);
-            Debug.Log($"[LocalGateWay] : Adding Model [{model.GetType().Name}].");
+            //Debug.Log($"[LocalGateWay] : Adding Model [{model.GetType().Name}].");
         }
         public void UnRegisterDataModel(IWritableModel model)
         {
             models.Remove(model);
-            Debug.Log($"[LocalGateWay] : Removing Model [{model.GetType().Name}].");
+            //Debug.Log($"[LocalGateWay] : Removing Model [{model.GetType().Name}].");
         }
         public void ClearModels()
         {
             models.Clear();
-            Debug.Log("[LocalGateWay] : Clearing All Models.");
+            //Debug.Log("[LocalGateWay] : Clearing All Models.");
         }
 
         public virtual Task<bool> WriteData(string accountId, string dataKey, bool clearAll)
@@ -80,10 +81,9 @@ namespace IGCore.PlatformService
                         for(int q = 0; q < listDataSet.Count; q++)
                         {
                             serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
-                            Debug.Log($"[LocalDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
+                            //Debug.Log($"[LocalDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
                         }
-                    }
-                    Debug.Log($"[LocalDataGateway] Total Data Size : {serviceData.Data.Count}");
+                    }   
                 }
                 serviceData.Init();
             
@@ -93,6 +93,7 @@ namespace IGCore.PlatformService
 
                 string fileName = Path.Combine(fullPath, dataKey + ".json");
                 string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
+                Debug.Log($"<color=yellow>[LocalDataGateway][Writing] : {fileName} \nTotal Data Size : {serviceData.Data.Count} \n{jsonText}</color>");
                 return Task.FromResult( TextFileIO.WriteTextFile(fileName, jsonText) );
             }
             catch (Exception ex) 
@@ -114,6 +115,8 @@ namespace IGCore.PlatformService
                 serviceData = JsonUtility.FromJson<DataGateWay.DataInService>(jsonString);
                 if(serviceData == null)
                     return Task.FromResult(false);  //serviceData = new DataInService();
+
+                Debug.Log($"<color=green>[LocalDataGateWay][Reading] : {fileNamePath} \n{jsonString} </color>");
 
                 serviceData.Init();
                 return Task.FromResult(true);

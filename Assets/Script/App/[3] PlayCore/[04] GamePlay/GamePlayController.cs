@@ -165,7 +165,9 @@ namespace App.GamePlay.IdleMiner.GamePlay
             base.Init();
             ((ISkillLeaner)this).CreateSkillBehaviors();
             InitPlayGround();
-            InitZone();
+            
+            // This can be done once other models are ready.
+            IMContext.CoRunner.StartCoroutine( coInitZone() );
         }
 
         protected override void OnViewEnable()
@@ -357,6 +359,13 @@ namespace App.GamePlay.IdleMiner.GamePlay
 #if UNITY_EDITOR
             TestMingPumpResumeLogic();
 #endif
+        }
+
+        IEnumerator coInitZone()
+        {
+            yield return new WaitUntil( () => Model.IsInitialized  );
+
+            InitZone();
         }
 
         void InitZone()

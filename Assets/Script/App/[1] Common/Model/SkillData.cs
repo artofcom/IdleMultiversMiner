@@ -186,7 +186,7 @@ namespace App.GamePlay.IdleMiner.Common
             skill_id = skill_id.ToLower();
             if(dictStatusCache.Count == 0)
             {
-                Assert.IsTrue(false, $"Status-dictionary is not ready...{id} / {skill_id}");
+                Debug.LogWarning($"Status-dictionary is not ready...{id} / {skill_id}");
                 return SKILL_STATUS.UNKNOWN;
             }
             if(dictStatusCache.ContainsKey(skill_id))

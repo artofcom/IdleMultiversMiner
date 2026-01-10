@@ -7,6 +7,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 using IGCore.SubSystem.Analytics;
+using System.Threading.Tasks;
 
 [Serializable]
 public class GameKeyPathSet
@@ -34,6 +35,9 @@ public class PlayScreen : AUnit
     Dictionary<string, string> dictGameKeyPathSets = new Dictionary<string, string>();
     IdleMinerContext IMContext;
 
+    bool isGameDataLoadingCompleted = false;
+    bool IsGameDataLoadingCompleted()  { return isGameDataLoadingCompleted; }
+
     // DictorMain.Start() -> AUnitSwitcher.Init() -> PlayerScreen.Init()
     public override void Init(AContext ctx)
     {
@@ -52,8 +56,6 @@ public class PlayScreen : AUnit
         {
             dictGameKeyPathSets.Add(gameKeyPathSets[q].Key.ToLower(), gameKeyPathSets[q].Path);
         }
-
-        UnitSwitcher.OnPreSwitch += EventOnPreUnitSwitch;
     }
 
     public override void Dispose()
@@ -62,8 +64,6 @@ public class PlayScreen : AUnit
 
         IMContext = null;
         dictGameKeyPathSets?.Clear();
-
-        UnitSwitcher.OnPreSwitch -= EventOnPreUnitSwitch;
     }
 
     // LobbyScreenController.EventOnBtnStart() -> AUnitSwitcher.OnEventClose() -> Attach()
@@ -107,26 +107,41 @@ public class PlayScreen : AUnit
         base.Detach();   
     }
 
-    public void SwitchUnit(string nextUnit, object data)
+    public void SwitchUnit(string nextUnit)
     {
-        UnitSwitcher.SwitchUnit(nextUnit, data);
-    }
-
-    void EventOnPreUnitSwitch()
-    {
-        // Detach and Destory Game Module.
         if(idleMinerModule != null )
         {
             idleMinerModule.Detach();
 
             // DO NOT allow to save any game data after this point.
-            IMContext.SavePlayerDataInstantly();
             IMContext.LockGatewayService(isMetaData:false, lock_it:true);
             IMContext.StopGatewaySaveDog(isMetaData:false);
 
-            Destroy(idleMinerModule.gameObject);
+            DestroyImmediate(idleMinerModule.gameObject);
         }
         idleMinerModule = null;
+
+        if(nextUnit.ToLower().Contains("playscreen"))
+        {
+            ConductGameInitProcess().Forget();
+            UnitSwitcher.SwitchUnit(nextUnit, (Func<bool>)IsGameDataLoadingCompleted);
+        }
+        else 
+            UnitSwitcher.SwitchUnit(nextUnit, null);
+    }
+
+    async Task ConductGameInitProcess()
+    {
+        isGameDataLoadingCompleted = false;
+
+        try
+        {
+            await IMContext.InitGame();
+        }
+        finally
+        { 
+            isGameDataLoadingCompleted = true;
+        }
     }
 
 

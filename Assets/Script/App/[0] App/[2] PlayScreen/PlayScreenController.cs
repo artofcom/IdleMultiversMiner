@@ -49,11 +49,11 @@ public class PlayScreenController : AController
 
     object switchUnit(params object[] data) // int amount, bool isOffset)
     {
-        if(data.Length < 2)
+        if(data.Length < 1)
             return null;
 
         string nextUnitId = (string)data[0];
-        (unit as PlayScreen).SwitchUnit(nextUnitId, data[1]);
+        (unit as PlayScreen).SwitchUnit(nextUnitId);
         return null;
     }
 

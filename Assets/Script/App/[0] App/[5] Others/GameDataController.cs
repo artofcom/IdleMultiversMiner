@@ -132,6 +132,7 @@ public sealed partial class IdleMinerContext : AContext
 
                 AccountStatus eAccStatus = GetAccountStatus(loadRet.Item1, loadRet.Item2, loadRet.Item3, loadRet.Item4);
 
+                long cloudTimeStampOffset = 10000000L;      // 1 sec delay. -> Helps to select local data when they have similr timestamp.
                 int selectedIndex = 0;
                 switch( eAccStatus )
                 {
@@ -179,7 +180,7 @@ public sealed partial class IdleMinerContext : AContext
                         var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
                         var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
                         long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                        long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp;
+                        long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
                         selectedIndex = SelectLatestDataGatewayService( guestTS, cloudTS );
                         if(selectedIndex == 0)
                         {
@@ -218,7 +219,7 @@ public sealed partial class IdleMinerContext : AContext
                     var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
                     var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
                     long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
-                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp;
+                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
                     selectedIndex = SelectLatestDataGatewayService(localTS, cloudTS);
                     SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
                     break;
@@ -230,7 +231,7 @@ public sealed partial class IdleMinerContext : AContext
                     var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
                     long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
                     long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
-                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp;
+                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
 
                     selectedIndex = SelectLatestDataGatewayService(guestTS, localTS, cloudTS);
                     if(selectedIndex == 0)

@@ -8,9 +8,6 @@ namespace IGCore.MVCS
 {
     public class UnitSwitcherComp : MonoBehaviour, IUnitSwitcher
     {
-        public event Action OnPreSwitch;
-        public event Action OnPostSwitch;
-
         [SerializeField] protected List<AUnit> units;
         [SerializeField] protected AUnit startUnit;
 
@@ -40,24 +37,31 @@ namespace IGCore.MVCS
             }
         }
 
-        public virtual async void SwitchUnit(string nextModuleId, object data)
+        protected virtual void Detach(string nextModuleId)
         {
-            OnPreSwitch?.Invoke();
+            foreach(var module in units)
+            {
+                bool isTargetModule = module.GetType().Name.ToLower().Contains(nextModuleId.ToLower());
+                if(!isTargetModule)                    
+                    module.Detach();
+            }
+        }
 
-            await Task.Delay(100);
-
+        protected virtual void Attach(string nextModuleId)
+        {
             foreach(var module in units)
             {
                 bool isTargetModule = module.GetType().Name.ToLower().Contains(nextModuleId.ToLower());
                 if(isTargetModule)
                     module.Attach();
-                else                    
-                    module.Detach();
             }
+        }
 
-            await Task.Delay(100);
+        public virtual void SwitchUnit(string nextModuleId, object data)
+        {
+            Detach(nextModuleId);
 
-            OnPostSwitch?.Invoke();
+            Attach(nextModuleId);
         }
     }
 }

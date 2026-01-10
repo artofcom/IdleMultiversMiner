@@ -10,8 +10,8 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
-using App.GamePlay.IdleMiner;
 using IGCore.MVCS;
+using System.Threading.Tasks;
 
 namespace App.GamePlay.IdleMiner.SkillTree
 {
@@ -41,19 +41,23 @@ namespace App.GamePlay.IdleMiner.SkillTree
         // Events.
         //
         //
-        public override void Init()
+        public override async void Init()
         {
             if(View != null)
                 View.EventOnSkillItemClicked += OnSkillBtnClicked;
             
             Events.RegisterEvent(EventID.RESOURCE_UPDATED, SkillTreeView_OnResourceUpdated);
             Events.RegisterEvent(EventID.GAME_RESET_REFRESH, OnEventRefreshView);
+
+            await Task.Delay(50);
+
+            STModel.SanatizeSkillTreeFromPlayerData();
         }
 
         public override void Dispose()
         {
             if(View != null)
-            View.EventOnSkillItemClicked -= OnSkillBtnClicked;
+                View.EventOnSkillItemClicked -= OnSkillBtnClicked;
 
             Events.UnRegisterEvent(EventID.RESOURCE_UPDATED, SkillTreeView_OnResourceUpdated);
             Events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnEventRefreshView);

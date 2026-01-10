@@ -21,10 +21,5 @@ namespace App.GamePlay.IdleMiner.Games.IdleFinishing
             model.Init();
             controller.Init();  
         }
-
-        public override void Attach()
-        {
-            base.Attach();
-        }
     }
 }

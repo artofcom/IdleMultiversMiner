@@ -45,10 +45,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
             string gamePath = (string)IMCtx.GetData("gamePath");
             this.LoadData(gamePath);
 
-            SanatizeData();
-            
-            InitSkillStatusBuffer();
-
             RegisterRequestables();
 
             _isInitialized = true;
@@ -59,6 +55,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
             PlayerData.ResetGamePlay_InitGame(caller:this);
 
             SanatizeData();
+
             InitSkillStatusBuffer();
         }
 
@@ -94,6 +91,13 @@ namespace App.GamePlay.IdleMiner.SkillTree
             Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
 
             _isInitialized = false;
+        }
+
+        public void SanatizeSkillTreeFromPlayerData()
+        {
+            SanatizeData();
+            
+            InitSkillStatusBuffer();
         }
 
         void InitSkillStatusBuffer()
@@ -177,24 +181,19 @@ namespace App.GamePlay.IdleMiner.SkillTree
                     srcCollected = ret as ResourceCollectInfo;
                 }, selectedInfo.UnlockCost[q].ResourceId);
 
-                if(srcCollected == null)
-                    continue;
-
-                BigInteger reqCount = isDebugMode ? 1 : selectedInfo.UnlockCost[q].GetCount();
-
                 if(printLog)
                 {
-                    string strCount = srcCollected==null ? "0" : srcCollected.BICount.ToString();
+                    string strCount = srcCollected==null ? "0" : srcCollected?.BICount.ToString();
                     Debug.Log($"[SIM][Status] [SkillTree-LearnAffordable] Skill_id[{skill_id}], Rsc:[{selectedInfo.UnlockCost[q].ResourceId}], {strCount}/{selectedInfo.UnlockCost[q].GetCount()}");
                 }
 
                 // Un-affordable !!!
+                BigInteger reqCount = isDebugMode ? 1 : selectedInfo.UnlockCost[q].GetCount();
                 if(srcCollected==null || srcCollected.BICount < reqCount)
                 {
-                    ret = false;        // let the loop finish.
+                    ret = false;        // let the loop finish to see logs?
                     //if(printLog)
                         //string strCount = srcCollected==null ? "0" : srcCollected.BICount.ToString();
-                    
                 }
             }
             return ret;

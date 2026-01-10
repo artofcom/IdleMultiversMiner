@@ -21,10 +21,5 @@ namespace App.GamePlay.IdleMiner.Games.IdleHellBoy
             model.Init();
             controller.Init();  
         }
-
-        public override void Attach()
-        {
-            base.Attach();
-        }
     }
 }

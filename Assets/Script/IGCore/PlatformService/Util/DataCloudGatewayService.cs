@@ -23,17 +23,17 @@ namespace IGCore.PlatformService
         public void RegisterDataModel(IWritableModel model)
         {
             models.Add(model);
-            Debug.Log($"[CloudGateWay] : Adding Model [{model.GetType().Name}].");
+            //Debug.Log($"[CloudGateWay] : Adding Model [{model.GetType().Name}].");
         }
         public void UnRegisterDataModel(IWritableModel model)
         {
             models.Remove(model);
-            Debug.Log($"[CloudGateWay] : Removing Model [{model.GetType().Name}].");
+            //Debug.Log($"[CloudGateWay] : Removing Model [{model.GetType().Name}].");
         }
         public void ClearModels()
         {
             models.Clear();
-            Debug.Log("[CloudGateWay] : Clearing All Models.");
+            //Debug.Log("[CloudGateWay] : Clearing All Models.");
         }
 
         public DataCloudGatewayService(ICloudService cloudService)
@@ -85,7 +85,7 @@ namespace IGCore.PlatformService
                         for(int q = 0; q < listDataSet.Count; q++)
                         {
                             serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
-                            Debug.Log($"[CloudDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
+                            //Debug.Log($"[CloudDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
                         }
                     }
                     Debug.Log($"[CloudDataGateway] Total Data Size : {serviceData.Data.Count}");

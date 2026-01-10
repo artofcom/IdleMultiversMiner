@@ -39,8 +39,7 @@ namespace App.GamePlay.IdleMiner
         internal IdleMinerModel Model => (IdleMinerModel)model;
         public IdleMinerView View => (IdleMinerView)view;
 
-        bool isGameDataLoadingCompleted = false;
-        bool IsGameDataLoadingCompleted()  { return isGameDataLoadingCompleted; }
+        
 
         #region AController
 
@@ -380,29 +379,13 @@ namespace App.GamePlay.IdleMiner
             Debug.Log("Game Start Clicked..." + gameKey);
             (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>
             {
+                IMContext.SavePlayerDataInstantly();    // Last Save should be done before key update.
                 context.AddData("gameKey" , gameKey.ToLower());
                 
-                ConductGameInitProcess().Forget();
-
-                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen", (Func<bool>)IsGameDataLoadingCompleted);
-
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen", gameKey.ToLower());
             }));
-       
         }
 
-        async Task ConductGameInitProcess()
-        {
-            isGameDataLoadingCompleted = false;
-
-            try
-            {
-                await context.InitGame();
-            }
-            finally
-            { 
-                isGameDataLoadingCompleted = true;
-            }
-        }
 
         void View_OnBtnTimedBonusClicked()
         {
@@ -446,8 +429,8 @@ namespace App.GamePlay.IdleMiner
             Debug.Log("IEM - OnBtnBackClicked..");
             (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>
             {
-                // OnEventClose?.Invoke("LobbyScreen");
-                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "LobbyScreen", null);
+                IMContext.SavePlayerDataInstantly();
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "LobbyScreen");
 
             }));
 

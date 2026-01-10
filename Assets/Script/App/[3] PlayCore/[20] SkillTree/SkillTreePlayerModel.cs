@@ -134,14 +134,6 @@ namespace App.GamePlay.IdleMiner.SkillTree
          //   SaveSkillTreeData();
         }        
 
-        //public void SaveSkillTreeData()
-        //{
-            //if(skillTreeProcInfo != null)
-            //    WriteFileInternal(SkillTreePlayDataFile, skillTreeProcInfo);
-
-          //  if(skillAbilityInfo != null)
-          //      WriteFileInternal($"{mAccount}_SkillAbilityData", skillAbilityInfo);
-        //}
         void LoadSkillTreeData()
         {
             if(context.IsSimulationMode())

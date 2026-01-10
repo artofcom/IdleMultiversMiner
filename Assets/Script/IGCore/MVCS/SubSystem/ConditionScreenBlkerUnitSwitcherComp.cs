@@ -36,11 +36,15 @@ namespace IGCore.MVCS
                 yield return null;
             }
 
+            Detach(nextModuleId);
+
             if(conditionFunc != null)
                 yield return new WaitUntil( () => conditionFunc() );
 
             // Turn On/Off Instantly.
-            base.SwitchUnit(nextModuleId, null);
+            //base.SwitchUnit(nextModuleId, null);
+
+            Attach(nextModuleId);
 
 
             fStart = Time.time;
