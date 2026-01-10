@@ -48,7 +48,8 @@ public class SettingController : AController
         SettingDialogView.EventOnSignOutClicked += EventOnSignOutClicked;
         SettingDialogView.EventOnDeleteAccountClicked += EventOnDeleteAccountClicked;
         SettingDialogView.EventOnAccountManagementClicked += EventOnAccountManagementClicked;
-        
+        SettingDialogView.EventOnCloseClicked += EventOnCloseClicked;
+
         settingUnit.AuthService.EventOnLinkAccount += EventOnLinkAccount;
 
         RefreshView();
@@ -66,6 +67,7 @@ public class SettingController : AController
         SettingDialogView.EventOnSignOutClicked -= EventOnSignOutClicked;
         SettingDialogView.EventOnDeleteAccountClicked -= EventOnDeleteAccountClicked;
         SettingDialogView.EventOnAccountManagementClicked -= EventOnAccountManagementClicked;
+        SettingDialogView.EventOnCloseClicked -= EventOnCloseClicked;
 
         settingUnit.AuthService.EventOnLinkAccount -= EventOnLinkAccount;
         Debug.Log("[Setting] OnViewDisable");
@@ -186,5 +188,9 @@ public class SettingController : AController
     void EventOnAccountManagementClicked()
     {
         Application.OpenURL( settingUnit.AuthService.GetManagementURL() );
+    }
+    void EventOnCloseClicked()
+    {
+        unit.Detach();
     }
 }

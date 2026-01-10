@@ -132,11 +132,8 @@ public class LobbyScreenController : AController
         settingDlgUnit.OnEventDetached -= OnOptionDialogClosed;
         Debug.Log("Option Dialog has been closed.");
         
-        Debug.Log("Should Sign Out " + settingDlgUnit.ShouldSignOut);
-        Debug.Log("Should delete Acc " + settingDlgUnit.ShouldDeleteAccount);
-
-
-        (unit as LobbyScreen).SwitchUnit("TitleScreen");
+        if((bool)context.GetData("IsTitleViewLoginRequired", false))
+            (unit as LobbyScreen).SwitchUnit("TitleScreen");
     }
 
     void EventOnBtnShopDlgClicked()

@@ -30,6 +30,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         public static Action EventOnSignOutClicked;
         public static Action EventOnDeleteAccountClicked;
         public static Action EventOnAccountManagementClicked;
+        public static Action EventOnCloseClicked;
 
         // Debug Actions.
         public static Action EventOnShowGameReset;
@@ -147,6 +148,16 @@ namespace App.GamePlay.IdleMiner.PopupDialog
 
                 audio.volume = enable ? 0.9f : .0f;
             }
+        }
+
+        public override void OnClose()
+        {
+            if (OnCloseCallback != null)
+                OnCloseCallback.Invoke(this);
+
+            OnCloseCallback = null;
+
+            EventOnCloseClicked?.Invoke();
         }
 
         protected override void OnDisable()

@@ -75,7 +75,7 @@ public class LobbyScreenView : AView
     
     public void OnBtnOptionClicked()
     {
-        EventOnBtnOptionDialogClicked?.Invoke();
+       EventOnBtnOptionDialogClicked?.Invoke();
     }
 
     public void OnBtnShopClicked()

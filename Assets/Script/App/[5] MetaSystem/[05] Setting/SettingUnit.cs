@@ -9,9 +9,6 @@ public class SettingUnit : AUnit
     [ImplementsInterface(typeof(IAuthService))]
     [SerializeField] MonoBehaviour authService;
 
-    public bool ShouldSignOut { get ;set; } = false;
-    public bool ShouldDeleteAccount { get ;set; } = false;
-
     public IAuthService AuthService => authService as IAuthService;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,9 +34,6 @@ public class SettingUnit : AUnit
     public override void Attach()
     {
         base.Attach();
-
-        ShouldSignOut = false;
-        ShouldDeleteAccount = false;
     }
 
     public override void Dispose() 

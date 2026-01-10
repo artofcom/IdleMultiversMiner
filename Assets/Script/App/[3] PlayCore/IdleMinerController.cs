@@ -382,7 +382,7 @@ namespace App.GamePlay.IdleMiner
                 IMContext.SavePlayerDataInstantly();    // Last Save should be done before key update.
                 context.AddData("gameKey" , gameKey.ToLower());
                 
-                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen", gameKey.ToLower());
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen");
             }));
         }
 
@@ -440,17 +440,34 @@ namespace App.GamePlay.IdleMiner
         {
             //Model.PlayerData.AddMoney(new CurrencyAmount("50", eCurrencyType.IAP_COIN));
             //Model.PlayerData.AddMoney(new CurrencyAmount("500", eCurrencyType.MINING_COIN));
+            AUnit dialogUnit = null;
             context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayUnitPopupDialog", 
-                (errMsg, ret) => {}, 
+                (errMsg, ret) => 
+                {
+                    dialogUnit = ret as AUnit;
+                    Assert.IsNotNull(dialogUnit);
+                }, 
                 "OptionDialog", 
                 new Action<APopupDialog>( (popupDlg) => 
                 { 
                     Debug.Log("Option dlg has been closed from X.");
 
                 }));  
+
+            dialogUnit.OnEventDetached += OnOptionDialogClosed;
         }
 
+        void OnOptionDialogClosed(object dlgUnit)
+        {
+            var settingDlgUnit = dlgUnit as SettingUnit;
+            settingDlgUnit.OnEventDetached -= OnOptionDialogClosed;
+            Debug.Log("Option Dialog has been closed.");
         
+            if((bool)context.GetData("IsTitleViewLoginRequired", false))
+            {
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "TitleScreen");
+            }
+        }
         
         void EventOptionDlgOnBtnBGMClicked(bool isOn)
         {
