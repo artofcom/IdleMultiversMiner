@@ -10,7 +10,7 @@
             ],
             "outcomeId": "beer",
             "duration": 10,
-            "cost": "25"
+            "cost": "5"
         },
         {
             "id": "Item_1",
@@ -22,7 +22,7 @@
             ],
             "outcomeId": "bloodwine",
             "duration": 20,
-            "cost": "57"
+            "cost": "5"
         },
         {
             "id": "Item_2",
@@ -34,7 +34,7 @@
             ],
             "outcomeId": "bowlofhoney",
             "duration": 30,
-            "cost": "89"
+            "cost": "10"
         },
         {
             "id": "Item_3",
@@ -46,7 +46,7 @@
             ],
             "outcomeId": "furboots",
             "duration": 40,
-            "cost": "122"
+            "cost": "10"
         },
         {
             "id": "Item_4",
@@ -58,7 +58,7 @@
             ],
             "outcomeId": "furgloves",
             "duration": 50,
-            "cost": "154"
+            "cost": "10"
         },
         {
             "id": "Item_5",
@@ -70,7 +70,7 @@
             ],
             "outcomeId": "mechaincsgoggle",
             "duration": 60,
-            "cost": "187"
+            "cost": "10"
         },
         {
             "id": "Item_6",
@@ -82,7 +82,7 @@
             ],
             "outcomeId": "furhat",
             "duration": 70,
-            "cost": "219"
+            "cost": "10"
         },
         {
             "id": "Item_7",
@@ -94,7 +94,7 @@
             ],
             "outcomeId": "metalgear",
             "duration": 80,
-            "cost": "252"
+            "cost": "15"
         },
         {
             "id": "Item_8",
@@ -106,7 +106,7 @@
             ],
             "outcomeId": "leatherroll",
             "duration": 90,
-            "cost": "284"
+            "cost": "15"
         },
         {
             "id": "Item_9",
@@ -118,7 +118,7 @@
             ],
             "outcomeId": "firetome",
             "duration": 100,
-            "cost": "317"
+            "cost": "15"
         },
         {
             "id": "Item_10",
@@ -130,7 +130,7 @@
             ],
             "outcomeId": "lavablade",
             "duration": 110,
-            "cost": "349"
+            "cost": "15"
         },
         {
             "id": "Item_11",
@@ -146,7 +146,7 @@
             ],
             "outcomeId": "icespellscroll",
             "duration": 120,
-            "cost": "382"
+            "cost": "15"
         }
     ],
     "slotCosts": [

@@ -14,7 +14,7 @@
             ],
             "outcomeId": "creamsoup",
             "duration": 10,
-            "cost": "25"
+            "cost": "5"
         },
         {
             "id": "Item_1",
@@ -30,7 +30,7 @@
             ],
             "outcomeId": "eggtoast",
             "duration": 20,
-            "cost": "50"
+            "cost": "5"
         },
         {
             "id": "Item_2",
@@ -46,7 +46,7 @@
             ],
             "outcomeId": "freshsalad",
             "duration": 30,
-            "cost": "75"
+            "cost": "10"
         },
         {
             "id": "Item_3",
@@ -62,7 +62,7 @@
             ],
             "outcomeId": "fruitbasket",
             "duration": 40,
-            "cost": "100"
+            "cost": "10"
         },
         {
             "id": "Item_4",
@@ -78,7 +78,7 @@
             ],
             "outcomeId": "fruitpie",
             "duration": 50,
-            "cost": "125"
+            "cost": "10"
         },
         {
             "id": "Item_5",
@@ -90,7 +90,7 @@
             ],
             "outcomeId": "meatpie",
             "duration": 60,
-            "cost": "150"
+            "cost": "10"
         },
         {
             "id": "Item_6",
@@ -106,7 +106,7 @@
             ],
             "outcomeId": "meatstew",
             "duration": 70,
-            "cost": "175"
+            "cost": "15"
         },
         {
             "id": "Item_7",
@@ -118,7 +118,7 @@
             ],
             "outcomeId": "mushrooms",
             "duration": 80,
-            "cost": "200"
+            "cost": "15"
         },
         {
             "id": "Item_8",
@@ -130,7 +130,7 @@
             ],
             "outcomeId": "sandwich",
             "duration": 90,
-            "cost": "225"
+            "cost": "15"
         },
         {
             "id": "Item_9",
@@ -146,7 +146,7 @@
             ],
             "outcomeId": "witchssoup",
             "duration": 100,
-            "cost": "250"
+            "cost": "15"
         }
     ],
     "slotCosts": [
@@ -154,6 +154,6 @@
         "5",
         "10",
         "30",
-        "60"
+        "50"
     ]
 }

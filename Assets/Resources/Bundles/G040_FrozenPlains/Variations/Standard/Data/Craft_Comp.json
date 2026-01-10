@@ -10,7 +10,7 @@
             ],
             "outcomeId": "droplet",
             "duration": 10,
-            "cost": "10"
+            "cost": "5"
         },
         {
             "id": "Comp_1",
@@ -22,7 +22,7 @@
             ],
             "outcomeId": "spring",
             "duration": 21,
-            "cost": "20"
+            "cost": "5"
         },
         {
             "id": "Comp_2",
@@ -34,7 +34,7 @@
             ],
             "outcomeId": "redsand",
             "duration": 32,
-            "cost": "30"
+            "cost": "10"
         },
         {
             "id": "Comp_3",
@@ -46,7 +46,7 @@
             ],
             "outcomeId": "bearleather",
             "duration": 43,
-            "cost": "40"
+            "cost": "10"
         },
         {
             "id": "Comp_4",
@@ -58,7 +58,7 @@
             ],
             "outcomeId": "ironingot",
             "duration": 54,
-            "cost": "50"
+            "cost": "10"
         },
         {
             "id": "Comp_5",
@@ -70,7 +70,7 @@
             ],
             "outcomeId": "steelingot",
             "duration": 65,
-            "cost": "60"
+            "cost": "10"
         },
         {
             "id": "Comp_6",
@@ -82,7 +82,7 @@
             ],
             "outcomeId": "essenceofwater",
             "duration": 76,
-            "cost": "70"
+            "cost": "10"
         },
         {
             "id": "Comp_7",
@@ -94,7 +94,7 @@
             ],
             "outcomeId": "jadeingot",
             "duration": 87,
-            "cost": "80"
+            "cost": "10"
         },
         {
             "id": "Comp_8",
@@ -106,7 +106,7 @@
             ],
             "outcomeId": "goldingot",
             "duration": 98,
-            "cost": "90"
+            "cost": "10"
         },
         {
             "id": "Comp_9",
@@ -118,7 +118,7 @@
             ],
             "outcomeId": "goldenmane",
             "duration": 109,
-            "cost": "100"
+            "cost": "15"
         },
         {
             "id": "Comp_10",
@@ -130,7 +130,7 @@
             ],
             "outcomeId": "enchantedingot",
             "duration": 120,
-            "cost": "110"
+            "cost": "15"
         }
     ],
     "slotCosts": [

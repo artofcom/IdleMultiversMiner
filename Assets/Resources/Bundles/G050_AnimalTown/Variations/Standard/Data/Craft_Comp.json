@@ -10,7 +10,7 @@
             ],
             "outcomeId": "blackjuice",
             "duration": 5,
-            "cost": "10"
+            "cost": "5"
         },
         {
             "id": "Comp_1",
@@ -22,7 +22,7 @@
             ],
             "outcomeId": "bluejuice",
             "duration": 10,
-            "cost": "20"
+            "cost": "5"
         },
         {
             "id": "Comp_2",
@@ -34,7 +34,7 @@
             ],
             "outcomeId": "greenjuice",
             "duration": 15,
-            "cost": "30"
+            "cost": "5"
         },
         {
             "id": "Comp_3",
@@ -46,7 +46,7 @@
             ],
             "outcomeId": "orangejuice",
             "duration": 20,
-            "cost": "40"
+            "cost": "10"
         },
         {
             "id": "Comp_4",
@@ -58,7 +58,7 @@
             ],
             "outcomeId": "pinkjuice",
             "duration": 25,
-            "cost": "50"
+            "cost": "10"
         },
         {
             "id": "Comp_5",
@@ -70,7 +70,7 @@
             ],
             "outcomeId": "purplejuice",
             "duration": 30,
-            "cost": "60"
+            "cost": "10"
         },
         {
             "id": "Comp_6",
@@ -82,7 +82,7 @@
             ],
             "outcomeId": "redjuice",
             "duration": 35,
-            "cost": "70"
+            "cost": "10"
         },
         {
             "id": "Comp_7",
@@ -94,7 +94,7 @@
             ],
             "outcomeId": "turquoisejuice",
             "duration": 40,
-            "cost": "80"
+            "cost": "15"
         },
         {
             "id": "Comp_8",
@@ -106,7 +106,7 @@
             ],
             "outcomeId": "whitejuice",
             "duration": 45,
-            "cost": "90"
+            "cost": "15"
         },
         {
             "id": "Comp_9",
@@ -118,7 +118,7 @@
             ],
             "outcomeId": "yellowjuice",
             "duration": 50,
-            "cost": "100"
+            "cost": "15"
         }
     ],
     "slotCosts": [
