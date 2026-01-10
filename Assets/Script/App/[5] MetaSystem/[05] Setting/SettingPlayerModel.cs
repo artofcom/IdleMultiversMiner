@@ -41,6 +41,8 @@ public class SettingPlayerModel : MultiGatewayWritablePlayerModel
 
         UnregisterRequestables();
 
+        settingData = null;
+
         IsInitialized = false;
     }
 

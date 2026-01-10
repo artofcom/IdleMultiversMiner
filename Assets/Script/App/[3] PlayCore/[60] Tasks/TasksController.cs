@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using Core.Utils;
 //using UnityEngine;
 using Core.Events;
-//us/ing App.GamePlay.IdleGame.SubSystem.GamePlay;
-//using App.GamePlay.IdleGame.SubSystem;
-//using App.GamePlay.IdleGame.SubSystem.Data;
-//using App.GamePlay.IdleGame.SubSystem.UIComponent.TownDialog;
-//using App.GamePlay.IdleGame.SubSystem.UIComponent.ElementDialog;
-//using System;
-//using Unity.Services.Analytics;
-//using Unity.Services.Core;
 using App.GamePlay.IdleMiner.PopupDialog;
 using IGCore.MVCS;
 
@@ -30,7 +22,7 @@ namespace App.GamePlay.IdleMiner
         { }
 
 
-        public override void Init() {}
+        public override void Init() {   base.Init();    }
         protected override void OnViewEnable() { }
         protected override void OnViewDisable() { }
 

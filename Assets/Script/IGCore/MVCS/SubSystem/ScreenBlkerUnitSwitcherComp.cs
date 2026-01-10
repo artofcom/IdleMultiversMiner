@@ -16,12 +16,12 @@ namespace IGCore.MVCS
             Assert.IsNotNull(screenBlocker);
         }
 
-        public override void SwitchUnit(string nextModuleId)
+        public override void SwitchUnit(string nextModuleId, object data)
         {
-            StartCoroutine(coOnEventClose(nextModuleId));   
+            StartCoroutine(coOnEventClose(nextModuleId, data));   
         }
 
-        IEnumerator coOnEventClose(string nextModuleId)
+        IEnumerator coOnEventClose(string nextModuleId, object data)
         {
             screenBlocker.enabled = true;
             screenBlocker.color = new Color(.0f, .0f, .0f, .0f);
@@ -34,7 +34,7 @@ namespace IGCore.MVCS
 
 
             // Turn On/Off Instantly.
-            base.SwitchUnit(nextModuleId);
+            base.SwitchUnit(nextModuleId, data);
 
 
             fStart = Time.time;

@@ -13,7 +13,7 @@ namespace App.GamePlay.IdleMiner
             : base(unit, view, model, ctx)
         { }
 
-        public override void Init() {}
+        public override void Init() {   base.Init();    }
         protected override void OnViewEnable() { }
         protected override void OnViewDisable() { }
 

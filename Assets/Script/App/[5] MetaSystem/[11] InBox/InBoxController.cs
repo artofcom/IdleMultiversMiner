@@ -6,7 +6,7 @@ public class InBoxController : AController
     public InBoxController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
-    public override void Init() { }
+    public override void Init() {   base.Init(); }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
     public override void WriteData() { }

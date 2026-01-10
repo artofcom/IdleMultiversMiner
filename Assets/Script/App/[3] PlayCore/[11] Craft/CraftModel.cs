@@ -26,6 +26,8 @@ namespace App.GamePlay.IdleMiner.Craft
 
         public override void Init(object data = null)
         {
+            base.Init(data);
+
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
             _InitModel();
@@ -60,6 +62,12 @@ namespace App.GamePlay.IdleMiner.Craft
         public override void Dispose()
         {
             base.Dispose();
+
+            CompCraftData?.Dispose();
+            ItemCraftData?.Dispose();
+
+            CompCraftData = null;
+            ItemCraftData = null;
 
             _isInitialized = false;
         }

@@ -23,14 +23,17 @@ namespace IGCore.PlatformService
         public void RegisterDataModel(IWritableModel model)
         {
             models.Add(model);
+            Debug.Log($"[CloudGateWay] : Adding Model [{model.GetType().Name}].");
         }
         public void UnRegisterDataModel(IWritableModel model)
         {
             models.Remove(model);
+            Debug.Log($"[CloudGateWay] : Removing Model [{model.GetType().Name}].");
         }
         public void ClearModels()
         {
             models.Clear();
+            Debug.Log("[CloudGateWay] : Clearing All Models.");
         }
 
         public DataCloudGatewayService(ICloudService cloudService)
@@ -61,14 +64,17 @@ namespace IGCore.PlatformService
                         serviceData.Data = new List<DataGateWay.DataPair>();
 
                     if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                        serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                        serviceData.Environment = new DataGateWay.EnvironmentInfo(DateTime.UtcNow.Ticks);
                 }
-
-                serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;
+                
                 serviceData.Clear();
-
+                serviceData.Environment.Update(DateTime.UtcNow.Ticks);
+                
                 if(!clearAll)
                 {
+                    Assert.IsTrue(models.Count > 0, "Model count should be greater than 0 !");
+                    Assert.IsTrue(serviceData.Data.Count == 0);
+
                     // Poll Data from Models.
                     for(int k = 0; k < models.Count; ++k)
                     {
@@ -77,8 +83,12 @@ namespace IGCore.PlatformService
                             continue;
 
                         for(int q = 0; q < listDataSet.Count; q++)
+                        {
                             serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                            Debug.Log($"[CloudDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
+                        }
                     }
+                    Debug.Log($"[CloudDataGateway] Total Data Size : {serviceData.Data.Count}");
                 }
             
                 string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);

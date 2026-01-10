@@ -10,6 +10,8 @@ using IGCore.MVCS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -25,15 +27,13 @@ public class LobbyScreenController : AController
 
     EventsGroup Events = new EventsGroup();
 
+    bool isGameDataLoadingCompleted = false;
+    bool IsGameDataLoadingCompleted()  { return isGameDataLoadingCompleted; }
+
     public LobbyScreenController(AUnit unit, AView view, AModel model, AContext ctx)
         : base(unit, view, model, ctx)
     { 
         topUICtrl = new TopUICompController(null, ((LobbyScreenView)view).TopHUDView, model, context);
-    }
-
-    public override void Init()
-    {
-        
     }
 
     protected override void OnViewEnable()
@@ -88,7 +88,23 @@ public class LobbyScreenController : AController
 
         this.context.AddData("gameKey" , gameKey.ToLower());
 
-        (unit as LobbyScreen).SwitchUnit("PlayScreen");
+        ConductGameInitProcess().Forget();
+
+        (unit as LobbyScreen).SwitchUnit("PlayScreen", (Func<bool>)IsGameDataLoadingCompleted);
+    }
+
+    async Task ConductGameInitProcess()
+    {
+        isGameDataLoadingCompleted = false;
+
+        try
+        {
+            await context.InitGame();
+        }
+        finally
+        { 
+            isGameDataLoadingCompleted = true;
+        }
     }
 
     void EventOnBtnOptionDlgClicked()

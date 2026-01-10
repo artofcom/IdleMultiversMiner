@@ -81,13 +81,17 @@ namespace App.GamePlay.IdleMiner
         // Accessor.
         public List<ResourceInfo> Data => data;
 
-
         public void Init(eRscStageType _lv)
         {
             for (int q = 0; q < Data.Count; ++q)
             {
                 Data[q].eLevel = _lv;
             }
+        }
+
+        public void Dispose()
+        {
+            data?.Clear();
         }
 
 #if UNITY_EDITOR

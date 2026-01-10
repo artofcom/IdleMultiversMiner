@@ -22,7 +22,7 @@ namespace App.GamePlay.IdleMiner
 
         public MeteorModel(IGCore.MVCS.AContext ctx, IGCore.MVCS.APlayerModel playerData) : base(ctx, playerData) { }
 
-        public override void Init(object data = null) { }
+        public override void Init(object data = null) { base.Init(data); }
         /*
         void InitMeteor()
         {

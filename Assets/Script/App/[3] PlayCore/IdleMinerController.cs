@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.Assertions;
+using System.Threading.Tasks;
 
 namespace App.GamePlay.IdleMiner
 {
@@ -38,6 +39,9 @@ namespace App.GamePlay.IdleMiner
         internal IdleMinerModel Model => (IdleMinerModel)model;
         public IdleMinerView View => (IdleMinerView)view;
 
+        bool isGameDataLoadingCompleted = false;
+        bool IsGameDataLoadingCompleted()  { return isGameDataLoadingCompleted; }
+
         #region AController
 
         public IdleMinerController(AUnit unit, AView view, AModel model, AContext context)
@@ -49,6 +53,8 @@ namespace App.GamePlay.IdleMiner
         // PlayScreen.Attach() -> IdleMinerControler.() -> AController.() -> InitController()
         public override void Init() 
         {
+            base.Init();
+
             // Alloc Events.
             Events.RegisterEvent(EventID.APPLICATION_FOCUSED, EventOnApplicationFocus);
             Events.RegisterEvent(EventID.APPLICATION_PAUSED, EventOnApplicationPause);
@@ -376,11 +382,26 @@ namespace App.GamePlay.IdleMiner
             {
                 context.AddData("gameKey" , gameKey.ToLower());
                 
-                //OnEventClose?.Invoke("PlayScreen");
-                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen");
+                ConductGameInitProcess().Forget();
+
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "PlayScreen", (Func<bool>)IsGameDataLoadingCompleted);
 
             }));
        
+        }
+
+        async Task ConductGameInitProcess()
+        {
+            isGameDataLoadingCompleted = false;
+
+            try
+            {
+                await context.InitGame();
+            }
+            finally
+            { 
+                isGameDataLoadingCompleted = true;
+            }
         }
 
         void View_OnBtnTimedBonusClicked()
@@ -426,7 +447,7 @@ namespace App.GamePlay.IdleMiner
             (context as IdleMinerContext).CoRunner.StartCoroutine( coTriggerActionWithDelay(0.1f, () =>
             {
                 // OnEventClose?.Invoke("LobbyScreen");
-                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "LobbyScreen");
+                context.RequestQuery("PlayScreen", "SwitchUnit", (errMsg, ret) => { }, "LobbyScreen", null);
 
             }));
 
@@ -521,9 +542,22 @@ namespace App.GamePlay.IdleMiner
             yield return new WaitForSeconds(0.5f);
 
             bool isNewPlayer = false;
-            context.RequestQuery("IdleMiner", "IsNewPlayer", (errMsg, ret) => isNewPlayer = (bool)ret); 
+            bool querySuccessed = false;
+            while(true)
+            {
+                context.RequestQuery("IdleMiner", "IsNewPlayer", (errMsg, ret) =>
+                {
+                    querySuccessed = string.IsNullOrEmpty(errMsg);
+                    if(querySuccessed)
+                        isNewPlayer = (bool)ret;
+                }); 
+                if(querySuccessed)      break;
 
-           if (Model.PlayerData.IdleAwayTime < 1 || isNewPlayer)
+                Debug.Log("Waiting for Getting the IsNewPlayer Query......");
+                yield return new WaitForSeconds(0.2f);
+            }
+
+            if (Model.PlayerData.IdleAwayTime < 1 || isNewPlayer)
                 yield break;
 
             int idlePumpTime = (int)Model.PlayerData.FlushAwayTime(); //Model.PlayerData.IdleAwayTime;

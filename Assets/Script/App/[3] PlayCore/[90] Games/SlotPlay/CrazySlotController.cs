@@ -7,7 +7,7 @@ public class CrazySlotController : AController
         : base(unit, view, model, ctx)
     { }
 
-    public override void Init() {}
+    public override void Init() {   base.Init();    }
 
     protected override void OnViewEnable()
     {

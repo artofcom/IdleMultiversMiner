@@ -18,5 +18,11 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
             if(seenReasons == null)     seenReasons = new List<string>();
             if(unseenReasons == null)   unseenReasons = new List<string>();
         }
+
+        public void Dispose()
+        {
+            seenReasons?.Clear();
+            unseenReasons?.Clear();
+        }
     }
 }

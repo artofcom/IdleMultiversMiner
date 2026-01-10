@@ -34,6 +34,8 @@ namespace App.GamePlay.IdleMiner.Resouces
 
         public override void Init() 
         {
+            base.Init();
+
             View?.EventSellCountSliderChanged.AddListener(OnRSCListPnlSellCountSliderChanged);
             View?.EventBtnAutoClicked.AddListener(OnRSCListPnlClickBtnAuto);
             View?.EventBtnSellClicked.AddListener(OnRSCListPnlClickBtnSell);

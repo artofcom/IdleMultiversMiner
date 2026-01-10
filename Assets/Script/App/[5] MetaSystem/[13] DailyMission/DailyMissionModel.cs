@@ -15,9 +15,16 @@ public class DailyMissionModel : AModel
 
     public override void Init(object data = null) 
     {
-        config = (DailyMissionConfig)data;
-    }   
+        base.Init(data);
 
+        config = (DailyMissionConfig)data;
+    }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+        config = null;
+    }
 
     public DailyMissionConfig.Mission GetData(DailyMissionConfig.GoalType goalType)
     {

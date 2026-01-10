@@ -37,6 +37,10 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
         public List<ProgressInfo> ListProgressInfos => listProgressInfos;
         public long TimeStamp => timeStamp;
         public void Add(ProgressInfo info)  {   ListProgressInfos?.Add(info);   }
+        public void Dispose()
+        {
+            listProgressInfos?.Clear();
+        }
     }
 
     
@@ -70,6 +74,12 @@ public class DailyMissionPlayerModel : MultiGatewayWritablePlayerModel
     public override void Dispose()
     {
         base.Dispose();
+
+        progressInfo?.Dispose();
+        notificationInfo?.Dispose();
+
+        progressInfo = null;
+        notificationInfo = null;
 
         UnregisterRequestables();
 

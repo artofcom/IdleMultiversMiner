@@ -29,8 +29,12 @@ namespace App.GamePlay.IdleMiner.Resouces
 
             public void Dispose()
             {
-                if(resourceCollectInfos != null)
-                    resourceCollectInfos.Clear();
+                if(resourceCollectInfos == null) return;
+                
+                for(int q = 0; q < resourceCollectInfos.Count; ++q)
+                    resourceCollectInfos[q].Dispose();
+
+                resourceCollectInfos?.Clear();
                 resourceCollectInfos = null;
             }
         }
@@ -66,7 +70,10 @@ namespace App.GamePlay.IdleMiner.Resouces
             base.Dispose();
 
             resourceCollections?.Dispose();
-            RscCollections?.Clear();         RscCollections = null;
+            resourceCollections = null;
+
+            RscCollections?.Clear();         
+            RscCollections = null;
 
             Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized = false;

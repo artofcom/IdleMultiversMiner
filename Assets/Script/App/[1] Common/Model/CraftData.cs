@@ -77,6 +77,12 @@ namespace App.GamePlay.IdleMiner
             return (int)( ((float)duration) * timeBuff );
         }
 
+        public void Dispose()
+        {
+            sources?.Clear();
+            sources = null;
+        }
+
 #if UNITY_EDITOR
 
 #endif
@@ -113,6 +119,20 @@ namespace App.GamePlay.IdleMiner
                 BigInteger.TryParse(SlotCosts[q], out biValue);
                 BISlotCosts.Add(BigInteger.Zero + biValue);
             }
+        }
+
+        public void Dispose()
+        {
+            if(recipes != null)
+            {
+                for(int q = 0; q < recipes.Count; ++q)
+                    recipes[q].Dispose();
+                recipes?.Clear();
+            }
+            slotCosts?.Clear();
+
+            recipes = null;
+            slotCosts = null;
         }
     }
 }

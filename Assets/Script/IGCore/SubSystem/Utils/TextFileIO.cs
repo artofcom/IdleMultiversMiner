@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using UnityEngine;
 
@@ -15,13 +12,25 @@ namespace Core.Utils
         {
             try
             {
-                File.WriteAllText(filePath, content);
+                string directory = Path.GetDirectoryName(filePath);
+                if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
+                using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                using (StreamWriter writer = new StreamWriter(fs))
+                {
+                    writer.Write(content);
+                    writer.Flush();
+                }
+                return true;
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                Debug.LogWarning(ex.Message);
-            } 
-            return true;
+                Debug.LogWarning($"[FileIO] Writing failed.: {ex.Message}");
+                return false;
+            }
         }
 
         //
@@ -29,22 +38,31 @@ namespace Core.Utils
         {
             try
             {
-                if(!File.Exists(filePath))
+                string defaultContent = string.Empty;
+                using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
                 {
-                    var stream = File.Create(filePath);
-                    if(stream != null) 
-                        return string.Empty;
+                    if (fs.Length == 0 && !string.IsNullOrEmpty(defaultContent))
+                    {
+                        using (StreamWriter writer = new StreamWriter(fs, System.Text.Encoding.UTF8, 1024, true)) // true: 스트림 유지
+                        {
+                            writer.Write(defaultContent);
+                            writer.Flush();
+                        }
+                        return defaultContent;
+                    }
 
-                    stream.Close();
+                    fs.Position = 0; 
+                    using (StreamReader reader = new StreamReader(fs))
+                    {
+                        return reader.ReadToEnd();
+                    }
                 }
-
-                return File.ReadAllText(filePath);
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
-                Debug.LogWarning(ex.Message);
-            } 
-            return string.Empty;
+                Debug.LogWarning($"[FileIO] Reading has been failed! : {ex.Message}");
+                return string.Empty;
+            }
         }
     }
 }

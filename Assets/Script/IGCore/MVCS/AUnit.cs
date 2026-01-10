@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.Assertions;
 
 namespace IGCore.MVCS
 {
@@ -17,23 +18,27 @@ namespace IGCore.MVCS
         public Action<object> OnEventAttached;
         public Action<object> OnEventDetached;
 
+        protected bool isDisposed = true;
         public bool IsAttached => (View==null ? false : View.gameObject.activeSelf && View.gameObject.activeInHierarchy);
 
         protected virtual void Awake()
         {
-            UnityEngine.Assertions.Assert.IsNotNull(view);
+            Assert.IsNotNull(view);
         }
         public virtual void Dispose() 
         { 
             controller?.Dispose();
             model?.Dispose();
 
+            isDisposed = true;
             Debug.Log($"<color=blue>[Disposing Module] {name} Unit.</color>");
         }
 
         public virtual void Init(AContext context)
         {
             this.context = context;
+            Assert.IsTrue(isDisposed, $"Plese dispose the module first before call Init ! : [{this.GetType().Name}]" );
+            isDisposed = false;
         }
 
         public virtual void Attach()

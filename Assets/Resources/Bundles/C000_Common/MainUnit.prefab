@@ -7656,10 +7656,10 @@ MonoBehaviour:
   - {fileID: 3919079058920589457}
   - {fileID: 701697295417970683}
   - {fileID: 6729966824324888496}
-  - {fileID: 582854225079024840}
+  - {fileID: 4812236790416710429}
   startUnit: {fileID: 4387313242853768827}
   gameConfig: {fileID: 11400000, guid: 2c76f9220fa05fb4796f06711cb9aaed, type: 2}
-  popupDialog: {fileID: 7648315653417005000}
+  popupDialog: {fileID: 7240100553276943880}
   timedBonus: {fileID: 759402721336944115}
   simulationPath: Bundles/G010_Graves/Variations/Standard
   simFrameUpdateSec: 86400
@@ -20162,7 +20162,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6244797526680903453}
-  - component: {fileID: 7648315653417005000}
   - component: {fileID: 5095304128392108095}
   m_Layer: 0
   m_Name: PopupDialogs
@@ -20195,20 +20194,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7648315653417005000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3666251553202294105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4ee126d51b96624ca198358a11e7b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  view: {fileID: 5095304128392108095}
-  dialogKey: GameDialog
 --- !u!114 &5095304128392108095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55891,7 +55876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8057614191247896279}
-  - component: {fileID: 582854225079024840}
+  - component: {fileID: 4812236790416710429}
   m_Layer: 0
   m_Name: SkillTree
   m_TagString: Untagged
@@ -55914,18 +55899,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5690484126867929194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &582854225079024840
+--- !u!114 &4812236790416710429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6680039775756273489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9556ec332da11a4e995a7e9fea56040, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::App.GamePlay.IdleMiner.SkillTree.SkillTreeUnit
   view: {fileID: 5152883899459021557}
 --- !u!1 &6698065253845249600
 GameObject:
@@ -60273,7 +60258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1757580431116336732
 Transform:
   m_ObjectHideFlags: 0
@@ -60301,8 +60286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ee126d51b96624ca198358a11e7b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view: {fileID: 0}
-  dialogKey: 
+  view: {fileID: 5095304128392108095}
+  dialogKey: GameDialog
 --- !u!1 &7566678008190747542
 GameObject:
   m_ObjectHideFlags: 0

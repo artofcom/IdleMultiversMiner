@@ -52,20 +52,27 @@ namespace IGCore.PlatformService
         [Serializable]
         public class  EnvironmentInfo
         {
+            const string Version = "1.0";
             [SerializeField] string dataVersion;
             [SerializeField] string appVersion;
             [SerializeField] string deviceName;
             [SerializeField] long timeStamp;
 
-            public EnvironmentInfo(string version, long timeStamp)
+            public EnvironmentInfo(long timeStamp)
             {
-                this.dataVersion = version;     
+                this.dataVersion = Version;
                 this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
                 this.timeStamp = timeStamp;// DateTime.UtcNow.Ticks;
             }
+            public void Update(long timeStamp)
+            {
+                this.dataVersion = Version;
+                this.appVersion = Application.version;    this.deviceName = SystemInfo.deviceName;
+                this.timeStamp = timeStamp;
+            }
             public string DataVersion => dataVersion;
             public string DeviceName => deviceName;
-            public long TimeStamp { get => timeStamp; set => timeStamp = value; }
+            public long TimeStamp => timeStamp;
             public string AppVersion => appVersion;
         }
 
@@ -79,7 +86,7 @@ namespace IGCore.PlatformService
             public DataInService()
             {
                 data = new List<DataPair>();
-                environment = new EnvironmentInfo("1.0", 0);
+                environment = new EnvironmentInfo(0);
             }
             public List<DataPair> Data          {   get => data; set => data = value;}
             public EnvironmentInfo Environment  {   get => environment; set => environment = value; }

@@ -26,6 +26,13 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public List<string> LearningSkillIdList => learningSkillIdList;
         //public bool IsLearned => isLearned;
 
+        public void Dispose()
+        {
+            learningSkillIdList?.Clear();
+            learningSkillIdList = null;
+            categoryId = string.Empty;
+        }
+
         public void Update(string oldLearningIdToRemove, List<string> newlearningSkillId)
         {
             if(learningSkillIdList == null)
@@ -73,7 +80,15 @@ namespace App.GamePlay.IdleMiner.SkillTree
         
         // Accessor.
         public List<SkillCategoryProcInfo> CategoryProcInfo      {   get => categoryProcInfo;   set => categoryProcInfo = value;   }
-        
+        public void Dispose()
+        {
+            if(categoryProcInfo != null)
+            {
+                for(int q = 0; q < categoryProcInfo.Count; ++q)
+                    categoryProcInfo[q].Dispose();
+                categoryProcInfo?.Clear();
+            }
+        }
     }
 
     public class SkillTreePlayerModel : MultiGatewayWritablePlayerModel
@@ -107,6 +122,9 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public override void Dispose()
         {
             base.Dispose();
+
+            skillTreeProcInfo?.Dispose();
+            skillTreeProcInfo = null;
 
             IsInitialized = false;
         }

@@ -28,6 +28,8 @@ namespace App.GamePlay.IdleMiner.SkillTree
            
         public override void Init(object data = null)
         {
+            base.Init(data);    
+
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
             _InitModel();
@@ -63,7 +65,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
 
         protected virtual void LoadData(string gamePath)
         {
-            Assert.IsTrue(false, "Should Load Skill Category Data for each game Properly!");
+            Assert.IsTrue(false, "[SkillTree] Should Load Skill Category Data for each game Properly! " + this.GetType().Name);
         }
 
         void SanatizeData()
@@ -78,6 +80,14 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public override void Dispose()
         {
             base.Dispose();
+
+            // de-init model.
+            if(skillCategories != null)
+            {
+                for(int q = 0; q < skillCategories.Count; q++)
+                    skillCategories[q].Dispose();
+                skillCategories?.Clear();
+            }
 
             UnregisterRequestables();
 
@@ -157,14 +167,18 @@ namespace App.GamePlay.IdleMiner.SkillTree
                 return false;
             
             bool ret = true;
-            for (int q = 0; q < selectedInfo.UnlockCost.Count; q++)
+            for (int q = 0; q < selectedInfo.UnlockCost?.Count; q++)
             {
                 ResourceCollectInfo srcCollected = null;
                 context.RequestQuery("Resource", "PlayerData.GetResourceCollectInfo", (errMsg, ret) =>
                 {
-                    Assert.IsTrue(string.IsNullOrEmpty(errMsg));
-                    srcCollected = (ResourceCollectInfo)ret;
+                    if(!string.IsNullOrEmpty(errMsg))
+                        Debug.Log($"<color=yellow>Request Query has been failed...[{errMsg}]</color>");
+                    srcCollected = ret as ResourceCollectInfo;
                 }, selectedInfo.UnlockCost[q].ResourceId);
+
+                if(srcCollected == null)
+                    continue;
 
                 BigInteger reqCount = isDebugMode ? 1 : selectedInfo.UnlockCost[q].GetCount();
 

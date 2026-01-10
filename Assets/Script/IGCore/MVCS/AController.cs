@@ -1,4 +1,5 @@
 using System;
+using UnityEngine.Assertions;
 using UnityEngine;
 
 namespace IGCore.MVCS
@@ -10,6 +11,8 @@ namespace IGCore.MVCS
         protected AView view;
         protected AModel model;
         
+        protected bool isDisposed = true;
+
         public virtual AContext Context => context;
 
         public AController(AUnit unit, AView view, AModel model, AContext context)
@@ -30,7 +33,11 @@ namespace IGCore.MVCS
             }
         }
 
-        public abstract void Init();
+        public virtual void Init()
+        {
+            Assert.IsTrue(isDisposed, $"Plese dispose the module first before call Init ! : [{this.GetType().Name}]" );
+            isDisposed = false;
+        }
         public abstract void Resume(int awayTimeInSec);
         public abstract void Pump();
         public abstract void WriteData();
@@ -42,6 +49,7 @@ namespace IGCore.MVCS
                 view.OnViewDisable -= OnViewDisable;
                 Debug.Log($"[controller] [{GetType().Name}] dispose called.");
             }
+            isDisposed = true;
         }
 
         protected abstract void OnViewEnable();

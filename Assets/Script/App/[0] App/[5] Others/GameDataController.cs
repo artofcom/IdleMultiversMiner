@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -322,14 +323,32 @@ public sealed partial class IdleMinerContext : AContext
             SaveLastSignedPrevPlayerId(playerId);
             isAccountLinked = authService.IsAccountLinkedWithPlayer("unity");
         }
-        void OnSignedOut()
+        async void OnSignedOut()
         {
             if(!isAccountLinked && !string.IsNullOrEmpty(PlayerId) && !PlayerId.Contains("GUEST"))
-                DeletePlayerDataFiles(PlayerId);
+            {
+                var appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
+                var deleteTask = DeletePlayerDataFilesAsync(PlayerId);
+                var timeoutTask = Task.Delay(appConfig!=null ? appConfig.MaxServiceSignInWaitTime*1000 : 5000);
+
+                await Task.WhenAny(deleteTask, timeoutTask);
+            }
 
             SaveLastSignedPrevPlayerId(string.Empty);
         }
 
+        async Task DeletePlayerDataFilesAsync(string playerId)
+        {
+            bool deleteSuccessed = false;
+            long maxTrySec = 10;
+            long tick = 0;
+            while(Application.isPlaying && !deleteSuccessed && tick<(maxTrySec*1000))
+            {
+                deleteSuccessed = DeletePlayerDataFiles(PlayerId);
+                await Task.Delay(200);
+                tick += 200;
+            }
+        }
 
 
 

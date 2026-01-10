@@ -25,6 +25,7 @@ public class TitleScreenController : AController
 
     public override void Init()
     {
+        base.Init();
         // isBacgroundLoginWorking = false;
         titleScreen.AuthService.EventOnSignedIn += OnSignedIn;
         titleScreen.AuthService.EventOnSignInFailed += OnSignInFailed;

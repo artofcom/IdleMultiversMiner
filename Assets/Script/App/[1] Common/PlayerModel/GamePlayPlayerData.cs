@@ -181,6 +181,16 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
             else
                 battleInfo = null;
         }        
+        public void Dispose()
+        {
+            minedRscInfo?.Clear();
+            minedRscInfo = null;
+
+            deliveryInfos?.Clear();
+            deliveryInfos = null;
+
+            battleInfo = null;
+        }
         public void Resume(float duration)
         {
             if(isBoosterUnlocked)
@@ -368,6 +378,16 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
                     Planets[q].Init();
             }
         }
+        public void Dispose()
+        {
+            if(Planets != null)
+            {
+                for (int q = 0; q < Planets.Count; ++q)
+                    planets[q].Dispose();
+                planets.Clear();
+                planets = null;
+            }
+        }
         public void Pump()
         {
             if(Planets != null)
@@ -437,6 +457,17 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
             {
                 for (int q = 0; q < zones.Count; ++q)
                     zones[q].Init();
+            }
+        }
+        public void Dispose()
+        {
+            if(zones != null)
+            {
+                for (int q = 0; q < zones.Count; ++q)
+                    zones[q].Dispose();
+
+                zones.Clear();
+                zones = null;
             }
         }
         public void Pump()

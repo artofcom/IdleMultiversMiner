@@ -8,7 +8,6 @@ using Core.Events;
 using System;
 using UnityEngine.Assertions;
 using App.GamePlay.IdleMiner.Common.Types;
-using Unity.Mathematics.Geometry;
 
 namespace App.GamePlay.IdleMiner.Common.Model
 {
@@ -95,7 +94,10 @@ namespace App.GamePlay.IdleMiner.Common.Model
             Assert.IsTrue(false);
             return 0;
         }
-
+        public void Dispose()
+        {
+            obtainables?.Clear();
+        }
 
         // Runtime values.
         //
@@ -196,6 +198,15 @@ namespace App.GamePlay.IdleMiner.Common.Model
             }
             return null;
         }
+        public void Dispose()
+        {
+            for(int q = 0; q < planets.Count; ++q)
+                planets[q].Dispose();
+            
+            zoneId = 0;
+            planets.Clear();
+            planets = null;
+        }
     }
 
     [Serializable]
@@ -234,6 +245,15 @@ namespace App.GamePlay.IdleMiner.Common.Model
                 }
             }
             return null;
+        }
+
+        public void Dispose()
+        {
+            for(int q = 0; q < data.Count; ++q)
+                data[q].Dispose();
+
+            data.Clear();
+            data = null;
         }
 
 #if UNITY_EDITOR

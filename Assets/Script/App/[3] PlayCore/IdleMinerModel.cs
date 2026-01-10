@@ -13,6 +13,8 @@ namespace App.GamePlay.IdleMiner
 
         public override void Init(object data = null)
         {
+            base.Init(data);
+
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
 

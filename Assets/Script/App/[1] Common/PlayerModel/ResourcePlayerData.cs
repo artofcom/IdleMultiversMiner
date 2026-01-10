@@ -43,6 +43,12 @@ namespace App.GamePlay.IdleMiner.Common.PlayerModel
             }
             Assert.IsTrue(ret, "Parse Error! " + CountX1000Str);
         }
+        public void Dispose()
+        {
+            RscId = string.Empty;
+            CountX1000Str = string.Empty;
+            AutoSell = false;
+        }
     }
 
 }

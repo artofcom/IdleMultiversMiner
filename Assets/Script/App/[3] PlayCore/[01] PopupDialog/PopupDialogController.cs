@@ -14,13 +14,14 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         public PopupDialogController(string dialogKey, AUnit unit, AView view, AModel model, AContext ctx)
             : base(unit, view, model, ctx)
         { 
-            // init.
-
             this.dialogKey = dialogKey;
-            RegisterRequestables();
         }
 
-        public override void Init() {}
+        public override void Init()     
+        {   
+            base.Init();  
+            RegisterRequestables();
+        }
 
         protected override void OnViewEnable() { }
         protected override void OnViewDisable() { }
@@ -33,6 +34,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
         {
             base.Dispose();
             context.RemoveRequestDelegate(dialogKey, "DisplayPopupDialog");
+            context.RemoveRequestDelegate(dialogKey, "DisplayUnitPopupDialog");
         }
 
         #region ===> Interfaces

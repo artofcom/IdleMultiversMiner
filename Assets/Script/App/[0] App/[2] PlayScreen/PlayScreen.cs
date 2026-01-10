@@ -52,10 +52,22 @@ public class PlayScreen : AUnit
         {
             dictGameKeyPathSets.Add(gameKeyPathSets[q].Key.ToLower(), gameKeyPathSets[q].Path);
         }
+
+        UnitSwitcher.OnPreSwitch += EventOnPreUnitSwitch;
+    }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+
+        IMContext = null;
+        dictGameKeyPathSets?.Clear();
+
+        UnitSwitcher.OnPreSwitch -= EventOnPreUnitSwitch;
     }
 
     // LobbyScreenController.EventOnBtnStart() -> AUnitSwitcher.OnEventClose() -> Attach()
-    public override async void Attach()
+    public override void Attach()
     {
         // Temp Code. 
         string gameKey = (string) this.context.GetData("gameKey");
@@ -70,7 +82,7 @@ public class PlayScreen : AUnit
         string mainPrefabPath = dictGameKeyPathSets[gameKey] + "/MainUnit";
         GameObject prefabGamePlayModule = Resources.Load<GameObject>(mainPrefabPath);
     
-        await context.InitGame();
+        //await context.InitGame();
 
         idleMinerModule = (Instantiate(prefabGamePlayModule, transformParent)).GetComponent<AUnit>();
         Assert.IsNotNull(idleMinerModule);   
@@ -95,10 +107,13 @@ public class PlayScreen : AUnit
         base.Detach();   
     }
 
-    public void SwitchUnit(string nextUnit)
+    public void SwitchUnit(string nextUnit, object data)
     {
-        UnitSwitcher.SwitchUnit(nextUnit);
+        UnitSwitcher.SwitchUnit(nextUnit, data);
+    }
 
+    void EventOnPreUnitSwitch()
+    {
         // Detach and Destory Game Module.
         if(idleMinerModule != null )
         {
@@ -113,6 +128,7 @@ public class PlayScreen : AUnit
         }
         idleMinerModule = null;
     }
+
 
 #if UNITY_EDITOR
 
@@ -157,34 +173,4 @@ public class PlayScreen : AUnit
     }*/
 #endif
 
-    /*
-    PlayScreenView _view;
-    PlayScreenController _controller;
-    GameContext _context;
-
-
-    //TopUIScreen _TopUIScreen;
-    //BottomUIScreen _BottomUIScreen;
-
-    public PlayScreen(AView view, IContext context)
-    {
-        _view = view as PlayScreenView;
-        _context = context as GameContext;
-    }
-
-
-    public void Initialize()
-    {
-        // _context.Gametype == something...
-        //_controller = new WordTileSearchController(_view, _context);
-        //else
-        //_controller = new XXXController...();
-
-        _controller = new PlayScreenController(_view, _context);
-
-        //_TopUIScreen = new TopUIScreen(_view.TopUIScreenView, _context);
-        //_TopUIScreen.Initialize();
-        //_BottomUIScreen = new BottomUIScreen(_view.BottomUIScreenView, _context);
-        //_BottomUIScreen.Initialize();
-    }*/
 }

@@ -17,6 +17,8 @@ public class LoginDialogController : AController
 
     public override void Init() 
     { 
+        base.Init();
+
         Unit = (unit as LoginDialogUnit);
         View = (view as LoginDialogView);
     }

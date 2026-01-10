@@ -7,6 +7,6 @@ namespace App.GamePlay.IdleMiner.PopupDialog
     {
         internal PopupDialogModel(AContext ctx, APlayerModel playerData) : base(ctx, playerData) { }
 
-        public override void Init(object data = null) { }
+        public override void Init(object data = null) { base.Init();     }
     }
 }

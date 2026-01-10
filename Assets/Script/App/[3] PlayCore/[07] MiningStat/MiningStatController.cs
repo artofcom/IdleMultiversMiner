@@ -63,6 +63,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
 
         public override void Init()
         {
+            base.Init();
             Events.RegisterEvent(EventID.MINING_STAT_UPGRADED, PlayerData_OnStatupgraded);
             Events.RegisterEvent(EventID.GAME_CURRENCY_UPDATED, PlayerData_OnMondyUpdated);
 

@@ -35,8 +35,14 @@ public class LobbyScreen : AUnit
         gameCardsUnit.Attach();
     }
 
-    public void SwitchUnit(string nextUnit)
+    public void SwitchUnit(string nextUnit, object data = null)
     {
-        UnitSwitcher.SwitchUnit(nextUnit);
+        UnitSwitcher.SwitchUnit(nextUnit, data);
+    }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+        popupDialog.Dispose();
     }
 }

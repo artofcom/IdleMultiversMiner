@@ -36,6 +36,9 @@ public class GameCardsPlayerModel : MultiGatewayWritablePlayerModel
 
         UnregisterRequestables();
 
+        gameCardBundle?.Dispose();
+        gameCardBundle = null;
+
         events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnGameResetRefresh);
 
         IsInitialized = false;

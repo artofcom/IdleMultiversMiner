@@ -221,6 +221,8 @@ namespace App.GamePlay.IdleMiner.Craft
         //
         public override void Init()
         {
+            base.Init();
+
             ((ISkillLeaner)this).CreateSkillBehaviors();
 
             //Events = new EventsGroup();
@@ -253,6 +255,8 @@ namespace App.GamePlay.IdleMiner.Craft
 
         public override void Dispose()
         {
+            base.Dispose();
+
             EventSystem.UnRegisterEvent(EventID.SKILL_LEARNED, EventOnSkillLearned);
             EventSystem.UnRegisterEvent(EventID.GAME_RESET_REFRESH, EventOnResetRefresh);
 

@@ -71,6 +71,12 @@ namespace App.GamePlay.IdleMiner.Craft
                 craftingSlots.Clear();
                 purchasedRecipeIndex = -1;
             }
+            public void Dispose()
+            {
+                craftingSlots?.Clear();
+                purchasedRecipeIndex = -1;
+                isFeatureOpened = false;
+            }
         }
 
         CraftStoreData compCraftData, itemCraftData;
@@ -123,6 +129,9 @@ namespace App.GamePlay.IdleMiner.Craft
         public override void Dispose()
         {
             base.Dispose();
+
+            compCraftData?.Dispose();
+            itemCraftData?.Dispose();
 
             Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             IsInitialized= false;

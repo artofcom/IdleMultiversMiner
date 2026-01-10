@@ -15,6 +15,8 @@ public class SettingController : AController
 
     public override void Init() 
     { 
+        base.Init();
+
         settingUnit = unit as SettingUnit;
         View = (view as SettingDialogView);
         object queryRet = context.RequestQuery("AppPlayerModel", "IsBGMOn");
@@ -28,6 +30,14 @@ public class SettingController : AController
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
     public override void WriteData() { }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+
+        settingUnit = null;
+        View = null;
+    }
 
     protected override void OnViewEnable()  
     { 

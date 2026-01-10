@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b470c77a735af0049b4c2150fcce8d0b, type: 3}
   m_Name: AppConfig
   m_EditorClassIdentifier: Assembly-CSharp::AppConfig
+  newPlayerIAP: 50
+  newPlayerStar: 0
+  maxServiceSignInWaitTime: 5
   metaDataSaveLocalInterval: 2
-  metaDataCloudSaveInterval: 10
-  gameDataSaveInterval: 1
-  gameDataCloudSaveInterval: 10
+  metaDataSaveCloudInterval: 5
+  gameDataSaveLocalInterval: 1
+  gameDataSaveCloudInterval: 5

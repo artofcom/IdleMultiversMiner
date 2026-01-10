@@ -55,28 +55,15 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             base.Dispose();
 
+            unlockedZoneGroup?.Dispose();
+            unlockedZoneGroup = null;
             UnregisterRequestables();
+
             Events.UnRegisterEvent(EventID.SKILL_RESET_GAME_INIT, ResetGamePlay_InitGame);
             ZoneStatusInfo.OnManualBoosterFinished -= ZoneStatusInfo_OnManualBoosterFinished;
 
             IsInitialized = false;
         }
-
-        // public int AddZoneVisibility(int zoneId)
-        //  {
-        // if(GetVisiblePlanetInfo(zoneId) != null)
-        //    return -1;
-        /*
-        var planetInfo = new PlanetInfo(planetId);
-        planetStatus.VisiblePlanets_.Add(planetInfo);
-        planetInfo.EventOnPlanetOpened += OnEventPlanetOpened;
-        planetInfo.EventOnPlanetClosed += OnEventPlanetClosed;
-        planetInfo.EventOnPlanetBattleCleared += OnEventPlanetBattleCleared;
-
-        EventSystem.DispatchEvent("EVENT_ONVISIBLE_PLANET_ADDED", new Tuple<int, int>(zoneId, planetId));
-        return planetStatus.VisiblePlanets_.Count;*/
-        //      return 0;
-        //  }
 
         public void Pump()
         {

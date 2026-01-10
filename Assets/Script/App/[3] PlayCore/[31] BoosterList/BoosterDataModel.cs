@@ -18,6 +18,8 @@ namespace App.GamePlay.IdleMiner
 
         public override void Init(object data = null)
         {
+            base.Init(data);
+
             /*
            // var textData = "";// Resources.Load<TextAsset>(GAMEDATA_PATH + "BoosterData");
             BoosterData = "";// JsonUtility.FromJson<BoosterData>(textData.text);

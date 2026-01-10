@@ -1,4 +1,3 @@
-using UnityEngine;
 using IGCore.MVCS;
 
 public class AppController : AController
@@ -6,10 +5,11 @@ public class AppController : AController
     public AppController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
-    public override void Init() { }
+    public override void Init()     {   base.Init();     }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
     public override void WriteData() { }
+    public override void Dispose()  {   base.Dispose();     }
 
     protected override void OnViewEnable()  { }
     protected override void OnViewDisable() { }

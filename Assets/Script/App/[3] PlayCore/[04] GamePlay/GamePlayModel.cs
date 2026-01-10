@@ -42,6 +42,8 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         public override void Init(object data = null)
         {
+            base.Init(data);
+
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
             _InitModel();
@@ -68,10 +70,17 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             base.Dispose();
 
+            // Dispose Module.
             Events.UnRegisterEvent(EventID.PLANET_BOOSTER_TRIGGERED, EventOnPlanetBoosterTrigger);
             Events.UnRegisterEvent(EventID.PLANET_BOOSTER_FINISHED, EventOnPlanetBoosterFinished);
 
             UnregisterRequestables();
+
+            planetBossDataGroup?.Dispose();
+            planetDataGroup?.Dispose();
+            
+            planetBossDataGroup = null;
+            planetDataGroup = null;
 
             _isInitialized = false;
         }

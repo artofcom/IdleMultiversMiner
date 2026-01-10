@@ -6,6 +6,7 @@ public class SkillTreeUnitFrozenPlains : SkillTreeUnit
 {
     public override void Init(AContext ctx)
     {
+        base.Init(ctx);
         this.context = ctx;
 
         playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);

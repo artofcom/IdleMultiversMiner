@@ -16,6 +16,9 @@ public class AppMainUnit : AUnit
 
     // MetaSystems.
     [SerializeField] List<AUnit> metaSystems;
+    
+    // SubSystem.
+    [SerializeField] AUnit dialogUnit;
 
     [ImplementsInterface(typeof(IAuthService))]
     [SerializeField] MonoBehaviour authService;
@@ -23,7 +26,7 @@ public class AppMainUnit : AUnit
     [SerializeField] MonoBehaviour cloudService;
 
     [SerializeField] int MaxNetworkWaitSec = 5;
-
+    
     IAuthService AuthService => authService as IAuthService;
     ICloudService CloudService => cloudService as ICloudService;
 
@@ -88,6 +91,7 @@ public class AppMainUnit : AUnit
             for(int q = 0; q < metaSystems.Count; q++) 
                 metaSystems[q].Init(_minerContext);
         }
+        dialogUnit.Init(_minerContext);
 
         onFinished?.Invoke();
     }
@@ -96,6 +100,13 @@ public class AppMainUnit : AUnit
     {
         playerModel?.Dispose();
         base.Dispose();
+
+        if(metaSystems != null)
+        {
+            for(int q = 0; q < metaSystems.Count; q++) 
+                metaSystems[q].Dispose();
+        }
+        dialogUnit.Dispose();
     }
 
 #if UNITY_EDITOR

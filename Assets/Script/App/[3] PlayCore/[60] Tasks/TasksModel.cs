@@ -69,7 +69,7 @@ namespace App.GamePlay.IdleMiner
 
         public override void Init(object data = null)
         {
-
+            base.Init(data);
         }
 
         /*

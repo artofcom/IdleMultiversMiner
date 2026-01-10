@@ -149,14 +149,13 @@ namespace App.GamePlay.IdleMiner.SkillTree
                 {
                     RefreshView();
 
+                    var presentData = new ToastMessageDialog.PresentInfo( message :  $"Great! You learned {skill_id} skill.", duration:3.0f, ToastMessageDialog.Type.INFO);
                     context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GLOBAL_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
-                        "MessageDialog",  
-                        new MessageDialog.PresentInfo( $"You learned {skill_id} skill.", title:"Info", type : MessageDialog.Type.CONFIRM, callbackYes : () => {}),
+                        "ToastMessageDialog", presentData,
                         new Action<APopupDialog>( (popupDlg) => 
                         { 
-                            Debug.Log("Message Dialog has been closed.");
-
-                        } ) );
+                            Debug.Log("ToastMessage Dialog has been closed.");
+                        } ) ); 
                 }
             }
             

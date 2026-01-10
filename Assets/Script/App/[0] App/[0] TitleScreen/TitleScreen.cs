@@ -57,6 +57,6 @@ public class TitleScreen : AUnit
 
     public void SwitchUnit(string nextUnit)
     {
-        UnitSwitcher.SwitchUnit(nextUnit);
+        UnitSwitcher.SwitchUnit(nextUnit, null);
     }
 }

@@ -29,6 +29,8 @@ namespace App.GamePlay.IdleMiner.MiningStat
         public override void Init(object data = null) 
         { 
             _isInitialized = true;
+
+            base.Init(data);
         }
 
         public override void Dispose()

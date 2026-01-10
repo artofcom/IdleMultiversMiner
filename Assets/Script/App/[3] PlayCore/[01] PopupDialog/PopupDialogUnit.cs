@@ -16,14 +16,7 @@ namespace App.GamePlay.IdleMiner.PopupDialog
             base.Init(ctx);
 
             controller = new PopupDialogController(dialogKey, this, view, new PopupDialogModel(context, null), context);
-        }
-
-
-        protected override void OnDestroy()
-        {
-            base.Dispose();
-
-            controller?.Dispose();
+            controller.Init();
         }
     }
 }

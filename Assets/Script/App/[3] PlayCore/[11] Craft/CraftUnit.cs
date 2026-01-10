@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace App.GamePlay.IdleMiner.Craft
 {
-    public class CraftUnit : IGCore.MVCS.AUnit
+    public class CraftUnit : AUnit
     {
         APlayerModel playerModel;
 
-        public override void Init(IGCore.MVCS.AContext ctx)
+        public override void Init(AContext ctx)
         {
             //ctx.UpdateData("comp_craft_data_path", "Bundles/G033_IdleMiner/EditorData/Craft_comp");
             //ctx.UpdateData("item_craft_data_path", "Bundles/G033_IdleMiner/EditorData/Craft_Item");

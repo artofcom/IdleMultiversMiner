@@ -16,10 +16,12 @@ public class GameCardsController : AController
 
     bool bLoadingGame = false;
 
+    IEnumerator coUpdator = null;
+
     public GameCardsController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
-    public override void Init() { }
+    public override void Init() {   base.Init();    }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
     public override void WriteData() { }
@@ -30,13 +32,15 @@ public class GameCardsController : AController
 
         RefreshView();
 
-        view.StartCoroutine(coUpdate());
+        coUpdator = coUpdate();
+        view.StartCoroutine(coUpdator);
 
         (view as GameCardsView).EventGameCardClicked += OnBtnGameStart;
     }
     protected override void OnViewDisable() 
     { 
         (view as GameCardsView).EventGameCardClicked -= OnBtnGameStart;
+        view.StopCoroutine(coUpdator);
     }
 
     void OnBtnGameStart(string gameKey)

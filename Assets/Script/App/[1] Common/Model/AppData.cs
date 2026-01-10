@@ -40,6 +40,13 @@ namespace App.GamePlay.Common
             else
                 currencies.Add(new MetaCurrency(type, amount));
         }
+        public void Dispose()
+        {
+            if(currencies == null)
+                return;
+
+            currencies.Clear();
+        }
     }
 
     [Serializable]
@@ -109,5 +116,10 @@ namespace App.GamePlay.Common
             return null;
         }
         public int GameCardCount()  { return cardsInfos==null ? 0 : cardsInfos.Count; }
+
+        public void Dispose()
+        {
+            cardsInfos?.Clear();
+        }
     }
 }

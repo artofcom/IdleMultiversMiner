@@ -11,7 +11,9 @@ namespace IGCore.MVCS
 
 
         public override void Init(object data = null)
-        { }
+        { 
+            base.Init(data);
+        }
 
         public override void Dispose() {    base.Dispose();     }
     }

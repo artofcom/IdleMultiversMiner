@@ -142,7 +142,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         GamePlayView View => (GamePlayView)view;
         GamePlayModel Model => (GamePlayModel)model;
-        EventsGroup events = null;
+        EventsGroup events = new EventsGroup();
 
         IdleMinerContext IMContext => (IdleMinerContext)context;
 
@@ -162,6 +162,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
 
         public override void Init()
         {
+            base.Init();
             ((ISkillLeaner)this).CreateSkillBehaviors();
             InitPlayGround();
             InitZone();
@@ -188,8 +189,10 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             base.Dispose();
 
-            events.UnRegisterAll();
-            
+            // Dispose all skill behaviors.
+            dictSkillBehaviors.Clear();
+
+            // Dispose PlayGround.
             PlanetComp[] planetComps = View.transform.GetComponentsInChildren<PlanetComp>(includeInactive:true);
             Assert.IsTrue(planetComps!=null && planetComps.Length>0);
             for(int q = 0; q < planetComps.Length; q++) 
@@ -201,6 +204,11 @@ namespace App.GamePlay.IdleMiner.GamePlay
             }
 
             context.RemoveRequestDelegate("GamePlay", "GetPlanetSprite");
+
+            events.UnRegisterAll();
+
+            // 
+            bZoneInitizlized = false;
         }
 
         public override void Resume(int duration)
@@ -324,8 +332,6 @@ namespace App.GamePlay.IdleMiner.GamePlay
         protected virtual void InitPlayGround()
         {
             Debug.Log("[InitSeq]:[GamePlayController] InitPlayGround.");
-
-            events = new EventsGroup();
 
             events.RegisterEvent(EventID.PLANET_BATTLE_CLEARED, OnPlanetBattleCleared);
             events.RegisterEvent(EventID.PLANET_UNLOCKED, PlayerData_OnPlanetUnlocked);
@@ -891,7 +897,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             var dictPlanetData = new Dictionary<int, List<MiningZoneComp.BaseInfo>>();
 
-            for(int w = 0; w < Model.PlayerData.UnlockedZoneGroup.Zones.Count; ++w)
+            for(int w = 0; w < Model.PlayerData.UnlockedZoneGroup?.Zones?.Count; ++w)
             {
                 List<MiningZoneComp.BaseInfo> listPlanetsInfo = new List<MiningZoneComp.BaseInfo>();
                 ZoneStatusInfo zoneInfo = Model.PlayerData.UnlockedZoneGroup.Zones[w];    
@@ -1116,7 +1122,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
             if(!context.IsSimulationMode())
             {
                 const float shortDelay = 0.1f;
-                View.StartCoroutine(View.coTriggerActionWithDelay(shortDelay, () =>
+                IMContext.CoRunner.StartCoroutine(View.coTriggerActionWithDelay(shortDelay, () =>
                 {
                     View.PlanetsComp.UpdateArea(BuildPlanetBaseInfoDictionary());
                 }) );

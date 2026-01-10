@@ -107,7 +107,7 @@ namespace App.GamePlay.IdleMiner
         {
             base.Dispose();
 
-            playerModel.Dispose();
+            playerModel?.Dispose();
 
             foreach(var module in subUnits)
                 module.Dispose();
@@ -224,7 +224,7 @@ namespace App.GamePlay.IdleMiner
 
         private void OnApplicationQuit()
         {
-            WriteAllData();
+            // WriteAllData();
         }
 
         void OnTabBtnChanged(int index)

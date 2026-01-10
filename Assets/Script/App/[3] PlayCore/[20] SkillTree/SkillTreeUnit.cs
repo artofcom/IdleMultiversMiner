@@ -11,13 +11,9 @@ namespace App.GamePlay.IdleMiner.SkillTree
         {
             base.Init(ctx);
 
-            playerModel =  new SkillTreePlayerModel(context, (ctx as IdleMinerContext).GameGatewayServiceList);
-            model = new SkillTreeModel(context, playerModel);
-            controller = new SkillTreeController(this, view, model, context);
-
-            playerModel.Init();
-            model.Init();
-            controller.Init();  
+            // Should Implement from child.
+            //
+            //
         }
 
         public override void Dispose()

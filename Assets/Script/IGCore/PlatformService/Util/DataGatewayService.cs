@@ -22,14 +22,17 @@ namespace IGCore.PlatformService
         public void RegisterDataModel(IWritableModel model)
         {
             models.Add(model);
+            Debug.Log($"[LocalGateWay] : Adding Model [{model.GetType().Name}].");
         }
         public void UnRegisterDataModel(IWritableModel model)
         {
             models.Remove(model);
+            Debug.Log($"[LocalGateWay] : Removing Model [{model.GetType().Name}].");
         }
         public void ClearModels()
         {
             models.Clear();
+            Debug.Log("[LocalGateWay] : Clearing All Models.");
         }
 
         public virtual Task<bool> WriteData(string accountId, string dataKey, bool clearAll)
@@ -46,7 +49,7 @@ namespace IGCore.PlatformService
                 if(!IsDirty)        return Task.FromResult(false);
                 IsDirty = false;
 
-                UnityEngine.Assertions.Assert.IsTrue(!string.IsNullOrEmpty(accountId));
+                Assert.IsTrue(!string.IsNullOrEmpty(accountId));
 
                 if(serviceData == null)
                     serviceData = new DataGateWay.DataInService();
@@ -56,14 +59,15 @@ namespace IGCore.PlatformService
                         serviceData.Data = new List<DataGateWay.DataPair>();
             
                     if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                        serviceData.Environment = new DataGateWay.EnvironmentInfo("1.0", DateTime.UtcNow.Ticks);
+                        serviceData.Environment = new DataGateWay.EnvironmentInfo(DateTime.UtcNow.Ticks);
                 }
 
-                serviceData.Environment.TimeStamp = DateTime.UtcNow.Ticks;                
                 serviceData.Clear();
+                serviceData.Environment.Update(DateTime.UtcNow.Ticks);
 
                 if(!clearAll)
                 {
+                    Assert.IsTrue(models.Count > 0, "Model count should be greater than 0 !");
                     Assert.IsTrue(serviceData.Data.Count == 0);
 
                     // Poll Data from Models.
@@ -76,22 +80,20 @@ namespace IGCore.PlatformService
                         for(int q = 0; q < listDataSet.Count; q++)
                         {
                             serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
-                            Debug.Log($"[DataGateway] {listDataSet[q].Item1} data has been collected for writing.");
+                            Debug.Log($"[LocalDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
                         }
                     }
-                    Debug.Log($"[DataGateway] Total Data Size : {serviceData.Data.Count}");
+                    Debug.Log($"[LocalDataGateway] Total Data Size : {serviceData.Data.Count}");
                 }
                 serviceData.Init();
             
                 string fullPath = Path.Combine(Application.persistentDataPath, accountId);
-                if (!Directory.Exists(fullPath))
-                    Directory.CreateDirectory(fullPath);
+                //if (!Directory.Exists(fullPath))
+                //    Directory.CreateDirectory(fullPath);
 
                 string fileName = Path.Combine(fullPath, dataKey + ".json");
                 string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
-                TextFileIO.WriteTextFile(fileName, jsonText);
-                // Debug.Log($"Writing data...{filePath}, {jsonText}");
-                return Task.FromResult(true);
+                return Task.FromResult( TextFileIO.WriteTextFile(fileName, jsonText) );
             }
             catch (Exception ex) 
             {

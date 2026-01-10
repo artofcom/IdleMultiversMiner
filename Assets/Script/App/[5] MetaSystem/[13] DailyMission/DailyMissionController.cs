@@ -19,11 +19,15 @@ public class DailyMissionController : AController
 
     public SpriteConfig CommonSpriteConfigCache { get; set; }
 
+    IEnumerator coUpdator = null;
+
     public DailyMissionController(AUnit unit, AView view, AModel model, AContext context) : base(unit, view, model, context)
     { }
 
     public override void Init() 
     { 
+        base.Init();
+
         events.RegisterEvent(EventID.SKILL_LEARNED, OnSkillLearned);
         events.RegisterEvent(EventID.CRAFT_SUCCESSED, OnCraftSuccessed);
         events.RegisterEvent(EventID.MINING_STAT_UPGRADED, OnMiningStatUpgraded);
@@ -36,7 +40,8 @@ public class DailyMissionController : AController
 
         RefreshNotificator();
 
-        unit.StartCoroutine( coUpdate() );
+        coUpdator = coUpdate();
+        unit.StartCoroutine( coUpdator );
     }
     public override void Resume(int awayTimeInSec) { }
     public override void Pump() { }
@@ -49,7 +54,8 @@ public class DailyMissionController : AController
         RefreshView();
         RefreshNotificator();
     }
-    protected override void OnViewDisable() { }
+    protected override void OnViewDisable() 
+    { }
 
     public override void Dispose() 
     {
@@ -58,6 +64,8 @@ public class DailyMissionController : AController
         events.UnRegisterAll();
         View.EventOnBtnClaimClicked -= OnBtnClaimClicked;
         View.EventOnBtnResetClicked -= OnBtnResetClicked;
+
+        unit.StopCoroutine(coUpdator);
     }
 
     int SortByProgStatus(DailyMissionPlayerModel.ProgressInfo a, DailyMissionPlayerModel.ProgressInfo b)

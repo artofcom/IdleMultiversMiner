@@ -26,6 +26,8 @@ namespace App.GamePlay.IdleMiner.Resouces
 
         public override void Init(object data = null)
         {
+            base.Init(data);
+
             IdleMinerContext IMCtx = (IdleMinerContext)context;
             Assert.IsNotNull(IMCtx);
             _InitModel();
@@ -35,6 +37,11 @@ namespace App.GamePlay.IdleMiner.Resouces
         {
             base.Dispose();
 
+            if(ResourceData != null)
+            {
+                for(int q = 0; q < ResourceData.Count; q++) 
+                    ResourceData[q].Dispose();
+            }
             ResourceData?.Clear();   ResourceData = null;
             dictMatCache?.Clear();   dictMatCache = null;
             dictCompCache?.Clear();  dictCompCache = null;

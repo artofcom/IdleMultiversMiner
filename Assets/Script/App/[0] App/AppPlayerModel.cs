@@ -40,6 +40,9 @@ public class AppPlayerModel : MultiGatewayWritablePlayerModel
 
         events.UnRegisterEvent(EventID.GAME_RESET_REFRESH, OnGameResetRefresh);
 
+        metaCurrencyBundle.Dispose();
+        metaCurrencyBundle = null;
+
         IsInitialized = false;
     }
 

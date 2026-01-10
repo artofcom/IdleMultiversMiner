@@ -267,5 +267,10 @@ namespace App.GamePlay.IdleMiner.Common
 
             path.RemoveAt(path.Count - 1);
         }
+
+        public void Dispose()
+        {
+            skillInfoPool?.Clear();
+        }
     }
 }

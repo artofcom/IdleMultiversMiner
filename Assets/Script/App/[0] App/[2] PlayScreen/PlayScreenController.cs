@@ -3,7 +3,7 @@ using App.GamePlay.IdleMiner;
 using IGCore.MVCS;
 using UnityEngine;
 
-public class PlayScreenController : IGCore.MVCS.AController
+public class PlayScreenController : AController
 {
     const float WAIT_TIME_SEC = 1.5f;
 
@@ -17,8 +17,6 @@ public class PlayScreenController : IGCore.MVCS.AController
     { 
         
     }
-
-    public override void Init() {}
 
     protected override void OnViewEnable()
     {
@@ -46,16 +44,16 @@ public class PlayScreenController : IGCore.MVCS.AController
 
     void EventOnBtnOptionClicked() 
     {
-        (unit as PlayScreen).SwitchUnit("TitleScreen");
+        // (unit as PlayScreen).SwitchUnit("TitleScreen");
     }
 
     object switchUnit(params object[] data) // int amount, bool isOffset)
     {
-        if(data.Length < 1)
+        if(data.Length < 2)
             return null;
 
         string nextUnitId = (string)data[0];
-        (unit as PlayScreen).SwitchUnit(nextUnitId);
+        (unit as PlayScreen).SwitchUnit(nextUnitId, data[1]);
         return null;
     }
 

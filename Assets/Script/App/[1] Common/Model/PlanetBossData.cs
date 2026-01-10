@@ -53,6 +53,16 @@ namespace App.GamePlay.IdleMiner.Common.Model
             }
             return null;
         }
+        public void Dispose()
+        {
+            if(planets == null) return;
+
+            for(int q = 0; q < planets.Count; ++q)
+                planets[q].Dispose();
+
+            planets.Clear();
+            planets = null;
+        }
     }
 
     [Serializable]
@@ -73,6 +83,17 @@ namespace App.GamePlay.IdleMiner.Common.Model
             return null;
         }
 
+        public void Dispose()
+        {
+            if(data == null)
+                return;
+
+            for(int q = 0; q < data.Count; ++q)
+                data[q].Dispose();
+            
+            data.Clear();
+            data = null;
+        }
 
 #if UNITY_EDITOR
         public void AddZoneData(PlanetZoneBossData zoneData)

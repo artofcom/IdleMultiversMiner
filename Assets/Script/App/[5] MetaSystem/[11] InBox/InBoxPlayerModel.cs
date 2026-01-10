@@ -19,6 +19,8 @@ public class InBoxPlayerModel : MultiGatewayWritablePlayerModel
     {
         base.Dispose();
 
+        // data null out.
+
         IsInitialized = false;
     }
 
