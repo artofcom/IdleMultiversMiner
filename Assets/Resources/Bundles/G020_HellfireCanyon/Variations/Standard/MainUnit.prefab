@@ -5013,6 +5013,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
         type: 3}
+      propertyPath: levelConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a280292a90b43b048be68860282de600,
+        type: 2}
+    - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
+        type: 3}
       propertyPath: simulationPath
       value: Bundles/G020_HellfireCanyon/Variations/Standard
       objectReference: {fileID: 0}

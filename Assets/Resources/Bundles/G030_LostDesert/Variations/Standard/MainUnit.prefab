@@ -6898,6 +6898,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
         type: 3}
+      propertyPath: levelConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: fb199c2c9632a5041bd695aa2688b905,
+        type: 2}
+    - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
+        type: 3}
       propertyPath: simulationPath
       value: Bundles/G030_LostDesert/Variations/Standard
       objectReference: {fileID: 0}

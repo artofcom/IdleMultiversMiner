@@ -300,6 +300,8 @@ namespace App.GamePlay.IdleMiner
             if(gameCardInfo == null)
                 gameCardInfo = new GameCardInfo(IdleMinerContext.GameKey);
             gameCardInfo.LastPlayedTimeStamp = UTCNowTick.ToString();
+            if(string.IsNullOrEmpty(gameCardInfo.FirstPlayedTimeStamp))
+                gameCardInfo.FirstPlayedTimeStamp = UTCNowTick.ToString();
             context.RequestQuery("AppPlayerModel", "UpdateGameCardInfo", gameCardInfo);
         }
 

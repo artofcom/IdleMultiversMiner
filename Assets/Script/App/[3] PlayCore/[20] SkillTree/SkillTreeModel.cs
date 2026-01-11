@@ -127,7 +127,15 @@ namespace App.GamePlay.IdleMiner.SkillTree
             return SKILL_STATUS.UNKNOWN;
         }
 
-
+        int GetSkillTotalNodeCount()
+        {
+            int totalNodeCount = 0;
+            for(int q = 0; q < skillCategories.Count; q++)
+            {
+                totalNodeCount += (skillCategories[q].DictSkillInfo!=null ? skillCategories[q].DictSkillInfo.Count : 0);
+            }
+            return totalNodeCount;
+        }
 
         SkillTreeCategoryInfo GetSkillCategoryInfo(string categoryId)
         {
@@ -404,6 +412,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
 
         void RegisterRequestables()
         {
+            context.AddRequestDelegate("SkillTree", "GetSkillTotalNodeCount", getSkillTotalNodeCount);
 #if UNITY_EDITOR
             context.AddRequestDelegate("SkillTree", "SIM_GetRequiredResources", sim_getRequiredResources);
             context.AddRequestDelegate("SkillTree", "SIM_CollectAllWorkingNodes", sim_collectAllWorkingNodes);
@@ -412,10 +421,16 @@ namespace App.GamePlay.IdleMiner.SkillTree
 
         void UnregisterRequestables() 
         {
+            context.RemoveRequestDelegate("SkillTree", "GetSkillTotalNodeCount");
 #if UNITY_EDITOR
             context.RemoveRequestDelegate("SkillTree", "SIM_GetRequiredResources");
             context.RemoveRequestDelegate("SkillTree", "SIM_CollectAllWorkingNodes");
 #endif
+        }
+
+        object getSkillTotalNodeCount(params object[] data)
+        {
+            return GetSkillTotalNodeCount();
         }
 
 #if UNITY_EDITOR

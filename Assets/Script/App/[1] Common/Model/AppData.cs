@@ -55,7 +55,10 @@ namespace App.GamePlay.Common
         [SerializeField] string game_id;
         [SerializeField] string releaseDate;
         [SerializeField] string lastPlayedTimeStamp;
+        [SerializeField] string lastResetTimeStamp;
+        [SerializeField] string firstPlayedTimeStamp;
         [SerializeField] int resetCount;
+        [SerializeField] int earnedStarCount;
 
         public GameCardInfo(string gameId)
         {
@@ -65,7 +68,10 @@ namespace App.GamePlay.Common
         public string GameId => game_id;
         public string ReleaseDate => releaseDate;
         public string LastPlayedTimeStamp { get => lastPlayedTimeStamp; set => lastPlayedTimeStamp = value; }
+        public string LastResetTimeStamp { get => lastResetTimeStamp; set => lastResetTimeStamp = value; }
+        public string FirstPlayedTimeStamp { get => firstPlayedTimeStamp; set => firstPlayedTimeStamp = value; }
         public int ResetCount { get => resetCount; set => resetCount = value; }
+        public int EarnedStarCount { get => earnedStarCount; set => earnedStarCount = value; }
     }
 
     [Serializable]
@@ -94,7 +100,7 @@ namespace App.GamePlay.Common
             else
             {
                 cardsInfos.Remove(cardInfo);
-                cardsInfos.Add(cardInfo);
+                cardsInfos.Add(info);
             }
         }
         public GameCardInfo GetGameCardInfo(string gameId)

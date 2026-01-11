@@ -2501,6 +2501,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
         type: 3}
+      propertyPath: levelConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 9f0c932be7727014e98153d696b0f9d0,
+        type: 2}
+    - target: {fileID: 1955343426207906847, guid: 0f1e548236e9a6c45b75da7e3a918973,
+        type: 3}
       propertyPath: simFrameSec
       value: 0.001
       objectReference: {fileID: 0}

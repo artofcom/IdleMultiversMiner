@@ -95,6 +95,7 @@
     <Compile Include="Assets\Script\IGCore\SubSystem\Audio\ButtonAudioPlayer.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[55] DailyAttend\DailyAttendController.cs" />
     <Compile Include="Assets\Script\IGCore\MVCS\NoPlayerDataModel.cs" />
+    <Compile Include="Assets\Script\App\[9] Subsystem\LevelConfig.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[11] Craft\Views\FrameResourceComp.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\Cloud\UnityCloudService.cs" />
     <Compile Include="Assets\Script\IGCore\SubSystem\Tween\EaseFuncLib.cs" />
@@ -231,6 +232,7 @@
     <Compile Include="Assets\Script\IGCore\PlatformService\AssetBundle\AssetBundleInfo.cs" />
     <Compile Include="Assets\Script\App\[9] Subsystem\DailyMissionConfig.cs" />
     <Compile Include="Assets\Script\App\[0] App\[1] LobbyScreen\LobbySceenController.cs" />
+    <Compile Include="Assets\Script\App\[3] PlayCore\[01] PopupDialog\View\LevelDetailInfoDialog.cs" />
     <Compile Include="Assets\Script\IGCore\PlatformService\Analytics\UnityAnalyticsService.cs" />
     <Compile Include="Assets\Script\App\[1] Common\Model\SkillTreeTargetData.cs" />
     <Compile Include="Assets\Script\App\[3] PlayCore\[20] SkillTree\SubComp\SkillItemBundleComp.cs" />

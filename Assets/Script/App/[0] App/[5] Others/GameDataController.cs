@@ -461,17 +461,25 @@ public sealed partial class IdleMinerContext : AContext
             AppConfig appConfig = null;
             while(Application.isPlaying)
             {
-                metaGatewayDogCTS.Token.ThrowIfCancellationRequested();
+                try
+                {
+                    metaGatewayDogCTS.Token.ThrowIfCancellationRequested();
 
-                if(appConfig == null)
-                    appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
+                    if(appConfig == null)
+                        appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
 
-                int delay = 1000;
-                if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.MetaDataSaveLocalInterval * 1000;
-                else        delay = appConfig==null ? 5 * 1000 : appConfig.MetaDataSaveCloudInterval * 1000;
+                    int delay = 1000;
+                    if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.MetaDataSaveLocalInterval * 1000;
+                    else        delay = appConfig==null ? 5 * 1000 : appConfig.MetaDataSaveCloudInterval * 1000;
             
-                await Task.Delay(delay, metaGatewayDogCTS.Token);
-                await SaveMetaData(isLocal);
+                    await Task.Delay(delay, metaGatewayDogCTS.Token);
+                    await SaveMetaData(isLocal);
+                }
+                catch (Exception ex) 
+                {
+                    Debug.Log(ex.Message);
+                    break;
+                }
             }
         }
 
@@ -495,17 +503,25 @@ public sealed partial class IdleMinerContext : AContext
             AppConfig appConfig = null;
             while(Application.isPlaying && contextCache.isPlayingGame)
             {
-                gameGatewayDogCTS.Token.ThrowIfCancellationRequested();
+                try
+                {
+                    gameGatewayDogCTS.Token.ThrowIfCancellationRequested();
 
-                if(appConfig == null)
-                    appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
+                    if(appConfig == null)
+                        appConfig = (AppConfig)contextCache.GetData("AppConfig", null);
 
-                int delay = 1000;
-                if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.GameDataSaveLocalInterval * 1000;
-                else        delay = appConfig==null ? 5 * 1000 : appConfig.GameDataSaveCloudInterval * 1000;
+                    int delay = 1000;
+                    if(isLocal) delay = appConfig==null ? 2 * 1000 : appConfig.GameDataSaveLocalInterval * 1000;
+                    else        delay = appConfig==null ? 5 * 1000 : appConfig.GameDataSaveCloudInterval * 1000;
 
-                await Task.Delay(delay, gameGatewayDogCTS.Token);
-                await SavePlayerData(isLocal);
+                    await Task.Delay(delay, gameGatewayDogCTS.Token);
+                    await SavePlayerData(isLocal);
+                }
+                catch (Exception ex) 
+                {
+                    Debug.Log(ex.Message);
+                    break;
+                }
             }
         }
 

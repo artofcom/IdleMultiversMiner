@@ -34,6 +34,7 @@ namespace App.GamePlay.IdleMiner
 
         public Action EventOnBtnBackClicked;
         public Action EventOnBtnSettingClicked;
+        public Action EventOnBtnGameInfoClicked;
         public Action EventOnBtnTimedBonusClicked;
         public Action EventOnBtnAdsBonusClicked;
         public Action EventOnGameCardsPortalClicked;
@@ -221,6 +222,11 @@ namespace App.GamePlay.IdleMiner
         {
             EventOnBtnSettingClicked?.Invoke();
         }
+        public void OnBtnGameInfoClicked()
+        {
+            EventOnBtnGameInfoClicked?.Invoke();
+        }
+
 
         public void OnBtnGameCardsPortalClicked()
         {

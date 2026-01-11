@@ -84,6 +84,7 @@ namespace App.GamePlay.IdleMiner
             View.EventOnBtnTimedBonusClicked += View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked += View_OnBtnGameCardsPortalClicked;
             View.EventOnBtnDailyMissionClicked += View_OnBtnDailyMissionClicked;
+            View.EventOnBtnGameInfoClicked += View_OnBtnGameInfoClicked;
 
             SettingDialogView.EventOnBtnBGMClicked += EventOptionDlgOnBtnBGMClicked;
             SettingDialogView.EventOnBtnSoundFXClicked += EventOptionDlgOnBtnSoundFXClicked;
@@ -120,6 +121,7 @@ namespace App.GamePlay.IdleMiner
             View.EventOnBtnTimedBonusClicked -= View_OnBtnTimedBonusClicked;
             View.EventOnGameCardsPortalClicked -= View_OnBtnGameCardsPortalClicked;
             View.EventOnBtnDailyMissionClicked -= View_OnBtnDailyMissionClicked;
+            View.EventOnBtnGameInfoClicked -= View_OnBtnGameInfoClicked;
 
             SettingDialogView.EventOnBtnBGMClicked -= EventOptionDlgOnBtnBGMClicked;
             SettingDialogView.EventOnBtnSoundFXClicked -= EventOptionDlgOnBtnSoundFXClicked;
@@ -342,6 +344,33 @@ namespace App.GamePlay.IdleMiner
             RefreshNotificator();
         }
 
+        void View_OnBtnGameInfoClicked()
+        {
+            var levelConfig = (LevelConfig)context.GetData("LevelConfig", null);
+            var gameCardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfo", IdleMinerContext.GameKey);
+            if(gameCardInfo == null)
+                gameCardInfo = new GameCardInfo(IdleMinerContext.GameKey);
+            
+            string playTime = GetElapsedTimeString(gameCardInfo.FirstPlayedTimeStamp);
+            string lastResetTime = GetElapsedTimeString(gameCardInfo.LastResetTimeStamp);
+
+            int totalSkillNodeCount = (int)context.RequestQuery("SkillTree", "GetSkillTotalNodeCount");
+            var presentInfo = new LevelDetailInfoDialog.PresentInfo(
+                $"Game Name : {levelConfig.LevelName}", 
+                $"Reset Count : {gameCardInfo.ResetCount}", 
+                $"Total Earned Star : {gameCardInfo.EarnedStarCount}", 
+                $"Total Skill Node Count : {totalSkillNodeCount}", 
+                $"Expected Clear Time : {levelConfig.ExpectedClearDate}", 
+                $"Total Play Time : {playTime} ( {lastResetTime} )");
+
+            context.RequestQuery((string)context.GetData(KeySets.CTX_KEYS.GAME_DLG_KEY), "DisplayPopupDialog", (errMsg, ret) => {}, 
+                "LevelInfoDialog",  
+                presentInfo,
+                new Action<APopupDialog>( (popupDlg) => 
+                { 
+                    Debug.Log("LevelInfoDialog Dialog has been closed.");
+                } ) );   
+        }
 
         List<Tuple < string, AView.APresentor >> BuildGameCardsPortalData()
         { 
@@ -576,7 +605,7 @@ namespace App.GamePlay.IdleMiner
                 // Params for the endPoint.
                 "WelcomeBackDialog",  
                 info, 
-                new System.Action<APopupDialog>( (popupDlg) => 
+                new Action<APopupDialog>( (popupDlg) => 
                 { 
                     Debug.Log("WelcomeBack Dialog has been closed.");
                 } ) );    
@@ -587,6 +616,21 @@ namespace App.GamePlay.IdleMiner
             yield return new WaitUntil( () => Model.PlayerData.IsInitialized==true );
 
             RefreshView();
+        }
+
+        string GetElapsedTimeString(string strTick)
+        {
+            TimeSpan elapsedSpan = TimeSpan.Zero;
+            if (!string.IsNullOrEmpty(strTick))
+            {
+                long firstPlayedTick;
+                if (long.TryParse(strTick, out firstPlayedTick))
+                {
+                    long elapsedTicks = DateTime.UtcNow.Ticks - firstPlayedTick;
+                    elapsedSpan = new TimeSpan(elapsedTicks);
+                }
+            }
+            return elapsedSpan!=TimeSpan.Zero ? TimeExt.ToTimeString((long)elapsedSpan.TotalSeconds) : "N / A";
         }
 
         void RefreshView()

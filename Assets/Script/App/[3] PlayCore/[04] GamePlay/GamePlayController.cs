@@ -1,3 +1,4 @@
+using App.GamePlay.Common;
 using App.GamePlay.IdleMiner.Common;
 using App.GamePlay.IdleMiner.Common.Model;
 using App.GamePlay.IdleMiner.Common.PlayerModel;
@@ -290,6 +291,13 @@ namespace App.GamePlay.IdleMiner.GamePlay
                 $"Reset the Level and Earn {ResetStarAmount} Stars as a reward.", 
                 () => 
                 {
+                    var gameCardInfo = (GameCardInfo)context.RequestQuery("AppPlayerModel", "GetGameCardInfo", IdleMinerContext.GameKey);
+                    if(gameCardInfo == null)
+                        gameCardInfo = new GameCardInfo(IdleMinerContext.GameKey);
+                    gameCardInfo.EarnedStarCount += ResetStarAmount;
+                    gameCardInfo.LastResetTimeStamp = DateTime.UtcNow.Ticks.ToString();
+                    context.RequestQuery("AppPlayerModel", "UpdateGameCardInfo", gameCardInfo);
+
                     bool offset = true;
                     context.RequestQuery("AppPlayerModel", "UpdateStarCurrency", ResetStarAmount, offset);
                     this.ResetGame();

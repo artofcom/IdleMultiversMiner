@@ -21,6 +21,7 @@ namespace App.GamePlay.IdleMiner
         [SerializeField] List<AUnit> subUnits;
         [SerializeField] AUnit startUnit;
         [SerializeField] GameConfig gameConfig;
+        [SerializeField] LevelConfig levelConfig;
         [SerializeField] AUnit popupDialog;
 
         [SerializeField] TimedBonus timedBonus;
@@ -67,7 +68,8 @@ namespace App.GamePlay.IdleMiner
         {
             base.Init(ctx);
 
-            context.AddData("GameConfig", gameConfig);
+            context.UpdateData("GameConfig", gameConfig);
+            context.UpdateData("LevelConfig", levelConfig);
             if(context.GetData("IsSimMode") == null)
                 context.AddData("IsSimMode", false);
 
