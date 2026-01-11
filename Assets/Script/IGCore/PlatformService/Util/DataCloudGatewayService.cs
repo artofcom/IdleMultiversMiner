@@ -19,6 +19,7 @@ namespace IGCore.PlatformService
         protected List<IWritableModel> models = new List<IWritableModel>();
 
         public DataGateWay.DataInService ServiceData => serviceData;
+        public long TimeStamp => serviceData!=null ? serviceData.TimeStamp : 0;
 
         public void RegisterDataModel(IWritableModel model)
         {
@@ -45,51 +46,48 @@ namespace IGCore.PlatformService
         {
             try
             {
+                Assert.IsNotNull(cloudService);
+
                 if(IsLocked || !IsDirty)
                 {
                     Debug.Log("<color=orange>[CloudGateWay] : Serivce is Locked or Not Dirty...</color>");
-                    return IsLocked ? ICloudService.ResultType.eLocked : ICloudService.ResultType.eDataNotFound;
+                    return IsLocked ? ICloudService.ResultType.eLocked : ICloudService.ResultType.eNoneToUpdate;
+                }
+                if(models==null || models.Count==0)
+                {
+                    Debug.Log("<color=orange>[GateWay] : No model has been added for the Serivce.</color>");
+                    return ICloudService.ResultType.eNoneToUpdate;
                 }
 
                 IsDirty = false;
 
-                Assert.IsNotNull(cloudService);
-
                 if(serviceData == null)
                     serviceData = new DataGateWay.DataInService();
-                else
-                {
-                    if (serviceData.Data == null)
-                        serviceData.Data = new List<DataGateWay.DataPair>();
 
-                    if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                        serviceData.Environment = new DataGateWay.EnvironmentInfo(DateTime.UtcNow.Ticks);
-                }
-                
-                serviceData.Clear();
-                serviceData.Environment.Update(DateTime.UtcNow.Ticks);
-                
-                if(!clearAll)
-                {
-                    Assert.IsTrue(models.Count > 0, "Model count should be greater than 0 !");
-                    Assert.IsTrue(serviceData.Data.Count == 0);
+                serviceData.ReadyForWrite(DateTime.UtcNow.Ticks);
 
+                if(clearAll)
+                    serviceData.Clear();
+                else 
+                {
                     // Poll Data from Models.
-                    for(int k = 0; k < models.Count; ++k)
+                    for (int k = 0; k < models.Count; ++k)
                     {
                         List<Tuple<string, string>> listDataSet  = models[k].GetSaveDataWithKeys();
-                        if(listDataSet == null)
+                        if (listDataSet == null)
                             continue;
 
-                        for(int q = 0; q < listDataSet.Count; q++)
+                        for (int q = 0; q < listDataSet.Count; q++)
                         {
-                            serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                            serviceData.UpdateData(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
                             //Debug.Log($"[CloudDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
                         }
                     }
-                    Debug.Log($"[CloudDataGateway] Total Data Size : {serviceData.Data.Count}");
+                    Debug.Log($"[CloudDataGateway] Total Data Size : {serviceData.DataCount}");
                 }
-            
+                serviceData.InitBuffer();
+
+
                 string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
 
                 Tuple<ICloudService.ResultType, string> cloudResult = await cloudService.SaveUserData(dataKey, jsonText);
@@ -128,7 +126,7 @@ namespace IGCore.PlatformService
                 if(serviceData == null)
                     return ICloudService.ResultType.eUnknownError; 
 
-                serviceData.Init();
+                serviceData.InitBuffer();
                 return ICloudService.ResultType.eSuccessed;
             }
             catch (Exception ex) 

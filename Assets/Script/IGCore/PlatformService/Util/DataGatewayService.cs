@@ -19,6 +19,7 @@ namespace IGCore.PlatformService
         protected List<IWritableModel> models = new List<IWritableModel>();
 
         public DataGateWay.DataInService ServiceData => serviceData;
+        public long TimeStamp => serviceData!=null ? serviceData.TimeStamp : 0;
 
         public void RegisterDataModel(IWritableModel model)
         {
@@ -40,50 +41,38 @@ namespace IGCore.PlatformService
         {
             try
             {
-                if(IsLocked || !IsDirty)
+                if(IsLocked || !IsDirty || models==null || models.Count==0 || string.IsNullOrEmpty(accountId))
                 {
-                    Debug.Log("<color=orange>[GateWay] : Serivce is Locked or Not Dirty..</color>");
+                    Debug.Log("<color=orange>[GateWay] : Serivce is Not Ready for Write...</color>");
                     return Task.FromResult(false);
                 }
 
                 IsDirty = false;
 
-                Assert.IsTrue(!string.IsNullOrEmpty(accountId));
-
                 if(serviceData == null)
                     serviceData = new DataGateWay.DataInService();
+                
+                serviceData.ReadyForWrite(DateTime.UtcNow.Ticks);
+
+                if(clearAll)
+                    serviceData.Clear();
                 else
                 {
-                    if (serviceData.Data == null)
-                        serviceData.Data = new List<DataGateWay.DataPair>();
-            
-                    if(serviceData.Environment==null || serviceData.Environment.TimeStamp <= 0)
-                        serviceData.Environment = new DataGateWay.EnvironmentInfo(DateTime.UtcNow.Ticks);
-                }
-
-                serviceData.Clear();
-                serviceData.Environment.Update(DateTime.UtcNow.Ticks);
-
-                if(!clearAll)
-                {
-                    Assert.IsTrue(models.Count > 0, "Model count should be greater than 0 !");
-                    Assert.IsTrue(serviceData.Data.Count == 0);
-
                     // Poll Data from Models.
-                    for(int k = 0; k < models.Count; ++k)
+                    for (int k = 0; k < models.Count; ++k)
                     {
                         List<Tuple<string, string>> listDataSet  = models[k].GetSaveDataWithKeys();
-                        if(listDataSet == null)
+                        if (listDataSet == null)
                             continue;
 
-                        for(int q = 0; q < listDataSet.Count; q++)
+                        for (int q = 0; q < listDataSet.Count; q++)
                         {
-                            serviceData.Data.Add(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
+                            serviceData.UpdateData(new DataGateWay.DataPair(listDataSet[q].Item1, listDataSet[q].Item2));
                             //Debug.Log($"[LocalDataGateway] {listDataSet[q].Item1} data has been collected for writing.");
                         }
-                    }   
+                    }
                 }
-                serviceData.Init();
+                serviceData.InitBuffer();
             
                 string fullPath = Path.Combine(Application.persistentDataPath, accountId);
                 //if (!Directory.Exists(fullPath))
@@ -91,7 +80,7 @@ namespace IGCore.PlatformService
 
                 string fileName = Path.Combine(fullPath, dataKey + ".json");
                 string jsonText = JsonUtility.ToJson(serviceData, prettyPrint:true);
-                Debug.Log($"<color=yellow>[LocalDataGateway][Writing] : {fileName} \nTotal Data Size : {serviceData.Data.Count} \n{jsonText}</color>");
+                Debug.Log($"<color=yellow>[LocalDataGateway][Writing] : {fileName} \nTotal Data Size : {serviceData.DataCount} \n{jsonText}</color>");
                 return Task.FromResult( TextFileIO.WriteTextFile(fileName, jsonText) );
             }
             catch (Exception ex) 
@@ -116,7 +105,7 @@ namespace IGCore.PlatformService
 
                 Debug.Log($"<color=green>[LocalDataGateWay][Reading] : {fileNamePath} \n{jsonString} </color>");
 
-                serviceData.Init();
+                serviceData.InitBuffer();
                 return Task.FromResult(true);
             }
             catch (Exception ex) 

@@ -179,8 +179,8 @@ public sealed partial class IdleMinerContext : AContext
                     {
                         var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
                         var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
-                        long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                        long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
+                        long guestTS = guestGWS==null ? 0 : guestGWS.TimeStamp;
+                        long cloudTS = cloudGWS==null ? 0 : cloudGWS.TimeStamp - cloudTimeStampOffset;
                         selectedIndex = SelectLatestDataGatewayService( guestTS, cloudTS );
                         if(selectedIndex == 0)
                         {
@@ -202,8 +202,8 @@ public sealed partial class IdleMinerContext : AContext
                     { 
                         var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
                         var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
-                        long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                        long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
+                        long guestTS = guestGWS==null ? 0 : guestGWS.TimeStamp;
+                        long localTS = localGWS==null ? 0 : localGWS.TimeStamp;
                         selectedIndex = SelectLatestDataGatewayService(guestTS, localTS);
                         if(selectedIndex == 0)
                         {
@@ -218,8 +218,8 @@ public sealed partial class IdleMinerContext : AContext
                 {
                     var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
                     var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
-                    long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
-                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
+                    long localTS = localGWS == null ? 0 : localGWS.TimeStamp;
+                    long cloudTS = cloudGWS == null ? 0 : cloudGWS.TimeStamp - cloudTimeStampOffset;
                     selectedIndex = SelectLatestDataGatewayService(localTS, cloudTS);
                     SetTargetGatewayServiceIndex(isMetaData, selectedIndex==0 ? LOCAL_DATA_SERVICE_IDX : CLOUD_DATA_SERVICE_IDX);
                     break;
@@ -229,9 +229,9 @@ public sealed partial class IdleMinerContext : AContext
                     var guestGWS = isMetaData ? (guestMetaDataGatewayService as DataGatewayService) : null;
                     var localGWS = isMetaData ? (metaDataGatewayService as DataGatewayService) : (gameDataGatewayService as DataGatewayService);
                     var cloudGWS = isMetaData ? (metaDataCloudGatewayService as DataCloudGatewayService) : (gameDataCloudGatewayService as DataCloudGatewayService);
-                    long guestTS = guestGWS==null || guestGWS.ServiceData==null || guestGWS.ServiceData.Environment==null ? 0 : guestGWS.ServiceData.Environment.TimeStamp;
-                    long localTS = localGWS==null || localGWS.ServiceData==null || localGWS.ServiceData.Environment==null ? 0 : localGWS.ServiceData.Environment.TimeStamp;
-                    long cloudTS = cloudGWS==null || cloudGWS.ServiceData==null || cloudGWS.ServiceData.Environment==null ? 0 : cloudGWS.ServiceData.Environment.TimeStamp - cloudTimeStampOffset;
+                    long guestTS = guestGWS == null ? 0 : guestGWS.TimeStamp;
+                    long localTS = localGWS == null ? 0 : localGWS.TimeStamp;
+                    long cloudTS = cloudGWS == null ? 0 : cloudGWS.TimeStamp - cloudTimeStampOffset;
 
                     selectedIndex = SelectLatestDataGatewayService(guestTS, localTS, cloudTS);
                     if(selectedIndex == 0)

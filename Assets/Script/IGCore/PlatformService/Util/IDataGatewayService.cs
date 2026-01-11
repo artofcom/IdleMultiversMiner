@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace IGCore.PlatformService
 {
@@ -88,17 +89,26 @@ namespace IGCore.PlatformService
                 data = new List<DataPair>();
                 environment = new EnvironmentInfo(0);
             }
-            public List<DataPair> Data          {   get => data; set => data = value;}
-            public EnvironmentInfo Environment  {   get => environment; set => environment = value; }
-            public void Init()
+
+            public int DataCount => data!=null ? data.Count : 0;
+            public long TimeStamp => environment!=null ? environment.TimeStamp : 0;
+
+            public void InitBuffer()
             {
                 if(data == null)    return;
 
-                dictData = new Dictionary<string, string>();
+                if(dictData == null)
+                    dictData = new Dictionary<string, string>();
+                dictData.Clear();
+                
                 for(int q = 0; q < data.Count; q++)
                 {
                     if(!dictData.ContainsKey(data[q].Key))
                         dictData.Add(data[q].Key, data[q].Value);
+                    else
+                    {
+                        Assert.IsTrue(false, $"Same Key Found. [{data[q].Key}] !");
+                    }
                 }
             }
             public string GetData(string key)
@@ -110,8 +120,32 @@ namespace IGCore.PlatformService
             }
             public void Clear()
             {
-                Data?.Clear();
+                data?.Clear();
                 dictData?.Clear();
+            }
+            public void ReadyForWrite(long writeTick)
+            {
+                if (data == null)
+                    data = new List<DataPair>();
+            
+                if(environment==null || environment.TimeStamp <= 0)
+                    environment = new EnvironmentInfo(writeTick);
+                else 
+                    environment.Update(writeTick);
+            }
+            public void UpdateData(DataPair pairData)
+            {
+                if(data == null)    return;
+
+                for(int q = 0; q < data.Count; q++) 
+                {
+                    if(0 == string.Compare(data[q].Key, pairData.Key, ignoreCase:true))
+                    {
+                        data.RemoveAt(q);
+                        break;
+                    }
+                }
+                data.Add(pairData);
             }
         }
     }
