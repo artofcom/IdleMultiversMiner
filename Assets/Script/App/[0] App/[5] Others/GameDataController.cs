@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -95,7 +94,6 @@ public sealed partial class IdleMinerContext : AContext
         public string PlayerId { get; private set; } = string.Empty;
 
         IAuthService authService;
-        ICloudService cloudService;
 
         bool isAccountLinked = false;
         public GameDataController(IdleMinerContext context, IAuthService authService, ICloudService cloudService)
@@ -103,7 +101,6 @@ public sealed partial class IdleMinerContext : AContext
             contextCache = context;
 
             this.authService = authService;
-            this.cloudService = cloudService;
             guestMetaDataGatewayService = new DataGatewayService();
             gameDataGatewayService = new DataGatewayService();
             metaDataGatewayService = new DataGatewayService();
@@ -115,6 +112,18 @@ public sealed partial class IdleMinerContext : AContext
 
             authService.EventOnSignedIn += OnSignedIn;
             authService.EventOnSignOut += OnSignedOut;
+        }
+        public GameDataController(IdleMinerContext context)
+        {
+#if UNITY_EDITOR
+            contextCache = context;
+
+            gameDataGatewayService = new DataGatewayService();
+            metaDataGatewayService = new DataGatewayService();
+
+            gameGatewayServiceList = new List<IDataGatewayService>() { gameDataGatewayService }; 
+            metaGatewayServiceList = new List<IDataGatewayService>() { metaDataGatewayService }; 
+#endif
         }
 
         public void Init()   {}

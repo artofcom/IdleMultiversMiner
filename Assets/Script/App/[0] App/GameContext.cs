@@ -56,15 +56,15 @@ public sealed partial class IdleMinerContext : AContext
 #endif
         }
     }
-    
 
-    public IdleMinerContext()
+
+#if UNITY_EDITOR    
+    public IdleMinerContext()   // This is usually for Simulator.
     {
         _instance = this;
-        //dataController = new GameDataController(this);
-        //gameCoreGatewayService = new DataGatewayService();
-        //metaDataGatewayService = new DataGatewayService();
+        dataController = new GameDataController(this);
     }
+#endif
 
     public IdleMinerContext(IAuthService authService, ICloudService cloudService)
     {

@@ -304,7 +304,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public void WriteSimLogWhenResume(float duration)
         {
             // 
-            PlayerData.WriteSimLogWhenResume(duration);
+            // PlayerData.WriteSimLogWhenResume(duration);
         }
 
 

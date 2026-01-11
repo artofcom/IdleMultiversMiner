@@ -23,7 +23,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         public override void Dispose()
         {
             base.Dispose();
-            playerModel.Dispose();
+            playerModel?.Dispose();
         }
     }
 }

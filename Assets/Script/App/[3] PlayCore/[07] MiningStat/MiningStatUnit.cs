@@ -38,7 +38,7 @@ namespace App.GamePlay.IdleMiner.MiningStat
         public override void Dispose()
         {
             base.Dispose();
-            playerModel.Dispose();
+            playerModel?.Dispose();
         }
     }
 }

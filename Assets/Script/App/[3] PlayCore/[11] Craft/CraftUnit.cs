@@ -26,7 +26,7 @@ namespace App.GamePlay.IdleMiner.Craft
         public override void Dispose()
         {
             base.Dispose();
-            playerModel.Dispose();
+            playerModel?.Dispose();
         }
     }
 }

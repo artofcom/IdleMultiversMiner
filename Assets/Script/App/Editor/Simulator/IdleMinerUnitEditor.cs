@@ -25,6 +25,15 @@ public class IdleMinerUnitEditor : Editor
         GUILayout.Label("========== Editor Area ============");
         GUILayout.Label("");
         
+        if (GUILayout.Button("Reset IdleMinerUnit Object"))
+        {
+            IMU = null;                     // 참조 해제
+            IMU = (IdleMinerUnit)target;    // 재할당
+            IMU.Dispose();
+
+            Debug.Log("<color=orange>IMU Editor Object Reset!</color>");
+        }
+
         if (GUILayout.Button("<< Run Simulator ! >>", GUILayout.Height(50.0f)))
         {
             if(mainCoroutine != null)

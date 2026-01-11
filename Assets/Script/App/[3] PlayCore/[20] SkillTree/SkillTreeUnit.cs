@@ -10,7 +10,7 @@ namespace App.GamePlay.IdleMiner.SkillTree
         public override void Dispose()
         {
             base.Dispose();
-            playerModel.Dispose();
+            playerModel?.Dispose();
         }
     }
 }

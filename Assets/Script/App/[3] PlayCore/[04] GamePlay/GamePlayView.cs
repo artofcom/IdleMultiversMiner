@@ -110,7 +110,7 @@ namespace App.GamePlay.IdleMiner.GamePlay
         {
             List<float> distanceList = new List<float>();
             List<Vector2> vPoses = PlanetsComp.GetPlanetsPos(zoneId);
-            Vector2 vMainChar = MainCharObj.transform.position;
+            Vector2 vMainChar = MainCharObj==null ? Vector2.zero : MainCharObj.transform.position;
             for(int q = 0; q < vPoses.Count; q++)  
             {
                 distanceList.Add((vPoses[q] - vMainChar).magnitude);

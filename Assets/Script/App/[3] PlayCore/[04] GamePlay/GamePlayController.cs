@@ -167,8 +167,13 @@ namespace App.GamePlay.IdleMiner.GamePlay
             ((ISkillLeaner)this).CreateSkillBehaviors();
             InitPlayGround();
             
-            // This can be done once other models are ready.
-            IMContext.CoRunner.StartCoroutine( coInitZone() );
+            if(context.IsSimulationMode())
+                InitZone();
+            else
+            {
+                // This can be done once other models are ready.
+                IMContext.CoRunner.StartCoroutine(coInitZone());
+            }
         }
 
         protected override void OnViewEnable()

@@ -113,7 +113,7 @@ namespace App.GamePlay.IdleMiner
 
             popupDialog.Dispose();
 
-            model.Dispose();
+            model?.Dispose();
 
             Events.UnRegisterAll();
         }
